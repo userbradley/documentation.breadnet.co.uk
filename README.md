@@ -1,4 +1,5 @@
 # [breadNET Documentation](https://documentation.breadnet.co.uk)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/breadnet/Static%20sites%2FDocumentation?type=cf-2&key=eyJhbGciOiJIUzI1NiJ9.NjA2NDk2ODIzMDk5OTgxZTRjODFmMTNi.5gYRawM6ODqOOVHDq1eDn1cma2Df2_jcXcQ4oAsb9wM)]( https://g.codefresh.io/pipelines/edit/new/builds?id=63332e88189958204cec2b93&pipeline=Documentation&projects=Static%20sites&projectId=6182852a9c76740876ee5660)
 
 This repo houses all the public documentation that I have created over the years, recently migrated to mkdocs
 
