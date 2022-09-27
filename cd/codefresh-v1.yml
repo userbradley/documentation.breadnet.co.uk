@@ -23,7 +23,7 @@ steps:
     commands:
       - export color=red
       - export env="Development Server"
-      - cf_export color
+      - cf_export color env
 
   build_mkdocs:
     title: Build Mkdocs site

@@ -1,8 +1,7 @@
 ---
 title: Minio over s3fs
+outdated: true
 ---
-!!! Warning
-    This page is old and no longer maintained
 
 ## Create the password file
 
@@ -16,7 +15,7 @@ sudo echo private:sectet > /etc/passwd-s3fs
 chmod 600 /etc/passwd-s3fs
 ```
 
-## Create a mount point for the bucket:
+## Create a mount point for the bucket
 
 ```bash
 sudo mkdir /mnt/s3
@@ -27,3 +26,4 @@ sudo mkdir /mnt/s3
 ```bash
 s3fs <bucket> /mnt/s3 -o passwd_file=/etc/passwd-s3fs,use_path_request_style,url=https://s3.breadnet.co.uk:9000
 ```
+

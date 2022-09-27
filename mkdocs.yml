@@ -1,7 +1,12 @@
 nav:
   - Home: index.md
   - Archive:
-    - Minio over s3fs: archive/minio-over-s3fs.md
+    - Minio over s3fs: archive/minio/minio-over-s3fs.md
+    - Creating users and assigning policies : archive/minio/s3-policies.md
+    - Uninstalling Netplan : archive/uninstalling-netplan.md
+    - Formatting drive and Auto mount: archive/formatting-drive-automount.md
+  - Linux:
+    - Generate ed25519 SSH Keys : linux/ssh-keys.md
 
 repo_name: docu
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
@@ -11,10 +16,12 @@ site_url:
 site_description: breadNET Public Documentation
 
 
+
 theme:
   name: material
   favicon: https://breadnet.co.uk/favicon.ico
   logo: https://breadnet.co.uk/favicon.png
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github-alt
     admonition:
