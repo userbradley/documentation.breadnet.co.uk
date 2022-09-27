@@ -31,4 +31,14 @@ My Bookstack site will not remain active once the migration is complete.
 
 All pages that are migrated will redirect to their new home.
 
-Once the migration is complete, `bookstack.breadnet.co.uk` will redirect to `documentation.breadnet.co.uk` 
+Once the migration is complete, `bookstack.breadnet.co.uk` will redirect to `documentation.breadnet.co.uk`
+
+# Migration plan
+
+The below has the assumption that the new mkdocs project is created, and there is a staging site
+
+1. Export list of slugs from bookstack (sql)
+2. Export HTML of each page (sql)
+3. `HTML` to `markdown`
+4. Create pages
+5. Create navigation
