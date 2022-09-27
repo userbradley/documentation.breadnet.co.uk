@@ -1,5 +1,6 @@
 ---
 title: Formatting drive and auto mount
+outdated: true
 ---
 
 <h2 id="bkmrk-list-logical-disks-a">List logical disks and partitions</h2>
