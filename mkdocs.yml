@@ -4,7 +4,7 @@ nav:
 repo_name: docu
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
-site_name: breadNET Documentation
+site_name: !ENV [ENV,"breadNET Documentation"]
 site_url:
 site_description: breadNET Public Documentation
 
@@ -31,10 +31,14 @@ theme:
 
   palette:
     - scheme: default
+      primary: !ENV [color, ""]
+      accent: !ENV [color, ""]
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
+      primary: !ENV [color, ""]
+      accent: !ENV [color, ""]
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
