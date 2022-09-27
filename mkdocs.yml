@@ -1,10 +1,18 @@
 nav:
   - Home: index.md
-  - Archive:
-    - Minio over s3fs: archive/minio/minio-over-s3fs.md
-    - Creating users and assigning policies : archive/minio/s3-policies.md
-    - Uninstalling Netplan : archive/uninstalling-netplan.md
-    - Formatting drive and Auto mount: archive/formatting-drive-automount.md
+  - KB Articles:
+      - Disk management:
+        - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
+        - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
+        - Mount a new drive: kb/disk-management/mount-a-new-drive.md
+        - "GPT PMBR Size Mismatch will be corrected by w(rite)" : kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
+
+
+
+      - Minio:
+          - OLD : archive/minio/old.md
+          - Connecting to minio over s3fs: archive/minio/minio-over-s3fs.md
+          - creating users and assigning policies: archive/minio/s3-policies.md
   - Linux:
     - Generate ed25519 SSH Keys : linux/ssh-keys.md
 
@@ -54,10 +62,11 @@ theme:
   features:
     - navigation.instant # IDK
     - navigation.tracking #Anchor links
-    - navigation.expand #Exapnds the navigation in the UI
+    - !ENV [nav, ""]#navigation.expand #Exapnds the navigation in the UI, disabled by default, but enabled in dev
     - content.code.annotate
     - search.share
     - search.highlight
+    - navigation.top # back to top of page
 
 
 
