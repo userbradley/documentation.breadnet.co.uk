@@ -42,3 +42,17 @@ The below has the assumption that the new mkdocs project is created, and there i
 3. `HTML` to `markdown`
 4. Create pages
 5. Create navigation
+
+# Branches
+
+## master
+
+This branch houses the live site, available at [documentation.breadnet.co.uk](https://documentation.breadnet.co.uk)
+
+The site is only built on PR merge to master
+
+## dev
+
+This branch houses the development site, which is built on each commit to `dev`
+
+Site is available at `dev.documentation.breadnet.co.uk`
