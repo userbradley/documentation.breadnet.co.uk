@@ -1,0 +1,40 @@
+version: '3'
+
+volumes:
+  mariadb:
+    driver: local
+
+networks:
+  db:
+    driver: bridge
+
+services:
+  mariadb:
+    image: mariadb:10.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_USER:  brad
+      MYSQL_PASSWORD: 1234
+    expose:
+      - "40000"
+    ports:
+      - "40000:3306"
+    volumes:
+      - mariadb:/var/lib/mysql
+      - ./bookstack.sql:/mnt/bookstack.sql
+    networks:
+      db:
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    expose:
+      - "40001"
+    ports:
+      - "40001:80"
+    environment:
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306
+    networks:
+      db:

@@ -1,10 +1,12 @@
 nav:
   - Home: index.md
+  - Archive:
+    - Minio over s3fs: archive/minio-over-s3fs.md
 
 repo_name: docu
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
-site_name: !ENV [ENV,"breadNET Documentation"]
+site_name: !ENV [env,"breadNET Documentation"]
 site_url:
 site_description: breadNET Public Documentation
 
