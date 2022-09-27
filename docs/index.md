@@ -23,3 +23,4 @@ the site gets built.
 
 I have a CD pipeline that builds the site and copies it to the webserver
 
+![](assets/pipeline.png)

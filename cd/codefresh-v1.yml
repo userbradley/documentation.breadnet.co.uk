@@ -12,6 +12,18 @@ steps:
     revision: "${{CF_BRANCH}}"
     git: "github"
     stage: "setup"
+  set-env:
+    title: "Set env vars"
+    stage: "setup"
+    image: alpine
+    when:
+      branch:
+        only:
+          - dev
+    commands:
+      - export color=red
+      - export env="Development Server"
+      - cf_export color env
 
   build_mkdocs:
     title: Build Mkdocs site

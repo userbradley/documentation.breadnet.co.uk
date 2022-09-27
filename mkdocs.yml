@@ -1,18 +1,47 @@
 nav:
   - Home: index.md
+  - KB Articles:
+      - Disk management:
+        - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
+        - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
+        - Mount a new drive: kb/disk-management/mount-a-new-drive.md
+        - "GPT PMBR Size Mismatch will be corrected by w(rite)" : kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
+      - Minio:
+          - OLD : kb/minio/old.md
+          - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
+          - creating users and assigning policies: kb/minio/s3-policies.md
+      - PHP:
+          - Install PHP: kb/php/install-php.md
+          - Wordpress permissions: kb/php/wordpress-permissions.md
+      - Docker:
+          - Installing Docker: kb/docker/installing-docker.md
+          - Basics of docker: kb/docker/basics-of-docker.md
+          - Installing jellyfin: kb/docker/installing-jellyfin.md
+          - "Docker: Intro and notes": kb/docker/docker-intro-and-notes.md
+          - Exporting and importing: kb/docker/exporting-and-importing.md
+          - Docker Architecture: kb/docker/docker-architecture.md
+          - Bulk retag: kb/docker/bulk-retag.md
+      - Linux Networking:
+          - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
+      - SSH:
+         - SSH Keys: kb/ssh/ssh-keys.md
+
+
 
 repo_name: docu
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
-site_name: breadNET Documentation
+site_name: !ENV [env,"breadNET Documentation"]
 site_url:
 site_description: breadNET Public Documentation
+
 
 
 theme:
   name: material
   favicon: https://breadnet.co.uk/favicon.ico
   logo: https://breadnet.co.uk/favicon.png
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github-alt
     admonition:
@@ -31,20 +60,25 @@ theme:
 
   palette:
     - scheme: default
+      primary: !ENV [color, ""]
+      accent: !ENV [color, ""]
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
+      primary: !ENV [color, ""]
+      accent: !ENV [color, ""]
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
     - navigation.instant # IDK
     - navigation.tracking #Anchor links
-    - navigation.expand #Exapnds the navigation in the UI
+    - !ENV [nav, ""]#navigation.expand #Exapnds the navigation in the UI, disabled by default, but enabled in dev
     - content.code.annotate
     - search.share
     - search.highlight
+    - navigation.top # back to top of page
 
 
 
