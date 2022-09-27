@@ -24,3 +24,11 @@ I think this is just me getting more mature and resizing that a full CMS is not 
 I encourage people to contribute to this. 
 
 You can do so by making a fork of this to your own account, making the changes and then open a PR in to DEV.
+
+# Uptime 
+
+My Bookstack site will not remain active once the migration is complete.
+
+All pages that are migrated will redirect to their new home.
+
+Once the migration is complete, `bookstack.breadnet.co.uk` will redirect to `documentation.breadnet.co.uk` 
