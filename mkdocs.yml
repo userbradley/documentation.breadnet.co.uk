@@ -27,7 +27,7 @@ nav:
       - Linux Networking:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
           - DNS on Ubuntu: kb/linux-networking/dns-on-ubuntu.md
-          - Bridging up Interfaces: kb/linux-networking/bringing-up-interfaces.md
+          - Bringing up Interfaces: kb/linux-networking/bringing-up-interfaces.md
           - Netplan 2 interfaces: kb/linux-networking/netplan-2-interfaces.md
           - Centos Iptables: kb/linux-networking/centos-iptables.md
           - Null routing: kb/linux-networking/null-routing.md

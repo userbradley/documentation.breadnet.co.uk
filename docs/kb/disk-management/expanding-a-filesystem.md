@@ -1,6 +1,7 @@
 ---
 title: Expanding a file system
 ---
+# Expanding a file system
 
 Locate the root partition
 
