@@ -55,6 +55,10 @@ nav:
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
           - Installed Applications: kb/public-web-facing/installed-applications-reverse.md
           - "nginx.service failed because the control process exited": kb/public-web-facing/nginxservice-failed-because-the-control-process-exited.md
+      - Wasabi:
+          - Policies: kb/wasabi/policies.md
+          - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
+
 
 
 
