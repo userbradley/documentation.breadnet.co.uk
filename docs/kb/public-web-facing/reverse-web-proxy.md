@@ -9,7 +9,7 @@ copy the 'default' file to the new reverse name, so status.breadnet.co.uk
 
 Edit the file to reflect the name and address
 
-```yaml
+```nginx
 server {
       server_name <your domain>;
      add_header Strict-Transport-Security "max-age=15552000; includeSubDomains" always;
