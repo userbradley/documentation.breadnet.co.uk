@@ -3,6 +3,7 @@ title: Formatting drive and auto mount
 outdated: true
 ---
 
+
 <h2 id="bkmrk-list-logical-disks-a">List logical disks and partitions</h2>
 <p id="bkmrk-sudo-fdisk--l"><code>sudo fdisk -l</code></p>
 <h2 id="bkmrk-partition-the-disk">
