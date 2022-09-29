@@ -2,7 +2,6 @@
 title: gpt pmbr size mismatch will be corrected by write
 outdated: true
 ---
-# gpt pmbr size mismatch will be corrected by write
 
 Fdisk used to not work at all on gpt partitioned drives, it just reported that drive was gpt partitioned. Better to use parted, gparted or gdisk. Gdisk has been the command line tool for gpt drives.
 
