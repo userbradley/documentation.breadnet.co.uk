@@ -26,9 +26,23 @@ nav:
           - "Serverless VPC access for Cloudrun across Projects" : kb/google-cloud/serverless-vpc-access-for-cloudrun-across-projects.md
       - Linux Networking:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
-
+          - DNS on Ubuntu: kb/linux-networking/dns-on-ubuntu.md
+          - Bridging up Interfaces: kb/linux-networking/bringing-up-interfaces.md
+          - Netplan 2 interfaces: kb/linux-networking/netplan-2-interfaces.md
+          - Centos Iptables: kb/linux-networking/centos-iptables.md
+          - Null routing: kb/linux-networking/null-routing.md
+          - Listen on a port: kb/linux-networking/listen-on-a-port.md
+          - "List of unique IP's": kb/linux-networking/list-of-unique-ips.md
+          - Connections on a port: kb/linux-networking/connections-on-a-port.md
+          - RVC IP Range: kb/linux-networking/rvc-ip-range.md
       - SSH:
          - SSH Keys: kb/ssh/ssh-keys.md
+         - SSH Port redirection: kb/ssh/ssh-port-redirection.md
+         - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
+         - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
+         - Weird Bash: kb/ssh/weird-bash.md
+         - sshuttle: kb/ssh/sshuttle.md
+
 
 
 
