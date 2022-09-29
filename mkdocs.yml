@@ -36,12 +36,32 @@ nav:
           - Connections on a port: kb/linux-networking/connections-on-a-port.md
           - RVC IP Range: kb/linux-networking/rvc-ip-range.md
       - SSH:
-         - SSH Keys: kb/ssh/ssh-keys.md
-         - SSH Port redirection: kb/ssh/ssh-port-redirection.md
-         - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
-         - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
-         - Weird Bash: kb/ssh/weird-bash.md
-         - sshuttle: kb/ssh/sshuttle.md
+          - SSH Keys: kb/ssh/ssh-keys.md
+          - SSH Port redirection: kb/ssh/ssh-port-redirection.md
+          - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
+          - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
+          - Weird Bash: kb/ssh/weird-bash.md
+          - sshuttle: kb/ssh/sshuttle.md
+      - Public web Facing:
+          - Cachet: kb/public-web-facing/cachet.md
+          - Certbot: kb/public-web-facing/certbot.md
+          - Reverse web proxy: kb/public-web-facing/reverse-web-proxy.md
+          - Bookstack: kb/public-web-facing/bookstack.md
+          - Jellyfin S3: kb/public-web-facing/jellyfin-s3.md
+          - Custom Headers: kb/public-web-facing/custom-headers.md
+          - Remove server headers: kb/public-web-facing/remove-server-headers.md
+          - Wildcart Certificates: kb/public-web-facing/wildcard-certificates.md
+          - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
+          - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
+          - Installed Applications: kb/public-web-facing/installed-applications-reverse.md
+          - "nginx.service failed because the control process exited": kb/public-web-facing/nginxservice-failed-because-the-control-process-exited.md
+
+
+
+
+
+
+
 
 
 
