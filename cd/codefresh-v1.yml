@@ -3,7 +3,7 @@ stages:
   - "setup"
   - "mkdocs-build"
   - "deploy"
-
+# VXNlci1BZ2VudDogKgpEaXNhbGxvdzogLwo=
 steps:
   clone:
     title: "Cloning repository"
@@ -12,6 +12,7 @@ steps:
     revision: "${{CF_BRANCH}}"
     git: "github"
     stage: "setup"
+
   set-env:
     title: "Set env vars"
     stage: "setup"
@@ -24,6 +25,17 @@ steps:
       - export color=red
       - export env="Development Server"
       - cf_export color env
+
+  set-robots:
+    title: "Set Robots.txt on dev"
+    stage: "setup"
+    image: alpine
+    when:
+      branch:
+        only:
+          - dev
+    commands:
+      - echo "VXNlci1BZ2VudDogKgpEaXNhbGxvdzogLwo=" | base64 -d > /codefresh/volume/documentation.breadnet.co.uk/docs/robots.txt
 
   build_mkdocs:
     title: Build Mkdocs site

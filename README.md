@@ -26,6 +26,14 @@ I encourage people to contribute to this.
 
 You can do so by making a fork of this to your own account, making the changes and then open a PR in to DEV.
 
+Ensure you have [direnv](https://direnv.net) installed.
+
+Once `direnv` in installed, run `direnv allow .`
+
+Finally, `mkdocs serve`
+
+You will notice that the page layout, specifically navigation is different. This is intentional. It helps between reloads
+
 # Uptime 
 
 My Bookstack site will not remain active once the migration is complete.
@@ -56,4 +64,8 @@ The site is only built on PR merge to master
 
 This branch houses the development site, which is built on each commit to `dev`
 
-Site is available at `dev.documentation.breadnet.co.uk`
+Site is available at [dev-documentation.breadnet.co.uk](dev-documentation.breadnet.co.uk)
+
+You will know when you're on the development site, as the colors are red!
+
+
