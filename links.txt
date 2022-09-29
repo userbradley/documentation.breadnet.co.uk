@@ -1,0 +1,83 @@
+Getting links from: https://documentation.breadnet.co.uk/
+├───OK─── https://documentation.breadnet.co.uk/kb/disk-management/expanding-a-filesystem/
+├───OK─── https://documentation.breadnet.co.uk/kb/disk-management/formatting-drive-automount/
+├───OK─── https://documentation.breadnet.co.uk/kb/disk-management/mount-a-new-drive/
+├───OK─── https://documentation.breadnet.co.uk/kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write/
+├───OK─── https://documentation.breadnet.co.uk/kb/minio/old/
+├───OK─── https://documentation.breadnet.co.uk/kb/minio/minio-over-s3fs/
+├───OK─── https://documentation.breadnet.co.uk/kb/minio/s3-policies/
+├───OK─── https://documentation.breadnet.co.uk/kb/php/install-php/
+├───OK─── https://documentation.breadnet.co.uk/kb/php/wordpress-permissions/
+├───OK─── https://documentation.breadnet.co.uk/kb/docker/installing-docker/
+├───OK─── https://documentation.breadnet.co.uk/kb/docker/basics-of-docker/
+├───OK─── https://documentation.breadnet.co.uk/kb/docker/installing-jellyfin/
+├───OK─── https://documentation.breadnet.co.uk/kb/docker/docker-intro-and-notes/
+├───OK─── https://documentation.breadnet.co.uk/kb/docker/exporting-and-importing/
+├───OK─── https://documentation.breadnet.co.uk/kb/docker/docker-architecture/
+├───OK─── https://documentation.breadnet.co.uk/kb/docker/bulk-retag/
+├───OK─── https://documentation.breadnet.co.uk/kb/linux-networking/uninstall-netplan/
+├───OK─── https://documentation.breadnet.co.uk/kb/ssh/ssh-keys/
+├───OK─── https://documentation.breadnet.co.uk/mkdocs.org/
+├───OK─── https://documentation.breadnet.co.uk/assets/pipeline.png
+├───OK─── https://documentation.breadnet.co.uk/cdn-cgi/l/email-protection#dbacbeb9b6baa8afbea99bb9a9bebabfb5beaff5b8b4f5aeb0
+Finished! 56 links found. 35 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/disk-management/expanding-a-filesystem/
+Finished! 56 links found. 56 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/disk-management/formatting-drive-automount/
+Finished! 46 links found. 46 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/disk-management/mount-a-new-drive/
+Finished! 54 links found. 54 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write/
+Finished! 45 links found. 45 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/minio/old/
+Finished! 63 links found. 63 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/minio/minio-over-s3fs/
+Finished! 54 links found. 54 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/minio/s3-policies/
+Finished! 130 links found. 130 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/php/install-php/
+Finished! 44 links found. 44 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/php/wordpress-permissions/
+Finished! 44 links found. 44 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/docker/installing-docker/
+Finished! 41 links found. 41 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/docker/basics-of-docker/
+Finished! 41 links found. 41 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/docker/installing-jellyfin/
+Finished! 59 links found. 59 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/docker/docker-intro-and-notes/
+Finished! 43 links found. 43 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/docker/exporting-and-importing/
+Finished! 41 links found. 41 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/docker/docker-architecture/
+Finished! 42 links found. 42 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/docker/bulk-retag/
+Finished! 42 links found. 42 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/linux-networking/uninstall-netplan/
+Finished! 41 links found. 41 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/kb/ssh/ssh-keys/
+Finished! 48 links found. 48 excluded. 0 broken.
+
+Getting links from: https://documentation.breadnet.co.uk/cdn-cgi/l/email-protection#dbacbeb9b6baa8afbea99bb9a9bebabfb5beaff5b8b4f5aeb0
+Finished! 5 links found. 5 excluded. 0 broken.
+
+Finished! 995 links found. 974 excluded. 0 broken.
+Elapsed time: 10 seconds

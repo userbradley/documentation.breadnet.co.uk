@@ -21,8 +21,12 @@ nav:
           - Exporting and importing: kb/docker/exporting-and-importing.md
           - Docker Architecture: kb/docker/docker-architecture.md
           - Bulk retag: kb/docker/bulk-retag.md
+      - Google cloud:
+          - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell" : kb/google-cloud/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+          - "Serverless VPC access for Cloudrun across Projects" : kb/google-cloud/serverless-vpc-access-for-cloudrun-across-projects.md
       - Linux Networking:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
+
       - SSH:
          - SSH Keys: kb/ssh/ssh-keys.md
 
@@ -85,7 +89,6 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
   - attr_list
   - md_in_html
   - md_in_html
@@ -102,6 +105,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
 plugins:
 #- git-revision-date-localized:
 #    type: iso_datetime
