@@ -7,7 +7,7 @@ Cloud init is awesome, but a pain to setup.
 
 
 
-Hopefully if you're reading this then we're on an adventure to dementia!
+Hopefully if you're reading this then we're on an adventure!
 
 
 
