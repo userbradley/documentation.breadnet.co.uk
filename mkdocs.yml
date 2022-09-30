@@ -65,6 +65,8 @@ nav:
           - AWS CLI: kb/aws/aws-cli.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
+      - Linux Command line:
+          - uuidgen Lower case: kb/linux-cli/uuidgen-lowercase.md
 
 
 
