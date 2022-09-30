@@ -8,6 +8,10 @@ nav:
           - Page 3: google-certs/gcp-architect/gcp-architect-3.md
           - Kubectl commands: google-certs/gcp-architect/kubectl-commands.md
           - GCP Load balancer: google-certs/gcp-architect/gcp-load-balancer.md
+      - Google Security:
+          - Exam topics : google-certs/gcp-security/1-the-exam-topic.md
+          - Page 1: google-certs/gcp-security/gcp-security-1.md
+
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
@@ -109,7 +113,8 @@ site_name: !ENV [env,"breadNET Documentation"]
 site_url:
 site_description: breadNET Public Documentation
 
-
+#extra_css:
+#  - stylesheets/custom.css # Custom header color
 
 theme:
   name: material
