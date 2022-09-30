@@ -5,9 +5,12 @@ title: Welcome
 This is the _new_ documentation site for [breadNET](https://breadnet.co.uk)
 
 ## Other sites maintained
+| Site name                         | Link                                                           |
+|-----------------------------------|----------------------------------------------------------------|
+| Main site                         | [breadnet.co.uk](https://breadnet.co.uk)                       |
+| CV                                | [bradley.breadnet.co.uk](https://bradley.breadnet.co.uk)       |
+| Kubernetes Manifest documentation | [kubernetes.breadnet.co.uk](https://kubernetes.breadnet.co.uk) |
 
-* [breadnet.co.uk](https://breadnet.co.uk)
-* [kubernetes.breadnet.co.uk](https://kubernetes.breadnet.co.uk)
 
 ## How this site works
 
