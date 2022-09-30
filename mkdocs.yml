@@ -1,5 +1,13 @@
 nav:
   - Home: index.md
+  - Page not migrated: not-found.md
+  - Certifications:
+      - Google Cloud Architect:
+          - Page 1: google-certs/gcp-architect/gcp-architect-1.md
+          - Page 2: google-certs/gcp-architect/gcp-architect-2.md
+          - Page 3: google-certs/gcp-architect/gcp-architect-3.md
+          - Kubectl commands: google-certs/gcp-architect/kubectl-commands.md
+          - GCP Load balancer: google-certs/gcp-architect/gcp-load-balancer.md
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
@@ -79,6 +87,7 @@ nav:
       - Kubernetes:
           - Connect to container that has side car containers: kb/kubernetes/connect-to-container-that-has-sidecars.md
           - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md
+
 
 
 
