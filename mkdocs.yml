@@ -19,14 +19,14 @@ nav:
 
   - Certifications:
       - Google Cloud Architect:
-          - Page 1: google-certs/gcp-architect/gcp-architect-1.md
-          - Page 2: google-certs/gcp-architect/gcp-architect-2.md
-          - Page 3: google-certs/gcp-architect/gcp-architect-3.md
+          - Google architect - Page 1: google-certs/gcp-architect/gcp-architect-1.md
+          - Google architect - Page 2: google-certs/gcp-architect/gcp-architect-2.md
+          - Google architect - Page 3: google-certs/gcp-architect/gcp-architect-3.md
           - Kubectl commands: google-certs/gcp-architect/kubectl-commands.md
           - GCP Load balancer: google-certs/gcp-architect/gcp-load-balancer.md
       - Google Security:
-          - Exam topics : google-certs/gcp-security/1-the-exam-topic.md
-          - Page 1: google-certs/gcp-security/gcp-security-1.md
+          - Google Security - Exam topics : google-certs/gcp-security/1-the-exam-topic.md
+          - Google Security - Page 1: google-certs/gcp-security/gcp-security-1.md
 
   - KB Articles:
       - Disk management:
