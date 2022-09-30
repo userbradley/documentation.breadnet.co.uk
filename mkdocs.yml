@@ -58,6 +58,13 @@ nav:
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
+      - Authentication:
+          - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
+      - AWS:
+          - Cloud-init: kb/aws/cloud-init-sg1.md
+          - AWS CLI: kb/aws/aws-cli.md
+      - Google Workspace:
+          - Setup Routing: kb/google-workspace/setup-routing.md
 
 
 
