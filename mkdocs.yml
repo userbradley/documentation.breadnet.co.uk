@@ -70,6 +70,12 @@ nav:
       - Networking:
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
+      - Cloud:
+          - cloud-init: kb/cloud/cloud-init.md
+      - Markdown:
+          - How to use git: kb/markdown/github-repos-and-stuff.md
+          - Custom markdown badges: kb/markdown/custom-badges.md
+
 
 
 
