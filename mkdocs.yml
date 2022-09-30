@@ -67,6 +67,9 @@ nav:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Linux Command line:
           - uuidgen Lower case: kb/linux-cli/uuidgen-lowercase.md
+      - Networking:
+          - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
+          - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
 
 
 
