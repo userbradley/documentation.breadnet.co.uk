@@ -1,6 +1,22 @@
 nav:
   - Home: index.md
   - Page not migrated: not-found.md
+  - Automation:
+      - Ansible:
+          - Ansible basics: automation/ansible/basics.md
+          - Ansible install python: automation/ansible/python-install.md
+
+
+  - Cloud:
+      - Terraform:
+          - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
+          - Openstack error: cloud/terraform/openstack.md
+          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - Google IAP: cloud/terraform/google-iap.md
+          - tfupdate: cloud/terraform/tfupdate.md
+          - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
+
+
   - Certifications:
       - Google Cloud Architect:
           - Page 1: google-certs/gcp-architect/gcp-architect-1.md
