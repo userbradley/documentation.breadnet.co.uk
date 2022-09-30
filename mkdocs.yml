@@ -5,8 +5,6 @@ nav:
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
           - Ansible install python: automation/ansible/python-install.md
-
-
   - Cloud:
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
@@ -15,6 +13,10 @@ nav:
           - Google IAP: cloud/terraform/google-iap.md
           - tfupdate: cloud/terraform/tfupdate.md
           - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
+      - Google Cloud:
+          - Curl to IAP: cloud/gcp/curl-to-iap.md
+          - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
+          - Grafeas: cloud/gcp/grafeas.md
 
 
   - Certifications:
