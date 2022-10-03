@@ -35,6 +35,8 @@ nav:
           - Google Security - Page 1: certifications/google-certs/gcp-security/gcp-security-1.md
       - Gsuit administration:
           - Gsuit User administration: certifications/google-certs/workspace-admin/user-administration.md
+          - Managing Gsuit: certifications/google-certs/workspace-admin/managing-gsuit.md
+          - Google MDM: certifications/google-certs/workspace-admin/mdm.md
 
       - CKA:
           - CKA - Page 1: certifications/cka/cka-1.md
