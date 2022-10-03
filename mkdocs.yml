@@ -19,6 +19,10 @@ nav:
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Grafeas: cloud/gcp/grafeas.md
+      - Aqua:
+          - Aqua Page 1: cloud/aqua/aqua-page-1.md
+          - Aqua Page 2: cloud/aqua/aqua-page-2.md
+          - Aqua partnership notes: cloud/aqua/partnership-info.md
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
