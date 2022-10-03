@@ -33,8 +33,12 @@ nav:
       - Google Security:
           - Google Security - Exam topics : certifications/google-certs/gcp-security/1-the-exam-topic.md
           - Google Security - Page 1: certifications/google-certs/gcp-security/gcp-security-1.md
+      - Gsuit administration:
+          - Gsuit User administration: certifications/google-certs/workspace-admin/user-administration.md
+
       - CKA:
           - CKA - Page 1: certifications/cka/cka-1.md
+
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
