@@ -5,6 +5,7 @@ nav:
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
           - Ansible install python: automation/ansible/python-install.md
+      - Airflow basics: automation/airflow/airflow-basics.md
   - Cloud:
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
