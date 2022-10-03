@@ -109,6 +109,7 @@ nav:
           - Connect to container that has side car containers: kb/kubernetes/connect-to-container-that-has-sidecars.md
           - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md
   - Home:
+      - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md
       - Oven : home/oven/oven.md
       - Washing Machine: home/washing/washing-machine.md
@@ -179,6 +180,7 @@ theme:
     - search.share
     - search.highlight
     - navigation.top # back to top of page
+    - navigation.indexes
 
 
 
