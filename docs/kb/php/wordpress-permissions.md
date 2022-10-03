@@ -1,5 +1,5 @@
 ---
-title: Wordpress permissions
+title: WordPress permissions
 ---
 
 ```bash

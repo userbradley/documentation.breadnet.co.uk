@@ -43,12 +43,12 @@ Set the temperature between `200` and `250`
 !!! note
     The light comes on at all times when the oven is in use
 
-You may want to turn the light on, on it's own when cleaning the oven
+You may want to turn the light on, on its own when cleaning the oven
 
 Set the left hand dial to `light`
 
-| Left hand side         | Right hand side | 
-|------------------------|-----------------|
+| Left hand side                                          | Right hand side | 
+|---------------------------------------------------------|-----------------|
 | <img height="200" src="/assets/light.png" width="200"/> | `Null`          |
 
 ### Defrost
