@@ -48,7 +48,6 @@ nav:
 
       - CKA:
           - CKA - Page 1: certifications/cka/cka-1.md
-
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
@@ -104,6 +103,7 @@ nav:
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
           - Installed Applications: kb/public-web-facing/installed-applications-reverse.md
           - "nginx.service failed because the control process exited": kb/public-web-facing/nginxservice-failed-because-the-control-process-exited.md
+          - Serving breadNET when server is offline:  kb/other/downloading-the-breadnet-site-and-serving-a-stale-copy.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
