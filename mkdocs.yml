@@ -1,6 +1,7 @@
 nav:
   - Home: index.md
   - Page not migrated: not-found.md
+  - Bookstack: bookstack.md
   - Automation:
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
