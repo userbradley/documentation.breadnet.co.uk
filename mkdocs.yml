@@ -17,8 +17,6 @@ nav:
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Grafeas: cloud/gcp/grafeas.md
-
-
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
@@ -31,7 +29,6 @@ nav:
           - Google Security - Page 1: certifications/google-certs/gcp-security/gcp-security-1.md
       - CKA:
           - CKA - Page 1: certifications/cka/cka-1.md
-
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
@@ -111,6 +108,11 @@ nav:
       - Kubernetes:
           - Connect to container that has side car containers: kb/kubernetes/connect-to-container-that-has-sidecars.md
           - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md
+  - Home:
+      - home/index.md
+      - Consumer Unit: home/cu/consumer-unit.md
+      - Oven : home/oven/oven.md
+      - Washing Machine: home/washing/washing-machine.md
 
 
 
@@ -178,6 +180,7 @@ theme:
     - search.share
     - search.highlight
     - navigation.top # back to top of page
+    - navigation.indexes
 
 
 
@@ -193,6 +196,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true # Pretty check lists
   - tables
