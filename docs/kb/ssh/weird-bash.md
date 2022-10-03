@@ -3,7 +3,7 @@ title: Weird bash
 outdated: true
 ---
 
-If you logon to a server and there's no auto complete etc, run
+If you log on to a server and there's no auto complete etc, run
 
 
 

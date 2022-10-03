@@ -37,7 +37,7 @@ The washing machine has `9` buttons
 
 This function is useless, as the `3h` light will always be lit up.
 
-To work out when the machine is done, you can wait until the machine beeps and you hear two `Tick` noises.
+To work out when the machine is done, you can wait until the machine beeps, and you hear two `Tick` noises.
 
 
 #### Hour lights
