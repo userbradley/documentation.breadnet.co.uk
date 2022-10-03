@@ -33,8 +33,22 @@ nav:
       - Google Security:
           - Google Security - Exam topics : certifications/google-certs/gcp-security/1-the-exam-topic.md
           - Google Security - Page 1: certifications/google-certs/gcp-security/gcp-security-1.md
+      - Gsuit administration:
+          - Gsuit User administration: certifications/google-certs/workspace-admin/user-administration.md
+          - Managing Gsuit: certifications/google-certs/workspace-admin/managing-gsuit.md
+          - Google MDM: certifications/google-certs/workspace-admin/mdm.md
+      - GCP Associate:
+          - Regions and Zones: certifications/google-certs/gcp-associate/regions-and-zones.md
+          - Associate cert exam: certifications/google-certs/gcp-associate/gcp.md
+          - Google Compute engine: certifications/google-certs/gcp-associate/gce-google-compute-engine.md
+          - Networking and LB: certifications/google-certs/gcp-associate/networking-and-lb.md
+          - VM Bootstrapping, templates and Images: certifications/google-certs/gcp-associate/vm-bootstrapping-templates-and-images.md
+          - Costs: certifications/google-certs/gcp-associate/costs.md
+          - Compute Engine: certifications/google-certs/gcp-associate/compute-engine.md
+
       - CKA:
           - CKA - Page 1: certifications/cka/cka-1.md
+
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
