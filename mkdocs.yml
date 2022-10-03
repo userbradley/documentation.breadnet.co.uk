@@ -111,6 +111,7 @@ nav:
   - Home:
       - Consumer Unit: home/cu/consumer-unit.md
       - Oven : home/oven/oven.md
+      - Washing Machine: home/washing/washing-machine.md
 
 
 
@@ -193,6 +194,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true # Pretty check lists
   - tables
