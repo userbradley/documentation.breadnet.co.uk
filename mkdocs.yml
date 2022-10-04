@@ -130,6 +130,7 @@ nav:
           - Connect to container that has side car containers: kb/kubernetes/connect-to-container-that-has-sidecars.md
           - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md
           - Set default namespace kubectl: kb/kubernetes/kubectl-set-namespace.md
+          - Testing RBAC: kb/kubernetes/rbac-testing.md
   - Home:
       - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md
