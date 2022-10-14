@@ -73,6 +73,8 @@ nav:
       - Google cloud:
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell" : kb/google-cloud/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - "Serverless VPC access for Cloudrun across Projects" : kb/google-cloud/serverless-vpc-access-for-cloudrun-across-projects.md
+          - Get project using GCE Metadata API: kb/google-cloud/api-get-project.md
+          - Get serviceAccount using GCE Metadata API: kb/google-cloud/api-get-sa.md
       - Linux Networking:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
           - DNS on Ubuntu: kb/linux-networking/dns-on-ubuntu.md
@@ -131,6 +133,8 @@ nav:
           - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md
           - Set default namespace kubectl: kb/kubernetes/kubectl-set-namespace.md
           - Testing RBAC: kb/kubernetes/rbac-testing.md
+          - Workload ID test pod: kb/kubernetes/workload-id-test.md
+          - Sleeper pod: kb/kubernetes/sleeper.md
   - Home:
       - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md
