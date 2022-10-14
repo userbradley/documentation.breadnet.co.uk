@@ -70,9 +70,9 @@ You will know when you're on the development site, as the colors are red!
 
 # File directory
 
-```text.
+```text
+.
 ├── README.md
-├── bookstack.sql
 ├── cd
 │   └── codefresh-v1.yml
 ├── docker-compose.yml
@@ -199,6 +199,8 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── installing-docker.md
 │   │   │   └── installing-jellyfin.md
 │   │   ├── google-cloud
+│   │   │   ├── api-get-project.md
+│   │   │   ├── api-get-sa.md
 │   │   │   ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
 │   │   │   └── serverless-vpc-access-for-cloudrun-across-projects.md
 │   │   ├── google-workspace
@@ -206,8 +208,12 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── kubernetes
 │   │   │   ├── connect-to-container-that-has-sidecars.md
 │   │   │   ├── deleting-not-running-pods.md
-│   │   │   └── kubectl-set-namespace.md
+│   │   │   ├── kubectl-set-namespace.md
+│   │   │   ├── rbac-testing.md
+│   │   │   ├── sleeper.md
+│   │   │   └── workload-id-test.md
 │   │   ├── linux-cli
+│   │   │   ├── blc.md
 │   │   │   └── uuidgen-lowercase.md
 │   │   ├── linux-networking
 │   │   │   ├── bringing-up-interfaces.md
@@ -245,7 +251,6 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── installed-applications-reverse.md
 │   │   │   ├── jellyfin-s3.md
 │   │   │   ├── nginxservice-failed-because-the-control-process-exited.md
-│   │   │   ├── pages.yml
 │   │   │   ├── remove-server-headers.md
 │   │   │   ├── reverse-web-proxy.md
 │   │   │   ├── send-test-email-on-passbolt.md
@@ -269,7 +274,7 @@ You will know when you're on the development site, as the colors are red!
 │   └── main.html
 └── redirect.conf
 
-42 directories, 155 files
+42 directories, 159 files
 
 ```
 
