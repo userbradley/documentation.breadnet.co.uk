@@ -70,6 +70,7 @@ nav:
           - Exporting and importing: kb/docker/exporting-and-importing.md
           - Docker Architecture: kb/docker/docker-architecture.md
           - Bulk retag: kb/docker/bulk-retag.md
+          - Copy images between repositories: kb/docker/copy-containers-between-repos.md
       - Google cloud:
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell" : kb/google-cloud/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - "Serverless VPC access for Cloudrun across Projects" : kb/google-cloud/serverless-vpc-access-for-cloudrun-across-projects.md
