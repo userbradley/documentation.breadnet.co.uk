@@ -25,7 +25,8 @@ steps:
       - export color=red
       - export env="Development Server"
       - export nav="navigation.expand"
-      - cf_export color env nav
+      - export domain="https://dev-documentation.breadnet.co.uk"
+      - cf_export color env nav domain
 
   set-robots:
     title: "Set Robots.txt on dev"
