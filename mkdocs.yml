@@ -207,7 +207,7 @@ theme:
     - !ENV [nav, ""]#navigation.expand #Exapnds the navigation in the UI, disabled by default, but enabled in dev
     - content.code.annotate
     - search.share
-    - search.highlight
+    # - search.highlight
     - navigation.top # back to top of page
     - navigation.indexes
 
