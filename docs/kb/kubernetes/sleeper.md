@@ -8,7 +8,7 @@ Sometimes we need to run a pod on the cluster to exec in to and test things, lik
 
 ## How
 
-=== "No Service account"
+=== "Default"
 
     ```yaml
     apiVersion: v1
@@ -26,7 +26,7 @@ Sometimes we need to run a pod on the cluster to exec in to and test things, lik
 
 === "Service account"
 
-    ```yaml
+    ```yaml hl_lines="6"
     apiVersion: v1
     kind: Pod
     metadata:
@@ -39,6 +39,26 @@ Sometimes we need to run a pod on the cluster to exec in to and test things, lik
           # Just spin & wait forever
           command: [ "/bin/sh", "-c", "--" ]
           args: [ "while true; do sleep 30; done;" ]
+    ```
+
+=== "Environments from config map"
+
+    ```yaml hl_lines="12-15"
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: sleeper
+    spec:
+      containers:
+        - name: alpine
+          image: alpine:latest
+          # Just spin & wait forever
+          command: [ "/bin/sh", "-c", "--" ]
+          args: [ "while true; do sleep 30; done;" ]
+          envFrom:
+            - configMapRef:
+                name: <config map name>
+    
     ```
 
 ## Exec in to the pod
