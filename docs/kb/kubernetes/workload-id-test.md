@@ -44,7 +44,6 @@ You will need to have the `compute metadata api` service running in the cluster
           name: workload-identity-test
           command: ["sleep","infinity"]
       serviceAccountName: <>
-    
       nodeSelector:
         iam.gke.io/gke-metadata-server-enabled: "true"
     ```
