@@ -48,4 +48,13 @@ gcrane cp -r userbradley/searchsploit europe-west2.pkg.dev/bradley/searchsploit/
 ## External sources 
 
 * [Google Documentation](https://cloud.google.com/artifact-registry/docs/docker/copy-from-gcr#gcrane-local)
-* [Github source code](https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.md)
+* [Github source code](https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.mdg)
+
+## footnotes
+
+!!! Note "If you are not copying to GAR"
+     
+    You may want to look at the below
+    ````
+    https://github.com/containers/skopeo
+    ```
