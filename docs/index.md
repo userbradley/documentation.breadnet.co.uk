@@ -1,5 +1,8 @@
 ---
 title: Welcome
+hide:
+    - toc
+    - edit
 ---
 
 This is the _new_ documentation site for [breadNET](https://breadnet.co.uk)
@@ -19,7 +22,7 @@ replacing `bookstack.breadnet.co.uk` (Which is now offline)
 
 I have decided to move towards an [SCM](https://git-scm.com) based site.
 
-This means I write [markdown files]() and then using [mkdocs](mkdocs.org/) with the [material theme](https://squidfunk.github.io/mkdocs-material/)
+This means I write [markdown files](https://raw.githubusercontent.com/userbradley/documentation.breadnet.co.uk/master/README.md) and then using [mkdocs](https://mkdocs.org/) with the [material theme](https://squidfunk.github.io/mkdocs-material/)
 the site gets built.
 
 ### How the site gets _built_
@@ -27,3 +30,5 @@ the site gets built.
 I have a CD pipeline that builds the site and copies it to the webserver
 
 ![](assets/pipeline.png)
+
+You can view the [Source code](https://github.com/userbradley/documentation.breadnet.co.uk/blob/dev/cd/codefresh-v1.yml) for the pipeline 
