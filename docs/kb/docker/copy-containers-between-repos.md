@@ -1,6 +1,5 @@
 ---
 title: Copy containers between repos
-outdated: true
 ---
 
 # Copy containers between repos
@@ -55,6 +54,7 @@ gcrane cp -r userbradley/searchsploit europe-west2.pkg.dev/bradley/searchsploit/
 !!! Note "If you are not copying to GAR"
      
     You may want to look at the below
+
     ````
     https://github.com/containers/skopeo
     ```
