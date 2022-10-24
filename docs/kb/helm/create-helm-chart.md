@@ -27,6 +27,14 @@ title: Creating a helm chart
 
 ## Create a helm chart
 
-```shell
-helm create <name>
-```
+=== "Simple way" 
+
+    ```shell
+    helm create <name>
+    ```
+
+=== "Using name of current folder"
+
+    ```shell
+    helm create $(basename $(pwd))
+    ```
