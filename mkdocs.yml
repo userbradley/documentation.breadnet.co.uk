@@ -142,6 +142,7 @@ nav:
 
       - Helm:
           - Create a helm chart: kb/helm/create-helm-chart.md
+          - Push chart to Artifact Registry: kb/helm/push-chart-to-ar.md
   - Home:
       - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md
