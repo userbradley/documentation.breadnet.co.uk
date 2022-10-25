@@ -62,3 +62,7 @@ helm package <path to chart>
 ```shell
 helm push <chart name>-*.tgz oci://europe-west2-docker.pkg.dev/<your GCP project name>/helm-store/
 ```
+
+## What to read next
+
+[Using GCS as a helm repo](helm-repo-gcs.md)
