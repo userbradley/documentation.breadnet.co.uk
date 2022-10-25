@@ -143,6 +143,7 @@ nav:
       - Helm:
           - Create a helm chart: kb/helm/create-helm-chart.md
           - Push chart to Artifact Registry: kb/helm/push-chart-to-ar.md
+          - Use GCS as helm repo: kb/helm/helm-repo-gcs.md
   - Home:
       - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md
