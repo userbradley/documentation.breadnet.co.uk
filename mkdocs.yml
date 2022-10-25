@@ -121,6 +121,7 @@ nav:
       - Linux Command line:
           - uuidgen Lower case: kb/linux-cli/uuidgen-lowercase.md
           - Broken link checker: kb/linux-cli/blc.md
+          - Get current Folder: kb/linux-cli/get-current-folder.md
       - Networking:
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
@@ -135,8 +136,10 @@ nav:
           - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md
           - Set default namespace kubectl: kb/kubernetes/kubectl-set-namespace.md
           - Testing RBAC: kb/kubernetes/rbac-testing.md
+          - Workload ID KSA: kb/kubernetes/service-account-with-workload-id.md
           - Workload ID test pod: kb/kubernetes/workload-id-test.md
           - Sleeper pod: kb/kubernetes/sleeper.md
+
       - Helm:
           - Create a helm chart: kb/helm/create-helm-chart.md
   - Home:
