@@ -3,6 +3,8 @@ title: Installed Applications
 outdated: true
 ---
 
+# Installed Applications
+
 ```shell
 [email protected]:/etc/nginx/sites-available# apt list --installed
 Listing... Done

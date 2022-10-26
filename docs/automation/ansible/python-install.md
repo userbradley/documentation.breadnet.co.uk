@@ -2,6 +2,7 @@
 title: Python install using Ansible
 outdated: true
 ---
+# Python install using Ansible
 
 For some reporting, Ansible needs python!
 

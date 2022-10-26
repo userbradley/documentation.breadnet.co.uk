@@ -2,6 +2,7 @@
 title: Bringing up Interfaces
 outdated: true
 ---
+# Bringing up Interfaces
 
 ## Bringing interfaces up/down
 

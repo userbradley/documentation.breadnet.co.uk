@@ -3,6 +3,8 @@ title: Exporting and importing
 outdated: true
 ---
 
+# Exporting and importing
+
 <p id="bkmrk-sometimes-you-will-n">Sometimes you will need to export an image as a zip file because you cant commit it to a repo</p>
 <pre id="bkmrk-docker-export-%3Cimage"><code class="language-">docker export &lt;image&gt;:&lt;tag&gt; -o &lt;image&gt;.zip</code></pre>
 <p id="bkmrk-copy-the-file-where-">Copy the file where ever you need it to be done</p>

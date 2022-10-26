@@ -3,7 +3,8 @@ title: cloud-init
 outdated: true
 ---
 
-Cloud init is awesome, but a pain to setup.
+# cloud-init
+Cloud init is awesome, but a pain to set up.
 
 
 

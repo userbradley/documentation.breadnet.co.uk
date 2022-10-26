@@ -3,6 +3,8 @@ title: VM Bootstrapping, templates and Images
 outdated: true
 ---
 
+# VM Bootstrapping, templates and Images
+
 You can bootstrap an instance with a startup script
 
 You are then also able to create templates for configuring your specs

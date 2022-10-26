@@ -3,7 +3,9 @@ title: Fingerprint on Linux Mint
 outdated: true
 ---
 
-Use fprintd (lacks gui)
+# Fingerprint on Linux Mint
+
+Use `fprintd` (lacks gui)
 
 ```shell
 sudo apt install fprintd libpam-fprintd

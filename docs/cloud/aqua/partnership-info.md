@@ -3,6 +3,8 @@ title: Aqua partnership info
 outdated: true
 ---
 
+# Aqua partnership info
+
 <p id="bkmrk-worst-kind-of-partne">Worst kind of partners is those who throw things from customer to partner to company as it's bad communication.</p>
 <p id="bkmrk-we-are-treated-as-a-">We are treated as a level 1 support team. </p>
 <ol id="bkmrk-status-what-has-been">

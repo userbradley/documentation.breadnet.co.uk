@@ -3,6 +3,8 @@ title: Regions and Zones
 outdated: true
 ---
 
+# Regions and Zones
+
 Only deploying in to one DC can cause latency and issues, should your DC burn down, you lose the application. Secondly it can increase latency.
 
 You will want to deploy to many regions as it allows you to have minimal latency, allows for global footprint and adhere to gov regulations.

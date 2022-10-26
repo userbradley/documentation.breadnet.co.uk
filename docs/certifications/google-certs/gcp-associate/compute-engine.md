@@ -3,6 +3,8 @@ title: Compute Engine
 outdated: true
 ---
 
+# Compute Engine
+
 <h4 id="bkmrk-ha">HA</h4>
 <p id="bkmrk-live-migration-and-a">Live migration and availability policy</p>
 <p id="bkmrk-your-running-instanc">Your running instance is migrated to another host in the same zone</p>

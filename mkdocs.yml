@@ -130,7 +130,7 @@ nav:
       - Markdown:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
-          - Build By badge: kb/markdown/built-by-badge.md
+          - Built By badge: kb/markdown/built-by-badge.md
       - Kubernetes:
           - Connect to container that has side car containers: kb/kubernetes/connect-to-container-that-has-sidecars.md
           - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md

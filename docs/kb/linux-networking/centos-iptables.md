@@ -3,6 +3,8 @@ title: Centos Iptables
 outdated: true
 ---
 
+# Centos Iptables
+
 ```bash
 systemctl stop firewalld
 systemctl disable firewalld

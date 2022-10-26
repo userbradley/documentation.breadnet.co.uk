@@ -3,6 +3,8 @@ title: Installing jellyfin
 outdated: true
 ---
 
+# Installing jellyfin
+
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.shsh
 get-docker.sh

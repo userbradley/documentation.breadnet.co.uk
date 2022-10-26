@@ -3,6 +3,9 @@ title: Google Compute Engine
 outdated: true
 ---
 
+# Google Compute Engine
+
+
 In datacenters, applications are deployed to Physical machines, where as in the cloud we provision a virtual server.
 
 We use Google compute engine which allows us to manage the lifecycle of VM's
