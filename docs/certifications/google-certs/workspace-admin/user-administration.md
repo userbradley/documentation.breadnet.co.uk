@@ -3,6 +3,8 @@ title: Gsuit - User administration
 outdated: true
 ---
 
+# Gsuit - User administration
+
 <p id="bkmrk-global-info-can-be-s">Global info can be set under `Account settings` but this has changed from `Company profile` </p>
 <p id="bkmrk-%C2%A0"> </p>
 <h5 id="bkmrk-users">Users</h5>

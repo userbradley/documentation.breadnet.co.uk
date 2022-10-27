@@ -2,6 +2,7 @@
 title: Airflow basics
 outdated: true
 ---
+# Airflow basics
 
 <p id="bkmrk-airflow-exists-for-t">Airflow exists for the sole purpose of removing the need to write a bash or python script, setup a server with a cron job and then run your ETL pipeline. With Airflow we're doing all this under one roof with monitoring and visualization built in.</p>
 <p id="bkmrk-%C2%A0"> </p>

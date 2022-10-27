@@ -2,6 +2,7 @@
 title: Github repo's and stuff
 outdated: true
 ---
+# How to use git
 
 To clone a repo, go to the webpage and click the `clone or download` button and click 'Use SSH'
 
@@ -19,7 +20,7 @@ Run:
 git clone git@github.com:<repo url>
 ```
 
-Once cloned, go to it's folder and edit the code to your hearts content
+Once cloned, go to its folder and edit the code to your hearts content
 
 Once you're ready to push your code
 

@@ -3,6 +3,8 @@ title: Bookstack
 outdated: true
 ---
 
+# Bookstack
+
 How to enable `Dark Mode` on Bookstack
 
 !!! Note

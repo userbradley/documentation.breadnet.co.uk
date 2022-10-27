@@ -3,6 +3,8 @@ title: Aqua - Page 1
 outdated: true
 ---
 
+# Aqua - Page 1
+
 <h4 id="bkmrk-introduction">Introduction</h4>
 <p id="bkmrk-aqua-has-a-market-ar">Aqua has a market around the security of cloud deployments due to the lack of full stack control, down to restructuring  and refactoring. </p>
 <table id="bkmrk-cluster-hygiene-imag" style="border-collapse: collapse; width: 100%;" border="1">

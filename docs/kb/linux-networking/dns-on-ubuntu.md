@@ -3,6 +3,8 @@ title: DNS on Ubuntu
 outdated: true
 ---
 
+# DNS on Ubuntu
+
 1. Install the resolvconf package.
 ```bash
 sudo apt install resolvconf

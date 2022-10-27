@@ -1,0 +1,8 @@
+version: 3
+
+tasks:
+  push:
+    cmds:
+      - git add *
+      - git commit -m 'Made changes'
+      - git push

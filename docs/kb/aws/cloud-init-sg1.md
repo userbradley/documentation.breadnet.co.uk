@@ -3,6 +3,8 @@ title: Cloud-init
 outdated: true
 ---
 
+# Cloud-init
+
 ```shell
 Content-Type: multipart/mixed; boundary="//"
 MIME-Version: 1.0

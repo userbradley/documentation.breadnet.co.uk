@@ -3,6 +3,8 @@ title: Ansible Basics
 outdated: true
 ---
 
+# Ansible Basics
+
 <p id="bkmrk-i-always-create-a-fo">I always create a folder for new tasks, so installing Nginx</p>
 <p id="bkmrk-ansible">Ansible<br>|<br>|-----Nginx<br>|        |---hosts<br>|        |---nginx.yaml</p>
 <p id="bkmrk-etc">etc</p>

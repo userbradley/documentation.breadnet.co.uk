@@ -3,6 +3,8 @@ title: Netplan 2 interfaces
 outdated: true
 ---
 
+# Netplan 2 interfaces
+
 Edit the file in /etc/netplan/ and add the below:
 
 Make sure to back up the file!

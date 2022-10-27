@@ -3,8 +3,10 @@ title: Networking and LB
 outdated: true
 ---
 
+# Networking and LB
+
 You get an internal network, and an external. You cant have 2 resources with the same IP address
-How ever you can have separate resources with the same IP address if they are internal
+However you can have separate resources with the same IP address if they are internal
 
 You need at least one IP address per VM, internal or External
 

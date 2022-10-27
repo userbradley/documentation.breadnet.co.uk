@@ -3,6 +3,8 @@ title: Jellyfin using S3 and Docker
 outdated: true
 ---
 
+# Jellyfin using S3 and Docker
+
 !!! Error "DO NOT USE"
     THIS IS ONLY MIGRATED TO KEEP LINKS ALIVE, AND SHOULD NEVER BE USED. IT'S INSECURE AND DOES NOT FOLLOW BEST PRACTICES. 
 

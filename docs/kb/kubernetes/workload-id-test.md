@@ -2,6 +2,8 @@
 title: Workload ID test pod
 ---
 
+# Workload Identity test pod
+
 ## Why
   
 Sometimes you need to run a simple pod on the cluster to check things, call a service or run commands
