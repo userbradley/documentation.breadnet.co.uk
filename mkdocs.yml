@@ -16,6 +16,7 @@ nav:
           - tfupdate: cloud/terraform/tfupdate.md
           - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
           - Remote Data: cloud/terraform/remote-data.md
+          - To string from list in terraform: cloud/terraform/to-string-from-list.md
       - Google Cloud:
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
