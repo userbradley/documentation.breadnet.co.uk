@@ -88,6 +88,7 @@ nav:
           - "List of unique IP's": kb/linux-networking/list-of-unique-ips.md
           - Connections on a port: kb/linux-networking/connections-on-a-port.md
           - RVC IP Range: kb/linux-networking/rvc-ip-range.md
+          - Nmap scanning: kb/linux-networking/nmap-scans.md
       - SSH:
           - SSH Keys: kb/ssh/ssh-keys.md
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
