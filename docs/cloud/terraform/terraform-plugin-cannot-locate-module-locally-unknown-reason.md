@@ -20,7 +20,6 @@ We get the error
 Terraform plugin: Cannot locate module locally, unknown reason
 ```
 
-
 To resolve this, change the format to:
 
 ```terraform
