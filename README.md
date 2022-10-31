@@ -65,7 +65,7 @@ The site is only built on PR merge to master
 
 This branch houses the development site, which is built on each commit to `dev`
 
-Site is available at [dev-documentation.breadnet.co.uk](dev-documentation.breadnet.co.uk)
+Site is available at [dev-documentation.breadnet.co.uk](https://dev-documentation.breadnet.co.uk)
 
 You will know when you're on the development site, as the colors are red!
 
@@ -73,7 +73,9 @@ You will know when you're on the development site, as the colors are red!
 
 ```text
 .
+├── LICENSE
 ├── README.md
+├── Taskfile.yml
 ├── cd
 │   └── codefresh-v1.yml
 ├── docker-compose.yml
@@ -118,7 +120,8 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── s3e11nJc8jbmRYtA-image-1621087752258.png
 │   │   ├── sGYTTQzEk4MNllA8-image-1642771319408.png
 │   │   ├── tjxlFRVsXUgsDatm-image-1588972001839.png
-│   │   └── x5BORuXlBtctN0Mi-image-1646765189176.png
+│   │   ├── x5BORuXlBtctN0Mi-image-1646765189176.png
+│   │   └── xcode.png
 │   ├── automation
 │   │   ├── airflow
 │   │   │   └── airflow-basics.md
@@ -142,7 +145,6 @@ You will know when you're on the development site, as the colors are red!
 │   │       │   ├── gce-google-compute-engine.md
 │   │       │   ├── gcp.md
 │   │       │   ├── networking-and-lb.md
-│   │       │   ├── pages.yml
 │   │       │   ├── regions-and-zones.md
 │   │       │   └── vm-bootstrapping-templates-and-images.md
 │   │       ├── gcp-security
@@ -168,7 +170,8 @@ You will know when you're on the development site, as the colors are red!
 │   │       ├── recursive-delete-of-terraform.md
 │   │       ├── remote-data.md
 │   │       ├── terraform-plugin-cannot-locate-module-locally-unknown-reason.md
-│   │       └── tfupdate.md
+│   │       ├── tfupdate.md
+│   │       └── to-string-from-list.md
 │   ├── home
 │   │   ├── cu
 │   │   │   └── consumer-unit.md
@@ -194,6 +197,7 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── docker
 │   │   │   ├── basics-of-docker.md
 │   │   │   ├── bulk-retag.md
+│   │   │   ├── copy-containers-between-repos.md
 │   │   │   ├── docker-architecture.md
 │   │   │   ├── docker-intro-and-notes.md
 │   │   │   ├── exporting-and-importing.md
@@ -206,16 +210,16 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   └── serverless-vpc-access-for-cloudrun-across-projects.md
 │   │   ├── google-workspace
 │   │   │   └── setup-routing.md
+│   │   ├── helm
+│   │   │   ├── create-helm-chart.md
+│   │   │   ├── helm-repo-gcs.md
+│   │   │   └── push-chart-to-ar.md
 │   │   ├── kubernetes
-│   │   │   ├── connect-to-container-that-has-sidecars.md
-│   │   │   ├── deleting-not-running-pods.md
-│   │   │   ├── kubectl-set-namespace.md
-│   │   │   ├── rbac-testing.md
-│   │   │   ├── sleeper.md
-│   │   │   └── workload-id-test.md
 │   │   ├── linux-cli
 │   │   │   ├── blc.md
-│   │   │   └── uuidgen-lowercase.md
+│   │   │   ├── get-current-folder.md
+│   │   │   ├── uuidgen-lowercase.md
+│   │   │   └── xcrun-error-invalid-active-developer-path.md
 │   │   ├── linux-networking
 │   │   │   ├── bringing-up-interfaces.md
 │   │   │   ├── centos-iptables.md
@@ -224,6 +228,7 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── list-of-unique-ips.md
 │   │   │   ├── listen-on-a-port.md
 │   │   │   ├── netplan-2-interfaces.md
+│   │   │   ├── nmap-scans.md
 │   │   │   ├── null-routing.md
 │   │   │   ├── rvc-ip-range.md
 │   │   │   └── uninstall-netplan.md
@@ -249,7 +254,6 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── certbot.md
 │   │   │   ├── check-passbolt-is-healthy.md
 │   │   │   ├── custom-headers.md
-│   │   │   ├── installed-applications-reverse.md
 │   │   │   ├── jellyfin-s3.md
 │   │   │   ├── nginxservice-failed-because-the-control-process-exited.md
 │   │   │   ├── remove-server-headers.md
@@ -266,16 +270,28 @@ You will know when you're on the development site, as the colors are red!
 │   │   └── wasabi
 │   │       ├── policies.md
 │   │       └── transport-endpoint-is-not-connected.md
+│   ├── kubernetes
+│   │   ├── connect-to-container-that-has-sidecars.md
+│   │   ├── deleting-not-running-pods.md
+│   │   ├── downward-api.md
+│   │   ├── index.md
+│   │   ├── kubectl-set-namespace.md
+│   │   ├── rbac-testing.md
+│   │   ├── service-account-with-workload-id.md
+│   │   ├── sleeper.md
+│   │   └── workload-id-test.md
 │   ├── not-found.md
 │   ├── robots.txt
 │   └── stylesheets
 │       └── custom.css
 ├── mkdocs.yml
+├── nginx
+│   └── conf
+├── nginx.conf
 ├── overrides
 │   └── main.html
 └── redirect.conf
 
-42 directories, 159 files
+46 directories, 172 files
 
 ```
-
