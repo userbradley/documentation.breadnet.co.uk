@@ -142,6 +142,7 @@ nav:
           - Workload ID KSA: kb/kubernetes/service-account-with-workload-id.md
           - Workload ID test pod: kb/kubernetes/workload-id-test.md
           - Sleeper pod: kb/kubernetes/sleeper.md
+          - Downward API: kb/kubernetes/downward-api.md
 
       - Helm:
           - Create a helm chart: kb/helm/create-helm-chart.md
