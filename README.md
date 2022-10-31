@@ -65,7 +65,7 @@ The site is only built on PR merge to master
 
 This branch houses the development site, which is built on each commit to `dev`
 
-Site is available at [dev-documentation.breadnet.co.uk](dev-documentation.breadnet.co.uk)
+Site is available at [dev-documentation.breadnet.co.uk](https://dev-documentation.breadnet.co.uk)
 
 You will know when you're on the development site, as the colors are red!
 
