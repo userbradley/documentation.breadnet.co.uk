@@ -11,7 +11,7 @@ Sometimes we need to give a user access to a resource in Kubernetes, and don't w
 ## Command Reference
 
 ```shell
-kubectl auth can-i
+admin auth can-i
 ```
 
 ??? note "Help"
@@ -74,13 +74,13 @@ kubectl auth can-i
     This assumes namespace is `default`
 
 ```shell
-kubectl auth can-i create deployment
+admin auth can-i create deployment
 ```
 
 #### Create deployment in different namespace
 
 ```shell
-kubectl auth can-i create deployment --namespace bradley 
+admin auth can-i create deployment --namespace bradley 
 ```
 
 ### Other user
@@ -88,7 +88,7 @@ kubectl auth can-i create deployment --namespace bradley
 #### Check if current user can create deployment
 
 ```shell
-kubectl auth can-i create deployment --namespace <namespace> -as <username> # (1)!
+admin auth can-i create deployment --namespace <namespace> -as <username> # (1)!
 ```
 
 1. `<username>` needs to appear as it does in the `RoleBinding` 
@@ -96,7 +96,7 @@ kubectl auth can-i create deployment --namespace <namespace> -as <username> # (1
 #### Get list of actions other user can do
 
 ```shell
-kubectl auth can-i --list --as <username> # (1)! 
+admin auth can-i --list --as <username> # (1)! 
 ```
 
 1. `<username>` needs to appear as it does in the `RoleBinding`

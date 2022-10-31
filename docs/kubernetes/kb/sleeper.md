@@ -66,7 +66,7 @@ Sometimes we need to run a pod on the cluster to exec in to and test things, lik
 ## Exec in to the pod
 
 ```shell
-kubectl exec -it pod/sleeper /bin/sh
+admin exec -it pod/sleeper /bin/sh
 ```
 
 

@@ -15,5 +15,5 @@ the name space
 ## Solution
 
 ```shell
-kubectl config set-context --current --namespace=<insert-namespace-name-here>
+admin config set-context --current --namespace=<insert-namespace-name-here>
 ```
