@@ -2,6 +2,8 @@
 title: Kubectl commands
 ---
 
+# Kubectl commands
+
 <h4 id="bkmrk-connect-to-the-clust">Connect to the cluster</h4>
 <pre id="bkmrk-gcloud-container-clu"><code class="language-">gcloud container clusters get-credentials &lt;cluster name&gt; --zone us-central1-c --project &lt;project name&gt;</code></pre>
 <h4 id="bkmrk-get-pods">Get pods</h4>

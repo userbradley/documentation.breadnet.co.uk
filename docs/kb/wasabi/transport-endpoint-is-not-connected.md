@@ -2,6 +2,8 @@
 title: Transport endpoint is not connected
 ---
 
+# Transport endpoint is not connected
+
 This sometimes comes about when you connect to an S3 bucket via rclone then kill it,
 
 ```shell

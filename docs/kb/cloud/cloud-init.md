@@ -4,6 +4,7 @@ outdated: true
 ---
 
 # cloud-init
+
 Cloud init is awesome, but a pain to set up.
 
 

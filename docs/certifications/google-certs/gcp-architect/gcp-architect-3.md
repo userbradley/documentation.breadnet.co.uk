@@ -2,6 +2,8 @@
 title: Google cloud architect - page 3
 ---
 
+# Google cloud architect - page 3
+
 <h3 id="bkmrk-additional-services">Additional Services</h3>
 <h4 id="bkmrk-cloud-scheduler">Cloud Scheduler</h4>
 <ul id="bkmrk-cloud-scheduler-full">

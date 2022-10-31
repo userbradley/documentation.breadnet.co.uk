@@ -1,6 +1,11 @@
 ---
 title: Not specifying namespace each time
 ---
+# Kubectl set namespace
+
+!!! note
+
+        A better solution is to use something like [kubectx + kubens](https://github.com/ahmetb/kubectx)
 
 ## Why
 

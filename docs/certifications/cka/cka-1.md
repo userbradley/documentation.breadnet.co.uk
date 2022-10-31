@@ -2,6 +2,8 @@
 title: CKA - Page 1
 ---
 
+# CKA - Page 1
+
 ## Resources
 
 Code for exam reduction: *DEVOPS15*

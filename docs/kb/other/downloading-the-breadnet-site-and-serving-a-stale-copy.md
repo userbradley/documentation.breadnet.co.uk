@@ -2,6 +2,8 @@
 title: Downloading the breadNET site and serving a stale copy
 ---
 
+# Downloading the breadNET site and serving a stale copy
+
 This is part of a project to serve the breadnet site when the server goes down for maintenance. 
 
 ## Download the site

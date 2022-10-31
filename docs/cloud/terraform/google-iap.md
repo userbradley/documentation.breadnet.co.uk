@@ -2,6 +2,8 @@
 title: Google IAP
 ---
 
+# Google IAP
+
 ## Get the brands available
 
 ```shell

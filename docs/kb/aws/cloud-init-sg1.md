@@ -1,9 +1,9 @@
 ---
-title: Cloud-init
+title: AWS Cloud-init
 outdated: true
 ---
 
-# Cloud-init
+# AWS Cloud-init
 
 ```shell
 Content-Type: multipart/mixed; boundary="//"

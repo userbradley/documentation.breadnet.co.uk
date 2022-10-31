@@ -2,6 +2,8 @@
 title: Google Architect - page 1
 ---
 
+# Google Architect - page 1
+
 <p id="bkmrk-gcp-has-200%2B-service">GCP has 200+ services</p>
 <p id="bkmrk-the-exam-tests-your-">The exam tests your <strong>decision making<br></strong></p>
 <ul id="bkmrk-which-services-do-yo">
