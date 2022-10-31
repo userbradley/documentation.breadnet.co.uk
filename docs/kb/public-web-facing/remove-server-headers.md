@@ -2,6 +2,8 @@
 title: Remove server Headers
 ---
 
+# Remove server Headers
+
 Install [nginx extras](custom-headers.md)
 
 Add below

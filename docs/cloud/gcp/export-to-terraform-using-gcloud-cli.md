@@ -2,6 +2,8 @@
 title: Export to terraform using gcloud cli
 ---
 
+# Export to terraform using gcloud cli
+
 1. Create a bucket if your GCP account has location constraints enabled
 2. Enable `cloudasset.googleapis.com` on GCP
 

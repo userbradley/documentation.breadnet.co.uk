@@ -2,6 +2,8 @@
 title: Send test email on Passbolt
 ---
 
+# Send test email on Passbolt
+
 Exec in to the container
 
 ```shell

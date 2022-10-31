@@ -2,6 +2,8 @@
 title: GCP Security, page 1
 ---
 
+# GCP Security, page 1
+
 <h2 id="bkmrk-google-cloud-profess" class="align-center">Google cloud Professional Security Engineer</h2>
 <p id="bkmrk-"><br></p>
 <p id="bkmrk-the-exam-itself%2C-is-">The exam itself, is a multiple choice 2 hour test.&nbsp;</p>

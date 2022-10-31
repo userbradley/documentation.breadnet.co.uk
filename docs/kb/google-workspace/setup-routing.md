@@ -1,6 +1,9 @@
 ---
 title: Setup Routing
 ---
+
+# Google Workspace: Setup routing
+
 Go to:
 
 `Apps` > `Google Workspace` > `Gmail`

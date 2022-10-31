@@ -1,6 +1,9 @@
 ---
 title: SSH keys
 ---
+
+# SSH keys
+
 ## generate SSH keys and copy them to host
 
 On the host you are logged in to, but want to ssh to another host with no password run the below

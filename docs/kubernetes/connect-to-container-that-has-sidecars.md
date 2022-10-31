@@ -2,6 +2,8 @@
 title: Connect to container that has sidecars
 ---
 
+# Connect to container that has sidecars
+
 ```shell
 kubectl exec -it -n <namespace>  <pod name> -c <sidecar name> /bin/sh 
 ```

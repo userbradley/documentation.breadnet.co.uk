@@ -2,6 +2,8 @@
 title: GCP Security, exam topics
 ---
 
+# GCP Security, exam topics
+
 <h4 id="bkmrk-section-1.-configuri" class="cws-headline--headline-5" data-text="Section 1. Configuring                     access within a cloud solution environment">Section 1. Configuring access within a cloud solution environment</h4>
 <p id="bkmrk--1"><br></p>
 <h5 id="bkmrk-1.1-configuring-clou">1.1 Configuring Cloud Identity. Considerations include:</h5>

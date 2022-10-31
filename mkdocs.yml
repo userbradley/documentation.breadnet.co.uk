@@ -107,7 +107,6 @@ nav:
           - Wildcart Certificates: kb/public-web-facing/wildcard-certificates.md
           - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
-          - Installed Applications: kb/public-web-facing/installed-applications-reverse.md
           - "nginx.service failed because the control process exited": kb/public-web-facing/nginxservice-failed-because-the-control-process-exited.md
           - Serving breadNET when server is offline:  kb/other/downloading-the-breadnet-site-and-serving-a-stale-copy.md
       - Wasabi:
@@ -116,7 +115,7 @@ nav:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
       - AWS:
-          - Cloud-init: kb/aws/cloud-init-sg1.md
+          - AWS Cloud-init: kb/aws/cloud-init-sg1.md
           - AWS CLI: kb/aws/aws-cli.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
@@ -134,20 +133,22 @@ nav:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
-      - Kubernetes:
-          - Connect to container that has side car containers: kb/kubernetes/connect-to-container-that-has-sidecars.md
-          - Delete not running pods: kb/kubernetes/deleting-not-running-pods.md
-          - Set default namespace kubectl: kb/kubernetes/kubectl-set-namespace.md
-          - Testing RBAC: kb/kubernetes/rbac-testing.md
-          - Workload ID KSA: kb/kubernetes/service-account-with-workload-id.md
-          - Workload ID test pod: kb/kubernetes/workload-id-test.md
-          - Sleeper pod: kb/kubernetes/sleeper.md
-          - Downward API: kb/kubernetes/downward-api.md
+
 
       - Helm:
           - Create a helm chart: kb/helm/create-helm-chart.md
           - Push chart to Artifact Registry: kb/helm/push-chart-to-ar.md
           - Use GCS as helm repo: kb/helm/helm-repo-gcs.md
+  - Kubernetes:
+      - kubernetes/index.md
+      - Connect to container that has side car containers: kubernetes/connect-to-container-that-has-sidecars.md
+      - Delete not running pods: kubernetes/deleting-not-running-pods.md
+      - Set default namespace kubectl: kubernetes/kubectl-set-namespace.md
+      - Testing RBAC: kubernetes/rbac-testing.md
+      - Workload ID KSA: kubernetes/service-account-with-workload-id.md
+      - Workload ID test pod: kubernetes/workload-id-test.md
+      - Sleeper pod: kubernetes/sleeper.md
+      - Downward API: kubernetes/downward-api.md
   - Home:
       - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md

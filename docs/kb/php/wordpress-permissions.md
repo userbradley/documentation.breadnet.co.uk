@@ -2,6 +2,8 @@
 title: WordPress permissions
 ---
 
+# WordPress permissions
+
 ```bash
 chown www-data:www-data  -R * # Let Apache be owner
 find . -type d -exec chmod 755 {} \;  # Change directory permissions rwxr-xr-x

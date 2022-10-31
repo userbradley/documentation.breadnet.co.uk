@@ -2,6 +2,8 @@
 title: Mount a new drive
 ---
 
+# Mount a new drive
+
 How to mount a new drive on a linux system over command line
 
 ---

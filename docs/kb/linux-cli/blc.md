@@ -2,6 +2,8 @@
 title: Broken link checker
 ---
 
+# Broken link checker
+
 ## What
 
 Broken links on a site cause issues.
