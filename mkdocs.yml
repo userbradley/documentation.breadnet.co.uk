@@ -141,30 +141,25 @@ nav:
           - Use GCS as helm repo: kb/helm/helm-repo-gcs.md
   - Kubernetes:
       - kubernetes/index.md
-      - Connect to container that has side car containers: kubernetes/connect-to-container-that-has-sidecars.md
-      - Delete not running pods: kubernetes/deleting-not-running-pods.md
-      - Set default namespace kubectl: kubernetes/kubectl-set-namespace.md
-      - Testing RBAC: kubernetes/rbac-testing.md
-      - Workload ID KSA: kubernetes/service-account-with-workload-id.md
-      - Workload ID test pod: kubernetes/workload-id-test.md
-      - Sleeper pod: kubernetes/sleeper.md
-      - Downward API: kubernetes/downward-api.md
+      - KB:
+          - kubernetes/kb/index.md
+          - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
+          - Delete not running pods: kubernetes/kb/deleting-not-running-pods.md
+          - Set default namespace kubectl: kubernetes/kb/kubectl-set-namespace.md
+          - Testing RBAC: kubernetes/kb/rbac-testing.md
+          - Sleeper pod: kubernetes/kb/sleeper.md
+          - Downward API: kubernetes/kb/downward-api.md
+      - GKE:
+          - kubernetes/gke/index.md
+          - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
+          - Workload ID test pod: kubernetes/gke/workload-id-test.md
+      - K3S:
+          - kubernetes/k3s/index.md
   - Home:
       - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md
       - Oven : home/oven/oven.md
       - Washing Machine: home/washing/washing-machine.md
-
-
-
-
-
-
-
-
-
-
-
 
 
 
