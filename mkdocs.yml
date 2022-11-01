@@ -124,6 +124,7 @@ nav:
           - Broken link checker: kb/linux-cli/blc.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
           - "xcrun: error: invalid active developer path": kb/linux-cli/xcrun-error-invalid-active-developer-path.md
+          - "Your Xcode is too outdated.": kb/linux-cli/your-xcode-is-too-outdated.md
       - Networking:
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
