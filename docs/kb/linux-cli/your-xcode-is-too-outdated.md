@@ -60,6 +60,47 @@ It should display the below now
 
 ![img_1.png](../../assets/xcode-select-tos.png)
 
+## Still getting the error
+
+Open `xcode` and check the version:
+
+1. Open `xcode` 
+2. Click `Xcode` on the top bar
+3. Click `about Xcode`
+
+If the version is not the latest version (`14.1` at time of writing) - You will need to do the below
+
+### Update Command line tools for xcode
+
+Open terminal
+
+```shell
+ softwareupdate --list
+```
+
+This should _hoprefully_ show the below
+
+```text
+➜ softwareupdate --list
+Software Update Tool
+
+Finding available software
+Software Update found the following new or updated software:
+* Label: Command Line Tools for Xcode-14.0
+        Title: Command Line Tools for Xcode, Version: 14.0, Size: 687109KiB, Recommended: YES, 
+```
+
+Upgrade it with:
+
+```shell
+softwareupdate --install --all
+```
+
+
+## Still not working
+
+If it's still not working, move `xcode` to trash, reboot and re-install it
+
 ## Possible side effects
 
 ### XCRUN
