@@ -18,7 +18,7 @@ Adding the below in to the `deployment.yaml` file will cause helm to basically `
 
     This is for when the helm chart has all the `template` files in the same direcrory
 
-    ```shell
+    ```yaml
       template:
         metadata:
           annotations:
@@ -29,7 +29,7 @@ Adding the below in to the `deployment.yaml` file will cause helm to basically `
 
     This is for when you have a folder splitting out say, _backend_ and _frontend_
     
-    ```shell
+    ```yaml
       template:
         metadata:
           annotations:
