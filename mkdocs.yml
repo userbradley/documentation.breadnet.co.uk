@@ -140,6 +140,7 @@ nav:
           - Create a helm chart: kb/helm/create-helm-chart.md
           - Push chart to Artifact Registry: kb/helm/push-chart-to-ar.md
           - Use GCS as helm repo: kb/helm/helm-repo-gcs.md
+          - Force containers to update when config map changes in helm: kb/helm/force-rollout-on-configmap-update.md
   - Kubernetes:
       - kubernetes/index.md
       - KB:
