@@ -25,6 +25,8 @@ nav:
           - Aqua Page 1: cloud/aqua/aqua-page-1.md
           - Aqua Page 2: cloud/aqua/aqua-page-2.md
           - Aqua partnership notes: cloud/aqua/partnership-info.md
+      - Digital Ocean:
+          - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
