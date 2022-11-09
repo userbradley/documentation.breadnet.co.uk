@@ -98,18 +98,21 @@ nav:
           - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
           - Weird Bash: kb/ssh/weird-bash.md
           - sshuttle: kb/ssh/sshuttle.md
+      - Nginx:
+          - Reverse web proxy: kb/nginx/reverse-web-proxy.md
+          - Custom Headers: kb/nginx/custom-headers.md
+          - Remove server headers: kb/nginx/remove-server-headers.md
+          - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
+          - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
+
       - Public web Facing:
           - Cachet: kb/public-web-facing/cachet.md
           - Certbot: kb/public-web-facing/certbot.md
-          - Reverse web proxy: kb/public-web-facing/reverse-web-proxy.md
           - Bookstack: kb/public-web-facing/bookstack.md
           - Jellyfin S3: kb/public-web-facing/jellyfin-s3.md
-          - Custom Headers: kb/public-web-facing/custom-headers.md
-          - Remove server headers: kb/public-web-facing/remove-server-headers.md
           - Wildcart Certificates: kb/public-web-facing/wildcard-certificates.md
           - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
-          - "nginx.service failed because the control process exited": kb/public-web-facing/nginxservice-failed-because-the-control-process-exited.md
           - Serving breadNET when server is offline:  kb/other/downloading-the-breadnet-site-and-serving-a-stale-copy.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
@@ -137,6 +140,7 @@ nav:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
+      
 
 
       - Helm:

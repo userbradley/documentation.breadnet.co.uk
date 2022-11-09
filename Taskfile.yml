@@ -1,8 +1,9 @@
 version: 3
 
 tasks:
-  push:
+  serve:
     cmds:
-      - git add *
-      - git commit -m 'Made changes'
-      - git push
+      - mkdocs serve --dirtyreload
+  default:
+    cmds:
+      - mkdocs serve
