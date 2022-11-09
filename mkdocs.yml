@@ -131,6 +131,7 @@ nav:
           - "xcrun: error: invalid active developer path": kb/linux-cli/xcrun-error-invalid-active-developer-path.md
           - "Your Xcode is too outdated.": kb/linux-cli/your-xcode-is-too-outdated.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
+          - "The following signatures couldn't be verified because the public key is not available" : kb/linux-cli/the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
       - Networking:
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
