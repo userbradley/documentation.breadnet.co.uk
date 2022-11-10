@@ -165,6 +165,7 @@ nav:
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - K3S:
           - kubernetes/k3s/index.md
+          - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
   - Home:
       - home/index.md
       - Consumer Unit: home/cu/consumer-unit.md

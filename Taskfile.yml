@@ -7,3 +7,6 @@ tasks:
   default:
     cmds:
       - mkdocs serve
+  build:
+    cmds:
+      - mkdocs build
