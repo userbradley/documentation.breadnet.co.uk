@@ -10,20 +10,20 @@ This page is to help you curl to Google Hosted container registries
 
 ## How
 
-=== "GCR"
-
-    ```shell
-    curl \                                                                                                                                                        
-      -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-      "https://eu.gcr.io/v2/<project name>/<repo name>/tags/list" | jq ".tags"
-    ```
-
 === "Artifact Registry"
 
     ```shell
     curl \                                                                                                                                                                                                      
       -H "Authorization: Bearer $(gcloud auth print-access-token)" \
       "https://europe-west2-docker.pkg.dev/v2/<project name>/<repo name>/<container name>/tags/list" | jq ".tags"
+    ```
+
+=== "GCR"
+
+    ```shell
+    curl \                                                                                                                                                        
+      -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+      "https://eu.gcr.io/v2/<project name>/<repo name>/tags/list" | jq ".tags"
     ```
 
 
