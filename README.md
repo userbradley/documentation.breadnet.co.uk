@@ -19,7 +19,13 @@ As mentioned, I am fed-up with Bookstack and administering it.
 
 I love Bookstack. 100% - But the issue is I have outgrown the need to have a full-fledged CMS with user permissions etc.
 
-I think this is just me getting more mature and resizing that a full CMS is not needed. 
+I think this is just me getting more mature and resizing that a full CMS is not needed.
+
+## Where it's now hosted
+
+I initially had this on my Web server along with a few other sites, but I am looking at migration over to `fly.io`, as it's SUPER simple to host sites there, along with SSL and custom domains.
+
+
 
 # Contribute
 
@@ -68,6 +74,22 @@ This branch houses the development site, which is built on each commit to `dev`
 Site is available at [dev-documentation.breadnet.co.uk](https://dev-documentation.breadnet.co.uk)
 
 You will know when you're on the development site, as the colors are red!
+
+# Docker Images
+
+As part of the continued _re-platforming_ of this site, I am building docker images to host the site.
+
+This is not really required, but it's useful, and I think it's also just cool.
+
+## Naming
+
+As the repo on Dockerhub will have multiple images, they follow a naming convention like below
+
+```text
+userbradley/documentation-[dev|prod]-{commit-hash}
+```
+
+The images are built by Codefresh.
 
 # File directory
 

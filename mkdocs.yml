@@ -8,6 +8,20 @@ nav:
           - Ansible install python: automation/ansible/python-install.md
       - Airflow basics: automation/airflow/airflow-basics.md
   - Cloud:
+      - Aqua:
+          - Aqua Page 1: cloud/aqua/aqua-page-1.md
+          - Aqua Page 2: cloud/aqua/aqua-page-2.md
+          - Aqua partnership notes: cloud/aqua/partnership-info.md
+      - Digital Ocean:
+          - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
+      - Fly:
+          - cloud/fly/index.md
+          - Fly regions and scaling: cloud/fly/fly-regions.md
+      - Google Cloud:
+          - Curl to IAP: cloud/gcp/curl-to-iap.md
+          - "Curl to GCR/ AR": /cloud/gcp/curl-gcr-ar.md
+          - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
+          - Grafeas: cloud/gcp/grafeas.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
           - Openstack error: cloud/terraform/openstack.md
@@ -17,18 +31,6 @@ nav:
           - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
           - Remote Data: cloud/terraform/remote-data.md
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
-      - Google Cloud:
-          - Curl to IAP: cloud/gcp/curl-to-iap.md
-          - "Curl to GCR/ AR": /cloud/gcp/curl-gcr-ar.md
-          - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
-          - Grafeas: cloud/gcp/grafeas.md
-
-      - Aqua:
-          - Aqua Page 1: cloud/aqua/aqua-page-1.md
-          - Aqua Page 2: cloud/aqua/aqua-page-2.md
-          - Aqua partnership notes: cloud/aqua/partnership-info.md
-      - Digital Ocean:
-          - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
