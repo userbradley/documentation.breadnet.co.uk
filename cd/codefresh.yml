@@ -80,6 +80,8 @@ steps:
       branch:
         only:
           - dev
+
+
   deploy-prod:
     title: Deploy Production
     stage: "deploy"
@@ -90,7 +92,7 @@ steps:
     when:
       branch:
         only:
-          - dev
+          - master
 
   ## Production below, do not touch!
   build_mkdocs:
