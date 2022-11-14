@@ -18,10 +18,6 @@ steps:
     title: "Fly API Env"
     stage: "setup"
     image: alpine
-    when:
-      branch:
-        only:
-          - dev
     commands:
       - export FLY_API_TOKEN=${{FLY_API_TOKEN}}
       - cf_export FLY_API_TOKEN
