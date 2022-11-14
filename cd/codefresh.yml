@@ -1,0 +1,121 @@
+version: "1.0"
+stages:
+  - "clone"
+  - "setup"
+  - "build-docker"
+  - "build-deploy"
+  - "mkdocs-build"
+  - "deploy"
+
+steps:
+  clone:
+    title: "Cloning repository"
+    type: "git-clone"
+    repo: "userbradley/documentation.breadnet.co.uk"
+    revision: "${{CF_BRANCH}}"
+    git: "github"
+    stage: "clone"
+
+  fly-env:
+    title: "Fly API Env"
+    stage: "setup"
+    image: alpine
+    when:
+      branch:
+        only:
+          - dev
+    commands:
+      - export FLY_API_TOKEN=${{FLY_API_TOKEN}}
+      - cf_export FLY_API_TOKEN
+
+  set-robots:
+    title: "Set Robots.txt on dev"
+    stage: "setup"
+    image: alpine
+    when:
+      branch:
+        only:
+          - dev
+    commands:
+      - echo "VXNlci1BZ2VudDogKgpEaXNhbGxvdzogLwo=" | base64 -d > /codefresh/volume/documentation.breadnet.co.uk/docs/robots.txt
+
+
+  dev-docker-build:
+    title: "Dev Docker Build"
+    type: "build"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image_name: "userbradley/documentation"
+    tag: "dev-${{CF_SHORT_REVISION}}"
+    dockerfile: "dev.Dockerfile"
+    stage: "build-docker"
+    registry: userbradley
+    when:
+      branch:
+        only:
+          - dev
+
+  prod-docker-build:
+    title: "Prod Docker Build"
+    type: "build"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image_name: "userbradley/documentation"
+    tag: "prod-${{CF_SHORT_REVISION}}"
+    dockerfile: "Dockerfile"
+    stage: "build-docker"
+    registry: userbradley
+    when:
+      branch:
+        only:
+          - master
+
+
+  deploy-dev:
+    title: Deploy Dev
+    stage: "deploy"
+    image: "userbradley/flyctl:latest"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    commands:
+      - flyctl deploy --config dev.toml --image userbradley/documentation:dev-${{CF_SHORT_REVISION}} --detach
+    when:
+      branch:
+        only:
+          - dev
+  deploy-prod:
+    title: Deploy Production
+    stage: "deploy"
+    image: "userbradley/flyctl:latest"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    commands:
+      - flyctl deploy --config prod.toml --image userbradley/documentation:prod-${{CF_SHORT_REVISION}} --detach
+    when:
+      branch:
+        only:
+          - dev
+
+  ## Production below, do not touch!
+  build_mkdocs:
+    title: Build Mkdocs site
+    stage: "mkdocs-build"
+    image: "squidfunk/mkdocs-material"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    when:
+      branch:
+        only:
+          - master
+    cmd:
+      - "build"
+
+  transfer-master:
+    title: "Master deploy"
+    type: "freestyle"
+    stage: "deploy"
+    image: "ictu/sshpass:latest"
+    when:
+      branch:
+        only:
+          - master
+    commands:
+      - "mkdir /.ssh"
+      - "echo ${{codefresh_ssh_key}} | base64 -d > /.ssh/id_rsa"
+      - "chmod 600 /.ssh/id_rsa"
+      - scp -o "StrictHostKeyChecking no" -i /.ssh/id_rsa -r documentation.breadnet.co.uk/site/* "${{server}}/documentation"
