@@ -1,15 +1,19 @@
-# fly.toml file generated for documentation-prod on 2022-11-11T20:28:49Z
+# dev.toml file generated for documentation-prod on 2022-11-11T20:28:49Z
 
-app = "documentation-prod"
+app = "documentation-dev"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
+
+[build]
+  dockerfile = "dev.Dockerfile"
+
 
 [env]
 
 [experimental]
   allowed_public_ports = []
-  auto_rollback = true
+  auto_rollback = false
 
 [[services]]
   http_checks = []
@@ -18,8 +22,8 @@ processes = []
   protocol = "tcp"
   script_checks = []
   [services.concurrency]
-    hard_limit = 25
-    soft_limit = 20
+    hard_limit = 100
+    soft_limit = 80
     type = "connections"
 
   [[services.ports]]
