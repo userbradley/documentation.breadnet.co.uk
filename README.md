@@ -86,7 +86,7 @@ This is not really required, but it's useful, and I think it's also just cool.
 As the repo on Dockerhub will have multiple images, they follow a naming convention like below
 
 ```text
-userbradley/documentation-[dev|prod]-{commit-hash}
+userbradley/documentation:[dev|prod]-{commit-hash}
 ```
 
 The images are built by Codefresh.
