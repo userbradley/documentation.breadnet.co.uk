@@ -4,8 +4,6 @@ stages:
   - "setup"
   - "build-docker"
   - "build-deploy"
-  - "mkdocs-build"
-  - "deploy"
 
 steps:
   clone:
@@ -93,31 +91,3 @@ steps:
       branch:
         only:
           - master
-
-  ## Production below, do not touch!
-  build_mkdocs:
-    title: Build Mkdocs site
-    stage: "mkdocs-build"
-    image: "squidfunk/mkdocs-material"
-    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-    when:
-      branch:
-        only:
-          - master
-    cmd:
-      - "build"
-
-  transfer-master:
-    title: "Master deploy"
-    type: "freestyle"
-    stage: "deploy"
-    image: "ictu/sshpass:latest"
-    when:
-      branch:
-        only:
-          - master
-    commands:
-      - "mkdir /.ssh"
-      - "echo ${{codefresh_ssh_key}} | base64 -d > /.ssh/id_rsa"
-      - "chmod 600 /.ssh/id_rsa"
-      - scp -o "StrictHostKeyChecking no" -i /.ssh/id_rsa -r documentation.breadnet.co.uk/site/* "${{server}}/documentation"
