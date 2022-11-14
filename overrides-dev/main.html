@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+<!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//trace-agent.breadnet.co.uk/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '17']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+<!-- Content -->
+{% block content %}
+
+{% if page.edit_url %}
+<a
+        href="{{ page.edit_url }}"
+        title="{{ lang.t('edit.link.title') }}"
+        class="md-content__button md-icon"
+>
+    {% include ".icons/material/pencil.svg" %}
+</a>
+{% endif %}
+
+{% if not "\x3ch1" in page.content %}
+<h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+
+<!-- Markdown content -->
+{% if page.meta.outdated %}
+
+<br>
+<div class="admonition warning">
+    <p class="admonition-title">Warning</p>
+    <p>This page may be outdated, and should not be relied on.</p>
+</div>
+{% endif %}
+
+{{ page.content }}
+
+
+{% endblock %}

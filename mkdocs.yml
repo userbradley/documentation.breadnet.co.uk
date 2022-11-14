@@ -194,7 +194,7 @@ theme:
   name: material
   favicon: https://breadnet.co.uk/favicon.ico
   logo: https://breadnet.co.uk/favicon.png
-  custom_dir: overrides
+  custom_dir: !ENV [dir, "overrides-prod"]
   icon:
     repo: fontawesome/brands/github-alt
     admonition:
