@@ -5,7 +5,9 @@ hide:
     - edit
 ---
 
-This is the _new_ documentation site for [breadNET](https://breadnet.co.uk)
+This site holds all the documentation and notes I've written since starting in IT (around 2016 _ish_)
+
+If you've known me, or referred to my documents before, it used to be `bookstack` 
 
 ## Other sites maintained
 | Site name                         | Link                                                           |
@@ -17,18 +19,24 @@ This is the _new_ documentation site for [breadNET](https://breadnet.co.uk)
 
 ## How this site works
 
-Like mentioned [above](#:~:text=new%20documentation%20site%20for%20breadNET) - This is the _new_ documentation site,
-replacing `bookstack.breadnet.co.uk` (Which is now offline)
+This site replaces Bookstack. I decided that it was time to move towards something easier to manage, and that can be run pretty much
+anywhere that docker runs. 
 
-I have decided to move towards an [SCM](https://git-scm.com) based site.
+It now runs on [fly.io](https://fly.io) and is powered by [mkdocs](https://mkdocs.org)
 
-This means I write [markdown files](https://raw.githubusercontent.com/userbradley/documentation.breadnet.co.uk/master/README.md) and then using [mkdocs](https://mkdocs.org/) with the [material theme](https://squidfunk.github.io/mkdocs-material/)
-the site gets built.
+The cool part is now I just write markdown files, and the site gets built on commit to dev.
+
+Once the dev site is checked and everything looks good, we can open a PR and merge to master.
+
 
 ### How the site gets _built_
 
-I have a CD pipeline that builds the site and copies it to the webserver
+I have a CD pipeline that builds a docker image, and publishes it to [fly.io](https://fly.io?ref_documentation-breadnet-co-uk)
+
+You can pull the images from here: 
+
+[userbradley/documentation](https://hub.docker.com/repository/docker/userbradley/documentation)
 
 ![](assets/pipeline.png)
 
-You can view the [Source code](https://github.com/userbradley/documentation.breadnet.co.uk/blob/dev/cd/codefresh-v1.yml) for the pipeline 
+You can view the [Source code](https://github.com/userbradley/documentation.breadnet.co.uk/blob/dev/cd/codefresh.yml) for the pipeline 
