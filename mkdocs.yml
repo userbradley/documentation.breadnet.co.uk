@@ -17,6 +17,8 @@ nav:
       - Fly:
           - cloud/fly/index.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
+          - Fly.io in CI: cloud/fly/fly-ci.md
+          - Fly Deployment strategy: cloud/fly/deployment-strategy.md
       - Google Cloud:
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - "Curl to GCR/ AR": /cloud/gcp/curl-gcr-ar.md
