@@ -1,9 +1,9 @@
 ---
-title: Docker: Intro and notes
+title: "Docker: Intro and notes"
 outdated: true
 ---
 
-# Docker: Intro and notes
+
 
 <h4 id="bkmrk-what-are-containers%3F">What are containers?</h4>
 <p id="bkmrk-%C2%A0completely-isolated"> completely isolated environment. They can have their own mounts, networks and applications. <br>Docker runs off of lxc containers and provides a high level management interface. <br>Docker containers share the kernal. They can run anything on top of it (even an os) but it will have the same kernel version. </p>
