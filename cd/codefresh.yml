@@ -94,7 +94,7 @@ steps:
     image: "userbradley/flyctl:latest"
     working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
     commands:
-      - flyctl deploy --config dev.toml --image documentation-dev:${{CF_SHORT_REVISION}} --detach
+      - flyctl deploy --config dev.toml --image registry.fly.io/documentation-dev:${{CF_SHORT_REVISION}} --detach
     when:
       branch:
         only:
