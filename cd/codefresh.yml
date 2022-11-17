@@ -88,6 +88,17 @@ steps:
   #    branch:
   #      only:
   #        - dev
+  deploy-dev:
+    title: Deploy Dev
+    stage: "deploy"
+    image: "userbradley/flyctl:latest"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    commands:
+      - flyctl deploy --config dev.toml --image documentation-dev:${{CF_SHORT_REVISION}} --detach
+    when:
+      branch:
+        only:
+          - dev
 
 
   deploy-prod:
