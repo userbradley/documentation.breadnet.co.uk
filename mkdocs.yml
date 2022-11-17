@@ -149,9 +149,6 @@ nav:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
-      
-
-
       - Helm:
           - Create a helm chart: kb/helm/create-helm-chart.md
           - Push chart to Artifact Registry: kb/helm/push-chart-to-ar.md
@@ -189,7 +186,7 @@ repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
 site_name: !ENV [env,"breadNET Documentation"]
 site_url: !ENV [domain, "https://documentation.breadnet.co.uk"]
-site_description: breadNET Public Documentation
+site_description: breadNET Documentation
 
 #extra_css:
 #  - stylesheets/custom.css # Custom header color
