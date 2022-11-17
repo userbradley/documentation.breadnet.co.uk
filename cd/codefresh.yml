@@ -17,6 +17,7 @@ steps:
 
   setup:
     type: parallel
+    stage: setup
     steps:
       fly-env:
         title: "Fly API Env"
