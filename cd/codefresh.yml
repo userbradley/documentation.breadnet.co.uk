@@ -48,6 +48,20 @@ steps:
         only:
           - dev
 
+  dev-fly-docker-build:
+    title: "Prod Docker Build"
+    type: "build"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image_name: "documentation-dev"
+    tag: "${{CF_SHORT_REVISION}}"
+    dockerfile: "dev.Dockerfile"
+    stage: "build-docker"
+    registry: fly
+    when:
+      branch:
+        only:
+          - dev
+
   prod-docker-build:
     title: "Prod Docker Build"
     type: "build"
