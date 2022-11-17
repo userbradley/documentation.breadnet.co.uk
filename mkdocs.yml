@@ -20,6 +20,7 @@ nav:
           - Fly.io in CI: cloud/fly/fly-ci.md
           - Fly Deployment strategy: cloud/fly/deployment-strategy.md
           - Authenticate to Fly docker Registry: cloud/fly/fly-docker-auth.md
+          - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
       - Google Cloud:
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
