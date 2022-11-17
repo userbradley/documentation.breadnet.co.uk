@@ -2,7 +2,7 @@ version: "1.0"
 stages:
   - "clone"
   - "setup"
-  - "build-docker"
+  - "docker"
   - "deploy"
 
 steps:
@@ -34,28 +34,28 @@ steps:
       - echo "VXNlci1BZ2VudDogKgpEaXNhbGxvdzogLwo=" | base64 -d > /codefresh/volume/documentation.breadnet.co.uk/docs/robots.txt
 
 
-  #dev-docker-build:
-  #  title: "Dev Docker Build"
-  #  type: "build"
-  #  working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-  #  image_name: "userbradley/documentation"
-  #  tag: "dev-${{CF_SHORT_REVISION}}"
-  #  dockerfile: "dev.Dockerfile"
-  #  stage: "build-docker"
-  #  registry: userbradley
-  #  when:
-  #    branch:
-  #      only:
-  #        - dev
+  dev-dockerhub-build:
+    title: "Dev Docker Build"
+    type: "build"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image_name: "userbradley/documentation"
+    tag: "dev-${{CF_SHORT_REVISION}}"
+    dockerfile: "dev.Dockerfile"
+    stage: "docker"
+    registry: userbradley
+    when:
+      branch:
+        only:
+          - dev
 
-  dev-fly-docker-build:
+  dev-flyregistry-build:
     title: "Prod Docker Build"
     type: "build"
     working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
     image_name: "documentation-dev"
     tag: "${{CF_SHORT_REVISION}}"
     dockerfile: "dev.Dockerfile"
-    stage: "build-docker"
+    stage: "docker"
     registry: fly
     when:
       branch:
@@ -69,7 +69,7 @@ steps:
     image_name: "userbradley/documentation"
     tag: "prod-${{CF_SHORT_REVISION}}"
     dockerfile: "Dockerfile"
-    stage: "build-docker"
+    stage: "docker"
     registry: userbradley
     when:
       branch:
@@ -77,17 +77,20 @@ steps:
           - master
 
 
-  #deploy-dev:
-  #  title: Deploy Dev
-  #  stage: "deploy"
-  #  image: "userbradley/flyctl:latest"
-  #  working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-  #  commands:
-  #    - flyctl deploy --config dev.toml --image userbradley/documentation:dev-${{CF_SHORT_REVISION}} --detach
-  #  when:
-  #    branch:
-  #      only:
-  #        - dev
+  prod-flyregistry-build:
+    title: "Prod Docker Build"
+    type: "build"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image_name: "documentation-prod"
+    tag: "${{CF_SHORT_REVISION}}"
+    dockerfile: "Dockerfile"
+    stage: "docker"
+    registry: fly
+    when:
+      branch:
+        only:
+          - master
+
   deploy-dev:
     title: Deploy Dev
     stage: "deploy"
@@ -107,7 +110,7 @@ steps:
     image: "userbradley/flyctl:latest"
     working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
     commands:
-      - flyctl deploy --config prod.toml --image userbradley/documentation:prod-${{CF_SHORT_REVISION}} --detach
+      - flyctl deploy --config prod.toml --image registry.fly.io/documentation-prod:${{CF_SHORT_REVISION}} --detach
     when:
       branch:
         only:
