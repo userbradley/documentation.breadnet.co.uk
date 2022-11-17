@@ -53,7 +53,7 @@ steps:
           - dev
 
   dev-flyregistry-build:
-    title: "DEV Fly Build
+    title: "DEV Fly Build"
     type: "build"
     working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
     image_name: "documentation-dev"
