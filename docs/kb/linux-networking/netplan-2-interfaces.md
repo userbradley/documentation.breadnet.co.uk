@@ -20,3 +20,7 @@ network:
 ```
 
 Worth looking [here](https://www.linux.com/topic/distributions/how-use-netplan-network-configuration-tool-linux/) for additional info
+
+## What to read Next
+
+* [Static IP Address netplan](netplan-static-ip.md)
