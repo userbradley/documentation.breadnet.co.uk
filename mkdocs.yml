@@ -88,17 +88,18 @@ nav:
           - Get project using GCE Metadata API: kb/google-cloud/api-get-project.md
           - Get serviceAccount using GCE Metadata API: kb/google-cloud/api-get-sa.md
       - Linux Networking:
-          - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
-          - DNS on Ubuntu: kb/linux-networking/dns-on-ubuntu.md
           - Bringing up Interfaces: kb/linux-networking/bringing-up-interfaces.md
-          - Netplan 2 interfaces: kb/linux-networking/netplan-2-interfaces.md
           - Centos Iptables: kb/linux-networking/centos-iptables.md
-          - Null routing: kb/linux-networking/null-routing.md
-          - Listen on a port: kb/linux-networking/listen-on-a-port.md
-          - "List of unique IP's": kb/linux-networking/list-of-unique-ips.md
           - Connections on a port: kb/linux-networking/connections-on-a-port.md
-          - RVC IP Range: kb/linux-networking/rvc-ip-range.md
+          - DNS on Ubuntu: kb/linux-networking/dns-on-ubuntu.md
+          - "List of unique IP's": kb/linux-networking/list-of-unique-ips.md
+          - Listen on a port: kb/linux-networking/listen-on-a-port.md
+          - Netplan 2 interfaces: kb/linux-networking/netplan-2-interfaces.md
+          - Netplan Set static IP: kb/linux-networking/netplan-static-ip.md
           - Nmap scanning: kb/linux-networking/nmap-scans.md
+          - Null routing: kb/linux-networking/null-routing.md
+          - RVC IP Range: kb/linux-networking/rvc-ip-range.md
+          - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
       - SSH:
           - SSH Keys: kb/ssh/ssh-keys.md
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
