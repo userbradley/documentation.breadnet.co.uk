@@ -47,7 +47,7 @@ gcrane cp -r userbradley/searchsploit europe-west2.pkg.dev/bradley/searchsploit/
 ## External sources 
 
 * [Google Documentation](https://cloud.google.com/artifact-registry/docs/docker/copy-from-gcr#gcrane-local)
-* [Github source code](https://github.com/google/go-containerregistry/blob/main/cmd/gcrane/README.mdg)
+* [Github source code](https://github.com/google/go-containerregistry/tree/main/cmd/gcrane)
 
 ## footnotes
 
