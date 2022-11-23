@@ -22,7 +22,7 @@ If you've known me, or referred to my documents before, it used to be `bookstack
 This site replaces Bookstack. I decided that it was time to move towards something easier to manage, and that can be run pretty much
 anywhere that docker runs. 
 
-It now runs on [fly.io](https://fly.io) and is powered by [mkdocs](https://mkdocs.org)
+It now runs on [fly.io](https://fly.io) and is powered by [mkdocs](https://www.mkdocs.org)
 
 The cool part is now I just write markdown files, and the site gets built on commit to dev.
 

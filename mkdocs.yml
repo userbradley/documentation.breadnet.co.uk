@@ -234,7 +234,7 @@ theme:
     - search.share
     # - search.highlight
     - navigation.top # back to top of page
-    - navigation.indexes
+    - navigation.indexes # Allows index.md pages
     - content.tabs.link
 
 

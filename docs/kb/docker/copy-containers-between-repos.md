@@ -49,6 +49,50 @@ gcrane cp -r userbradley/searchsploit europe-west2.pkg.dev/bradley/searchsploit/
 * [Google Documentation](https://cloud.google.com/artifact-registry/docs/docker/copy-from-gcr#gcrane-local)
 * [Github source code](https://github.com/google/go-containerregistry/tree/main/cmd/gcrane)
 
+
+## Gcrane not working
+
+Somtimes after running the command, it returns with nothing.
+
+I cant explain why it does this, but it's annoying.
+
+### Create a file with all the images
+
+```shell
+gcrane ls userbradley/searchsploit > images.txt
+```
+
+Make sure to remove the `index.docker.io/` at the start of the image, or it breaks
+
+### Create a script to copy them one after another
+
+```shell
+## copy.sh
+#!/bin/bash
+
+images=$(cat images.txt)
+
+for img in ${images}
+do
+    gcrane cp ${img} europe-west2.pkg.dev/bradley/searchsploit/searchsploit
+done
+```
+
+### Assign Execute Permissions
+
+```shell
+chmod +x copy.sh
+```
+
+### Run the copy job
+
+```shell
+./copy.sh
+```
+
+!!! Note
+    You can replace `europe-west2...` with any Docker compliant repo. Only tested with GCR and GAR
+
 ## footnotes
 
 !!! Note "If you are not copying to GAR"
