@@ -178,6 +178,8 @@ nav:
       - Consumer Unit: home/cu/consumer-unit.md
       - Oven : home/oven/oven.md
       - Washing Machine: home/washing/washing-machine.md
+      - Hot water heater:
+          - Reducing temperature: home/water-heater/reduce-temprature.md
 
 
 
