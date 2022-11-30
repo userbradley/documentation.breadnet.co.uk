@@ -62,7 +62,7 @@ I cant explain why it does this, but it's annoying.
 gcrane ls userbradley/searchsploit > images.txt
 ```
 
-Make sure to remove the `index.docker.io/` at the start of the image, or it breaks
+Make sure to remove the `index.docker.io/reponame/container` at the start of the image, or it breaks
 
 ### Create a script to copy them one after another
 
@@ -74,9 +74,11 @@ images=$(cat images.txt)
 
 for img in ${images}
 do
-    gcrane cp ${img} europe-west2.pkg.dev/bradley/searchsploit/searchsploit
+    gcrane cp userbradley/searchsploit:${img} europe-west2.pkg.dev/bradley/searchsploit/searchsploit:${img}
 done
 ```
+
+The reason we specify the image name in the script is because when I was running it, it was copying the containers but not the tags
 
 ### Assign Execute Permissions
 
