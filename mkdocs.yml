@@ -135,6 +135,7 @@ nav:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Linux Command line:
           - Always restart service after failure systemd: kb/linux-cli/always-restart-service-after-failure-systemd.md
+          - Backup SQlite Database: kb/linux-cli/backup-sqlite-db.md
           - Broken link checker: kb/linux-cli/blc.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
