@@ -95,12 +95,16 @@ The images are built by Codefresh.
 
 ```text
 .
+├── Dockerfile
 ├── LICENSE
 ├── README.md
 ├── Taskfile.yml
+├── _temp.html
 ├── cd
-│   └── codefresh-v1.yml
-├── docker-compose.yml
+│   └── codefresh.yml
+├── cloudflare
+├── dev.Dockerfile
+├── dev.toml
 ├── docs
 │   ├── assets
 │   │   ├── 2mznsOlbTSNaaAcI-image-1604671927789.png
@@ -124,6 +128,10 @@ The images are built by Codefresh.
 │   │   ├── goQwxsbjB33Z1ZN1-image-1606741677022.png
 │   │   ├── grilling.png
 │   │   ├── h0o4TLba8od6YCyr-image-1606757098863.png
+│   │   ├── heater_cover.jpeg
+│   │   ├── heater_details.png
+│   │   ├── heater_thermo.jpeg
+│   │   ├── heater_thermo_control.png
 │   │   ├── iPZWBvJp9qJTDbh5-image-1642771101260.png
 │   │   ├── iqQ48KLKrC2hNJ1k-image-1606743820345.png
 │   │   ├── k74fQlTzbNTCoVmD-image-1642771208110.png
@@ -141,9 +149,13 @@ The images are built by Codefresh.
 │   │   ├── red-cu.png
 │   │   ├── s3e11nJc8jbmRYtA-image-1621087752258.png
 │   │   ├── sGYTTQzEk4MNllA8-image-1642771319408.png
+│   │   ├── site-visits-usa.png
 │   │   ├── tjxlFRVsXUgsDatm-image-1588972001839.png
 │   │   ├── x5BORuXlBtctN0Mi-image-1646765189176.png
-│   │   └── xcode.png
+│   │   ├── xcode-select-tos.png
+│   │   ├── xcode-select.png
+│   │   ├── xcode.png
+│   │   └── xcrun-xcode-select.png
 │   ├── automation
 │   │   ├── airflow
 │   │   │   └── airflow-basics.md
@@ -181,7 +193,17 @@ The images are built by Codefresh.
 │   │   │   ├── aqua-page-1.md
 │   │   │   ├── aqua-page-2.md
 │   │   │   └── partnership-info.md
+│   │   ├── digitalocean
+│   │   │   └── digitalocean-get-list-of-images.md
+│   │   ├── fly
+│   │   │   ├── deployment-strategy.md
+│   │   │   ├── fly-ci.md
+│   │   │   ├── fly-docker-auth.md
+│   │   │   ├── fly-real-ip.md
+│   │   │   ├── fly-regions.md
+│   │   │   └── index.md
 │   │   ├── gcp
+│   │   │   ├── curl-gcr-ar.md
 │   │   │   ├── curl-to-iap.md
 │   │   │   ├── export-to-terraform-using-gcloud-cli.md
 │   │   │   └── grafeas.md
@@ -200,8 +222,10 @@ The images are built by Codefresh.
 │   │   ├── index.md
 │   │   ├── oven
 │   │   │   └── oven.md
-│   │   └── washing
-│   │       └── washing-machine.md
+│   │   ├── washing
+│   │   │   └── washing-machine.md
+│   │   └── water-heater
+│   │       └── reduce-temprature.md
 │   ├── index.md
 │   ├── kb
 │   │   ├── authentication
@@ -234,14 +258,19 @@ The images are built by Codefresh.
 │   │   │   └── setup-routing.md
 │   │   ├── helm
 │   │   │   ├── create-helm-chart.md
+│   │   │   ├── force-rollout-on-configmap-update.md
 │   │   │   ├── helm-repo-gcs.md
 │   │   │   └── push-chart-to-ar.md
-│   │   ├── kubernetes
 │   │   ├── linux-cli
+│   │   │   ├── always-restart-service-after-failure-systemd.md
+│   │   │   ├── backup-sqlite-db.md
 │   │   │   ├── blc.md
+│   │   │   ├── fingerprint-for-sudo-mac.md
 │   │   │   ├── get-current-folder.md
+│   │   │   ├── the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
 │   │   │   ├── uuidgen-lowercase.md
-│   │   │   └── xcrun-error-invalid-active-developer-path.md
+│   │   │   ├── xcrun-error-invalid-active-developer-path.md
+│   │   │   └── your-xcode-is-too-outdated.md
 │   │   ├── linux-networking
 │   │   │   ├── bringing-up-interfaces.md
 │   │   │   ├── centos-iptables.md
@@ -250,6 +279,7 @@ The images are built by Codefresh.
 │   │   │   ├── list-of-unique-ips.md
 │   │   │   ├── listen-on-a-port.md
 │   │   │   ├── netplan-2-interfaces.md
+│   │   │   ├── netplan-static-ip.md
 │   │   │   ├── nmap-scans.md
 │   │   │   ├── null-routing.md
 │   │   │   ├── rvc-ip-range.md
@@ -265,6 +295,12 @@ The images are built by Codefresh.
 │   │   ├── networking
 │   │   │   ├── update-tough-switch.md
 │   │   │   └── vpn-network-routing-mikrotik.md
+│   │   ├── nginx
+│   │   │   ├── custom-headers.md
+│   │   │   ├── nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
+│   │   │   ├── nginxservice-failed-because-the-control-process-exited.md
+│   │   │   ├── remove-server-headers.md
+│   │   │   └── reverse-web-proxy.md
 │   │   ├── other
 │   │   │   └── downloading-the-breadnet-site-and-serving-a-stale-copy.md
 │   │   ├── php
@@ -275,11 +311,7 @@ The images are built by Codefresh.
 │   │   │   ├── cachet.md
 │   │   │   ├── certbot.md
 │   │   │   ├── check-passbolt-is-healthy.md
-│   │   │   ├── custom-headers.md
 │   │   │   ├── jellyfin-s3.md
-│   │   │   ├── nginxservice-failed-because-the-control-process-exited.md
-│   │   │   ├── remove-server-headers.md
-│   │   │   ├── reverse-web-proxy.md
 │   │   │   ├── send-test-email-on-passbolt.md
 │   │   │   └── wildcard-certificates.md
 │   │   ├── ssh
@@ -293,27 +325,38 @@ The images are built by Codefresh.
 │   │       ├── policies.md
 │   │       └── transport-endpoint-is-not-connected.md
 │   ├── kubernetes
-│   │   ├── connect-to-container-that-has-sidecars.md
-│   │   ├── deleting-not-running-pods.md
-│   │   ├── downward-api.md
+│   │   ├── gke
+│   │   │   ├── index.md
+│   │   │   ├── service-account-with-workload-id.md
+│   │   │   └── workload-id-test.md
 │   │   ├── index.md
-│   │   ├── kubectl-set-namespace.md
-│   │   ├── rbac-testing.md
-│   │   ├── service-account-with-workload-id.md
-│   │   ├── sleeper.md
-│   │   └── workload-id-test.md
+│   │   ├── k3s
+│   │   │   ├── index.md
+│   │   │   └── lenovo-sff-ubuntu.md
+│   │   └── kb
+│   │       ├── connect-to-container-that-has-sidecars.md
+│   │       ├── deleting-not-running-pods.md
+│   │       ├── downward-api.md
+│   │       ├── index.md
+│   │       ├── kubectl-set-namespace.md
+│   │       ├── rbac-testing.md
+│   │       ├── sleeper.md
+│   │       └── using-argocd-image-updater-with-google-artifact-registry.md
 │   ├── not-found.md
 │   ├── robots.txt
-│   └── stylesheets
-│       └── custom.css
+│   ├── stylesheets
+│   │   └── custom.css
+│   └── well-known
+│       └── security.txt
 ├── mkdocs.yml
-├── nginx
-│   └── conf
 ├── nginx.conf
-├── overrides
+├── overrides-dev
 │   └── main.html
+├── overrides-prod
+│   └── main.html
+├── prod.toml
 └── redirect.conf
 
-46 directories, 172 files
+52 directories, 209 files
 
 ```

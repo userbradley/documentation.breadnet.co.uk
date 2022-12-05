@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><style>/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+</style><style>.markdown-body {
+    font-size: 11px;
+}
+
+img.emoji-img.emoji {
+  max-width: 11px;
+  max-height: 11px;
+  vertical-align: middle;
+}
+</style>
+
+        <!--<script src=""></script>-->
+    </head>
+    <body class="markdown-body">
+        <html><head></head><body><h1 id="breadnet-documentationhttpsdocumentationbreadnetcouk"><a href="https://documentation.breadnet.co.uk">breadNET Documentation</a></h1>
+<p><a href="https://g.codefresh.io/pipelines/edit/new/builds?id=63332e88189958204cec2b93&amp;pipeline=Documentation&amp;projects=Static%20sites&amp;projectId=6182852a9c76740876ee5660"><img src="https://g.codefresh.io/api/badges/pipeline/breadnet/Static%20sites%2FDocumentation?type=cf-2&amp;key=eyJhbGciOiJIUzI1NiJ9.NjA2NDk2ODIzMDk5OTgxZTRjODFmMTNi.5gYRawM6ODqOOVHDq1eDn1cma2Df2_jcXcQ4oAsb9wM" alt="Codefresh build status"></a><br>
+<a href="https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614"><img src="https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg" alt="wakatime"></a></p>
+<p>This repo houses all the public documentation that I have created over the years, recently migrated to mkdocs</p>
+<h2 id="why-mkdocs">Why <code>mkdocs</code></h2>
+<p>I have decided to go with <code>mkdocs</code> as it has a really easy to use admin interface.</p>
+<p>That was a joke. The real reason is the lack of admin interface. It reduces the attack vector and also means that I can<br>
+edit the files anywhere I have access to git.</p>
+<p>I hardly find my self editing files away from home, so I'm not too stressed.</p>
+<h2 id="why-migrate">Why Migrate</h2>
+<p>As mentioned, I am fed-up with Bookstack and administering it.</p>
+<p>I love Bookstack. 100% - But the issue is I have outgrown the need to have a full-fledged CMS with user permissions etc.</p>
+<p>I think this is just me getting more mature and resizing that a full CMS is not needed.</p>
+<h2 id="where-its-now-hosted">Where it's now hosted</h2>
+<p>I initially had this on my Web server along with a few other sites, but I am looking at migration over to <code>fly.io</code>, as it's SUPER simple to host sites there, along with SSL and custom domains.</p>
+<h1 id="contribute">Contribute</h1>
+<p>I encourage people to contribute to this. </p>
+<p>You can do so by making a fork of this to your own account, making the changes and then open a PR in to DEV.</p>
+<p>Ensure you have <a href="https://direnv.net">direnv</a> installed.</p>
+<p>Once <code>direnv</code> in installed, run <code>direnv allow .</code></p>
+<p>Finally, <code>mkdocs serve</code></p>
+<p>You will notice that the page layout, specifically navigation is different. This is intentional. It helps between reloads</p>
+<h1 id="uptime">Uptime</h1>
+<p>My Bookstack site will not remain active once the migration is complete.</p>
+<p>All pages that are migrated will redirect to their new home.</p>
+<p>Once the migration is complete, <code>bookstack.breadnet.co.uk</code> will redirect to <code>documentation.breadnet.co.uk</code></p>
+<h1 id="migration-plan">Migration plan</h1>
+<p>The below has the assumption that the new mkdocs project is created, and there is a staging site</p>
+<ol>
+<li>Export list of slugs from bookstack (sql)</li>
+<li>Export HTML of each page (sql)</li>
+<li><code>HTML</code> to <code>markdown</code></li>
+<li>Create pages</li>
+<li>Create navigation</li>
+</ol>
+<h1 id="branches">Branches</h1>
+<h2 id="master">master</h2>
+<p>This branch houses the live site, available at <a href="https://documentation.breadnet.co.uk">documentation.breadnet.co.uk</a></p>
+<p>The site is only built on PR merge to master</p>
+<h2 id="dev">dev</h2>
+<p>This branch houses the development site, which is built on each commit to <code>dev</code></p>
+<p>Site is available at <a href="https://dev-documentation.breadnet.co.uk">dev-documentation.breadnet.co.uk</a></p>
+<p>You will know when you're on the development site, as the colors are red!</p>
+<h1 id="docker-images">Docker Images</h1>
+<p>As part of the continued <em>re-platforming</em> of this site, I am building docker images to host the site.</p>
+<p>This is not really required, but it's useful, and I think it's also just cool.</p>
+<h2 id="naming">Naming</h2>
+<p>As the repo on Dockerhub will have multiple images, they follow a naming convention like below</p>
+<pre><code class="hljs text language-text">userbradley/documentation:[dev|prod]-{commit-hash}</code></pre>
+<p>The images are built by Codefresh.</p>
+<h1 id="file-directory">File directory</h1>
+<pre><code class="hljs text language-text">.
+├── LICENSE
+├── README.md
+├── Taskfile.yml
+├── cd
+│&amp;nbsp;&amp;nbsp; └── codefresh-v1.yml
+├── docker-compose.yml
+├── docs
+│&amp;nbsp;&amp;nbsp; ├── assets
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── 2mznsOlbTSNaaAcI-image-1604671927789.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── 46FRmJql62IK5eFK-image-1620574015296.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── 48hjeTKxj568yycW-image-1621117434743.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── 7yHzJ5Hrs19Z0A5k-image-1621088484420.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── 80eCCMAfHz1QGsR0-image-1606765018828.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── 9lwDfBcEr0MVFVt3-image-1642771239476.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── AooTYe4QwdbFLMru-image-1606764758712.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── DEK0ilyWJhXXzqhb-image-1642771115391.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── GJIc7rJptYTmXzfh-image-1606735635793.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── IMG_9259.JPG
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── IMG_9260.JPG
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── IMG_9261.jpg
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── PSJKUlFwm2Zluoes-image-1651955845728.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── amex-simpleicons.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── b7eY4DH3O7l5mvGO-image-1606744736955.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── data-incident-response-figure-1.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── e1giSp8BGj8Wx2nH-drawing-1-1620509841.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── fan.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── goQwxsbjB33Z1ZN1-image-1606741677022.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── grilling.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── h0o4TLba8od6YCyr-image-1606757098863.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── iPZWBvJp9qJTDbh5-image-1642771101260.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── iqQ48KLKrC2hNJ1k-image-1606743820345.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── k74fQlTzbNTCoVmD-image-1642771208110.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── lHFWdtVTkMX6AX5G-image-1606740965114.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── lR3gpWqK5uymZy76-image-1642771373312.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── lb-serverless-run-ext-https.svg
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── light.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── mode-gen-temp.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── mode-gen.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── nWVeT4OzIa1ANMPb-image-1621095512411.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── nzcVoSkDoOg3V3D9-image-1606769464676.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── pipeline.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── qtFenCGbLvRUVQqs-image-1606738550809.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── rG2Sxc83fg9oyJVi-image-1605010726509.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── red-cu.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── s3e11nJc8jbmRYtA-image-1621087752258.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── sGYTTQzEk4MNllA8-image-1642771319408.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── tjxlFRVsXUgsDatm-image-1588972001839.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── x5BORuXlBtctN0Mi-image-1646765189176.png
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── xcode.png
+│&amp;nbsp;&amp;nbsp; ├── automation
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── airflow
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── airflow-basics.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── ansible
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── basics.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     └── python-install.md
+│&amp;nbsp;&amp;nbsp; ├── bookstack.md
+│&amp;nbsp;&amp;nbsp; ├── certifications
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── cka
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── cka-1.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── google-certs
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── gcp-architect
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── gcp-architect-1.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── gcp-architect-2.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── gcp-architect-3.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── gcp-load-balancer.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; └── kubectl-commands.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── gcp-associate
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── compute-engine.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── costs.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── gce-google-compute-engine.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── gcp.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── networking-and-lb.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── regions-and-zones.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; └── vm-bootstrapping-templates-and-images.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── gcp-security
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; ├── 1-the-exam-topic.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     │&amp;nbsp;&amp;nbsp; └── gcp-security-1.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     └── workspace-admin
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;         ├── managing-gsuit.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;         ├── mdm.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;         └── user-administration.md
+│&amp;nbsp;&amp;nbsp; ├── cloud
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── aqua
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── aqua-page-1.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── aqua-page-2.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── partnership-info.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── gcp
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── curl-to-iap.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── export-to-terraform-using-gcloud-cli.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── grafeas.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── terraform
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── building-infrastructure.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── google-iap.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── openstack.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── recursive-delete-of-terraform.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── remote-data.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── tfupdate.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     └── to-string-from-list.md
+│&amp;nbsp;&amp;nbsp; ├── home
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── cu
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── consumer-unit.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── index.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── oven
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── oven.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── washing
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     └── washing-machine.md
+│&amp;nbsp;&amp;nbsp; ├── index.md
+│&amp;nbsp;&amp;nbsp; ├── kb
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── authentication
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── fingerprint-on-linux-mint.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── aws
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── aws-cli.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── cloud-init-sg1.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── cloud
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── cloud-init.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── disk-management
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── expanding-a-filesystem.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── formatting-drive-automount.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── mount-a-new-drive.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── docker
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── basics-of-docker.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── bulk-retag.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── copy-containers-between-repos.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── docker-architecture.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── docker-intro-and-notes.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── exporting-and-importing.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── installing-docker.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── installing-jellyfin.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── google-cloud
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── api-get-project.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── api-get-sa.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── serverless-vpc-access-for-cloudrun-across-projects.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── google-workspace
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── setup-routing.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── helm
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── create-helm-chart.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── helm-repo-gcs.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── push-chart-to-ar.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── kubernetes
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── linux-cli
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── blc.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── get-current-folder.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── uuidgen-lowercase.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── xcrun-error-invalid-active-developer-path.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── linux-networking
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── bringing-up-interfaces.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── centos-iptables.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── connections-on-a-port.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── dns-on-ubuntu.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── list-of-unique-ips.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── listen-on-a-port.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── netplan-2-interfaces.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── nmap-scans.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── null-routing.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── rvc-ip-range.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── uninstall-netplan.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── markdown
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── built-by-badge.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── custom-badges.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── github-repos-and-stuff.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── minio
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── minio-over-s3fs.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── old.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── s3-policies.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── networking
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── update-tough-switch.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── vpn-network-routing-mikrotik.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── other
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── downloading-the-breadnet-site-and-serving-a-stale-copy.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── php
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── install-php.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── wordpress-permissions.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── public-web-facing
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── bookstack.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── cachet.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── certbot.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── check-passbolt-is-healthy.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── custom-headers.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── jellyfin-s3.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── nginxservice-failed-because-the-control-process-exited.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── remove-server-headers.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── reverse-web-proxy.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── send-test-email-on-passbolt.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── wildcard-certificates.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── ssh
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── importing-ssh-keys-from-github.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── ssh-client-setup-using-keys.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── ssh-keys.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── ssh-port-redirection.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── sshuttle.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── weird-bash.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── wasabi
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     ├── policies.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp;     └── transport-endpoint-is-not-connected.md
+│&amp;nbsp;&amp;nbsp; ├── kubernetes
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── connect-to-container-that-has-sidecars.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── deleting-not-running-pods.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── downward-api.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── index.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── kubectl-set-namespace.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── rbac-testing.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── service-account-with-workload-id.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; ├── sleeper.md
+│&amp;nbsp;&amp;nbsp; │&amp;nbsp;&amp;nbsp; └── workload-id-test.md
+│&amp;nbsp;&amp;nbsp; ├── not-found.md
+│&amp;nbsp;&amp;nbsp; ├── robots.txt
+│&amp;nbsp;&amp;nbsp; └── stylesheets
+│&amp;nbsp;&amp;nbsp;     └── custom.css
+├── mkdocs.yml
+├── nginx
+│&amp;nbsp;&amp;nbsp; └── conf
+├── nginx.conf
+├── overrides
+│&amp;nbsp;&amp;nbsp; └── main.html
+└── redirect.conf
+
+46 directories, 172 files</code></pre></body></html>
+    </body>
+</html>
