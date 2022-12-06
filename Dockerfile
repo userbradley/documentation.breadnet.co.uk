@@ -7,7 +7,7 @@ RUN ["mkdocs", "build"]
 
 FROM nginx:stable-alpine
 
-COPY cloudflare /etc/nginx/cloudflare
+COPY cloudflare.conf /etc/nginx/cloudflare.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 COPY --from=BUILDER /app/site /var/www/documentation
