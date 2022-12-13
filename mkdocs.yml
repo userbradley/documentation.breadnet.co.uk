@@ -30,12 +30,13 @@ nav:
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
-          - Openstack error: cloud/terraform/openstack.md
-          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
           - Google IAP: cloud/terraform/google-iap.md
-          - tfupdate: cloud/terraform/tfupdate.md
+          - Openstack error: cloud/terraform/openstack.md
           - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
           - Remote Data: cloud/terraform/remote-data.md
+          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - tfupdate: cloud/terraform/tfupdate.md
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
   - Certifications:
       - Google Cloud Architect:
