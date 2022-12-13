@@ -26,14 +26,17 @@ nav:
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Grafeas: cloud/gcp/grafeas.md
+          - SSH using IAP: cloud/gcp/ssh-iap.md
+          - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
-          - Openstack error: cloud/terraform/openstack.md
-          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
           - Google IAP: cloud/terraform/google-iap.md
-          - tfupdate: cloud/terraform/tfupdate.md
+          - Openstack error: cloud/terraform/openstack.md
           - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
           - Remote Data: cloud/terraform/remote-data.md
+          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - tfupdate: cloud/terraform/tfupdate.md
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
   - Certifications:
       - Google Cloud Architect:
@@ -82,6 +85,8 @@ nav:
           - Docker Architecture: kb/docker/docker-architecture.md
           - Bulk retag: kb/docker/bulk-retag.md
           - Copy images between repositories: kb/docker/copy-containers-between-repos.md
+      - Git:
+          - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
       - Google cloud:
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell" : kb/google-cloud/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - "Serverless VPC access for Cloudrun across Projects" : kb/google-cloud/serverless-vpc-access-for-cloudrun-across-projects.md
