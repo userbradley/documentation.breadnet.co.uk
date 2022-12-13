@@ -26,6 +26,8 @@ nav:
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Grafeas: cloud/gcp/grafeas.md
+          - SSH using IAP: cloud/gcp/ssh-iap.md
+          - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
           - Openstack error: cloud/terraform/openstack.md
