@@ -25,9 +25,11 @@ nav:
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
+          - Filter fields from gcloud putput: cloud/gcp/filter-gcloud-output.md
           - Grafeas: cloud/gcp/grafeas.md
           - SSH using IAP: cloud/gcp/ssh-iap.md
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
+          - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
           - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
