@@ -32,6 +32,7 @@ nav:
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
+          - Bulk delete from terraform state: cloud/terraform/bulk-delete-terraform-state.md
           - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
           - Google IAP: cloud/terraform/google-iap.md
           - Openstack error: cloud/terraform/openstack.md
