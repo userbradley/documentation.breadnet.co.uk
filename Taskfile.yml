@@ -10,12 +10,3 @@ tasks:
   build:
     cmds:
       - mkdocs build
-
-  fly:
-    silent: true
-    cmds:
-      - fly deploy --dockerfile dev.Dockerfile --config dev.toml
-  fly-prd:
-    silent: true
-    cmds:
-      - fly deploy --dockerfile Dockerfile --config prod.toml
