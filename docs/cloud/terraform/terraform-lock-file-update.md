@@ -28,3 +28,12 @@ terraform providers lock \
   -platform=darwin_amd64 \
   -platform=windows_amd64
 ```
+
+## Delete them all together
+
+!!! Note "This is my preferred method"
+    If you are version locking your terraform version and provider version the lock file is basically just wasted space in git
+
+```shell
+find . -type f -name ".terraform.lock.hcl" | xargs rm
+```
