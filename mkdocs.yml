@@ -90,6 +90,7 @@ nav:
           - Bulk retag: kb/docker/bulk-retag.md
           - Copy images between repositories: kb/docker/copy-containers-between-repos.md
       - Git:
+          - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
       - Google cloud:
