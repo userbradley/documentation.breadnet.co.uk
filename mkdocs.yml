@@ -125,14 +125,14 @@ nav:
           - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
 
       - Public web Facing:
+          - Bookstack: kb/public-web-facing/bookstack.md
           - Cachet: kb/public-web-facing/cachet.md
           - Certbot: kb/public-web-facing/certbot.md
-          - Bookstack: kb/public-web-facing/bookstack.md
-          - Jellyfin S3: kb/public-web-facing/jellyfin-s3.md
-          - Wildcart Certificates: kb/public-web-facing/wildcard-certificates.md
-          - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
-          - Serving breadNET when server is offline:  kb/other/downloading-the-breadnet-site-and-serving-a-stale-copy.md
+          - Serving breadNET when server is offline:  kb/public-web-facing/downloading-the-breadnet-site-and-serving-a-stale-copy.md
+          - Jellyfin S3: kb/public-web-facing/jellyfin-s3.md
+          - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
+          - Wildcard Certificates: kb/public-web-facing/wildcard-certificates.md
           - Change password using WPCli: kb/public-web-facing/wp-cli-password.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
@@ -209,8 +209,8 @@ site_description: breadNET Documentation
 
 theme:
   name: material
-  favicon: https://breadnet.co.uk/favicon.ico
-  logo: https://breadnet.co.uk/favicon.png
+  favicon: favicon.ico
+  logo: favicon.png
   custom_dir: !ENV [dir, "overrides-prod"]
   icon:
     repo: fontawesome/brands/github-alt
@@ -277,7 +277,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  #- social # Needs to be built in to the docker image which I dont care for
+  - social # Needs to be built in to the docker image which I dont care for
 #- git-revision-date-localized:
 #    type: iso_datetime
 #    enable_creation_date: true ## Needs this built in to the docker image which I don't care for

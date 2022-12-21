@@ -6,7 +6,7 @@ title: Change password using WPCli
 
 ## Why
 
-Sometimes we need to change a users wordpress username
+Sometimes we need to change a users wordpress users password, and don't want to have to mess about with the Database
 
 ## How
 
