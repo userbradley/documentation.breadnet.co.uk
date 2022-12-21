@@ -277,6 +277,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
+  - search
   - social # Needs to be built in to the docker image which I dont care for
 #- git-revision-date-localized:
 #    type: iso_datetime
