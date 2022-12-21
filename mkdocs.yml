@@ -133,6 +133,7 @@ nav:
           - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
           - Serving breadNET when server is offline:  kb/other/downloading-the-breadnet-site-and-serving-a-stale-copy.md
+          - Change password using WPCli: kb/public-web-facing/wp-cli-password.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
