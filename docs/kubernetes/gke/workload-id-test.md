@@ -52,5 +52,5 @@ You will need to have the `compute metadata api` service running in the cluster
 
 ## What to read next
 
-* [Get project using compute engine API](../../kb/google-cloud/api-get-project.md)
-* [Get GCP Service account using compute engine API](../../kb/google-cloud/api-get-sa.md)
+* [Get project using compute engine API](../../cloud/gcp/api-get-project.md)
+* [Get GCP Service account using compute engine API](../../cloud/gcp/api-get-sa.md)
