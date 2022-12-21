@@ -38,6 +38,7 @@ nav:
           - Openstack error: cloud/terraform/openstack.md
           - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
           - Remote Data: cloud/terraform/remote-data.md
+          - Terraform lock file update: cloud/terraform/terraform-lock-file-update.md
           - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
           - tfupdate: cloud/terraform/tfupdate.md
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
@@ -90,6 +91,7 @@ nav:
           - Copy images between repositories: kb/docker/copy-containers-between-repos.md
       - Git:
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
+          - Set git username and email per repo: kb/git/set-git-user-per-repo.md
       - Google cloud:
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell" : kb/google-cloud/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - "Serverless VPC access for Cloudrun across Projects" : kb/google-cloud/serverless-vpc-access-for-cloudrun-across-projects.md
