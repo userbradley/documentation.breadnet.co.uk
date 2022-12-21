@@ -38,21 +38,6 @@ steps:
         commands:
           - echo "VXNlci1BZ2VudDogKgpEaXNhbGxvdzogLwo=" | base64 -d > /codefresh/volume/documentation.breadnet.co.uk/docs/robots.txt
 
-
-  dev-dockerhub-build:
-    title: "DEV Dockerhub Build"
-    type: "build"
-    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-    image_name: "userbradley/documentation"
-    tag: "dev-${{CF_SHORT_REVISION}}"
-    dockerfile: "dev.Dockerfile"
-    stage: "docker"
-    registry: userbradley
-    when:
-      branch:
-        only:
-          - dev
-
   dev-flyregistry-build:
     title: "DEV Fly Build"
     type: "build"
@@ -66,21 +51,6 @@ steps:
       branch:
         only:
           - dev
-
-  prod-docker-build:
-    title: "PROD Dockerhub Build"
-    type: "build"
-    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-    image_name: "userbradley/documentation"
-    tag: "prod-${{CF_SHORT_REVISION}}"
-    dockerfile: "Dockerfile"
-    stage: "docker"
-    registry: userbradley
-    when:
-      branch:
-        only:
-          - master
-
 
   prod-flyregistry-build:
     title: "PROD Fly Build"
