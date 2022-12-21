@@ -2,6 +2,8 @@ FROM squidfunk/mkdocs-material:latest as BUILDER
 WORKDIR /app
 COPY . /app
 
+CMD pip install pillow cairosvg
+
 RUN ["mkdocs", "build"]
 
 
