@@ -35,7 +35,7 @@ I have a CD pipeline that builds a docker image, and publishes it to [fly.io](ht
 
 You can pull the images from here: 
 
-[userbradley/documentation](https://hub.docker.com/repository/docker/userbradley/documentation)
+[userbradley/documentation](https://hub.docker.com/r/userbradley/documentation)
 
 ![](assets/pipeline.png)
 
