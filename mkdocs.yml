@@ -12,6 +12,9 @@ nav:
           - Aqua Page 1: cloud/aqua/aqua-page-1.md
           - Aqua Page 2: cloud/aqua/aqua-page-2.md
           - Aqua partnership notes: cloud/aqua/partnership-info.md
+      - AWS:
+          - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
+          - AWS CLI: cloud/aws/aws-cli.md
       - Digital Ocean:
           - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
       - Fly:
@@ -22,11 +25,16 @@ nav:
           - Authenticate to Fly docker Registry: cloud/fly/fly-docker-auth.md
           - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
       - Google Cloud:
+          - Get project using GCE Metadata API: cloud/gcp/api-get-project.md
+          - Get serviceAccount using GCE Metadata API: cloud/gcp/api-get-sa.md
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud putput: cloud/gcp/filter-gcloud-output.md
+          - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
           - Grafeas: cloud/gcp/grafeas.md
+          - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+          - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
           - SSH using IAP: cloud/gcp/ssh-iap.md
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
@@ -93,11 +101,6 @@ nav:
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
-      - Google cloud:
-          - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell" : kb/google-cloud/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
-          - "Serverless VPC access for Cloudrun across Projects" : kb/google-cloud/serverless-vpc-access-for-cloudrun-across-projects.md
-          - Get project using GCE Metadata API: kb/google-cloud/api-get-project.md
-          - Get serviceAccount using GCE Metadata API: kb/google-cloud/api-get-sa.md
       - Linux Networking:
           - Bringing up Interfaces: kb/linux-networking/bringing-up-interfaces.md
           - Centos Iptables: kb/linux-networking/centos-iptables.md
@@ -140,9 +143,7 @@ nav:
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
-      - AWS:
-          - AWS Cloud-init: kb/aws/cloud-init-sg1.md
-          - AWS CLI: kb/aws/aws-cli.md
+
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Linux Command line:
@@ -158,8 +159,8 @@ nav:
       - Networking:
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
-      - Cloud:
-          - cloud-init: kb/cloud/cloud-init.md
+      - Cloud init:
+          - cloud-init: kb/cloud-init/cloud-init.md
       - Markdown:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
