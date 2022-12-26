@@ -42,9 +42,12 @@ steps:
 
   mkdocs-build:
     title: "mkdocs build"
-    stage: build
+    stage: clone
     working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
     image: "squidfunk/mkdocs-material:latest"
+    entry_point:
+      - mkdocs
+      - build
     when:
       branch:
         only:
