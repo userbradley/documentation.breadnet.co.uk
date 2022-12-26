@@ -27,13 +27,17 @@ steps:
       branch:
         only:
           - docker-test
-  ls:
-    title: "LS"
-    stage: clone
+
+
+  mkdocs-docker-build:
+    title: "mkdocs docker ubild"
+    type: "build"
     working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-    image: "alpine:latest"
-    commands:
-      - ls -la
+    image_name: "documentation-dev"
+    tag: "${{CF_SHORT_REVISION}}"
+    dockerfile: "test.Dockerfile"
+    stage: "clone"
+    registry: fly
     when:
       branch:
         only:
