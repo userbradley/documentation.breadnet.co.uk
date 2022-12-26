@@ -200,7 +200,7 @@ nav:
 
 
 
-repo_name: docu
+repo_name: documentation
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
 site_name: !ENV [env,"breadNET Documentation"]
@@ -281,11 +281,7 @@ markdown_extensions:
 
 plugins:
   - search
-  - social # Needs to be built in to the docker image which I dont care for
-#- git-revision-date-localized:
-#    type: iso_datetime
-#    enable_creation_date: true ## Needs this built in to the docker image which I don't care for
-
+  - social
 
 extra:
   social:
@@ -297,7 +293,7 @@ extra:
       name: My Github
     - icon: fontawesome/solid/paper-plane
       link: mailto:webmaster@breadnet.co.uk
-    - icon: fontawesome/solid/file-lines #https://fontawesome.com/docs/web/setup/upgrade/whats-changed#icons-renamed-in-version-6
+    - icon: fontawesome/solid/file-lines
       link: https://breadnet.co.uk
       name: My Website
-  generator: false
+  generator: false # I am sorry I will enable it later

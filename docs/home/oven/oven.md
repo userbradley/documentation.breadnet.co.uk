@@ -8,7 +8,7 @@ Kitchen
 
 ## Photo
 
-![](/assets/IMG_9259.JPG)
+![](/assets/IMG_9259.JPG){ loading=lazy }
 
 ## Using
 
@@ -16,9 +16,9 @@ Kitchen
 
 Set the left hand dial to the 6'oclock position
 
-| Left hand side            | Right hand side                |
-|---------------------------|--------------------------------|
-| ![](/assets/mode-gen.png) | ![](/assets/mode-gen-temp.png) |
+| Left hand side             | Right hand side                |
+|----------------------------|--------------------------------|
+| ![](/assets/mode-gen.png) { loading=lazy } | ![](/assets/mode-gen-temp.png){ loading=lazy } |
 
 !!! Info "Setting the temperature"
     You can use the right hand side dial to set the temperature. Note: It's in Degrees Celsius
@@ -36,7 +36,7 @@ Set the temperature between `200` and `250`
 
 | Left hand side            | Right hand side                |
 |---------------------------|--------------------------------|
-| ![](/assets/grilling.png) | ![](/assets/mode-gen-temp.png) |
+| ![](/assets/grilling.png){ loading=lazy } | ![](/assets/mode-gen-temp.png){ loading=lazy } |
 
 ### Light
 
@@ -47,9 +47,9 @@ You may want to turn the light on, on its own when cleaning the oven
 
 Set the left hand dial to `light`
 
-| Left hand side                                          | Right hand side | 
-|---------------------------------------------------------|-----------------|
-| <img height="200" src="/assets/light.png" width="200"/> | `Null`          |
+| Left hand side                                                       | Right hand side | 
+|----------------------------------------------------------------------|-----------------|
+| <img height="200" src="/assets/light.png" width="200" loadin="lazy"/> | `Null`          |
 
 ### Defrost
 
