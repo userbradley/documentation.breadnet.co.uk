@@ -2,6 +2,7 @@ version: "1.0"
 stages:
   - "clone"
   - "setup"
+  - "build"
   - "docker"
   - "deploy"
 
@@ -41,9 +42,9 @@ steps:
 
   mkdocs-build:
     title: "mkdocs build"
-    type: "build"
+    stage: build
     working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-    image_name: "squidfunk/mkdocs-material:latest"
+    image: "squidfunk/mkdocs-material:latest"
     when:
       branch:
         only:
