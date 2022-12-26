@@ -35,8 +35,20 @@ steps:
           branch:
             only:
               - dev
+              - docker-test
         commands:
           - echo "VXNlci1BZ2VudDogKgpEaXNhbGxvdzogLwo=" | base64 -d > /codefresh/volume/documentation.breadnet.co.uk/docs/robots.txt
+
+  mkdocs-build:
+    title: "mkdocs build"
+    type: "build"
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image_name: "squidfunk/mkdocs-material:latest"
+    when:
+      branch:
+        only:
+          - docker-test
+
 
   dev-flyregistry-build:
     title: "DEV Fly Build"
