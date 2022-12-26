@@ -15,6 +15,29 @@ steps:
     git: "github"
     stage: "clone"
 
+  mkdocs-build:
+    title: "mkdocs build"
+    stage: clone
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image: "squidfunk/mkdocs-material:latest"
+    entry_point:
+      - mkdocs
+      - build
+    when:
+      branch:
+        only:
+          - docker-test
+  ls:
+    title: "LS"
+    stage: clone
+    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
+    image: "alpine:latest"
+    commands:
+      - ls -la
+    when:
+      branch:
+        only:
+          - docker-test
 
   setup:
     type: parallel
@@ -40,18 +63,7 @@ steps:
         commands:
           - echo "VXNlci1BZ2VudDogKgpEaXNhbGxvdzogLwo=" | base64 -d > /codefresh/volume/documentation.breadnet.co.uk/docs/robots.txt
 
-  mkdocs-build:
-    title: "mkdocs build"
-    stage: clone
-    working_directory: "/codefresh/volume/documentation.breadnet.co.uk/"
-    image: "squidfunk/mkdocs-material:latest"
-    entry_point:
-      - mkdocs
-      - build
-    when:
-      branch:
-        only:
-          - docker-test
+
 
 
   dev-flyregistry-build:
