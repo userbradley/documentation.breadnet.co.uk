@@ -23,7 +23,8 @@ I think this is just me getting more mature and resizing that a full CMS is not 
 
 ## Where it's now hosted
 
-I initially had this on my Web server along with a few other sites, but I am looking at migration over to `fly.io`, as it's SUPER simple to host sites there, along with SSL and custom domains.
+At the moment [Documentation](https://documentation.breadnet.co.uk) is hosted
+on [Fly.io](https://fly.io) 
 
 
 
@@ -75,21 +76,7 @@ Site is available at [dev-documentation.breadnet.co.uk](https://dev-documentatio
 
 You will know when you're on the development site, as the colors are red!
 
-# Docker Images
 
-As part of the continued _re-platforming_ of this site, I am building docker images to host the site.
-
-This is not really required, but it's useful, and I think it's also just cool.
-
-## Naming
-
-As the repo on Dockerhub will have multiple images, they follow a naming convention like below
-
-```text
-userbradley/documentation:[dev|prod]-{commit-hash}
-```
-
-The images are built by Codefresh.
 
 # File directory
 
