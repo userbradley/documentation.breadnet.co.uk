@@ -166,11 +166,7 @@ nav:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
-      - Helm:
-          - Create a helm chart: kb/helm/create-helm-chart.md
-          - Push chart to Artifact Registry: kb/helm/push-chart-to-ar.md
-          - Use GCS as helm repo: kb/helm/helm-repo-gcs.md
-          - Force containers to update when config map changes in helm: kb/helm/force-rollout-on-configmap-update.md
+
   - Kubernetes:
       - kubernetes/index.md
       - KB:
@@ -182,6 +178,11 @@ nav:
           - Sleeper pod: kubernetes/kb/sleeper.md
           - Downward API: kubernetes/kb/downward-api.md
           - Using ArgoCD Image updater with Google Artifact Registry: kubernetes/kb/using-argocd-image-updater-with-google-artifact-registry.md
+      - Helm:
+          - Create a helm chart: kubernetes/helm/create-helm-chart.md
+          - Push chart to Artifact Registry: kubernetes/helm/push-chart-to-ar.md
+          - Use GCS as helm repo: kubernetes/helm/helm-repo-gcs.md
+          - Force containers to update when config map changes in helm: kubernetes/helm/force-rollout-on-configmap-update.md
       - GKE:
           - kubernetes/gke/index.md
           - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
