@@ -10,11 +10,10 @@ This site holds all the documentation and notes I've written since starting in I
 If you've known me, or referred to my documents before, it used to be `bookstack` 
 
 ## Other sites maintained
-| Site name                         | Link                                                           |
-|-----------------------------------|----------------------------------------------------------------|
-| Main site                         | [breadnet.co.uk](https://breadnet.co.uk)                       |
-| CV                                | [bradley.breadnet.co.uk](https://bradley.breadnet.co.uk)       |
-| Kubernetes Manifest documentation | [kubernetes.breadnet.co.uk](https://kubernetes.breadnet.co.uk) |
+
+* [breadNET](https://breadnet.co.uk/?mtm_campaign=documentation&mtm_kwd=mainpage)
+* [My CV/ Resume](https://bradley.breadnet.co.uk/?mtm_campaign=documentation&mtm_kwd=mainpage)
+
 
 
 ## How this site works
