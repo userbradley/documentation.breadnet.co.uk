@@ -204,38 +204,3 @@ We are able to view the configuration of the `kube-apiserver` on our cluster. De
     Can view the config at `/etc/systemd/system/kube-apiserver.service`
 
     can view the process of kube-apiserver by doing `ps -aus | grep kube-apiserver`
-
-
-<!-- notes
-
-
-
-Viewing kubeapi config options
-
-
-
-
-
-
--->
-
-The Scheduler monitors the pods and when it realises there is a pod with no node, it assigns it, then notifies etcd
-
-Kube-api server is responsible for
-
-* Authenticating users
-* Validates requests
-* Retrieves data
-* Update ETCD
-* Scheduler
-* Kubelet
-* 
-If you're setting up K8 the hard way, kubeapi-server is installed as a binary and needs to be on the master server
-
-There are alot of certificates that are used throughout the kube-api server
-
-
-
-
-
-
