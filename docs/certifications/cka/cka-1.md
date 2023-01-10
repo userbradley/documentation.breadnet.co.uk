@@ -164,58 +164,57 @@ We don't actually _have to_ use kubectl, as kubectl is just a nice wrapper aroun
 
 ### Creating a pod (kube-apiserver example)
 
-| Where it happens | What happens | 
-|------------------|--------------|
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
+The below explains what happens when we do `kubectl create deployment nginx --image=nginx`
 
-<!-- notes
+| Where it happens | What happens                                                                         | 
+|------------------|--------------------------------------------------------------------------------------|
+| Master           | Authenticate as a user                                                               |
+| Master           | Validate the request (check request is valid, no feature gates etc)                  |
+| Master           | Create pod Object                                                                    |
+| Master           | Update `etcd`                                                                        |
+| Master           | Update user that the pod has been created                                            |
+| Master           | scheduler monitors the `kube-api` for changes                                        |
+| Master           | sees a change of `+1 pod` with no nodes assigned                                     |
+| Master           | Scheduler identifies a node to place the pod on, and communicates this to `kube-api` |
+| Master           | `kube-apiserver` updates etcd                                                        |
+| Master           | apiserver passes the information to the selected nodes kubelet on a *worker*         |
+| Worker           | Kubelet creates pod on the node, instructs the CRI to deploy the image               |
+| Worker           | CRE creates the image                                                                |
+| Worker           | Updates kube-api                                                                     |
+| Master           | kube-apiserver updates ETCD                                                          |
 
-When creating a pod
-(master node does this below)
-    1 - authenticates a user
-    2 - validates a request
-    3- Creates a pod object
-    4- updates etcd
-    5- updates the user that a pod has been created
-    6- scheduler monitors the API server for chanegs
-    7 - scheduler sees a pod with no nodes assigned
-    8- scheduler identifies the righ node to place the pod on and communicates it back to the kubeapi
-    9 - apiserver updates etcd
-    10 - apiserver passes information to the kubelet on the correct worker node
-(on worker node now)
-    11- kubelet creates the pod on the node, instructs teh CRE to deploy the image
-    12 - once done, updates the status back to the kube-api
-(master now)
-    13- once updated to kube-api, kupeapi server updates to etcd
+A similar pattern occurs each time anything is updated in the cluster
 
-A similar pattern is followed when any change is requested
-!!! the kube-api is at the center of all changes 
+!!! note "Summary of Kubeapi"
+    `kube-apiserver` is responsible for Authenticating and validating requests as well as retrieving and updating data in ETCD.
 
-summary: Kube-api server is responsible for authenticating and validating requests, retrieving and updating data in etcd. In fact its the only component that interacts with etcd
-    scheduler kubecontorller manager and kubelet all use the apiserver.
+    In fact, `kube-apiserver` is the only _service_ that communicates with ETCD directly. Components like `scheduler`, `kubecontroller`, `kubelet` all use the `kube-apiserver`
 
-Viewing kubeapi config options
 
-=== kubeadm
+### Viewing `kube-apiserver` configuration
+
+We are able to view the configuration of the `kube-apiserver` on our cluster. Depending on how you provisioned the cluster, changes how you view the config.
+
+=== "kubeadm"
     deployed as a pod called `kube-apiserver-master` in the `kube-system` namespace
 
     can view the config on `/etc/kubernetes/manifests/kube-apiserver.yml`
 
-=== non-kubeadm
+=== "non-kubeadm"
     Can view the config at `/etc/systemd/system/kube-apiserver.service`
+
     can view the process of kube-apiserver by doing `ps -aus | grep kube-apiserver`
+
+
+<!-- notes
+
+
+
+Viewing kubeapi config options
+
+
+
+
 
 
 -->
