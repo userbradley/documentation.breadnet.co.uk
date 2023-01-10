@@ -247,7 +247,7 @@ theme:
         name: Switch to light mode
   features:
     - navigation.instant # IDK
-    - navigation.tracking #Anchor links
+    #- navigation.tracking #Anchor links
     #- !ENV [nav, ""]#navigation.expand #Exapnds the navigation in the UI, disabled by default, but enabled in dev
     - content.code.annotate
     - search.share
