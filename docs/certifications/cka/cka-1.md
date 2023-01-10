@@ -202,7 +202,7 @@ We are able to view the configuration of the `kube-apiserver` on our cluster. De
 
     can view the config on `/etc/kubernetes/manifests/kube-apiserver.yml`
 
-=== "non-kubeadm"
+=== "Non Kubeadm"
     Can view the config at `/etc/systemd/system/kube-apiserver.service`
 
     can view the process of kube-apiserver by doing `ps -aus | grep kube-apiserver`
@@ -229,7 +229,7 @@ Enabling each controller is done using a feature gate under the option `--contro
 
     Pods show up as `kube-controller-manager-master` in `kube-system` namespace on the master node
 
-=== "non-Kubeadm"
+=== "Non Kubeadm"
     you can view the service under: `/etc/systemd/system/kube-controller-manager.service`
 
     you can also view the running process using `ps -aux | grep kube-controller-manager`
@@ -259,3 +259,75 @@ If a pod was to die, the ReplicationController is what is responsible for recrea
 ??? info "The official definition of the `ReplicationController` is"
     A ReplicationController ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available.
 
+## Kube Scheduler 
+
+`kube-scheduler` is a cluster control plane process that assigns pods to a node. (_note, this does not actually the run them on the node, see [Kubelet]()_)
+
+The scheduler puts pods in a scheduling queue according to constraints (like CPU) and available resources on nodes. 
+
+
+=== "Kubeadm"
+    Runs as a pod on the master node
+    `/etc/kubernetes/manifests/kube-scheduler.yaml`
+
+=== "Non Kubeadm"
+    Not sure, but probably going to be under `/etc/systemd/system/kube-scheduler.service`
+
+    The config file for the scheduler exists under `/etc/kubernetes/scheduler.conf`
+
+
+### Why do we need a scheduler? 
+
+We need to ensure that the right pods are getting placed on the right nodes. 
+
+An Example would be we need to run a pod on a node with a GPU, the scheduler makes sure that the pod will _land_ on a Node with a GPU attached.
+
+### Scheduling Considerations
+
+The scheduler looks at each pod and tries to find the best node for it.
+
+#### Scheduling Phase 1: Filtering
+
+Filtering step finds the nodes where it's possible to schedule the pod. If there are more than one, it moves on to phase 2
+
+#### Scheduling phase 2: Scoring
+
+1. Rank the surviving nodes from the [Filtering](#scheduling-phase-1-filtering) stage and assing a value to each node.
+2. The score is assigned based on the active sorting rules (Default unless changed) 
+3. If there are multiples, it picks one at random. 
+
+
+
+
+
+<!-- Notes
+
+Reposible for shceduling pods on nodes
+Only responsible for deciding what pod goes on what node. Does not place the pod on the nodes. The Kubelete creates the pod.
+
+An example is a port where the crane is the scheduler, it tells the captain it can expect a container, and then the captain (kubelet) decides where the pod goes. 
+
+Why do we need a scheduler?
+    We need to ensure that the right container ends up on the right node
+    Example being a container needs epcific resoruces (taints and Tolerations)
+    Make sure the containers are placed on the right nodes, depeding on certain critera
+
+Scheduling considerations:
+    Scheduler looks at each pod and tries to find the best node for it
+    The Pod has a CPU and memory requirment.
+    It goes in 2 phase:
+        1. Tries to filter out the nodes that do not fit the criteria
+        2. Ranks the nodes to identify the bet fit for the pod.
+            Creates a score on each node on a scale of 1-10
+            Calculates the free resoruces after the pod gets scheduled
+
+The Scheduler is built in, but you can write your own one. 
+
+Installing the Kube scheduler
+
+Viewing the config
+
+
+
+
+--->
