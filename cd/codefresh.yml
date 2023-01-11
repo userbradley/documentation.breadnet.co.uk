@@ -13,7 +13,6 @@ steps:
     revision: "${{CF_BRANCH}}"
     git: "github"
     stage: "clone"
-    depth: 1
 
 
   setup:
