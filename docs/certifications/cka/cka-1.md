@@ -298,8 +298,6 @@ Filtering step finds the nodes where it's possible to schedule the pod. If there
 
 
 
-
-
 <!-- Notes
 
 Reposible for shceduling pods on nodes
