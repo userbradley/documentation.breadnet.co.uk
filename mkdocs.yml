@@ -258,7 +258,6 @@ theme:
     - content.tabs.link
 
 
-
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -286,6 +285,7 @@ markdown_extensions:
 plugins:
   - search
   - social
+  #- offline
 
 extra:
   social:

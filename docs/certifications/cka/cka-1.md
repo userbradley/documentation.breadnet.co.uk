@@ -297,7 +297,8 @@ Filtering step finds the nodes where it's possible to schedule the pod. If there
 3. If there are multiples, it picks one at random. 
 
 
-
+!!! note "A note on schedulers"
+    Kubernetes ships with one by default, but you are able to write your own.
 <!-- Notes
 
 Reposible for shceduling pods on nodes
