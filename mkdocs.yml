@@ -32,6 +32,7 @@ nav:
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud putput: cloud/gcp/filter-gcloud-output.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+          - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
           - Grafeas: cloud/gcp/grafeas.md
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
@@ -247,7 +248,7 @@ theme:
         name: Switch to light mode
   features:
     - navigation.instant # IDK
-    #- navigation.tracking #Anchor links
+    - navigation.tracking #Anchor links
     #- !ENV [nav, ""]#navigation.expand #Exapnds the navigation in the UI, disabled by default, but enabled in dev
     - content.code.annotate
     - search.share
@@ -279,6 +280,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.snippets
+  - abbr
 
 plugins:
   - search
