@@ -299,34 +299,46 @@ Filtering step finds the nodes where it's possible to schedule the pod. If there
 
 !!! note "A note on schedulers"
     Kubernetes ships with one by default, but you are able to write your own.
-<!-- Notes
 
-Reposible for shceduling pods on nodes
-Only responsible for deciding what pod goes on what node. Does not place the pod on the nodes. The Kubelete creates the pod.
+## Kubelet
 
-An example is a port where the crane is the scheduler, it tells the captain it can expect a container, and then the captain (kubelet) decides where the pod goes. 
+Kubelet is responsible for registering the Worker node with the Masters.
 
-Why do we need a scheduler?
-    We need to ensure that the right container ends up on the right node
-    Example being a container needs epcific resoruces (taints and Tolerations)
-    Make sure the containers are placed on the right nodes, depeding on certain critera
+It receives jobs (Like placing a pod) and passes that on to the CRE. These are _requested_ by _Scheduling Events_
 
-Scheduling considerations:
-    Scheduler looks at each pod and tries to find the best node for it
-    The Pod has a CPU and memory requirment.
-    It goes in 2 phase:
-        1. Tries to filter out the nodes that do not fit the criteria
-        2. Ranks the nodes to identify the bet fit for the pod.
-            Creates a score on each node on a scale of 1-10
-            Calculates the free resoruces after the pod gets scheduled
+It tells the CRE to pull the docker (or OCI) image, and then reports the status back to the masters on a regular basis.
 
-The Scheduler is built in, but you can write your own one. 
+=== "Kubeadm"
+    It's not installed by default, so you have to install it
 
-Installing the Kube scheduler
+=== "Non Kubeadm"
+    _Not confirmed_
 
-Viewing the config
+## Kube Proxy
+
+Kube proxy is resposible for all the _workload_ based networking.
+
+It handles (non exclusive list):
+
+* Inter-pod networking
+* Inter-pod-node networking
+* Services IP networking communication
+
+It does this by running a pod on each node (using a [DaemonSet]()) which then adjusts iptables rules on the nodes.
+
+The job of the Kube proxy is to look out for new services that have been scheduled and _host_ them
+
+The `kube-proxy` needs to be installed, and run as a daemonset on all the nodes.
+
+It's called `kube-proxy-<uuid>` and runs in the `kube-system` namespace
 
 
+### Pod networking
 
+Pod networking (we will touch on this in more depth later) uses a network that spans all nodes. Pods then get
 
---->
+### Accessing a service 
+
+When a `kind:Service` is created, an IP address gets assigned to the nodes (Not exactly, but this is the best way to think about it)
+
+When a request for that `kind:Service` is made, the node accepts the traffic, and forwards it on to the serving pod. 
