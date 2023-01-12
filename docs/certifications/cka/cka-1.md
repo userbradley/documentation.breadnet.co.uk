@@ -342,3 +342,11 @@ Pod networking (we will touch on this in more depth later) uses a network that s
 When a `kind:Service` is created, an IP address gets assigned to the nodes (Not exactly, but this is the best way to think about it)
 
 When a request for that `kind:Service` is made, the node accepts the traffic, and forwards it on to the serving pod. 
+
+## Pods
+
+<!-- Notes
+
+
+
+-->
