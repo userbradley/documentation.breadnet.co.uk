@@ -15,12 +15,12 @@ This seems like it will be by far the hardest exam and learning of my career.
 6. Do it all again
 7. Build more documentation on K8's
 
-Hopefully this should take no longer than a year to complete, balencing it along side work
+Hopefully this should take no longer than a year to complete, balancing it alongside work
 
-## Reousces I have written
+## sources I have written
 
 * [CKA Study notes](cka-1.md)
-* [Practice questions](cka-practice-tests.md)
+* [Practice questions](cka-practice-questions.md)
 * [List of controllers](cka-list-of-controllers.md)
 
 

@@ -4,12 +4,16 @@ title: Kubernetes
 
 # Kubernetes
 
+## Quick Links
+
+* [Kubectl commands](kb/kubectl-commands.md)
 
 ## Folders
 
 * [KB](kb)
 * [GKE](gke)
 * [k3s](k3s)
+
 
 
 Kubernetes has been awarded its own section as it encompasses the below:
