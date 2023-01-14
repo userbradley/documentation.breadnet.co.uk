@@ -78,6 +78,7 @@ nav:
           - certifications/cka/index.md
           - CKA - Page 1: certifications/cka/cka-1.md
           - CKA Practice questions: certifications/cka/cka-practice-questions.md
+          - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
@@ -285,6 +286,11 @@ markdown_extensions:
   - pymdownx.snippets
   - abbr
   - footnotes
+  - pymdownx.superfences: # https://mermaid.js.org/syntax/flowchart.html and https://squidfunk.github.io/mkdocs-material/reference/diagrams/#configuration
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - search

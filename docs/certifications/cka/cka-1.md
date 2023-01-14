@@ -376,7 +376,7 @@ Containers in the same pod share storage mappings, so we can map storage to 2 co
 
 ### Creating a pod
 
-We can create a pod using both [kubectl](../../kubernetes/kb/kubectl-commands.md) and `manifest` files.
+We can create a pod using both [kubectl](../../kubernetes/kb/kubectl-commands-old.md) and `manifest` files.
 
 #### using kubectl
 
@@ -424,4 +424,148 @@ spec: # (7)!
 9. First item in the list by definition of `name`
 10. Image as found on the [public docker registry for nginx](https://hub.docker.com/_/nginx)
 11. Namespace to deploy the `Pod` in to **Optional**
+
+## Deployment
+
+Deployments are the easier means to manage Kubernetes applications. You are able to describe your deployment in YAML, and then kubernetes
+automatically manages the Replica set that manages the pods.
+
+You would use a Deployment over a RS (Replica Set) as it allows you to do things like:
+
+* Rolling Updates
+* Rollbacks
+
+Below shows how Deployments interact with ReplicaSet and pods. 
+
+
+``` mermaid
+flowchart TD
+Deployment --> ReplicaSet --> Pods --> Containers
+```
+
+
+## Services 
+
+Services enable communication with various components inside and outside the cluster.
+
+They are used to connect applications together in loosely coupled microservices, as well as getting user traffic in to the cluster
+
+Below shows how services can work
+
+``` mermaid
+flowchart LR
+A[Users] --> B[Service] 
+B --> C[Pods]
+C --> D[Service]
+C --> E[Backend Service]
+D --> F[Pods]
+E --> G[Pods]
+G --> H[Database Service]
+H --> I[Database ]
+```
+
+A service is a deployable piece of architecture in Kubernetes, in the form of `iptables` not actual compute.
+
+There are several types of `Services`:
+
+* ClusterIP
+* NodePort
+* LoadBalancer
+
+Using a service we can access other services across namespaces as per the below diagram
+
+```text
+   * ------------------------------------- Name of the service as defines in the metadata.name field
+   |           * ------------------------- Name of the namespace, In this example it's my-namespace
+   |           |         * --------------- Denotes it's a Service
+   |           |         |   * ----------- Incase you forget you're in a clluster
+   |           |         |   |       * --- Suffic
+   |           |         |   |       | 
+my-service.my-namespace.svc.cluster.local
+```
+
+### ClusterIP
+
+The service type `ClusterIP` is most commonly used for internal traffic between different _microservices_ as the IP address is _registered_
+in side the cluster and is not really designed for external access.
+
+In the below diagram, you can see where it's useful to use a service
+
+``` mermaid
+flowchart TB
+AA[Load Balancer] --> A & B & C
+A[web pod 1] & B[web pod 2] & C[web pod 3] --> D[back-end]
+D--> E[Backend pod 1] & F[Backend pod 2] & G[Backend pod 3] --> H[redis]
+H --> I[Redis pod 1] & J[Redis pod 2] & K[Redis pod 3]
+```
+
+This allows us to scale each layer up and down, move it between clusters etc. and not have to update any IP address'
+
+Secondly, using a service here means we can call it my DNS name, so each service gets a dns entry like the below
+
+
+We are able to create a service with the below:
+
+### Example of a ClusterIP
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: my-cs
+  name: my-cs
+spec:
+  ports:
+  - port: 5678
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: my-cs
+  type: ClusterIP
+```
+
+### NodePort
+
+The Service type `NodePort` allows us to _publish_ a port on the kubernetes nodes themselves.
+
+!!! note "Numbers to remember"
+    The ports can only be allocated **between** **30000* and **32767**
+
+When a type `NodePort` is exposed, traffic needs to be sent to the IP address of the nodes, along with the port.
+
+Assuming a worker node is on the IP address `192.168.69.2` we would do
+
+#### Example of a NodePort
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  type: NodePort
+  selector:
+   name: MyApp
+  ports:
+    # By default, and for convenience, the `targetPort` is set to the same value as the `port` field.
+    - port: 80
+      targetPort: 80
+      # Optional field
+      # By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767)
+      nodePort: 30007
+```
+
+
+```shell
+curl http://192.168.69.2:30008
+```
+
+### LoadBalancer
+
+This is only really used on cloud providers.
+
+If you are not running on a cloud provider, it will act like [Node Port](#nodeport)
+
+
 
