@@ -50,7 +50,7 @@ The CRI is a plugin interface which enables the [Kubelet]() to use a wide variet
 Kubernetes is split into 2 node types
 
 * [Master](#master) - Responsible for managing the cluster
-* [Workers](#worker) -  Responsible for running the containers (nae; workload)
+* [Workers](#workers) -  Responsible for running the containers (nae; workload)
 
 
 ### Master
@@ -345,33 +345,83 @@ When a request for that `kind:Service` is made, the node accepts the traffic, an
 
 ## Pods
 
-<!-- Notes
+### What are pods
 
-Pods are the smallest deployable unit of _compute_ on a kubernetes cluster
-You can have several containers per pod, as long as they are incredibly tightly copuled.
+Pods are the smallest deployable item of _compute_ on a Kubernetes cluster. 
 
-Pods are distributed per node, and try and keep them _equal_
+Pods are made up of containers. Usually it's just one container, how ever it can be multiple.
 
-Pods do not mean containers, pods are made up of containers.
+!!! info "Note on multiple containers per pod"
+    Only deploy multiple containers per pod if they are very tightly coupled. A good example would be apache2 and php-fpm (if memory serves me well.)
+    
+    Another good example is in GKE, we are able to deploy the Google cloud SQL proxy along side the container to access the Database without having to use IP address' 
 
-When scaling an application, we do not add more containers to a pod, we add more pods to a Deployment.
+When we deploy an application, we are effectively deploying a collection of pods.
 
-As part of pods, we can have something called a `sidecar` container, which is directly depended on by the main container. A good example is google cloud sql proxy.
+### How to scale the application
 
-They both share the same network space, so can refer to each other by `localhost` 
+When your application is deployed in pods, to scale the application we <u>**do not**</u> add more containers to a pod, 
+instead we add more pods to the cluster. 
 
-They are also able to share the same storage, as they are in the same linux kernel namespace
-
-
-When the load increases, we can scale the pods up, This is using HPA (talk about this later)
-
-When we deploy a pod, we define in yaml what that pod is made up of, be it storage, service accounts, ports, run commands and if it has sidecar containers.
-
-Even if our application is simple, we still need to run it as pods. 
-
-Using the `kubectl run nginx --image=nginx:latest` creates a pod and deploys the nginx image
+We can use a [Deployment]() as well as [HPA]() to scale the deployment manually and automatically. 
 
 
-See [Kubectl commands](../kubernetes/kb/kubectl-commands.md) for more commands
+### Networking and storage
 
--->
+Due to how kubernetes uses the underlying Kernel, and then Networking Namespaces, containers that are in the same pod share `localhost` 
+
+*[Networking Namespaces]: A network namespace is a logical copy of the network stack from the host system. Network namespaces are useful for setting up containers or virtual environments. Each namespace has its own IP addresses, network interfaces, routing tables, and so forth.
+
+Containers in the same pod share storage mappings, so we can map storage to 2 containers in a pod and they have rw access, without having to do anything special
+
+### Creating a pod
+
+We can create a pod using both [kubectl](../../kubernetes/kb/kubectl-commands.md) and `manifest` files.
+
+#### using kubectl
+
+```shell
+kubectl run nginx --image nginx:latest
+```
+
+If we break the command down:
+
+* kubectl: Kubernetes command line tool
+* run: telling the cluster to run something
+* `nginx`: name of the pod
+* `--image` Name of the image to run, from the [public docker registry for nginx](https://hub.docker.com/_/nginx)
+
+#### Using Yaml to create a pod
+
+We are able to use a Data Serialization language called Yaml
+
+*[Yaml]: YAML is a data serialization language that is often used for writing configuration files. Depending on whom you ask, YAML stands for yet another markup language or YAML ain't markup language (a recursive acronym), which emphasizes that YAML is for data, not documents.
+
+Below is an example Pod
+
+```yaml
+apiVersion: v1 # (1)!
+kind: Pod # (2)!
+metadata: # (3)!
+  name: my-app # (4)!
+  namespace: test # (11)!
+  labels: # (5)!
+    app: my app # (6)!
+spec: # (7)!
+  containers: # (8)!
+    - name: nginx # (9)!
+      image: nginx:latest # (10)!
+```
+
+1. The version of the Kubernetes API you plan to use. Designed to allow for backwards compatibility
+2. What type of Object you're creating. In this case, a Pod
+3. Data that helps uniquely identify the object
+4. Name of the `Pod` **Not optional** to include
+5. `Key Value` pairs attached to the `pod` to identify it, and are defined as `identifying attributes of objects that are meaningful and relevant to users`
+6. User applied label **Optional**
+7. Desired state of the Object you are creating
+8. List of containers to create in the `pod` as we can [have multiple containers in a pod](#what-are-pods)
+9. First item in the list by definition of `name`
+10. Image as found on the [public docker registry for nginx](https://hub.docker.com/_/nginx)
+11. Namespace to deploy the `Pod` in to **Optional**
+

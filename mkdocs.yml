@@ -284,6 +284,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets
   - abbr
+  - footnotes
 
 plugins:
   - search
