@@ -77,7 +77,7 @@ nav:
       - CKA:
           - certifications/cka/index.md
           - CKA - Page 1: certifications/cka/cka-1.md
-          - CKA Practice tests: certifications/cka/cka-practice-tests.md
+          - CKA Practice questions: certifications/cka/cka-practice-questions.md
   - KB Articles:
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md

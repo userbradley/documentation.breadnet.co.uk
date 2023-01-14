@@ -20,7 +20,7 @@ Hopefully this should take no longer than a year to complete, balancing it along
 ## sources I have written
 
 * [CKA Study notes](cka-1.md)
-* [Practice questions](cka-practice-tests.md)
+* [Practice questions](cka-practice-questions.md)
 * [List of controllers](cka-list-of-controllers.md)
 
 
