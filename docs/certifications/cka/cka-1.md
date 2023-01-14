@@ -347,6 +347,31 @@ When a request for that `kind:Service` is made, the node accepts the traffic, an
 
 <!-- Notes
 
+Pods are the smallest deployable unit of _compute_ on a kubernetes cluster
+You can have several containers per pod, as long as they are incredibly tightly copuled.
 
+Pods are distributed per node, and try and keep them _equal_
+
+Pods do not mean containers, pods are made up of containers.
+
+When scaling an application, we do not add more containers to a pod, we add more pods to a Deployment.
+
+As part of pods, we can have something called a `sidecar` container, which is directly depended on by the main container. A good example is google cloud sql proxy.
+
+They both share the same network space, so can refer to each other by `localhost` 
+
+They are also able to share the same storage, as they are in the same linux kernel namespace
+
+
+When the load increases, we can scale the pods up, This is using HPA (talk about this later)
+
+When we deploy a pod, we define in yaml what that pod is made up of, be it storage, service accounts, ports, run commands and if it has sidecar containers.
+
+Even if our application is simple, we still need to run it as pods. 
+
+Using the `kubectl run nginx --image=nginx:latest` creates a pod and deploys the nginx image
+
+
+See [Kubectl commands](../kubernetes/kb/kubectl-commands.md) for more commands
 
 -->

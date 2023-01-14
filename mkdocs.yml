@@ -56,7 +56,7 @@ nav:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
           - Google architect - Page 2: certifications/google-certs/gcp-architect/gcp-architect-2.md
           - Google architect - Page 3: certifications/google-certs/gcp-architect/gcp-architect-3.md
-          - Kubectl commands: certifications/google-certs/gcp-architect/kubectl-commands.md
+          - Kubectl commands: kubernetes/kb/kubectl-commands.md
           - GCP Load balancer: certifications/google-certs/gcp-architect/gcp-load-balancer.md
       - Google Security:
           - Google Security - Exam topics : certifications/google-certs/gcp-security/1-the-exam-topic.md
@@ -176,10 +176,11 @@ nav:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
           - Delete not running pods: kubernetes/kb/deleting-not-running-pods.md
+          - Downward API: kubernetes/kb/downward-api.md
+          - Kubectl commands: kubernetes/kb/kubectl-commands.md
           - Set default namespace kubectl: kubernetes/kb/kubectl-set-namespace.md
           - Testing RBAC: kubernetes/kb/rbac-testing.md
           - Sleeper pod: kubernetes/kb/sleeper.md
-          - Downward API: kubernetes/kb/downward-api.md
           - Using ArgoCD Image updater with Google Artifact Registry: kubernetes/kb/using-argocd-image-updater-with-google-artifact-registry.md
       - Helm:
           - Create a helm chart: kubernetes/helm/create-helm-chart.md
