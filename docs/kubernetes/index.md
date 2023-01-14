@@ -6,7 +6,7 @@ title: Kubernetes
 
 ## Quick Links
 
-* [Kubectl commands](kb/kubectl-commands.md)
+* [Kubectl commands](kb/kubectl-commands-old.md)
 
 ## Folders
 
