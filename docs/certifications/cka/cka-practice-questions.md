@@ -640,3 +640,69 @@ The correct way would be to run the below
 ```shell
 kubectl run httpd --image=httpd:alpine --port=80 --expose
 ```
+
+## Labels and Selectors
+
+### How many PODs are in the finance business unit (bu)?
+
+```shell
+kubectl get pods --selector bu=finance
+```
+
+## How many objects are in the prod environment including PODs, ReplicaSets and any other objects?
+
+```shell
+kubectl get all --selector env=prod
+```
+
+## Identify the POD which is part of the prod environment, the finance BU and of frontend tier?
+
+```shell
+kubectl get pods --selector env=prod,bu=finance,tier=frontend
+```
+
+## A ReplicaSet definition file is given replicaset-definition-1.yaml. Try to create the replicaset. There is an issue with the file. Try to fix it.
+
+=== "Broken"
+
+    ```yaml
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    metadata:
+       name: replicaset-1
+    spec:
+       replicas: 2
+       selector:
+          matchLabels:
+            tier: front-end
+       template:
+         metadata:
+           labels:
+            tier: nginx
+         spec:
+           containers:
+           - name: nginx
+             image: nginx
+    ```
+
+=== "Fixed"
+    
+    ```yaml
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    metadata:
+       name: replicaset-1
+    spec:
+       replicas: 2
+       selector:
+          matchLabels:
+            tier: front-end
+       template:
+         metadata:
+           labels:
+            tier: front-end
+         spec:
+           containers:
+           - name: nginx
+             image: nginx
+    ```

@@ -261,6 +261,8 @@ If a pod was to die, the ReplicationController is what is responsible for recrea
 
 ## Kube Scheduler 
 
+- [For custom scheduling see Scheduler](#scheduler)
+
 `kube-scheduler` is a cluster control plane process that assigns pods to a node. (_note, this does not actually the run them on the node, see [Kubelet]()_)
 
 The scheduler puts pods in a scheduling queue according to constraints (like CPU) and available resources on nodes. 
@@ -406,7 +408,7 @@ metadata: # (3)!
   name: my-app # (4)!
   namespace: test # (11)!
   labels: # (5)!
-    app: my app # (6)!
+    app: my-app # (6)!
 spec: # (7)!
   containers: # (8)!
     - name: nginx # (9)!
@@ -569,3 +571,282 @@ If you are not running on a cloud provider, it will act like [Node Port](#nodepo
 
 
 
+## Scheduler
+
+### Manual Scheduler
+
+If you do not have any scheduling installed on your cluster, you are able to set up scheduling your self.
+
+This is known as the Manual Scheduler.
+
+To schedule pods manually, you will need to know the name of the node.
+
+Below is an example manifest that schedules the pod to the node `node02`
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  nodeName: node02
+  containers:
+    - name: nginx
+      image: nginx
+```
+
+When there is a scheduler enabled on a cluster, this field is automatically set once the pod has been scheduled.
+
+Due to how scheduling works, you are only able to apply this on creation, and cant change the node placement of a pod via an update.
+
+You have 2 options
+
+1. Delete the pod, update the file and do it again
+2. Use the API
+
+#### Updating scheduling using the api
+
+We are able to write a `Binding` manifest like the below, convert it to json and then post it to the `kube-api`
+
+Endpoint: `POST` : `/api/v1/namespaces/{namespace}/pods/{name}/binding`
+
+```yaml
+apiVersion: v1
+kind: Binding
+metadata:
+  name: nginx
+target:
+  apiVersion: v1
+  kind: Node
+  name: node02
+```
+
+We then need to convert this to JSON, ideally use an online web converter, but you can also use `yq` cli 
+
+```shell
+➜ yq . binding.yaml 
+{
+  "apiVersion": "v1",
+  "kind": "Binding",
+  "metadata": {
+    "name": "nginx"
+  },
+  "target": {
+    "apiVersion": "v1",
+    "kind": "Node",
+    "name": "node02"
+  }
+}
+```
+We then need to flatten this, so it's like the below
+
+```json
+{"apiVersion":"v1","kind":"Binding","metadata":{"name":"nginx"},"target":{"apiVersion":"v1","kind":"Node","name":"node02"}}
+```
+
+We are then able to post this to the endpoint.
+
+As you can see from the manifest file, we dont have any target pods, this is because it's applied to the pod via the API
+
+```shell
+curl --header "Content-Type:application/json" --request POST --data '{"apiVersion": "v1","kind": "Binding","metadata": {"name": "nginx"},"target": {"apiVersion": "v1","kind": "Node","name": "node02"}}' https://$SERVER/api/v1/namespaces/$NAMESPACE/pods/$PODNAME/binding/
+```
+
+Taking apart the URL gives us the below
+
+```text
+https://$SERVER/api/v1/namespaces/$NAMESPACE/pods/$PODNAME/binding/
+```
+
+* `$SERVER` : IP/ URL of the Kube API server
+* `$NAMESPACE` : Namespace the pod exists in
+* `$PODNAME` : Name of the pod we want to apply the binding to
+
+
+More details can be found [on the documentation for the Binding API](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/binding-v1/)
+
+## Labels and Selectors
+
+Labels and Selectors are an imperative part of Kubernetes. They pave the way for just about everything that _connects_ to anything else
+
+In the below Example, we have added `Labels` to a Pod
+
+!!! note "`metadata.labels` are just for humans"
+    Adding labels under `metadata.labels` are purely for the operator (usually a human), in order for kubernetes to use them they 
+    need to go under:
+
+    * `spec.selector.matchLabels`
+    * `template.metadata.labels`
+
+    And they have to match 1:1
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-web
+  labels:
+    app: simple
+    function: front-end
+spec:
+  containers:
+    - name: simple-web
+      image: nginx
+      ports:
+        - containerPort: 8080
+```
+
+We are then able to get this pod using the below `kubectl`
+
+```shell
+kubectl get pods --selector app=simple
+```
+
+Below shows what we were talking about in the Info box, about how to target `objects` using labels
+
+We need to use  `spec.selector.matchLabels` and `spec.template.metadata.labels`
+
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: simple-webapp
+  labels:
+    app: App1
+    function: front-end
+spec:
+  selector:
+    matchLabels:
+      app: App1
+  template:
+    metadata:
+      labels:
+        app: App1
+        function: Front-end
+    spec:
+      containers:
+        - name: simple-webapp
+          image: nginx
+```
+
+
+## Annotations
+
+Another field that exists on most manifest files are `Annotations`, which live under `metadata`
+
+These are user and Kubernetes added filed that can be used by other systems as well as operators to track down information about
+something.
+
+Examples of their use are below:
+
+* Team Responsible
+* Build Version
+* Deployment tool
+* Release Number
+* [GKE Workload Identity](https://documentation.breadnet.co.uk/kubernetes/gke/service-account-with-workload-id/)
+
+## Taints and Toleration's
+
+<!-- Notes
+What are taints and tolerations
+
+We will use the below example
+
+To prevent a bug from aproaching a person, we spray the person with bug repellant. Let's call that a `taint` - The bug thus, cant `Tolerate` the spray
+
+The taind applied on the person throws the bug away.
+
+There can be other bugs that can tolderate this smell.
+
+There are 2 things that decice if the bug can land on a person.
+
+The `taint` on the person, and the Toleration on the bug.
+
+The Person is a node, and the Bug is the pod.
+
+We can use taints and tolerations to schedule pods to nodes that can accomidate the taints. 
+
+When the pods are created, the scheduler tries to schedule the pods on the nodes. At the moment there are no taints or tolerations
+
+As such, the scheduler can place the pods anywhere.
+
+let's assume that on `node-01` we have specific resoruces attacehd. Say a GPU.
+
+We then apply a Taint on the node, let's call the taint `taint=gpu` .
+
+Unless specified otherwise, none of the pods can tolderate the taint - No unwanted pods will be placed here.
+
+Now we need to allow some pods to be created here. 
+
+To do this, we add the toleration to the taint. It can tolerate `taint=gpu`
+
+this means `node-01` can now have a pod scheduled to it that tolerates the gpu taint. 
+
+Pods will try and be scheduled and it get's _thrown off_ and gets scheudled somewhere else
+
+To taint a node we do the below:
+
+```shell
+kubectl taint nodes node-name key=value:taint-effect
+```
+Example 
+```shell
+kubectl taint nodes node-name gpu=enabled:NoSchedule
+```
+
+3 types of taint effects:
+NoSchedule
+    Pods will not be scheduled on the node
+PreferNoSchedule
+    System will try to avoid pods on the node, but not guaranteed
+NoExecute
+    New pods wont be scheduled on the node, and already existing pods on the node will be evicted. They may have been scheudled before
+
+If we take the example of
+
+`gpu=enabled:NoExecute` and then write a pod that will schedule to it
+
+-->
+all the values need to be _encoded_ in double quotes
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: myapp-pod
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+  tolerations:
+    - key: "gpu"
+      operator: "Equal"
+      value: "enabled"
+      effect: "NoSchedule"
+```
+
+<!-- 
+### NoExecute
+
+When we decide that we want node-01 to be dedicated for a specific reason, we taint the node with `NoExecute`
+As soon as the taint is created, pods that dont tolerate the taint are evicted. 
+
+REMEMBER: taints and toleration are only meant to restric nodes from accepting certain pods. it does not guarentee that a pod will always be placed on the specific node.
+
+If you require to restrict pods to certain nodes, we will need to use NodeAffinity
+
+Interesting fact: The Master node can still run pods, the master node has a taint that stops pods from being scheduled to the node
+        A best practice is to not schedule workloads on the master
+
+To view the taint on a node
+
+```shell
+kubectl describe node <master> | grep taint
+```
+
+You will see something like:
+```text
+Taints:   node-roles.kubernetes.io/master:NoSchedule 
+```
+
+
+-->
