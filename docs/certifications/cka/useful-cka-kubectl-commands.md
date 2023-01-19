@@ -77,3 +77,15 @@ kubectl create deployment --image nginx nginx --dry-run=client -o yaml
             resources: {}
     status: {}
     ```
+
+## Get all resources in a namespace
+
+```shell
+kubectl get all
+```
+
+### get all resources in a namespace using a selector
+
+```shell
+kubectl get all --selector env=prod
+```
