@@ -39,6 +39,7 @@ nav:
           - SSH using IAP: cloud/gcp/ssh-iap.md
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
+          - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
           - Bulk delete from terraform state: cloud/terraform/bulk-delete-terraform-state.md
