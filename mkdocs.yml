@@ -79,6 +79,8 @@ nav:
           - certifications/cka/index.md
           - CKA - Page 1: certifications/cka/cka-1.md
           - CKA Practice questions: certifications/cka/cka-practice-questions.md
+          - CKA Questions I need to spend more time on: certifications/cka/cka-practice-questions-struggled.md
+          - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
           - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
   - KB Articles:
       - Disk management:
