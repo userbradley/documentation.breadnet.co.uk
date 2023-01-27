@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Dirty" type="TaskRunConfiguration" factoryName="TaskRunConfiguration">
+    <taskfile taskPath="" filename="$PROJECT_DIR$/Taskfile.yml" task="dirty" workingDirectory="" arguments="" pty="false">
+      <envs />
+      <vars />
+    </taskfile>
+    <method v="2" />
+  </configuration>
+</component>

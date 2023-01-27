@@ -649,19 +649,19 @@ kubectl run httpd --image=httpd:alpine --port=80 --expose
 kubectl get pods --selector bu=finance
 ```
 
-## How many objects are in the prod environment including PODs, ReplicaSets and any other objects?
+### How many objects are in the prod environment including PODs, ReplicaSets and any other objects?
 
 ```shell
 kubectl get all --selector env=prod
 ```
 
-## Identify the POD which is part of the prod environment, the finance BU and of frontend tier?
+### Identify the POD which is part of the prod environment, the finance BU and of frontend tier?
 
 ```shell
 kubectl get pods --selector env=prod,bu=finance,tier=frontend
 ```
 
-## A ReplicaSet definition file is given replicaset-definition-1.yaml. Try to create the replicaset. There is an issue with the file. Try to fix it.
+### A ReplicaSet definition file is given replicaset-definition-1.yaml. Try to create the replicaset. There is an issue with the file. Try to fix it.
 
 === "Broken"
 
@@ -706,3 +706,110 @@ kubectl get pods --selector env=prod,bu=finance,tier=frontend
            - name: nginx
              image: nginx
     ```
+
+## Taints and Tolerations
+
+### Do any taints exist on node01
+
+```shell
+kubectl describe node/node01 | grep taint
+```
+
+### Create a taint on node01 with key of `spray`, value of `mortein` and effect of `NoSchedule`
+
+```shell
+kubectl taint nodes node01 spray=mortein:NoSchedule
+```
+
+### Create a new pod with the nginx image and pod name as mosquito.
+
+```shell
+kubectl run mosquito --image=nginx
+```
+
+### What is the state of the POD?
+
+```shell
+kubectl get pods
+```
+
+A: `Pending`
+
+```text
+controlplane ~ ➜  k get pods
+NAME       READY   STATUS    RESTARTS   AGE
+mosquito   0/1     Pending   0          24s
+```
+
+### Why do you think the pod is in a pending state?
+
+A: Pod cant tolerate the taint `mortein`
+
+### Create another pod named bee with the nginx image, which has a toleration set to the taint mortein.
+
+!!! error "Struggled"
+    This is a question I struggled on
+
+```shell
+kubectl run bee --image=nginx --dry-run=client -o yaml > bee.yaml
+```
+
+Edit the file and add the below
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: bee
+  name: bee
+spec:
+  containers:
+  - image: nginx
+    name: bee
+    resources: {}
+  tolerations:
+  - key: "spray"
+    operator: "Equal"
+    value: "mortein"
+    effect: "NoSchedule"
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+```
+
+### Notice the bee pod was scheduled on node node01 despite the taint.
+
+Yes
+
+```shell
+k get pods -o wide
+```
+
+```text
+controlplane ~ ➜  k get pods -o wide
+NAME       READY   STATUS    RESTARTS   AGE     IP           NODE     NOMINATED NODE   READINESS GATES
+bee        1/1     Running   0          3m16s   10.244.1.2   node01   <none>           <none>
+mosquito   0/1     Pending   0          7m44s   <none>       <none>   <none>           <none>
+```
+
+### Do you see any taints on `controlplane` node?
+
+A: Yes, NoSchedule
+
+```shell
+kubectl describe nodes/controlplane | grep Taints
+```
+
+```text
+controlplane ~ ➜  k describe node/controlplane | grep Taints
+Taints:             node-role.kubernetes.io/control-plane:NoSchedule
+```
+
+
+### Remove the taint on `controlplane`, which currently has the taint effect of NoSchedule.
+
+```shell
+kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
+```

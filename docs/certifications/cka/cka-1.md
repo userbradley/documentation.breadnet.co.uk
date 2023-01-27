@@ -747,67 +747,99 @@ Examples of their use are below:
 
 ## Taints and Toleration's
 
-<!-- Notes
-What are taints and tolerations
+??? note "Attracting pods to nodes"
+    Taints and tolerations stop pods being scheduled on a node, whereas [Node affinity]() is a property of Pods that attracts them to a set of nodes
 
-We will use the below example
+Taints are the opposite -- they allow a node to repel a set of pods.
 
-To prevent a bug from aproaching a person, we spray the person with bug repellant. Let's call that a `taint` - The bug thus, cant `Tolerate` the spray
+Tolerations are applied to pods. Tolerations allow the scheduler to schedule pods with matching taints.
 
-The taind applied on the person throws the bug away.
 
-There can be other bugs that can tolderate this smell.
+Assume the following:
+    
+* `A bug` is a `pod`
+* `A Person` is a `Node`
+* `Bug Spray` is a `Taint`
+* `Genetic Mutation` is a `Toleration`
 
-There are 2 things that decice if the bug can land on a person.
+The example is as:
 
-The `taint` on the person, and the Toleration on the bug.
+* The bugs normally flock to humans to suck their blood
+* We can spray Bug Spray on to human to stop the insects from being attracted to them
+* After a while of humans wearing the bug spray, the insects have a genetic mutation, so they can **tolerate** the spray
 
-The Person is a node, and the Bug is the pod.
+If you take this example back to the real world:
 
-We can use taints and tolerations to schedule pods to nodes that can accomidate the taints. 
+* We apply a taint to the nodes so pods cant get scheduled on it
+* If we want a pod to be able to schedule on to that node, we give the pod a toleration
 
-When the pods are created, the scheduler tries to schedule the pods on the nodes. At the moment there are no taints or tolerations
+An example would be we have a node that has a GPU attached to it, and we only want pods that need a GPU to be scheduled to it
 
-As such, the scheduler can place the pods anywhere.
+We would apply the taint `gpu` to it. Now any pod that tries to get scheduled to this node will _bounce_ off it
 
-let's assume that on `node-01` we have specific resoruces attacehd. Say a GPU.
 
-We then apply a Taint on the node, let's call the taint `taint=gpu` .
+### Apply a taint
 
-Unless specified otherwise, none of the pods can tolderate the taint - No unwanted pods will be placed here.
+There are 3 different types of taints, [NoSchedule](#noschedule), [PreferNoSchedule](#prefernoschedule) and [NoExecute](#noexecute)
 
-Now we need to allow some pods to be created here. 
-
-To do this, we add the toleration to the taint. It can tolerate `taint=gpu`
-
-this means `node-01` can now have a pod scheduled to it that tolerates the gpu taint. 
-
-Pods will try and be scheduled and it get's _thrown off_ and gets scheudled somewhere else
-
-To taint a node we do the below:
+Below is the base for the taint command
 
 ```shell
 kubectl taint nodes node-name key=value:taint-effect
 ```
-Example 
+
+The below example applies the [`NoSchedule`](#noschedule) to `node-01` for the taint `gpu=enabled`
+
 ```shell
-kubectl taint nodes node-name gpu=enabled:NoSchedule
+kubectl taint nodes node-01 gpu=enabled:NoSchedule
 ```
 
-3 types of taint effects:
-NoSchedule
-    Pods will not be scheduled on the node
-PreferNoSchedule
-    System will try to avoid pods on the node, but not guaranteed
-NoExecute
-    New pods wont be scheduled on the node, and already existing pods on the node will be evicted. They may have been scheudled before
+### View taints on nodes
 
-If we take the example of
+```shell
+kubectl describe node <master> | grep taint
+```
 
-`gpu=enabled:NoExecute` and then write a pod that will schedule to it
+You will see something like:
+```text
+Taints:   node-roles.kubernetes.io/master:NoSchedule 
+```
 
--->
-all the values need to be _encoded_ in double quotes
+### Removing a taint
+
+You are able to remove a taint by appending `-` to the end of the taint command
+
+Example of removing the `control-plane:NoSchedule` would be
+
+```shell
+kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
+```
+
+As explained we have 3 types of taints we can apply, they are described below
+
+### NoSchedule
+
+Pods will not be scheduled to the node
+
+Running pods continue to run
+
+### PreferNoSchedule
+
+Pods **are not** scheduled to the node if at all possible. It will do it's best to avoid it.
+
+Running pods continue to run
+
+### NoExecute
+
+Pods are evicted from the node if already running and will not be scheduled on to the node ever (unless it has )
+
+This taint affects pods that are already on the node, and evicts them. 
+
+### Example of Pod that has tolerations
+
+
+_**Note:** You need to have the values quoted in `"`_
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -824,29 +856,8 @@ spec:
       effect: "NoSchedule"
 ```
 
-<!-- 
-### NoExecute
-
-When we decide that we want node-01 to be dedicated for a specific reason, we taint the node with `NoExecute`
-As soon as the taint is created, pods that dont tolerate the taint are evicted. 
-
-REMEMBER: taints and toleration are only meant to restric nodes from accepting certain pods. it does not guarentee that a pod will always be placed on the specific node.
-
-If you require to restrict pods to certain nodes, we will need to use NodeAffinity
-
-Interesting fact: The Master node can still run pods, the master node has a taint that stops pods from being scheduled to the node
-        A best practice is to not schedule workloads on the master
-
-To view the taint on a node
-
-```shell
-kubectl describe node <master> | grep taint
-```
-
-You will see something like:
-```text
-Taints:   node-roles.kubernetes.io/master:NoSchedule 
-```
-
-
--->
+!!! note "Interesting fact"
+    Master nodes can still run workloads, they just have taints on them, so you can create workloads that tolerate them!
+    ```text
+    Taints:   node-roles.kubernetes.io/master:NoSchedule
+    ```
