@@ -4,8 +4,10 @@ title: Built by badge
 
 # Built by badge
 
-![Maintainer](https://img.shields.io/badge/Built%20By-Bradley-brightgreen?style=for-the-badge&logo=terraform)
+
+
+![Bradley](https://img.shields.io/badge/Built%20By%20Bradley-%234287f5?style=for-the-badge&logo=googlecloud&logoColor=white)
 
 ```markdown
-![Maintainer](https://img.shields.io/badge/Built%20By-Bradley-brightgreen?style=for-the-badge&logo=terraform)
+![Bradley](https://img.shields.io/badge/Built%20By%20Bradley-%234287f5?style=for-the-badge&logo=googlecloud&logoColor=white)
 ```
