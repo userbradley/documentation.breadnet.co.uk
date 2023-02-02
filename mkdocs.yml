@@ -134,7 +134,6 @@ nav:
           - Remove server headers: kb/nginx/remove-server-headers.md
           - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
           - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
-
       - Public web Facing:
           - Bookstack: kb/public-web-facing/bookstack.md
           - Cachet: kb/public-web-facing/cachet.md
@@ -145,6 +144,9 @@ nav:
           - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Wildcard Certificates: kb/public-web-facing/wildcard-certificates.md
           - Change password using WPCli: kb/public-web-facing/wp-cli-password.md
+      - Sqlite:
+          - Export single table from sqlite: kb/sqlite/export-table.md
+          - Import single table from sqlite: kb/sqlite/import-table.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
