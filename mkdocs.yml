@@ -154,9 +154,10 @@ nav:
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
-
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
+      - Grocy:
+          - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
       - Linux Command line:
           - Always restart service after failure systemd: kb/linux-cli/always-restart-service-after-failure-systemd.md
           - Backup SQlite Database: kb/linux-cli/backup-sqlite-db.md
