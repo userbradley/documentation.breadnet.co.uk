@@ -134,6 +134,8 @@ nav:
           - Remove server headers: kb/nginx/remove-server-headers.md
           - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
           - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
+      - Pritunl:
+          - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
       - Public web Facing:
           - Bookstack: kb/public-web-facing/bookstack.md
           - Cachet: kb/public-web-facing/cachet.md
