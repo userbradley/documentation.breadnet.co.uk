@@ -8,6 +8,8 @@ title: Electricity
 
 The meter is located in the `Plant Room` on the right hand side of the building when you enter.
 
+![](../../assets/plant-room.JPG)
+
 ## How do I access it
 
 You cant. You need to call the Estates agent to view the meter.
