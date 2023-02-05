@@ -862,6 +862,9 @@ spec:
     Taints:   node-roles.kubernetes.io/master:NoSchedule
     ```
 
+
+
+
 ## Node Selectors
 
 Node selectors allow us to schedule pods on to nodes that have **already** been labeled 
@@ -895,12 +898,11 @@ In Order to get around this, we can use [Node Affinity](#node-affinity)
 
 ## Node Affinity
 
-<!--
+Node affinity allows us to _assign_ pods to nodes by using their labels.
 
-Node affinity is to ensure that pods are hosted on particular nodes
+It gives us some additional niceties that [Node Selectors](#node-selectors) don't have.
 
-Node selectors is not used here not as we need to ne able to use `nor` and `or`
--->
+Below is a comparison 
 
 === "Node Affinity"
 
@@ -939,15 +941,33 @@ Node selectors is not used here not as we need to ne able to use `nor` and `or`
         - name: bradley
           image: "bradley:cool"
     ```
-<!--
 
-Under spec, you have Node affinity. Under affinity you have what looks like a sentance
+Under the `spec` field, you have affinity, which looks like a sentence.
 
-`requiredDuringSchedulingIgnoredDuringExecution` - Which means they need to match during scheduling, but if the pod already exists, it's fine
+```
+requiredDuringSchedulingIgnoredDuringExecution
+```
 
-Then we have the Key and Value pairs.
 
-Operators
+### Affinity types
+
+There are currently 2 types of Affinity types, and one that is perhaps coming soon:
+
+* `requiredDuringSchedulingIgnoredDuringExecution`
+* `preferredDuringSchedulingIgnoredDuringExecution`
+
+#### requiredDuringSchedulingIgnoredDuringExecution
+
+This means that the operators that follows are required or the pod does not get scheduled. 
+
+#### preferredDuringSchedulingIgnoredDuringExecution
+
+This means that the operators that follow are more of a _nice to have_ and the pod will still get scheduled but it will do it's best first. 
+
+This means that the config that follows is **required** during scheduling 
+
+
+### Operators
 
 * In
 * NotIn
@@ -956,7 +976,7 @@ Operators
 * Gt [See #39256](https://github.com/kubernetes/website/issues/39256)
 * Lt [See #39256](https://github.com/kubernetes/website/issues/39256)
 
-### In
+#### In
 
 The Operator `in`  allows you to pick from a list.
 
@@ -972,7 +992,7 @@ The Operator `in`  allows you to pick from a list.
                       - Medium
 ```
 
-### NotIn
+#### NotIn
 
 Allows us to pick from a list that excludes something, and prefferes the rest
 
@@ -989,7 +1009,7 @@ Allows us to pick from a list that excludes something, and prefferes the rest
 
 The above example will schedule the pod on any node, as long as it doesn't have the label `size=Small`
 
-### Exists
+#### Exists
 
 This operator just checks if the node has the labesl attached to it. You dont need the values as they arent being compared
 
@@ -1000,10 +1020,9 @@ This operator just checks if the node has the labesl attached to it. You dont ne
               - matchExpressions:
                   - key: size
                     operator: Exists
-
 ```
 
-### DoesNotExist
+#### DoesNotExist
 
 This operator just checks if the Label `Size` does not exist on the node
 
@@ -1014,33 +1033,13 @@ This operator just checks if the Label `Size` does not exist on the node
               - matchExpressions:
                   - key: size
                     operator: DoesNotExist
-
 ```
 
-There are 2 types of Affinity types 
+#### Gt
 
-*  requiredDuringSchedulingIgnoredDuringExecution:
-* preferredDuringSchedulingIgnoredDuringExecution:
-
-And one that is supposedly scheduled
-
-requiredDuringSchedulingRequiredDuringExecution
-
-https://github.com/kubernetes/kubernetes/issues/96149 says that it probably won't happen
+[See #39256](https://github.com/kubernetes/website/issues/39256)
 
 
-| | During Scheduling | During Execution |
+#### Lt
 
-What each one means
-
-* During Scheduling
- This is before the pod is created, during the scheduling phase
-During Execution
- Whilst the pod is running
-
-Required vs preffered
-
-Required is used when we **need** that workload to run on a node, as it may only work for certain things et
-
-Prefferd means that if it cant make it happen, then it will just suck it up and scheudle it 
--->
+[See #39256](https://github.com/kubernetes/website/issues/39256)

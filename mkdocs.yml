@@ -105,6 +105,7 @@ nav:
           - Bulk retag: kb/docker/bulk-retag.md
           - Copy images between repositories: kb/docker/copy-containers-between-repos.md
       - Git:
+          - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md

@@ -170,8 +170,25 @@ The cycle is completed when the machine unlocks
 
 ### Drying
 
-!!! Warning
-    This should not be used unless authorised to do so
+You can set the machine to either _add a drying cycle_ to the end of a wash, or dry as a seperate function
+
+!!! warning "About the drying mode"
+    It has the potential to shrink clothing and cause increased electricity usage. 
+
+
+#### Dry as part of a wash
+
+1. Select your washing mode as usual
+2. Set the  `Drying Mode` button (One with the photo of an Iron, coat hanger etc.) to the desired temprature
+
+This will add a drying cycle to the end of the wash
+
+#### Drying independently of a wash
+
+1. Once the wash has finished, set the _selector_ knob to anything greater than 11.
+2. Refer to [Photo](#photo) for different modes
+3. Select the temperature that you want to dry to be done at using the far right selector knob
+4. Press start
 
 
 ## Troubleshooting
