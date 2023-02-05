@@ -206,11 +206,16 @@ nav:
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
   - Home:
       - home/index.md
+      - Utilities:
+          - home/utilities/index.md
+          - Water: home/utilities/water.md
+          - Electricity: home/utilities/electricity.md
       - Consumer Unit: home/cu/consumer-unit.md
       - Oven : home/oven/oven.md
       - Washing Machine: home/washing/washing-machine.md
       - Hot water heater:
           - Reducing temperature: home/water-heater/reduce-temprature.md
+
 
 
 
