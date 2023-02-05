@@ -49,14 +49,35 @@ Example
 
 === "Pets at Home"
 
-    ![Pets at Home](https://img.shields.io/badge/Pets%20At%20Home-%23000000.svg?style=for-the-badge&logo=petsathome&logoColor=#4BA840)
+    === "Badge"
+    
+        ![Pets at Home](https://img.shields.io/badge/Pets%20At%20Home-%23000000.svg?style=for-the-badge&logo=petsathome&logoColor=#4BA840)
+    
+        ![PAH](https://img.shields.io/badge/pets%20at%20home-%234BA840?style=for-the-badge&logo=petsathome&logoColor=white)
 
-    !!! note "About the Color"
-        The background color is back as the brands image is the same as the background, thus causing it to look bad
+    === "Markdown"
+
+        ```markdown
+        ![Pets at Homee](https://img.shields.io/badge/Pets%20At%20Home-%23000000.svg?style=for-the-badge&logo=petsathome&logoColor=#4BA840)
+        ```
+        
+        ```markdown
+        ![PAH](https://img.shields.io/badge/pets%20at%20home-%234BA840?style=for-the-badge&logo=petsathome&logoColor=white)
+        ```
+
 
 === "American Express"
 
-    ![American Express](https://img.shields.io/badge/American%20Express-%23000000.svg?style=for-the-badge&logo=americanexpress&logoColor=#2E77BC)
+    === "Badge"
+    
+        ![American Express](https://img.shields.io/badge/American%20Express-%23000000.svg?style=for-the-badge&logo=americanexpress&logoColor=#2E77BC)
+
+    === "Markdown"
+
+        ```markdown
+        ![American Express](https://img.shields.io/badge/American%20Express-%23000000.svg?style=for-the-badge&logo=americanexpress&logoColor=#2E77BC)
+        ``` 
+    
 
     !!! note "About the Color"
         The background color is back as the brands image is the same as the background, thus causing it to look bad

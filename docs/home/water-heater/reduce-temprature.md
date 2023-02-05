@@ -7,6 +7,12 @@ title: Reduce water heater operating temperature
 !!! Warning "About using this guide"
     This guide is designed only for the `TDX120ERP`
 
+!!! note "Increased water usage"
+    By reducing the temperature of the water, you will use more hot water to get the shower/ bath to the same temperature 
+    that you previously enjoyed.
+
+    If you take short showers (and no baths) then I reccomend doing this, but if you have 2+ people that have long showers it's best to not bother
+
 ## Why
 
 As the country I live in is an absolute Joke (Thanks Tory Government) - We are having an issue purchasing power, and thus

@@ -105,6 +105,7 @@ nav:
           - Bulk retag: kb/docker/bulk-retag.md
           - Copy images between repositories: kb/docker/copy-containers-between-repos.md
       - Git:
+          - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
@@ -134,7 +135,8 @@ nav:
           - Remove server headers: kb/nginx/remove-server-headers.md
           - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
           - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
-
+      - Pritunl:
+          - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
       - Public web Facing:
           - Bookstack: kb/public-web-facing/bookstack.md
           - Cachet: kb/public-web-facing/cachet.md
@@ -145,14 +147,18 @@ nav:
           - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Wildcard Certificates: kb/public-web-facing/wildcard-certificates.md
           - Change password using WPCli: kb/public-web-facing/wp-cli-password.md
+      - Sqlite:
+          - Export single table from sqlite: kb/sqlite/export-table.md
+          - Import single table from sqlite: kb/sqlite/import-table.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
-
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
+      - Grocy:
+          - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
       - Linux Command line:
           - Always restart service after failure systemd: kb/linux-cli/always-restart-service-after-failure-systemd.md
           - Backup SQlite Database: kb/linux-cli/backup-sqlite-db.md
@@ -200,11 +206,16 @@ nav:
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
   - Home:
       - home/index.md
+      - Utilities:
+          - home/utilities/index.md
+          - Water: home/utilities/water.md
+          - Electricity: home/utilities/electricity.md
       - Consumer Unit: home/cu/consumer-unit.md
       - Oven : home/oven/oven.md
       - Washing Machine: home/washing/washing-machine.md
       - Hot water heater:
           - Reducing temperature: home/water-heater/reduce-temprature.md
+
 
 
 

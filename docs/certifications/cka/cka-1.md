@@ -27,7 +27,7 @@ It's designed that applications can be both segmented logically, and allowed to 
 
 ## Container runtime
 
-In order for nodes (Both master and workers) to be able to run [Pods]() we need to have a `CR` (Container runtime).
+In order for nodes (Both master and workers) to be able to run [Pods](#pods) we need to have a `CR` (Container runtime).
 
 A CR is the software installed on the nodes that allow containers (Docker containers) to be run. A few examples of common Container runtimes are below
 
@@ -40,7 +40,7 @@ The CR communicates to the [`CRI`](#container-runtime)
 
 ### Container Runtime Interface (CRI)
 
-The CRI is a plugin interface which enables the [Kubelet]() to use a wide variety of Container runtimes without the need to recompile the cluster components.
+The CRI is a plugin interface which enables the [Kubelet](#kubelet) to use a wide variety of Container runtimes without the need to recompile the cluster components.
 
 !!! Note "Where it's required"
     The CRI and CR are required to be on each node.
@@ -263,7 +263,7 @@ If a pod was to die, the ReplicationController is what is responsible for recrea
 
 - [For custom scheduling see Scheduler](#scheduler)
 
-`kube-scheduler` is a cluster control plane process that assigns pods to a node. (_note, this does not actually the run them on the node, see [Kubelet]()_)
+`kube-scheduler` is a cluster control plane process that assigns pods to a node. (_note, this does not actually the run them on the node, see [Kubelet](#kubelet)_)
 
 The scheduler puts pods in a scheduling queue according to constraints (like CPU) and available resources on nodes. 
 
@@ -365,7 +365,7 @@ When we deploy an application, we are effectively deploying a collection of pods
 When your application is deployed in pods, to scale the application we <u>**do not**</u> add more containers to a pod, 
 instead we add more pods to the cluster. 
 
-We can use a [Deployment]() as well as [HPA]() to scale the deployment manually and automatically. 
+We can use a [Deployment](#deployment) as well as [HPA]() to scale the deployment manually and automatically. 
 
 
 ### Networking and storage
@@ -748,7 +748,7 @@ Examples of their use are below:
 ## Taints and Toleration's
 
 ??? note "Attracting pods to nodes"
-    Taints and tolerations stop pods being scheduled on a node, whereas [Node affinity]() is a property of Pods that attracts them to a set of nodes
+    Taints and tolerations stop pods being scheduled on a node, whereas [Node affinity](#node-affinity) is a property of Pods that attracts them to a set of nodes
 
 Taints are the opposite -- they allow a node to repel a set of pods.
 
@@ -861,3 +861,185 @@ spec:
     ```text
     Taints:   node-roles.kubernetes.io/master:NoSchedule
     ```
+
+
+
+
+## Node Selectors
+
+Node selectors allow us to schedule pods on to nodes that have **already** been labeled 
+
+In our pod spec we would add the below
+
+```yaml hl_lines="7 8"
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: Pod
+  namespace: test
+spec:
+  nodeSelector:
+    size: large
+  containers:
+    - name: bradley
+      image: "bradley:cool"
+```
+
+### Limitations of Node Selectors
+
+We don't get the creature comforts like:
+
+* Either
+* Anything but
+
+This means if we have 3 nodes, ranging from Small, Medium and Large. We cant say "Use either Big or Large" and we can't say "Anything But small"
+
+In Order to get around this, we can use [Node Affinity](#node-affinity)
+
+## Node Affinity
+
+Node affinity allows us to _assign_ pods to nodes by using their labels.
+
+It gives us some additional niceties that [Node Selectors](#node-selectors) don't have.
+
+Below is a comparison 
+
+=== "Node Affinity"
+
+    ```yaml hl_lines="9-17"
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: bradley
+    spec:
+      containers:
+        - name: bradley
+          image: bradley
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: size
+                    operator: in
+                    values:
+                      - Large
+    ```
+
+=== "Node Selector"
+
+    ```yaml hl_lines="7 8"
+    kind: Pod
+    apiVersion: v1
+    metadata: 
+      name: Pod
+      namespace: test
+    spec:
+      nodeSelector:
+        size: large
+      containers:
+        - name: bradley
+          image: "bradley:cool"
+    ```
+
+Under the `spec` field, you have affinity, which looks like a sentence.
+
+```
+requiredDuringSchedulingIgnoredDuringExecution
+```
+
+
+### Affinity types
+
+There are currently 2 types of Affinity types, and one that is perhaps coming soon:
+
+* `requiredDuringSchedulingIgnoredDuringExecution`
+* `preferredDuringSchedulingIgnoredDuringExecution`
+
+#### requiredDuringSchedulingIgnoredDuringExecution
+
+This means that the operators that follows are required or the pod does not get scheduled. 
+
+#### preferredDuringSchedulingIgnoredDuringExecution
+
+This means that the operators that follow are more of a _nice to have_ and the pod will still get scheduled but it will do it's best first. 
+
+This means that the config that follows is **required** during scheduling 
+
+
+### Operators
+
+* In
+* NotIn
+* Exists
+* DoesNotExist
+* Gt [See #39256](https://github.com/kubernetes/website/issues/39256)
+* Lt [See #39256](https://github.com/kubernetes/website/issues/39256)
+
+#### In
+
+The Operator `in`  allows you to pick from a list.
+
+```yaml
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: size
+                    operator: in
+                    values:
+                      - Large
+                      - Medium
+```
+
+#### NotIn
+
+Allows us to pick from a list that excludes something, and prefferes the rest
+
+```yaml
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: size
+                    operator: NotIn
+                    values:
+                      - Small
+```
+
+The above example will schedule the pod on any node, as long as it doesn't have the label `size=Small`
+
+#### Exists
+
+This operator just checks if the node has the labesl attached to it. You dont need the values as they arent being compared
+
+```yaml
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: size
+                    operator: Exists
+```
+
+#### DoesNotExist
+
+This operator just checks if the Label `Size` does not exist on the node
+
+```yaml
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: size
+                    operator: DoesNotExist
+```
+
+#### Gt
+
+[See #39256](https://github.com/kubernetes/website/issues/39256)
+
+
+#### Lt
+
+[See #39256](https://github.com/kubernetes/website/issues/39256)
