@@ -127,7 +127,7 @@ nav:
           - RVC IP Range: kb/linux-networking/rvc-ip-range.md
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
       - SSH:
-          - SSH Keys: kb/ssh/ssh-keys.md
+          - SSH Keys: kb/ssh/generate-ssh-keys.md
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
           - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
           - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
