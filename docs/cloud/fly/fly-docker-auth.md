@@ -33,8 +33,25 @@ fly image show --config app.toml
 !!! warning "When to use this"
     This should really only be used when you're authenticating to external systems, like Codefresh.
 
+#### GitHub Actions
 
-This page assumes you are using Codefresh, but you can use this where ever you need to!
+Navigate to the [Personal Access Tokens page](https://fly.io/user/personal_access_tokens)
+
+Create a token called `githubactions`
+
+Create an Actions secret called `FLY_API_TOKEN` and paste the token in.
+
+```yaml
+      - name: Login to Fly Registry
+        uses: docker/login-action@v2
+        with:
+          registry: registry.fly.io
+          username: x
+          password: ${{ secrets.FLY_API_TOKEN }}
+```
+
+#### Codefresh
+
 
 Navigate to the [Personal Access Tokens page](https://fly.io/user/personal_access_tokens)
 

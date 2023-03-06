@@ -1,16 +1,23 @@
 ---
-title: SSH keys
+title: Generate SSH Keys
 ---
 
-# SSH keys
+# Generate SSH Keys
 
-## generate SSH keys and copy them to host
+## Create Keys
 
-On the host you are logged in to, but want to ssh to another host with no password run the below
+=== "Current user"
+    ```bash
+    ssh-keygen -t ed25519
+    ```
 
-```bash
-ssh-keygen -t ed25519
-```
+=== "Specific Email address"
+
+    ```shell
+    ssh-keygen -t ed25519 -f ~/.ssh/example -C example@breadnet.co.uk
+    ```
+
+
 ## Copy them to server
 
 then run this but put the server name where it asks for remote host. Don't worry about using a username as they are usually the one you're logged in as.

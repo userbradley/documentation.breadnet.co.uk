@@ -104,6 +104,10 @@ nav:
           - Docker Architecture: kb/docker/docker-architecture.md
           - Bulk retag: kb/docker/bulk-retag.md
           - Copy images between repositories: kb/docker/copy-containers-between-repos.md
+      - Drone:
+          - kb/drone/index.md
+          - Laws: kb/drone/laws.md
+          - Stock image marketplaces: kb/drone/stock-image-marketplaces.md
       - Git:
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
@@ -123,7 +127,7 @@ nav:
           - RVC IP Range: kb/linux-networking/rvc-ip-range.md
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
       - SSH:
-          - SSH Keys: kb/ssh/ssh-keys.md
+          - SSH Keys: kb/ssh/generate-ssh-keys.md
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
           - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
           - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
@@ -166,7 +170,9 @@ nav:
           - Bulk change file extensions: kb/linux-cli/bulk-change-file-extension.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
+          - Lowercase to Uppercase: kb/linux-cli/lowercase-to-uppercase.md
           - "The following signatures couldn't be verified because the public key is not available" : kb/linux-cli/the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
+          - Uppercase to Lowercase: kb/linux-cli/uppercase-to-lowercase.md
           - uuidgen Lower case: kb/linux-cli/uuidgen-lowercase.md
           - "xcrun: error: invalid active developer path": kb/linux-cli/xcrun-error-invalid-active-developer-path.md
           - "Your Xcode is too outdated.": kb/linux-cli/your-xcode-is-too-outdated.md
