@@ -179,6 +179,7 @@ nav:
       - Networking:
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
+          - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
       - Cloud init:
           - cloud-init: kb/cloud-init/cloud-init.md
       - Markdown:
