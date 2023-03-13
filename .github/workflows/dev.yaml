@@ -29,7 +29,7 @@ jobs:
           push: true
           context: .
           file: ./dev.Dockerfile
-          tags: registry.fly.io/breadnet-:${{steps.sha.outputs.sha}}
+          tags: registry.fly.io/documentation-dev:${{steps.sha.outputs.sha}}
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
 
