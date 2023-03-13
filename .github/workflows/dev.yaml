@@ -34,6 +34,6 @@ jobs:
       - uses: superfly/flyctl-actions/setup-flyctl@master
 
       - name: Deploy to fly
-        run: flyctl deploy --config fly.toml --image registry.fly.io/documentation-dev:${{steps.sha.outputs.sha}} --detach
+        run: flyctl deploy --config dev.toml --image registry.fly.io/documentation-dev:${{steps.sha.outputs.sha}} --detach
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
