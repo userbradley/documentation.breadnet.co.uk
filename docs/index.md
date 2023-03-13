@@ -32,9 +32,6 @@ Once the dev site is checked and everything looks good, we can open a PR and mer
 
 I have a CD pipeline that builds a docker image, and publishes it to [fly.io](https://fly.io?ref_documentation-breadnet-co-uk)
 
-You can pull the images from here: 
-
-[userbradley/documentation](https://hub.docker.com/r/userbradley/documentation)
 
 ![](assets/pipeline.png)
 
