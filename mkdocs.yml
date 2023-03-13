@@ -19,6 +19,7 @@ nav:
           - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
       - Fly:
           - cloud/fly/index.md
+          - "Create new Fly.io app": cloud/fly/create-new-app.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
           - Fly.io in CI: cloud/fly/fly-ci.md
           - Fly Deployment strategy: cloud/fly/deployment-strategy.md
@@ -74,7 +75,6 @@ nav:
           - VM Bootstrapping, templates and Images: certifications/google-certs/gcp-associate/vm-bootstrapping-templates-and-images.md
           - Costs: certifications/google-certs/gcp-associate/costs.md
           - Compute Engine: certifications/google-certs/gcp-associate/compute-engine.md
-
       - CKA:
           - certifications/cka/index.md
           - CKA - Page 1: certifications/cka/cka-1.md
