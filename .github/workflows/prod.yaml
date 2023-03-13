@@ -3,6 +3,13 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - .github/workflows/dev.yaml
+      - cd/codefresh.yml
+      - dev.toml
+      - dev.Dockerfile
+      - overrides-dev/**
+
 
 jobs:
   site:
