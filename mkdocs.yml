@@ -19,6 +19,7 @@ nav:
           - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
       - Fly:
           - cloud/fly/index.md
+          - "Create new Fly.io app": cloud/fly/create-new-app.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
           - Fly.io in CI: cloud/fly/fly-ci.md
           - Fly Deployment strategy: cloud/fly/deployment-strategy.md
@@ -74,7 +75,6 @@ nav:
           - VM Bootstrapping, templates and Images: certifications/google-certs/gcp-associate/vm-bootstrapping-templates-and-images.md
           - Costs: certifications/google-certs/gcp-associate/costs.md
           - Compute Engine: certifications/google-certs/gcp-associate/compute-engine.md
-
       - CKA:
           - certifications/cka/index.md
           - CKA - Page 1: certifications/cka/cka-1.md
@@ -211,7 +211,11 @@ nav:
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - K3S:
           - kubernetes/k3s/index.md
+          - Disable Klipper: kubernetes/k3s/disable-klipper.md
+          - Installing k3s: kubernetes/k3s/installing-k3s.md
+          - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
+          - Things taking too long to delete: kubernetes/k3s/things-taking-too-long-to-delete.md
   - Home:
       - home/index.md
       - Utilities:
@@ -222,7 +226,7 @@ nav:
       - Oven : home/oven/oven.md
       - Washing Machine: home/washing/washing-machine.md
       - Hot water heater:
-          - Reducing temperature: home/water-heater/reduce-temprature.md
+          - Reducing temperature: home/water-heater/reduce-temperature.md
 
 
 
