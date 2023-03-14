@@ -2,7 +2,7 @@ name: Production
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - .github/workflows/dev.yaml
       - cd/codefresh.yml
