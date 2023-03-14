@@ -211,7 +211,11 @@ nav:
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - K3S:
           - kubernetes/k3s/index.md
+          - Disable Klipper: kubernetes/k3s/disable-klipper.md
+          - Installing k3s: kubernetes/k3s/installing-k3s.md
+          - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
+          - Things taking too long to delete: kubernetes/k3s/things-taking-too-long-to-delete.md
   - Home:
       - home/index.md
       - Utilities:
