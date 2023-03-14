@@ -16,4 +16,4 @@ The following items are documented:
 * [Fuse box](cu/consumer-unit.md)
 * [Oven](oven/oven.md)
 * [Washing machine](washing/washing-machine.md)
-* [Turning down water heater temperature](water-heater/reduce-temprature.md)
+* [Turning down water heater temperature](water-heater/reduce-temperature.md)
