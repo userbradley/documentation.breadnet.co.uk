@@ -126,6 +126,8 @@ nav:
           - Null routing: kb/linux-networking/null-routing.md
           - RVC IP Range: kb/linux-networking/rvc-ip-range.md
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
+      - Mac:
+          - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
       - SSH:
           - SSH Keys: kb/ssh/generate-ssh-keys.md
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
