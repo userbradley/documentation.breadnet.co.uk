@@ -4,9 +4,18 @@ title: Disable klipper k3s
 
 # Disable klipper k3s
 
-I forgot to disable the load balancer (Klipper) on k3s, as I want to use metallb
+When you wish to use `metallb` in your k3s cluster you need to disable `servicelb`
 
-## Disable it
+## On install
+
+```shell
+curl -fL https://get.k3s.io | sh -s - --disable servicelb
+```
+
+## After the fact
+
+If you forget to disable the klipper load balancer, follow the below steps on an already running cluster
+
 
 edit `/etc/systemd/system/k3s.service` so it looks like the below
 
@@ -21,6 +30,4 @@ Restart the service
 sudo systemctl daemon-reload && sudo systemctl restart k3s
 ```
 
-## Reference
-
-[differentpla](https://blog.differentpla.net/blog/2021/12/20/disabling-klipper/)
+You will need to ensure this is done on every node in the cluster
