@@ -27,8 +27,7 @@ jobs:
         with:
           registry: registry.fly.io
           username: x
-         # password: ${{ secrets.FLY_API_TOKEN }}
-          password: ${{ secrets.FLY_ACCESS_TOKEN }}
+          password: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
 
       - name: Build and Push image
         uses: docker/build-push-action@v4
@@ -43,4 +42,4 @@ jobs:
       - name: Deploy to fly
         run: flyctl deploy --config dev.toml --image registry.fly.io/documentation-dev:${{steps.sha.outputs.sha}} --detach
         env:
-          FLY_ACCESS_TOKEN: ${{ secrets.FLY_ACCESS_TOKEN }}
+          FLY_ACCESS_TOKEN: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
