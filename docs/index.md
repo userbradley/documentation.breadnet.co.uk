@@ -5,9 +5,15 @@ hide:
     - edit
 ---
 
-This site holds all the documentation and notes I've written since starting in IT (around 2016 _ish_)
+# Welcome
 
-If you've known me, or referred to my documents before, it used to be `bookstack` 
+[![Dev](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml) [![Production](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml)
+[![wakatime](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg)](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614)
+
+This site holds all my documentation since I've started in IT (2016) as well as new documents.
+
+I used to use [Bookstack](https://bookstackapp.com/?utm_source=breadnet&utm_medium=documentation&utm_campaign=documentation) but migrated as I got
+fed-up of managing an ubuntu server
 
 ## Other sites maintained
 
@@ -32,7 +38,11 @@ Once the dev site is checked and everything looks good, we can open a PR and mer
 
 I have a CD pipeline that builds a docker image, and publishes it to [fly.io](https://fly.io?ref_documentation-breadnet-co-uk)
 
+I recently migrated from Codefresh to GitHub actions, so there is no longer a pretty photo of the pipelines
 
-![](assets/pipeline.png)
+![img.png](assets/gh-actions.png)
 
-You can view the [Source code](https://github.com/userbradley/documentation.breadnet.co.uk/blob/dev/cd/codefresh.yml) for the pipeline 
+The pipelines are 60% faster since moving.
+
+You can see the pipeline config on [GitHub Actions](https://github.com/userbradley/documentation.breadnet.co.uk/blob/master/.github/workflows/prod.yaml)
+

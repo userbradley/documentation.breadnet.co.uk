@@ -12,7 +12,7 @@ ArgoCD Image updater is a cool tool that allows you to update Images for contain
 
 From what I could see, argocd image updater needs you to provide credentials to the cli tool, to get images.
 
-If you are using Google Artifact registy (Officially not supported, but works anyway) - You need to supply credentials as the application
+If you are using Google Artifact registry (Officially not supported, but works anyway) - You need to supply credentials as the application
 does not use your local creds.
 
 ## Export Credentials
@@ -69,6 +69,6 @@ time="2022-11-11T18:06:41Z" level=info msg="latest image according to constraint
 
 []()
 
-## Foot Notes
+## footnotes
 
 [Recipie on how to use it in GKE](https://github.com/argoproj-labs/argocd-image-updater/issues/319#issuecomment-1130547057)
