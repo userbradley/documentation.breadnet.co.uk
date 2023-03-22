@@ -82,18 +82,24 @@ You will know when you're on the development site, as the colors are red!
 
 ```text
 .
+├── CODEOWNERS
 ├── Dockerfile
 ├── LICENSE
 ├── README.md
+├── SECURITY.md
 ├── Taskfile.yml
-├── _temp.html
 ├── cd
 │   └── codefresh.yml
-├── cloudflare
+├── cloudflare.conf
+├── deny.conf
 ├── dev.Dockerfile
 ├── dev.toml
+├── docker-compose.yaml
 ├── docs
 │   ├── assets
+│   │   ├── 120m.png
+│   │   ├── 2022-grocy-list.png
+│   │   ├── 2023-grocy-notthere.png
 │   │   ├── 2mznsOlbTSNaaAcI-image-1604671927789.png
 │   │   ├── 46FRmJql62IK5eFK-image-1620574015296.png
 │   │   ├── 48hjeTKxj568yycW-image-1621117434743.png
@@ -106,9 +112,11 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── IMG_9259.JPG
 │   │   ├── IMG_9260.JPG
 │   │   ├── IMG_9261.jpg
+│   │   ├── LeArchitect.ttf
 │   │   ├── PSJKUlFwm2Zluoes-image-1651955845728.png
 │   │   ├── amex-simpleicons.png
 │   │   ├── b7eY4DH3O7l5mvGO-image-1606744736955.png
+│   │   ├── cloudflare_status.png
 │   │   ├── data-incident-response-figure-1.png
 │   │   ├── e1giSp8BGj8Wx2nH-drawing-1-1620509841.png
 │   │   ├── fan.png
@@ -126,11 +134,13 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── lR3gpWqK5uymZy76-image-1642771373312.png
 │   │   ├── lb-serverless-run-ext-https.svg
 │   │   ├── light.png
+│   │   ├── mikrotik-ok-cancel-apply.png
 │   │   ├── mode-gen-temp.png
 │   │   ├── mode-gen.png
 │   │   ├── nWVeT4OzIa1ANMPb-image-1621095512411.png
 │   │   ├── nzcVoSkDoOg3V3D9-image-1606769464676.png
 │   │   ├── pipeline.png
+│   │   ├── plant-room.JPG
 │   │   ├── qtFenCGbLvRUVQqs-image-1606738550809.png
 │   │   ├── rG2Sxc83fg9oyJVi-image-1605010726509.png
 │   │   ├── red-cu.png
@@ -138,6 +148,23 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── sGYTTQzEk4MNllA8-image-1642771319408.png
 │   │   ├── site-visits-usa.png
 │   │   ├── tjxlFRVsXUgsDatm-image-1588972001839.png
+│   │   ├── water-board-key.JPG
+│   │   ├── water-board.JPG
+│   │   ├── water-shutoff-valves.JPG
+│   │   ├── web_ip-address.png
+│   │   ├── web_ip-firewall.png
+│   │   ├── web_ip.png
+│   │   ├── web_login.png
+│   │   ├── web_nat-rules.png
+│   │   ├── web_nat.png
+│   │   ├── web_to-address-old.png
+│   │   ├── web_to-address-updated.png
+│   │   ├── winbox_firewall-nat.png
+│   │   ├── winbox_ip-address-list.png
+│   │   ├── winbox_ip-address.png
+│   │   ├── winbox_ip-firewall.png
+│   │   ├── winbox_login.png
+│   │   ├── winbox_nat-rule.png
 │   │   ├── x5BORuXlBtctN0Mi-image-1646765189176.png
 │   │   ├── xcode-select-tos.png
 │   │   ├── xcode-select.png
@@ -152,14 +179,18 @@ You will know when you're on the development site, as the colors are red!
 │   ├── bookstack.md
 │   ├── certifications
 │   │   ├── cka
-│   │   │   └── cka-1.md
+│   │   │   ├── cka-1.md
+│   │   │   ├── cka-list-of-controllers.md
+│   │   │   ├── cka-practice-questions-struggled.md
+│   │   │   ├── cka-practice-questions.md
+│   │   │   ├── index.md
+│   │   │   └── useful-cka-kubectl-commands.md
 │   │   └── google-certs
 │   │       ├── gcp-architect
 │   │       │   ├── gcp-architect-1.md
 │   │       │   ├── gcp-architect-2.md
 │   │       │   ├── gcp-architect-3.md
-│   │       │   ├── gcp-load-balancer.md
-│   │       │   └── kubectl-commands.md
+│   │       │   └── gcp-load-balancer.md
 │   │       ├── gcp-associate
 │   │       │   ├── compute-engine.md
 │   │       │   ├── costs.md
@@ -180,9 +211,13 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── aqua-page-1.md
 │   │   │   ├── aqua-page-2.md
 │   │   │   └── partnership-info.md
+│   │   ├── aws
+│   │   │   ├── aws-cli.md
+│   │   │   └── cloud-init-sg1.md
 │   │   ├── digitalocean
 │   │   │   └── digitalocean-get-list-of-images.md
 │   │   ├── fly
+│   │   │   ├── create-new-app.md
 │   │   │   ├── deployment-strategy.md
 │   │   │   ├── fly-ci.md
 │   │   │   ├── fly-docker-auth.md
@@ -190,38 +225,56 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── fly-regions.md
 │   │   │   └── index.md
 │   │   ├── gcp
+│   │   │   ├── api-get-project.md
+│   │   │   ├── api-get-sa.md
 │   │   │   ├── curl-gcr-ar.md
 │   │   │   ├── curl-to-iap.md
 │   │   │   ├── export-to-terraform-using-gcloud-cli.md
-│   │   │   └── grafeas.md
+│   │   │   ├── filter-gcloud-output.md
+│   │   │   ├── forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+│   │   │   ├── get-project-name-of-gcs-bucket.md
+│   │   │   ├── grafeas.md
+│   │   │   ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+│   │   │   ├── serverless-vpc-access-for-cloudrun-across-projects.md
+│   │   │   ├── ssh-iap.md
+│   │   │   ├── sshuttle-using-google-iap.md
+│   │   │   ├── useful-gcloud-commands.md
+│   │   │   └── view-hash-of-object-in-gcs.md
 │   │   └── terraform
 │   │       ├── building-infrastructure.md
+│   │       ├── bulk-delete-terraform-state.md
+│   │       ├── failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
 │   │       ├── google-iap.md
 │   │       ├── openstack.md
 │   │       ├── recursive-delete-of-terraform.md
 │   │       ├── remote-data.md
+│   │       ├── terraform-lock-file-update.md
 │   │       ├── terraform-plugin-cannot-locate-module-locally-unknown-reason.md
 │   │       ├── tfupdate.md
 │   │       └── to-string-from-list.md
+│   ├── favicon.ico
+│   ├── favicon.png
 │   ├── home
 │   │   ├── cu
 │   │   │   └── consumer-unit.md
 │   │   ├── index.md
 │   │   ├── oven
 │   │   │   └── oven.md
+│   │   ├── utilities
+│   │   │   ├── electricity.md
+│   │   │   ├── index.md
+│   │   │   └── water.md
 │   │   ├── washing
 │   │   │   └── washing-machine.md
 │   │   └── water-heater
-│   │       └── reduce-temprature.md
+│   │       └── reduce-temperature.md
 │   ├── index.md
 │   ├── kb
 │   │   ├── authentication
 │   │   │   └── fingerprint-on-linux-mint.md
-│   │   ├── aws
-│   │   │   ├── aws-cli.md
-│   │   │   └── cloud-init-sg1.md
-│   │   ├── cloud
+│   │   ├── cloud-init
 │   │   │   └── cloud-init.md
+│   │   ├── codefresh
 │   │   ├── disk-management
 │   │   │   ├── expanding-a-filesystem.md
 │   │   │   ├── formatting-drive-automount.md
@@ -236,25 +289,33 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── exporting-and-importing.md
 │   │   │   ├── installing-docker.md
 │   │   │   └── installing-jellyfin.md
-│   │   ├── google-cloud
-│   │   │   ├── api-get-project.md
-│   │   │   ├── api-get-sa.md
-│   │   │   ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
-│   │   │   └── serverless-vpc-access-for-cloudrun-across-projects.md
+│   │   ├── drone
+│   │   │   ├── index.md
+│   │   │   ├── laws.md
+│   │   │   └── stock-image-marketplaces.md
+│   │   ├── git
+│   │   │   ├── count-lines-of-code-in-repo.md
+│   │   │   ├── git-with-different-ssh-keys.md
+│   │   │   ├── migrate-repo-to-mono-repo.md
+│   │   │   └── set-git-user-per-repo.md
+│   │   ├── githubactions
+│   │   │   ├── access-file-between-steps.md
+│   │   │   ├── auth-to-gar.md
+│   │   │   └── upload-file.md
 │   │   ├── google-workspace
 │   │   │   └── setup-routing.md
-│   │   ├── helm
-│   │   │   ├── create-helm-chart.md
-│   │   │   ├── force-rollout-on-configmap-update.md
-│   │   │   ├── helm-repo-gcs.md
-│   │   │   └── push-chart-to-ar.md
+│   │   ├── grocy
+│   │   │   └── set-grocy-to-use-pritunl-username.md
 │   │   ├── linux-cli
 │   │   │   ├── always-restart-service-after-failure-systemd.md
 │   │   │   ├── backup-sqlite-db.md
 │   │   │   ├── blc.md
+│   │   │   ├── bulk-change-file-extension.md
 │   │   │   ├── fingerprint-for-sudo-mac.md
 │   │   │   ├── get-current-folder.md
+│   │   │   ├── lowercase-to-uppercase.md
 │   │   │   ├── the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
+│   │   │   ├── uppercase-to-lowercase.md
 │   │   │   ├── uuidgen-lowercase.md
 │   │   │   ├── xcrun-error-invalid-active-developer-path.md
 │   │   │   └── your-xcode-is-too-outdated.md
@@ -271,15 +332,19 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── null-routing.md
 │   │   │   ├── rvc-ip-range.md
 │   │   │   └── uninstall-netplan.md
+│   │   ├── mac
+│   │   │   └── bose-headphones-crackle.md
 │   │   ├── markdown
 │   │   │   ├── built-by-badge.md
 │   │   │   ├── custom-badges.md
-│   │   │   └── github-repos-and-stuff.md
+│   │   │   ├── github-repos-and-stuff.md
+│   │   │   └── note-warning-in-markdown.md
 │   │   ├── minio
 │   │   │   ├── minio-over-s3fs.md
 │   │   │   ├── old.md
 │   │   │   └── s3-policies.md
 │   │   ├── networking
+│   │   │   ├── update-route-ip-mikrotik.md
 │   │   │   ├── update-tough-switch.md
 │   │   │   └── vpn-network-routing-mikrotik.md
 │   │   ├── nginx
@@ -288,23 +353,35 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── nginxservice-failed-because-the-control-process-exited.md
 │   │   │   ├── remove-server-headers.md
 │   │   │   └── reverse-web-proxy.md
-│   │   ├── other
-│   │   │   └── downloading-the-breadnet-site-and-serving-a-stale-copy.md
+│   │   ├── openvpn
+│   │   │   ├── img.png
+│   │   │   ├── img_1.png
+│   │   │   ├── img_2.png
+│   │   │   ├── img_3.png
+│   │   │   ├── index.md
+│   │   │   └── mikrotik-to-openvpn.md
 │   │   ├── php
 │   │   │   ├── install-php.md
 │   │   │   └── wordpress-permissions.md
+│   │   ├── pritunl
+│   │   │   └── pritunl-forwarded-header.md
 │   │   ├── public-web-facing
 │   │   │   ├── bookstack.md
 │   │   │   ├── cachet.md
 │   │   │   ├── certbot.md
 │   │   │   ├── check-passbolt-is-healthy.md
+│   │   │   ├── downloading-the-breadnet-site-and-serving-a-stale-copy.md
 │   │   │   ├── jellyfin-s3.md
 │   │   │   ├── send-test-email-on-passbolt.md
-│   │   │   └── wildcard-certificates.md
+│   │   │   ├── wildcard-certificates.md
+│   │   │   └── wp-cli-password.md
+│   │   ├── sqlite
+│   │   │   ├── export-table.md
+│   │   │   └── import-table.md
 │   │   ├── ssh
+│   │   │   ├── generate-ssh-keys.md
 │   │   │   ├── importing-ssh-keys-from-github.md
 │   │   │   ├── ssh-client-setup-using-keys.md
-│   │   │   ├── ssh-keys.md
 │   │   │   ├── ssh-port-redirection.md
 │   │   │   ├── sshuttle.md
 │   │   │   └── weird-bash.md
@@ -316,15 +393,28 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── index.md
 │   │   │   ├── service-account-with-workload-id.md
 │   │   │   └── workload-id-test.md
+│   │   ├── helm
+│   │   │   ├── create-helm-chart.md
+│   │   │   ├── force-rollout-on-configmap-update.md
+│   │   │   ├── helm-repo-gcs.md
+│   │   │   └── push-chart-to-ar.md
 │   │   ├── index.md
 │   │   ├── k3s
+│   │   │   ├── cloudflare-tunnels-on-k3s.md
+│   │   │   ├── disable-klipper.md
 │   │   │   ├── index.md
-│   │   │   └── lenovo-sff-ubuntu.md
+│   │   │   ├── installing-k3s.md
+│   │   │   ├── k3s-private-registry-using-google-artifact-registry.md
+│   │   │   ├── lenovo-sff-ubuntu.md
+│   │   │   └── things-taking-too-long-to-delete.md
 │   │   └── kb
 │   │       ├── connect-to-container-that-has-sidecars.md
+│   │       ├── delete-terminating-namespace.md
 │   │       ├── deleting-not-running-pods.md
 │   │       ├── downward-api.md
 │   │       ├── index.md
+│   │       ├── kubectl-commands-old.md
+│   │       ├── kubectl-commands.md
 │   │       ├── kubectl-set-namespace.md
 │   │       ├── rbac-testing.md
 │   │       ├── sleeper.md
@@ -344,6 +434,7 @@ You will know when you're on the development site, as the colors are red!
 ├── prod.toml
 └── redirect.conf
 
-52 directories, 209 files
+61 directories, 291 files
+
 
 ```

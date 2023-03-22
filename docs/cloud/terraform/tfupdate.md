@@ -22,6 +22,12 @@ tfupdate provider -r google ./
 tfupdate provider -r google-beta ./
 ```
 
+## Update Cloudflare
+
+```shell
+tfupdate provider cloudflare -v "$(tfupdate release latest cloudflare/terraform-provider-cloudflare)" .
+```
+
 ## Print the latest version of `google` to stdout
 
 ```shell

@@ -188,6 +188,7 @@ nav:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
+          - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
 
   - Kubernetes:
       - kubernetes/index.md
@@ -213,6 +214,7 @@ nav:
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - K3S:
           - kubernetes/k3s/index.md
+          - Cloudflare Tunnels on k3s: kubernetes/k3s/cloudflare-tunnels-on-k3s.md
           - Disable Klipper: kubernetes/k3s/disable-klipper.md
           - Installing k3s: kubernetes/k3s/installing-k3s.md
           - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
