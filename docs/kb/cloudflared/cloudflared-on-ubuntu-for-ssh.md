@@ -40,9 +40,11 @@ Created tunnel web with id hfg2323-a5af-463f-<redacted>-8a0d63237d36
 ## Create config file
 
 ```shell
-cloudflared tunnel
+cloudflared service install
 cd /etc/cloudflared
 ```
+
+The `service install` should fail, we are just using this to create the directory.
 
 We then need to create the file 
 
@@ -52,7 +54,8 @@ touch config.yaml
 
 In there, paste the below and edit as you see fit
 
-```yamllogDirectory: /var/log/cloudflared
+```yaml
+logDirectory: /var/log/cloudflared
 tunnel: <tunnel ID>
 credentials-file: <location of tunnel file>
 no-autoupdate: true
@@ -66,6 +69,7 @@ ingress:
 
 ```shell
 cloudflared service install
+systemctl enable cloudflared
 ```
 
 ## Start the tunnel
