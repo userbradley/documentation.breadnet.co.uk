@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
+Sitemap: https://documentation.breadnet.co.uk/sitemap.xml
 
 
 #               _                              _           _
