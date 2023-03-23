@@ -1,58 +1,10 @@
 nav:
   - Home: index.md
-  # - Page not migrated: not-found.md
-  # - Bookstack: bookstack.md
   - Automation:
+      - Airflow basics: automation/airflow/airflow-basics.md
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
           - Ansible install python: automation/ansible/python-install.md
-      - Airflow basics: automation/airflow/airflow-basics.md
-  - Cloud:
-      - Aqua:
-          - Aqua Page 1: cloud/aqua/aqua-page-1.md
-          - Aqua Page 2: cloud/aqua/aqua-page-2.md
-          - Aqua partnership notes: cloud/aqua/partnership-info.md
-      - AWS:
-          - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
-          - AWS CLI: cloud/aws/aws-cli.md
-      - Digital Ocean:
-          - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
-      - Fly:
-          - cloud/fly/index.md
-          - "Create new Fly.io app": cloud/fly/create-new-app.md
-          - Fly regions and scaling: cloud/fly/fly-regions.md
-          - Fly.io in CI: cloud/fly/fly-ci.md
-          - Fly Deployment strategy: cloud/fly/deployment-strategy.md
-          - Authenticate to Fly docker Registry: cloud/fly/fly-docker-auth.md
-          - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
-      - Google Cloud:
-          - Get project using GCE Metadata API: cloud/gcp/api-get-project.md
-          - Get serviceAccount using GCE Metadata API: cloud/gcp/api-get-sa.md
-          - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
-          - Curl to IAP: cloud/gcp/curl-to-iap.md
-          - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
-          - Filter fields from gcloud putput: cloud/gcp/filter-gcloud-output.md
-          - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
-          - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
-          - Grafeas: cloud/gcp/grafeas.md
-          - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
-          - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
-          - SSH using IAP: cloud/gcp/ssh-iap.md
-          - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
-          - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
-          - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
-      - Terraform:
-          - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
-          - Bulk delete from terraform state: cloud/terraform/bulk-delete-terraform-state.md
-          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-          - Google IAP: cloud/terraform/google-iap.md
-          - Openstack error: cloud/terraform/openstack.md
-          - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
-          - Remote Data: cloud/terraform/remote-data.md
-          - Terraform lock file update: cloud/terraform/terraform-lock-file-update.md
-          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
-          - tfupdate: cloud/terraform/tfupdate.md
-          - To string from list in terraform: cloud/terraform/to-string-from-list.md
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
@@ -80,9 +32,59 @@ nav:
           - CKA - Page 1: certifications/cka/cka-1.md
           - CKA Practice questions: certifications/cka/cka-practice-questions.md
           - CKA Questions I need to spend more time on: certifications/cka/cka-practice-questions-struggled.md
-          - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
           - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
+          - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
+  - Cloud:
+      - Aqua:
+          - Aqua Page 1: cloud/aqua/aqua-page-1.md
+          - Aqua Page 2: cloud/aqua/aqua-page-2.md
+          - Aqua partnership notes: cloud/aqua/partnership-info.md
+      - AWS:
+          - AWS CLI: cloud/aws/aws-cli.md
+          - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
+      - Digital Ocean:
+          - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
+      - Fly:
+          - cloud/fly/index.md
+          - "Create new Fly.io app": cloud/fly/create-new-app.md
+          - Fly Deployment strategy: cloud/fly/deployment-strategy.md
+          - Fly.io in CI: cloud/fly/fly-ci.md
+          - Authenticate to Fly docker Registry: cloud/fly/fly-docker-auth.md
+          - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
+          - Fly regions and scaling: cloud/fly/fly-regions.md
+      - Google Cloud:
+          - Get project using GCE Metadata API: cloud/gcp/api-get-project.md
+          - Get serviceAccount using GCE Metadata API: cloud/gcp/api-get-sa.md
+          - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
+          - Curl to IAP: cloud/gcp/curl-to-iap.md
+          - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
+          - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
+          - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+          - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
+          - Grafeas: cloud/gcp/grafeas.md
+          - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+          - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
+          - SSH using IAP: cloud/gcp/ssh-iap.md
+          - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
+          - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
+          - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
+      - Terraform:
+          - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
+          - Bulk delete from terraform state: cloud/terraform/bulk-delete-terraform-state.md
+          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
+          - Google IAP: cloud/terraform/google-iap.md
+          - Openstack error: cloud/terraform/openstack.md
+          - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
+          - Remote Data: cloud/terraform/remote-data.md
+          - Terraform lock file update: cloud/terraform/terraform-lock-file-update.md
+          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - tfupdate: cloud/terraform/tfupdate.md
+          - To string from list in terraform: cloud/terraform/to-string-from-list.md
   - KB Articles:
+      - Authentication:
+          - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
+      - Cloud init:
+          - cloud-init: kb/cloud-init/cloud-init.md
       - Cloudflared:
           - kb/cloudflared/index.md
           - Cloudflared on Ubuntu for ssh: kb/cloudflared/cloudflared-on-ubuntu-for-ssh.md
@@ -91,13 +93,6 @@ nav:
         - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
         - Mount a new drive: kb/disk-management/mount-a-new-drive.md
         - "GPT PMBR Size Mismatch will be corrected by w(rite)" : kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
-      - Minio:
-          - OLD : kb/minio/old.md
-          - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
-          - creating users and assigning policies: kb/minio/s3-policies.md
-      - PHP:
-          - Install PHP: kb/php/install-php.md
-          - Wordpress permissions: kb/php/wordpress-permissions.md
       - Docker:
           - Installing Docker: kb/docker/installing-docker.md
           - Basics of docker: kb/docker/basics-of-docker.md
@@ -116,59 +111,6 @@ nav:
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
-      - Linux Networking:
-          - Bringing up Interfaces: kb/linux-networking/bringing-up-interfaces.md
-          - Centos Iptables: kb/linux-networking/centos-iptables.md
-          - Connections on a port: kb/linux-networking/connections-on-a-port.md
-          - DNS on Ubuntu: kb/linux-networking/dns-on-ubuntu.md
-          - "List of unique IP's": kb/linux-networking/list-of-unique-ips.md
-          - Listen on a port: kb/linux-networking/listen-on-a-port.md
-          - Netplan 2 interfaces: kb/linux-networking/netplan-2-interfaces.md
-          - Netplan Set static IP: kb/linux-networking/netplan-static-ip.md
-          - Nmap scanning: kb/linux-networking/nmap-scans.md
-          - Null routing: kb/linux-networking/null-routing.md
-          - RVC IP Range: kb/linux-networking/rvc-ip-range.md
-          - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
-      - Mac:
-          - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
-      - SSH:
-          - Generate SSH keys: kb/ssh/generate-ssh-keys.md
-          - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
-          - "no matching host key type found. Their offer: ssh-dss": kb/ssh/no-matching-host-key-type-found-their-offer-ssh-dss.md
-          - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
-          - SSH Port redirection: kb/ssh/ssh-port-redirection.md
-          - sshuttle: kb/ssh/sshuttle.md
-          - Weird Bash: kb/ssh/weird-bash.md
-      - Nginx:
-          - Reverse web proxy: kb/nginx/reverse-web-proxy.md
-          - Custom Headers: kb/nginx/custom-headers.md
-          - Remove server headers: kb/nginx/remove-server-headers.md
-          - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
-          - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
-      - OpenVPN:
-          - Install OpenVPN AS: kb/openvpn/install-openvpn-as.md
-          - Connecting Mikrotik to OpenVPN AS: kb/openvpn/mikrotik-to-openvpn.md
-      - Pritunl:
-          - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
-          - SSH using pritunl bastion: kb/pritunl/ssh-using-pritunl-bastion.md
-      - Public web Facing:
-          - Bookstack: kb/public-web-facing/bookstack.md
-          - Cachet: kb/public-web-facing/cachet.md
-          - Certbot: kb/public-web-facing/certbot.md
-          - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
-          - Serving breadNET when server is offline:  kb/public-web-facing/downloading-the-breadnet-site-and-serving-a-stale-copy.md
-          - Jellyfin S3: kb/public-web-facing/jellyfin-s3.md
-          - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
-          - Wildcard Certificates: kb/public-web-facing/wildcard-certificates.md
-          - Change password using WPCli: kb/public-web-facing/wp-cli-password.md
-      - Sqlite:
-          - Export single table from sqlite: kb/sqlite/export-table.md
-          - Import single table from sqlite: kb/sqlite/import-table.md
-      - Wasabi:
-          - Policies: kb/wasabi/policies.md
-          - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
-      - Authentication:
-          - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Grocy:
@@ -186,20 +128,92 @@ nav:
           - uuidgen Lower case: kb/linux-cli/uuidgen-lowercase.md
           - "xcrun: error: invalid active developer path": kb/linux-cli/xcrun-error-invalid-active-developer-path.md
           - "Your Xcode is too outdated.": kb/linux-cli/your-xcode-is-too-outdated.md
-      - Networking:
-          - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
-          - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
-          - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
-      - Cloud init:
-          - cloud-init: kb/cloud-init/cloud-init.md
+      - Linux Networking:
+          - Bringing up Interfaces: kb/linux-networking/bringing-up-interfaces.md
+          - Centos Iptables: kb/linux-networking/centos-iptables.md
+          - Connections on a port: kb/linux-networking/connections-on-a-port.md
+          - DNS on Ubuntu: kb/linux-networking/dns-on-ubuntu.md
+          - "List of unique IP's": kb/linux-networking/list-of-unique-ips.md
+          - Listen on a port: kb/linux-networking/listen-on-a-port.md
+          - Netplan 2 interfaces: kb/linux-networking/netplan-2-interfaces.md
+          - Netplan Set static IP: kb/linux-networking/netplan-static-ip.md
+          - Nmap scanning: kb/linux-networking/nmap-scans.md
+          - Null routing: kb/linux-networking/null-routing.md
+          - RVC IP Range: kb/linux-networking/rvc-ip-range.md
+          - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
+      - Mac:
+          - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
       - Markdown:
           - How to use git: kb/markdown/github-repos-and-stuff.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
-
+      - Minio:
+          - OLD : kb/minio/old.md
+          - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
+          - creating users and assigning policies: kb/minio/s3-policies.md
+      - Networking:
+          - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
+          - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
+          - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
+      - Nginx:
+          - Reverse web proxy: kb/nginx/reverse-web-proxy.md
+          - Custom Headers: kb/nginx/custom-headers.md
+          - Remove server headers: kb/nginx/remove-server-headers.md
+          - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
+          - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
+      - OpenVPN:
+          - Install OpenVPN AS: kb/openvpn/install-openvpn-as.md
+          - Connecting Mikrotik to OpenVPN AS: kb/openvpn/mikrotik-to-openvpn.md
+      - PHP:
+          - Install PHP: kb/php/install-php.md
+          - Wordpress permissions: kb/php/wordpress-permissions.md
+      - Pritunl:
+          - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
+          - SSH using pritunl bastion: kb/pritunl/ssh-using-pritunl-bastion.md
+      - Public web Facing:
+          - Bookstack: kb/public-web-facing/bookstack.md
+          - Cachet: kb/public-web-facing/cachet.md
+          - Certbot: kb/public-web-facing/certbot.md
+          - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
+          - Serving breadNET when server is offline:  kb/public-web-facing/downloading-the-breadnet-site-and-serving-a-stale-copy.md
+          - Jellyfin S3: kb/public-web-facing/jellyfin-s3.md
+          - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
+          - Wildcard Certificates: kb/public-web-facing/wildcard-certificates.md
+          - Change password using WPCli: kb/public-web-facing/wp-cli-password.md
+      - Sqlite:
+          - Export single table from sqlite: kb/sqlite/export-table.md
+          - Import single table from sqlite: kb/sqlite/import-table.md
+      - SSH:
+          - Generate SSH keys: kb/ssh/generate-ssh-keys.md
+          - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
+          - "no matching host key type found. Their offer: ssh-dss": kb/ssh/no-matching-host-key-type-found-their-offer-ssh-dss.md
+          - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
+          - SSH Port redirection: kb/ssh/ssh-port-redirection.md
+          - sshuttle: kb/ssh/sshuttle.md
+          - Weird Bash: kb/ssh/weird-bash.md
+      - Wasabi:
+          - Policies: kb/wasabi/policies.md
+          - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
   - Kubernetes:
       - kubernetes/index.md
+      - GKE:
+          - kubernetes/gke/index.md
+          - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
+          - Workload ID test pod: kubernetes/gke/workload-id-test.md
+      - Helm:
+          - Create a helm chart: kubernetes/helm/create-helm-chart.md
+          - Push chart to Artifact Registry: kubernetes/helm/push-chart-to-ar.md
+          - Use GCS as helm repo: kubernetes/helm/helm-repo-gcs.md
+          - Force containers to update when config map changes in helm: kubernetes/helm/force-rollout-on-configmap-update.md
+      - K3S:
+          - kubernetes/k3s/index.md
+          - Cloudflare Tunnels on k3s: kubernetes/k3s/cloudflare-tunnels-on-k3s.md
+          - Disable Klipper: kubernetes/k3s/disable-klipper.md
+          - Installing k3s: kubernetes/k3s/installing-k3s.md
+          - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
+          - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
+          - Things taking too long to delete: kubernetes/k3s/things-taking-too-long-to-delete.md
       - KB:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
@@ -211,23 +225,6 @@ nav:
           - Testing RBAC: kubernetes/kb/rbac-testing.md
           - Sleeper pod: kubernetes/kb/sleeper.md
           - Using ArgoCD Image updater with Google Artifact Registry: kubernetes/kb/using-argocd-image-updater-with-google-artifact-registry.md
-      - Helm:
-          - Create a helm chart: kubernetes/helm/create-helm-chart.md
-          - Push chart to Artifact Registry: kubernetes/helm/push-chart-to-ar.md
-          - Use GCS as helm repo: kubernetes/helm/helm-repo-gcs.md
-          - Force containers to update when config map changes in helm: kubernetes/helm/force-rollout-on-configmap-update.md
-      - GKE:
-          - kubernetes/gke/index.md
-          - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
-          - Workload ID test pod: kubernetes/gke/workload-id-test.md
-      - K3S:
-          - kubernetes/k3s/index.md
-          - Cloudflare Tunnels on k3s: kubernetes/k3s/cloudflare-tunnels-on-k3s.md
-          - Disable Klipper: kubernetes/k3s/disable-klipper.md
-          - Installing k3s: kubernetes/k3s/installing-k3s.md
-          - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
-          - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
-          - Things taking too long to delete: kubernetes/k3s/things-taking-too-long-to-delete.md
   - Home:
       - home/index.md
       - Utilities:
@@ -241,7 +238,7 @@ nav:
           - Reducing temperature: home/water-heater/reduce-temperature.md
 
 
-
+## Config ##
 
 
 repo_name: documentation
@@ -291,13 +288,14 @@ theme:
   features:
     - navigation.instant # IDK
     - navigation.tracking #Anchor links
-    #- !ENV [nav, ""]#navigation.expand #Exapnds the navigation in the UI, disabled by default, but enabled in dev
-    - content.code.annotate
-    - search.share
-    # - search.highlight
     - navigation.top # back to top of page
     - navigation.indexes # Allows index.md pages
+    #- !ENV [nav, ""]#navigation.expand #Exapnds the navigation in the UI, disabled by default, but enabled in dev
+    - content.code.annotate
+    - content.code.copy
     - content.tabs.link
+    - search.share
+    # - search.highlight
 
 
 markdown_extensions:
