@@ -132,12 +132,13 @@ nav:
       - Mac:
           - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
       - SSH:
-          - SSH Keys: kb/ssh/generate-ssh-keys.md
-          - SSH Port redirection: kb/ssh/ssh-port-redirection.md
-          - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
+          - Generate SSH keys: kb/ssh/generate-ssh-keys.md
           - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
-          - Weird Bash: kb/ssh/weird-bash.md
+          - "no matching host key type found. Their offer: ssh-dss": kb/ssh/no-matching-host-key-type-found-their-offer-ssh-dss.md
+          - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
+          - SSH Port redirection: kb/ssh/ssh-port-redirection.md
           - sshuttle: kb/ssh/sshuttle.md
+          - Weird Bash: kb/ssh/weird-bash.md
       - Nginx:
           - Reverse web proxy: kb/nginx/reverse-web-proxy.md
           - Custom Headers: kb/nginx/custom-headers.md
