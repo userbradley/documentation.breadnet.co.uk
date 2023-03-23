@@ -1,8 +1,17 @@
-![img.png](img.png)
+---
+title: Connecting Mikrotik to OpenVPN AS
+---
 
-![img_1.png](img_1.png)
+# Connecting Mikrotik to OpenVPN AS
 
-![img_2.png](img_2.png)
+!!! error "This page is a brain dump"
+    So it should not be relied on, and probably won't ever be updated 
+
+![img.png](../../assets/openvpn-as-advanced-vpn.png)
+
+![img_1.png](../../assets/openvpn-tls.png)
+
+![img_2.png](../../assets/openvpn-dns.png)
 
 issue:
 
@@ -29,6 +38,6 @@ ppp profile add name=OVPN-client change-tcp-mss=yes only-one=yes use-encryption=
 ```
 
 
-![img_3.png](img_3.png)
+![img_3.png](../../assets/openvpn-mikrotik-setup.png)
 
 http://missinglink.github.io/mikrotik-openvpn-client/
