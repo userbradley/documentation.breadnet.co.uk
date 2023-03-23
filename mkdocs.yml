@@ -83,6 +83,9 @@ nav:
           - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
           - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
   - KB Articles:
+      - Cloudflared:
+          - kb/cloudflared/index.md
+          - Cloudflared on Ubuntu for ssh: kb/cloudflared/cloudflared-on-ubuntu-for-ssh.md
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
         - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
@@ -141,6 +144,9 @@ nav:
           - Remove server headers: kb/nginx/remove-server-headers.md
           - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
           - nginx redirects to the first alphabetical site when not found in config: kb/nginx/nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
+      - OpenVPN:
+          - Install OpenVPN AS: kb/openvpn/install-openvpn-as.md
+          - Connecting Mikrotik to OpenVPN AS: kb/openvpn/mikrotik-to-openvpn.md
       - Pritunl:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
       - Public web Facing:
