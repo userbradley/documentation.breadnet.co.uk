@@ -31,7 +31,7 @@ Bookstack had the below structure for pages
 
 An example of this would be for the page `VPN Network routing Mikrotik`
 
-It's URL is `https://bookstack.breadnet.co.uk/books/kb-articles/page/vpn-network-routing-mikrotik`
+It's URL is `https://bookstack.breadnet.co.uk/books/kb-articles/page/vpn-network-routing-mikrotik` <!-- Leave this here, it's an example of what a new link would be like when the redirect happens -->
 
 And if we were to visualize the directory it would be:
 
