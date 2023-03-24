@@ -98,6 +98,7 @@ nav:
           - Basics of docker: kb/docker/basics-of-docker.md
           - Installing jellyfin: kb/docker/installing-jellyfin.md
           - "Docker: Intro and notes": kb/docker/docker-intro-and-notes.md
+          - Get logs of docker container: kb/docker/docker-logs.md
           - Exporting and importing: kb/docker/exporting-and-importing.md
           - Docker Architecture: kb/docker/docker-architecture.md
           - Bulk retag: kb/docker/bulk-retag.md
