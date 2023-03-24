@@ -15,7 +15,7 @@ This is a post to save other people some time and pain. What follows may apply t
 If a user selects Optimal or Default BIOS options, wipes the pre-installed existing operating systems and partitions, and then installs a Linux distribution in UEFI mode on an SCU device, the ThinkStation S30 may return the following error and refuse to boot after successful installation.
 
 
-!!! error 
+!!! warning 
     
     Error 1962: No operating system found.
 

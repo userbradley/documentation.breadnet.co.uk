@@ -1,6 +1,10 @@
 version: 3
 
 tasks:
+  default:
+    desc: Lists the available commands
+    cmds:
+      - task --list-all
   serve:
     desc: Runs mkdocs serve
     cmds:
@@ -9,10 +13,6 @@ tasks:
     desc: Runs mkdocs dirty reload
     cmds:
       - mkdocs serve --dirtyreload
-  default:
-    desc: Lists the avalible commands
-    cmds:
-      - task --list-all
   build:
     desc: Builds the site
     cmds:

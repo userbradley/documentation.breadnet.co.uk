@@ -2,7 +2,7 @@
 title: Consumer Unit
 ---
 
-!!! Error "Notice"
+!!! warning "Notice"
     You should not have to interface with this during normal operations.
 
 ## Location

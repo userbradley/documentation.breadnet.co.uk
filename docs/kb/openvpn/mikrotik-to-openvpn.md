@@ -4,7 +4,7 @@ title: Connecting Mikrotik to OpenVPN AS
 
 # Connecting Mikrotik to OpenVPN AS
 
-!!! error "This page is a brain dump"
+!!! warning "This page is a brain dump"
     So it should not be relied on, and probably won't ever be updated 
 
 ![img.png](../../assets/openvpn-as-advanced-vpn.png)

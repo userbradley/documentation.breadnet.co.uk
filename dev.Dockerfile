@@ -2,13 +2,14 @@ FROM squidfunk/mkdocs-material:latest as BUILDER
 WORKDIR /app
 COPY . /app
 
+
 ENV color=red
 ENV env="Development Server"
 ENV nav="navigation.expand"
 ENV domain="https://dev-documentation.breadnet.co.uk"
 ENV dir="overrides-dev"
 
-
+COPY dev-robots.txt /app/docs/robots.txt
 RUN ["mkdocs", "build"]
 
 

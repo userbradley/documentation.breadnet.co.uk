@@ -5,12 +5,12 @@ outdated: true
 
 # Jellyfin using S3 and Docker
 
-!!! Error "DO NOT USE"
+!!! warning "DO NOT USE"
     THIS IS ONLY MIGRATED TO KEEP LINKS ALIVE, AND SHOULD NEVER BE USED. IT'S INSECURE AND DOES NOT FOLLOW BEST PRACTICES. 
 
 
 <h4 id="bkmrk-prereqs%3A-i-am-not-a-">Prereqs:</h4>
-<p id="bkmrk-i-am-not-a-security-"><br>I am not a security expert, I am a sysadmin. The security of your server is up to you. Do basic things like enable <a href="https://bookstack.breadnet.co.uk/books/kb-articles/page/ssh-keys" target="_blank" rel="noopener">ssh keys</a> and lock down ingress ports with ufw or iptables. What ever angles your dangle.<br>I am not a docker expert. I am a sysadmin which means I can use google (I think? bleh) so if you see anything whack in this, feel free to email me (webmaster[at]breadnet[dot]co[dot]uk)</p>
+<p id="bkmrk-i-am-not-a-security-"><br>I am not a security expert, I am a sysadmin. The security of your server is up to you. Do basic things like enable <a href="https://documentation.breadnet.co.uk/books/kb-articles/page/ssh-keys" target="_blank" rel="noopener">ssh keys</a> and lock down ingress ports with ufw or iptables. What ever angles your dangle.<br>I am not a docker expert. I am a sysadmin which means I can use google (I think? bleh) so if you see anything whack in this, feel free to email me (webmaster[at]breadnet[dot]co[dot]uk)</p>
 <p id="bkmrk-%C2%A0"> </p>
 <p id="bkmrk-comment%3A-3rd-may-202">Comment: 3rd may 2020: After running this for a few days it's come to my attention that for this to be viable and be able to transcode you will need a slightly more powerful host. Whilst this does feel like a kick in the nuts, its not. There are lots of technologies that still work here.</p>
 <p id="bkmrk-%C2%A0-0"> </p>
@@ -82,7 +82,7 @@ outdated: true
 <p id="bkmrk-once-your-policy-is-">Once your policy is created you can now move on to creating the user.<br><br></p>
 <p id="bkmrk-go-to-users-and-then">Go to users and then click 'create user' and follow though the prompts.</p>
 <p id="bkmrk-click-api-access%3A">Click API access:</p>
-<p id="bkmrk-"><img id="bkmrk--3" src="https://bookstack.breadnet.co.uk/uploads/images/gallery/2020-04/scaled-1680-/eUOCt0FHrAKXglAR-image-1588290555247.png"></p>
+<p id="bkmrk-"><img id="bkmrk--3" src="https://documentation.breadnet.co.uk/uploads/images/gallery/2020-04/scaled-1680-/eUOCt0FHrAKXglAR-image-1588290555247.png"></p>
 <p id="bkmrk-%C2%A0-3"> </p>
 <p id="bkmrk-now-follow-though-th">Now follow though the prompts till you get to the end. Don't click anything as it will then pop up with the keys. Click download. </p>
 <p id="bkmrk-%C2%A0-4"> </p>
@@ -120,7 +120,7 @@ services:
 <p id="bkmrk-now-we-need-to-sort-">Now we need to sort the rclone business out.</p>
 <p id="bkmrk-for-this-i-suggest-u">For this I suggest using screen.</p>
 <p id="bkmrk-it-can-be-opened-by-">It can be opened by typing screen in a shell session (over ssh to the server) </p>
-<p id="bkmrk-if-it-opens%2C-close-i"><img id="bkmrk--4" src="https://bookstack.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/xqqlZDCLo7N0MB9f-image-1588291310783.png"><br>If it opens, close it with Ctrl + a + d (the a key followed by the d key)</p>
+<p id="bkmrk-if-it-opens%2C-close-i"><img id="bkmrk--4" src="https://documentation.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/xqqlZDCLo7N0MB9f-image-1588291310783.png"><br>If it opens, close it with Ctrl + a + d (the a key followed by the d key)</p>
 <p id="bkmrk-if-it-gives-you-shit">If it gives you shit about not having it installed run<br>sudo apt-get install screen -y</p>
 <p id="bkmrk-now-we-need-to-setup">Now we need to setup rclone</p>
 <pre id="bkmrk-cd-%7E%2F.config"><code class="language-shell">cd ~/.config</code></pre>
@@ -160,14 +160,14 @@ storage_class =
 <p id="bkmrk-in-the-folder-where-">In the folder where the docker-compose.yml file exists, run:</p>
 <pre id="bkmrk-docker-compose-up"><code class="language-shell">docker-compose up</code></pre>
 <p id="bkmrk-if-all-went-well-it-">If all went well it should spin up and then you can visit the IP address for the vm you're working on with the jellyfin port number and then add the media like you would usually:</p>
-<p id="bkmrk--0"><img id="bkmrk--5" src="https://bookstack.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/9W1mq4mymSV0sKft-image-1588292228032.png"></p>
+<p id="bkmrk--0"><img id="bkmrk--5" src="https://documentation.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/9W1mq4mymSV0sKft-image-1588292228032.png"></p>
 <p id="bkmrk-%C2%A0-7"> </p>
 <p id="bkmrk-i-suggest-you-create">I suggest you create the folders though wasabi webui and upload the files there if you're not 100% with rclone.</p>
 <p id="bkmrk-%C2%A0-8"> </p>
 <p id="bkmrk-that-should-be-it.-l">That should be it. Let it whir away and it should be all fine and dandy. </p>
 <p id="bkmrk-%C2%A0-9"> </p>
 <p id="bkmrk-this-is-the-vps-stat">This is the VPS status for usage and disk usage:</p>
-<p id="bkmrk--1"><img id="bkmrk--6" src="https://bookstack.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/gSzylkkvNrHlBaLC-image-1588292772671.png"></p>
+<p id="bkmrk--1"><img id="bkmrk--6" src="https://documentation.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/gSzylkkvNrHlBaLC-image-1588292772671.png"></p>
 <p id="bkmrk-%C2%A0-10"> </p>
 <p id="bkmrk-like-i-said%2C-if-ther">Like I said, if there's any issues or you're confused to me, reach out to me on Reddit or email!</p>
 <p id="bkmrk--2"><br><br></p>

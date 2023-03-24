@@ -1,42 +1,13 @@
 version: '2.4'
-
 services:
-
-  frontend:
-    image: "grocy/frontend:v3.3.2"
+  production:
+    image: "documentation"
     build:
-      args:
-        GROCY_VERSION: v3.3.2
-        PLATFORM: linux/amd64
       context: .
-      dockerfile: Containerfile-frontend
-    depends_on:
-      - backend
+      dockerfile: Dockerfile
     ports:
-      - '127.0.0.1:8080:8080'
-    read_only: true
+      - '127.0.0.1:8080:80'
+    read_only: false
     tmpfs:
       - /tmp
     restart: unless-stopped
-
-  backend:
-    image: "grocy/backend:v3.3.2"
-    build:
-      args:
-        GROCY_VERSION: v3.3.2
-        PLATFORM: linux/amd64
-      context: .
-      dockerfile: Containerfile-backend
-    expose:
-      - '9000'
-    read_only: true
-    tmpfs:
-      - /tmp
-    volumes:
-      - app-db:/var/www/data
-    env_file:
-      - grocy.env
-    restart: unless-stopped
-
-volumes:
-  app-db:
