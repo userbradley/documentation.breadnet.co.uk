@@ -747,7 +747,7 @@ A: Pod cant tolerate the taint `mortein`
 
 ### Create another pod named bee with the nginx image, which has a toleration set to the taint mortein.
 
-!!! error "Struggled"
+!!! warning "Struggled"
     This is a question I struggled on
 
 ```shell

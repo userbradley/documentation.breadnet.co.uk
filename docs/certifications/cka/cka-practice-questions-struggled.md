@@ -2,7 +2,7 @@
 
 ### Create another pod named bee with the nginx image, which has a toleration set to the taint mortein.
 
-!!! error "Struggled"
+!!! warning "Struggled"
 This is a question I struggled on
 
 ```shell
@@ -36,7 +36,7 @@ status: {}
 
 ### Which nodes can the pods for the blue deployment be placed on?
 
-!!! error "Struggled"
+!!! warning "Struggled"
 This is a question I struggled on
 
 ```shell

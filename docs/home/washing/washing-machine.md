@@ -197,7 +197,7 @@ This will add a drying cycle to the end of the wash
 
 This can happen when the machine is in a failed state.
 
-!!! error "Do not force the door open"
+!!! warning "Do not force the door open"
     Doing so can cause the machine to break.
 
 Once the cycle has finished, the machine will beep. This is loud enough to hear from anywhere in the apartment.

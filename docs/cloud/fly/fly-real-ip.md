@@ -4,7 +4,7 @@ title: Get the Real IP address from fly when behind cloudflare
 
 # Get the Real IP address from fly when behind cloudflare
 
-!!! error "A note on this KB"
+!!! warning "A note on this KB"
     You should only use this page if you are using *both* cloudflare *proxy* and fly.io
 
 ## Why
