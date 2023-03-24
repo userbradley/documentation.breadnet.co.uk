@@ -159,6 +159,7 @@ nav:
           - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
       - Nginx:
           - Reverse web proxy: kb/nginx/reverse-web-proxy.md
+          - Get the real IP address from Cloudflare: kb/nginx/get-real-ip-cloudflare.md
           - Custom Headers: kb/nginx/custom-headers.md
           - Remove server headers: kb/nginx/remove-server-headers.md
           - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md

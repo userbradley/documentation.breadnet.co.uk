@@ -6,9 +6,7 @@ title: Custom Headers
 
 Install the below:
 
-```shell
-apt-get install nginx-extras
-```
+--8<-- "docs/kb/nginx/nginx-extras.md"
 
 You can now add this anywhere:
 
