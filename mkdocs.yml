@@ -101,6 +101,7 @@ nav:
           - Get logs of docker container: kb/docker/docker-logs.md
           - Exporting and importing: kb/docker/exporting-and-importing.md
           - Docker Architecture: kb/docker/docker-architecture.md
+          - Docker copying: kb/docker/docker-copy.md
           - Bulk retag: kb/docker/bulk-retag.md
           - Copy images between repositories: kb/docker/copy-containers-between-repos.md
       - Drone:

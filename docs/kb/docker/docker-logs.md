@@ -6,7 +6,7 @@ title: Get logs of docker container
 
 ## Get running containers
 
---9<-- "docs/kb/docker/docker-ps.md"
+--8<-- "docs/kb/docker/docker-ps.md"
 
 It will display something like the below
 
