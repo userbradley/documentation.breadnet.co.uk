@@ -20,12 +20,23 @@ brew install kompose
 
 ### Convert a file
 
-Open a directory with a `docker-compose.yaml` file in it
+=== "Default"
 
-Run the below
+    Open a directory with a `docker-compose.yaml` file in it
+    
+    Run the below
+    
+    ```shell
+    kompose convert
+    ```
 
-```shell
-kompose convert
-```
+=== "Pick a specific file"
+
+    You can then specify any docker compose file
+    
+    ```
+    kompose --file docker-voting.yml convert
+    ```
+
 
 You will then get a collection of `.yaml` files in the current directory
