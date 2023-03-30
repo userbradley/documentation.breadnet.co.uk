@@ -39,6 +39,8 @@ Created tunnel web with id hfg2323-a5af-463f-<redacted>-8a0d63237d36
 
 ## Create config file
 
+!!! note "Below is expected to fail"
+
 ```shell
 cloudflared service install
 cd /etc/cloudflared
@@ -46,10 +48,14 @@ cd /etc/cloudflared
 
 The `service install` should fail, we are just using this to create the directory.
 
-We then need to create the file 
+Next, creat the file
 
 ```shell
 touch config.yaml
+```
+
+```shell
+nano config.yaml
 ```
 
 In there, paste the below and edit as you see fit
@@ -82,11 +88,15 @@ systemctl start cloudflared
 
 ### quic not connecting
 
+```text
+ Failed to create new quic connection error="failed to dial to edge with quic: timeout: no recent network activity
+```
+
 In order for `quic` to work you need to have the below ports allowed **outbound**
 
 - `udp/7844`
 
-If you do not feel like allowing this port, you can have the tunnel use `http2`
+If you do not feel like allowing this port, you can have the tunnel use `http2` -  Read below on how to do this
 
 #### Edit the service
 
@@ -94,7 +104,7 @@ If you do not feel like allowing this port, you can have the tunnel use `http2`
 nano /etc/systemd/system/cloudflared.service
 ```
 
-modify the file so it's like the below
+Edit the file so it's like the below
 
 ```diff
 [Service]
