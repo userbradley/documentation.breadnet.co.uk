@@ -17,3 +17,9 @@ tasks:
     desc: Builds the site
     cmds:
       - mkdocs build
+  md-lint:
+    desc: Lints the README.md file and suggests changes you can make
+    silent: true
+    ignore_error: true
+    cmds:
+      - vale README.md
