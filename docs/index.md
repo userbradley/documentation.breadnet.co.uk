@@ -10,7 +10,9 @@ hide:
 [![Dev](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml) [![Production](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml)
 [![wakatime](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg)](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614)
 
-This site holds all my documentation since I've started in IT (2016) as well as new documents.
+This site holds all past documents I wrote since starting in IT (2016) as well as new documents that I create.
+
+https://github.com/userbradley/documentation.breadnet.co.uk/graphs/commit-activity
 
 I used to use [Bookstack](https://bookstackapp.com/?utm_source=breadnet&utm_medium=documentation&utm_campaign=documentation) but migrated as I got
 fed-up of managing an ubuntu server
