@@ -53,6 +53,7 @@ nav:
           - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
       - Google Cloud:
+          - Add external user to Google Cloud Platform Organization: cloud/gcp/add-external-user-to-org.md
           - Get project using GCE Metadata API: cloud/gcp/api-get-project.md
           - Get serviceAccount using GCE Metadata API: cloud/gcp/api-get-sa.md
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
