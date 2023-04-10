@@ -1,6 +1,6 @@
 ---
 title: Fingerprint on Linux Mint
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Fingerprint on Linux Mint

@@ -1,6 +1,6 @@
 ---
 title: "Docker: Intro and notes"
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 

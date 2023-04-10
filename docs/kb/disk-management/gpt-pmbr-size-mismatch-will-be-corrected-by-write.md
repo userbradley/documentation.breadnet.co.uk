@@ -1,6 +1,6 @@
 ---
 title: gpt pmbr size mismatch will be corrected by write
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # gpt pmbr size mismatch will be corrected by write

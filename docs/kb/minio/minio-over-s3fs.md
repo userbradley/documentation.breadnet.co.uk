@@ -1,6 +1,6 @@
 ---
 title: Minio over s3fs
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Minio over s3fs

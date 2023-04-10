@@ -1,6 +1,6 @@
 ---
 title: Bulk retag
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Bulk retag

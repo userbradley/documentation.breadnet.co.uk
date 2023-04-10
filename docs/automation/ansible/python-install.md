@@ -1,6 +1,6 @@
 ---
 title: Python install using Ansible
-outdated: true
+reviewdate: '2022-01-01'
 ---
 # Python install using Ansible
 

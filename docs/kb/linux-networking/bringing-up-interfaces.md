@@ -1,6 +1,6 @@
 ---
 title: Bringing up Interfaces
-outdated: true
+reviewdate: '2022-01-01'
 ---
 # Bringing up Interfaces
 

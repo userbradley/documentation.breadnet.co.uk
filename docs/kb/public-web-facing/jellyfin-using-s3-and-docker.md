@@ -1,6 +1,6 @@
 ---
 title: Jellyfin using S3 and Docker
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Jellyfin using S3 and Docker

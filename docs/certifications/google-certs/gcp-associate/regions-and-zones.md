@@ -1,6 +1,6 @@
 ---
 title: Regions and Zones
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Regions and Zones

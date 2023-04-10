@@ -1,6 +1,6 @@
 ---
 title: Gsuit - User administration
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Gsuit - User administration

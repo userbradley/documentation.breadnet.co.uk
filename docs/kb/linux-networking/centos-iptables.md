@@ -1,6 +1,6 @@
 ---
 title: Centos Iptables
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Centos Iptables

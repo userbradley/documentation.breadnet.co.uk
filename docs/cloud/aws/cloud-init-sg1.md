@@ -1,6 +1,6 @@
 ---
 title: AWS Cloud-init
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # AWS Cloud-init

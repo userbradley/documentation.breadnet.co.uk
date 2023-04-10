@@ -1,6 +1,6 @@
 ---
 title: Formatting drive and auto mount
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Formatting drive and auto mount

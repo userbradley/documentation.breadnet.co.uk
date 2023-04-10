@@ -1,6 +1,6 @@
 ---
 title: Basics of docker
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Basics of docker
