@@ -1,9 +1,9 @@
 ---
 title: Install PHP
 outdated: true
+reviewdate: '2023-03-04'
 ---
 
-# Install PHP
 
 ```bash
 sudo apt-get install software-properties-common

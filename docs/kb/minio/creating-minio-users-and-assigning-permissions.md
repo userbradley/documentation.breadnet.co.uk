@@ -1,9 +1,8 @@
 ---
-title: minio: Creating users and assigning policies
+title: Creating Minio users and assigning permissions
 outdated: true
 ---
 
-# minio: Creating users and assigning policies
 
 
 ## Connect to the minio server

@@ -154,7 +154,7 @@ nav:
       - Minio:
           - OLD : kb/minio/old.md
           - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
-          - creating users and assigning policies: kb/minio/s3-policies.md
+          - Creating minio users and assigning permissions: kb/minio/creating-minio-users-and-assigning-permissions.md
       - Networking:
           - Show Broadband password on EE router: kb/networking/show-broadband-password-ee.md
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
@@ -182,7 +182,7 @@ nav:
           - Certbot: kb/public-web-facing/certbot.md
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
           - Serving breadNET when server is offline:  kb/public-web-facing/downloading-the-breadnet-site-and-serving-a-stale-copy.md
-          - Jellyfin S3: kb/public-web-facing/jellyfin-s3.md
+          - Jellyfin using S3 and Docker: kb/public-web-facing/jellyfin-using-s3-and-docker.md
           - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Wildcard Certificates: kb/public-web-facing/wildcard-certificates.md
           - Change password using WPCli: kb/public-web-facing/wp-cli-password.md
