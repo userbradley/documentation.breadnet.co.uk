@@ -7,7 +7,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - '127.0.0.1:8080:80'
-    read_only: false
-    tmpfs:
-      - /tmp
     restart: unless-stopped
