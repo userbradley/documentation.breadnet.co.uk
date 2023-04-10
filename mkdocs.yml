@@ -177,6 +177,7 @@ nav:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
           - SSH using pritunl bastion: kb/pritunl/ssh-using-pritunl-bastion.md
       - Public web Facing:
+          - Reverse server: kb/public-web-facing/reverse.md
           - Bookstack: kb/public-web-facing/bookstack.md
           - Cachet: kb/public-web-facing/cachet.md
           - Certbot: kb/public-web-facing/certbot.md
