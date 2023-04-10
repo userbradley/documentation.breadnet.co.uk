@@ -97,3 +97,10 @@ Forever grateful for thy endless gain.
 
 ![img_6.png](../../assets/reverse-dns.png)
 
+### Server sitting in the console
+
+![img.png](../../assets/reverse-sitting-in-console.png)
+
+## Goodbye old pal
+
+![img.png](../../assets/reverse-destroy-instance.png)
