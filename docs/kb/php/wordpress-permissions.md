@@ -1,8 +1,7 @@
 ---
 title: WordPress permissions
+reviewdate: '2022-01-01'
 ---
-
-# WordPress permissions
 
 ```bash
 chown www-data:www-data  -R * # Let Apache be owner

@@ -12,7 +12,7 @@ hide:
 
 This site holds all past documents I wrote since starting in IT (2016) as well as new documents that I create.
 
-https://github.com/userbradley/documentation.breadnet.co.uk/graphs/commit-activity
+This site gets updated [on average, once a day](https://github.com/userbradley/documentation.breadnet.co.uk/graphs/commit-activity)
 
 I used to use [Bookstack](https://bookstackapp.com/?utm_source=breadnet&utm_medium=documentation&utm_campaign=documentation) but migrated as I got
 fed-up of managing an ubuntu server
