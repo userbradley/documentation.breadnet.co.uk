@@ -231,6 +231,9 @@ nav:
           - Testing RBAC: kubernetes/kb/rbac-testing.md
           - Sleeper pod: kubernetes/kb/sleeper.md
           - Using ArgoCD Image updater with Google Artifact Registry: kubernetes/kb/using-argocd-image-updater-with-google-artifact-registry.md
+  - mkdocs:
+      - mkdocs/index.md
+      - Add review date to page: mkdocs/add-review-date-to-page.md
   - Home:
       - home/index.md
       - Utilities:
