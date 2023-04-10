@@ -1,6 +1,6 @@
 ---
 title: Aqua partnership info
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Aqua partnership info

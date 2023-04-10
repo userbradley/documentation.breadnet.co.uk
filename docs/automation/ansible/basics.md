@@ -1,6 +1,6 @@
 ---
 title: Ansible Basics
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Ansible Basics

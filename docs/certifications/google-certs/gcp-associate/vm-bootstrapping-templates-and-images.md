@@ -1,6 +1,6 @@
 ---
 title: VM Bootstrapping, templates and Images
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # VM Bootstrapping, templates and Images

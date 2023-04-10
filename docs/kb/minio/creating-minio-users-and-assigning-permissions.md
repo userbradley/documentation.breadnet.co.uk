@@ -1,6 +1,6 @@
 ---
 title: Creating Minio users and assigning permissions
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 

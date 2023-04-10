@@ -1,6 +1,6 @@
 ---
 title: Netplan 2 interfaces
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Netplan 2 interfaces

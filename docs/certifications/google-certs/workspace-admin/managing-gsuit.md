@@ -1,6 +1,6 @@
 ---
 title: Managing Gsuit
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Managing Gsuit

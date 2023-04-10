@@ -1,6 +1,6 @@
 ---
 title: SSH client setup using keys
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # SSH client setup using keys

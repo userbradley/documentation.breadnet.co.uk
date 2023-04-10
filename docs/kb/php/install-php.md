@@ -1,7 +1,6 @@
 ---
 title: Install PHP
-outdated: true
-reviewdate: '2023-03-04'
+reviewdate: '2022-01-01'
 ---
 
 

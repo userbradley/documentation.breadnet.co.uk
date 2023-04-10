@@ -1,6 +1,6 @@
 ---
 title: Terraform - Building infrastructure
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Terraform - Building infrastructure

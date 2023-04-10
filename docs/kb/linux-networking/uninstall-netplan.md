@@ -1,6 +1,6 @@
 ---
 title: Uninstalling netplan
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Uninstalling netplan

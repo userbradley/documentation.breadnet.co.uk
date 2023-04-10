@@ -1,6 +1,6 @@
 ---
 title: Google Compute Engine
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Google Compute Engine

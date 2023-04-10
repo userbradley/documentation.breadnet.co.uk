@@ -1,6 +1,6 @@
 ---
 title: Networking and LB
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 # Networking and LB

@@ -1,6 +1,6 @@
 ---
 title: Github repo's and stuff
-outdated: true
+reviewdate: '2022-01-01'
 ---
 # How to use git
 
