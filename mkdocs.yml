@@ -125,6 +125,7 @@ nav:
           - Bulk change file extensions: kb/linux-cli/bulk-change-file-extension.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
+          - How to create tar.gz file: kb/linux-cli/how-to-create-tar-gz-file.md
           - Lowercase to Uppercase: kb/linux-cli/lowercase-to-uppercase.md
           - "The following signatures couldn't be verified because the public key is not available" : kb/linux-cli/the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
           - Uppercase to Lowercase: kb/linux-cli/uppercase-to-lowercase.md
@@ -341,6 +342,10 @@ markdown_extensions:
 plugins:
   - search
   - social
+  - redirects:
+      redirect_maps:
+        'kb/public-web-facing/jellyfin-s3.md' : 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
+        'certifications/google-certs/gcp-architect/kubectl-commands.md' : 'kubernetes/kb/kubectl-commands.md'
   #- offline
 
 extra:
