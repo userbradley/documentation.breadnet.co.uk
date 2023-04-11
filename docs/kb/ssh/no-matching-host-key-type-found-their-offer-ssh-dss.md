@@ -1,8 +1,7 @@
 ---
-title: no matching host key type found. Their offer: ssh-dss
+title: 'No matching host key type found. Their offer: ssh-dss'
 ---
 
-# no matching host key type found. Their offer: ssh-dss
 
 ## Example error message
 
