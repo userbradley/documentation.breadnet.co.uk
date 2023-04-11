@@ -1,5 +1,6 @@
 ---
 title: 'No matching host key type found. Their offer: ssh-dss'
+reviewdate: '2024-01-01'
 ---
 
 
@@ -20,3 +21,15 @@ host 192.168.8.109
  hostname 192.168.8.109
  HostKeyAlgorithms=+ssh-dss
 ```
+
+=== "Nano"
+
+    ```shell
+    nano ~/.ssh/config
+    ```
+
+=== "Vi/ Vim"
+
+    ```shell
+    vi ~/.ssh/config
+    ```
