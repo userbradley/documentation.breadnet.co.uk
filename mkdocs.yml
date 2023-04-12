@@ -193,7 +193,7 @@ nav:
           - Import single table from sqlite: kb/sqlite/import-table.md
       - SSH:
           - Generate SSH keys: kb/ssh/generate-ssh-keys.md
-          - Importing SSH keys from GitHUb: kb/ssh/importing-ssh-keys-from-github.md
+          - Importing SSH keys from GitHub: kb/ssh/importing-ssh-keys-from-github.md
           - "No matching host key type found. Their offer: ssh-dss": kb/ssh/no-matching-host-key-type-found-their-offer-ssh-dss.md
           - SSH client setup using keys: kb/ssh/ssh-client-setup-using-keys.md
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
