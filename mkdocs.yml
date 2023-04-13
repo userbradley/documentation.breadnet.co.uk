@@ -111,6 +111,7 @@ nav:
           - Stock image marketplaces: kb/drone/stock-image-marketplaces.md
       - Git:
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
+          - Create and push tags on Git: kb/git/create-and-push-tags.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
@@ -173,6 +174,7 @@ nav:
           - Connecting Mikrotik to OpenVPN AS: kb/openvpn/mikrotik-to-openvpn.md
       - PHP:
           - Install PHP: kb/php/install-php.md
+          - Password Strength Unknown wordpress: kb/php/password-strength-unknown.md
           - Wordpress permissions: kb/php/wordpress-permissions.md
       - Pritunl:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
