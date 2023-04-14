@@ -81,6 +81,9 @@ nav:
           - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
           - tfupdate: cloud/terraform/tfupdate.md
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
+      - Terragrunt:
+          - Generate backend file for GCS with terragrunt: cloud/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
+
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
