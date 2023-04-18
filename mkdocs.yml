@@ -83,6 +83,7 @@ nav:
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
       - Terragrunt:
           - Generate backend file for GCS with terragrunt: cloud/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
+          - Terragrunt generate block: cloud/terragrunt/terragrunt-generate-block.md
           - Terragrunt in GitHub Actions: cloud/terragrunt/terragrunt-in-github-actions.md
 
   - KB Articles:
