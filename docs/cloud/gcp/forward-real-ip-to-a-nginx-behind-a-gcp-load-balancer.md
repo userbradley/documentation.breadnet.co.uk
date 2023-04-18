@@ -53,8 +53,7 @@ The first IP in the log comes from the `REMOTE_ADDR` header. We need to replace 
 But there’s something else we need to deal with this second header: It actually comes not only with the user real IP but with the Load Balancer public address too.
 
 In order to solve all this we will use the real_ip module. We are going to apply the following configuration in nginx.conf inside the “server” block:
-```nginx configuration
-
+```nginx
 set_real_ip_from 36.129.221.25/32; // LB Public IP address
 set_real_ip_from 130.211.0.0/22; // Private IP range for GCP Load Balancers
 set_real_ip_from 35.191.0.0/16; //Private IP range for GCP Load Balancers
@@ -69,6 +68,7 @@ Let’s split it down:
 * `real_ip_recursive on`: Filter out the trusted ips from the chain, therefore the last non-trusted address in the chain will be used as the remote address.
 
 Finally test it out:
+
 ```text
 108.26.106.168 - - [23/Jan/2020:09:44:51 +0000] "GET / HTTP/1.1" 200 "108.26.106.168, 36.129.221.25"
 ```
