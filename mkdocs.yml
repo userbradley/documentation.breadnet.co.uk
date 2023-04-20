@@ -181,6 +181,8 @@ nav:
           - Install PHP: kb/php/install-php.md
           - Password Strength Unknown wordpress: kb/php/password-strength-unknown.md
           - Wordpress permissions: kb/php/wordpress-permissions.md
+      - Podman:
+          - Podman mount directories on Mac: kb/podman/podman-mount-directories-mac.md
       - Pritunl:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
           - SSH using pritunl bastion: kb/pritunl/ssh-using-pritunl-bastion.md
