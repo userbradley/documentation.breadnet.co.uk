@@ -1,3 +1,0 @@
-```shell
-docker ps
-```

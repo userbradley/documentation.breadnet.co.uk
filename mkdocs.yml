@@ -69,6 +69,7 @@ nav:
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
+          - View startup script on Google Compute Engine: cloud/gcp/view-startup-script-on-google-compute-engine.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
           - Bulk delete from terraform state: cloud/terraform/bulk-delete-terraform-state.md
@@ -170,6 +171,7 @@ nav:
       - Nginx:
           - Reverse web proxy: kb/nginx/reverse-web-proxy.md
           - Get the real IP address from Cloudflare: kb/nginx/get-real-ip-cloudflare.md
+          - Install nginx Extras: kb/nginx/nginx-extras.md
           - Custom Headers: kb/nginx/custom-headers.md
           - Remove server headers: kb/nginx/remove-server-headers.md
           - nginx.service failed because the control process exited: kb/nginx/nginxservice-failed-because-the-control-process-exited.md
@@ -182,6 +184,7 @@ nav:
           - Password Strength Unknown wordpress: kb/php/password-strength-unknown.md
           - Wordpress permissions: kb/php/wordpress-permissions.md
       - Podman:
+          - Configure podman to use Remote Google Container Registry: kb/podman/podmain-google-artifact-registry-mirror.md
           - Podman mount directories on Mac: kb/podman/podman-mount-directories-mac.md
       - Pritunl:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
