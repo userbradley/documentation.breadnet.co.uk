@@ -64,6 +64,7 @@ nav:
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
           - Grafeas: cloud/gcp/grafeas.md
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+          - Re-run startup script on Google Compute Engine: cloud/gcp/re-run-startup-script-google-compute-engine.md
           - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
           - SSH using IAP: cloud/gcp/ssh-iap.md
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
