@@ -11,3 +11,7 @@ When troubleshooting a startup script, sometimes you want to see what was applie
 ```shell
 curl --header "Metadata-Flavor: Google" "http://metadata.google.internal/computeMetadata/v1/instance/attributes/startup-script"
 ```
+
+## Read Next
+
+* [Re-run startup script on Google Compute Engine](re-run-startup-script-google-compute-engine.md)
