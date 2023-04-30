@@ -216,6 +216,8 @@ nav:
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
+      - Windows:
+          - Reset windows to factory defaults and erase all data: kb/windows/reset-windows-to-factory-defaults-and-erase-all-data.md
   - Kubernetes:
       - kubernetes/index.md
       - GKE:
