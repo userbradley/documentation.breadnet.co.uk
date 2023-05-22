@@ -87,7 +87,6 @@ nav:
           - Generate backend file for GCS with terragrunt: cloud/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
           - Terragrunt generate block: cloud/terragrunt/terragrunt-generate-block.md
           - Terragrunt in GitHub Actions: cloud/terragrunt/terragrunt-in-github-actions.md
-
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
@@ -126,6 +125,7 @@ nav:
       - GitHub Actions:
           - Authenticate GitHub actions to GCP using Workload Identity Federation: kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md
           - Authenticate GitHub actions to Google Artifact Registry: kb/githubactions/authenticate-github-actions-to-google-artifact-registry.md
+          - Delete old runs of deleted GitHub Actions: kb/githubactions/delete-old-runs-of-deleted-github-actions.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Grocy:
@@ -225,6 +225,7 @@ nav:
       - kubernetes/index.md
       - GKE:
           - kubernetes/gke/index.md
+          - Configure GKE workload Identity: kubernetes/gke/configure-gke-workload-identity.md
           - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - Helm:
@@ -366,6 +367,7 @@ plugins:
         'kb/public-web-facing/jellyfin-s3.md' : 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
         'certifications/google-certs/gcp-architect/kubectl-commands.md' : 'kubernetes/kb/kubectl-commands.md'
         'kb/githubactions/auth-to-gar.md' : 'kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md'
+        'kb/git/delete-old-runs-of-deleted-github-actions.md': 'kb/githubactions/delete-old-runs-of-deleted-github-actions.md'
   #- offline
 
 extra:
