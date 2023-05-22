@@ -123,6 +123,9 @@ nav:
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
+      - GitHub Actions:
+          - Authenticate GitHub actions to GCP using Workload Identity Federation: kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md
+          - Authenticate GitHub actions to Google Artifact Registry: kb/githubactions/authenticate-github-actions-to-google-artifact-registry.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Grocy:
@@ -362,6 +365,7 @@ plugins:
       redirect_maps:
         'kb/public-web-facing/jellyfin-s3.md' : 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
         'certifications/google-certs/gcp-architect/kubectl-commands.md' : 'kubernetes/kb/kubectl-commands.md'
+        'kb/githubactions/auth-to-gar.md' : 'kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md'
   #- offline
 
 extra:
