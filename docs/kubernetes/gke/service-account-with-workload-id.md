@@ -27,4 +27,4 @@ roles/iam.workloadIdentityUser
 
 These need to be granted to the GCP SA in GCP
 
-See [Workload Identity]() (Page coming soon)
+See [Workload Identity](configure-gke-workload-identity.md)

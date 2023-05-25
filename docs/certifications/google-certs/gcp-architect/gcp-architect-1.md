@@ -782,7 +782,7 @@ title: Google Architect - page 1
 <h5 id="bkmrk-sustained-use-discou">Sustained use discount</h5>
 <p id="bkmrk-automatic-discounts-">Automatic discounts for running VM instances for significant portions of time</p>
 <p id="bkmrk-%C2%A0-40"> </p>
-<p id="bkmrk--6"><a href="/assets/46FRmJql62IK5eFK-image-1620574015296.png" target="_blank" rel="noopener"><img src="https://bookstack.breadnet.co.uk/uploads/images/gallery/2021-05/scaled-1680-/46FRmJql62IK5eFK-image-1620574015296.png" alt="image-1620574015296.png" width="347" height="301"></a></p>
+<p id="bkmrk--6"><a href="/assets/46FRmJql62IK5eFK-image-1620574015296.png" target="_blank" rel="noopener"><img src="https://doesnotexist/images/gallery/2021-05/scaled-1680-/46FRmJql62IK5eFK-image-1620574015296.png" alt="image-1620574015296.png" width="347" height="301"></a></p>
 <p id="bkmrk-example%3A">Example:</p>
 <p id="bkmrk-if-you-use-n1-and-n2">If you use N1 and N2 machines for more than 25% of the month, you get a 20-50% discount on every incramental minute</p>
 <p id="bkmrk-no-action-required-o">No action required on your part</p>
