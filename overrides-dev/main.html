@@ -39,6 +39,7 @@
     </div>
 </div>
 {% endif %}
+
 <!--The below adds a call-out that shows the page has not been reviewed-->
 {% if page.meta.reviewdate %}
 {% set build_date = build_date_utc.strftime('%Y-%m-%d') %}
@@ -57,7 +58,14 @@
 </div>
 {% endif %}
 {% endif %}
-
+<!-- The actual page -->
 {{ page.content }}
+
+<!-- Renders the "If you found this useful" on pages that ARE NOT index.md pages -->
+{% if 'index.md' not in page.file.src_uri %}
+
+<hr>
+If you found "<i>{{ page.title }}</i>" useful, <a href="https://www.buymeacoffee.com/userbradley">please consider supporting me!</a>
+{% endif %}
 
 {% endblock %}
