@@ -118,7 +118,6 @@ nav:
       - Git:
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
           - Create and push tags on Git: kb/git/create-and-push-tags.md
-          - Delete old runs of deleted GitHub Actions: kb/git/delete-old-runs-of-deleted-github-actions.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
@@ -267,6 +266,12 @@ nav:
       - Washing Machine: home/washing/washing-machine.md
       - Hot water heater:
           - Reducing temperature: home/water-heater/reduce-temperature.md
+  - Car:
+      - car/index.md
+      - SEAT:
+          - Leon:
+              - Fix comfort close not working on Seat Leon: car/seat/leon/fix-comfort-close.md
+              - Push Start Seat leon: car/seat/leon/push-start-seat-leon.md
 
 
 ## Config ##
