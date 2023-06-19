@@ -1,6 +1,6 @@
 ---
 title: Weird bash
-reviewdate: '2022-01-01'
+reviewdate: '2024-01-01'
 ---
 
 # Weird bash
