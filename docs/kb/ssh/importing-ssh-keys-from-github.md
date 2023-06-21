@@ -19,3 +19,7 @@ We can use GitHub as our source for SSH keys
     ```bash
     wget -O - https://github.com/userbradley.keys >> ~/.ssh/authorized_keys
     ```
+
+## What to read next
+
+[Import Public keys for ssh hosts](import-public-keys-for-ssh-hosts.md)
