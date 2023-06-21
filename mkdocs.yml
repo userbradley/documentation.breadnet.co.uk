@@ -56,6 +56,7 @@ nav:
           - Add external user to Google Cloud Platform Organization: cloud/gcp/add-external-user-to-org.md
           - Get project using GCE Metadata API: cloud/gcp/api-get-project.md
           - Get serviceAccount using GCE Metadata API: cloud/gcp/api-get-sa.md
+          - Authenticate Twine to Google Artifact Registry: cloud/gcp/authenticate-twine-to-google-artifact-registry.md
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
