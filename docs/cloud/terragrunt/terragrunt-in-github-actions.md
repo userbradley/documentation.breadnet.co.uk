@@ -1,26 +1,37 @@
 ---
 title: Terragrunt in GitHub Actions
+reviewdate: '2024-01-01'
 ---
 
 ## Why
 
-Using terragrunt allows you to realy keep all envs the same, and code DRY
+Using terragrunt allows you to really keep all envs the same, and code DRY
 
 ## How
 
 ```yaml
+
+
+
+on: [push]
+name: Install terragrunt
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploys Terragrunt
+    steps:
+      - uses: actions/checkout@v3
+        
+      - id: install-tg
+        uses: userbradley/actions-install-terragrunt@v1.0.0
+        with:
+          terragrunt-version: 'v0.47.0'
+          
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: ${{ env.TF_VERSION }}
-
-
-      - name: Setup Terragrunt
-        run: |
-          mkdir bin
-          wget -O bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/$TERRAGRUNT_VERSION/terragrunt_linux_amd64
-          chmod +x bin/terragrunt
-          echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
 
       - name: Terragrunt Init
         working-directory: ${{ env.DIR }}
@@ -29,6 +40,8 @@ Using terragrunt allows you to realy keep all envs the same, and code DRY
           ssh-add - <<< '${{ secrets.GH_ACTIONS_SSH_KEY }}'
           terragrunt run-all init -upgrade
 ```
+
+I recently created a GitHub action [userbradley/actions-install-terragrunt](https://github.com/marketplace/actions/install-terragrunt)
 
 ??? note "Full Example"
 
@@ -67,19 +80,16 @@ Using terragrunt allows you to realy keep all envs the same, and code DRY
               workload_identity_provider: ''
               service_account: ''
     
+          - id: install-tg
+            uses: userbradley/actions-install-terragrunt@v1.0.0
+            with:
+              terragrunt-version: 'v0.47.0'
+              
           - name: Install Terraform
             uses: hashicorp/setup-terraform@v2
             with:
               terraform_version: ${{ env.TF_VERSION }}
-    
-    
-          - name: Setup Terragrunt
-            run: |
-              mkdir bin
-              wget -O bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/$TERRAGRUNT_VERSION/terragrunt_linux_amd64
-              chmod +x bin/terragrunt
-              echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
-    
+        
           - name: Terragrunt Init
             working-directory: ${{ env.DIR }}
             run: |
