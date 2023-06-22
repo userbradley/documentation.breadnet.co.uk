@@ -97,6 +97,8 @@ nav:
       - Cloudflared:
           - kb/cloudflared/index.md
           - Cloudflared on Ubuntu for ssh: kb/cloudflared/cloudflared-on-ubuntu-for-ssh.md
+      - Copybara:
+          - Installing Copybara: kb/copybara/installing-copybara.md
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
         - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
