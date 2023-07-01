@@ -65,6 +65,7 @@ nav:
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
           - Grafeas: cloud/gcp/grafeas.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
+          - Print secret using gcloud: cloud/gcp/print-secret-gcloud.md
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - Re-run startup script on Google Compute Engine: cloud/gcp/re-run-startup-script-google-compute-engine.md
           - Remove the lein to allow deletion: cloud/gcp/remove-the-lien-to-allow-deletion.md
