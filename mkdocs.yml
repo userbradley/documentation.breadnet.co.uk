@@ -195,7 +195,10 @@ nav:
           - Password Strength Unknown wordpress: kb/php/password-strength-unknown.md
           - Wordpress permissions: kb/php/wordpress-permissions.md
       - Podman:
+          - kb/podman/index.md
+          - Authenticate Podman to GitHub Container Registry: kb/podman/authenticate-podman-to-ghcr.md
           - Configure podman to use Remote Google Container Registry: kb/podman/podmain-google-artifact-registry-mirror.md
+          - docker-credential-desktop executable file not found in path: kb/podman/docker-credential-desktop-not-installed.md
           - Podman mount directories on Mac: kb/podman/podman-mount-directories-mac.md
       - Pritunl:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
@@ -342,6 +345,7 @@ theme:
     # - search.highlight
 
 
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -382,7 +386,6 @@ plugins:
         'kb/githubactions/auth-to-gar.md' : 'kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md'
         'kb/git/delete-old-runs-of-deleted-github-actions.md': 'kb/githubactions/delete-old-runs-of-deleted-github-actions.md'
   #- offline
-
 extra:
   social:
     - icon: fontawesome/brands/linkedin
