@@ -91,6 +91,7 @@ nav:
           - Generate backend file for GCS with terragrunt: cloud/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
           - Terragrunt generate block: cloud/terragrunt/terragrunt-generate-block.md
           - Terragrunt in GitHub Actions: cloud/terragrunt/terragrunt-in-github-actions.md
+          - Terragrunt terraform auto -upgrade: cloud/terragrunt/terragrunt-terraform-auto-upgrade.md
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
