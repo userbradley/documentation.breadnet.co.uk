@@ -25,7 +25,7 @@ The below commands creates the manifest file, but instead of applying it, prints
 kubectl run nginx --image nginx --dry-run=client -o yaml
 ```
 
-=== info "Example"
+!!! info "Example"
     ```yaml
     apiVersion: v1
     kind: Pod
@@ -50,7 +50,7 @@ kubectl run nginx --image nginx --dry-run=client -o yaml
 kubectl create deployment --image nginx nginx --dry-run=client -o yaml
 ```
 
-=== info "Example"
+!!! info "Example"
     ```yaml
     apiVersion: apps/v1
     kind: Deployment
