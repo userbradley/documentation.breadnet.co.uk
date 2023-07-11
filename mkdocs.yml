@@ -59,6 +59,7 @@ nav:
           - Authenticate Twine to Google Artifact Registry: cloud/gcp/authenticate-twine-to-google-artifact-registry.md
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
+          - Export GCP DNS zone to bind zone file: cloud/gcp/export-gcp-dns-zone-to-bind-zone-file.md
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
