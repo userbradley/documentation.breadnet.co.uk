@@ -1,5 +1,5 @@
 nav:
-  - Home: index.md
+    Home: index.md
   - Automation:
       - Airflow basics: automation/airflow/airflow-basics.md
       - Ansible:
