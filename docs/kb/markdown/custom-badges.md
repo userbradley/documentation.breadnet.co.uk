@@ -58,7 +58,7 @@ Example
     === "Markdown"
 
         ```markdown
-        ![Pets at Homee](https://img.shields.io/badge/Pets%20At%20Home-%23000000.svg?style=for-the-badge&logo=petsathome&logoColor=#4BA840)
+        ![Pets at Home](https://img.shields.io/badge/Pets%20At%20Home-%23000000.svg?style=for-the-badge&logo=petsathome&logoColor=#4BA840)
         ```
         
         ```markdown
