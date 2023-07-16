@@ -24,7 +24,7 @@ jobs:
         with:
           registry: registry.fly.io
           username: x
-          password: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
+          password: ${{ secrets.FLY_ACCESS_TOKEN_PROD }}
       - name: Deploy to Fly
         run: flyctl deploy --config prod.toml --dockerfile Dockerfile --local-only --push --detach --auto-confirm
         env:
