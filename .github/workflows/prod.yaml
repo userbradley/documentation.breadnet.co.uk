@@ -33,7 +33,7 @@ jobs:
       - name: Build and Push image
         uses: docker/build-push-action@v4
         with:
-          push: true
+          push: false
           context: .
           file: ./Dockerfile
           tags: registry.fly.io/documentation-prod:${{steps.sha.outputs.sha}}
