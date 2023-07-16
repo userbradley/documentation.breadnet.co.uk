@@ -3,12 +3,14 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - .github/workflows/dev.yaml
-      - cd/codefresh.yml
-      - dev.toml
-      - dev.Dockerfile
-      - overrides-dev/**
+    paths:
+      - docs/**
+      - .github/workflows/prod.yaml
+      - overrides-prod/**
+      - mkdocs.yml
+      - cloudflare.conf
+      - deny.conf
+      - prod.toml
 
 
 jobs:
@@ -22,3 +24,4 @@ jobs:
         uses: userbradley/actions-fly@v1.0.0
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_PROD }}
+          configFile: "prod.toml"
