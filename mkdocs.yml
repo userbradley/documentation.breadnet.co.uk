@@ -103,6 +103,8 @@ nav:
           - Cloudflared on Ubuntu for ssh: kb/cloudflared/cloudflared-on-ubuntu-for-ssh.md
       - Copybara:
           - Installing Copybara: kb/copybara/installing-copybara.md
+      - Dependabot:
+          - Ignore terraform module version dependabot: kb/dependabot/ignore-terraform-module-version-dependabot.md
       - Disk management:
         - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
         - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
