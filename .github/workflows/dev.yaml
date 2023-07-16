@@ -18,29 +18,14 @@ jobs:
     steps:
       - name: Git Clone
         uses: actions/checkout@v3
-
-      - name: Generate Shortened SHA Hash for docker container
-        id: sha
-        run: echo "sha=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
-
+      - uses: superfly/flyctl-actions/setup-flyctl@master
       - name: Login to Fly Registry
         uses: docker/login-action@v2
         with:
           registry: registry.fly.io
           username: x
           password: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
-
-      - name: Build and Push image
-        uses: docker/build-push-action@v4
-        with:
-          push: false
-          context: .
-          file: ./dev.Dockerfile
-          tags: registry.fly.io/documentation-dev:${{steps.sha.outputs.sha}}
-
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-
-      - name: Deploy to fly
-        run: flyctl deploy --config dev.toml --image registry.fly.io/documentation-dev:${{steps.sha.outputs.sha}} --detach
+      - name: Deploy to Fly
+        run: flyctl deploy --config dev.toml --dockerfile dev.Dockerfile --local-only --push --detach --auto-confirm
         env:
           FLY_ACCESS_TOKEN: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
