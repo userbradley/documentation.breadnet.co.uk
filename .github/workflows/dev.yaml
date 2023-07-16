@@ -5,7 +5,8 @@ on:
       - dev
     paths-ignore:
       - .github/workflows/prod.yaml
-      - cd/codefresh.yml
+      - .github/workflows/truffle-hog.yaml
+      - .github/dependabot.yml
       - prod.toml
       - Dockerfile
       - overrides-prod/**
@@ -32,7 +33,7 @@ jobs:
       - name: Build and Push image
         uses: docker/build-push-action@v4
         with:
-          push: true
+          push: false
           context: .
           file: ./dev.Dockerfile
           tags: registry.fly.io/documentation-dev:${{steps.sha.outputs.sha}}
