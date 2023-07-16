@@ -18,8 +18,10 @@ jobs:
     steps:
       - name: Git Clone
         uses: actions/checkout@v3
-      - uses: userbradley/actions-fly@feature/writing-action
+      - name: Fly Build and Deploy
+        uses: userbradley/actions-fly@v1.0.0
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
           configFile: "dev.toml"
           dockerfileName: "dev.Dockerfile"
+
