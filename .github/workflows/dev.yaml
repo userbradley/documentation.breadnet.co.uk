@@ -3,13 +3,18 @@ on:
   push:
     branches:
       - dev
-    paths-ignore:
-      - .github/workflows/prod.yaml
-      - .github/workflows/truffle-hog.yaml
-      - .github/dependabot.yml
-      - prod.toml
-      - Dockerfile
-      - overrides-prod/**
+    paths:
+      - docs/**
+      - .github/workflows/dev.yaml
+      - overrides-dev/**
+      - mkdocs.yml
+      - dev-robots.txt
+      - .htpasswd
+      - dev.Dockerfile
+      - cloudflare.conf
+      - deny.conf
+      - dev-nginx.conf
+      - dev.toml
 
 jobs:
   site:
