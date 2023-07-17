@@ -8,40 +8,40 @@ When creating repeatable DRY terraform, we will use a terragrunt `generate` bloc
 
 ## How
 
-Termagant `generate` block has several features.
+Terragrunt `generate` block has several features:
 
 * Overwrite
 * Skip
 
-### Base
+=== "Overwrite"
 
-``` terraform
-generate "exmaple" {
-  path      = "example.tf"
-  if_exists = "overwrite"
-  contents = <<EOF
-output "ip-address" {
-  value = google_compute_global_address.example.address
-}
-EOF
-}
-```
+    ``` terraform
+    generate "exmaple" {
+      path      = "example.tf"
+      if_exists = "overwrite"
+      contents = <<EOF
+    output "ip-address" {
+      value = google_compute_global_address.example.address
+    }
+    EOF
+    }
+    ```
 
-### Skip
+=== "Skip"
 
-The below will then skip re-creating the file if it exists already. This is useful for templating out repos.
-
-``` terraform
-generate "exmaple" {
-  path      = "example.tf"
-  if_exists = "skip"
-  contents = <<EOF
-output "ip-address" {
-  value = google_compute_global_address.example.address
-}
-EOF
-}
-```
+    The below will then skip re-creating the file if it exists already. This is useful for templating out repos.
+    
+    ``` terraform
+    generate "exmaple" {
+      path      = "example.tf"
+      if_exists = "skip"
+      contents = <<EOF
+    output "ip-address" {
+      value = google_compute_global_address.example.address
+    }
+    EOF
+    }
+    ```
 
 ## How to use it
 
@@ -54,6 +54,8 @@ include "root" {
   merge_strategy = "deep"
 }
 ```
+
+Using the below structure, when we run `terragrunt run-all init` it will create the file `example.tf` in each directory
 
 ```markdown
 .
