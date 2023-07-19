@@ -262,10 +262,12 @@ nav:
           - Delete namespace stuck in terminating: kubernetes/kb/delete-terminating-namespace.md
           - Delete not running pods: kubernetes/kb/deleting-not-running-pods.md
           - Downward API: kubernetes/kb/downward-api.md
+          - Force Delete pod: kubernetes/kb/force-delete-pod.md
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
           - Set default namespace kubectl: kubernetes/kb/kubectl-set-namespace.md
           - Testing RBAC: kubernetes/kb/rbac-testing.md
           - Sleeper pod: kubernetes/kb/sleeper.md
+          - Trigger Kubernetes Cron Job Manually: kubernetes/kb/trigger-kubernetes-cron-job-manually.md
           - Using ArgoCD Image updater with Google Artifact Registry: kubernetes/kb/using-argocd-image-updater-with-google-artifact-registry.md
   - mkdocs:
       - mkdocs/index.md
