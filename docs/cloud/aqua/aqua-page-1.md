@@ -188,7 +188,7 @@ reviewdate: '2022-01-01'
 <ul id="bkmrk-tests-clusters-again">
 <li>tests clusters against real world attacks</li>
 <li>Get risk assessment</li>
-<li>Runs both in passive or active mode, as an external unauthorized user, or with in a pod as a authorized user</li>
+<li>Runs both in passive or active mode, as an external unauthorized user, or with in a pod as an authorized user</li>
 </ul>
 <h4 id="bkmrk-securing-the-workloa-0">Securing the workload</h4>
 <ul id="bkmrk-visualize-and-priori">
@@ -466,7 +466,7 @@ reviewdate: '2022-01-01'
 <li>They are not following version releases properly</li>
 <li>They support backwards 2 major releases
 <ul>
-<li>If you're in 5.3, and want 6.0, it wont work very well</li>
+<li>If you're in 5.3, and want 6.0, it won't work very well</li>
 </ul>
 </li>
 <li>Major releases are quarterly </li>

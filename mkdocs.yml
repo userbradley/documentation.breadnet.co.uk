@@ -135,6 +135,7 @@ nav:
           - Authenticate GitHub actions to GCP using Workload Identity Federation: kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md
           - Authenticate GitHub actions to Google Artifact Registry: kb/githubactions/authenticate-github-actions-to-google-artifact-registry.md
           - Delete old runs of deleted GitHub Actions: kb/githubactions/delete-old-runs-of-deleted-github-actions.md
+          - View JWT Claim GitHub actions: kb/githubactions/view-jwt-claim-github-actions.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Grocy:
@@ -254,7 +255,7 @@ nav:
           - Installing k3s: kubernetes/k3s/installing-k3s.md
           - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
-          - Things taking too long to delete: kubernetes/k3s/things-taking-too-long-to-delete.md
+          - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
       - KB:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md

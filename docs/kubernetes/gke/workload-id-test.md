@@ -33,7 +33,7 @@ You will need to have the `compute metadata api` service running in the cluster
 === "GKE Workload nodes"
 
     !!! Note
-        Sometimes your may have nodes in a pool that dont have the metadata server enabled.
+        Sometimes your may have nodes in a pool that don't have the metadata server enabled.
 
     ```yaml
     apiVersion: v1

@@ -6,9 +6,9 @@ title: "xcrun: error: invalid active developer path"
 
 ## What this is
 
-This is an issue after an update on a mac from one version to next **Major** version.
+This is an issue after an update on a Mac from one version to next **Major** version.
 
-I my case it was from `Monterey 12.6.1` to `Ventura Version 13.0`
+In my case it was from `Monterey 12.6.1` to `Ventura Version 13.0`
 
 ## How to resolve
 

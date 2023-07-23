@@ -4,7 +4,7 @@ title: Generate backend file for GCS with terragrunt
 
 ## Why
 
-When using terragrunt, we want to generate files to keep deployments DRY. We can use a built in function to create the backend file
+When using terragrunt, we want to generate files to keep deployments DRY. We can use a built-in function to create the backend file
 
 ## How
 

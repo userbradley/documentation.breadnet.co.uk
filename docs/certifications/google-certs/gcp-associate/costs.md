@@ -18,13 +18,13 @@ reviewdate: '2022-01-01'
 <p id="bkmrk-short-lived-cheaper-">Short lived cheaper instances </p>
 <p id="bkmrk-can-be-stopped-by-gc">Can be stopped by GCP at any time.</p>
 <p id="bkmrk-maximum-time-you-can">Maximum time you can run it is around 24 hours</p>
-<p id="bkmrk-you-get-a-30-second-">You get a 30 second warning before</p>
+<p id="bkmrk-you-get-a-30-second-">You get a 30-second warning before</p>
 <p id="bkmrk-you-use-a-pre-emptib">You use a pre-emptible VM if your application is fault tolerant</p>
 <p id="bkmrk-workload-is-cost-sen">Workload is cost sensative</p>
 <p id="bkmrk-workload-isn%27t-immed">workload isn't immediate </p>
 <p id="bkmrk-no-sla">No SLA</p>
 <p id="bkmrk-cant-be-migrated-to-">Cant be migrated to a regular VM</p>
-<p id="bkmrk-free-tier-credits-do">Free Tier credits dont apply </p>
+<p id="bkmrk-free-tier-credits-do">Free Tier credits don't apply </p>
 <h4 id="bkmrk-billing">Billing</h4>
 <p id="bkmrk-you-are-billed-by-th">You are billed by the second after a minimum of one minute</p>
 <p id="bkmrk-you-will-want-to-cre">You will want to create billing alerts under Billing &gt; budget </p>

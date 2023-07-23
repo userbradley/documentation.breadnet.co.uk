@@ -4,6 +4,7 @@ title: Google Architect - page 1
 
 # Google Architect - page 1
 
+<!--suppress ALL -->
 <p id="bkmrk-gcp-has-200%2B-service">GCP has 200+ services</p>
 <p id="bkmrk-the-exam-tests-your-">The exam tests your <strong>decision making<br></strong></p>
 <ul id="bkmrk-which-services-do-yo">
@@ -305,7 +306,7 @@ title: Google Architect - page 1
 <ul>
 <li>Have VM's with different configurations</li>
 <li>This is used to group vms with different configurations</li>
-<li>With the group you dont get any of the features of Autoscaling or Autohealing</li>
+<li>With the group you don't get any of the features of Autoscaling or Autohealing</li>
 <li>NOT recommended unless you need different kinds of VM's</li>
 </ul>
 </li>
@@ -352,7 +353,7 @@ title: Google Architect - page 1
 </li>
 <li>Scale in control
 <ul>
-<li>You dont want a sudden drop in the number of instances,
+<li>You don't want a sudden drop in the number of instances,
 <ul>
 <li>Example: don't scale down by more than 10% or 3 instances in 5 minutes</li>
 </ul>
@@ -918,7 +919,7 @@ title: Google Architect - page 1
 <ul id="bkmrk-running-in-the-cloud">
 <li>Running in the cloud
 <ul>
-<li>You dont want to run in the cloud the same way you did before in a datacentre</li>
+<li>You don't want to run in the cloud the same way you did before in a datacentre</li>
 </ul>
 </li>
 <li>Terminology
@@ -1372,7 +1373,7 @@ gcloud container node-pools list --cluster &lt;cluster name&gt;</code></pre>
 <li>LoadBalanccer: Exposes the service via the cloud providers load balancer</li>
 <li>NodePort : Exposes service on each nodes' IP address
 <ul>
-<li>Use case: You dont want to create an external load balancer for each microservice, so create an ingress component to balance the load)</li>
+<li>Use case: You don't want to create an external load balancer for each microservice, so create an ingress component to balance the load)</li>
 </ul>
 </li>
 </ul>

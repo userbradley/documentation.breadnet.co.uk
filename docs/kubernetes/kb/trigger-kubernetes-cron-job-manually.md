@@ -4,7 +4,7 @@ title: Trigger Kubernetes Cron Job Manually
 
 ## Why
 
-Sometimes when you have a Job that is on a weekly schedule, you dont want to wait a week to test it
+Sometimes when you have a Job that is on a weekly schedule, you don't want to wait a week to test it
 
 ## How
 

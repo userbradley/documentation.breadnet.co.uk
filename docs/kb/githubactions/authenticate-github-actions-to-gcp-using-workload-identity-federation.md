@@ -12,10 +12,10 @@ When using GitHub actions, you will need to authenticate to Google cloud to acce
 The below assumes you have 2 variables set:
 
 
-| Variable Name                | Variable Example                                                                                                                          | 
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Variable Name                | Variable Example                                                                                                                              | 
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `WORKLOAD_IDENTITY_PROVIDER` | ```projects/<project numerical ID /locations/global/workloadIdentityPools/<project>/providers/<workload identity federation provider name>``` |
-| `SERVICE_ACCOUNT`            | `tf-ar-robot@<project name>.gserviceaccount.com`                                                                                          |
+| `SERVICE_ACCOUNT`            | `tf-ar-robot@<project name>.gserviceaccount.com`                                                                                              |
 
 These can be set at the GitHub Org level (*preferred*) or on the repo 
 ```yaml

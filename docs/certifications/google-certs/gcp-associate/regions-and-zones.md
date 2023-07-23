@@ -15,7 +15,7 @@ In each zone, there are Discreet clusters, so many datacenters. Each region has 
 
 Example would be:
 
-`us-west1` which splits in to
+`us-west1` which splits into
 
 * us-west1-a
 * us-west1-b
@@ -29,7 +29,7 @@ The cloud gives you:
 
 The ability to trade capital expense for Variable expense (PAYG opposed to purchase servers upfront)
 
-Benifits from massive economics of scale
+Benefits from massive economics of scale
 
 Stop guessing capacity (Ability to scale up and down easily)
 

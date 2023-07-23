@@ -6,7 +6,7 @@ title: Change password using WPCli
 
 ## Why
 
-Sometimes we need to change a users wordpress users password, and don't want to have to mess about with the Database
+Sometimes we need to change a users WordPress users password, and don't want to have to mess about with the Database
 
 ## How
 
@@ -22,7 +22,7 @@ chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
 ```
 
-Move to the directory of a Wordpress site and run the below
+Move to the directory of a WordPress site and run the below
 
 ```shell
 wp --info

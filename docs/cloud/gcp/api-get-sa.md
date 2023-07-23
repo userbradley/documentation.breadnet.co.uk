@@ -6,8 +6,7 @@ title: Get GCP Service Account using compute metadata api server
 
 ## Why
 
-If you're using workload identity in Kubernetes, sometimes you need to know what _external_ (being GCP) Service account youre
-running as
+If you're using workload identity in Kubernetes, sometimes you need to know what _external_ (being GCP) Service account you're running as
 
 ## How
 

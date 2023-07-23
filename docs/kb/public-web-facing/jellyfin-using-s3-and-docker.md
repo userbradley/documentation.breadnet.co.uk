@@ -10,6 +10,7 @@ reviewdate: '2022-01-01'
 
 
 <h4 id="bkmrk-prereqs%3A-i-am-not-a-">Prereqs:</h4>
+<!--suppress ALL -->
 <p id="bkmrk-i-am-not-a-security-"><br>I am not a security expert, I am a sysadmin. The security of your server is up to you. Do basic things like enable <a href="https://documentation.breadnet.co.uk/books/kb-articles/page/ssh-keys" target="_blank" rel="noopener">ssh keys</a> and lock down ingress ports with ufw or iptables. What ever angles your dangle.<br>I am not a docker expert. I am a sysadmin which means I can use google (I think? bleh) so if you see anything whack in this, feel free to email me (webmaster[at]breadnet[dot]co[dot]uk)</p>
 <p id="bkmrk-%C2%A0"> </p>
 <p id="bkmrk-comment%3A-3rd-may-202">Comment: 3rd may 2020: After running this for a few days it's come to my attention that for this to be viable and be able to transcode you will need a slightly more powerful host. Whilst this does feel like a kick in the nuts, its not. There are lots of technologies that still work here.</p>
@@ -94,7 +95,7 @@ sudo apt-get install docker-compose</code></pre>
 <p id="bkmrk-once-that-is-install">Once that is installed pull the jellyfin docker image </p>
 <pre id="bkmrk-docker-pull-jellyfin"><code class="language-shell">docker pull jellyfin/jellyfin</code></pre>
 <p id="bkmrk-create-3-folders-in-">Create 3 folders in a jellyfin folder. I like mine to be like the below</p>
-<p id="bkmrk-%28dont-worry-about-th">(dont worry about that file, that's next)</p>
+<p id="bkmrk-%28don't-worry-about-th">(don't worry about that file, that's next)</p>
 <pre id="bkmrk-.-%E2%94%94%E2%94%80%E2%94%80-docker-%E2%94%94%E2%94%80%E2%94%80-jel"><code class="language-Powershell">.
 └── docker
     └── jellyfin
@@ -140,7 +141,7 @@ acl =
 server_side_encryption = 
 storage_class = 
 
-####You dont need to copy this shit in to the file, it's in reference to line 7###
+####You don't need to copy this shit in to the file, it's in reference to line 7###
 #Wasabi US East 1 (N. Virginia): s3.wasabisys.com or s3.us-east-1.wasabisys.com
 #Wasabi US East 2 (N. Virginia): s3.us-east-2.wasabisys.com
 #Wasabi US West 1 (Oregon): s3.us-west-1.wasabisys.com

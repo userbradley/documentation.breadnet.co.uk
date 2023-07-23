@@ -5,7 +5,7 @@ reviewdate: '2022-01-01'
 
 # SSH client setup using keys
 
-<h5 id="bkmrk-the-following-steps-">The following steps will setup your ssh keypairs on your local machine, copy the public key to your server, and configure your ssh client to use a specific private key with a server alias.</h5>
+<h5 id="bkmrk-the-following-steps-">The following steps will set up your ssh keypairs on your local machine, copy the public key to your server, and configure your ssh client to use a specific private key with a server alias.</h5>
 <hr id="bkmrk-">
 <p id="bkmrk-first%2C-generate-your">First, generate your keypair, I generally name the keys with my username-service, username-hostname, or username-device, sometimes even a combination of the three.</p>
 <p id="bkmrk-to-generate-keys-for">To generate keys for a new server at <em>securedomain.com</em></p>
@@ -27,7 +27,7 @@ reviewdate: '2022-01-01'
 <p id="bkmrk-to-do-this%2C-first-we">To do this, first we need to edit our config, so open up <code>.ssh/config</code> in your preferred editor and enter the following:</p>
 <pre id="bkmrk-%23-example-%23-this-wil"><code class="language-shell"># EXAMPLE
 
-# This will setup the use of example as an alias for the FQDN of the server you want to connect to
+# This will set up the use of example as an alias for the FQDN of the server you want to connect to
 Host example
 Hostname example.securedomain.com
 AddKeysToAgent yes

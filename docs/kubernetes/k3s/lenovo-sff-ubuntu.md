@@ -25,7 +25,7 @@ If a user selects Optimal or Default BIOS options, wipes the pre-installed exist
 
 
 
-It appears that, prior to to following the BootOrder specified in the UEFI Boot Manager, the Lenovo BIOS first checks the UEFI Boot Manager configuration for an entry labelled "Windows Boot Manager".[1]
+It appears that, prior to following the BootOrder specified in the UEFI Boot Manager, the Lenovo BIOS first checks the UEFI Boot Manager configuration for an entry labelled "Windows Boot Manager".[1]
 
 
 
@@ -47,7 +47,7 @@ It would be good if someone from Lenovo could confirm the observations about the
 
 
 
-Ensure that the SCU device is the set up as the first boot device in the BIOS Setup Primary Boot Sequence.
+Ensure that the SCU device is the set-up as the first boot device in the BIOS Setup Primary Boot Sequence.
 Lenovo has documented this issue here.
 
 Ensure that there is an entry in the UEFI Boot Manager labeled "Windows Boot Manager"
@@ -65,7 +65,7 @@ The following can be performed after installation of the operating system. The i
 2. Power on the system.
 3. Interrupt the boot sequence with Enter or F12 and select the live installation media for boot.
 4. Open a shell.
-5. Establish whether or not the Live installation provides the efibootmgr tool, if it does not, install the package that provides efibootmgr.
+5. Establish whether the Live installation provides the efibootmgr tool, if it does not, install the package that provides efibootmgr.
 6. As root, inspect the current configuration of the UEFI Boot Manager:
 
 ```shell
@@ -80,14 +80,14 @@ If there is no entry, add one. For example:
 sudo efibootmgr -c -d /dev/sda -p 1 -l '\EFI\ubuntu\grubx64.efi' -L "Windows Boot Manager"
 ```
 
-Please note that the option provided to the -l option can be any valid EFI boot loader.
+Please note that the option provided to the -l option can be any valid EFI bootloader.
 Verify that the entry was added to the UEFI Boot Manager:
 
 ```shell
 sudo efibootmgr -v
 ```
 
-Set the desired boot order of the UEFI Boot Manager, for example if the boot loader for Ubuntu is 0000 and, Windows Boot Loader dummy is 0001, and remaining boot devices are 000A-000C:
+Set the desired boot order of the UEFI Boot Manager, for example if the bootloader for Ubuntu is 0000 and, Windows Boot Loader dummy is 0001, and remaining boot devices are 000A-000C:
 
 ```shell
 sudo efibootmgr -o 0000,0001,000A,000B,000C
@@ -112,13 +112,13 @@ After booting into the installed operating system, confirm that the BootCurrent 
 sudo efiboogmgr -v
 ```
 
-If the above fails, consult the documentation of your boot loader and ensure that it is configured correctly. Also ensure that your EFI system partition is laid out correctly and formatted as FAT32.
+If the above fails, consult the documentation of your bootloader and ensure that it is configured correctly. Also ensure that your EFI system partition is laid out correctly and formatted as FAT32.
 
 
 
 Notes:
 
-[1] It is possible that the BIOS checks for the presence of either "Windows Boot Manager' or "Red Hat Enterprise Linux", however I have not tested this: "Windows Boot Manager" worked and that suits me. Others may prefer a different aesthetic.
+[1] It is possible that the BIOS checks for the presence of either "Windows Boot Manager" or "Red Hat Enterprise Linux", however I have not tested this: "Windows Boot Manager" worked and that suits me. Others may prefer a different aesthetic.
 
 ## Additional Reading
 

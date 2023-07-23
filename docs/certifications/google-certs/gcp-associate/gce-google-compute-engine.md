@@ -6,7 +6,7 @@ reviewdate: '2022-01-01'
 # Google Compute Engine
 
 
-In datacenters, applications are deployed to Physical machines, where as in the cloud we provision a virtual server.
+In datacenters, applications are deployed to Physical machines, whereas in the cloud we provision a virtual server.
 
 We use Google compute engine which allows us to manage the lifecycle of VM's
 

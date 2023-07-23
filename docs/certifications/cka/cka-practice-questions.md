@@ -497,7 +497,7 @@ kubectl get pods --all-namespaces --field-selector=metadata.name=blue
 
 A: db-service
 
-We know this because they are both in the same namespace, so we dont have to use cross namespace URL's
+We know this because they are both in the same namespace, so we don't have to use cross namespace URL's
 
 ## Services
 

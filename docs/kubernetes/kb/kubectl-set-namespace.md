@@ -9,7 +9,7 @@ title: Not specifying namespace each time
 
 ## Why
 
-When you're running several commands in the same namespace (That isnt default) it get's annoying having to always specify
+When you're running several commands in the same namespace (That isn't default) it gets annoying having to always specify
 the name space
 
 ## Solution

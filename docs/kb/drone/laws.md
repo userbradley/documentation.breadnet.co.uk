@@ -11,7 +11,7 @@ title: Drone laws
 
 ## Maximum height
 
-120 meters (400ft) from the the ground
+120 meters (400ft) from the ground
 
 ![img.png](../../assets/120m.png)
 
@@ -21,7 +21,7 @@ title: Drone laws
 
 Remember, you must never put people in danger. Even small drones and model aircraft could injure people if you don’t fly them safely.
 
-If you’re flying a drone or model aircraft that’s below 250g, you can fly closer to people than 50m and you can fly over them.
+If you’re flying a drone or model aircraft that’s below 250g, you can fly closer to people than 50m, and you can fly over them.
 
 ## Crowded people
 

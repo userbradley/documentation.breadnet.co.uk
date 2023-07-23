@@ -7,7 +7,7 @@ title: "Failed to get existing workspaces: querying Cloud Storage failed: storag
 
 ## What this error means
 
-You probably get this error when you are trying to run `terraform init`, and it says your other google account doesnt have access to the bucket
+You probably get this error when you are trying to run `terraform init`, and it says your other google account doesn't have access to the bucket
 
 ## How to resolve
 

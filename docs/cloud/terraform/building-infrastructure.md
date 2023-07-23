@@ -6,6 +6,10 @@ reviewdate: '2022-01-01'
 # Terraform - Building infrastructure
 
 <h5 id="bkmrk-picking-your-region">Picking your region</h5>
+<!--suppress ALL -->
+
+
+
 <p id="bkmrk-first-we-need-to-set">First we need to set which cloud provider we will be using. In this example we will be using GCP</p>
 <p id="bkmrk-start-with-defining-">Start with defining the cloud privodor and then the version. Usually this is not needed!</p>
 <p id="bkmrk-from-google-cloud-co">From google cloud console, you will need to get the project ID. This can be found on the dashboard of the project.</p>

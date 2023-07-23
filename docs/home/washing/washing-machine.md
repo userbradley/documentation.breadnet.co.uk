@@ -16,17 +16,17 @@ Washing room
 
 The washing machine has `9` buttons
 
-| Button name          | Location                                            | Use                                                                                  |
-|----------------------|-----------------------------------------------------|--------------------------------------------------------------------------------------|
-| `on/off`             | Top left above selector knob                        | Turning the machine on and off                                                       |
-| Mode selector        | Centre, large button surrounded by numbers          | Selects what washing mode to use from the chart on the left hand side                |
-| `Time saver`         | First button from the left on the top row           | Enables time save on certain washing modes                                           |
-| `1/2 spin`           | Second button from the left on the top row          | Enables _half time_ spin cycle on certain washing modes                              |
-| `Intensive wash`     | Third button from the left on the top row           | Sets the machine to wash more aggressively if materials are highly soiled            |
-| `Delay Timer`        | Fourth button from the left on the top row          | Sets a delay in increments of `3` hours, See [Time lights](#hour-lights)             |
-| `Start/ Pause`       | Far right hand side button at top with :play_pause: | Starts or pauses a wash - See [Door does not open](#door-is-not-opening)             |
-| Temperature selector | Second _knob_ from the left                         | Used to set water temprature for a wash                                              |
-| Drying mode          | Third _knob_ from the left                          | Used to set the temprature the machine should dry clothes at - See [Drying](#drying) |                    
+| Button name          | Location                                            | Use                                                                                   |
+|----------------------|-----------------------------------------------------|---------------------------------------------------------------------------------------|
+| `on/off`             | Top left above selector knob                        | Turning the machine on and off                                                        |
+| Mode selector        | Centre, large button surrounded by numbers          | Selects what washing mode to use from the chart on the left hand side                 |
+| `Time saver`         | First button from the left on the top row           | Enables time save on certain washing modes                                            |
+| `1/2 spin`           | Second button from the left on the top row          | Enables _half time_ spin cycle on certain washing modes                               |
+| `Intensive wash`     | Third button from the left on the top row           | Sets the machine to wash more aggressively if materials are highly soiled             |
+| `Delay Timer`        | Fourth button from the left on the top row          | Sets a delay in increments of `3` hours, See [Time lights](#hour-lights)              |
+| `Start/ Pause`       | Far right hand side button at top with :play_pause: | Starts or pauses a wash - See [Door does not open](#door-is-not-opening)              |
+| Temperature selector | Second _knob_ from the left                         | Used to set water temperature for a wash                                              |
+| Drying mode          | Third _knob_ from the left                          | Used to set the temperature the machine should dry clothes at - See [Drying](#drying) |                    
 
 
 

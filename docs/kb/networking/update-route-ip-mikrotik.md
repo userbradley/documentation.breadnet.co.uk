@@ -6,7 +6,7 @@ title: Update the To Address on Mikrotik VPN Routing
 
 ## Why
 
-Due to how the VPN is setup, the TLS will re-negotiate every 24 hours.
+Due to how the VPN is set up, the TLS will re-negotiate every 24 hours.
 
 This means that once every 24 hours the connection will drop.
 
@@ -19,7 +19,7 @@ You will have no internet
 ### Connect to the router
 
 !!! note "Use another device for this"
-    Due to how the network is setup, you cant use a device on the VPN network to access the router
+    Due to how the network is set up, you cant use a device on the VPN network to access the router
 
 === "Winbox"
 

@@ -11,7 +11,7 @@ I volunteer for scouts (which use bitbucket) and have a day job (which use bitbu
 The issue is that I have my laptop SSH keys added to my work account, but to be able to git clone the repos on the scouts account, 
 would have to add different keys.
 
-You would think I could setup an SSH config, but the domains are both `git@bitbucket.org`
+You would think I could set up an SSH config, but the domains are both `git@bitbucket.org`
 
 ## Solution
 

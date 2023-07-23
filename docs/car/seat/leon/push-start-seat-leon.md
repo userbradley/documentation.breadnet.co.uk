@@ -4,7 +4,7 @@ title: How to push start a SEAT leon
 
 ## Why
 
-When your battery dies, sometimes you dont have the luxury of nice insurance that has break down cover,
+When your battery dies, sometimes you don't have the luxury of nice insurance that has break down cover,
 or you have the AA who take ages to come get you - But you know it's the battery that has given up.
 
 You are able to push the car to start it
