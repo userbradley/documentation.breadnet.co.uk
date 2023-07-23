@@ -8,7 +8,7 @@ title: Migrate repo to Mono-repo
 
 ## Set up your git remote
 
-You’ll need to add a new remote for the repo you want to migrate, because you can’t just mv codebase without losing all of the commits. Let’s say I’ve got my React app in a repo called persephone:
+You’ll need to add a new remote for the repo you want to migrate, because you can’t just mv codebase without losing all the commits. Let’s say I’ve got my React app in a repo called persephone:
 
 ```
 git remote add persephone git@github.com:lgtm/persephone
@@ -51,7 +51,7 @@ git commit -m "Migrate persephone repo to src/persephone"
 
 ## Rebase into master
 
-Provided you did this in a branch so you could encapsulate it in a PR, it is absolutely vital that you merge it into master by rebasing. Make sure you’re all up to date and nothing else has been merged meanwhile, otherwise you’re going to have to re-apply those lost commits.
+Provided you did this in a branch, so you could encapsulate it in a PR, it is absolutely vital that you merge it into master by rebasing. Make sure you’re all up to date and nothing else has been merged meanwhile, otherwise you’re going to have to re-apply those lost commits.
 
 ```
 git checkout master
@@ -68,7 +68,7 @@ Then you get a massive merge commit, which probably isn’t too helpful, or othe
 
 ### Deal with the rest of the transition
 
-Many third party integrations assume that one project is equal to one repo, and might not support the monorepo use-case at all. In any case, you’re going to have to reconfigure your CI pipelines to work with your new setup since you can’t assume that anything lives in the repo root any more.
+Many third party integrations assume that one project is equal to one repo, and might not support the monorepo use-case at all. In any case, you’re going to have to reconfigure your CI pipelines to work with your new setup since you can’t assume that anything lives in the repo root anymore.
 
 It’s prudent to do this as part of the monorepo PR you have going on, but of course those commits will become difficult to review if you’re migrating any significant number of commits.
 

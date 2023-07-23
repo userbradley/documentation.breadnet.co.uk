@@ -8,7 +8,7 @@ This seems like it will be by far the hardest exam and learning of my career.
 ## How I plan to attack it
 
 1. Online Courses
-2. Purchase a SFF computer and build a cluster using kubeadm and the [hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way/tree/master/docs)
+2. Purchase an SFF computer and build a cluster using kubeadm and the [hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way/tree/master/docs)
 3. Break down the cluster and do it again, this time make notes and a run book
 4. Have someone break it
 5. Fix it

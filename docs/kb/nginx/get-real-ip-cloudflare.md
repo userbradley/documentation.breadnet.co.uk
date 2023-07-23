@@ -74,7 +74,7 @@ set_real_ip_from 2c0f:f248::/32;
 ```
 
 ??? question "What does this do"
-    This tells nginx that any time it sees one of these IP ranges, it should look at the header `CF-Connecting-IP` that get's sent
+    This tells nginx that any time it sees one of these IP ranges, it should look at the header `CF-Connecting-IP` that gets sent
     and then use that as the connecting IP
 
 ## using this file in nginx

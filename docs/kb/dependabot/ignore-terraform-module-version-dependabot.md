@@ -4,7 +4,7 @@ title: Ignore terraform module version dependabot
 
 ## Why
 
-I've had an issue recently where we need to update a module, and it introduces a breaking change that we dont want to put through CI, or we are happy with a specific version.
+I've had an issue recently where we need to update a module, and it introduces a breaking change that we don't want to put through CI, or we are happy with a specific version.
 
 ## How
 

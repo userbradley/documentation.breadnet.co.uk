@@ -5,6 +5,17 @@ title: Google cloud architect - page 2
 # Google cloud architect - page 2
 
 <h4 id="bkmrk-iam">IAM</h4>
+<!--suppress ALL -->
+
+
+
+
+
+
+
+
+
+
 <ul id="bkmrk-resources-humans-non">
 <li>Resources
 <ul>

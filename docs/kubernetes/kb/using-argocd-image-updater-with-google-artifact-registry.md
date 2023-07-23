@@ -23,7 +23,7 @@ We will export the credentials to an Environment Variable, as this seems to be t
 export auth=oauth2accesstoken:$(gcloud auth print-access-token)
 ```
 
-This will run the command `gcloud auth print-access-token` first (as it's in parentheses, remember `PEMDAS`) then save it's value as text.
+This will run the command `gcloud auth print-access-token` first (as it's in parentheses, remember `PEMDAS`) then save its value as text.
 
 Optionally, check what it looks like
 

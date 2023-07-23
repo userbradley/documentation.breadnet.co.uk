@@ -5,7 +5,7 @@ reviewdate: '2024-01-01'
 
 # Weird bash
 
-If you log on to a server and there's no auto complete etc, run
+If you log on to a server and there's no auto complete etc., run
 
 
 

@@ -6,7 +6,7 @@ title: Convert Docker compose to Kubernetes manifest files
 
 ## Why
 
-Sometimes when working with docker (or podman) if makes sense to push the images in to Kubernetes.
+Sometimes when working with docker (or podman) it makes sense to push the images in to Kubernetes.
 
 Engineers may not have the required experience to convert their `docker-compose.yaml` in to the required kubernetes files
 

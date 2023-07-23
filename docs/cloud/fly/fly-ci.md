@@ -26,7 +26,7 @@ The issue we have is installing it requires Curl to use their script.
 
 As this is a _home lab_ and is not really production, we can use `master` and `latest` for version pinning.
 
-In CI we are doing the below:
+In CI, we are doing the below:
 
 * Set the API key globally on the pipeline
 * Build a docker image based on what branch the commit is to

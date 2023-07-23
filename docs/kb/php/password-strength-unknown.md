@@ -4,7 +4,7 @@ title: Password Strength Unknown wordpress
 
 ## What is this error
 
-This is an error you see when trying to login or create a new user on a wordpress instance
+This is an error you see when trying to log in or create a new user on a WordPress instance
 
 ## How to resolve
 

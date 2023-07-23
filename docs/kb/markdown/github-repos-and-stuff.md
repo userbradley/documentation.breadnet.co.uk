@@ -7,7 +7,7 @@ reviewdate: '2022-01-01'
 To clone a repo, go to the webpage and click the `clone or download` button and click 'Use SSH'
 
 ??? Note "SSH or https"
-    Seeing as you have `2fa` enabled on your account, you should be using `ssh` as it doesnt require you to login each action you make
+    Seeing as you have `2fa` enabled on your account, you should be using `ssh` as it doesn't require you to log in each action you make
 
 ![](/assets/tjxlFRVsXUgsDatm-image-1588972001839.png)
 

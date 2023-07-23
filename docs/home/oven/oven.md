@@ -14,7 +14,7 @@ Kitchen
 
 ### General Cooking
 
-Set the left hand dial to the 6'oclock position
+Set the left hand dial to the 6 o'clock position
 
 | Left hand side                             | Right hand side                                |
 |--------------------------------------------|------------------------------------------------|

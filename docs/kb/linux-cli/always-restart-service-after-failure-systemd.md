@@ -6,9 +6,9 @@ title: Always restart service after failure - systemd
 
 ## Why
 
-Some services are critical to operation and without them we may have issues like not being able to access systems.
+Some services are critical to operation and without them, we may have issues like not being able to access systems.
 
-These services dont really fail often, and are not dangerous to restart loop them.
+These services don't really fail often, and are not dangerous to restart loop them.
 
 ## Edit the system File
 
@@ -32,7 +32,7 @@ Restart=always
 RestartSec=3
 ```
 
-You can tweak `RestartSec` how ever you want
+You can tweak `RestartSec` however you want
 
 ## Reload the System
 

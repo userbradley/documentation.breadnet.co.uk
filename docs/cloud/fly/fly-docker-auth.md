@@ -16,7 +16,7 @@ you have to take in to factor:
 
 ### Command line
 
-The flyctl tool has a built in docker auth section
+The flyctl tool has a built-in docker auth section
 
 ```shell
 fly auth docker

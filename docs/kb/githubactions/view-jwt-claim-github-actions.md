@@ -4,7 +4,7 @@ title: View JWT claims GitHub actions
 
 ## Why
 
-When configuring Workload Identity federation for Github and Google cloud, it's useful to see the JWT claim being sent
+When configuring Workload Identity federation for GitHub and Google cloud, it's useful to see the JWT claim being sent
 
 ## How
 

@@ -5,6 +5,7 @@ reviewdate: '2022-01-01'
 
 # Gsuit - User administration
 
+<!--suppress ALL -->
 <p id="bkmrk-global-info-can-be-s">Global info can be set under `Account settings` but this has changed from `Company profile` </p>
 <p id="bkmrk-%C2%A0"> </p>
 <h5 id="bkmrk-users">Users</h5>
@@ -62,7 +63,7 @@ reviewdate: '2022-01-01'
 <p id="bkmrk-"><a href="/assets/2mznsOlbTSNaaAcI-image-1604671927789.png" target="_blank" rel="noopener"><img src="/assets/2mznsOlbTSNaaAcI-image-1604671927789.png" alt="image-1604671927789.png"></a></p>
 <p id="bkmrk-----1">---</p>
 <h5 id="bkmrk-licensing%C2%A0">Licensing </h5>
-<p id="bkmrk-you-must-assign-a-li">You must assign a license to a use, how ever if you use gsuit enterprise it's automatic</p>
+<p id="bkmrk-you-must-assign-a-li">You must assign a license to a use, however if you use gsuit enterprise it's automatic</p>
 <p id="bkmrk-suspended-users-will">Suspended users will not be able to login and will not get emails or calendar invites</p>
 <p id="bkmrk-----2">---</p>
 <h5 id="bkmrk-organisational-units">Organisational units </h5>

@@ -4,10 +4,24 @@ reviewdate: '2022-01-01'
 ---
 # Airflow basics
 
-<p id="bkmrk-airflow-exists-for-t">Airflow exists for the sole purpose of removing the need to write a bash or python script, setup a server with a cron job and then run your ETL pipeline. With Airflow we're doing all this under one roof with monitoring and visualization built in.</p>
+<!--suppress ALL -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="bkmrk-airflow-exists-for-t">Airflow exists for the sole purpose of removing the need to write a bash or python script, set up a server with a cron job and then run your ETL pipeline. With Airflow we're doing all this under one roof with monitoring and visualization built in.</p>
 <p id="bkmrk-%C2%A0"> </p>
 <p id="bkmrk-airflow-uses-somethi">Airflow uses something called a DAG (Directed acyclic graph) </p>
-<p id="bkmrk-airflow-is-primerill">Airflow is primerilly written with Python scrips that compose of the below imports </p>
+<p id="bkmrk-airflow-is-primerill">Airflow is primarily written with Python scrips that compose of the below imports </p>
 <pre id="bkmrk-from-airflow-import-"><code class="language-Python">from airflow import DAG
 from datetime import datetime</code></pre>
 <p id="bkmrk-we-need-to-use-datet">We need to use datetime as airflow runs certain operations on a time schedule, an example is below</p>

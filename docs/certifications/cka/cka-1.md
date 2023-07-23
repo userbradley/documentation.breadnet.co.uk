@@ -351,7 +351,7 @@ When a request for that `kind:Service` is made, the node accepts the traffic, an
 
 Pods are the smallest deployable item of _compute_ on a Kubernetes cluster. 
 
-Pods are made up of containers. Usually it's just one container, how ever it can be multiple.
+Pods are made up of containers. Usually it's just one container, however it can be multiple.
 
 !!! info "Note on multiple containers per pod"
     Only deploy multiple containers per pod if they are very tightly coupled. A good example would be apache2 and php-fpm (if memory serves me well.)
@@ -374,7 +374,7 @@ Due to how kubernetes uses the underlying Kernel, and then Networking Namespaces
 
 *[Networking Namespaces]: A network namespace is a logical copy of the network stack from the host system. Network namespaces are useful for setting up containers or virtual environments. Each namespace has its own IP addresses, network interfaces, routing tables, and so forth.
 
-Containers in the same pod share storage mappings, so we can map storage to 2 containers in a pod and they have rw access, without having to do anything special
+Containers in the same pod share storage mappings, so we can map storage to 2 containers in a pod, and they have rw access, without having to do anything special
 
 ### Creating a pod
 
@@ -432,7 +432,7 @@ spec: # (7)!
 Deployments are the easier means to manage Kubernetes applications. You are able to describe your deployment in YAML, and then kubernetes
 automatically manages the Replica set that manages the pods.
 
-You would use a Deployment over a RS (Replica Set) as it allows you to do things like:
+You would use a Deployment over an RS (Replica Set) as it allows you to do things like:
 
 * Rolling Updates
 * Rollbacks
@@ -646,7 +646,7 @@ We then need to flatten this, so it's like the below
 
 We are then able to post this to the endpoint.
 
-As you can see from the manifest file, we dont have any target pods, this is because it's applied to the pod via the API
+As you can see from the manifest file, we don't have any target pods, this is because it's applied to the pod via the API
 
 ```shell
 curl --header "Content-Type:application/json" --request POST --data '{"apiVersion": "v1","kind": "Binding","metadata": {"name": "nginx"},"target": {"apiVersion": "v1","kind": "Node","name": "node02"}}' https://$SERVER/api/v1/namespaces/$NAMESPACE/pods/$PODNAME/binding/
@@ -962,7 +962,7 @@ This means that the operators that follows are required or the pod does not get 
 
 #### preferredDuringSchedulingIgnoredDuringExecution
 
-This means that the operators that follow are more of a _nice to have_ and the pod will still get scheduled but it will do it's best first. 
+This means that the operators that follow are more of a _nice to have_ and the pod will still get scheduled, but it will do it's best first. 
 
 This means that the config that follows is **required** during scheduling 
 
@@ -1011,7 +1011,7 @@ The above example will schedule the pod on any node, as long as it doesn't have 
 
 #### Exists
 
-This operator just checks if the node has the labesl attached to it. You dont need the values as they arent being compared
+This operator just checks if the node has the labels attached to it. You don't need the values as they aren't being compared
 
 ```yaml
         nodeAffinity:

@@ -255,7 +255,7 @@ nav:
           - Installing k3s: kubernetes/k3s/installing-k3s.md
           - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
-          - Things taking too long to delete: kubernetes/k3s/things-taking-too-long-to-delete.md
+          - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
       - KB:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md

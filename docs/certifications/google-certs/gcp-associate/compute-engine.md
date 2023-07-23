@@ -23,7 +23,7 @@ reviewdate: '2022-01-01'
 <p id="bkmrk-should-have-gpu-libr">Should have GPU libraries </p>
 <p id="bkmrk-higher-cost">Higher cost</p>
 <p id="bkmrk-not-supported-on-all">Not supported on all machine types</p>
-<p id="bkmrk-cant-do-live-migrati">Cant do live migration on GPU machines. Should be terminate instance. </p>
+<p id="bkmrk-cant-do-live-migrati">Cant do live migration on GPU machines. Should be terminated instance. </p>
 <p id="bkmrk-%C2%A0"> </p>
 <h4 id="bkmrk-important-nat-things">Important nat things to remember.</h4>
 <p id="bkmrk-vm%27s-are-created-und">VM's are created underProjects </p>
