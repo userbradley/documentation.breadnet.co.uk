@@ -63,6 +63,7 @@ nav:
           - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+          - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
           - Grafeas: cloud/gcp/grafeas.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
@@ -75,6 +76,7 @@ nav:
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
+          - "View logs for Enabled API's": cloud/gcp/view-logs-for-enabled-apis.md
           - View startup script on Google Compute Engine: cloud/gcp/view-startup-script-on-google-compute-engine.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
@@ -86,6 +88,7 @@ nav:
           - Remote Data: cloud/terraform/remote-data.md
           - Terraform lock file update: cloud/terraform/terraform-lock-file-update.md
           - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - Terraform Sleep: cloud/terraform/terraform-sleep.md
           - tfupdate: cloud/terraform/tfupdate.md
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
       - Terragrunt:
