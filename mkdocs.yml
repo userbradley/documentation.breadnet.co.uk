@@ -76,6 +76,7 @@ nav:
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
+          - "View logs for Enabled API's": cloud/gcp/view-logs-for-enabled-apis.md
           - View startup script on Google Compute Engine: cloud/gcp/view-startup-script-on-google-compute-engine.md
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
