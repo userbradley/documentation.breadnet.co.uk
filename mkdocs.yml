@@ -87,6 +87,7 @@ nav:
           - Remote Data: cloud/terraform/remote-data.md
           - Terraform lock file update: cloud/terraform/terraform-lock-file-update.md
           - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - Terraform Sleep: cloud/terraform/terraform-sleep.md
           - tfupdate: cloud/terraform/tfupdate.md
           - To string from list in terraform: cloud/terraform/to-string-from-list.md
       - Terragrunt:
