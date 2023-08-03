@@ -20,6 +20,10 @@ jobs:
   site:
     runs-on: ubuntu-latest
     name: Build Documentation
+    environment:
+      name: Development
+      url: https://dev-documentation.breadnet.co.uk
+
     steps:
       - name: Git Clone
         uses: actions/checkout@v3
