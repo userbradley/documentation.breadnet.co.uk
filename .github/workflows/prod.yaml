@@ -17,6 +17,9 @@ jobs:
   site:
     runs-on: ubuntu-latest
     name: Build Documentation
+    environment:
+      name: Production
+      url: https://documentation.breadnet.co.uk
     steps:
       - name: Git Clone
         uses: actions/checkout@v3
