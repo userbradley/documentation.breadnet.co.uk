@@ -57,6 +57,12 @@ jobs:
           username: x
           password: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
 
+      - name: Echo
+        run: echo ${{ steps.getter.outputs.image }}
+
+      - name: Pull image
+        run: docker pull ${{ steps.getter.outputs.image }}
+
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
