@@ -31,6 +31,5 @@ jobs:
         uses: userbradley/actions-fly@v1.0.0
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
-          configFile: "dev.toml"
-          dockerfileName: "dev.Dockerfile"
-
+          configFile: ${{ vars.CONFIG_FILE }}
+          dockerfileName: ${{ vars.DOCKERFILE }}
