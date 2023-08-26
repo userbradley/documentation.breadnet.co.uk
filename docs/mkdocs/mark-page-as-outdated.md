@@ -10,6 +10,8 @@ When maintaining a site that people rely on, you need to ensure that people can 
 By adding a banner at the top of the page explaining that the page is now outdated and will not be receiving updates, it enables people
 to know they shouldn't 100% account on the details
 
+Since documentation.breadnet.co.uk#145 this has been enabled
+
 ## How
 
 ### On the header of the page

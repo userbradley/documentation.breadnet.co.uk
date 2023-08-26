@@ -388,6 +388,11 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.magiclink:
+      provider: 'github'
+      user: userbradley
+      repo_url_shortener: true
+      repo_url_shorthand: true
 
 plugins:
   - search
