@@ -49,4 +49,4 @@ jobs:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
           configFile: "dev.toml"
       - name: Echo
-        run: echo ${{ steps.outputs.getter.image }}
+        run: echo ${{ steps.getter.outputs.image }}
