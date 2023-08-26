@@ -278,6 +278,7 @@ nav:
   - mkdocs:
       - mkdocs/index.md
       - Add review date to page: mkdocs/add-review-date-to-page.md
+      - Set page as permanently outdated: mkdocs/mark-page-as-outdated.md
   - Home:
       - home/index.md
       - Utilities:
@@ -387,6 +388,11 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.magiclink:
+      provider: 'github'
+      user: userbradley
+      repo_url_shortener: true
+      repo_url_shorthand: true
 
 plugins:
   - search
