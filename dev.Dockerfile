@@ -8,7 +8,7 @@ ENV domain="https://dev-documentation.breadnet.co.uk"
 ENV dir="overrides-dev"
 
 COPY mkdocs.yml /app/mkdocs.yml
-COPY overrides-dev /app/overrides-dev
+COPY overrides /app/overrides
 COPY dev-robots.txt /app/docs/robots.txt
 COPY docs /app/docs
 
