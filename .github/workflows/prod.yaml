@@ -8,8 +8,10 @@ on:
       - .github/workflows/prod.yaml
       - overrides-prod/**
       - mkdocs.yml
+      - Dockerfile
       - cloudflare.conf
       - deny.conf
+      - dev-nginx.conf
       - prod.toml
 
 
