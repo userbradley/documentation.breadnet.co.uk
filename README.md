@@ -83,15 +83,16 @@ You will know when you're on the development site, as the colors are red!
 ```text
 .
 ├── CODEOWNERS
+├── CODE_OF_CONDUCT.md
 ├── Dockerfile
 ├── LICENSE
 ├── README.md
 ├── SECURITY.md
 ├── Taskfile.yml
-├── cd
-│   └── codefresh.yml
 ├── cloudflare.conf
 ├── deny.conf
+├── dev-nginx.conf
+├── dev-robots.txt
 ├── dev.Dockerfile
 ├── dev.toml
 ├── docker-compose.yaml
@@ -108,6 +109,7 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── 9lwDfBcEr0MVFVt3-image-1642771239476.png
 │   │   ├── AooTYe4QwdbFLMru-image-1606764758712.png
 │   │   ├── DEK0ilyWJhXXzqhb-image-1642771115391.png
+│   │   ├── DO_Logo_icon_blue.png
 │   │   ├── GJIc7rJptYTmXzfh-image-1606735635793.png
 │   │   ├── IMG_9259.JPG
 │   │   ├── IMG_9260.JPG
@@ -118,17 +120,31 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── b7eY4DH3O7l5mvGO-image-1606744736955.png
 │   │   ├── cloudflare_status.png
 │   │   ├── data-incident-response-figure-1.png
+│   │   ├── dev-tools-console.png
+│   │   ├── dev-tools-showPassword.png
+│   │   ├── docker-ps.png
 │   │   ├── e1giSp8BGj8Wx2nH-drawing-1-1620509841.png
+│   │   ├── ee-router-advanced.png
+│   │   ├── ee-router-boradband.png
+│   │   ├── ee-router-system.png
+│   │   ├── ee-show-password.png
 │   │   ├── fan.png
+│   │   ├── gcloud-add-user-viewer.png
+│   │   ├── gcloud-grant-access-buttom.png
+│   │   ├── gcloud-select-org-project.png
+│   │   ├── gcloud-select-org.png
+│   │   ├── gh-actions.png
 │   │   ├── goQwxsbjB33Z1ZN1-image-1606741677022.png
 │   │   ├── grilling.png
 │   │   ├── h0o4TLba8od6YCyr-image-1606757098863.png
+│   │   ├── harvest-logo.png
 │   │   ├── heater_cover.jpeg
 │   │   ├── heater_details.png
 │   │   ├── heater_thermo.jpeg
 │   │   ├── heater_thermo_control.png
 │   │   ├── iPZWBvJp9qJTDbh5-image-1642771101260.png
 │   │   ├── iqQ48KLKrC2hNJ1k-image-1606743820345.png
+│   │   ├── k3s-logo.png
 │   │   ├── k74fQlTzbNTCoVmD-image-1642771208110.png
 │   │   ├── lHFWdtVTkMX6AX5G-image-1606740965114.png
 │   │   ├── lR3gpWqK5uymZy76-image-1642771373312.png
@@ -139,11 +155,25 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── mode-gen.png
 │   │   ├── nWVeT4OzIa1ANMPb-image-1621095512411.png
 │   │   ├── nzcVoSkDoOg3V3D9-image-1606769464676.png
+│   │   ├── openvpn-as-advanced-vpn.png
+│   │   ├── openvpn-dns.png
+│   │   ├── openvpn-mikrotik-setup.png
+│   │   ├── openvpn-tls.png
 │   │   ├── pipeline.png
 │   │   ├── plant-room.JPG
 │   │   ├── qtFenCGbLvRUVQqs-image-1606738550809.png
 │   │   ├── rG2Sxc83fg9oyJVi-image-1605010726509.png
 │   │   ├── red-cu.png
+│   │   ├── rest-windows.png
+│   │   ├── revere-do-history.png
+│   │   ├── reverse-banner.png
+│   │   ├── reverse-createdate.png
+│   │   ├── reverse-destroy-instance.png
+│   │   ├── reverse-dns.png
+│   │   ├── reverse-screen.png
+│   │   ├── reverse-sessions.png
+│   │   ├── reverse-sitting-in-console.png
+│   │   ├── reverse-uptime.png
 │   │   ├── s3e11nJc8jbmRYtA-image-1621087752258.png
 │   │   ├── sGYTTQzEk4MNllA8-image-1642771319408.png
 │   │   ├── site-visits-usa.png
@@ -165,6 +195,7 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── winbox_ip-firewall.png
 │   │   ├── winbox_login.png
 │   │   ├── winbox_nat-rule.png
+│   │   ├── windows-clean-the-drives.png
 │   │   ├── x5BORuXlBtctN0Mi-image-1646765189176.png
 │   │   ├── xcode-select-tos.png
 │   │   ├── xcode-select.png
@@ -177,6 +208,12 @@ You will know when you're on the development site, as the colors are red!
 │   │       ├── basics.md
 │   │       └── python-install.md
 │   ├── bookstack.md
+│   ├── car
+│   │   ├── index.md
+│   │   └── seat
+│   │       └── leon
+│   │           ├── fix-comfort-close.md
+│   │           └── push-start-seat-leon.md
 │   ├── certifications
 │   │   ├── cka
 │   │   │   ├── cka-1.md
@@ -225,33 +262,51 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── fly-regions.md
 │   │   │   └── index.md
 │   │   ├── gcp
+│   │   │   ├── add-external-user-to-org.md
 │   │   │   ├── api-get-project.md
 │   │   │   ├── api-get-sa.md
+│   │   │   ├── authenticate-twine-to-google-artifact-registry.md
 │   │   │   ├── curl-gcr-ar.md
 │   │   │   ├── curl-to-iap.md
+│   │   │   ├── export-gcp-dns-zone-to-bind-zone-file.md
 │   │   │   ├── export-to-terraform-using-gcloud-cli.md
 │   │   │   ├── filter-gcloud-output.md
 │   │   │   ├── forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+│   │   │   ├── get-dnssec-keys-for-google-cloud-dns.md
 │   │   │   ├── get-project-name-of-gcs-bucket.md
 │   │   │   ├── grafeas.md
+│   │   │   ├── list-all-service-account-keys.md
+│   │   │   ├── print-secret-gcloud.md
 │   │   │   ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+│   │   │   ├── re-run-startup-script-google-compute-engine.md
+│   │   │   ├── remove-the-lien-to-allow-deletion.md
 │   │   │   ├── serverless-vpc-access-for-cloudrun-across-projects.md
+│   │   │   ├── show-bq-table-schema.md
 │   │   │   ├── ssh-iap.md
 │   │   │   ├── sshuttle-using-google-iap.md
 │   │   │   ├── useful-gcloud-commands.md
-│   │   │   └── view-hash-of-object-in-gcs.md
-│   │   └── terraform
-│   │       ├── building-infrastructure.md
-│   │       ├── bulk-delete-terraform-state.md
-│   │       ├── failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-│   │       ├── google-iap.md
-│   │       ├── openstack.md
-│   │       ├── recursive-delete-of-terraform.md
-│   │       ├── remote-data.md
-│   │       ├── terraform-lock-file-update.md
-│   │       ├── terraform-plugin-cannot-locate-module-locally-unknown-reason.md
-│   │       ├── tfupdate.md
-│   │       └── to-string-from-list.md
+│   │   │   ├── view-hash-of-object-in-gcs.md
+│   │   │   ├── view-logs-for-enabled-apis.md
+│   │   │   └── view-startup-script-on-google-compute-engine.md
+│   │   ├── terraform
+│   │   │   ├── building-infrastructure.md
+│   │   │   ├── bulk-delete-terraform-state.md
+│   │   │   ├── failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
+│   │   │   ├── google-iap.md
+│   │   │   ├── openstack.md
+│   │   │   ├── recursive-delete-of-terraform.md
+│   │   │   ├── remote-data.md
+│   │   │   ├── terraform-lock-file-update.md
+│   │   │   ├── terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+│   │   │   ├── terraform-sleep.md
+│   │   │   ├── terraform-verbose.md
+│   │   │   ├── tfupdate.md
+│   │   │   └── to-string-from-list.md
+│   │   └── terragrunt
+│   │       ├── generate-backend-file-for-gcs-with-terragrunt.md
+│   │       ├── terragrunt-generate-block.md
+│   │       ├── terragrunt-in-github-actions.md
+│   │       └── terragrunt-terraform-auto-upgrade.md
 │   ├── favicon.ico
 │   ├── favicon.png
 │   ├── home
@@ -274,7 +329,13 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   └── fingerprint-on-linux-mint.md
 │   │   ├── cloud-init
 │   │   │   └── cloud-init.md
-│   │   ├── codefresh
+│   │   ├── cloudflared
+│   │   │   ├── cloudflared-on-ubuntu-for-ssh.md
+│   │   │   └── index.md
+│   │   ├── copybara
+│   │   │   └── installing-copybara.md
+│   │   ├── dependabot
+│   │   │   └── ignore-terraform-module-version-dependabot.md
 │   │   ├── disk-management
 │   │   │   ├── expanding-a-filesystem.md
 │   │   │   ├── formatting-drive-automount.md
@@ -285,7 +346,9 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── bulk-retag.md
 │   │   │   ├── copy-containers-between-repos.md
 │   │   │   ├── docker-architecture.md
+│   │   │   ├── docker-copy.md
 │   │   │   ├── docker-intro-and-notes.md
+│   │   │   ├── docker-logs.md
 │   │   │   ├── exporting-and-importing.md
 │   │   │   ├── installing-docker.md
 │   │   │   └── installing-jellyfin.md
@@ -295,13 +358,17 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   └── stock-image-marketplaces.md
 │   │   ├── git
 │   │   │   ├── count-lines-of-code-in-repo.md
+│   │   │   ├── create-and-push-tags.md
 │   │   │   ├── git-with-different-ssh-keys.md
 │   │   │   ├── migrate-repo-to-mono-repo.md
 │   │   │   └── set-git-user-per-repo.md
 │   │   ├── githubactions
 │   │   │   ├── access-file-between-steps.md
-│   │   │   ├── auth-to-gar.md
-│   │   │   └── upload-file.md
+│   │   │   ├── authenticate-github-actions-to-gcp-using-workload-identity-federation.md
+│   │   │   ├── authenticate-github-actions-to-google-artifact-registry.md
+│   │   │   ├── delete-old-runs-of-deleted-github-actions.md
+│   │   │   ├── upload-file.md
+│   │   │   └── view-jwt-claim-github-actions.md
 │   │   ├── google-workspace
 │   │   │   └── setup-routing.md
 │   │   ├── grocy
@@ -313,6 +380,8 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── bulk-change-file-extension.md
 │   │   │   ├── fingerprint-for-sudo-mac.md
 │   │   │   ├── get-current-folder.md
+│   │   │   ├── how-to-create-tar-gz-file.md
+│   │   │   ├── list-nfs-shares-exported.md
 │   │   │   ├── lowercase-to-uppercase.md
 │   │   │   ├── the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
 │   │   │   ├── uppercase-to-lowercase.md
@@ -337,41 +406,49 @@ You will know when you're on the development site, as the colors are red!
 │   │   ├── markdown
 │   │   │   ├── built-by-badge.md
 │   │   │   ├── custom-badges.md
-│   │   │   ├── github-repos-and-stuff.md
+│   │   │   ├── how-to-use-git.md
 │   │   │   └── note-warning-in-markdown.md
 │   │   ├── minio
+│   │   │   ├── creating-minio-users-and-assigning-permissions.md
 │   │   │   ├── minio-over-s3fs.md
-│   │   │   ├── old.md
-│   │   │   └── s3-policies.md
+│   │   │   └── old.md
 │   │   ├── networking
+│   │   │   ├── show-broadband-password-ee.md
 │   │   │   ├── update-route-ip-mikrotik.md
 │   │   │   ├── update-tough-switch.md
 │   │   │   └── vpn-network-routing-mikrotik.md
 │   │   ├── nginx
 │   │   │   ├── custom-headers.md
+│   │   │   ├── get-real-ip-cloudflare.md
+│   │   │   ├── nginx-extras.md
 │   │   │   ├── nginx-redirects-to-the-first-alphabetical-site-when-not-found-in-config.md
 │   │   │   ├── nginxservice-failed-because-the-control-process-exited.md
 │   │   │   ├── remove-server-headers.md
 │   │   │   └── reverse-web-proxy.md
 │   │   ├── openvpn
-│   │   │   ├── img.png
-│   │   │   ├── img_1.png
-│   │   │   ├── img_2.png
-│   │   │   ├── img_3.png
-│   │   │   ├── index.md
+│   │   │   ├── install-openvpn-as.md
 │   │   │   └── mikrotik-to-openvpn.md
 │   │   ├── php
 │   │   │   ├── install-php.md
+│   │   │   ├── password-strength-unknown.md
 │   │   │   └── wordpress-permissions.md
+│   │   ├── podman
+│   │   │   ├── authenticate-podman-to-ghcr.md
+│   │   │   ├── docker-credential-desktop-not-installed.md
+│   │   │   ├── index.md
+│   │   │   ├── podmain-google-artifact-registry-mirror.md
+│   │   │   └── podman-mount-directories-mac.md
 │   │   ├── pritunl
-│   │   │   └── pritunl-forwarded-header.md
+│   │   │   ├── pritunl-forwarded-header.md
+│   │   │   └── ssh-using-pritunl-bastion.md
 │   │   ├── public-web-facing
 │   │   │   ├── bookstack.md
 │   │   │   ├── cachet.md
 │   │   │   ├── certbot.md
 │   │   │   ├── check-passbolt-is-healthy.md
 │   │   │   ├── downloading-the-breadnet-site-and-serving-a-stale-copy.md
-│   │   │   ├── jellyfin-s3.md
+│   │   │   ├── jellyfin-using-s3-and-docker.md
+│   │   │   ├── reverse.md
 │   │   │   ├── send-test-email-on-passbolt.md
 │   │   │   ├── wildcard-certificates.md
 │   │   │   └── wp-cli-password.md
@@ -380,16 +457,21 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   └── import-table.md
 │   │   ├── ssh
 │   │   │   ├── generate-ssh-keys.md
+│   │   │   ├── import-public-keys-for-ssh-hosts.md
 │   │   │   ├── importing-ssh-keys-from-github.md
+│   │   │   ├── no-matching-host-key-type-found-their-offer-ssh-dss.md
 │   │   │   ├── ssh-client-setup-using-keys.md
 │   │   │   ├── ssh-port-redirection.md
 │   │   │   ├── sshuttle.md
 │   │   │   └── weird-bash.md
-│   │   └── wasabi
-│   │       ├── policies.md
-│   │       └── transport-endpoint-is-not-connected.md
+│   │   ├── wasabi
+│   │   │   ├── policies.md
+│   │   │   └── transport-endpoint-is-not-connected.md
+│   │   └── windows
+│   │       └── reset-windows-to-factory-defaults-and-erase-all-data.md
 │   ├── kubernetes
 │   │   ├── gke
+│   │   │   ├── configure-gke-workload-identity.md
 │   │   │   ├── index.md
 │   │   │   ├── service-account-with-workload-id.md
 │   │   │   └── workload-id-test.md
@@ -409,16 +491,24 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   └── things-taking-too-long-to-delete.md
 │   │   └── kb
 │   │       ├── connect-to-container-that-has-sidecars.md
+│   │       ├── convert-docker-compose-to-kubernetes-manifests.md
 │   │       ├── delete-terminating-namespace.md
 │   │       ├── deleting-not-running-pods.md
 │   │       ├── downward-api.md
+│   │       ├── force-delete-pod.md
 │   │       ├── index.md
 │   │       ├── kubectl-commands-old.md
 │   │       ├── kubectl-commands.md
+│   │       ├── kubectl-get-pods-and-nodes.md
 │   │       ├── kubectl-set-namespace.md
 │   │       ├── rbac-testing.md
 │   │       ├── sleeper.md
+│   │       ├── trigger-kubernetes-cron-job-manually.md
 │   │       └── using-argocd-image-updater-with-google-artifact-registry.md
+│   ├── mkdocs
+│   │   ├── add-review-date-to-page.md
+│   │   ├── expired-page-example.md
+│   │   └── index.md
 │   ├── not-found.md
 │   ├── robots.txt
 │   ├── stylesheets
@@ -428,13 +518,135 @@ You will know when you're on the development site, as the colors are red!
 ├── mkdocs.yml
 ├── nginx.conf
 ├── overrides-dev
-│   └── main.html
+│   └── partials
+│       ├── content.html
+│       └── integrations
+│           └── analytics.html
 ├── overrides-prod
-│   └── main.html
+│   └── partials
+│       ├── content.html
+│       └── integrations
+│           └── analytics.html
 ├── prod.toml
-└── redirect.conf
+├── redirect.conf
+└── styles
+    ├── Google
+    │   ├── AMPM.yml
+    │   ├── Acronyms.yml
+    │   ├── Colons.yml
+    │   ├── Contractions.yml
+    │   ├── DateFormat.yml
+    │   ├── Ellipses.yml
+    │   ├── EmDash.yml
+    │   ├── EnDash.yml
+    │   ├── Exclamation.yml
+    │   ├── FirstPerson.yml
+    │   ├── Gender.yml
+    │   ├── GenderBias.yml
+    │   ├── HeadingPunctuation.yml
+    │   ├── Headings.yml
+    │   ├── Latin.yml
+    │   ├── LyHyphens.yml
+    │   ├── OptionalPlurals.yml
+    │   ├── Ordinal.yml
+    │   ├── OxfordComma.yml
+    │   ├── Parens.yml
+    │   ├── Passive.yml
+    │   ├── Periods.yml
+    │   ├── Quotes.yml
+    │   ├── Ranges.yml
+    │   ├── Semicolons.yml
+    │   ├── Slang.yml
+    │   ├── Spacing.yml
+    │   ├── Spelling.yml
+    │   ├── Units.yml
+    │   ├── We.yml
+    │   ├── Will.yml
+    │   ├── WordList.yml
+    │   ├── meta.json
+    │   └── vocab.txt
+    ├── Joblint
+    │   ├── Acronyms.yml
+    │   ├── Benefits.yml
+    │   ├── Bro.yml
+    │   ├── Competitive.yml
+    │   ├── Derogatory.yml
+    │   ├── DevEnv.yml
+    │   ├── DumbTitles.yml
+    │   ├── Gendered.yml
+    │   ├── Hair.yml
+    │   ├── LegacyTech.yml
+    │   ├── Meritocracy.yml
+    │   ├── Profanity.yml
+    │   ├── README.md
+    │   ├── Reassure.yml
+    │   ├── Sexualised.yml
+    │   ├── Starter.yml
+    │   ├── TechTerms.yml
+    │   ├── Visionary.yml
+    │   └── meta.json
+    ├── alex
+    │   ├── Ablist.yml
+    │   ├── Condescending.yml
+    │   ├── Gendered.yml
+    │   ├── LGBTQ.yml
+    │   ├── Press.yml
+    │   ├── ProfanityLikely.yml
+    │   ├── ProfanityMaybe.yml
+    │   ├── ProfanityUnlikely.yml
+    │   ├── README.md
+    │   ├── Race.yml
+    │   ├── Suicide.yml
+    │   └── meta.json
+    ├── proselint
+    │   ├── Airlinese.yml
+    │   ├── AnimalLabels.yml
+    │   ├── Annotations.yml
+    │   ├── Apologizing.yml
+    │   ├── Archaisms.yml
+    │   ├── But.yml
+    │   ├── Cliches.yml
+    │   ├── CorporateSpeak.yml
+    │   ├── Currency.yml
+    │   ├── Cursing.yml
+    │   ├── DateCase.yml
+    │   ├── DateMidnight.yml
+    │   ├── DateRedundancy.yml
+    │   ├── DateSpacing.yml
+    │   ├── DenizenLabels.yml
+    │   ├── Diacritical.yml
+    │   ├── GenderBias.yml
+    │   ├── GroupTerms.yml
+    │   ├── Hedging.yml
+    │   ├── Hyperbole.yml
+    │   ├── Jargon.yml
+    │   ├── LGBTOffensive.yml
+    │   ├── LGBTTerms.yml
+    │   ├── Malapropisms.yml
+    │   ├── Needless.yml
+    │   ├── Nonwords.yml
+    │   ├── Oxymorons.yml
+    │   ├── P-Value.yml
+    │   ├── RASSyndrome.yml
+    │   ├── README.md
+    │   ├── Skunked.yml
+    │   ├── Spelling.yml
+    │   ├── Typography.yml
+    │   ├── Uncomparables.yml
+    │   ├── Very.yml
+    │   └── meta.json
+    └── write-good
+        ├── Cliches.yml
+        ├── E-Prime.yml
+        ├── Illusions.yml
+        ├── Passive.yml
+        ├── README.md
+        ├── So.yml
+        ├── ThereIs.yml
+        ├── TooWordy.yml
+        ├── Weasel.yml
+        └── meta.json
 
-61 directories, 291 files
-
+79 directories, 486 files
 
 ```
