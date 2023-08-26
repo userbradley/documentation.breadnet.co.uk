@@ -54,6 +54,7 @@ nav:
           - Fly regions and scaling: cloud/fly/fly-regions.md
       - Google Cloud:
           - Metadata API:
+              - cloud/gcp/metadata-api/index.md
               - Get Project ID using Metadata Endpoint: cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md
               - Get Service Account using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md
               - View startup script on Google Compute Engine: cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
