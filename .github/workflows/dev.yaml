@@ -31,8 +31,8 @@ jobs:
         uses: userbradley/actions-fly@v1.0.0
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
-          configFile: "dev.toml"
-          dockerfileName: "dev.Dockerfile"
+          configFile: ${{ vars.CONFIG_FILE }}
+          dockerfileName: ${{ vars.DOCKERFILE }}
 
   sarif:
     needs:
@@ -40,15 +40,16 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan the Docker image
     steps:
+
       - name: Git Clone
         uses: actions/checkout@v3
 
-      - name: Get docker image
+      - name: Get docker image name
         uses: userbradley/action-fly-image-getter@dev
         id: getter
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
-          configFile: "dev.toml"
+          configFile: ${{ vars.CONFIG_FILE }}
 
       - name: Login to Fly Registry
         uses: docker/login-action@v2
@@ -57,8 +58,6 @@ jobs:
           username: x
           password: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
 
-      - name: Echo
-        run: echo ${{ steps.getter.outputs.image }}
 
       - name: Pull image
         run: docker pull ${{ steps.getter.outputs.image }}
