@@ -14,4 +14,4 @@ sudo google_metadata_script_runner startup
 
 ## Read next
 
-* [View startup script on Google Compute Engine](view-startup-script-on-google-compute-engine.md)
+* [View startup script on Google Compute Engine](metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md)

@@ -53,9 +53,11 @@ nav:
           - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
       - Google Cloud:
+          - Metadata API:
+              - Get Project ID using Metadata Endpoint: cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md
+              - Get Service Account using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md
+              - View startup script on Google Compute Engine: cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
           - Add external user to Google Cloud Platform Organization: cloud/gcp/add-external-user-to-org.md
-          - Get project using GCE Metadata API: cloud/gcp/api-get-project.md
-          - Get serviceAccount using GCE Metadata API: cloud/gcp/api-get-sa.md
           - Authenticate Twine to Google Artifact Registry: cloud/gcp/authenticate-twine-to-google-artifact-registry.md
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
@@ -78,7 +80,7 @@ nav:
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
           - "View logs for Enabled API's": cloud/gcp/view-logs-for-enabled-apis.md
-          - View startup script on Google Compute Engine: cloud/gcp/view-startup-script-on-google-compute-engine.md
+
       - Terraform:
           - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
           - Bulk delete from terraform state: cloud/terraform/bulk-delete-terraform-state.md
@@ -356,6 +358,7 @@ theme:
     - content.tabs.link
     - search.share
     # - search.highlight
+    - content.code.copy
 
 
 
@@ -403,6 +406,9 @@ plugins:
         'certifications/google-certs/gcp-architect/kubectl-commands.md' : 'kubernetes/kb/kubectl-commands.md'
         'kb/githubactions/auth-to-gar.md' : 'kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md'
         'kb/git/delete-old-runs-of-deleted-github-actions.md': 'kb/githubactions/delete-old-runs-of-deleted-github-actions.md'
+        'cloud/gcp/api-get-project.md': 'cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md'
+        'cloud/gcp/api-get-sa.md': 'cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md'
+        'cloud/gcp/view-startup-script-on-google-compute-engine.md': 'cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md'
   #- offline
 extra:
   social:
