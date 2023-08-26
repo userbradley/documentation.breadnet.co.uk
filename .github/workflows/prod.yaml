@@ -28,5 +28,6 @@ jobs:
       - name: Fly Build and Deploy
         uses: userbradley/actions-fly@v1.0.0
         with:
-          flyToken: ${{ secrets.FLY_ACCESS_TOKEN_PROD }}
-          configFile: "prod.toml"
+          flyToken: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
+          configFile: ${{ vars.CONFIG_FILE }}
+
