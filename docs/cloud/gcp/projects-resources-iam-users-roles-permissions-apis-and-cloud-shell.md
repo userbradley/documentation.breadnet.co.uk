@@ -1,8 +1,7 @@
 ---
-Title: Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell
+Title: "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell"
 reviewdate: '2022-01-01'
 ---
-# Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell
 
 ## Permissions
 

@@ -175,7 +175,7 @@ nav:
       - Mac:
           - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
       - Markdown:
-          - How to use git: kb/markdown/github-repos-and-stuff.md
+          - How to use git: kb/markdown/how-to-use-git.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md

@@ -3,8 +3,6 @@ title: Bookstack
 reviewdate: '2022-01-01'
 ---
 
-# Bookstack
-
 How to enable `Dark Mode` on Bookstack
 
 !!! Note

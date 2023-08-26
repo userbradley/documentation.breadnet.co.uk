@@ -3,8 +3,6 @@ title: Uninstalling netplan
 reviewdate: '2022-01-01'
 ---
 
-# Uninstalling netplan
-
 <!--suppress GrazieInspection -->
 <p id="bkmrk-hese-directions-have"><strong>These directions have been tested also to Ubuntu 18.04.1 and will very likely work also for any future release using <code>netplan</code> and <code>systemd</code>.</strong></p>
 <p id="bkmrk-there%27s-no-need-at-a">There's no need at all to fiddle with GRUB nor any manual file removal. The configuration set up in <code>/etc/networking</code> files and directories <strong>will survive reboots</strong>.</p>

@@ -3,7 +3,6 @@ title: cloud-init
 reviewdate: '2022-01-01'
 ---
 
-# cloud-init
 
 Cloud init is awesome, but a pain to set up.
 

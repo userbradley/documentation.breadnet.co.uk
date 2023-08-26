@@ -2,7 +2,6 @@
 title: Installing docker
 reviewdate: '2022-01-01'
 ---
-# Installing docker
 
 <p id="bkmrk-step-1-%E2%80%94-installing-">Step 1 — Installing Docker<br>The Docker installation package available in the official Ubuntu repository may not be the latest version. To ensure we get the latest version, we’ll install Docker from the official Docker repository. To do that, we’ll add a new package source, add the GPG key from Docker to ensure the downloads are valid, and then install the package.</p>
 <p id="bkmrk-first%2C-update-your-e">First, update your existing list of packages:</p>

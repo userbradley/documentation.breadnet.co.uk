@@ -3,8 +3,6 @@ title: Creating Minio users and assigning permissions
 reviewdate: '2022-01-01'
 ---
 
-
-
 ## Connect to the minio server
 
 ```

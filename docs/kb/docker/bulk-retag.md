@@ -3,7 +3,6 @@ title: Bulk retag
 reviewdate: '2022-01-01'
 ---
 
-# Bulk retag
 
 This page is now _superseded_ by [Copy images between repositories](copy-containers-between-repos.md)
 

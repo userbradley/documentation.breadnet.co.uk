@@ -3,8 +3,6 @@ title: Minio over s3fs
 reviewdate: '2022-01-01'
 ---
 
-# Minio over s3fs
-
 ## Create the password file
 
 ```bash
