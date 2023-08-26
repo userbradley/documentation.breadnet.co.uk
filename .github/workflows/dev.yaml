@@ -39,6 +39,9 @@ jobs:
       - site
     runs-on: ubuntu-latest
     name: Scan the Docker image
+    environment:
+      name: Development
+      url: https://dev-documentation.breadnet.co.uk
     steps:
 
       - name: Git Clone
