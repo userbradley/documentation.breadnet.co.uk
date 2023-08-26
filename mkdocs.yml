@@ -315,7 +315,7 @@ theme:
   name: material
   favicon: favicon.ico
   logo: favicon.png
-  custom_dir: !ENV [dir, "overrides-prod"]
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github-alt
     admonition:

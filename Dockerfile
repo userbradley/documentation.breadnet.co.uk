@@ -2,7 +2,7 @@ FROM squidfunk/mkdocs-material:latest as BUILDER
 WORKDIR /app
 COPY mkdocs.yml /app/mkdocs.yml
 COPY docs /app/docs
-COPY overrides-prod /app/overrides-prod
+COPY overrides /app/overrides
 
 RUN ["mkdocs", "build"]
 
