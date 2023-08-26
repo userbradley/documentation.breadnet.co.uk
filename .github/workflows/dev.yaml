@@ -48,5 +48,14 @@ jobs:
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_DEV }}
           configFile: "dev.toml"
-      - name: Echo
-        run: echo ${{ steps.getter.outputs.image }}
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ steps.getter.outputs.image }}
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results.sarif'
