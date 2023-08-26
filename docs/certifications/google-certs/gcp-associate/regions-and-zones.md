@@ -3,7 +3,6 @@ title: Regions and Zones
 reviewdate: '2022-01-01'
 ---
 
-# Regions and Zones
 
 Only deploying in to one DC can cause latency and issues, should your DC burn down, you lose the application. Secondly it can increase latency.
 

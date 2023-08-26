@@ -2,7 +2,6 @@
 title: Python install using Ansible
 reviewdate: '2022-01-01'
 ---
-# Python install using Ansible
 
 For some reporting, Ansible needs python!
 

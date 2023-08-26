@@ -1,5 +1,5 @@
 ---
-title: Github repo's and stuff
+title: How to use git
 reviewdate: '2022-01-01'
 ---
 # How to use git

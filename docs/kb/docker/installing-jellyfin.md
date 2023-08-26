@@ -3,7 +3,6 @@ title: Installing jellyfin
 reviewdate: '2022-01-01'
 ---
 
-# Installing jellyfin
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.shsh

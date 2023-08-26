@@ -3,7 +3,6 @@ title: Fingerprint on Linux Mint
 reviewdate: '2022-01-01'
 ---
 
-# Fingerprint on Linux Mint
 
 Use `fprintd` (lacks gui)
 

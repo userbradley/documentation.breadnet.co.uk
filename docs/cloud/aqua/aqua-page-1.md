@@ -3,7 +3,6 @@ title: Aqua - Page 1
 reviewdate: '2022-01-01'
 ---
 
-# Aqua - Page 1
 
 <h4 id="bkmrk-introduction">Introduction</h4>
 <p id="bkmrk-aqua-has-a-market-ar">Aqua has a market around the security of cloud deployments due to the lack of full stack control, down to restructuring  and refactoring. </p>

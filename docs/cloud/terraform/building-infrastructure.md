@@ -3,7 +3,6 @@ title: Terraform - Building infrastructure
 reviewdate: '2022-01-01'
 ---
 
-# Terraform - Building infrastructure
 
 <h5 id="bkmrk-picking-your-region">Picking your region</h5>
 <!--suppress ALL -->

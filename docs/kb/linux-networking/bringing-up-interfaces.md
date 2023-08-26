@@ -2,7 +2,6 @@
 title: Bringing up Interfaces
 reviewdate: '2022-01-01'
 ---
-# Bringing up Interfaces
 
 ## Bringing interfaces up/down
 

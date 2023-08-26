@@ -3,7 +3,6 @@ title: Google Compute Engine
 reviewdate: '2022-01-01'
 ---
 
-# Google Compute Engine
 
 
 In datacenters, applications are deployed to Physical machines, whereas in the cloud we provision a virtual server.

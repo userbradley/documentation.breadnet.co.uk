@@ -3,7 +3,6 @@ title: Formatting drive and auto mount
 reviewdate: '2022-01-01'
 ---
 
-# Formatting drive and auto mount
 
 <h2 id="bkmrk-list-logical-disks-a">List logical disks and partitions</h2>
 <p id="bkmrk-sudo-fdisk--l"><code>sudo fdisk -l</code></p>

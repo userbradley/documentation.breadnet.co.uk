@@ -3,8 +3,6 @@ title: OLD
 reviewdate: '2022-01-01'
 ---
 
-
-
 ## Adding s3fs
 ```bash
 sudo echo private:sectet > /etc/passwd-s3fs

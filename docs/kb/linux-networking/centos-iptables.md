@@ -3,8 +3,6 @@ title: Centos Iptables
 reviewdate: '2022-01-01'
 ---
 
-# Centos Iptables
-
 ```bash
 systemctl stop firewalld
 systemctl disable firewalld

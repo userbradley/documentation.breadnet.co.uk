@@ -3,7 +3,6 @@ title: DNS on Ubuntu
 reviewdate: '2022-01-01'
 ---
 
-# DNS on Ubuntu
 
 1. Install the resolvconf package.
 ```bash

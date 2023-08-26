@@ -3,7 +3,6 @@ title: GCP
 reviewdate: '2022-01-01'
 ---
 
-# GCP
 
 <h4 id="bkmrk-https%3A%2F%2Fdocs.google." class="cloud-headline3" data-text="1. Setting up a cloud solution environment"><a href="https://docs.google.com/document/d/1u6pXBiGMYj7ZLBN21x6jap11rG6gWk7n210hNnUzrkI/edit">https://docs.google.com/document/d/1u6pXBiGMYj7ZLBN21x6jap11rG6gWk7n210hNnUzrkI/edit</a></h4>
 <p id="bkmrk-https%3A%2F%2Fmedium.com%2F%40"><a href="https://medium.com/@sathishvj/writing-and-passing-the-google-cloud-associate-engineer-certification-a60c2f6d99c2">https://medium.com/@sathishvj/writing-and-passing-the-google-cloud-associate-engineer-certification-a60c2f6d99c2</a></p>

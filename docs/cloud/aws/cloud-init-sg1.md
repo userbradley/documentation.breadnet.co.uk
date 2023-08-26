@@ -3,7 +3,6 @@ title: AWS Cloud-init
 reviewdate: '2022-01-01'
 ---
 
-# AWS Cloud-init
 
 ```shell
 Content-Type: multipart/mixed; boundary="//"

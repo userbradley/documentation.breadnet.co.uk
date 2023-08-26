@@ -3,8 +3,6 @@ title: Reverse web proxy
 reviewdate: '2022-01-01'
 ---
 
-# Reverse web proxy
-
 go to `/etc/nginx/sites-available`
 
 copy the 'default' file to the new reverse name, so status.breadnet.co.uk

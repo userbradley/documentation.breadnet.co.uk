@@ -3,7 +3,6 @@ title: Networking and LB
 reviewdate: '2022-01-01'
 ---
 
-# Networking and LB
 
 You get an internal network, and an external. You cant have 2 resources with the same IP address
 However you can have separate resources with the same IP address if they are internal

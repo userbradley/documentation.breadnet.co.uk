@@ -3,7 +3,6 @@ title: SSH client setup using keys
 reviewdate: '2022-01-01'
 ---
 
-# SSH client setup using keys
 
 <h5 id="bkmrk-the-following-steps-">The following steps will set up your ssh keypairs on your local machine, copy the public key to your server, and configure your ssh client to use a specific private key with a server alias.</h5>
 <hr id="bkmrk-">

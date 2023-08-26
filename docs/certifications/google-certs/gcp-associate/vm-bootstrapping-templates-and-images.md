@@ -3,7 +3,6 @@ title: VM Bootstrapping, templates and Images
 reviewdate: '2022-01-01'
 ---
 
-# VM Bootstrapping, templates and Images
 
 You can bootstrap an instance with a startup script
 
