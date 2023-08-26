@@ -3,7 +3,6 @@ title: Gsuit - User administration
 reviewdate: '2022-01-01'
 ---
 
-# Gsuit - User administration
 
 <!--suppress ALL -->
 <p id="bkmrk-global-info-can-be-s">Global info can be set under `Account settings` but this has changed from `Company profile` </p>

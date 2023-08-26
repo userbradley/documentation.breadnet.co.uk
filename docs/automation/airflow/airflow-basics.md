@@ -1,7 +1,6 @@
 ---
 title: Airflow basics
-#reviewdate: '2022-01-01'
-outdated: true
+reviewdate: '2022-01-01'
 ---
 
 <!--suppress ALL -->

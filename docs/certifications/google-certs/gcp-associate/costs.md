@@ -2,7 +2,6 @@
 title: GCP Costs
 reviewdate: '2022-01-01'
 ---
-# GCP Costs
 
 <p id="bkmrk-when-using-the-cloud">When using the cloud you want to keep the costs as low as possible</p>
 <h4 id="bkmrk-sustained-use-discou">Sustained use discounts </h4>
