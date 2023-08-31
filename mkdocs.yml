@@ -5,6 +5,25 @@ nav:
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
           - Ansible install python: automation/ansible/python-install.md
+      - Terraform:
+          - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
+          - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
+          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
+          - Google IAP: automation/iac/terraform/google-iap.md
+          - Openstack error: automation/iac/terraform/openstack.md
+          - "Recursive delete of .terraform": automation/iac/terraform/recursive-delete-of-terraform.md
+          - Remote Data: automation/iac/terraform/remote-data.md
+          - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
+          - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - Terraform Sleep: automation/iac/terraform/terraform-sleep.md
+          - Terraform verbose: automation/iac/terraform/terraform-verbose.md
+          - tfupdate: automation/iac/terraform/tfupdate.md
+          - To string from list in terraform: automation/iac/terraform/to-string-from-list.md
+      - Terragrunt:
+          - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
+          - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
+          - Terragrunt in GitHub Actions: automation/iac/terragrunt/terragrunt-in-github-actions.md
+          - Terragrunt terraform auto -upgrade: automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
@@ -34,7 +53,7 @@ nav:
           - CKA Questions I need to spend more time on: certifications/cka/cka-practice-questions-struggled.md
           - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
           - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
-  - Cloud:
+  - Cloud Providers:
       - Aqua:
           - Aqua Page 1: cloud/aqua/aqua-page-1.md
           - Aqua Page 2: cloud/aqua/aqua-page-2.md
@@ -82,25 +101,7 @@ nav:
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
           - "View logs for Enabled API's": cloud/gcp/view-logs-for-enabled-apis.md
 
-      - Terraform:
-          - Building Infrastructure in terraform: cloud/terraform/building-infrastructure.md
-          - Bulk delete from terraform state: cloud/terraform/bulk-delete-terraform-state.md
-          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-          - Google IAP: cloud/terraform/google-iap.md
-          - Openstack error: cloud/terraform/openstack.md
-          - "Recursive delete of .terraform": cloud/terraform/recursive-delete-of-terraform.md
-          - Remote Data: cloud/terraform/remote-data.md
-          - Terraform lock file update: cloud/terraform/terraform-lock-file-update.md
-          - "Terraform plugin Cannot locate module locally, unknown reason": cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
-          - Terraform Sleep: cloud/terraform/terraform-sleep.md
-          - Terraform verbose: cloud/terraform/terraform-verbose.md
-          - tfupdate: cloud/terraform/tfupdate.md
-          - To string from list in terraform: cloud/terraform/to-string-from-list.md
-      - Terragrunt:
-          - Generate backend file for GCS with terragrunt: cloud/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
-          - Terragrunt generate block: cloud/terragrunt/terragrunt-generate-block.md
-          - Terragrunt in GitHub Actions: cloud/terragrunt/terragrunt-in-github-actions.md
-          - Terragrunt terraform auto -upgrade: cloud/terragrunt/terragrunt-terraform-auto-upgrade.md
+
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
@@ -410,6 +411,34 @@ plugins:
         'cloud/gcp/api-get-project.md': 'cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md'
         'cloud/gcp/api-get-sa.md': 'cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md'
         'cloud/gcp/view-startup-script-on-google-compute-engine.md': 'cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md'
+        'cloud/terraform/building-infrastructure.md': 'automation/iac/terraform/building-infrastructure.md'
+        'cloud/terraform/bulk-delete-terraform-state.md': 'automation/iac/terraform/bulk-delete-terraform-state.md'
+        'cloud/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md': 'automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md'
+        'cloud/terraform/google-iap.md': 'automation/iac/terraform/google-iap.md'
+        'cloud/terraform/openstack.md': 'automation/iac/terraform/openstack.md'
+        'cloud/terraform/recursive-delete-of-terraform.md': 'automation/iac/terraform/recursive-delete-of-terraform.md'
+        'cloud/terraform/remote-data.md': 'automation/iac/terraform/remote-data.md'
+        'cloud/terraform/terraform-lock-file-update.md': 'automation/iac/terraform/terraform-lock-file-update.md'
+        'cloud/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md': 'automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md'
+        'cloud/terraform/terraform-sleep.md': 'automation/iac/terraform/terraform-sleep.md'
+        'cloud/terraform/terraform-verbose.md': 'automation/iac/terraform/terraform-verbose.md'
+        'cloud/terraform/tfupdate.md': 'automation/iac/terraform/tfupdate.md'
+        'cloud/terraform/to-string-from-list.md': 'automation/iac/terraform/to-string-from-list.md'
+        'cloud/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md': 'automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md'
+        'cloud/terragrunt/terragrunt-generate-block.md': 'automation/iac/terragrunt/terragrunt-generate-block.md'
+        'cloud/terragrunt/terragrunt-in-github-actions.md': 'automation/iac/terragrunt/terragrunt-in-github-actions.md'
+        'cloud/terragrunt/terragrunt-terraform-auto-upgrade.md': 'automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md'
+
+
+
+
+
+
+
+
+
+
+
   #- offline
 extra:
   social:
