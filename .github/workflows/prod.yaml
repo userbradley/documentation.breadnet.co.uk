@@ -24,7 +24,7 @@ jobs:
       url: https://documentation.breadnet.co.uk
     steps:
       - name: Git Clone
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Fly Build and Deploy
         uses: userbradley/actions-fly@v1.0.0
         with:
