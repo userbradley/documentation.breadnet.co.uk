@@ -15,6 +15,7 @@ nav:
           - Remote Data: automation/iac/terraform/remote-data.md
           - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
           - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - Terraform refresh takes ages: automation/iac/terraform/terraform-refresh-takes-ages.md
           - Terraform Sleep: automation/iac/terraform/terraform-sleep.md
           - Terraform verbose: automation/iac/terraform/terraform-verbose.md
           - tfupdate: automation/iac/terraform/tfupdate.md
