@@ -3,10 +3,13 @@ on:
   push:
     branches:
       - dev
+  pull_request:
+    types: [ synchronize,opened ]
+
     paths:
       - docs/**
       - .github/workflows/dev.yaml
-      - overrides-dev/**
+      - overrides/**
       - mkdocs.yml
       - dev-robots.txt
       - .htpasswd
