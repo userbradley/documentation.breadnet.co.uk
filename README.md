@@ -4,78 +4,80 @@
 
 This repo houses all the public documentation that I have created over the years, recently migrated to mkdocs
 
-## Why `mkdocs`
+You can access it at [documentation.breadnet.co.uk](https://documentation.breadnet.co.uk)
 
-I have decided to go with `mkdocs` as it has a really easy to use admin interface.
+## What is the tech stack
 
-That was a joke. The real reason is the lack of admin interface. It reduces the attack vector and also means that I can
-edit the files anywhere I have access to git.
+This site runs on [fly.io](https://fly.io?ref=documentation.breadnet.co.uk) and is built using GitHub actions
 
-I hardly find my self editing files away from home, so I'm not too stressed.
+## Why mkdocs
+
+I used to run Bookstack for my documentation when I used to live at my parents house (because electricity was basically free)
+but since moving out I was unable to take my 48U server rack with me. Thanks Tory Government.
+
+Mkdocs is simple and flexible where I need it to be, but has very little attack surface.
+
+In fact, [if you can breach the website and prove a reverse shell I will pay you.](SECURITY.md)
+
+Mkdocs uses markdown files making it easy to use, as most engineers know how to write markdown
+
 
 ## Why Migrate
 
-As mentioned, I am fed-up with Bookstack and administering it.
-
-I love Bookstack. 100% - But the issue is I have outgrown the need to have a full-fledged CMS with user permissions etc.
-
-I think this is just me getting more mature and resizing that a full CMS is not needed.
-
-## Where it's now hosted
-
-At the moment [Documentation](https://documentation.breadnet.co.uk) is hosted
-on [Fly.io](https://fly.io)
+I used to run bookstack, but since moving I found it was becoming annoying to run and maintain the server. MKdocs runs as a docker
+container on anywhere that runs docker, or allows static content to be hosted.
 
 
+## How to Contribute
 
-# Contribute
+If you see an issue with a page or something isn't right, please contribute changes back.
 
-I encourage people to contribute to this.
+### Software you need installed to contribute
 
-You can do so by making a fork of this to your own account, making the changes and then open a PR in to DEV.
+1. Podman or Docker
 
-Ensure you have [direnv](https://direnv.net) installed.
+Make a fork of this repo to your account, make the changes then run the below
 
-Once `direnv` in installed, run `direnv allow .`
+```shell
+podman-compose up
+```
 
-Finally, `mkdocs serve`
+Or if you are using Docker:
 
-You will notice that the page layout, specifically navigation is different. This is intentional. It helps between reloads
+```shell
+docker compose up
+```
 
-# Uptime
+Navigate to [http://localhost:8080](http://localhost:8080) where you will see the site rendered.
 
-My Bookstack site will not remain active once the migration is complete.
 
-All pages that are migrated will redirect to their new home.
 
-Once the migration is complete, `bookstack.breadnet.co.uk` will redirect to `documentation.breadnet.co.uk`
+## Uptime
 
-# Migration plan
+This site is hosted on Fly and has a system in place to promote changes from Development to Production, meaning something
+would have had to go **really** wrong for the site to not be online
 
-The below has the assumption that the new mkdocs project is created, and there is a staging site
+Eventually I will create an archive of this site as a Google storage object that you can download, but until then if it goes down then
+just suffer.
 
-1. Export list of slugs from bookstack (sql)
-2. Export HTML of each page (sql)
-3. `HTML` to `markdown`
-4. Create pages
-5. Create navigation
+From the migration, the URl changed.  `bookstack.breadnet.co.uk` will redirect to `documentation.breadnet.co.uk`, and all
+pages that were originally on `bookstack` should now redirect to a page on mkdocs. see [redirect.conf](redirect.conf) for pages
 
-# Branches
 
-## master
 
-This branch houses the live site, available at [documentation.breadnet.co.uk](https://documentation.breadnet.co.uk)
+# Branching Strategy
 
-The site is only built on PR merge to master
+## main
+
+This is the main branch of the site and repo, which holds the live site that you can access.
+
+The Dev build must pass, and you require approval before merging in to main is allowed
 
 ## dev
 
 This branch houses the development site, which is built on each commit to `dev`
 
-Site is available at [dev-documentation.breadnet.co.uk](https://dev-documentation.breadnet.co.uk)
-
-You will know when you're on the development site, as the colors are red!
-
+By default, this site is not indexed by google, and has a password protecting it
 
 
 # File directory
@@ -204,9 +206,31 @@ You will know when you're on the development site, as the colors are red!
 │   ├── automation
 │   │   ├── airflow
 │   │   │   └── airflow-basics.md
-│   │   └── ansible
-│   │       ├── basics.md
-│   │       └── python-install.md
+│   │   ├── ansible
+│   │   │   ├── basics.md
+│   │   │   └── python-install.md
+│   │   └── iac
+│   │       ├── terraform
+│   │       │   ├── building-infrastructure.md
+│   │       │   ├── bulk-delete-terraform-state.md
+│   │       │   ├── failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
+│   │       │   ├── google-iap.md
+│   │       │   ├── openstack.md
+│   │       │   ├── recursive-delete-of-terraform.md
+│   │       │   ├── remote-data.md
+│   │       │   ├── terraform-lock-file-update.md
+│   │       │   ├── terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+│   │       │   ├── terraform-refresh-takes-ages.md
+│   │       │   ├── terraform-sleep.md
+│   │       │   ├── terraform-verbose.md
+│   │       │   ├── tfupdate.md
+│   │       │   └── to-string-from-list.md
+│   │       └── terragrunt
+│   │           ├── generate-backend-file-for-gcs-with-terragrunt.md
+│   │           ├── required-plugins-are-not-installed-terragrunt.md
+│   │           ├── terragrunt-generate-block.md
+│   │           ├── terragrunt-in-github-actions.md
+│   │           └── terragrunt-terraform-auto-upgrade.md
 │   ├── bookstack.md
 │   ├── car
 │   │   ├── index.md
@@ -261,52 +285,36 @@ You will know when you're on the development site, as the colors are red!
 │   │   │   ├── fly-real-ip.md
 │   │   │   ├── fly-regions.md
 │   │   │   └── index.md
-│   │   ├── gcp
-│   │   │   ├── add-external-user-to-org.md
-│   │   │   ├── api-get-project.md
-│   │   │   ├── api-get-sa.md
-│   │   │   ├── authenticate-twine-to-google-artifact-registry.md
-│   │   │   ├── curl-gcr-ar.md
-│   │   │   ├── curl-to-iap.md
-│   │   │   ├── export-gcp-dns-zone-to-bind-zone-file.md
-│   │   │   ├── export-to-terraform-using-gcloud-cli.md
-│   │   │   ├── filter-gcloud-output.md
-│   │   │   ├── forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
-│   │   │   ├── get-dnssec-keys-for-google-cloud-dns.md
-│   │   │   ├── get-project-name-of-gcs-bucket.md
-│   │   │   ├── grafeas.md
-│   │   │   ├── list-all-service-account-keys.md
-│   │   │   ├── print-secret-gcloud.md
-│   │   │   ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
-│   │   │   ├── re-run-startup-script-google-compute-engine.md
-│   │   │   ├── remove-the-lien-to-allow-deletion.md
-│   │   │   ├── serverless-vpc-access-for-cloudrun-across-projects.md
-│   │   │   ├── show-bq-table-schema.md
-│   │   │   ├── ssh-iap.md
-│   │   │   ├── sshuttle-using-google-iap.md
-│   │   │   ├── useful-gcloud-commands.md
-│   │   │   ├── view-hash-of-object-in-gcs.md
-│   │   │   ├── view-logs-for-enabled-apis.md
-│   │   │   └── view-startup-script-on-google-compute-engine.md
-│   │   ├── terraform
-│   │   │   ├── building-infrastructure.md
-│   │   │   ├── bulk-delete-terraform-state.md
-│   │   │   ├── failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-│   │   │   ├── google-iap.md
-│   │   │   ├── openstack.md
-│   │   │   ├── recursive-delete-of-terraform.md
-│   │   │   ├── remote-data.md
-│   │   │   ├── terraform-lock-file-update.md
-│   │   │   ├── terraform-plugin-cannot-locate-module-locally-unknown-reason.md
-│   │   │   ├── terraform-sleep.md
-│   │   │   ├── terraform-verbose.md
-│   │   │   ├── tfupdate.md
-│   │   │   └── to-string-from-list.md
-│   │   └── terragrunt
-│   │       ├── generate-backend-file-for-gcs-with-terragrunt.md
-│   │       ├── terragrunt-generate-block.md
-│   │       ├── terragrunt-in-github-actions.md
-│   │       └── terragrunt-terraform-auto-upgrade.md
+│   │   └── gcp
+│   │       ├── add-external-user-to-org.md
+│   │       ├── authenticate-twine-to-google-artifact-registry.md
+│   │       ├── curl-gcr-ar.md
+│   │       ├── curl-to-iap.md
+│   │       ├── curl-to-url-with-google-auth.md
+│   │       ├── export-gcp-dns-zone-to-bind-zone-file.md
+│   │       ├── export-to-terraform-using-gcloud-cli.md
+│   │       ├── filter-gcloud-output.md
+│   │       ├── forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+│   │       ├── get-dnssec-keys-for-google-cloud-dns.md
+│   │       ├── get-project-name-of-gcs-bucket.md
+│   │       ├── grafeas.md
+│   │       ├── list-all-service-account-keys.md
+│   │       ├── metadata-api
+│   │       │   ├── get-project-id-using-metadata-endpoint.md
+│   │       │   ├── get-service-account-using-metadata-endpoint.md
+│   │       │   ├── index.md
+│   │       │   └── view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
+│   │       ├── print-secret-gcloud.md
+│   │       ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+│   │       ├── re-run-startup-script-google-compute-engine.md
+│   │       ├── remove-the-lien-to-allow-deletion.md
+│   │       ├── serverless-vpc-access-for-cloudrun-across-projects.md
+│   │       ├── show-bq-table-schema.md
+│   │       ├── ssh-iap.md
+│   │       ├── sshuttle-using-google-iap.md
+│   │       ├── useful-gcloud-commands.md
+│   │       ├── view-hash-of-object-in-gcs.md
+│   │       └── view-logs-for-enabled-apis.md
 │   ├── favicon.ico
 │   ├── favicon.png
 │   ├── home
@@ -508,7 +516,9 @@ You will know when you're on the development site, as the colors are red!
 │   ├── mkdocs
 │   │   ├── add-review-date-to-page.md
 │   │   ├── expired-page-example.md
-│   │   └── index.md
+│   │   ├── index.md
+│   │   ├── mark-page-as-outdated.md
+│   │   └── outdated-page-example.md
 │   ├── not-found.md
 │   ├── robots.txt
 │   ├── stylesheets
@@ -517,12 +527,7 @@ You will know when you're on the development site, as the colors are red!
 │       └── security.txt
 ├── mkdocs.yml
 ├── nginx.conf
-├── overrides-dev
-│   └── partials
-│       ├── content.html
-│       └── integrations
-│           └── analytics.html
-├── overrides-prod
+├── overrides
 │   └── partials
 │       ├── content.html
 │       └── integrations
@@ -647,6 +652,6 @@ You will know when you're on the development site, as the colors are red!
         ├── Weasel.yml
         └── meta.json
 
-79 directories, 486 files
+78 directories, 490 files
 
 ```
