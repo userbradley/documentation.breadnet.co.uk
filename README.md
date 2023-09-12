@@ -35,6 +35,7 @@ If you see an issue with a page or something isn't right, please contribute chan
 ### Software you need installed to contribute
 
 1. Podman or Docker
+2. Pre-commit
 
 Make a fork of this repo to your account, make the changes then run the below
 
@@ -50,7 +51,15 @@ docker compose up
 
 Navigate to [http://localhost:8080](http://localhost:8080) where you will see the site rendered.
 
+### Pre commit
 
+We use pre-commit on this repo to keep bad things out
+
+```shell
+task pre-commit-install
+```
+
+This will install the pre-commit hooks on this repo, as well as run pre-commit on the files.
 
 ## Uptime
 
