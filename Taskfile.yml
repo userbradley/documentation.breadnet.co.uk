@@ -32,3 +32,4 @@ tasks:
     silent: true
     cmds:
       - pre-commit install
+      - task: pre-commit

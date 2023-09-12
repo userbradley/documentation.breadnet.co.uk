@@ -33,7 +33,7 @@ It now runs on [fly.io](https://fly.io) and is powered by [mkdocs](https://www.m
 
 The cool part is now I just write markdown files, and the site gets built on commit to dev.
 
-Once the dev site is checked and everything looks good, we can open a PR and merge to master.
+Once the dev site is checked and everything looks good, we can open a PR and merge to main.
 
 
 ### How the site gets _built_
@@ -46,4 +46,4 @@ I recently migrated from Codefresh to GitHub actions, so there is no longer a pr
 
 The pipelines are 60% faster since moving.
 
-You can see the pipeline config on [GitHub Actions](https://github.com/userbradley/documentation.breadnet.co.uk/blob/master/.github/workflows/prod.yaml)
+You can see the pipeline config on [GitHub Actions](https://github.com/userbradley/documentation.breadnet.co.uk/blob/main/.github/workflows/prod.yaml)
