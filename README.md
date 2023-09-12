@@ -61,6 +61,35 @@ task pre-commit-install
 
 This will install the pre-commit hooks on this repo, as well as run pre-commit on the files.
 
+## CI
+
+This repo uses a fair bit of CI for a simple site
+
+Below takes you through the actions that run when you open a Pull request
+
+### Auto Assign
+
+This action will automatically set the user who created the PR as the assignee and then set [@userbradley](https://github.com/userbradley) as the reviewer
+
+### Dev
+
+This action will build the site and deploy it to my Fly account. Nothing special is done here
+
+### Pre Commit
+
+This runs the pre-commit on the changes, and will error if there is something wrong.
+
+### Trufflehog Secret scaner
+
+Checks you've not accidentally commited a secret in to the repo!
+
+### Production
+
+This action runs only on commits to `main` (eg: through a Pull request)
+
+The action will deploy the site to my Fly account under the `documentation.breadnet.co.uk` domain
+
+
 ## Uptime
 
 This site is hosted on Fly and has a system in place to promote changes from Development to Production, meaning something
