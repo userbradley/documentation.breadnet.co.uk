@@ -4,8 +4,7 @@ on:
     branches:
       - dev
   pull_request:
-    types: [ synchronize,opened ]
-
+    types: [synchronize]
     paths:
       - docs/**
       - .github/workflows/dev.yaml
@@ -18,7 +17,6 @@ on:
       - deny.conf
       - dev-nginx.conf
       - dev.toml
-
 jobs:
   site:
     runs-on: ubuntu-latest
@@ -26,7 +24,6 @@ jobs:
     environment:
       name: Development
       url: https://dev-documentation.breadnet.co.uk
-
     steps:
       - name: Git Clone
         uses: actions/checkout@v4

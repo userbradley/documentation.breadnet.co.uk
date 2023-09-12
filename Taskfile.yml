@@ -1,5 +1,4 @@
 version: 3
-
 tasks:
   default:
     desc: Lists the available commands
@@ -28,3 +27,8 @@ tasks:
     silent: true
     cmds:
       - pre-commit run --all-files
+  pre-commit-install:
+    desc: Installs Pre-commit for the repo
+    silent: true
+    cmds:
+      - pre-commit install

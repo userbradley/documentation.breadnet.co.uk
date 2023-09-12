@@ -34,7 +34,7 @@ nav:
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
           - GCP Load balancer: certifications/google-certs/gcp-architect/gcp-load-balancer.md
       - Google Security:
-          - Google Security - Exam topics : certifications/google-certs/gcp-security/1-the-exam-topic.md
+          - Google Security - Exam topics: certifications/google-certs/gcp-security/1-the-exam-topic.md
           - Google Security - Page 1: certifications/google-certs/gcp-security/gcp-security-1.md
       - Gsuit administration:
           - Gsuit User administration: certifications/google-certs/workspace-admin/user-administration.md
@@ -85,7 +85,7 @@ nav:
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Curl to url with google auth: cloud/gcp/curl-to-url-with-google-auth.md
           - Export GCP DNS zone to bind zone file: cloud/gcp/export-gcp-dns-zone-to-bind-zone-file.md
-          - Export to terraform using gcloud cli:  cloud/gcp/export-to-terraform-using-gcloud-cli.md
+          - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
           - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
@@ -103,8 +103,6 @@ nav:
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
           - "View logs for Enabled API's": cloud/gcp/view-logs-for-enabled-apis.md
-
-
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
@@ -118,10 +116,10 @@ nav:
       - Dependabot:
           - Ignore terraform module version dependabot: kb/dependabot/ignore-terraform-module-version-dependabot.md
       - Disk management:
-        - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
-        - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
-        - Mount a new drive: kb/disk-management/mount-a-new-drive.md
-        - "GPT PMBR Size Mismatch will be corrected by w(rite)" : kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
+          - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
+          - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
+          - Mount a new drive: kb/disk-management/mount-a-new-drive.md
+          - "GPT PMBR Size Mismatch will be corrected by w(rite)": kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
       - Docker:
           - Installing Docker: kb/docker/installing-docker.md
           - Basics of docker: kb/docker/basics-of-docker.md
@@ -162,7 +160,7 @@ nav:
           - How to create tar.gz file: kb/linux-cli/how-to-create-tar-gz-file.md
           - List NFS Shares exported: kb/linux-cli/list-nfs-shares-exported.md
           - Lowercase to Uppercase: kb/linux-cli/lowercase-to-uppercase.md
-          - "The following signatures couldn't be verified because the public key is not available" : kb/linux-cli/the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
+          - "The following signatures couldn't be verified because the public key is not available": kb/linux-cli/the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
           - Uppercase to Lowercase: kb/linux-cli/uppercase-to-lowercase.md
           - uuidgen Lower case: kb/linux-cli/uuidgen-lowercase.md
           - "xcrun: error: invalid active developer path": kb/linux-cli/xcrun-error-invalid-active-developer-path.md
@@ -188,7 +186,7 @@ nav:
           - Built By badge: kb/markdown/built-by-badge.md
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
       - Minio:
-          - OLD : kb/minio/old.md
+          - OLD: kb/minio/old.md
           - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
           - Creating minio users and assigning permissions: kb/minio/creating-minio-users-and-assigning-permissions.md
       - Networking:
@@ -226,7 +224,7 @@ nav:
           - Cachet: kb/public-web-facing/cachet.md
           - Certbot: kb/public-web-facing/certbot.md
           - Check passbolt is Healthy: kb/public-web-facing/check-passbolt-is-healthy.md
-          - Serving breadNET when server is offline:  kb/public-web-facing/downloading-the-breadnet-site-and-serving-a-stale-copy.md
+          - Serving breadNET when server is offline: kb/public-web-facing/downloading-the-breadnet-site-and-serving-a-stale-copy.md
           - Jellyfin using S3 and Docker: kb/public-web-facing/jellyfin-using-s3-and-docker.md
           - Send test email on passbolt: kb/public-web-facing/send-test-email-on-passbolt.md
           - Wildcard Certificates: kb/public-web-facing/wildcard-certificates.md
@@ -293,7 +291,7 @@ nav:
           - Water: home/utilities/water.md
           - Electricity: home/utilities/electricity.md
       - Consumer Unit: home/cu/consumer-unit.md
-      - Oven : home/oven/oven.md
+      - Oven: home/oven/oven.md
       - Washing Machine: home/washing/washing-machine.md
       - Hot water heater:
           - Reducing temperature: home/water-heater/reduce-temperature.md
@@ -303,21 +301,15 @@ nav:
           - Leon:
               - Fix comfort close not working on Seat Leon: car/seat/leon/fix-comfort-close.md
               - Push Start Seat leon: car/seat/leon/push-start-seat-leon.md
-
-
 ## Config ##
-
-
 repo_name: documentation
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
-site_name: !ENV [env,"breadNET Documentation"]
+site_name: !ENV [env, "breadNET Documentation"]
 site_url: !ENV [domain, "https://documentation.breadnet.co.uk"]
 site_description: breadNET Documentation
-
 #extra_css:
 #  - stylesheets/custom.css # Custom header color
-
 theme:
   name: material
   favicon: favicon.ico
@@ -329,7 +321,7 @@ theme:
       note: octicons/tag-16
       abstract: octicons/checklist-16
       info: octicons/info-16
-     # tip: octicons/squirrel-16
+      # tip: octicons/squirrel-16
       success: octicons/check-16
       question: octicons/question-16
       warning: octicons/alert-16
@@ -338,7 +330,6 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-
   palette:
     - scheme: default
       primary: !ENV [color, ""]
@@ -364,9 +355,6 @@ theme:
     - search.share
     # - search.highlight
     - content.code.copy
-
-
-
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -401,15 +389,14 @@ markdown_extensions:
       user: userbradley
       repo_url_shortener: true
       repo_url_shorthand: true
-
 plugins:
   - search
   - social
   - redirects:
       redirect_maps:
-        'kb/public-web-facing/jellyfin-s3.md' : 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
-        'certifications/google-certs/gcp-architect/kubectl-commands.md' : 'kubernetes/kb/kubectl-commands.md'
-        'kb/githubactions/auth-to-gar.md' : 'kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md'
+        'kb/public-web-facing/jellyfin-s3.md': 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
+        'certifications/google-certs/gcp-architect/kubectl-commands.md': 'kubernetes/kb/kubectl-commands.md'
+        'kb/githubactions/auth-to-gar.md': 'kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md'
         'kb/git/delete-old-runs-of-deleted-github-actions.md': 'kb/githubactions/delete-old-runs-of-deleted-github-actions.md'
         'cloud/gcp/api-get-project.md': 'cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md'
         'cloud/gcp/api-get-sa.md': 'cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md'
@@ -431,18 +418,7 @@ plugins:
         'cloud/terragrunt/terragrunt-generate-block.md': 'automation/iac/terragrunt/terragrunt-generate-block.md'
         'cloud/terragrunt/terragrunt-in-github-actions.md': 'automation/iac/terragrunt/terragrunt-in-github-actions.md'
         'cloud/terragrunt/terragrunt-terraform-auto-upgrade.md': 'automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md'
-
-
-
-
-
-
-
-
-
-
-
-  #- offline
+        #- offline
 extra:
   social:
     - icon: fontawesome/brands/linkedin

@@ -13,8 +13,6 @@ on:
       - deny.conf
       - dev-nginx.conf
       - prod.toml
-
-
 jobs:
   site:
     runs-on: ubuntu-latest
