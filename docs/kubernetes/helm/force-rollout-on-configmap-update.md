@@ -28,7 +28,7 @@ Adding the below in to the `deployment.yaml` file will cause helm to basically `
 === "Subdirectory"
 
     This is for when you have a folder splitting out say, _backend_ and _frontend_
-    
+
     ```yaml
       template:
         metadata:

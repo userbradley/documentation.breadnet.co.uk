@@ -16,7 +16,7 @@ The AWS Alternative is [Spot Instances](https://aws.amazon.com/ec2/spot/)
 === "Default namespace"
 
     ```shell
-    kubectl get pods --field-selector status.phase!=Running  -o name | xargs kubectl delete 
+    kubectl get pods --field-selector status.phase!=Running  -o name | xargs kubectl delete
     ```
 
 === "Specify Namespace"
@@ -26,5 +26,5 @@ The AWS Alternative is [Spot Instances](https://aws.amazon.com/ec2/spot/)
     ```
 
     !!! note
-        
+
         A better solution is to use something like [kubectx + kubens](https://github.com/ahmetb/kubectx)

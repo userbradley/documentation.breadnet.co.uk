@@ -10,7 +10,7 @@ Locate the root partition
 df -h
 ```
 
-Should look like the below 
+Should look like the below
 
 ```bash hl_lines="5"
 [stannardb@xc-]:~$ df -h

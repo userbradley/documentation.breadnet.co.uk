@@ -128,7 +128,7 @@ server {
 
     root /var/www/documentation;
     index  index.html;
-+   include /etc/nginx/cloudflare.conf;   
++   include /etc/nginx/cloudflare.conf;
 }
 ```
 

@@ -23,9 +23,9 @@ brew install kompose
 === "Default"
 
     Open a directory with a `docker-compose.yaml` file in it
-    
+
     Run the below
-    
+
     ```shell
     kompose convert
     ```
@@ -33,7 +33,7 @@ brew install kompose
 === "Pick a specific file"
 
     You can then specify any docker compose file
-    
+
     ```
     kompose --file docker-voting.yml convert
     ```

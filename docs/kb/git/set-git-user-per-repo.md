@@ -13,7 +13,7 @@ This then causes stuff to show up badly.
 
 ### Git commands
 
-Navigate to your repo you wish to change 
+Navigate to your repo you wish to change
 
 Run the below
 

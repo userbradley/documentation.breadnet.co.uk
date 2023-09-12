@@ -145,7 +145,7 @@ reviewdate: '2022-01-01'
   }</code></pre>
 <p id="bkmrk-depending-on-the-nee">Depending on the need, you can assign the vm's a static ip by defining another resource, this time calling it by the google_compute_address</p>
 <pre id="bkmrk-resource-%22google_com-0"><code class="language-JSON">resource "google_compute_address" "vm_static_ip" {
-    name = "terraform-static-ip"  
+    name = "terraform-static-ip"
 }</code></pre>
 <h4 id="bkmrk-creating-the-instanc">Creating the Instance</h4>
 <p id="bkmrk-as-always%2C-when-crea">As always, when creating something in terraform, we need to define it as a resource. In this case we will use the <code>google_compute_instance.vm_instance</code> which tells google, bro, spin me up a vm</p>
@@ -163,7 +163,7 @@ reviewdate: '2022-01-01'
 <h5 id="bkmrk-%C2%A0-1">More networking</h5>
 <p id="bkmrk-finally-we-add-the-i">Finally we add the IP address and allow nat:</p>
 <pre id="bkmrk-network_interface-%7B-"><code class="language-JSON">network_interface {
-    network = google_compute_network.vpc_network.name 
+    network = google_compute_network.vpc_network.name
         access_config {
             nat_ip = google_compute_address.vm_static_ip.address
         }

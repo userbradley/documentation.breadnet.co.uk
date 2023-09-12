@@ -11,7 +11,7 @@ title: Get the Real IP address from fly when behind cloudflare
 
 It's not really needed too much on the Fly side, it's more _a nice to have_.
 
-We have this _issue_ when you put an instance behind Cloudflare and enable the proxy, you don't get the Real IP address of the 
+We have this _issue_ when you put an instance behind Cloudflare and enable the proxy, you don't get the Real IP address of the
 device connecting, you get the Cloudflare exit node IP
 
 ```shell
@@ -21,7 +21,7 @@ device connecting, you get the Cloudflare exit node IP
 
 ## Solution
 
-You will need to navigate to both the links below and grab the up-to-date IP's 
+You will need to navigate to both the links below and grab the up-to-date IP's
 
 * [CF V4](https://www.cloudflare.com/ips-v4)
 * [CF V6](https://www.cloudflare.com/ips-v6)

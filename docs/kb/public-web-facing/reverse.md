@@ -6,10 +6,10 @@ title: Reverse server
 
 This page is dedicated to the server that ran breadNET, all the way from the start.
 
-This was the first ever server I deployed to the cloud, and it's been running from: **25th February 2022 at 10:26 PM** 
+This was the first ever server I deployed to the cloud, and it's been running from: **25th February 2022 at 10:26 PM**
 till **10th April 2023 11:51 PM**
 
-It ran (in no specific order): 
+It ran (in no specific order):
 
 - Bookstack
 - Ghost

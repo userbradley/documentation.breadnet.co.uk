@@ -11,7 +11,7 @@ title: Water
 
 ## Where is my Shutoff valve
 
-The shut-off valves are located in the **main entrance** on the **right hand side**  
+The shut-off valves are located in the **main entrance** on the **right hand side**
 
 ## Which one is mine
 
@@ -28,7 +28,7 @@ The numbering is done Right to Left. On the Blue pipe will be written the number
 3. Turn right
 4. Pull the board off
 5. Locate your valve
-6. Turn it Clockwise 
+6. Turn it Clockwise
 
 ## How to turn off the water in the apartment
 

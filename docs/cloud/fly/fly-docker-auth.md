@@ -6,7 +6,7 @@ title: Authenticate to Fly docker Registry
 
 ## What
 
-Fly.io run their own Docker registry we can push images to. I'm still working out what the difference between the 2 is in terms of speed, as 
+Fly.io run their own Docker registry we can push images to. I'm still working out what the difference between the 2 is in terms of speed, as
 you have to take in to factor:
 
 * Pushing from Codefresh

@@ -60,5 +60,3 @@ TypeError: '<' not supported between instances of 'datetime.date' and 'str'
 -reviewdate: 2023-10-22
 +reviewdate: '2023-10-22'
 ```
-
-

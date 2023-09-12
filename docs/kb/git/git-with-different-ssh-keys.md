@@ -8,7 +8,7 @@ title: Git with different SSH keys
 
 I volunteer for scouts (which use bitbucket) and have a day job (which use bitbucket)
 
-The issue is that I have my laptop SSH keys added to my work account, but to be able to git clone the repos on the scouts account, 
+The issue is that I have my laptop SSH keys added to my work account, but to be able to git clone the repos on the scouts account,
 would have to add different keys.
 
 You would think I could set up an SSH config, but the domains are both `git@bitbucket.org`
@@ -17,7 +17,7 @@ You would think I could set up an SSH config, but the domains are both `git@bitb
 
 ### Create SSH keys
 
-Create `ssh` keys for this 
+Create `ssh` keys for this
 
 Call the keys `scouts-bitbucket` or anything else
 ```shell
@@ -35,5 +35,5 @@ export GIT_SSH_COMMAND="ssh -i ~/.ssh/scouts-bitbucket -o IdentitiesOnly=yes"
 ### Add the public key to BitBucket
 
 ```shell
-cat ~/.ssh/scouts-bitbucket | pbcopy 
+cat ~/.ssh/scouts-bitbucket | pbcopy
 ```

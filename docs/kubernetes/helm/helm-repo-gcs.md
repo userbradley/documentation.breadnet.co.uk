@@ -25,9 +25,9 @@ helm plugin update gcs
 
 ## Init the bucket
 
-!!! Note 
-    
-    We only need to do this once when we create a new bucket. 
+!!! Note
+
+    We only need to do this once when we create a new bucket.
 
 ```shell
 helm gcs init gs://bysd-helmstore

@@ -19,4 +19,3 @@ _The above assumes you have SSH listening on port 22_
 ```shell
 gcloud compute ssh --zone "<zone of instance>" "<instance name>"  --project "<project>" --tunnel-through-iap
 ```
-

@@ -14,7 +14,7 @@ You can press `space` to view the status
 nmap -Pn <ip>
 ```
 
-Scans top 1000 port, but will not enumerate past synack 
+Scans top 1000 port, but will not enumerate past synack
 
 ## Service Enumeration
 

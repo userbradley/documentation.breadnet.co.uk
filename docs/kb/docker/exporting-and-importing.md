@@ -16,7 +16,7 @@ When importing it doesn't pull over the run command, just the file system.
 We need to import it differently
 
 ```shell
-docker import \                       
+docker import \
 --change 'CMD ["command", "goes", "here"]' \
 <file>.zip <image>:<tag>
 ```

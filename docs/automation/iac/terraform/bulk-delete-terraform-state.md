@@ -84,12 +84,9 @@ We need to do this as passing `google_folder_iam_member.test["roles/viewer"]` wi
     ```shell
     terragrunt state list | grep "test" | sed "s/.*/'&'/" | xargs terragrunt state rm
     ```
-    
+
 === "Terraform"
 
     ```shell
     terraform state list | grep "test" | sed "s/.*/'&'/" | xargs terraform state rm
     ```
-
-
-

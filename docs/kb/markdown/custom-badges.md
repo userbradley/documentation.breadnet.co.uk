@@ -33,9 +33,9 @@ Replace <brand> with the brands icon name.
 
 ??? note "Brand names with spaces"
 
-    Where the brand has a space in the name, like `Pets at Home` you will need to use the 
+    Where the brand has a space in the name, like `Pets at Home` you will need to use the
     url encoded value of a space: `%20`
-    
+
     It will look like `Pets%20at%20Home`
 
 Example
@@ -45,14 +45,14 @@ Example
 ```
 
 
-## Examples 
+## Examples
 
 === "Pets at Home"
 
     === "Badge"
-    
+
         ![Pets at Home](https://img.shields.io/badge/Pets%20At%20Home-%23000000.svg?style=for-the-badge&logo=petsathome&logoColor=#4BA840)
-    
+
         ![PAH](https://img.shields.io/badge/pets%20at%20home-%234BA840?style=for-the-badge&logo=petsathome&logoColor=white)
 
     === "Markdown"
@@ -60,7 +60,7 @@ Example
         ```markdown
         ![Pets at Home](https://img.shields.io/badge/Pets%20At%20Home-%23000000.svg?style=for-the-badge&logo=petsathome&logoColor=#4BA840)
         ```
-        
+
         ```markdown
         ![PAH](https://img.shields.io/badge/pets%20at%20home-%234BA840?style=for-the-badge&logo=petsathome&logoColor=white)
         ```
@@ -69,19 +69,19 @@ Example
 === "American Express"
 
     === "Badge"
-    
+
         ![American Express](https://img.shields.io/badge/American%20Express-%23000000.svg?style=for-the-badge&logo=americanexpress&logoColor=#2E77BC)
 
     === "Markdown"
 
         ```markdown
         ![American Express](https://img.shields.io/badge/American%20Express-%23000000.svg?style=for-the-badge&logo=americanexpress&logoColor=#2E77BC)
-        ``` 
-    
+        ```
+
 
     !!! note "About the Color"
         The background color is back as the brands image is the same as the background, thus causing it to look bad
 
 === "Deutsche Bank"
-    
+
     ![deutschebank](https://img.shields.io/badge/deutschebank-%230018A8.svg?style=for-the-badge&logo=deutschebank&logoColor=#0018A8)

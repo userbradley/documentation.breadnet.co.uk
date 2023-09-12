@@ -26,4 +26,3 @@ sudo mkdir /mnt/s3
 ```bash
 s3fs <bucket> /mnt/s3 -o passwd_file=/etc/passwd-s3fs,use_path_request_style,url=https://s3.breadnet.co.uk:9000
 ```
-

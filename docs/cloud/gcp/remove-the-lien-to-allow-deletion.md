@@ -39,8 +39,8 @@ This is caused when a Lien is applied to a project to prevent accidental deletio
 │   }
 │ ]
 │ , failedPrecondition
-│ 
-│ 
+│
+│
 ╵
 ERRO[0022] Terraform invocation failed in /Users/<>
 ERRO[0022] 1 error occurred:
@@ -83,5 +83,5 @@ Depending on how you are managing the project, your mileage may vary
     ```
 
 === "UI"
-    
+
     Learn to use Terraform

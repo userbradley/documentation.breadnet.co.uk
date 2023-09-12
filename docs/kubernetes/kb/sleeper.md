@@ -60,7 +60,7 @@ Sometimes we need to run a pod on the cluster to exec in to and test things, lik
           envFrom:
             - configMapRef:
                 name: <config map name>
-    
+
     ```
 
 ## Exec in to the pod

@@ -29,14 +29,14 @@ In the file, paste the below
     !!! question "What are user managed keys?"
         User managed keys are the keys you create through the UI
 
-    
+
     ```shell
     gcloud projects list --format="value(project_id)" | while read -r project_id; do
          gcloud iam service-accounts list --project=$project_id --format='value(email)' | while read -r sa_email; do
            echo "Service Account: $sa_email"
            gcloud iam service-accounts keys list --iam-account=$sa_email --managed-by=user; done
     done
-    
+
     ```
 
 

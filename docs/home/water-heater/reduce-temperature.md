@@ -8,7 +8,7 @@ title: Reduce water heater operating temperature
     This guide is designed only for the `TDX120ERP`
 
 !!! note "Increased water usage"
-    By reducing the temperature of the water, you will use more hot water to get the shower/ bath to the same temperature 
+    By reducing the temperature of the water, you will use more hot water to get the shower/ bath to the same temperature
     that you previously enjoyed.
 
     If you take short showers (and no baths) then I reccomend doing this, but if you have 2+ people that have long showers it's best to not bother
@@ -43,13 +43,13 @@ We are able to set the temperature between the below values
 |---------------------------------------|--------------------------------------|
 | 68°C <sup>(154.4 freedom units)</sup> | 12°C <sup>(53.6 freedom units)</sup> |
 
-Once the cover is open, locate the Thermostat. 
+Once the cover is open, locate the Thermostat.
 
 ![Thermo](../../assets/heater_thermo.jpeg)
 
 !!! Info
     Familiarize your self with the below diagram.
- 
+
     Turning to the left will **decrease** the heat
 
     Turning to the right will **Increase** the heat
@@ -60,7 +60,7 @@ Once the cover is open, locate the Thermostat.
 === "Turn the temperature down"
 
     Turn the screw towards the **left**
-    
+
     You will hear a slight `click` noise as you go to the left. That will be the original heat setting.
 
 === "Turn the temperature up"

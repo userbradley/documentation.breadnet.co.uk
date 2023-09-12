@@ -13,7 +13,7 @@ Using your fingerprint already enrolled on the mac prevents someone from being a
 ## How
 
 
-Edit the below file in your favourite editor 
+Edit the below file in your favourite editor
 
 === "Nano"
 
@@ -40,7 +40,7 @@ session    required       pam_permit.so
 ```
 
 
-Add the below line just under `# sudo: auth account password session` 
+Add the below line just under `# sudo: auth account password session`
 
 
 ```text

@@ -36,14 +36,14 @@ variable "project" {
 resource "google_container_cluster" "primary" {
   name                        = "workload-id-cluster"
   project                     = var.project
-  
+
 
   node_config {
-    
+
     metadata = {
-      disable-legacy-endpoints = true 
+      disable-legacy-endpoints = true
     }
-    
+
     workload_metadata_config {
       mode = "GKE_METADATA" # (1)!
     }
@@ -77,7 +77,7 @@ grant it IAM access to
 
 #### google_project_iam_member.gcp-wid-user
 
-This allows the service account to be used by the GKE cluster as a workload identity user. 
+This allows the service account to be used by the GKE cluster as a workload identity user.
 
 #### google_project_iam_member.gke-wid-user
 
@@ -99,11 +99,11 @@ resource "google_project_iam_member" "gcp-wid-user" {
 resource "google_project_iam_member" "gke-wid-user" {
   project = "workload-id-cluster-example"
   role    = "roles/iam.workloadIdentityUser"
-  member  = "serviceAccount:${var.project}.svc.id.goog[wid-example-ns/wid-example]" #(1)! 
+  member  = "serviceAccount:${var.project}.svc.id.goog[wid-example-ns/wid-example]" #(1)!
 }
 ```
 
-1. This is in the format of 
+1. This is in the format of
 
     ```
     [<kubernetes Namespace>/<Kubernetes Service account name>

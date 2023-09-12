@@ -7,7 +7,7 @@ title: Show Broadband password on EE router
 !!! warning "I accept no responsibility"
     You're probably an adult, and probably chose to follow this with your own free will.
 
-    I accept no responsibility if this breaks things. 
+    I accept no responsibility if this breaks things.
 
 ## Why
 
@@ -26,7 +26,7 @@ Click on `Advanced Setings`
 ![img_1.png](../../assets/ee-router-advanced.png)
 
 
-Click on `Boradband` 
+Click on `Boradband`
 
 ![img.png](../../assets/ee-router-system.png)
 
@@ -65,4 +65,4 @@ You will see the password show up, you will need to be quick to copy and paste i
 ![ee-show-password.png](../../assets/ee-show-password.png)
 
 
-You are now free to do what ever you want with this password. 
+You are now free to do what ever you want with this password.

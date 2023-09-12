@@ -21,20 +21,20 @@ $ sudo sh get-docker.sh</code></pre>
 <pre id="bkmrk-sudo-docker-run-dock"><code class="language-">sudo docker run docker/whalesay cowsay hello</code></pre>
 <p id="bkmrk-which-looks-like-thi">which looks like this!</p>
 <pre id="bkmrk-root%40dockethost%3A%7E%2Fdo"><code class="language-SQL">root@DocketHost:~/docker/graphhopper# sudo docker run docker/whalesay cowsay hello
- _______ 
+ _______
 &lt; hello &gt;
- ------- 
+ -------
     \
      \
-      \     
-                    ##        .            
-              ## ## ##       ==            
-           ## ## ## ##      ===            
-       /""""""""""""""""___/ ===        
-  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-       \______ o          __/            
-        \    \        __/             
-          \____\______/   
+      \
+                    ##        .
+              ## ## ##       ==
+           ## ## ## ##      ===
+       /""""""""""""""""___/ ===
+  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
+       \______ o          __/
+        \    \        __/
+          \____\______/
 </code></pre>
 <p id="bkmrk-now-we-know-docker-i">now we know docker is working</p>
 <h4 id="bkmrk-%C2%A0-0"> </h4>

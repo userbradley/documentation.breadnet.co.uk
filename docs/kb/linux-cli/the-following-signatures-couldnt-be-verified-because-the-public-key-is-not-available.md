@@ -8,7 +8,7 @@ I got this error when installing Unifi
 
 ``` yaml
 root@unifi-01:~# sudo apt-get update
-                   
+
 Err:5 https://dl.ubnt.com/unifi/debian stable InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 06E85760C0A52C50 # (1)
 Reading package lists... Done

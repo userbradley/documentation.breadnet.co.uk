@@ -12,7 +12,7 @@ Sometimes we just need a text based list of projects, or compute engine instance
 
 In this example I am using the `gcloud alpha projects list --folder=<>"` to get a list of projects
 
-## Make note of the headers 
+## Make note of the headers
 
 The output of the command looks like the below
 

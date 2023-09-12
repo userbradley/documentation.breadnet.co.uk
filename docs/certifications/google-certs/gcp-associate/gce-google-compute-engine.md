@@ -34,6 +34,4 @@ Memory disk and networking increase with vcpu increase
 There are many images on GCP.
 
 We have access to many public images
-We are also able to make custom images 
-
- 
+We are also able to make custom images

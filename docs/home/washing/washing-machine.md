@@ -26,7 +26,7 @@ The washing machine has `9` buttons
 | `Delay Timer`        | Fourth button from the left on the top row          | Sets a delay in increments of `3` hours, See [Time lights](#hour-lights)              |
 | `Start/ Pause`       | Far right hand side button at top with :play_pause: | Starts or pauses a wash - See [Door does not open](#door-is-not-opening)              |
 | Temperature selector | Second _knob_ from the left                         | Used to set water temperature for a wash                                              |
-| Drying mode          | Third _knob_ from the left                          | Used to set the temperature the machine should dry clothes at - See [Drying](#drying) |                    
+| Drying mode          | Third _knob_ from the left                          | Used to set the temperature the machine should dry clothes at - See [Drying](#drying) |
 
 
 
@@ -42,7 +42,7 @@ To work out when the machine is done, you can wait until the machine beeps, and 
 
 #### Hour lights
 
-When using the delay mode, the lights will light up in order of `3h` to `9h` 
+When using the delay mode, the lights will light up in order of `3h` to `9h`
 
 
 ### Setting a delay
@@ -74,7 +74,7 @@ We are able to mix colors for the most part.
 
 Set the `Selector Knob` to the number `2` - Which signifies `Mix Colors`
 
-Set the `Temprature` selector to `40c` 
+Set the `Temprature` selector to `40c`
 
 !!! info "Drying Selector"
     Ensure that the `Drying Mode` is set to `0` otherwise you run the risk of damaging clothes, or causing large power bills
@@ -118,40 +118,40 @@ Please select below how soiled the materials are
 === "Highly soiled"
 
     We are able to mix colors for the most part.
-    
+
     !!! warning "Bright colors"
         Take special care to items that are brightly colored, and have not been washed before. They should be washed on their own 4-5 times before
-    
+
     Set the `Selector Knob` to the number `8` - Which signifies `Sport intensive`
-    
+
     Set the `Temprature` selector to `90c`
-    
+
     !!! info "Drying Selector"
         Ensure that the `Drying Mode` is set to `0` otherwise you run the risk of damaging clothes, or causing large power bills
-    
+
     Depending on the amount of clothing in the drum, put between 3-5 caps worth of detergent in the washing machines drum **directly**
-    
+
     Close the door and press the :play_pause: button
 
 
 === "Lightly soiled"
 
     We are able to mix colors for the most part.
-    
+
     !!! warning "Bright colors"
         Take special care to items that are brightly colored, and have not been washed before. They should be washed on their own 4-5 times before
-    
+
     Set the `Selector Knob` to the number `2` - Which signifies `Mixe Colors`
 
     Press the `Intensive wash` button
-    
+
     Set the `Temprature` selector to `50c`
-    
+
     !!! info "Drying Selector"
         Ensure that the `Drying Mode` is set to `0` otherwise you run the risk of damaging clothes, or causing large power bills
-    
+
     Depending on the amount of clothing in the drum, put between 3-5 caps worth of detergent in the washing machines drum **directly**
-    
+
     Close the door and press the :play_pause: button
 
 
@@ -163,7 +163,7 @@ Sometimes if we are washing large loads of clothing the machine may not spin eno
 We are able to request a second spin cycle.
 
 1. Ensure the door is closed and the previous cycle has concluded
-2. Set the `Selector knob` to `15` 
+2. Set the `Selector knob` to `15`
 3. Press the :play_pause: button
 
 The cycle is completed when the machine unlocks
@@ -173,7 +173,7 @@ The cycle is completed when the machine unlocks
 You can set the machine to either _add a drying cycle_ to the end of a wash, or dry as a seperate function
 
 !!! warning "About the drying mode"
-    It has the potential to shrink clothing and cause increased electricity usage. 
+    It has the potential to shrink clothing and cause increased electricity usage.
 
 
 #### Dry as part of a wash
@@ -193,7 +193,7 @@ This will add a drying cycle to the end of the wash
 
 ## Troubleshooting
 
-### Door is not opening 
+### Door is not opening
 
 This can happen when the machine is in a failed state.
 
@@ -213,4 +213,4 @@ It's the second switch in from the light switch.
 
 #### Door continues to fail to open
 
-Please contact the management company for the apartment. 
+Please contact the management company for the apartment.

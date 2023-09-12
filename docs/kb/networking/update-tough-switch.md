@@ -32,7 +32,7 @@ Host 192.168.1.20 # (1)!
     Ciphers aes128-cbc
 ```
 
-1. Replace the IP address with that of the switch you're connecting to. 
+1. Replace the IP address with that of the switch you're connecting to.
 
 ## Copy the files to the switch
 
@@ -57,4 +57,4 @@ fwupdate -m
 
 !!! Note "Do not panic"
     It will take around 5-10 minutes after running the command.
-    DO NOT power off the switch, however you are able to unplug your computer. 
+    DO NOT power off the switch, however you are able to unplug your computer.

@@ -11,7 +11,7 @@ This is an error you see when trying to log in or create a new user on a WordPre
 Add the below line to the `wp-config.php` file
 
 ```php
-$_SERVER['HTTPS'] = true; 
+$_SERVER['HTTPS'] = true;
 ```
 
 It should look like the below
@@ -19,7 +19,7 @@ It should look like the below
 ```diff
 
 <?php
-+ $_SERVER['HTTPS'] = true; 
++ $_SERVER['HTTPS'] = true;
 /**
  * The base configuration for WordPress
  *

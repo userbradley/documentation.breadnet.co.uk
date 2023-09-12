@@ -10,7 +10,7 @@ title: Useful gcloud commands
 gcloud projects list
 ```
 
-## List organizations 
+## List organizations
 
 ```shell
 gcloud organizations list --format="value(ID)"
@@ -43,4 +43,3 @@ gcloud compute networks subnets list --project=<>
 ## Additional Reading
 
 * [Gcloud cheat sheet](https://gist.github.com/pydevops/cffbd3c694d599c6ca18342d3625af97)
-

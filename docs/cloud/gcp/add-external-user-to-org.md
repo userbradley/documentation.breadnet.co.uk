@@ -12,7 +12,7 @@ Sometimes you need to add external users to your Google Cloud Platform for maint
 
 ### Navigating to IAM console
 
-Navigate to [Google Cloud Console](https://console.cloud.google.com/home/dashboard) 
+Navigate to [Google Cloud Console](https://console.cloud.google.com/home/dashboard)
 
 Use the project Selector at the **top left** of the window to open the Projects window
 

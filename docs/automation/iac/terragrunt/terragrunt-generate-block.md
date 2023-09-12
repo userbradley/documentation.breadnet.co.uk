@@ -30,7 +30,7 @@ Terragrunt `generate` block has several features:
 === "Skip"
 
     The below will then skip re-creating the file if it exists already. This is useful for templating out repos.
-    
+
     ``` terraform
     generate "exmaple" {
       path      = "example.tf"

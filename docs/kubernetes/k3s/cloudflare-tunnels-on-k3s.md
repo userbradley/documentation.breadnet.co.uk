@@ -6,7 +6,7 @@ title: Cloudflare Tunnels on k3s
 
 ## What are cloudflare tunnels
 
-## Install cloudflared 
+## Install cloudflared
 
 We first need to install it on our computer, so we can log in
 
@@ -22,7 +22,7 @@ Login to `cloudflared`
 cloudflared tunnel login
 ```
 
-Create tunnel 
+Create tunnel
 
 ```shell
 cloudflared tunnel create k3s
@@ -76,9 +76,9 @@ ingress:
 
 !!! note "Final rule"
     When `cloudflared` receives an incoming request, it evaluates each ingress rule from top to bottom to find which rule matches the request. Rules can match either the hostname or path of an incoming request, or both.
-    
+
     If a rule does not specify a hostname, all hostnames will be matched. If a rule does not specify a path, all paths will be matched.
-    
+
     The last rule you list in the configuration file must be a catch-all rule that matches all traffic.
 
 The above specifies that the tunnel `ef824aef-7557-4b41-a398-4684585177ad` will be forwarded to the tunnel and then sent

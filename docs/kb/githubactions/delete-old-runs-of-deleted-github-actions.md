@@ -1,5 +1,5 @@
 ---
-title: Delete old runs of deleted GitHub Actions 
+title: Delete old runs of deleted GitHub Actions
 ---
 
 ## Why

@@ -14,7 +14,7 @@ It will display something like the below
 
 We will be targeting the first container running
 
-## Stream the logs 
+## Stream the logs
 
 ```shell
 docker logs -f db129cf0407d
@@ -26,13 +26,13 @@ This command streams the logs coming out of the docker container to your cli
     We don't have to use the entire long `CONTAINER ID`, we can use the first 3 characters.
 
     === "Full CONTAINER ID"
-    
+
         ```shell
         docker logs -f db129cf0407d
         ```
-    
+
     === "Short CONTAINER ID"
-    
+
         ```shell
         docker logs -f db1
         ```

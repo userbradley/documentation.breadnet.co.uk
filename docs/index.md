@@ -27,7 +27,7 @@ fed-up of managing an ubuntu server
 ## How this site works
 
 This site replaces Bookstack. I decided that it was time to move towards something easier to manage, and that can be run pretty much
-anywhere that docker runs. 
+anywhere that docker runs.
 
 It now runs on [fly.io](https://fly.io) and is powered by [mkdocs](https://www.mkdocs.org)
 

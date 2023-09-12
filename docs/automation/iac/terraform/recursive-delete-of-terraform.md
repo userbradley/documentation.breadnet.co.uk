@@ -6,7 +6,7 @@ title: Recursive delete of .terraform directory
 
 Sometimes your file system can collect alot of `.terraform` directories, or something just isnt right with terraform
 
-## How 
+## How
 
 ```shell
 find ./ -type d -name ".terraform" -exec rm -rf {} +
@@ -25,4 +25,4 @@ alias tdel="find ./ -type d -name ".terraform" -exec rm -rf {} +"
 
 Then run `source ~/.zshrc` to refresh your current session
 
-Now you can simply type `tdel` anywhere and it will delete `.terraform` directories 
+Now you can simply type `tdel` anywhere and it will delete `.terraform` directories

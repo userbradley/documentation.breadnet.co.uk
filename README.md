@@ -24,13 +24,13 @@ I think this is just me getting more mature and resizing that a full CMS is not 
 ## Where it's now hosted
 
 At the moment [Documentation](https://documentation.breadnet.co.uk) is hosted
-on [Fly.io](https://fly.io) 
+on [Fly.io](https://fly.io)
 
 
 
 # Contribute
 
-I encourage people to contribute to this. 
+I encourage people to contribute to this.
 
 You can do so by making a fork of this to your own account, making the changes and then open a PR in to DEV.
 
@@ -42,7 +42,7 @@ Finally, `mkdocs serve`
 
 You will notice that the page layout, specifically navigation is different. This is intentional. It helps between reloads
 
-# Uptime 
+# Uptime
 
 My Bookstack site will not remain active once the migration is complete.
 

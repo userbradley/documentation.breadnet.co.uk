@@ -40,4 +40,3 @@ gloud config list project
 ```bash
 gloud compute instances create <name> --machine-type <machine type> --zone <see zone location>
 ```
-

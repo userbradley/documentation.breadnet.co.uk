@@ -40,7 +40,7 @@ resource "google_vpc_access_connector" "connector" {
     project_id = google_project.vpc-host.name
   }
   machine_type = "f1-micro" # (1)!
-  
+
 }
 ```
 

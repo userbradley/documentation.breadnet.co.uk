@@ -11,7 +11,7 @@ title: CKA Practice tests
 ### How many pods Exist on the cluster in the current namespace (default)
 
 ```shell
-kubectl get pods 
+kubectl get pods
 ```
 
 ### Create a new pod with the nginx image.
@@ -224,7 +224,7 @@ ReplicaSet ensures that the desired number of PODs always run
 ### Fix the issue in the replicaset-definition-2.yaml file and create a ReplicaSet using it.
 
 === "Broken"
-    
+
     ```yaml
     apiVersion: apps/v1
     kind: ReplicaSet
@@ -381,7 +381,7 @@ A: `ImagePullBackOff` - No image found with that name on the Public Docker Regis
     Best way to find out what the issue is, is to apply it and see what it comes back with.
 
 ```shell
-kubectl apply -f 
+kubectl apply -f
 ```
 
 We get the error back:
@@ -398,7 +398,7 @@ kubectl api-resources
 
 ```text
 # Response
-➜ kubectl api-resources | grep deployments                                       
+➜ kubectl api-resources | grep deployments
 deployments                       deploy       apps/v1                                true         Deployment
 ```
 
@@ -686,7 +686,7 @@ kubectl get pods --selector env=prod,bu=finance,tier=frontend
     ```
 
 === "Fixed"
-    
+
     ```yaml
     apiVersion: apps/v1
     kind: ReplicaSet
@@ -930,7 +930,6 @@ spec:
           - matchExpressions:
             - key: node-role.kubernetes.io/control-plane
               operator: Exists
- 
+
 status: {}
 ```
-

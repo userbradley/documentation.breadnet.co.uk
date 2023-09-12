@@ -4,7 +4,7 @@ reviewdate: '2022-01-01'
 ---
 
 !!! warning "DO NOT USE"
-    THIS IS ONLY MIGRATED TO KEEP LINKS ALIVE, AND SHOULD NEVER BE USED. IT'S INSECURE AND DOES NOT FOLLOW BEST PRACTICES. 
+    THIS IS ONLY MIGRATED TO KEEP LINKS ALIVE, AND SHOULD NEVER BE USED. IT'S INSECURE AND DOES NOT FOLLOW BEST PRACTICES.
 
 
 <h4 id="bkmrk-prereqs%3A-i-am-not-a-">Prereqs:</h4>
@@ -129,15 +129,15 @@ services:
 <p id="bkmrk-%C2%A0-5"> </p>
 <pre id="bkmrk-%5Bmedia%5D-type-%3D-s3-en"><code class="language-">[media]
 type = s3
-env_auth = 
+env_auth =
 access_key_id = &lt;first key in .csv file from user creation&gt;
 secret_access_key = &lt;second key from user creation&gt;
-region = 
+region =
 endpoint = https://s3.eu-central-1.wasabisys.com #if using a europe bucket, else; See below for specifics
-location_constraint = 
-acl = 
-server_side_encryption = 
-storage_class = 
+location_constraint =
+acl =
+server_side_encryption =
+storage_class =
 
 ####You don't need to copy this shit in to the file, it's in reference to line 7###
 #Wasabi US East 1 (N. Virginia): s3.wasabisys.com or s3.us-east-1.wasabisys.com
