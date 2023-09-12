@@ -1,12 +1,16 @@
----
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.2.0
     hooks:
       - id: no-commit-to-branch
         name: Ensure commits are only made to feature branches
-        args: [ '-b', 'main' ]
+        args: ['-b', 'main']
       - id: end-of-file-fixer
         name: Ensure files have end of file
       - id: trailing-whitespace
         name: Trims extra whitespaces
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.10.0
+    hooks:
+      - id: yamlfmt
+        name: Yaml Formatting

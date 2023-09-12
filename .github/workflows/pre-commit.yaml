@@ -1,7 +1,5 @@
 name: Precommit - Ensure files are correct
-
 on: pull_request
-
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
