@@ -9,6 +9,8 @@ repos:
         name: Ensure files have end of file
       - id: trailing-whitespace
         name: Trims extra whitespaces
+      - id: check-toml
+        name: Checks TOML files
   - repo: https://github.com/google/yamlfmt
     rev: v0.10.0
     hooks:
@@ -21,3 +23,12 @@ repos:
         name: Terraform FMT
       - id: terragrunt_fmt
         name: Terragrunt FMT
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.26.3
+    hooks:
+      - id: check-github-actions
+        name: GitHub actions check
+      - id: check-dependabot
+        name: GitHub Workflows
+      - id: check-dependabot
+        name: Dependabot
