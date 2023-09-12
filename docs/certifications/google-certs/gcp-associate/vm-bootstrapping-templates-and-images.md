@@ -26,4 +26,4 @@ To create an image, you go to compute engine > disks > actions > create image
 
 You will want to stop the machine when creating an image.
 
-An image is basically just a snapshot you can deploy.  
+An image is basically just a snapshot you can deploy.

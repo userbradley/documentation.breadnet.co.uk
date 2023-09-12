@@ -14,7 +14,7 @@ Laundry Room
 ![](/assets/IMG_9261.jpg)
 
 
-## Problems you may have 
+## Problems you may have
 
 ### No power
 
@@ -27,7 +27,7 @@ Open the cover, by hinging it upwards. Once it stops, do not push any harder.
 
 Locate the switch that is down. A good example of this is the `heaters` in the above [photo](#photo)
 
-Flip the switch up in a **fast jerking motion** 
+Flip the switch up in a **fast jerking motion**
 
 ### Water spilled on heater
 
@@ -35,12 +35,12 @@ Turn off the main switch on the right hand side, and leave off till Bradley is h
 
 ![](/assets/red-cu.png)
 
-This is to prevent electrical shock, or loss of life. 
+This is to prevent electrical shock, or loss of life.
 
 ## Switches that should remain down
 
 During the summer months, and when we go away on holiday, we may turn off devices from the fuse board.
 
-However, during _normal operation_ we will not have the heating turned on. 
+However, during _normal operation_ we will not have the heating turned on.
 
 This is because we cant afford the power bill - [Wikipedia](https://en.wikipedia.org/wiki/2021%E2%80%93present_global_energy_crisis)

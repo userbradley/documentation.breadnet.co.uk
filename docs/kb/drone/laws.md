@@ -57,7 +57,7 @@ Remember, you must always fly safely.
 
 * shopping centres
 * warehouses
-* business parks 
+* business parks
 
 #### Industrial sites include:
 

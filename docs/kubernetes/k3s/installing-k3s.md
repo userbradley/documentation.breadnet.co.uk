@@ -36,4 +36,3 @@ You can remove it with
 ```shell
 kubectl taint node k3s-01 node-roles.kubernetes.io/master:NoSchedule-
 ```
-

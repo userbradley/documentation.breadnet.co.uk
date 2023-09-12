@@ -53,5 +53,5 @@ sshuttle -r proxt <ip/range>
     Password authentication is disabled to avoid man-in-the-middle attacks.
     Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
     ```
-    
+
     You can just ignore this

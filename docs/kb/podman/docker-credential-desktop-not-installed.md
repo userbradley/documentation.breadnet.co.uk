@@ -7,7 +7,7 @@ title: 'docker-credential-desktop  executable file not found in path'
 I was trying to pull an image from `ghcr` after [authenticating podman to ghcr](authenticate-podman-to-ghcr.md) and got the below error
 
 ```shell
-error: getting auth config for "ghrc.io/": getting auth config: error getting credentials - err: exec: "docker-credential-desktop": executable file not found in $PATH, out: 
+error: getting auth config for "ghrc.io/": getting auth config: error getting credentials - err: exec: "docker-credential-desktop": executable file not found in $PATH, out:
 ```
 
 ## Solution

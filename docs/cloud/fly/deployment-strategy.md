@@ -10,7 +10,7 @@ title: Fly deployment Strategy
 
 #### Problem Statement
 
-Using the Command as below, in the back end Fly copies the Docker file and the files it needs up to their Build instance, builds the image and 
+Using the Command as below, in the back end Fly copies the Docker file and the files it needs up to their Build instance, builds the image and
 pushes it to their internal Registry.
 
 ```shell
@@ -23,8 +23,8 @@ Github <--> Codefresh <--> Fly.io <--> Builder <--> Docker <--> Pull docker imag
 
 #### Solution
 
-The solution was to split the pipeline up, and point Fly.io towards a pre-built docker image, hosted on Docker hub. 
- 
+The solution was to split the pipeline up, and point Fly.io towards a pre-built docker image, hosted on Docker hub.
+
 ### 2 - Latency in the US
 
 #### Problem Statement

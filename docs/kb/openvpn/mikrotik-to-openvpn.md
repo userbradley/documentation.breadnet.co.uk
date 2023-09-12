@@ -5,7 +5,7 @@ title: Connecting Mikrotik to OpenVPN AS
 # Connecting Mikrotik to OpenVPN AS
 
 !!! warning "This page is a brain dump"
-    So it should not be relied on, and probably won't ever be updated 
+    So it should not be relied on, and probably won't ever be updated
 
 ![img.png](../../assets/openvpn-as-advanced-vpn.png)
 
@@ -28,9 +28,9 @@ ca.crt  client.crt  client.key
 ```
 
 ```shell
-certificate import file-name=ca.crt 
-certificate import file-name=client.crt 
-certificate import file-name=client.key 
+certificate import file-name=ca.crt
+certificate import file-name=client.crt
+certificate import file-name=client.key
 ```
 
 ```shell

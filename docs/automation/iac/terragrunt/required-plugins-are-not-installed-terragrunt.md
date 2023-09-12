@@ -20,7 +20,7 @@ INFO[0007] ╷
 │ infrastructure services. To download the plugins required for this
 │ configuration, run:
 │   terraform init
-╵ 
+╵
 ```
 
 

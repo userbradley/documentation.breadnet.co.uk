@@ -15,7 +15,7 @@ sudo dpkg -i cloudflared-linux-amd64.deb
 apt-get install -f
 ```
 
-## Login 
+## Login
 
 ```shell
 cloudflared tunnel login
@@ -121,7 +121,7 @@ Add `--protocol http2` after `/usr/bin/cloudflared`
 #### Reload the daemon
 
 ```shell
-systemctl daemon-reload 
+systemctl daemon-reload
 ```
 
 #### Restart the service

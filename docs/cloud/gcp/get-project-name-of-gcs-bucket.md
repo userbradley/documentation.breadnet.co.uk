@@ -24,9 +24,9 @@ We are able to use the [GCS API](https://cloud.google.com/storage/docs/json_api)
 ### Get project Number
 
 ```shell
-curl -X GET \                                                 
+curl -X GET \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-  "https://storage.googleapis.com/storage/v1/b/<>" | jq ."projectNumber" 
+  "https://storage.googleapis.com/storage/v1/b/<>" | jq ."projectNumber"
 ```
 ### Convert number to project name
 
@@ -39,9 +39,9 @@ gcloud projects describe --format json | jq .name
 
 ```shell
 # Get the project number
-curl -X GET \                                                 
+curl -X GET \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-  "https://storage.googleapis.com/storage/v1/b/kubernetes-release" | jq ."projectNumber" 
+  "https://storage.googleapis.com/storage/v1/b/kubernetes-release" | jq ."projectNumber"
 ```
 
 ```shell

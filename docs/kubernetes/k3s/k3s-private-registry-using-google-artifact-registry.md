@@ -49,7 +49,7 @@ Example below
     Ensure that you encapsulate the _password_ with `'` or you will get an error
 
 ```yaml
-# registries.yaml 
+# registries.yaml
 mirrors:
   europe-west2-docker.pkg.dev:
     endpoint:
@@ -80,14 +80,14 @@ If you get any errors, run `k3s server` in any CLI on the server, and observe th
 ### Unmarshalling error
 
 ```text
-INFO[0000] Module overlay was already loaded            
-INFO[0000] Module nf_conntrack was already loaded       
-INFO[0000] Module br_netfilter was already loaded       
-INFO[0000] Module iptable_nat was already loaded        
-INFO[0000] Module iptable_filter was already loaded     
+INFO[0000] Module overlay was already loaded
+INFO[0000] Module nf_conntrack was already loaded
+INFO[0000] Module br_netfilter was already loaded
+INFO[0000] Module iptable_nat was already loaded
+INFO[0000] Module iptable_filter was already loaded
 INFO[0000] Using private registry config file at /etc/rancher/k3s/registries.yaml
 FATA[0000] yaml: unmarshal errors:
-line 9: cannot unmarshal !!map into string 
+line 9: cannot unmarshal !!map into string
 ```
 
 Ensure that you surround the json line with `'`

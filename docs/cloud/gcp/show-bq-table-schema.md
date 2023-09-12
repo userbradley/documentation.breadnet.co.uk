@@ -10,7 +10,7 @@ Sometimes people create them in the UI and they need to be imported in to terraf
 
 ### Set your project first
 
-This needs to be set to the BigQuery project 
+This needs to be set to the BigQuery project
 
 ```shell
 gcloud config set project <>
@@ -27,9 +27,8 @@ Make a note of the `Table ID` at the top
 
 !!! note "Project Name"
     Ensure that the project name has a colon (`:`) after it.
- 
+
     You can also omit the project name if you've set your global projecect (See [Set your Project first](#set-your-project-first))
 ```shell
 bq show --schema <project name>:<dataset ID>.<table name> | jq
 ```
-

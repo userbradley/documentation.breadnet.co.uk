@@ -12,12 +12,12 @@ When using GitHub actions, you will need to authenticate to Google cloud to acce
 The below assumes you have 2 variables set:
 
 
-| Variable Name                | Variable Example                                                                                                                              | 
+| Variable Name                | Variable Example                                                                                                                              |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `WORKLOAD_IDENTITY_PROVIDER` | ```projects/<project numerical ID /locations/global/workloadIdentityPools/<project>/providers/<workload identity federation provider name>``` |
 | `SERVICE_ACCOUNT`            | `tf-ar-robot@<project name>.gserviceaccount.com`                                                                                              |
 
-These can be set at the GitHub Org level (*preferred*) or on the repo 
+These can be set at the GitHub Org level (*preferred*) or on the repo
 ```yaml
 name: GCP Auth Example
 
@@ -35,12 +35,12 @@ jobs:
 
       - id: 'auth'
         name: 'Authenticate to Google Cloud'
-        uses: 'google-github-actions/auth@v1' 
+        uses: 'google-github-actions/auth@v1'
         with:
           token_format: 'access_token' # (1)!
           workload_identity_provider: ${{vars.WORKLOAD_IDENTITY_PROVIDER}}
           service_account: ${{vars.SERVICE_ACCOUNT}}
-          
+
 ```
 
 1. Using the `token_format` of `access_token` is optional. This is used when authentication to Google Artifact Registry

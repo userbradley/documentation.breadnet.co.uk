@@ -99,7 +99,7 @@ mc admin policy set myminio <policyname> user=<username>
      "Effect": "Allow",
      "Resource": ["arn:aws:s3:::serverbackup"],
      "Condition":{"StringLike":{"s3:prefix":["dbserver/*"]}}
-    },    
+    },
    {
      "Sid": "AllowStatement4A",
      "Effect": "Allow",

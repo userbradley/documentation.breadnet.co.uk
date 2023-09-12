@@ -34,7 +34,7 @@ Prepare the token and your username like the below
 github_user:token
 ```
 
-An example would be 
+An example would be
 
 ```text
 userbradley:ghp_sDo2TpI6ONLUYGJH34KPWAq7QIfL0SInIe

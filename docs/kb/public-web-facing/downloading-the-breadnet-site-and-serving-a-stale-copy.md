@@ -4,12 +4,12 @@ title: Downloading the breadNET site and serving a stale copy
 
 # Downloading the breadNET site and serving a stale copy
 
-This is part of a project to serve the breadnet site when the server goes down for maintenance. 
+This is part of a project to serve the breadnet site when the server goes down for maintenance.
 
 ## Download the site
 
 ```shell
-wget \                                                             
+wget \
      --recursive \
      --no-clobber \
      --page-requisites \
@@ -32,7 +32,7 @@ grep -rli 'pngg' * | xargs  sed -i  '' 's/pngg/png/g'
 grep -rli 'pngng' * | xargs  sed -i  '' 's/pngng/png/g'
 grep -rli 'pngpng' * | xargs  sed -i  '' 's/pngpng/png/g'
 grep -rli 'svgg' * | xargs  sed -i  '' 's/svgg/svg/g'
-grep -rli 'svgvg' * | xargs  sed -i  '' 's/svgvg/svg/g' 
+grep -rli 'svgvg' * | xargs  sed -i  '' 's/svgvg/svg/g'
 grep -rli 'svgsvg' * | xargs  sed -i  '' 's/svgsg/svg/g'
 ```
 

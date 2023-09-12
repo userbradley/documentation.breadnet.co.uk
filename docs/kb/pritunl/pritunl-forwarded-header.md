@@ -35,4 +35,4 @@ Name of the protocol that the request came in on
 
 ### X-Forwarded-User
 
-Username that logged in to Pritunl 
+Username that logged in to Pritunl

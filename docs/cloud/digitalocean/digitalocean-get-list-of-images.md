@@ -14,7 +14,7 @@ You will need to have the `doctl` command installed already
 brew install doctl
 ```
 
-## List Images 
+## List Images
 
 ```shell
 doctl compute image list --public

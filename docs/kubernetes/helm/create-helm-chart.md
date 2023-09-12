@@ -4,7 +4,7 @@ title: Creating a helm chart
 
 # Creating a helm chart
 
-## Pre-requisites 
+## Pre-requisites
 
 1. `helm`
 
@@ -22,12 +22,12 @@ title: Creating a helm chart
     ```
 
 === "Other"
-    
+
     See [Installing Helm](https://helm.sh/docs/intro/install/)
 
 ## Create a helm chart
 
-=== "Simple way" 
+=== "Simple way"
 
     ```shell
     helm create <name>

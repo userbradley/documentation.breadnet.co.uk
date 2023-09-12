@@ -36,7 +36,7 @@ kubectl create job --from=cronjob/bread-roller yeet
 ### View the container
 
 ```shell
-k get pods                                              
+k get pods
 NAME                          READY   STATUS            RESTARTS   AGE
 bread-7775f66dbc-qppxt        0/1     PodInitializing   0          5s
 yeet-8hqrc                    0/1     Completed         0          6s

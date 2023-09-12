@@ -29,7 +29,7 @@ Optionally, check what it looks like
 
 
 ```
-echo $auth       
+echo $auth
 ```
 
 Should return something like the below

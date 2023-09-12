@@ -23,3 +23,8 @@ tasks:
     ignore_error: true
     cmds:
       - vale README.md
+  pre-commit:
+    desc: Runs pre-commit on all files
+    silent: true
+    cmds:
+      - pre-commit run --all-files

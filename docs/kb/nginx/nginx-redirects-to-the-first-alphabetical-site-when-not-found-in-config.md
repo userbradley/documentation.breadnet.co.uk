@@ -7,9 +7,9 @@ title: nginx redirects to the first alphabetical site when not found in config
 !!! Note "This is expected"
 
     This is expected behaviour of nginx, and when you think about it, it makes sense.
-    
-    If you point a DNS entry towards the server that it does not recognise, it will send it to the first page it has, and when there is no 
-    site sepcified as default, it falls back to alphabetical. 
+
+    If you point a DNS entry towards the server that it does not recognise, it will send it to the first page it has, and when there is no
+    site sepcified as default, it falls back to alphabetical.
 
 This is a weird thing I saw when I was migrating sites.
 
@@ -40,7 +40,7 @@ server {
 }
 ```
 
-This will return a `444` 
+This will return a `444`
 
 ??? info "What is http:444"
 
@@ -50,7 +50,7 @@ Enable the site by creating a symbolic link (`ln -s`)
 
 
 
-## Additional Resources 
+## Additional Resources
 
 [Nginx doesnt listen on port 80 twice](https://stackoverflow.com/questions/60362642/nginx-doesnt-listen-on-port-80-twice/60362700#60362700)
 

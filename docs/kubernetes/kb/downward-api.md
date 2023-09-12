@@ -12,7 +12,7 @@ and then expose it as env variables (As the below example)
 See [Official Documentation](https://kubernetes.io/docs/concepts/workloads/pods/downward-api/#available-fields)
 for more fields
 
-| Name                            | Description                                                                                              | 
+| Name                            | Description                                                                                              |
 |---------------------------------|----------------------------------------------------------------------------------------------------------|
  | `metadata.name`                 | the pod's name                                                                                           |
 | `metadata.namespace`            | the pod's namespace                                                                                      |
@@ -24,7 +24,7 @@ for more fields
 | `status.hostIP`                 | the primary IP address of the node to which the Pod is assigned                                          |
 | `status.podIP`                  | the pod's primary IP address (usually, its IPv4 address)                                                 |
 
-## Example Manifest 
+## Example Manifest
 
 ```yaml
 apiVersion: v1
@@ -51,4 +51,3 @@ spec:
         fieldRef:
           fieldPath: metadata.namespace
 ```
-

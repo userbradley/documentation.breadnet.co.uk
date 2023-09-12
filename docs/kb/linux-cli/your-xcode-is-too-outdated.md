@@ -6,9 +6,9 @@ title: Your Xcode is too outdated.
 
 ## Why
 
-This is an error that comes up after a major upgrade 
+This is an error that comes up after a major upgrade
 
-You will see the below error 
+You will see the below error
 
 
 ```text
@@ -64,7 +64,7 @@ It should display the below now
 
 Open `xcode` and check the version:
 
-1. Open `xcode` 
+1. Open `xcode`
 2. Click `Xcode` on the top bar
 3. Click `about Xcode`
 
@@ -87,7 +87,7 @@ Software Update Tool
 Finding available software
 Software Update found the following new or updated software:
 * Label: Command Line Tools for Xcode-14.0
-        Title: Command Line Tools for Xcode, Version: 14.0, Size: 687109KiB, Recommended: YES, 
+        Title: Command Line Tools for Xcode, Version: 14.0, Size: 687109KiB, Recommended: YES,
 ```
 
 Upgrade it with:
@@ -114,5 +114,3 @@ Do not worry, it will come back once it's installed
 ## What to read next
 
 [xcrun error: invalid active path](xcrun-error-invalid-active-developer-path.md)
-
-

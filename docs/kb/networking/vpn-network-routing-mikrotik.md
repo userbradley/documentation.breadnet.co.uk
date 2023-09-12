@@ -30,7 +30,7 @@ add action=src-nat chain=srcnat disabled=yes src-address-list=OutVpn to-addresse
     192.168.42.10
 ```
 
-Add a Route sending all marked packets/traffic via the VPN 
+Add a Route sending all marked packets/traffic via the VPN
 
 ```shell
 /ip route

@@ -19,7 +19,7 @@ gcloud auth list
 
 You should see your work account with an `*` next to it
 
-### Set that as the default account 
+### Set that as the default account
 
 ```shell
 gcloud auth config set account "root@infra.breadnet.co.uk"

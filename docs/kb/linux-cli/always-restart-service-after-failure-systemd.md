@@ -12,13 +12,13 @@ These services don't really fail often, and are not dangerous to restart loop th
 
 ## Edit the system File
 
-Navigate to 
+Navigate to
 
 ```shell
 /etc/systemd/system/
 ```
 
-Edit the name of the service, example being 
+Edit the name of the service, example being
 
 * Service: Bradley
 * File: `bradley.service`
@@ -43,5 +43,3 @@ systemctl daemon-reload
 ## Additional Reading
 
 * [ServerFault](https://serverfault.com/questions/252137/how-to-automatically-restart-a-service-on-failure-in-linux)
-
-

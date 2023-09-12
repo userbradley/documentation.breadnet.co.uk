@@ -23,8 +23,8 @@ I’ll be using a very simple scenario:
 
 Fake IP addresses used in this post:
 
-* User originating requests: 108.26.106.168 
-* GCP Load Balancer public IP: 36.129.221.25 
+* User originating requests: 108.26.106.168
+* GCP Load Balancer public IP: 36.129.221.25
 * GCP Load Balancer private ranges: 130.211.0.0/22 and 35.191.0.0/16
 
 That’s it.

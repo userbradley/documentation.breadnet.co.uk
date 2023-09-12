@@ -25,7 +25,7 @@ Save and exit the document
 You have 2 options here
 
 * Test - Test the changes and if you don't press enter after 120 seconds undoes the changes
-* Apply - Applies the changes right away 
+* Apply - Applies the changes right away
 
 === "Test the changes"
 

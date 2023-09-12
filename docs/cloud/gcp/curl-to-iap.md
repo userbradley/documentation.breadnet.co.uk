@@ -10,7 +10,7 @@ You will need to have a service account already, and the ability to impersonate 
 Your account will need to have the permission `Service Account Token Creator`
 
 ```bash
-OAUTH_CLIENT_ID=<>                             
+OAUTH_CLIENT_ID=<>
 AUTHORIZED_SA=<>
 URL=https://<>
 

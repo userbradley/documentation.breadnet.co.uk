@@ -29,6 +29,6 @@ gsutil stat gs://<bucket>/<object>
         ETag:                   CPq8kq/x4vwCEAE=
         Generation:             1674655366654970
         Metageneration:         1
-    
-    
+
+
     ```

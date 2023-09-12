@@ -6,7 +6,7 @@ title: CKA - Page 1
 
 ## What is Kubernetes
 
-Kubernetes is a container orchestration platform that is designed to [Scale to the planet](https://kubernetes.io/#planet-scale). It achieves this using a number of 
+Kubernetes is a container orchestration platform that is designed to [Scale to the planet](https://kubernetes.io/#planet-scale). It achieves this using a number of
 somewhat independent stacks of technology, like [etcd](#etcd) and [nginx]().
 
 This and all other pages are my study notes for the CKA exam.
@@ -19,9 +19,9 @@ Code for exam reduction: `DEVOPS15`
 
 GitHub for additional stuff: [kodekloudhub/certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
 
-## Kubernetes Architecture 
+## Kubernetes Architecture
 
-Kubernetes hosts your application in an automated fashion. 
+Kubernetes hosts your application in an automated fashion.
 
 It's designed that applications can be both segmented logically, and allowed to communicate.
 
@@ -84,7 +84,7 @@ Some facts about the worker nodes:
 * Required to register with the master nodes (using the `kubelet`)
 * Report their status back to the master undoes
 * `kubelet` orchestrates the workloads on the nodes using _instructions_ passed from the Kube-apiserver
-* Uses 'kube-proxy' to facilitate inter-cluster communication. 
+* Uses 'kube-proxy' to facilitate inter-cluster communication.
 
 The worker is made up of the below component:
 
@@ -122,7 +122,7 @@ and then querying is like: `get name`
 
 It's used for querying bits of operational data, and it's fast.
 
-Etcd listens on `2379` by default. 
+Etcd listens on `2379` by default.
 
 ### The role it plays
 
@@ -158,9 +158,9 @@ In an HA deployment, etcd installed a master server to each master instance, and
     The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact.
 
 
-The `kube-apiserver` is the primary management component of Kubernetes. 
+The `kube-apiserver` is the primary management component of Kubernetes.
 
-When you issue a `kubectl` command, this is where the connection is made to. 
+When you issue a `kubectl` command, this is where the connection is made to.
 
 We don't actually _have to_ use kubectl, as kubectl is just a nice wrapper around making `HTTP/POST` request to any of the master nodes running the kube-aiserver
 
@@ -168,7 +168,7 @@ We don't actually _have to_ use kubectl, as kubectl is just a nice wrapper aroun
 
 The below explains what happens when we do `kubectl create deployment nginx --image=nginx`
 
-| Where it happens | What happens                                                                         | 
+| Where it happens | What happens                                                                         |
 |------------------|--------------------------------------------------------------------------------------|
 | Master           | Authenticate as a user                                                               |
 | Master           | Validate the request (check request is valid, no feature gates etc)                  |
@@ -209,14 +209,14 @@ We are able to view the configuration of the `kube-apiserver` on our cluster. De
 
 ## Kube controller Manager
 
-The Kube controller manager is a `daemon` that embeds `control loops` 
+The Kube controller manager is a `daemon` that embeds `control loops`
 
 ??? info "The official definition of the `kube-controller-manager` is"
     The Kubernetes controller manager is a daemon that embeds the core control loops shipped with Kubernetes. In applications of robotics and automation, a control loop is a non-terminating loop that regulates the state of the system. In Kubernetes, a controller is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state. Examples of controllers that ship with Kubernetes today are the replication controller, endpoints controller, namespace controller, and serviceaccounts controller.
 
 The sole job of the `kube-controller-manager` (KCM) is to run the various deployable resources and services in the cluster.
 
-All the controllers (see [List of Controllers](cka-list-of-controllers.md)) are packed in to the `kube-controller-manager` 
+All the controllers (see [List of Controllers](cka-list-of-controllers.md)) are packed in to the `kube-controller-manager`
 which can be retrieved from `gs://kubernetes-release/release/v1.21.0/bin/linux/amd64/kube-controller-manager`
 
 Enabling each controller is done using a feature gate under the option `--controllers` (See [Here](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/#:~:text=%2D%2Dcontrollers%20strings) for additional Documentation)
@@ -259,13 +259,13 @@ If a pod was to die, the ReplicationController is what is responsible for recrea
 ??? info "The official definition of the `ReplicationController` is"
     A ReplicationController ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available.
 
-## Kube Scheduler 
+## Kube Scheduler
 
 - [For custom scheduling see Scheduler](#scheduler)
 
 `kube-scheduler` is a cluster control plane process that assigns pods to a node. (_note, this does not actually the run them on the node, see [Kubelet](#kubelet)_)
 
-The scheduler puts pods in a scheduling queue according to constraints (like CPU) and available resources on nodes. 
+The scheduler puts pods in a scheduling queue according to constraints (like CPU) and available resources on nodes.
 
 
 === "Kubeadm"
@@ -278,9 +278,9 @@ The scheduler puts pods in a scheduling queue according to constraints (like CPU
     The config file for the scheduler exists under `/etc/kubernetes/scheduler.conf`
 
 
-### Why do we need a scheduler? 
+### Why do we need a scheduler?
 
-We need to ensure that the right pods are getting placed on the right nodes. 
+We need to ensure that the right pods are getting placed on the right nodes.
 
 An Example would be we need to run a pod on a node with a GPU, the scheduler makes sure that the pod will _land_ on a Node with a GPU attached.
 
@@ -295,8 +295,8 @@ Filtering step finds the nodes where it's possible to schedule the pod. If there
 #### Scheduling phase 2: Scoring
 
 1. Rank the surviving nodes from the [Filtering](#scheduling-phase-1-filtering) stage and assing a value to each node.
-2. The score is assigned based on the active sorting rules (Default unless changed) 
-3. If there are multiples, it picks one at random. 
+2. The score is assigned based on the active sorting rules (Default unless changed)
+3. If there are multiples, it picks one at random.
 
 
 !!! note "A note on schedulers"
@@ -339,38 +339,38 @@ It's called `kube-proxy-<uuid>` and runs in the `kube-system` namespace
 
 Pod networking (we will touch on this in more depth later) uses a network that spans all nodes. Pods then get
 
-### Accessing a service 
+### Accessing a service
 
 When a `kind:Service` is created, an IP address gets assigned to the nodes (Not exactly, but this is the best way to think about it)
 
-When a request for that `kind:Service` is made, the node accepts the traffic, and forwards it on to the serving pod. 
+When a request for that `kind:Service` is made, the node accepts the traffic, and forwards it on to the serving pod.
 
 ## Pods
 
 ### What are pods
 
-Pods are the smallest deployable item of _compute_ on a Kubernetes cluster. 
+Pods are the smallest deployable item of _compute_ on a Kubernetes cluster.
 
 Pods are made up of containers. Usually it's just one container, however it can be multiple.
 
 !!! info "Note on multiple containers per pod"
     Only deploy multiple containers per pod if they are very tightly coupled. A good example would be apache2 and php-fpm (if memory serves me well.)
-    
-    Another good example is in GKE, we are able to deploy the Google cloud SQL proxy along side the container to access the Database without having to use IP address' 
+
+    Another good example is in GKE, we are able to deploy the Google cloud SQL proxy along side the container to access the Database without having to use IP address'
 
 When we deploy an application, we are effectively deploying a collection of pods.
 
 ### How to scale the application
 
-When your application is deployed in pods, to scale the application we <u>**do not**</u> add more containers to a pod, 
-instead we add more pods to the cluster. 
+When your application is deployed in pods, to scale the application we <u>**do not**</u> add more containers to a pod,
+instead we add more pods to the cluster.
 
-We can use a [Deployment](#deployment) as well as [HPA]() to scale the deployment manually and automatically. 
+We can use a [Deployment](#deployment) as well as [HPA]() to scale the deployment manually and automatically.
 
 
 ### Networking and storage
 
-Due to how kubernetes uses the underlying Kernel, and then Networking Namespaces, containers that are in the same pod share `localhost` 
+Due to how kubernetes uses the underlying Kernel, and then Networking Namespaces, containers that are in the same pod share `localhost`
 
 *[Networking Namespaces]: A network namespace is a logical copy of the network stack from the host system. Network namespaces are useful for setting up containers or virtual environments. Each namespace has its own IP addresses, network interfaces, routing tables, and so forth.
 
@@ -437,7 +437,7 @@ You would use a Deployment over an RS (Replica Set) as it allows you to do thing
 * Rolling Updates
 * Rollbacks
 
-Below shows how Deployments interact with ReplicaSet and pods. 
+Below shows how Deployments interact with ReplicaSet and pods.
 
 
 ``` mermaid
@@ -446,7 +446,7 @@ Deployment --> ReplicaSet --> Pods --> Containers
 ```
 
 
-## Services 
+## Services
 
 Services enable communication with various components inside and outside the cluster.
 
@@ -456,7 +456,7 @@ Below shows how services can work
 
 ``` mermaid
 flowchart LR
-A[Users] --> B[Service] 
+A[Users] --> B[Service]
 B --> C[Pods]
 C --> D[Service]
 C --> E[Backend Service]
@@ -482,7 +482,7 @@ Using a service we can access other services across namespaces as per the below 
    |           |         * --------------- Denotes it's a Service
    |           |         |   * ----------- Incase you forget you're in a clluster
    |           |         |   |       * --- Suffic
-   |           |         |   |       | 
+   |           |         |   |       |
 my-service.my-namespace.svc.cluster.local
 ```
 
@@ -621,10 +621,10 @@ target:
   name: node02
 ```
 
-We then need to convert this to JSON, ideally use an online web converter, but you can also use `yq` cli 
+We then need to convert this to JSON, ideally use an online web converter, but you can also use `yq` cli
 
 ```shell
-➜ yq . binding.yaml 
+➜ yq . binding.yaml
 {
   "apiVersion": "v1",
   "kind": "Binding",
@@ -672,7 +672,7 @@ Labels and Selectors are an imperative part of Kubernetes. They pave the way for
 In the below Example, we have added `Labels` to a Pod
 
 !!! note "`metadata.labels` are just for humans"
-    Adding labels under `metadata.labels` are purely for the operator (usually a human), in order for kubernetes to use them they 
+    Adding labels under `metadata.labels` are purely for the operator (usually a human), in order for kubernetes to use them they
     need to go under:
 
     * `spec.selector.matchLabels`
@@ -756,7 +756,7 @@ Tolerations are applied to pods. Tolerations allow the scheduler to schedule pod
 
 
 Assume the following:
-    
+
 * `A bug` is a `pod`
 * `A Person` is a `Node`
 * `Bug Spray` is a `Taint`
@@ -802,7 +802,7 @@ kubectl describe node <master> | grep taint
 
 You will see something like:
 ```text
-Taints:   node-roles.kubernetes.io/master:NoSchedule 
+Taints:   node-roles.kubernetes.io/master:NoSchedule
 ```
 
 ### Removing a taint
@@ -833,7 +833,7 @@ Running pods continue to run
 
 Pods are evicted from the node if already running and will not be scheduled on to the node ever (unless it has )
 
-This taint affects pods that are already on the node, and evicts them. 
+This taint affects pods that are already on the node, and evicts them.
 
 ### Example of Pod that has tolerations
 
@@ -867,14 +867,14 @@ spec:
 
 ## Node Selectors
 
-Node selectors allow us to schedule pods on to nodes that have **already** been labeled 
+Node selectors allow us to schedule pods on to nodes that have **already** been labeled
 
 In our pod spec we would add the below
 
 ```yaml hl_lines="7 8"
 kind: Pod
 apiVersion: v1
-metadata: 
+metadata:
   name: Pod
   namespace: test
 spec:
@@ -902,7 +902,7 @@ Node affinity allows us to _assign_ pods to nodes by using their labels.
 
 It gives us some additional niceties that [Node Selectors](#node-selectors) don't have.
 
-Below is a comparison 
+Below is a comparison
 
 === "Node Affinity"
 
@@ -931,7 +931,7 @@ Below is a comparison
     ```yaml hl_lines="7 8"
     kind: Pod
     apiVersion: v1
-    metadata: 
+    metadata:
       name: Pod
       namespace: test
     spec:
@@ -958,13 +958,13 @@ There are currently 2 types of Affinity types, and one that is perhaps coming so
 
 #### requiredDuringSchedulingIgnoredDuringExecution
 
-This means that the operators that follows are required or the pod does not get scheduled. 
+This means that the operators that follows are required or the pod does not get scheduled.
 
 #### preferredDuringSchedulingIgnoredDuringExecution
 
-This means that the operators that follow are more of a _nice to have_ and the pod will still get scheduled, but it will do it's best first. 
+This means that the operators that follow are more of a _nice to have_ and the pod will still get scheduled, but it will do it's best first.
 
-This means that the config that follows is **required** during scheduling 
+This means that the config that follows is **required** during scheduling
 
 
 ### Operators
@@ -1043,5 +1043,3 @@ This operator just checks if the Label `Size` does not exist on the node
 #### Lt
 
 [See #39256](https://github.com/kubernetes/website/issues/39256)
-
-

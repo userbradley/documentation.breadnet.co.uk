@@ -22,12 +22,12 @@ jobs:
     name: Deploys Terragrunt
     steps:
       - uses: actions/checkout@v3
-        
+
       - id: install-tg
         uses: userbradley/actions-install-terragrunt@v1.0.0
         with:
           terragrunt-version: 'v0.47.0'
-          
+
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v2
         with:
@@ -58,8 +58,8 @@ I recently created a GitHub action [userbradley/actions-install-terragrunt](http
         paths:
           - dns/tunnels/**
           - .github/workflows/cloudflare-tunnels.yaml
-    
-    
+
+
     jobs:
       terragrunt:
         permissions:
@@ -67,44 +67,44 @@ I recently created a GitHub action [userbradley/actions-install-terragrunt](http
           contents: read
         env:
           CLOUDFLARE_API_TOKEN: ${{secrets.CLOUDFLARE_API_TOKEN_ZEROTRUST}}
-    
+
         runs-on: ubuntu-latest
         steps:
           - name: Checkout code
             uses: actions/checkout@v3
-    
+
           - id: 'auth'
             name: Authenticate to Google Cloud
             uses: 'google-github-actions/auth@v1'
             with:
               workload_identity_provider: ''
               service_account: ''
-    
+
           - id: install-tg
             uses: userbradley/actions-install-terragrunt@v1.0.0
             with:
               terragrunt-version: 'v0.47.0'
-              
+
           - name: Install Terraform
             uses: hashicorp/setup-terraform@v2
             with:
               terraform_version: ${{ env.TF_VERSION }}
-        
+
           - name: Terragrunt Init
             working-directory: ${{ env.DIR }}
             run: |
               eval `ssh-agent -s`
               ssh-add - <<< '${{ secrets.GH_ACTIONS_SSH_KEY }}'
               terragrunt run-all init -upgrade
-    
+
           - name: Terragrunt Validate
             working-directory: ${{ env.DIR }}
             run: terragrunt run-all validate
-    
+
           - name: Terragrunt Plan
             working-directory: ${{ env.DIR }}
             run: terragrunt run-all plan
-    
+
           - name: Terragrunt Apply
             working-directory: ${{ env.DIR }}
             run: terragrunt run-all apply --terragrunt-non-interactive

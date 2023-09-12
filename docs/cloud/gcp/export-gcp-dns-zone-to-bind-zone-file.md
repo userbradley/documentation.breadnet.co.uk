@@ -14,7 +14,7 @@ Once you've located it and _entered_ it, make a note of the zone name.
 
 !!! tip "How to find the zone name"
     In the URL, it will be between `zones` and `details`
- 
+
     ```text
     dns/zones/examplezonename/details
     ```

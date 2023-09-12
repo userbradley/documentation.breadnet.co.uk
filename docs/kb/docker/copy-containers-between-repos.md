@@ -44,7 +44,7 @@ index.docker.io/userbradley/searchsploit:ubuntu-1
 gcrane cp -r userbradley/searchsploit europe-west2.pkg.dev/bradley/searchsploit/searchsploit
 ```
 
-## External sources 
+## External sources
 
 * [Google Documentation](https://cloud.google.com/artifact-registry/docs/docker/copy-from-gcr#gcrane-local)
 * [Github source code](https://github.com/google/go-containerregistry/tree/main/cmd/gcrane)
@@ -98,7 +98,7 @@ chmod +x copy.sh
 ## footnotes
 
 !!! Note "If you are not copying to GAR"
-     
+
     You may want to look at the below
 
     ```
