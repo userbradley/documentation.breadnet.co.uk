@@ -23,3 +23,12 @@ repos:
         name: Terraform FMT
       - id: terragrunt_fmt
         name: Terragrunt FMT
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.26.3
+    hooks:
+      - id: check-github-actions
+        name: GitHub actions check
+      - id: check-dependabot
+        name: GitHub Workflows
+      - id: check-dependabot
+        name: Dependabot
