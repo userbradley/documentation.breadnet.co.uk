@@ -92,6 +92,8 @@ The action will deploy the site to my Fly account under the `documentation.bread
 
 ## Uptime
 
+[Status Page](https://status.breadnet.co.uk)
+
 This site is hosted on Fly and has a system in place to promote changes from Development to Production, meaning something
 would have had to go **really** wrong for the site to not be online
 
