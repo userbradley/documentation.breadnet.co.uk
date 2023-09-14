@@ -1,11 +1,13 @@
 nav:
   - Home: index.md
   - Automation:
+      - automation/index.md
       - Airflow basics: automation/airflow/airflow-basics.md
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
           - Ansible install python: automation/ansible/python-install.md
       - Terraform:
+          - automation/iac/terraform/index.md
           - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
           - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
           - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
@@ -21,6 +23,7 @@ nav:
           - tfupdate: automation/iac/terraform/tfupdate.md
           - To string from list in terraform: automation/iac/terraform/to-string-from-list.md
       - Terragrunt:
+          - automation/iac/terragrunt/index.md
           - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
           - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
           - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
