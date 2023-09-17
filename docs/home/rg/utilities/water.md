@@ -17,14 +17,14 @@ The shut-off valves are located in the **main entrance** on the **right hand sid
 
 The numbering is done Right to Left. On the Blue pipe will be written the number
 
-![](../../assets/water-shutoff-valves.JPG)
+![](../../../assets/water-shutoff-valves.JPG)
 
 ## How to turn off the water at the mains
 
 1. Take the key out the pouch
-![](../../assets/water-board-key.JPG)
+![](../../../assets/water-board-key.JPG)
 2. Place the key in the holes on the top of the board pictured below
-![](../../assets/water-board.JPG)
+![](../../../assets/water-board.JPG)
 3. Turn right
 4. Pull the board off
 5. Locate your valve

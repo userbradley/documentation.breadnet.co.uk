@@ -45,7 +45,7 @@ We are able to set the temperature between the below values
 
 Once the cover is open, locate the Thermostat.
 
-![Thermo](../../assets/heater_thermo.jpeg)
+![Thermo](../../../assets/heater_thermo.jpeg)
 
 !!! Info
     Familiarize your self with the below diagram.
