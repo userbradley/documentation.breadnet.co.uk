@@ -8,7 +8,7 @@ title: Electricity
 
 The meter is located in the `Plant Room` on the right hand side of the building when you enter.
 
-![](../../assets/plant-room.JPG)
+![](../../../assets/plant-room.JPG)
 
 ## How do I access it
 

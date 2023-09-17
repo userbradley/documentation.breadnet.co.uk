@@ -1,19 +1,25 @@
 ---
-title: Home documentation
+title: Home Documentation
 ---
 
-## What
+It's hard to write and categorise documentation for your home when you
 
-This section and it's sub-pages contains documentation and instructions on the items in the home
+1. Have all your documentation public and don't want to leak your home address
+2. Rent and move once every 2 years but don't want to _dead link_ anything
 
-## What's documented
+I have come up with a clever system for this
 
-The following items are documented:
+Each _location_ is made up of the first 2 letters of the post code.
 
-* [Utilities](utilities/index.md)
-    * [Water](utilities/water.md)
-    * [Electricity](utilities/electricity.md)
-* [Fuse box](cu/consumer-unit.md)
-* [Oven](oven/oven.md)
-* [Washing machine](washing/washing-machine.md)
-* [Turning down water heater temperature](water-heater/reduce-temperature.md)
+Ideally I won't be moving within the same postcode, but if that happens, then it would become like the below:
+
+```text
+ * ------ First 2 letters of postcode
+ | * ---- End letters of the postcode
+ | |
+cb-yy
+```
+
+## Houses included in this Documentation
+
+* [RG Postcode](rg/index.md)

@@ -289,15 +289,17 @@ nav:
       - Set page as permanently outdated: mkdocs/mark-page-as-outdated.md
   - Home:
       - home/index.md
-      - Utilities:
-          - home/utilities/index.md
-          - Water: home/utilities/water.md
-          - Electricity: home/utilities/electricity.md
-      - Consumer Unit: home/cu/consumer-unit.md
-      - Oven: home/oven/oven.md
-      - Washing Machine: home/washing/washing-machine.md
-      - Hot water heater:
-          - Reducing temperature: home/water-heater/reduce-temperature.md
+      - RG:
+          - home/rg/index.md
+          - Utilities:
+              - home/rg/utilities/index.md
+              - Water: home/rg/utilities/water.md
+              - Electricity: home/rg/utilities/electricity.md
+          - Consumer Unit: home/rg/cu/consumer-unit.md
+          - Oven: home/rg/oven/oven.md
+          - Washing Machine: home/rg/washing/washing-machine.md
+          - Hot water heater:
+              - Reducing temperature: home/rg/water-heater/reduce-temperature.md
   - Car:
       - car/index.md
       - SEAT:
@@ -421,6 +423,13 @@ plugins:
         'cloud/terragrunt/terragrunt-generate-block.md': 'automation/iac/terragrunt/terragrunt-generate-block.md'
         'cloud/terragrunt/terragrunt-in-github-actions.md': 'automation/iac/terragrunt/terragrunt-in-github-actions.md'
         'cloud/terragrunt/terragrunt-terraform-auto-upgrade.md': 'automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md'
+        'home/utilities/index.md': 'home/rg/utilities/index.md'
+        'home/utilities/water.md': 'home/rg/utilities/water.md'
+        'home/utilities/electricity.md': 'home/rg/utilities/electricity.md'
+        'home/cu/consumer-unit.md': 'home/rg/cu/consumer-unit.md'
+        'home/oven/oven.md': 'home/rg/oven/oven.md'
+        'home/washing/washing-machine.md': 'home/rg/washing/washing-machine.md'
+        'home/water-heater/reduce-temperature.md': 'home/rg/water-heater/reduce-temperature.md'
         #- offline
 extra:
   social:
