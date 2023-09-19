@@ -148,6 +148,7 @@ nav:
           - Authenticate GitHub actions to GCP using Workload Identity Federation: kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md
           - Authenticate GitHub actions to Google Artifact Registry: kb/githubactions/authenticate-github-actions-to-google-artifact-registry.md
           - Delete old runs of deleted GitHub Actions: kb/githubactions/delete-old-runs-of-deleted-github-actions.md
+          - Manually trigger workflow from CLI: kb/githubactions/trigger-manual-action.md
           - View JWT Claim GitHub actions: kb/githubactions/view-jwt-claim-github-actions.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
