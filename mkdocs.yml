@@ -394,6 +394,7 @@ markdown_extensions:
       user: userbradley
       repo_url_shortener: true
       repo_url_shorthand: true
+plugins:
   - search
   - social
   - redirects:
