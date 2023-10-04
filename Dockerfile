@@ -15,4 +15,6 @@ COPY deny.conf /etc/nginx/deny.conf
 COPY --from=BUILDER /app/site/assets /var/www/documentation/assets
 COPY --from=BUILDER /app/site /var/www/documentation
 
+HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1"
+
 EXPOSE 80
