@@ -2,3 +2,4 @@ site/
 .idea
 styles/
 .cache
+.DS_Store

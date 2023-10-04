@@ -360,7 +360,6 @@ theme:
     - content.tabs.link
     - search.share
     # - search.highlight
-    - content.code.copy
 markdown_extensions:
   - admonition
   - pymdownx.details
