@@ -360,7 +360,6 @@ theme:
     - content.tabs.link
     - search.share
     # - search.highlight
-    - content.code.copy
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -395,7 +394,6 @@ markdown_extensions:
       user: userbradley
       repo_url_shortener: true
       repo_url_shorthand: true
-plugins:
   - search
   - social
   - redirects:
