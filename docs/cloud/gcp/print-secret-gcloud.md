@@ -16,3 +16,7 @@ You will need to know the below before
 ```shell
 gcloud secrets versions access latest --secret=<secret name> --project=<Secrets project>
 ```
+
+## Read next
+
+* [List secrets being accessed Google cloud logs](list-secrets-being-accessed-google-cloud-logging.md)
