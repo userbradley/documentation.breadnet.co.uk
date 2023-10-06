@@ -168,3 +168,18 @@ spec:
         - image: nginx:latest
           name: nginx
 ```
+## Troubleshooting
+
+### Gaia id not found
+
+```text
+Unable to generate access token; IAM returned 404 Not Found: Not found; Gaia id not found for email wid-example@workload-id-cluster-example.gserviceaccount.com
+```
+
+You've probably got the email address wrong of the service account, double check it.
+
+Try and run the below command to see if you can get a token
+
+```shell
+curl -H "Metadata-Flavor: Google" http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/token
+```
