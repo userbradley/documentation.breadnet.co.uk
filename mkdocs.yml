@@ -257,6 +257,7 @@ nav:
       - GKE:
           - kubernetes/gke/index.md
           - Configure GKE workload Identity: kubernetes/gke/configure-gke-workload-identity.md
+          - Cordon and drain GKE pool: kubernetes/gke/cordon-and-drain-gke-pool.md
           - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - Helm:
