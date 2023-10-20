@@ -254,6 +254,8 @@ nav:
           - Reset windows to factory defaults and erase all data: kb/windows/reset-windows-to-factory-defaults-and-erase-all-data.md
   - Kubernetes:
       - kubernetes/index.md
+      - Flux:
+          - "Flux reconciliation failed: install retries exhausted": kubernetes/flux/flux-reconciliation-failed-install-retries-exhausted.md
       - GKE:
           - kubernetes/gke/index.md
           - Configure GKE workload Identity: kubernetes/gke/configure-gke-workload-identity.md
