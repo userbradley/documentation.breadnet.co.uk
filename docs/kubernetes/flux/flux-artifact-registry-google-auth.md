@@ -45,7 +45,7 @@ roleRef:
   name: source-controller
   apiGroup: ""
 ---
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: artifact-registry-credentials-sync
@@ -62,7 +62,7 @@ spec:
           serviceAccountName: source-controller
           restartPolicy: Never
           containers:
-          - image: google/cloud-sdk
+          - image: google/cloud-sdk:latest
             name: create-secret
             imagePullPolicy: IfNotPresent
             env:
