@@ -1,8 +1,5 @@
 name: Dev
 on:
-  push:
-    branches:
-      - dev
   pull_request:
     types: [synchronize]
     paths:

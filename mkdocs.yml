@@ -255,6 +255,7 @@ nav:
   - Kubernetes:
       - kubernetes/index.md
       - Flux:
+          - Authenticate flux with Google Artifact Registry: kubernetes/flux/flux-artifact-registry-google-auth.md
           - "Flux reconciliation failed: install retries exhausted": kubernetes/flux/flux-reconciliation-failed-install-retries-exhausted.md
       - GKE:
           - kubernetes/gke/index.md
