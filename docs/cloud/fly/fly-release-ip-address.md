@@ -23,7 +23,7 @@ fly apps list
 _assuming your app is called `my-app`_
 
 ```shell
-fly ips list -a `my-app`
+fly ips list -a my-app
 ```
 
 You will get a print-out like the below
