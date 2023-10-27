@@ -46,3 +46,13 @@ Which will return
 ```text
 Released 149.248.195.56 from documentation-dev
 ```
+
+### Assign Shared IP
+
+As soon as you remove the IP address, the DNS will fail, even for the `flu.io` domain
+
+```shell
+fly ips allocate-v4 --shared -a my-app
+```
+
+This will assign a shared (free) IP address to the application
