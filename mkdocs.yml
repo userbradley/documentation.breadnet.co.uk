@@ -314,6 +314,9 @@ nav:
           - Leon:
               - Fix comfort close not working on Seat Leon: car/seat/leon/fix-comfort-close.md
               - Push Start Seat leon: car/seat/leon/push-start-seat-leon.md
+  - Outages:
+      - outage/index.md
+      - 2023-10-27 11AM: outage/2023-10-27-11.md
 ## Config ##
 repo_name: documentation
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
