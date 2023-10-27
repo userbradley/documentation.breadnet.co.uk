@@ -9,6 +9,13 @@ that holds all the helm charts
 
 Flux does not support auto login for OCI HelmRepository ([See this issue here](https://github.com/fluxcd/source-controller/issues/798#issuecomment-1167816216))
 
+
+### Example error message
+
+```text
+failed to fetch Helm repository index: failed to cache index to temporary file: object required
+```
+
 ## Solution
 
 The solution is to run a Kubernetes CronJob on the 35'th minute of each hour, then on the HelmSource add the secret name
