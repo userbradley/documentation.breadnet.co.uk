@@ -76,6 +76,7 @@ nav:
           - Authenticate to Fly docker Registry: cloud/fly/fly-docker-auth.md
           - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
+          - Release FLY IP address: cloud/fly/fly-release-ip-address.md
       - Google Cloud:
           - Metadata API:
               - cloud/gcp/metadata-api/index.md
