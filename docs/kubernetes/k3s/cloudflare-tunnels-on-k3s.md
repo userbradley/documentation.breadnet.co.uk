@@ -41,7 +41,7 @@ The below assumes you already have a namespace called `cloudflare`
 
 ```shell
 kubens cloudflare
-kubectl create secret generic tunnel-credentials --from-literal="credentials.json"=$(cat /Users/cf000197/.cloudflared/ef824aef-7557-4b41-a398-4684585177ad.json | base64)
+kubectl create secret generic tunnel-credentials --from-literal="credentials.json"="$(cat /Users/cf000197/.cloudflared/ef824aef-7557-4b41-a398-4684585177ad.json | tr -d '\n')"
 ```
 
 ## Creating Records
