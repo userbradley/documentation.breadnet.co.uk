@@ -255,6 +255,8 @@ nav:
           - Reset windows to factory defaults and erase all data: kb/windows/reset-windows-to-factory-defaults-and-erase-all-data.md
   - Kubernetes:
       - kubernetes/index.md
+      - ESO:
+          - Force resync of External Secret: kubernetes/eso/trigger-refresh.md
       - Flux:
           - Authenticate flux with Google Artifact Registry: kubernetes/flux/flux-artifact-registry-google-auth.md
           - Flux Lookup no such host: kubernetes/flux/flux-lookup-no-such-host.md
