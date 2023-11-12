@@ -157,6 +157,8 @@ nav:
           - Setup Routing: kb/google-workspace/setup-routing.md
       - Grocy:
           - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
+      - Juniper:
+          - Juniper Router Selection: kb/juniper/juniper-router-selection.md
       - Linux Command line:
           - Always restart service after failure systemd: kb/linux-cli/always-restart-service-after-failure-systemd.md
           - Backup SQlite Database: kb/linux-cli/backup-sqlite-db.md
