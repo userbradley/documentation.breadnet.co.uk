@@ -166,6 +166,7 @@ nav:
           - Bulk change file extensions: kb/linux-cli/bulk-change-file-extension.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
+          - Get dell service tag Ubuntu: kb/linux-cli/get-dell-service-tag-ubuntu.md
           - How to create tar.gz file: kb/linux-cli/how-to-create-tar-gz-file.md
           - List NFS Shares exported: kb/linux-cli/list-nfs-shares-exported.md
           - Lowercase to Uppercase: kb/linux-cli/lowercase-to-uppercase.md

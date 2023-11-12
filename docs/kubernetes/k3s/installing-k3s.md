@@ -36,3 +36,9 @@ You can remove it with
 ```shell
 kubectl taint node k3s-01 node-roles.kubernetes.io/master:NoSchedule-
 ```
+
+---
+
+## Multiple Masters
+
+* [K3s documentation](https://docs.k3s.io/datastore/ha-embedded)
