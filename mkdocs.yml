@@ -200,6 +200,7 @@ nav:
           - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
           - Creating minio users and assigning permissions: kb/minio/creating-minio-users-and-assigning-permissions.md
       - Networking:
+          - Update DNS on EE router: kb/networking/ee-update-dns.md
           - Show Broadband password on EE router: kb/networking/show-broadband-password-ee.md
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
