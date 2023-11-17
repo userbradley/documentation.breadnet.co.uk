@@ -9,7 +9,7 @@ reviewdate: '2022-01-01'
 
 <h4 id="bkmrk-prereqs%3A-i-am-not-a-">Prereqs:</h4>
 <!--suppress ALL -->
-<p id="bkmrk-i-am-not-a-security-"><br>I am not a security expert, I am a sysadmin. The security of your server is up to you. Do basic things like enable <a href="https://documentation.breadnet.co.uk/books/kb-articles/page/ssh-keys" target="_blank" rel="noopener">ssh keys</a> and lock down ingress ports with ufw or iptables. What ever angles your dangle.<br>I am not a docker expert. I am a sysadmin which means I can use google (I think? bleh) so if you see anything whack in this, feel free to email me (webmaster[at]breadnet[dot]co[dot]uk)</p>
+<p id="bkmrk-i-am-not-a-security-"><br>I am not a security expert, I am a sysadmin. The security of your server is up to you. Do basic things like enable <a href="https://documentation.breadnet.co.uk/kb/ssh/generate-ssh-keys/" target="_blank" rel="noopener">ssh keys</a> and lock down ingress ports with ufw or iptables. What ever angles your dangle.<br>I am not a docker expert. I am a sysadmin which means I can use google (I think? bleh) so if you see anything whack in this, feel free to email me (webmaster[at]breadnet[dot]co[dot]uk)</p>
 <p id="bkmrk-%C2%A0"> </p>
 <p id="bkmrk-comment%3A-3rd-may-202">Comment: 3rd may 2020: After running this for a few days it's come to my attention that for this to be viable and be able to transcode you will need a slightly more powerful host. Whilst this does feel like a kick in the nuts, its not. There are lots of technologies that still work here.</p>
 <p id="bkmrk-%C2%A0-0"> </p>
@@ -27,7 +27,7 @@ reviewdate: '2022-01-01'
 <pre id="bkmrk-sudo-apt-get-install"><code class="language-shell">sudo apt-get install rclone</code></pre>
 <p id="bkmrk-now-we-need-to-confi">Now we need to configure the s3 bucket. I am using wasabi like I said to begin with, but some parts are universal to all s3 compatible storage options. </p>
 <p id="bkmrk-%C2%A0-1"> </p>
-<p id="bkmrk-login-to-wasabi-cons">Login to wasabi console at <a href="https://console.wasabi.com">https://console.wasabisys.com</a>  </p>
+<p id="bkmrk-login-to-wasabi-cons">Login to wasabi console at <a href="https://console.wasabisys.com">https://console.wasabisys.com</a>  </p>
 <p id="bkmrk-once-logged-in%2C-go-t">Once logged in, go to buckets and create bucket - name it what you want. call it Jeff for all I care :)</p>
 <p id="bkmrk-now-that-your-bucket">Now that your bucket is created, we need to create a policy that will later be applied to a user. </p>
 <p id="bkmrk-go-to-policies-on-th">Go to policies on the left hand nav bar and create new policy (top right)</p>
