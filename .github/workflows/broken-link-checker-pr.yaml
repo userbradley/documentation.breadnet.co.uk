@@ -20,9 +20,15 @@ jobs:
           output: /tmp/out.md
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - name: PR comment with file
+      - name: PR comment with Broken Links
         if: env.lychee_exit_code != 0
         uses: thollander/actions-comment-pull-request@v2.4.3
         with:
           filePath: /tmp/out.md
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Comment with no broken links
+        if: env.lychee_exit_code = 0
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            PR introduces no broken links
