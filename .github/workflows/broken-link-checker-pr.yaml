@@ -1,0 +1,26 @@
+name: Broken Link Checker PR
+on:
+  pull_request:
+    types:
+      - synchronize
+      - opened
+    paths:
+      - docs/**
+      - .github/workflows/broken-link-checker-pr.yaml
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check Links
+        uses: lycheeverse/lychee-action@v1.8.0
+        with:
+          args: --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --exclude-mail
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: PR comment with file
+        uses: thollander/actions-comment-pull-request@v2.4.3
+        with:
+          filePath: ./lychee/out.md
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
