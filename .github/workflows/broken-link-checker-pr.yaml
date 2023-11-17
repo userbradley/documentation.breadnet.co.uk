@@ -21,6 +21,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: PR comment with file
+        if: env.lychee_exit_code != 0
         uses: thollander/actions-comment-pull-request@v2.4.3
         with:
           filePath: /tmp/out.md
