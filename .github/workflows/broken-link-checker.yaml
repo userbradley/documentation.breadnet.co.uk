@@ -1,7 +1,9 @@
 name: Broken Link Checker
 on:
   repository_dispatch:
+    types: [test]
   workflow_dispatch:
+
   schedule:
     - cron: "00 18 * * *"
 jobs:
