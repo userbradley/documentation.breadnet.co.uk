@@ -17,10 +17,11 @@ jobs:
         uses: lycheeverse/lychee-action@v1.8.0
         with:
           args: --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --exclude-mail
+          output: /tmp/out.md
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: PR comment with file
         uses: thollander/actions-comment-pull-request@v2.4.3
         with:
-          filePath: ./lychee/out.md
+          filePath: /tmp/out.md
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
