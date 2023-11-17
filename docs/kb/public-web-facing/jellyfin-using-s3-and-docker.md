@@ -27,7 +27,7 @@ reviewdate: '2022-01-01'
 <pre id="bkmrk-sudo-apt-get-install"><code class="language-shell">sudo apt-get install rclone</code></pre>
 <p id="bkmrk-now-we-need-to-confi">Now we need to configure the s3 bucket. I am using wasabi like I said to begin with, but some parts are universal to all s3 compatible storage options. </p>
 <p id="bkmrk-%C2%A0-1"> </p>
-<p id="bkmrk-login-to-wasabi-cons">Login to wasabi console at <a href="https://console.wasabi.com">https://console.wasabisys.com</a>  </p>
+<p id="bkmrk-login-to-wasabi-cons">Login to wasabi console at <a href="https://console.wasabisys.com">https://console.wasabisys.com</a>  </p>
 <p id="bkmrk-once-logged-in%2C-go-t">Once logged in, go to buckets and create bucket - name it what you want. call it Jeff for all I care :)</p>
 <p id="bkmrk-now-that-your-bucket">Now that your bucket is created, we need to create a policy that will later be applied to a user. </p>
 <p id="bkmrk-go-to-policies-on-th">Go to policies on the left hand nav bar and create new policy (top right)</p>

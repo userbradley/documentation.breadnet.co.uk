@@ -1,0 +1,8 @@
+https:\/\/documentation\.breadnet\.co\.uk\/uploads\/images\/gallery\/\d{4}-\d{2}\/scaled-1680-\/[a-zA-Z0-9-]+\.png
+http:\/\/(?:[0-9]{1,3}(?:\.[0-9]{1,3}){3}|(?:[0-9a-fA-F]{1,4}(?::[0-9a-fA-F]{1,4}){7}|::|[0-9a-fA-F]{1,4}(?::[0-9a-fA-F]{1,4}){0,6}))(?::[0-9]{1,5})?
+https://domaincontact.cloudflareregistrar.com/breadnet.co.uk
+https:\/\/register-drones\.caa\.co\.uk\/(?:[^\/]+\/?)*
+https://doesnotexist
+http://bookstack.bread
+https://bookstack.breadnet.co.uk
+http://localhost
