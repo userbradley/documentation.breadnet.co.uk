@@ -94,6 +94,7 @@ nav:
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
           - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
+          - Get User info from Numerical Google account ID: gcloud/gcp/get-email-from-numerical-user-id.md
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
           - Grafeas: cloud/gcp/grafeas.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
