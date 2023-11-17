@@ -44,5 +44,5 @@ set_real_ip_from 172.19.0.0/16;
 
 ## Example
 
-* [My Nginx config](https://github.com/userbradley/documentation.breadnet.co.uk/blob/master/nginx.conf)
-* [Cloudflare IP list](https://github.com/userbradley/documentation.breadnet.co.uk/blob/master/cloudflare)
+* [My Nginx config](https://github.com/userbradley/documentation.breadnet.co.uk/blob/main/nginx.conf)
+* [Cloudflare IP list](https://github.com/userbradley/documentation.breadnet.co.uk/blob/main/cloudflare.conf)
