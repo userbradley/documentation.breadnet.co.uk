@@ -160,7 +160,7 @@ nav:
           - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
       - Juniper:
           - Juniper Router Selection: kb/juniper/juniper-router-selection.md
-          - Junos useful commands: kb/kuniper/junos-useful-commands.md
+          - Junos useful commands: kb/juniper/junos-useful-commands.md
       - Linux Command line:
           - Always restart service after failure systemd: kb/linux-cli/always-restart-service-after-failure-systemd.md
           - Backup SQlite Database: kb/linux-cli/backup-sqlite-db.md
@@ -192,6 +192,7 @@ nav:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
       - Mac:
           - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
+          - Connect to serial port on mac: kb/mac/connect-to-serial-port-on-mac.md
       - Markdown:
           - How to use git: kb/markdown/how-to-use-git.md
           - Custom markdown badges: kb/markdown/custom-badges.md
