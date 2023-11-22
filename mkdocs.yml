@@ -59,10 +59,13 @@ nav:
           - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
           - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
   - Cloud Providers:
-      - Aqua:
-          - Aqua Page 1: cloud/aqua/aqua-page-1.md
-          - Aqua Page 2: cloud/aqua/aqua-page-2.md
-          - Aqua partnership notes: cloud/aqua/partnership-info.md
+      - Cloud Security Providers:
+          - Aqua:
+              - Aqua Page 1: cloud/csp/aqua/aqua-page-1.md
+              - Aqua Page 2: cloud/csp/aqua/aqua-page-2.md
+              - Aqua partnership notes: cloud/csp/aqua/partnership-info.md
+          - Rapid7:
+              - Add Google Organization to Rapid7: cloud/csp/rapid7/add-google-organization-to-rapid7.md
       - AWS:
           - AWS CLI: cloud/aws/aws-cli.md
           - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
@@ -450,6 +453,9 @@ plugins:
         'home/oven/oven.md': 'home/rg/oven/oven.md'
         'home/washing/washing-machine.md': 'home/rg/washing/washing-machine.md'
         'home/water-heater/reduce-temperature.md': 'home/rg/water-heater/reduce-temperature.md'
+        'cloud/aqua/aqua-page-1.md': 'cloud/csp/aqua/aqua-page-1.md'
+        'cloud/aqua/aqua-page-2.md': 'cloud/csp/aqua/aqua-page-2.md'
+        'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
         #- offline
 extra:
   social:
