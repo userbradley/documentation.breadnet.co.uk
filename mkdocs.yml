@@ -471,3 +471,12 @@ extra:
       link: https://breadnet.co.uk
       name: My Website
   generator: false # I am sorry I will enable it later
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: info
