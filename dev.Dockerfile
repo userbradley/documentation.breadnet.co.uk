@@ -16,7 +16,7 @@ RUN ["mkdocs", "build"]
 
 FROM nginx:stable-alpine
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY dev-nginx.conf /etc/nginx/conf.d/default.conf
 COPY cloudflare.conf /etc/nginx/cloudflare.conf
 COPY deny.conf /etc/nginx/deny.conf
 COPY .htpasswd /etc/nginx/.htpasswd
