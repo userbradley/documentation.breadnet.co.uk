@@ -301,6 +301,7 @@ nav:
           - Downward API: kubernetes/kb/downward-api.md
           - Force Delete pod: kubernetes/kb/force-delete-pod.md
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
+          - "Kubectl get pod and node it's on": kubernetes/kb/kubectl-get-pods-and-nodes.md
           - Set default namespace kubectl: kubernetes/kb/kubectl-set-namespace.md
           - Testing RBAC: kubernetes/kb/rbac-testing.md
           - Sleeper pod: kubernetes/kb/sleeper.md

@@ -10,9 +10,9 @@ title: Kubernetes
 
 ## Folders
 
-* [KB](kb)
-* [GKE](gke)
-* [k3s](k3s)
+* [KB](kb/index.md)
+* [GKE](gke/index.md)
+* [k3s](k3s/index.md)
 
 
 

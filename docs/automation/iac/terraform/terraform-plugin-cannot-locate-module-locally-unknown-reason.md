@@ -30,4 +30,4 @@ source = "git::ssh://git@github.com/userbradley/terraform-module-google-iam-bind
 
 We got this from the modules.json file
 
-![](/assets/x5BORuXlBtctN0Mi-image-1646765189176.png)
+![](../../../assets/x5BORuXlBtctN0Mi-image-1646765189176.png)

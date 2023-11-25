@@ -4,7 +4,7 @@ title: Google Cloud Metadata Endpoint
 
 ## What
 
-On google cloud, all compute instances have access to the metadata endpoint
+On Google cloud, all compute instances have access to the metadata endpoint
 
 ```shell
 http://metadata.google.internal/computeMetadata/v1

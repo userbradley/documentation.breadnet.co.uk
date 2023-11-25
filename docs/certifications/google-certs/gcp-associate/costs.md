@@ -14,7 +14,7 @@ reviewdate: '2022-01-01'
 <p id="bkmrk-committed-to-1-3-yea">Committed to 1-3 years</p>
 <p id="bkmrk-up-to-70%25-discount-d">Up to 70% discount dependent on machine type and GPU's </p>
 <h4 id="bkmrk-pre-emptible-vm%27s">Pre-emptible vm's</h4>
-<p id="bkmrk-short-lived-cheaper-">Short lived cheaper instances </p>
+<p id="bkmrk-short-lived-cheaper-">Short-lived cheaper instances </p>
 <p id="bkmrk-can-be-stopped-by-gc">Can be stopped by GCP at any time.</p>
 <p id="bkmrk-maximum-time-you-can">Maximum time you can run it is around 24 hours</p>
 <p id="bkmrk-you-get-a-30-second-">You get a 30-second warning before</p>

@@ -8,7 +8,7 @@ Washing room
 
 ## Photo
 
-![](/assets/IMG_9260.JPG)
+![](../../../assets/IMG_9260.JPG)
 
 ## Using the machine
 

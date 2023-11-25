@@ -17,7 +17,7 @@ Make note of the Logo name. If you are struggling to find the name, go to their 
 
 On the left hand side of a `simpleicon` is the color code
 
-![](/assets/amex-simpleicons.png)
+![](../../assets/amex-simpleicons.png)
 
 Paste the copied value in to the below site and encode it
 
