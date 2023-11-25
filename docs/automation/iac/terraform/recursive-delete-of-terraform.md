@@ -4,7 +4,7 @@ title: Recursive delete of .terraform directory
 
 ## What
 
-Sometimes your file system can collect alot of `.terraform` directories, or something just isnt right with terraform
+Sometimes your file system can collect alot of `.terraform` directories, or something just isn't right with terraform
 
 ## How
 

@@ -4,7 +4,7 @@ title: Connect to serial port on mac
 
 Macs are _supposedly_ well known for being able to **just work** with serial ports
 
-In my professional opinion there are 2 simple systems we can use to connect to Serial ports on mac
+In my professional opinion there are 2 simple systems we can use to connect to Serial ports on Mac
 
 * Minicom
 * screen

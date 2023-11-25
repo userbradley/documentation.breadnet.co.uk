@@ -12,7 +12,7 @@ title: GCP Security, page 1
 <p id="bkmrk--1"></p>
 <h4 id="bkmrk-regions-and-zones">Regions and Zones</h4>
 <p id="bkmrk-when-we-architect-ou">When we architect our application we need to deploy our application closes to our users, as well as spanning multiple zones.</p>
-<p id="bkmrk-google-cloud-is-spli">Google cloud is split in to&nbsp;<strong>Regions&nbsp;</strong>and&nbsp;<strong>Zones</strong></p>
+<p id="bkmrk-google-cloud-is-spli">Google cloud is split into&nbsp;<strong>Regions&nbsp;</strong>and&nbsp;<strong>Zones</strong></p>
 <ul id="bkmrk-region-a-geographica">
 <li class="null">Region
 <ul>
@@ -27,8 +27,8 @@ title: GCP Security, page 1
 </ul>
 </li>
 </ul>
-<p id="bkmrk-some-applications-%28l">Some applications (Like the ones I am working on currently) - We are not allowed to store Date outside of the border of the United Kingdom.&nbsp;</p>
-<p id="bkmrk-whilst-google-don%27t-">Whilst google don't release information about their exact locations, we are able to make a good guess it's in Slough&nbsp;</p>
+<p id="bkmrk-some-applications-%28l">Some applications (Like the ones I am working on currently) - We are not allowed to store Date outside the border of the United Kingdom.&nbsp;</p>
+<p id="bkmrk-whilst-google-don%27t-">Whilst Google don't release information about their exact locations, we are able to make a good guess it's in Slough&nbsp;</p>
 <p id="bkmrk-these-data-centers-a">These data centers are connected via High speed connections (Fibre cables)&nbsp;</p>
 <hr id="bkmrk--11">
 <p id="bkmrk-%C2%A0-0"><br></p>
@@ -93,7 +93,7 @@ title: GCP Security, page 1
 </li>
 </ul>
 <p id="bkmrk-%C2%A0-1"><br></p>
-<h4 id="bkmrk-security-at-google-a">Security at google and how it helps</h4>
+<h4 id="bkmrk-security-at-google-a">Security at Google and how it helps</h4>
 <ul id="bkmrk-what-google-does-to-">
 <li class="null">What google does to secure your app/ data</li>
 <li class="null">How google does all these</li>
@@ -113,7 +113,7 @@ title: GCP Security, page 1
 <ul id="bkmrk-hardware-layer-less-">
 <li>Hardware layer
 <ul>
-<li>Less than 1% of google employees have access to the Data Centre</li>
+<li>Less than 1% of Google employees have access to the Data Centre</li>
 <li>Google builds all their own hardware
 <ul>
 <li>Routers, switches, etc</li>
@@ -196,17 +196,17 @@ title: GCP Security, page 1
 </li>
 </ul>
 <h5 id="bkmrk-shared-responsibilit">Shared Responsibility Model</h5>
-<p id="bkmrk-google-is-responsibl">Google is responsible for securing some aspects of your deployment, like the underlying hardware/ infra, where as you need to ensure that your application is patched (At a bare minimum)&nbsp;</p>
+<p id="bkmrk-google-is-responsibl">Google is responsible for securing some aspects of your deployment, like the underlying hardware/ infra, whereas you need to ensure that your application is patched (At a bare minimum)&nbsp;</p>
 <p id="bkmrk--12"><img src="/assets/data-incident-response-figure-1.png"></p>
-<p id="bkmrk-%C2%A0-2">The above chart shows who plays more roles around where, and by whom</p>
+<p id="bkmrk-%C2%A0-2">The above chart shows who play more roles around where, and by whom</p>
 <p id="bkmrk-we-can-see-that-for-">We can see that for <strong>On-prem,&nbsp;</strong>it's entirely your problem</p>
-<p id="bkmrk-where-as-when-we-go-">Where as when we go to Software As A Service (SaaS) -&nbsp; All the underlying infrastructure, usage, deployment etc is the providers problem.&nbsp;</p>
+<p id="bkmrk-where-as-when-we-go-">Whereas when we go to Software As A Service (SaaS) -&nbsp; All the underlying infrastructure, usage, deployment etc. is the providers' problem.&nbsp;</p>
 <h3 id="bkmrk-%C2%A0-3">Cloud Identity</h3>
 <p id="bkmrk-there-are-5-%27cloud-i">There are 5 <em>'Cloud Identities':</em></p>
 <ol id="bkmrk-google-account-servi">
 <li class="null">Google Account</li>
 <li class="null">Service Account</li>
-<li class="null">Google workspace&nbsp;</li>
+<li class="null">Google Workspace&nbsp;</li>
 <li class="null">Cloud Identity Domain</li>
 <li class="null">Google Groups</li>
 </ol>
@@ -233,14 +233,14 @@ title: GCP Security, page 1
 <li>You get complete user management for all the users under the domain</li>
 <li>Free 15 days trial, then $6 per user per month</li>
 <li>Access via admin.google.com</li>
-<li>If you already have Google workspace, then it automatically verifies your google cloud domain</li>
+<li>If you already have Google Workspace, then it automatically verifies your Google cloud domain</li>
 </ul>
 <p id="bkmrk-%C2%A0-5"><br></p>
 <p id="bkmrk-sections-have-been-s"><em>Sections have been skipped on Udemy as knowledge is pre-existing</em></p>
 <h3 id="bkmrk-admin-console">Admin Console</h3>
-<p id="bkmrk-the-below-section-is">The below section is about the google cloud admin console</p>
+<p id="bkmrk-the-below-section-is">The below section is about the Google cloud admin console</p>
 <h4 id="bkmrk-resource-hierarchy%C2%A0">Resource Hierarchy&nbsp;</h4>
-<p id="bkmrk-at-the-top%C2%A0">At the top you have the Organization<br>Below the ORG you can have folders<br>Below folders you have projects</p>
+<p id="bkmrk-at-the-top%C2%A0">At the top you have the Organization<br>Below the ORG you can have folders<br>Below folders, you have projects</p>
 <p id="bkmrk-%C2%A0-6"><br></p>
 <p id="bkmrk-at-each-level-you-ar">At each level you are able to set IAM and policies</p>
 <ul id="bkmrk-you-can-nest-folders">
@@ -252,7 +252,7 @@ title: GCP Security, page 1
 <hr id="bkmrk--14">
 <h4 id="bkmrk-%C2%A0-7"><br></h4>
 <h4 id="bkmrk-organization-policie">Organization Policies&nbsp;</h4>
-<p id="bkmrk-%C2%A0-8">For arguments sake, we will look at how to enable/ disable 3 policies:</p>
+<p id="bkmrk-%C2%A0-8">For argument’s sake, we will look at how to enable/ disable 3 policies:</p>
 <ol id="bkmrk-disable-service-acco">
 <li class="null">Disable Service Account Creation</li>
 <li class="null">Enforce Uniform bucket level access</li>
@@ -308,7 +308,7 @@ title: GCP Security, page 1
 <ul id="bkmrk-%C2%A0primitive-these-are">
 <li class="null">&nbsp;Primitive
 <ul>
-<li class="null">These are super simple roles, and should usually be avoided as best as possible&nbsp;
+<li class="null">These are super simple roles, and should usually be avoided as good as possible&nbsp;
 <ul>
 <li class="null">Owner
 <ul>

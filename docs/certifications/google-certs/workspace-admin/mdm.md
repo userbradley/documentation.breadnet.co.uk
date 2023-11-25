@@ -11,4 +11,4 @@ for more details. If the app isn't already installed when the user adds their co
 
 
 
-Adding a device requires that you install the google mobile device management application on your phone
+Adding a device requires that you install the Google mobile device management application on your phone

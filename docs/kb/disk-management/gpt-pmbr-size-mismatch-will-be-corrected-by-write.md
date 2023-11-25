@@ -24,4 +24,4 @@ or
 sudo gdisk -l /dev/sda
 ```
 
-Then: [Expand the filesystem](/kb/disk-management/expanding-a-filesystem/)
+Then: [Expand the filesystem](expanding-a-filesystem.md)

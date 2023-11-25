@@ -8,9 +8,9 @@ reviewdate: '2022-01-01'
 <ul id="bkmrk-services-comprises-o">
 <li>Services
 <ul>
-<li>Comprises of the following
+<li>Comprises the following
 <ul>
-<li>Enforcment mode:
+<li>Enforcement mode:
 <ul>
 <li>How aqua handles the policy </li>
 </ul>

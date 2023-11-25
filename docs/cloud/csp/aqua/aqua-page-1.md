@@ -267,8 +267,8 @@ reviewdate: '2022-01-01'
 <a href="https://cloudsploit.com/opensource">Cloudsploit</a>
 <ul>
 <li>Enforces cloud compliance</li>
-<li>Suports aws azure gcp oracle and github</li>
-<li>Ectensive plugin</li>
+<li>Supports aws azure gcp oracle and GitHub</li>
+<li>Extensive plugin</li>
 <li>Restful ASPI</li>
 </ul>
 </li>

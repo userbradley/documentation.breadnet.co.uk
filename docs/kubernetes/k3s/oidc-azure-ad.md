@@ -169,7 +169,7 @@ Putting the command together looks like this
 kubectl oidc-login setup --oidc-issuer-url=https://sts.windows.net/<your tenant id>/ --oidc-client-id=<your application client id> --oidc-client-secret="<your application secret>" --oidc-extra-scope groups,email
 ```
 
-Putting this in to your terminal _should_ open your Browser, and ask you to login to your Microsoft account
+Putting this in to your terminal _should_ open your Browser, and ask you to log in to your Microsoft account
 
 Scrolling up in your terminal should show something like this
 
@@ -208,7 +208,7 @@ The most important fields here are `email` and `groups[]`, if these don't show u
 work out what went wrong
 
 !!! note "FAQ section?"
-    If you used this documentation and something went wrong, or something is not right please, please please [open an issue](https://github.com/userbradley/documentation.breadnet.co.uk/issues)
+    If you used this documentation and something went wrong, or something is not right please, please, please [open an issue](https://github.com/userbradley/documentation.breadnet.co.uk/issues)
 
 Below the json, there will be a section that is similar to this
 

@@ -318,9 +318,9 @@ It tells the CRE to pull the docker (or OCI) image, and then reports the status 
 
 ## Kube Proxy
 
-Kube proxy is resposible for all the _workload_ based networking.
+Kube proxy is responsible for all the _workload_ based networking.
 
-It handles (non exclusive list):
+It handles (non-exclusive list):
 
 * Inter-pod networking
 * Inter-pod-node networking
