@@ -296,6 +296,7 @@ nav:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
           - Convert Docker compose to Kubernetes manifest files: kubernetes/kb/convert-docker-compose-to-kubernetes-manifests.md
+          - Delete CRDs matching name: kubernetes/kb/delete-crd-matching-name.md
           - Delete namespace stuck in terminating: kubernetes/kb/delete-terminating-namespace.md
           - Delete not running pods: kubernetes/kb/deleting-not-running-pods.md
           - Downward API: kubernetes/kb/downward-api.md
