@@ -201,6 +201,8 @@ nav:
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
+      - Matomo:
+          - Matomo behind cloudflared: kb/matomo/matomo-behind-cloudflare.md
       - Minio:
           - OLD: kb/minio/old.md
           - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
