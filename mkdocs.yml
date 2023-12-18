@@ -427,7 +427,6 @@ markdown_extensions:
 plugins:
   - search
   - social
-  - privacy
   - redirects:
       redirect_maps:
         'kb/public-web-facing/jellyfin-s3.md': 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
