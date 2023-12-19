@@ -487,3 +487,11 @@ validation:
     not_found: ignore
     absolute_links: ignore
     unrecognized_links: info
+analytics:
+  matomo:
+    enabled: true
+    url: trace-agent.breadnet.co.uk
+    siteId: 17
+  cloudflare:
+    enabled: false
+    token: 6a2c80ed9b0c4af39dadb53f62452603
