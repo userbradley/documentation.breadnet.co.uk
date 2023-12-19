@@ -14,7 +14,7 @@ COPY docs /app/docs
 
 RUN ["mkdocs", "build"]
 
-FROM nginx:stable-alpine
+FROM nginx:stable-alpine3.17-slim
 
 COPY dev-nginx.conf /etc/nginx/conf.d/default.conf
 COPY cloudflare.conf /etc/nginx/cloudflare.conf

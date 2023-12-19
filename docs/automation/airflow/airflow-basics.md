@@ -120,7 +120,7 @@ Use the equation below
 
     Trigger Point → start_date + { schedule_interval } → till the end.
 
-[![image-1643208864559.png](https://doesnotexist/images/gallery/2022-01/scaled-1680-/iTU5rn2xNXtTTsvD-image-1643208864559.png)](https://doesnotexist/images/gallery/2022-01/iTU5rn2xNXtTTsvD-image-1643208864559.png)
+![](../../assets/airflow-1.png)
 
 #### In simple terms
 
@@ -128,18 +128,17 @@ If you set the create date a year ago, and upload it will create many many dag i
 
 The below explains this in way too much detail, but it's good to have
 
-[![image-1643209098829.png](https://doesnotexist/images/gallery/2022-01/scaled-1680-/PULQzUkrTZW7aniq-image-1643209098829.png)](https://doesnotexist/images/gallery/2022-01/PULQzUkrTZW7aniq-image-1643209098829.png)
+![](../../assets/airflow-2.png)
 
 In the above image we are initial config where everything is fine and our DAG Run happened at 6. Then we paused the DAG.
 
-![image-1643209110255.png](https://doesnotexist/images/gallery/2022-01/scaled-1680-/dLOpUfxrWflaGAWU-image-1643209110255.png)
 
 Here we see that since at the next schedule DAG run was paused hence start\_date for the schedule is not available.
 
-[![image-1643209119641.png](https://doesnotexist/images/gallery/2022-01/scaled-1680-/wBAPtN6LZ09KCAt7-image-1643209119641.png)](https://doesnotexist/images/gallery/2022-01/wBAPtN6LZ09KCAt7-image-1643209119641.png)
 
 At the next schedule the same happened (DAG run was not triggered). Now we enable or schedule the DAG run from console
 
-[![image-1643209131654.png](https://doesnotexist/images/gallery/2022-01/scaled-1680-/pMwlmxAqTVobvGaB-image-1643209131654.png)](https://doesnotexist/images/gallery/2022-01/pMwlmxAqTVobvGaB-image-1643209131654.png)
 
 In the above diagram we see at the next schedule previously missed DAG Runs were triggered. Notice start\_date is the next schedule (9). While the Execution dates are the actual ones, if you notice, start\_date are same for the last three DAG runs. This denotes backfill. So first DAG run for execution date of 6 happened then for 7 and then for 8.
+
+<!-- https://medium.com/nerd-for-tech/airflow-catchup-backfill-demystified-355def1b6f92 -->

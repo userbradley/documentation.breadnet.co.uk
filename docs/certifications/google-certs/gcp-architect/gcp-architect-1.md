@@ -706,7 +706,7 @@ Resiliency - Ability for a system to provide the needs it's expected to provide 
 
 Automatic discounts for running VM instances for significant portions of time
 
-[![image-1620574015296.png](https://doesnotexist/images/gallery/2021-05/scaled-1680-/46FRmJql62IK5eFK-image-1620574015296.png)](/assets/46FRmJql62IK5eFK-image-1620574015296.png)
+[![image-1620574015296.png](../../../assets/46FRmJql62IK5eFK-image-1620574015296.png)
 
 Example:
 
