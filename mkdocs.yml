@@ -337,15 +337,12 @@ nav:
       - outage/index.md
       - 2023-11-26 4AM: outage/2023-11-26-04.md
       - 2023-10-27 11AM: outage/2023-10-27-11.md
-## Config ##
 repo_name: documentation
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
 site_name: !ENV [env, "breadNET Documentation"]
 site_url: !ENV [domain, "https://documentation.breadnet.co.uk"]
 site_description: breadNET Documentation
-#extra_css:
-#  - stylesheets/custom.css # Custom header color
 theme:
   name: material
   favicon: favicon.ico
