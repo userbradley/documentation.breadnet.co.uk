@@ -40,7 +40,7 @@ Google has 2 release tracks you can subscribe to:
 
 For most gsuit orgs, you want the scheduled release track for stability. 
 
-(see side bar for calendar)
+(see sidebar for calendar)
 
 To edit this, it's a global option so will be under profile for the company
 

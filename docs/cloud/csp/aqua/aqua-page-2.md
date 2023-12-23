@@ -51,7 +51,7 @@ How it protects:
     *   Nano-enforcer allows Aqua to carry out runtime protection
     *   Does not work for GCP
 
-Module 11: Aqua-api and aquacltl
+Module 11: Aqua-api and aquactl
 --------------------------------
 
 *   Aquactl can be used to inject nano-enforcers as well as

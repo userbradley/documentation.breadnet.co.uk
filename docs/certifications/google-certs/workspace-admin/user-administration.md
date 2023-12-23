@@ -46,13 +46,13 @@ Ldap is the single source of truth so exclude admin 
 
 Chose what to sync. E
 
-Ensure that you select 'Dont suspend or delete google domain admins not found in ldap'
+Ensure that you select 'Don't suspend or delete google domain admins not found in ldap'
 
 You can now synch passwords with AD, but can use Gsuit password synch 
 
-You can setup a search rule, but with AD you can select to use defaults. 
+You can set up a search rule, but with AD you can select to use defaults. 
 
-If your delete and suspend limits excheed you will get an error
+If your delete and suspend limits exceed you will get an error
 
 \`sync -c file.xml\` does a dry run
 

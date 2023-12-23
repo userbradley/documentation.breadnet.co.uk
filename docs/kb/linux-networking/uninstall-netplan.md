@@ -17,7 +17,7 @@ These are the **verified** steps:
 6.  The command `ip a` will show whether the expected network configuration has been applied.
 7.  Optionally, manually purge the remants of the netplan configuration files with `sudo rm -vfr /usr/share/netplan /etc/netplan`.
 
-No reboot is needed in order to "refresh" the IP configuration: it will be active as of step no.5 . In case of troubles, double check the interface names. A typical IPv4 DHCP configuration will resemble this one:
+No reboot is needed in order to "refresh" the IP configuration: it will be active as of step no.5 . In case of troubles, double-check the interface names. A typical IPv4 DHCP configuration will resemble this one:
 
     auto enp0s3
     iface enp0s3 inet dhcp

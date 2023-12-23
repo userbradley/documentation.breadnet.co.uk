@@ -25,13 +25,13 @@ Vulnerability can
 
 Approved base images
 
-Run only on trustes images
+Run only on trusted images
 
 Least privileges
 
 Service mesh encryption and auth
 
-Container Sandboxing
+Container Sandbox
 
 Container Immutability
 
