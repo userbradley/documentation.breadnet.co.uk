@@ -71,7 +71,7 @@ There are 2 types of groups:
 
 For a user to be able to email a group, you need to have the users who will want to email people set as a maanger:
 
-[![image-1604671927789.png](/assets/2mznsOlbTSNaaAcI-image-1604671927789.png)](/assets/2mznsOlbTSNaaAcI-image-1604671927789.png)
+[![image-1604671927789.png](../../../assets/2mznsOlbTSNaaAcI-image-1604671927789.png)](../../../assets/2mznsOlbTSNaaAcI-image-1604671927789.png)
 
 \---
 
@@ -113,13 +113,14 @@ To set different access to directories you can use OU's:
 
 You can contain custom directories, create a google group, then add the group to the directories.
 
-[![image-1605010726509.png](/assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)](/assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)
+[![image-1605010726509.png](../../../assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)](../../../assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)
 
 Enable direcotry editing by going to Directory > directory settings 
 
 Here you can enable things that people are able to edit. 
 
-As usual you can assign this based on an OU system[![](/assets/GJIc7rJptYTmXzfh-image-1606735635793.png)](/assets/GJIc7rJptYTmXzfh-image-1606735635793.png)
+As usual you can assign this based on an OU system
+[![](../../../assets/GJIc7rJptYTmXzfh-image-1606735635793.png)](../../../assets/GJIc7rJptYTmXzfh-image-1606735635793.png)
 
 You should add work location so GCal can see where they are and suggest meeting rooms for users.
 
@@ -139,7 +140,7 @@ Go to the OU under Directory Settings > visibility settings 
 
 Set it as \`Users in a custom directory\` then create new and name it then add a group to it:
 
-[![image-1606738550809.png](/assets/qtFenCGbLvRUVQqs-image-1606738550809.png)](/assets/qtFenCGbLvRUVQqs-image-1606738550809.png)
+[![image-1606738550809.png](../../../assets/qtFenCGbLvRUVQqs-image-1606738550809.png)](../../../assets/qtFenCGbLvRUVQqs-image-1606738550809.png)
 
 This is a change that takes up to 24 hours to process
 
@@ -159,7 +160,7 @@ Admin roles are roles given to an admin that allows them to perform actions in t
 
 To assign an admin role you can select the user's account under admin.google.com then assign roles.
 
-![image-1606740965114.png](/assets/lHFWdtVTkMX6AX5G-image-1606740965114.png)
+![image-1606740965114.png](../../../assets/lHFWdtVTkMX6AX5G-image-1606740965114.png)
 
 You can not edit the pre-set roles, but you can create custom roles based off of the pre-defined options
 
@@ -174,7 +175,7 @@ Things to note:
 
 Like previously mentioned you are able to create custom roles. To do so, go to the admin page then users then roles, then create new role:
 
-[![image-1606741677022.png](/assets/goQwxsbjB33Z1ZN1-image-1606741677022.png)](/assets/goQwxsbjB33Z1ZN1-image-1606741677022.png)
+[![image-1606741677022.png](../../../assets/goQwxsbjB33Z1ZN1-image-1606741677022.png)](../../../assets/goQwxsbjB33Z1ZN1-image-1606741677022.png)
 
 You from here can select what roles to assign to the role. 
 
