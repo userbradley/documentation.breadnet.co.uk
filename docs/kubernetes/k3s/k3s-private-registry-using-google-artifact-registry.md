@@ -18,6 +18,10 @@ Sometimes you want to run OCI containers from a private registry, and you use Go
 
 You need to format the keyfile so that it is all one line.
 
+```shell
+cat <keyfile-name>.json | tr -d '\n'
+```
+
 Example below
 
 === "Before"
