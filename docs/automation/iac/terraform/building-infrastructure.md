@@ -7,11 +7,11 @@ reviewdate: '2022-01-01'
 
 First we need to set which cloud provider we will be using. In this example we will be using GCP
 
-Start with defining the cloud privodor and then the version. Usually this is not needed!
+Start with defining the cloud providor and then the version. Usually this is not needed!
 
-From google cloud console, you will need to get the project ID. This can be found on the dashboard of the project.
+From Google cloud console, you will need to get the project ID. This can be found on the dashboard of the project.
 
-The we will nee to define the region and zone. Today I will be using us-central1 and then the zone of c
+Then we will need to define the region and zone. Today I will be using us-central1 and then the zone of c
 
 This becomes `us-central1-`c in the format of <country>-<area><dcnumber>-<a,b,c...>
 
@@ -161,7 +161,7 @@ Salt Lake City, Utah, USA
 
 Next we will be creating a network in the us-central1-c zone called `google_compute_network.vpc_network` and giving it a name of `terraform-network`
 
-For this, we will define a a resource. 
+For this, we will define a resource. 
 
     resource "google_compute_network" "vpc_network"{
                                               name = "terraform-network"

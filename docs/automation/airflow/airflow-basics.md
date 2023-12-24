@@ -23,7 +23,7 @@ What happens here is we:
     *   Daily at midnight (see below table)
     *   Can also be a cron job
 
-We have a set few options of built in timings we can use, or a cron job.
+We have a set few options of built-in timings we can use, or a cron job.
 
 ### Presets
 
