@@ -201,6 +201,7 @@ nav:
           - How to use git: kb/markdown/how-to-use-git.md
           - Custom markdown badges: kb/markdown/custom-badges.md
           - Built By badge: kb/markdown/built-by-badge.md
+          - Lychee link checker: kb/markdown/lychee-link-checker.md
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
       - Matomo:
           - Matomo behind cloudflared: kb/matomo/matomo-behind-cloudflare.md

@@ -41,3 +41,5 @@ Getting links from: https://bookstack.breadnet.co.uk/
 ## Alternatives
 
 If you're running a markdown site, you can also use Lychee
+
+[Lychee Link Checker](../markdown/lychee-link-checker.md)

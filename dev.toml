@@ -36,3 +36,10 @@ processes = []
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
+
+[[http_service.checks]]
+grace_period = "10s"
+interval = "30s"
+method = "GET"
+timeout = "5s"
+path = "/"
