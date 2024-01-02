@@ -31,9 +31,9 @@ processes = []
     handlers = ["tls", "http"]
     port = 443
 
-[[services.http_checks]]
-  grace_period = "10s"
-  interval = "30s"
-  method = "GET"
-  timeout = "5s"
-  path = "/healthz"
+  [[services.http_checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    path = "/healthz"
