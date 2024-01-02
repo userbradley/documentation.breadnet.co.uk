@@ -12,11 +12,9 @@ processes = []
   auto_rollback = false
 
 [[services]]
-  http_checks = []
   internal_port = 80
   processes = ["app"]
   protocol = "tcp"
-  script_checks = []
   [services.concurrency]
     hard_limit = 100
     soft_limit = 80
