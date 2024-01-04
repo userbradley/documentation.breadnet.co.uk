@@ -146,6 +146,7 @@ nav:
           - Laws: kb/drone/laws.md
           - Stock image marketplaces: kb/drone/stock-image-marketplaces.md
       - Git:
+          - Amend commit message: kb/git/amend-commit-message.md
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
           - Create and push tags on Git: kb/git/create-and-push-tags.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
