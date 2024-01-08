@@ -154,6 +154,7 @@ nav:
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
       - GitHub:
           - Find date a repo was created on GitHub: kb/github/find-date-a-repo-was-created-on-github.md
+          - Import GitHub Organization users in to Terraform: kb/github/import-github-organization-users-in-to-terraform.md
       - GitHub Actions:
           - Authenticate GitHub actions to GCP using Workload Identity Federation: kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md
           - Authenticate GitHub actions to Google Artifact Registry: kb/githubactions/authenticate-github-actions-to-google-artifact-registry.md
