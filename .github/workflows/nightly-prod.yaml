@@ -1,0 +1,19 @@
+name: Production Nightly Build
+on:
+  schedule:
+    - 20 4 * * *
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    name: Build Documentation
+    environment:
+      name: Production
+      url: https://documentation.breadnet.co.uk
+    steps:
+      - name: Git Clone
+        uses: actions/checkout@v4
+      - name: Fly Build and Deploy
+        uses: userbradley/actions-fly@v1.0.0
+        with:
+          flyToken: ${{ secrets.FLY_ACCESS_TOKEN_PROD }}
+          configFile: ${{ vars.CONFIG_FILE }}
