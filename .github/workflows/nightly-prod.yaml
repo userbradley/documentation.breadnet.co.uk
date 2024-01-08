@@ -2,6 +2,7 @@ name: Production Nightly Build
 on:
   schedule:
     - 20 4 * * *
+  workflow_dispatch:
 jobs:
   site:
     runs-on: ubuntu-latest
