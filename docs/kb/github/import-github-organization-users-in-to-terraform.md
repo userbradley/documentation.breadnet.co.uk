@@ -53,7 +53,7 @@ Place that in the `members.tf` file, like below
 ```diff
 locals {
   members = {
-+ userbradley = "admin",
++  userbradley = "admin",
   }
 }
 ```
