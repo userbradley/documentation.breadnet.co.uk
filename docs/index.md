@@ -33,3 +33,7 @@ and edit a yaml file, and you're good to go
 * Kubernetes
 
 And lots more!
+
+## Repo CI Status
+
+--8<-- "ci-status.md"
