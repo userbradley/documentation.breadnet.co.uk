@@ -80,6 +80,7 @@ nav:
           - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
           - Release FLY IP address: cloud/fly/fly-release-ip-address.md
+          - Mkdocs on fly.io: cloud/fly/mkdocs-on-fly.md
       - Google Cloud:
           - Metadata API:
               - cloud/gcp/metadata-api/index.md
@@ -481,7 +482,7 @@ extra:
     - icon: fontawesome/solid/file-lines
       link: https://breadnet.co.uk
       name: My Website
-  generator: false # I am sorry I will enable it later
+  generator: true # I am sorry I will enable it later
 validation:
   nav:
     omitted_files: info
