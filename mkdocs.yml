@@ -80,7 +80,7 @@ nav:
           - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
           - Release FLY IP address: cloud/fly/fly-release-ip-address.md
-          - Mkdocs on fly.io: cloud/fly/mkdocs-on-fly.md
+          - MkDocs on Fly.io: cloud/fly/mkdocs-on-fly.md
       - Google Cloud:
           - Metadata API:
               - cloud/gcp/metadata-api/index.md

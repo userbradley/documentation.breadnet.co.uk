@@ -1,5 +1,5 @@
 ---
-title: mkdocs on Fly.io
+title: MkDocs on Fly.io
 ---
 
 ## What
@@ -15,7 +15,7 @@ Fly is a _serverless_ hosting service that allows you to run Containers pretty m
 
 Mkdocs is a documentation system designed for Markdown and extreme simplicity.
 
-We are going to use the mkdocs Material theme for this example, but it's very easily changed to suit others.
+We are going to use the [Material for mkdocs](https://squidfunk.github.io/mkdocs-material/?utm_source=breadnet.co.uk&utm_medium=kb&utm_campaign=mkdocs%20on%20fly.io) theme, but it's very easily changed to suit others.
 
 ## How
 
@@ -31,7 +31,7 @@ As Fly.io (Fly) runs everything as Containers, we need to have one.
 
 Create a file called `Dockerfile` and `nginx.conf` in the same directory as your `mkdocs.yaml` file
 
-```shell
+```sh
 touch {nginx.conf,Dockerfile}
 ```
 
@@ -237,7 +237,7 @@ I am happy to assist!
 
 If you need an example of this working, this repo uses Fly
 
-See [.github/workflows.prod.yaml](https://github.com/userbradley/documentation.breadnet.co.uk/blob/main/.github/workflows/prod.yaml)
+See [.github/workflows/prod.yaml](https://github.com/userbradley/documentation.breadnet.co.uk/blob/main/.github/workflows/prod.yaml)
 
 ## What to read next?
 
