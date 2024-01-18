@@ -469,7 +469,7 @@ plugins:
         'cloud/aqua/aqua-page-1.md': 'cloud/csp/aqua/aqua-page-1.md'
         'cloud/aqua/aqua-page-2.md': 'cloud/csp/aqua/aqua-page-2.md'
         'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
-        '/cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
+        'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
         #- offline
 extra:
   social:
