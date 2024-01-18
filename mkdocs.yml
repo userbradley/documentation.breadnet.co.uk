@@ -113,7 +113,7 @@ nav:
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
-          - "View logs for Enabled API's": cloud/gcp/view-logs-for-enabled-apis.md
+          - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
@@ -469,6 +469,7 @@ plugins:
         'cloud/aqua/aqua-page-1.md': 'cloud/csp/aqua/aqua-page-1.md'
         'cloud/aqua/aqua-page-2.md': 'cloud/csp/aqua/aqua-page-2.md'
         'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
+        'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud.gcp/view-logs-on-who-enabled-an-api.md'
         #- offline
 extra:
   social:
