@@ -152,6 +152,7 @@ nav:
           - Create and push tags on Git: kb/git/create-and-push-tags.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
+          - Rename local git branch: kb/git/rename-local-git-branch.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
       - GitHub:
           - Find date a repo was created on GitHub: kb/github/find-date-a-repo-was-created-on-github.md

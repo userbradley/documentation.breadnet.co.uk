@@ -26,9 +26,3 @@ jobs:
         with:
           filePath: /tmp/out.md
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Comment with no broken links
-        if: env.lychee_exit_code == 0
-        uses: thollander/actions-comment-pull-request@v2
-        with:
-          message: |
-            PR introduces no broken links
