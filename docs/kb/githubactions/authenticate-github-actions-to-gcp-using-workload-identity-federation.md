@@ -1,6 +1,6 @@
 ---
 title: Authenticate GitHub actions to GCP using Workload Identity Federation
-reviewdate: '2023-10-22'
+reviewdate: '2024-12-12'
 ---
 
 ## Why
@@ -48,3 +48,4 @@ jobs:
 ## What to read next
 
 * [Authenticate GitHub actions to Google Artifact Registry](authenticate-github-actions-to-google-artifact-registry.md)
+* [EXTERNAL: Notes on Workload Identity](https://medium.com/@bbeesley/notes-on-workload-identity-federation-from-github-actions-to-google-cloud-platform-7a818da2c33e)
