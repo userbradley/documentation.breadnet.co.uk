@@ -1,4 +1,7 @@
-\--- title: Airflow basics reviewdate: '2022-01-01' ---
+---
+title: Airflow basics
+reviewdate: '2022-01-01'
+---
 
 Airflow exists for the sole purpose of removing the need to write a bash or python script, set up a server with a cron job and then run your ETL pipeline. With Airflow, we're doing all this under one roof with monitoring and visualization built in.
 
