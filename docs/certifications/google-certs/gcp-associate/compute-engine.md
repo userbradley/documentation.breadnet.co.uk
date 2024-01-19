@@ -43,9 +43,9 @@ Cant do live migration on GPU machines. Should be terminated instance. 
 
 #### Important nat things to remember.
 
-VM's are created underProjects 
+VMs are created underProjects 
 
-Machine types and avability differ from region to region
+Machine types and availability differ from region to region
 
 You can only change a machine type after the instance has stopped 
 

@@ -79,7 +79,7 @@ For a user to be able to email a group, you need to have the users who will want
 
 You must assign a license to a use, however if you use gsuit enterprise it's automatic
 
-Suspended users will not be able to login and will not get emails or calendar invites
+Suspended users will not be able to log in and will not get emails or calendar invites
 
 \---
 
@@ -111,7 +111,7 @@ You can populate info through:
 
 To set different access to directories you can use OU's:
 
-You can contain custom directories, create a google group, then add the group to the directories.
+You can contain custom directories, create a Google group, then add the group to the directories.
 
 [![image-1605010726509.png](../../../assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)](../../../assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)
 
@@ -119,7 +119,7 @@ Enable direcotry editing by going to Directory > directory settings 
 
 Here you can enable things that people are able to edit. 
 
-As usual you can assign this based on an OU system
+As usual, you can assign this based on an OU system
 [![](../../../assets/GJIc7rJptYTmXzfh-image-1606735635793.png)](../../../assets/GJIc7rJptYTmXzfh-image-1606735635793.png)
 
 You should add work location so GCal can see where they are and suggest meeting rooms for users.
@@ -179,4 +179,4 @@ Like previously mentioned you are able to create custom roles. To do so, go to t
 
 You from here can select what roles to assign to the role. 
 
-You want to create more roles with less privileges to assign to a user than one fat rule.
+You want to create more roles with fewer privileges to assign to a user than one fat rule.

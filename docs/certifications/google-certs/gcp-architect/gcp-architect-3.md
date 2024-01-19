@@ -68,27 +68,27 @@ title: Google cloud architect - page 3
 
 #### Apigee
 
-*   ApIgee
+*   Apigee
     *   Rest API
     *   Managing a REST API isn't easy
-        *   Implimenting multiple versins of your API isnt easy
+        *   Implementing multiple versions of your API isn't easy
     *   Design secure and publish your API
     *   manage the complete lifecycle
     *   Provides AI powered monitoring
     *   Enable caching with cloudCDN
-    *   Allows developers to access a simple development poeral
+    *   Allows developers to access a simple development portal
 
 ### Google Cloud architecture framework
 
 #### Operational Excellence
 
-*   Operational Exellence
+*   Operational Excellence
     *   Monitor the business objectives
         *   SLA
         *   SLO
         *   KPI
     *   Test DR
-    *   Increase software releases and veolcity
+    *   Increase software releases and velocity
 *   Business health
     *   Latency
     *   Traffic

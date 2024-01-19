@@ -116,7 +116,7 @@ To manage sharing you will need to edit the calendar from your account. Invite p
 
 [![image-1606765018828.png](/assets/80eCCMAfHz1QGsR0-image-1606765018828.png)](/assets/80eCCMAfHz1QGsR0-image-1606765018828.png)
 
-*   As as admin in calendar control you can set:
+*   As admin in calendar control you can set:
     *   Highest level of sharing for externals
     *   Default level of internal sharing
 
@@ -148,11 +148,11 @@ Once done the files will appear again. 
 
 Users can be granted access to 'Offline access to documents' via OU or group as usual.
 
-This can be found under Apps > google workspace > Settings for drive and docs > Feature and Applications > offline
+This can be found under Apps > Google Workspace > Settings for drive and docs > Feature and Applications > offline
 
 Enable this for users under an OU or group. 
 
-You will require google chrome and the offline sync plugin for this to work
+You will require Google Chrome and the offline sync plugin for this to work
 
 * * *
 
@@ -163,7 +163,7 @@ There are 2 ways you can access files in drive:
 *   Drive file stream
     *   This streams the files from the cloud to your computer
 *   Backup and Sync
-    *   This is the software you've installed for google backup
+    *   This is the software you've installed for Google backup
 
 This is enabled under Features and Applications 
 
