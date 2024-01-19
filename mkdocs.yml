@@ -155,6 +155,7 @@ nav:
           - Rename local git branch: kb/git/rename-local-git-branch.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
       - GitHub:
+          - Collapsed Sections GitHub: kb/github/collapsed-sections-github.md
           - Find date a repo was created on GitHub: kb/github/find-date-a-repo-was-created-on-github.md
           - Import GitHub Organization users in to Terraform: kb/github/import-github-organization-users-in-to-terraform.md
       - GitHub Actions:
@@ -206,6 +207,7 @@ nav:
       - Markdown:
           - How to use git: kb/markdown/how-to-use-git.md
           - Custom markdown badges: kb/markdown/custom-badges.md
+          - Escape Codeblocks: kb/markdown/escape-codeblock.md
           - Built By badge: kb/markdown/built-by-badge.md
           - Lychee link checker: kb/markdown/lychee-link-checker.md
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
