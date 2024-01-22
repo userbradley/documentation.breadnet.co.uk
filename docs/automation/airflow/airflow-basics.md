@@ -1,6 +1,9 @@
-\--- title: Airflow basics reviewdate: '2022-01-01' ---
+---
+title: Airflow basics
+reviewdate: '2022-01-01'
+---
 
-Airflow exists for the sole purpose of removing the need to write a bash or python script, set up a server with a cron job and then run your ETL pipeline. With Airflow we're doing all this under one roof with monitoring and visualization built in.
+Airflow exists for the sole purpose of removing the need to write a bash or python script, set up a server with a cron job and then run your ETL pipeline. With Airflow, we're doing all this under one roof with monitoring and visualization built in.
 
 Airflow uses something called a DAG (Directed acyclic graph) 
 
@@ -93,7 +96,7 @@ Another way to set out the config is like below:
 
     dag = DAG('tutorial', catchup=False, default_args=default_args)
 
-Each section is self explanatory (provided you can understand the general key value pari's name)
+Each section is self-explanatory (provided you can understand the general key value pari's name)
 Some are not, I will explain below
 
 *   depends\_on\_past
@@ -103,7 +106,7 @@ Some are not, I will explain below
 *   owner
     *   Who owns the file permissions and who the program runs under
 
-The catchup is quite advanced so we will deep dive it below
+The catchup is quite advanced, so we will deep dive it below
 
 ### Catchup
 
@@ -124,7 +127,7 @@ Use the equation below
 
 #### In simple terms
 
-If you set the create date a year ago, and upload it will create many many dag instances, to prevent this we set `catchup=False` 
+If you set the creation date a year ago, and upload it will create many dag instances, to prevent this we set `catchup=False` 
 
 The below explains this in way too much detail, but it's good to have
 

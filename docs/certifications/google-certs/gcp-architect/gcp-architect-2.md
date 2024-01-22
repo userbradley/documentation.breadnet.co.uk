@@ -47,7 +47,7 @@ title: Google cloud architect - page 2
         *   Editor (roles.editor) Viewer and edit action
         *   Owner (roles.owner) Editor + manage roles and permissions + Billing
         *   Not recommended: Don't use in prod
-    *   Predefined rules - fine grained riles predefined and managed by google
+    *   Predefined rules - fine-grained riles predefined and managed by google
     *   Custom roles - when pre-defined roles are not sufficient 
 *   If creating a role, ensure you give it a good ID
 *   There are also role versions to use, so:
@@ -70,19 +70,19 @@ title: Google cloud architect - page 2
     *   Has a private/public rsa key
     *   cant login via browser or cookies
 *   Service account types
-    *   Default service account - Not reccomended to use
+    *   Default service account - Not recommended to use
     *   User managed - User created
-        *   Provides fine grained access control
+        *   Provides fine-grained access control
 *   Add roles to the service account if you're backing up to GCS
 *   You cannot assign a service account to an on-prem application
-*   This is called long lived 
+*   This is called long-lived 
     1.  Create service account with right permissions
 2.  Create service account user managed keu
     1.  gcloud iam service-accounts keys create
 3.  Make the service account key accessable by your application
     1.  ENV variable should be: GOOGLE\_APPLICATION\_CREDENTIALS
 4.  use google cloud client libraries - ADC (Application default credentials)
-*   Short lived:
+*   Short-lived:
     *   Few hours of access
     *   Credential types:
         *   Oauth2
@@ -109,7 +109,7 @@ title: Google cloud architect - page 2
 ##### Understanding Identity managment
 
 *   Email used = Super Admin
-*   Google workspace
+*   Google Workspace
     *   If you use workspace, you can link them and manage groups from there
 *   Not using Workspace
     *   You can link your identity provider
@@ -128,9 +128,9 @@ title: Google cloud architect - page 2
     *   Users go to google cloud
     *   Redirected to external IDP
     *   Users sign in
-    *   SAML assertion is send to GCP
+    *   SAML assertion is sent to GCP
 
-##### Iam Members/ Identites
+##### Iam Members/ Identities
 
 *   Google account
 *   Service account
@@ -256,7 +256,7 @@ If there is a master failure you can promote one of the slaves to master
 ##### GCP Databases
 
 *   OLTP
-    *   Applications where users make lots of small transactions (updates etc)
+    *   Applications where users make lots of small transactions (updates etc.)
     *   Popular:
         *   Mysql
         *   Oracle 
@@ -401,9 +401,9 @@ Applications needing microsecond response
     *   Backups are lightweight and provide point in time recovery
     *   Cannot copy or do operations on the backups
     *   Cannot backup a single database or table
-        *   have to backup the entire database
+        *   have to back up the entire database
 *   Export
-    *   Takes longer but more flexability
+    *   Takes longer but more flexibility
     *   Export single database or table
     *   Exporting large database impacts the performance
 
@@ -515,9 +515,9 @@ Wide Column
         *   Same amount of data on each node
         *   Distribute reads and writes equally  
 *   Pre-test with heavy load
-    *   This is for allowing the nodes to balance them selves
+    *   This is for allowing the nodes to balance themselves
 *   Supports HDD and SSD
-    *   SSD for latency sesative
+    *   SSD for latency sensitive
 *   Increase reliability and durability
     *   Create multiple replicated clusters 
     *   Can create a cloud bigtable cluster with many clusters accross regions
@@ -548,7 +548,7 @@ Wide Column
         *   You have complete control over subnets and their IP ranges
         *   Prod recommendation
 *   Options when creating a subnet
-    *   Enables private IP access for communication with google network
+    *   Enables private IP access for communication with Google network
     *   Enable Flow logs to see inbound and outbound network traffic
 
 #### Creating the VPC
@@ -772,7 +772,7 @@ logging.logs viewer or project.viewer
     *   Setup alert channels
     *   then setup policy
     *   Setup a metric
-    *   Setup the steps to fix
+    *   Set up the steps to fix
 *   Uptime checks
     *   You want to ensure that your applications run all the time
 
@@ -791,7 +791,7 @@ logging.logs viewer or project.viewer
 
 *   Cloud debugger
     *   Captures state of running applications
-    *   Inspect the sate of the application
+    *   Inspect the state of the application
     *   Take snapshots of variables
     *   No need to add additional logging statements
     *   No need to redeploy
@@ -1110,7 +1110,7 @@ Cloud Logging
 
 *   Classic VPN
     *   No HA
-    *   Needs a google compute engine vpn gateway
+    *   Needs a Google compute engine vpn gateway
 
 VPN Gateway - Regional resource
 
@@ -1186,7 +1186,7 @@ Cloud router enables dynamic routing: Enables automatic route update
     *   Group related data
         *   Example: By category
 *   Overview:
-    *   Partitioning: Table is divided in to segments
+    *   Partitioning: Table is divided into segments
     *   Clustering: Grouping related data by category
 *   Payment:
     *   Pay for storage
@@ -1275,7 +1275,7 @@ Cloud router enables dynamic routing: Enables automatic route update
             *   host
             *   query string
     *   Versioned URL
-        *   setting a version like ?v=1 and then new verison is v=2 so you get a cache miss
+        *   setting a version like ?v=1 and then new version is v=2, so you get a cache miss
 
 ### Devops
 
@@ -1356,10 +1356,10 @@ Cloud router enables dynamic routing: Enables automatic route update
     *   Most basic approach
     *   Terminate V1 and roll out V2
 *   Advantage:
-    *   Cost effective and fast
+    *   Cost-effective and fast
     *   Less compatibility issues
 *   Disadvantage:
-    *   Rollback is a redeploy
+    *   Rollback is a redeployment
     *   More downtime
 
 #### Canary Deployment
@@ -1396,8 +1396,8 @@ Cloud router enables dynamic routing: Enables automatic route update
 
 #### Blue Green Deployment
 
-*   Blue green
-    *   Create a parralel enviroment with the new version
+*   Blue-green
+    *   Create a parallel environment with the new version
     *   Once all tests are done on V1, we switch to the new version
     *   As far as the end users are concerned, only one release is live
 *   Characteristics
@@ -1426,11 +1426,11 @@ Rolling Update
 
 Set Stratergy > Type on deploymenr to rolling update
 
-Sue kubectl set image deployment or udpate deploymenr yaml to deployment
+Sue kubectl set image deployment or update deployment yaml to deployment
 
-Blue green deployment
+Blue-green deployment
 
-Create new deploymenr
+Create new deployment
 
 Control traffic using Ingress (or service)
 
@@ -1472,8 +1472,8 @@ istio mesh
 #### PCI DSS
 
 *   PCI DSS
-    *   Enhance card holder security security
-    *   Have seperate enviroment for processing cards
+    *   Enhance cardholder security
+    *   Have separate environment for processing cards
         *   New **account**
     *   Least privelages
     *   Control inbound
@@ -1482,8 +1482,8 @@ istio mesh
         *   Office network - allowed for auditing
     *   Strictly control outbount
         *   HTTPS requests to your payment processor
-            *   GKE and GCE are reccomended
-            *   App engine isnt allowing egress forewall rules
+            *   GKE and GCE are recommended
+            *   App engine isn't allowing egress firewall rules
     *   Harden your images
     *   Only install software that is needed
     *   Automate as much as you can

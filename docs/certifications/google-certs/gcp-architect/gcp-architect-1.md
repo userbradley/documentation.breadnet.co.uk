@@ -6,7 +6,7 @@ title: Google Architect - page 1
 
 GCP has 200+ services
 
-The exam tests your **decision making**
+The exam tests your **decision-making**
 
 *   Which services do you chose in which situation?
 *   How do you trade off between resilliance, performance and cost whilst not comprimising on security
@@ -19,7 +19,7 @@ Before the cloud a company would have to do 'Peak load provisioning' where you b
 
 Before cloud the cost of purchasing infrastructure was high, and an upfront cost
 
-The infrastrucutre was under-utilized and you need a dedicated infrastrucutre team
+The infrastructure was under-utilized, and you need a dedicated infrastructure team
 
 When you use the cloud you 'Provision' and 'rent' resources from the provider. For this you rent them and then return them back to the 'pool' once used.
 This is called Elasticity and 'On demand Provisioning' 
@@ -38,7 +38,7 @@ GCP is one of the top 3 cloud providers, the other are AWS and Azure
 
 GCP provides 200+ services, and has provided to be reliable and secure.
 
-Is it the 'cleanest' cloud, as it's carbon neutral 
+Is it the 'cleanest' cloud, as it's carbon-neutral 
 
 * * *
 
@@ -126,9 +126,9 @@ When we talk about the hardware, we need to understand the Machine type and Mach
 *   General Purpose:
     *   E2, N2, N2D, N1
     *   Best price-performance ratio
-    *   running Web applicatoins and small-medium sized databases, dev enciroments
+    *   running Web applications and small-medium sized databases, dev environments
 *   Memory Optimized
-    *   Ultra high memory workloads 
+    *   Ultra-high memory workloads 
     *   M2,M1
     *   Large in memory Database
 *   Compute Optimized
@@ -238,11 +238,11 @@ We can pick a public Image, which are maintained by Google or opensource third p
 
 External IP address are Internet addressable, can be reached over the internet
 
-Internal IP address are internal to the corperate network, so a VM with the IP of 10.128.0.2 address isnt reachable from your network
+Internal IP address are internal to the corporate network, so a VM with the IP of 10.128.0.2 address isnt reachable from your network
 
 You cant have 2 instances with the same public IP
 
-You have have 2 separate corporate networks with the same internal network
+You have 2 separate corporate networks with the same internal network
 
 To get a static IP address, we go to VPC networks > External IP address 
 Here we chose what network tier as well as version to use
@@ -260,7 +260,7 @@ We can speed up the creation of instances by using a template
 
 It's used to create VM's as well as Managed instance groups 
 
-We can define the Machine Type, Image, labels and Start up script etc once then apply to many!
+We can define the Machine Type, Image, labels and Start up script etc. once then apply to many!
 
 Once the template is created, we cant update it. We need to copy it
 
@@ -286,15 +286,15 @@ Can be shared accross projects
 
 Deprecate old images (And specify a replacement image)
 
-Harden an image - Customize images to your corperate standard 
+Harden an image - Customize images to your corporate standard 
 
-Startup scripts take time, where as using a snapshot makes it quicker. 
+Startup scripts take time, whereas using a snapshot makes it quicker. 
 
 ##### GCP web console
 
-When people talk about the 'Conosle' It's the web interface
+When people talk about the 'Console' It's the web interface
 
-You can make things as a favourite and they move to the top of the list. 
+You can make things as a favourite, and they move to the top of the list. 
 
 Under home you can see the GCP Dashboard, has the project info as well as GCP status
 
@@ -474,14 +474,14 @@ A: Cool down period
 *   Host and path rules (For http(s) LB's) Defines the rules redirecting the traffic to different backends
     *   Based on a path : breadnet.co.uk/blog vs breadnet.co.uk/download
     *   Based on a Host: uk.breadnet.co.uk vs us.breadnet.co.uk
-    *   Based on HTTP Headers (Auth headers) and methods (POst, GET, etc)
+    *   Based on HTTP Headers (Auth headers) and methods (Post, GET, etc.)
 
 ##### SSL/TLS Termination/ Offloading
 
 *   Client to LB: Over the internet
     *   HTTPS is recommended
 *   LB to VM: Through internal network
-    *   HTTP is _ok_ where as HTTPS is preffered
+    *   HTTP is _ok_ whereas HTTPS is preferred
 *   SSL/TLS termination/ Offloading
     *   Client to LB: HTTPS/TLS
     *   LB to VM: HTTP/TCP 
@@ -585,7 +585,7 @@ O:  1 (One backend service can route between multiple microservices)
 O: 3 (One for each version of the Microservice)
 O: 6 (One for each MIG)
 A: 3: 
-E: There are 3 micro-services, so url/ms1 url/ms2 url/ms3 each pointing to a backend, as you can have multiple backend groups per service 
+E: There are 3 microservices, so url/ms1 url/ms2 url/ms3 each pointing to a backend, as you can have multiple backend groups per service 
 
 ![](/assets/e1giSp8BGj8Wx2nH-drawing-1-1620509841.png)
 
@@ -632,7 +632,7 @@ Most online/ SaaS aims for 99.99
 This is a tough one
 
 The Availability is the **whole application!**
-This includes the the API, Database, Front end etc
+This includes the API, Database, Front end etc
 
 ##### High Availability architecture
 
@@ -654,7 +654,7 @@ This includes the the API, Database, Front end etc
     *   High performance for math intensive and graphic workloads
     *   Higher cost
     *   Use images with libraries installed
-        *   Otherwise GPU wont be used
+        *   Otherwise, GPU won't be used
     *   GPU restrictions:
         *   Not supported on all machine types
         *   On host Maintanance: Value must be terminate
@@ -729,16 +729,16 @@ Does not apply when using App Engine flexible and Dataflow
 *   Does not apply when using App Engine flexible and Dataflow
 
 
-##### Running fault tolerant non-critical workloads
+##### Running fault-tolerant non-critical workloads
 
 Preemptive vms are a good choice. 
 
-*   Short lived (up to 80% cheaper)
+*   Short-lived (up to 80% cheaper)
     *   can be stopped by GCP at any time within 24 hours
     *   you get 30 second warning before termination
 *   You should use them if
-    *   Your application is fault tolerant
-    *   You're very cost sensative
+    *   Your application is fault-tolerant
+    *   You're very cost sensitive
     *   workload is not Immediate
         *   Non-immediate batch processing jobs
 *   RESTRICTIONS
@@ -784,7 +784,7 @@ you can use \`gcloud config list\` 
 
 ##### Gcloud command structure
 
-The command is split in to
+The command is split into
 
 `gcloud GROUP SUBGROUP ACTION`
 
@@ -795,7 +795,7 @@ Where it goes:
         *   Which service are you playing with
 *   Subgroup
     *   Instances, images, instance-templates etc
-        *   Which sub group of the service do you want to play with
+        *   Which subgroup of the service do you want to play with
     *   Action
         *   Create, list, destroy etc
 
@@ -874,7 +874,7 @@ You can create a docker image for each of your microservices
     *   Containers are lightweight 
         *   Do not have a guest OS
     *   Isolation 
-            *   If there is an issue with the container, it wont affect anything
+            *   If there is an issue with the container, it won't affect anything
     *   Cloud agnostic/ neutral
 
 ##### Container Orchestration
@@ -889,8 +889,8 @@ When using it, you create a yaml deployment telling the orchestrator how many de
         *   Helps microservices to know where they are with no hard coding
     *   Load balancing
         *   distribute load
-    *   Self healing
-        *   Do healthchecks and replace failing instances
+    *   Self-healing
+        *   Do health check and replace failing instances
     *   Zero-downtime deployments
         *   Release a deployment with no downtime
 
@@ -900,7 +900,7 @@ App engine is the simplest way to deploy your applications in to GCP
 
 *   Supports:
     *   Go, Java, .NET, Node.js, PHP, Python, Ruby (Preconfigured run times)
-    *   connect to a variaty of google cloud storage products
+    *   connect to a variety of Google cloud storage products
 *   No Usage charges
     *   Pay for resources provisioned
 *   Features:
@@ -918,7 +918,7 @@ App engine is the simplest way to deploy your applications in to GCP
         *   Choosing image
     *   Installing software
     *   Choosing hardware
-    *   Fine grained access/ permissions
+    *   Fine-grained access/ permissions
     *   Avaibility etc
 *   App Engine
     *   PaaS
@@ -1159,7 +1159,7 @@ replica set ensures that always has the correct number of pods
         *   New release happens
 *   create a service
     *   exposes pods to the outside world using a stable IP
-    *   Ensures the the external world does not get impacted
+    *   Ensures the external world does not get impacted
 *   Three types of service
     *   cluster IP: Internal to the cluster
     *   LoadBalanccer: Exposes the service via the cloud providers load balancer
@@ -1253,7 +1253,7 @@ Best practices: 
 *   Anthos - run K8's anywhere 
     *   cloud, multi-cloud, anywhere
 *   Cloudrun for anthos
-    *   Deploy the workloads to anthos clusters running on prmeise or on google cloud
+    *   Deploy the workloads to anthos clusters running on promise or on Google cloud
 
 Description
 
@@ -1311,7 +1311,7 @@ Key factor 2: How do we secure the 
 *   Use existing cryptographic keys created on-premise
 *   Integrates with almost all GCP services that need data encrypted
     *   google-managed - No configuration required
-    *   Customer managed- Use keys from KMS
+    *   Customer managed. Use keys from KMS
     *   Customer supplied - Provide your own keys
 *   Protection level
     *   HSM
@@ -1515,9 +1515,9 @@ Balance between cost and eprformance
     *   Provides a CLI
         *   Not cloud
         *   gsutil
-*   When moving data the the cloud the best solution is to first move it to gcs then the product
+*   When moving data the cloud the best solution is to first move it to gcs then the product
 *   bucket names should contain **only** lower case, number letter hyphens and underscores
-*   3-63 charachters
+*   3-63 characters
 *   should not contain google or start with goog
 *   Unlimited objects in a bucket 
 *   Each object is identified with a unique key
@@ -1557,8 +1557,8 @@ Balance between cost and eprformance
 *   Metadata
     *   Items have metadata attached to them
     *   Fixed key metadata
-        *   These are the google provided ones we cant change
-            *   Cach-control - If the object is served to a user how long can they cache it for
+        *   These are the Google provided ones we cant change
+            *   cache-control - If the object is served to a user how long can they cache it for
 *   Compliance
     *   Configure data retention period
     *   You can lock/ unlock a retention policy
@@ -1584,7 +1584,7 @@ Balance between cost and eprformance
 *   Storage transfer service
     *   Transfer from other cloud providers
     *   Setup repeat schedules
-    *   reliable and fault tolerant
+    *   reliable and fault-tolerant
     *   More than 1TB
         *   options
             *   GCS

@@ -167,7 +167,7 @@ For this, we will define a resource. 
                                               name = "terraform-network"
                                             }
 
-Depending on the need, you can assign the vm's a static ip by defining another resource, this time calling it by the google\_compute\_address
+Depending on the need, you can assign the vm's a static ip by defining another resource, this time calling it by the `google_compute_address`
 
     resource "google_compute_address" "vm_static_ip" {
         name = "terraform-static-ip"
@@ -197,7 +197,7 @@ In here we define the type of disk we want. Here we have gone for a container op
 
 ##### More networking
 
-Finally we add the IP address and allow nat:
+Finally, we add the IP address and allow nat:
 
     network_interface {
         network = google_compute_network.vpc_network.name
@@ -208,7 +208,7 @@ Finally we add the IP address and allow nat:
 
 
 
-Provision er is a tool we can use to get details of the vm we created. Here we will get the public ip address and print it to a file in the folder we are in
+`provisioner` is a tool we can use to get details of the vm we created. Here we will get the public ip address and print it to a file in the folder we are in
 
     provisioner "local-exec" {
             command = "echo ${google_compute_instance.vm_instance.name}:${google_compute_instance.vm_instance.network_interface[0].access_config[0].nat_ip} >> ip_address.txt"

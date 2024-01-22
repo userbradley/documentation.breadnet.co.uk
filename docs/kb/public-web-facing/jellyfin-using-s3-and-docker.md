@@ -6,25 +6,21 @@ reviewdate: '2022-01-01'
 !!! warning "DO NOT USE"
     THIS IS ONLY MIGRATED TO KEEP LINKS ALIVE, AND SHOULD NEVER BE USED. IT'S INSECURE AND DOES NOT FOLLOW BEST PRACTICES.
 
-#### Prereqs:
 
 
-I am not a security expert, I am a sysadmin. The security of your server is up to you. Do basic things like enable [ssh keys](https://documentation.breadnet.co.uk/kb/ssh/generate-ssh-keys/) and lock down ingress ports with ufw or iptables. What ever angles your dangle.
-I am not a docker expert. I am a sysadmin which means I can use google (I think? bleh) so if you see anything whack in this, feel free to email me (webmaster\[at\]breadnet\[dot\]co\[dot\]uk)
-
-Comment: 3rd may 2020: After running this for a few days it's come to my attention that for this to be viable and be able to transcode you will need a slightly more powerful host. Whilst this does feel like a kick in the nuts, its not. There are lots of technologies that still work here.
+Comment: 3rd May 2020: After running this for a few days it's come to my attention that for this to be viable and be able to transcode you will need a slightly more powerful host. Whilst this does feel like a kick in the nuts, its not. There are lots of technologies that still work here.
 
 ##### You will need:
 
-1.  S3 compatible bucket - I suggest wasabi but you can also use Min.io if you're in to FOSS (wasabi has a 30 day free 1tb trial)
+1.  S3 compatible bucket - I suggest wasabi, but you can also use Min.io if you're in to FOSS (wasabi has a 30 day free 1tb trial)
 2.  Cloud vps somewhere with reasonable connection and sub 20ms ping to the bucket location. Not needed but is nice. Internet should be around 30mbps at min
 3.  Ability to read and copy and paste.
 
 ##### The first step
 
-First we will spin up a digital ocean droplet but you can use what ever VPS provider you want. 
+First we will spin up a digital ocean droplet, but you can use what ever VPS provider you want. 
 
-Once the VPs is up and you're logged in run the below to update the sources and crap. should not take too long.
+Once the VPs is up, and you're logged in run the below to update the sources and crap. should not take too long.
 
     sudo apt-get update && sudo apt-get upgrade
 
@@ -154,12 +150,12 @@ For this I suggest using screen.
 It can be opened by typing screen in a shell session (over ssh to the server) 
 
 ![](https://documentation.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/xqqlZDCLo7N0MB9f-image-1588291310783.png)
-If it opens, close it with Ctrl + a + d (the a key followed by the d key)
+If it opens, close it with Ctrl + a + d (the `a` key followed by the `d` key)
 
-If it gives you shit about not having it installed run
+If it gives you issues about not having it installed run
 sudo apt-get install screen -y
 
-Now we need to setup rclone
+Now we need to set up rclone
 
     cd ~/.config
 
@@ -181,7 +177,7 @@ Now we need to setup rclone
     server_side_encryption =
     storage_class =
 
-    ####You don't need to copy this shit in to the file, it's in reference to line 7###
+    ####You don't need to copy this in to the file, it's in reference to line 7###
     #Wasabi US East 1 (N. Virginia): s3.wasabisys.com or s3.us-east-1.wasabisys.com
     #Wasabi US East 2 (N. Virginia): s3.us-east-2.wasabisys.com
     #Wasabi US West 1 (Oregon): s3.us-west-1.wasabisys.com
@@ -202,7 +198,7 @@ Open screen by typing `screen   `Change directory to the media folder you create
 
     rclone mount media:<bucket name> media --allow-others
 
-It may throw back an error about using --allow-others, but just do what the command says and edit the file, remove the # in from of the allow\_others or what's closest in the file.
+It may throw back an error about using --allow-others, but just do what the command says and edit the file, remove the # in from of the `allow_others` or what's closest in the file.
 
 It should return nothing if it worked. Press ctrl + a + d
 
@@ -214,7 +210,7 @@ In the folder where the docker-compose.yml file exists, run:
 
     docker-compose up
 
-If all went well it should spin up and then you can visit the IP address for the vm you're working on with the jellyfin port number and then add the media like you would usually:
+If all went well it should spin up, and then you can visit the IP address for the vm you're working on with the jellyfin port number and then add the media like you would usually:
 
 ![](https://documentation.breadnet.co.uk/uploads/images/gallery/2020-05/scaled-1680-/9W1mq4mymSV0sKft-image-1588292228032.png)
 

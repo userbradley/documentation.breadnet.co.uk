@@ -4,13 +4,13 @@ title: Podman using Lima
 
 ## Why
 
-Once again, my container runtime broke on my mac, and I refuse to go to Docker.
+Once again, my container runtime broke on my Mac, and I refuse to go to Docker.
 
 I had an issue with QEMU would just break
 
 ![](../../assets/qemu-ded.png)
 
-I had a look and it seems you can run Podman on a mac using Lima
+I had a look, and it seems you can run Podman on a Mac using Lima
 
 ## How
 

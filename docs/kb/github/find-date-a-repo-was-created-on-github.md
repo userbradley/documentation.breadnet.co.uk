@@ -8,7 +8,7 @@ When flexing on colleagues, or needing to work out when a repo was created, it's
 
 ## How
 
-GitHub has a public API you can plug repo names in to and it will give you the created Date
+GitHub has a public API you can plug repo names in to, and it will give you the created Date
 
 The URl is
 
