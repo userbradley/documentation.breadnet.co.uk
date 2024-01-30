@@ -97,6 +97,8 @@ nav:
           - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+          - gcloud Disable Dependent Services: cloud/gcp/gcloud-disable-dependent-services.md
+          - gcloud Disable Services: cloud/gcp/gcloud-disable-services.md
           - Gcurl: cloud/gcp/gcurl.md
           - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
           - Get User info from Numerical Google account ID: cloud/gcp/get-email-from-numerical-user-id.md
