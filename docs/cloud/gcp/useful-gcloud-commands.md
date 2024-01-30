@@ -2,8 +2,6 @@
 title: Useful gcloud commands
 ---
 
-# Useful gcloud commands
-
 ## Get projects
 
 ```shell
@@ -38,6 +36,27 @@ gcloud compute network list --project=<>
 ```shell
 gcloud compute networks subnets list --project=<>
 ```
+
+## Enabled Services
+
+### Get all enabled service in a project
+
+```shell
+gcloud services list --enabled --project=<>
+```
+
+### Get Just the name
+
+=== "Native gcloud"
+    ```shell
+    gcloud services list --enabled --format="value(config.name)"
+    ```
+
+=== "with JQ"
+
+    ```shell
+    gcloud services list --format=json  | jq '.[].config.name' | tr -d '"'
+    ```
 
 
 ## Additional Reading
