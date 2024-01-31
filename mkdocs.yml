@@ -407,8 +407,6 @@ theme:
     - search.share
     # - search.highlight
 markdown_extensions:
-  - toc:
-      permalink: true
   - admonition
   - pymdownx.details
   - attr_list
