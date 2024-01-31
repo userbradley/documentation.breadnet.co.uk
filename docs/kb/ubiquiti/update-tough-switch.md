@@ -4,7 +4,7 @@ title: Update tough switch
 
 # Update Tough switch
 
-Ubiquiti have renamed their tough switch line in the web UI, to [Edge MAx](https://store.ui.com/collections/operator-edgemax-routers)
+Ubiquiti have renamed their tough switch line in the web UI, to [Edge MAX](https://store.ui.com/collections/operator-edgemax-routers)
 
 ## Reset the switch
 
