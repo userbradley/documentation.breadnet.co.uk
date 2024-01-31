@@ -226,7 +226,6 @@ nav:
           - Update DNS on EE router: kb/networking/ee-update-dns.md
           - Show Broadband password on EE router: kb/networking/show-broadband-password-ee.md
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
-          - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
           - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
       - Nginx:
           - Reverse web proxy: kb/nginx/reverse-web-proxy.md
@@ -278,6 +277,9 @@ nav:
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
           - sshuttle: kb/ssh/sshuttle.md
           - Weird Bash: kb/ssh/weird-bash.md
+      - Ubiquiti:
+          - Unifi device stuck in Adoption failed: kb/ubiquiti/unifi-device-stuck-in-adoption-failed.md
+          - Updating Ubiquiti Tough switch: kb/ubiquiti/update-tough-switch.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
@@ -480,6 +482,7 @@ plugins:
         'cloud/aqua/aqua-page-2.md': 'cloud/csp/aqua/aqua-page-2.md'
         'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
         'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
+        'kb/networking/update-tough-switch.md': 'kb/ubiquiti/update-tough-switch.md'
         #- offline
 extra:
   social:
