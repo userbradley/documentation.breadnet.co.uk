@@ -14,7 +14,7 @@ jobs:
       - name: Git Clone
         uses: actions/checkout@v4
       - name: Fly Build and Deploy
-        uses: userbradley/actions-fly@v1.0.0
+        uses: userbradley/actions-fly@v1.1.0
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_PROD }}
           configFile: ${{ vars.CONFIG_FILE }}
