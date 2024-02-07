@@ -9,7 +9,6 @@ COPY overrides /app/overrides
 COPY .git /app/.git
 RUN pip3 install mkdocs-git-revision-date-localized-plugin
 ENV CI=true
-
 # END [revision-date]
 
 RUN ["mkdocs", "build"]
