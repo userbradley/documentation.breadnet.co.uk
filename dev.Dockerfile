@@ -12,6 +12,11 @@ COPY overrides /app/overrides
 COPY dev-robots.txt /app/docs/robots.txt
 COPY docs /app/docs
 
+# START [revision-date]
+RUN pip3 install mkdocs-git-revision-date-localized-plugin
+#COPY .git /app/.git
+# END [revision-date]
+
 RUN ["mkdocs", "build"]
 
 FROM nginx:stable-alpine3.17-slim
