@@ -447,6 +447,9 @@ plugins:
   - social
   - git-revision-date-localized:
       enable_creation_date: !ENV [CI, false]
+      exclude:
+        - index.md
+      enabled: !ENV [CI, false]
   - redirects:
       redirect_maps:
         'kb/public-web-facing/jellyfin-s3.md': 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
