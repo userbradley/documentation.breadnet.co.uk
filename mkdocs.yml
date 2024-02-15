@@ -295,9 +295,11 @@ nav:
           - "Flux reconciliation failed: install retries exhausted": kubernetes/flux/flux-reconciliation-failed-install-retries-exhausted.md
       - GKE:
           - kubernetes/gke/index.md
+          - Configure firewall for service type LoadBalancer in GKE: kubernetes/gke/configure-firewall-for-service-type-loadbalancer-in-gke.md
           - Configure GKE workload Identity: kubernetes/gke/configure-gke-workload-identity.md
           - Cordon and drain GKE pool: kubernetes/gke/cordon-and-drain-gke-pool.md
           - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
+          - Set static IP address on service type Load balancer: kubernetes/gke/set-static-ip-on-service-loadbalancer.md
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - Helm:
           - Create a helm chart: kubernetes/helm/create-helm-chart.md
