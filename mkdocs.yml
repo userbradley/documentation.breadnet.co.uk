@@ -26,6 +26,7 @@ nav:
           - automation/iac/terragrunt/index.md
           - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
           - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
+          - Terragrunt auto approve: automation/iac/terragrunt/terragrunt-auto-approve.md
           - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
           - Terragrunt in GitHub Actions: automation/iac/terragrunt/terragrunt-in-github-actions.md
           - Terragrunt terraform auto -upgrade: automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md
