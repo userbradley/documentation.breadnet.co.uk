@@ -105,6 +105,7 @@ nav:
           - Gcurl: cloud/gcp/gcurl.md
           - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
           - Get User info from Numerical Google account ID: cloud/gcp/get-email-from-numerical-user-id.md
+          - Get GCS Bucket IAM Members with the API: cloud/gcp/get-gcs-bucket-iam-members-api.md
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
           - Grafeas: cloud/gcp/grafeas.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
