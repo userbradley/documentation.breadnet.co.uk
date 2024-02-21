@@ -305,9 +305,10 @@ nav:
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - Helm:
           - Create a helm chart: kubernetes/helm/create-helm-chart.md
+          - Force containers to update when config map changes in helm: kubernetes/helm/force-rollout-on-configmap-update.md
+          - "Helm loop through key:value pairs": kubernetes/helm/helm-loop-through-key-value-pairs.md
           - Push chart to Artifact Registry: kubernetes/helm/push-chart-to-ar.md
           - Use GCS as helm repo: kubernetes/helm/helm-repo-gcs.md
-          - Force containers to update when config map changes in helm: kubernetes/helm/force-rollout-on-configmap-update.md
       - K3S:
           - kubernetes/k3s/index.md
           - Cloudflare Tunnels on k3s: kubernetes/k3s/cloudflare-tunnels-on-k3s.md
