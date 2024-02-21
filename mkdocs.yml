@@ -99,6 +99,7 @@ nav:
           - Export GCP DNS zone to bind zone file: cloud/gcp/export-gcp-dns-zone-to-bind-zone-file.md
           - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
+          - Filter Secrets: cloud/gcp/filter-secrets.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
           - gcloud Disable Dependent Services: cloud/gcp/gcloud-disable-dependent-services.md
           - gcloud Disable Services: cloud/gcp/gcloud-disable-services.md
