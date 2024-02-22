@@ -20,9 +20,13 @@ You can set up a `zsh` or `bash` alias for this
 Edit `~/.zshrc` and add the below
 
 ```
-alias tdel="find ./ -type d -name ".terraform" -exec rm -rf {} +"
+alias tdel='find ./ -type d -name ".terraform" -exec rm -rf {} +'
 ```
 
 Then run `source ~/.zshrc` to refresh your current session
 
 Now you can simply type `tdel` anywhere and it will delete `.terraform` directories
+
+## Read next
+
+* [Recursive delete of `.terragrunt-cache` directory](../terragrunt/recursive-delete-of-terragrunt-cache.md)
