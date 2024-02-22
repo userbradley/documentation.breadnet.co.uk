@@ -13,7 +13,7 @@ nav:
           - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
           - Google IAP: automation/iac/terraform/google-iap.md
           - Openstack error: automation/iac/terraform/openstack.md
-          - "Recursive delete of .terraform": automation/iac/terraform/recursive-delete-of-terraform.md
+          - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
           - Remote Data: automation/iac/terraform/remote-data.md
           - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
           - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
@@ -25,6 +25,7 @@ nav:
       - Terragrunt:
           - automation/iac/terragrunt/index.md
           - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
+          - Recursive delete of .terragrunt-cache directory: automation/iac/terragrunt/recursive-delete-of-terragrunt-cache.md
           - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
           - Terragrunt auto approve: automation/iac/terragrunt/terragrunt-auto-approve.md
           - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
