@@ -93,10 +93,12 @@ nav:
               - Get Service Account using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md
               - View startup script on Google Compute Engine: cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
           - Add external user to Google Cloud Platform Organization: cloud/gcp/add-external-user-to-org.md
+          - Authenticate to google artifact registry: cloud/gcp/authenticate-to-google-artifact-registry.md
           - Authenticate Twine to Google Artifact Registry: cloud/gcp/authenticate-twine-to-google-artifact-registry.md
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Curl to url with google auth: cloud/gcp/curl-to-url-with-google-auth.md
+          - 'err: exec: "docker-credential-gcloud": executable file not found in $PATH': cloud/gcp/err-exec-docker-credential-gcloud-executable-file-not-found-in-path.md
           - Export GCP DNS zone to bind zone file: cloud/gcp/export-gcp-dns-zone-to-bind-zone-file.md
           - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
@@ -109,6 +111,7 @@ nav:
           - Get User info from Numerical Google account ID: cloud/gcp/get-email-from-numerical-user-id.md
           - Get GCS Bucket IAM Members with the API: cloud/gcp/get-gcs-bucket-iam-members-api.md
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
+          - Get secret from docker-credential-gcloud cli: cloud/gcp/get-secret-from-docker-credential-gcloud-cli.md
           - Grafeas: cloud/gcp/grafeas.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
           - List secrets being accessed Google cloud logs: cloud/gcp/list-secrets-being-accessed-google-cloud-logging.md
