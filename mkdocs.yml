@@ -374,6 +374,8 @@ edit_uri: edit/dev/docs/
 site_name: !ENV [env, "breadNET Documentation"]
 site_url: !ENV [domain, "https://documentation.breadnet.co.uk"]
 site_description: breadNET Documentation
+extra_css:
+  - stylesheets/custom.css
 theme:
   name: material
   favicon: favicon.ico
