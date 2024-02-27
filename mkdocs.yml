@@ -498,6 +498,7 @@ plugins:
         'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
         'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
         'kb/networking/update-tough-switch.md': 'kb/ubiquiti/update-tough-switch.md'
+        'kubernetes/kb/kubectl-commands.md': 'kubernetes/kb/kubectl-commands.md'
         #- offline
 extra:
   social:
