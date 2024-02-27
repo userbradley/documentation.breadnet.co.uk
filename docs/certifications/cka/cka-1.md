@@ -378,7 +378,7 @@ Containers in the same pod share storage mappings, so we can map storage to 2 co
 
 ### Creating a pod
 
-We can create a pod using both [kubectl](../../kubernetes/kb/kubectl-commands-old.md) and `manifest` files.
+We can create a pod using both [kubectl](../../kubernetes/kb/kubectl-commands.md) and `manifest` files.
 
 #### using kubectl
 
