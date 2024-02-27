@@ -324,6 +324,8 @@ nav:
           - Setting up k3s to use nfs as default storage class: kubernetes/k3s/nfs-pvc-cluster-storageclass-k3s.md
           - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/k3s/oidc-azure-ad.md
           - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
+      - KIND:
+          - Load images in to kind: kubernetes/kind/load-image-in-to-kind.md
       - KB:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
@@ -498,6 +500,7 @@ plugins:
         'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
         'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
         'kb/networking/update-tough-switch.md': 'kb/ubiquiti/update-tough-switch.md'
+        'kubernetes/kb/kubectl-commands-old.md': 'kubernetes/kb/kubectl-commands.md'
         #- offline
 extra:
   social:
