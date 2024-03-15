@@ -327,6 +327,8 @@ nav:
           - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
       - KIND:
           - Load images in to kind: kubernetes/kind/load-image-in-to-kind.md
+      - Nginx Ingress:
+          - Nginx ingress with Cloudflare origin SSL/TLS: kubernetes/nginx-ingress/nginx-ingress-with-cloudflare-origin-server-ssl-tls.md
       - KB:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
