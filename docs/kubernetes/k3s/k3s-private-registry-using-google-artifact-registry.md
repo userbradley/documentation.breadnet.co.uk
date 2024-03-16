@@ -69,7 +69,14 @@ Name this `registries.yaml`
 
 Copy this file to **all workers** (and servers if pods can be scheduled on them)
 
-Put the file in `/etc/rancher/k3s`
+Create the file in `/etc/rancher/k3s/`
+
+```shell
+touch /etc/rancher/k3s/registries.yaml
+```
+
+!!! note "File name"
+    The file name **must** be `/etc/rancher/k3s/registries.yaml` otherwise you will get errors
 
 ### Restart k3s
 
