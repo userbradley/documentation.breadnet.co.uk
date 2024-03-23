@@ -302,6 +302,7 @@ nav:
           - Flux Lookup no such host: kubernetes/flux/flux-lookup-no-such-host.md
           - Flux reconcile: kubernetes/flux/flux-reconcile.md
           - "Flux reconciliation failed: install retries exhausted": kubernetes/flux/flux-reconciliation-failed-install-retries-exhausted.md
+          - Kubeconform flux files: kubernetes/flux/kubeconform-flux.md
       - GKE:
           - kubernetes/gke/index.md
           - Configure firewall for service type LoadBalancer in GKE: kubernetes/gke/configure-firewall-for-service-type-loadbalancer-in-gke.md
