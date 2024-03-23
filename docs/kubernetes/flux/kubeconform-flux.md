@@ -23,7 +23,7 @@ I have written a GitHub action to do this
 
 ## How
 
-### Download the schemas and package them
+### Download the schemas and un-package them
 
 ```shell
 curl -sL https://github.com/fluxcd/flux2/releases/latest/download/crd-schemas.tar.gz | tar zxf - -C /tmp/flux-crd-schemas/master-standalone-strict
