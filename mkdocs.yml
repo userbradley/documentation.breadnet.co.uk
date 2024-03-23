@@ -126,6 +126,7 @@ nav:
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
           - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
+      - Cloud Secret manager cost Comparison: cloud/secret-manager-comparison.md
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
