@@ -112,6 +112,7 @@ nav:
           - Get GCS Bucket IAM Members with the API: cloud/gcp/get-gcs-bucket-iam-members-api.md
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
           - Get secret from docker-credential-gcloud cli: cloud/gcp/get-secret-from-docker-credential-gcloud-cli.md
+          - Google cloud security day 2024: cloud/gcp/google-cloud-security-day.md
           - Grafeas: cloud/gcp/grafeas.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
           - List secrets being accessed Google cloud logs: cloud/gcp/list-secrets-being-accessed-google-cloud-logging.md
