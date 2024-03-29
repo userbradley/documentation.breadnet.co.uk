@@ -462,7 +462,7 @@ markdown_extensions:
       repo_url_shorthand: true
 plugins:
   - search
-  - social
+  # - social # Disabled due to google font being broken: https://github.com/squidfunk/mkdocs-material/issues/6983
   - git-revision-date-localized:
       enable_creation_date: !ENV [CI, false]
       exclude:
@@ -521,7 +521,7 @@ extra:
     - icon: fontawesome/solid/file-lines
       link: https://breadnet.co.uk
       name: My Website
-  generator: true # I am sorry I will enable it later
+  generator: true
 validation:
   nav:
     omitted_files: info
