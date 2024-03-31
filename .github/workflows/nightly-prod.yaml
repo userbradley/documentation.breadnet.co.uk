@@ -20,3 +20,14 @@ jobs:
         with:
           flyToken: ${{ secrets.FLY_ACCESS_TOKEN_PROD }}
           configFile: ${{ vars.CONFIG_FILE }}
+  open-issue:
+    runs-on: ubuntu-latest
+    name: Open GitHub issue on failure
+    if: failure()
+    needs: [site]
+    steps:
+      - name: Create issue
+        uses: peter-evans/create-issue-from-file@v5.0.0
+        with:
+          title: Nightly build failed
+          labels: Broken Nightly Build
