@@ -7,7 +7,7 @@ jobs:
     name: Failure
     steps:
       - name: Fail
-        run: exit 1
+        run: exit 0
   run-when-fail:
     runs-on: ubuntu-latest
     name: Runs when it fails
