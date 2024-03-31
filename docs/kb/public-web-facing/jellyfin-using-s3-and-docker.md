@@ -10,6 +10,13 @@ reviewdate: '2022-01-01'
 
 Comment: 3rd May 2020: After running this for a few days it's come to my attention that for this to be viable and be able to transcode you will need a slightly more powerful host. Whilst this does feel like a kick in the nuts, its not. There are lots of technologies that still work here.
 
+## Referral
+
+I don't want to do this, but I run this site at a loss, if you're thinking of using DO, use the below
+
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%202.svg#only-light)](https://www.digitalocean.com/?refcode=77be3c3aa96c&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg#only-dark)](https://www.digitalocean.com/?refcode=77be3c3aa96c&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 ##### You will need:
 
 1.  S3 compatible bucket - I suggest wasabi, but you can also use Min.io if you're in to FOSS (wasabi has a 30 day free 1tb trial)
