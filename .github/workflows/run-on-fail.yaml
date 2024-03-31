@@ -1,5 +1,6 @@
 on:
   workflow_dispatch:
+name: Runs on failure
 jobs:
   should-fail:
     runs-on: ubuntu-latest
@@ -7,3 +8,11 @@ jobs:
     steps:
       - name: Fail
         run: exit 1
+  run-when-fail:
+    runs-on: ubuntu-latest
+    name: Runs when it fails
+    needs: [should-fail]
+    if: failure()
+    steps:
+      - name: test
+        run: echo "hello"
