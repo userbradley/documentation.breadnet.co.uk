@@ -16,7 +16,7 @@ branched out to all IT documentation I wrote
 
 This site gets updated [on average, once a day](https://github.com/userbradley/documentation.breadnet.co.uk/graphs/commit-activity)
 
-This site used to be hosted on Digital Ocean and using Bookstack, but found the greener grass of mkdocs. Simply write markdown
+This site used to be hosted on [Digital Ocean](https://m.do.co/c/77be3c3aa96c) and using Bookstack, but found the greener grass of mkdocs. Simply write markdown
 and edit a yaml file, and you're good to go
 
 ## Other sites maintained
