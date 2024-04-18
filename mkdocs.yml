@@ -376,6 +376,9 @@ nav:
       - outage/index.md
       - 2023-11-26 4AM: outage/2023-11-26-04.md
       - 2023-10-27 11AM: outage/2023-10-27-11.md
+  - Bread:
+      - bread/index.md
+      - 2024-04-18: bread/2024-04-18.md
 repo_name: documentation
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
