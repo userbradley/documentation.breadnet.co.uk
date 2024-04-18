@@ -341,6 +341,7 @@ nav:
           - Delete not running pods: kubernetes/kb/deleting-not-running-pods.md
           - Downward API: kubernetes/kb/downward-api.md
           - Force Delete pod: kubernetes/kb/force-delete-pod.md
+          - Kubeconform google managed prometheus: kubernetes/kb/kube-conform-google-managed-prometheus.md
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
           - "Kubectl get pod and node it's on": kubernetes/kb/kubectl-get-pods-and-nodes.md
           - Kubectl get Service accounts and namespaces: kubernetes/kb/kubectl-get-service-accounts-namespaces.md
