@@ -60,6 +60,8 @@ nav:
           - CKA Questions I need to spend more time on: certifications/cka/cka-practice-questions-struggled.md
           - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
           - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
+      - Terraform associate:
+          - Exam questions: certifications/terraform-associate/exam-questions.md
   - Cloud Providers:
       - Cloud Security Providers:
           - Aqua:
