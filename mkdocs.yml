@@ -11,7 +11,7 @@ nav:
           - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
           - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
           - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-          - Google IAP: automation/iac/terraform/google-iap.md
+          - Google IAP in Terraform: automation/iac/terraform/google-iap.md
           - Openstack error: automation/iac/terraform/openstack.md
           - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
           - Remote Data: automation/iac/terraform/remote-data.md
@@ -116,6 +116,7 @@ nav:
           - Get secret from docker-credential-gcloud cli: cloud/gcp/get-secret-from-docker-credential-gcloud-cli.md
           - Google cloud security day 2024: cloud/gcp/google-cloud-security-day.md
           - Grafeas: cloud/gcp/grafeas.md
+          - IAP URL's: cloud/gcp/iap-url.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
           - List secrets being accessed Google cloud logs: cloud/gcp/list-secrets-being-accessed-google-cloud-logging.md
           - Print secret using gcloud: cloud/gcp/print-secret-gcloud.md
