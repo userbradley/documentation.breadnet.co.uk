@@ -306,7 +306,6 @@ nav:
           - Flux Lookup no such host: kubernetes/flux/flux-lookup-no-such-host.md
           - Flux reconcile: kubernetes/flux/flux-reconcile.md
           - "Flux reconciliation failed: install retries exhausted": kubernetes/flux/flux-reconciliation-failed-install-retries-exhausted.md
-          - Kubeconform flux files: kubernetes/flux/kubeconform-flux.md
       - GKE:
           - kubernetes/gke/index.md
           - Configure firewall for service type LoadBalancer in GKE: kubernetes/gke/configure-firewall-for-service-type-loadbalancer-in-gke.md
@@ -333,6 +332,10 @@ nav:
           - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
       - KIND:
           - Load images in to kind: kubernetes/kind/load-image-in-to-kind.md
+      - Kubeconform:
+          - Kubeconform flux files: kubernetes/kubeconform/kubeconform-flux.md
+          - Kubeconform: kubernetes/kubeconform/kubeconform.md
+          - Kubeconform google managed prometheus: kubernetes/kubeconform/kube-conform-google-managed-prometheus.md
       - Nginx Ingress:
           - Nginx ingress with Cloudflare origin SSL/TLS: kubernetes/nginx-ingress/nginx-ingress-with-cloudflare-origin-server-ssl-tls.md
       - KB:
@@ -344,7 +347,6 @@ nav:
           - Delete not running pods: kubernetes/kb/deleting-not-running-pods.md
           - Downward API: kubernetes/kb/downward-api.md
           - Force Delete pod: kubernetes/kb/force-delete-pod.md
-          - Kubeconform google managed prometheus: kubernetes/kb/kube-conform-google-managed-prometheus.md
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
           - "Kubectl get pod and node it's on": kubernetes/kb/kubectl-get-pods-and-nodes.md
           - Kubectl get Service accounts and namespaces: kubernetes/kb/kubectl-get-service-accounts-namespaces.md
