@@ -211,3 +211,93 @@ Removing the lock on a state file is not possible
 The `terraform force-unlock` command can be used to remove the lock on the Terraform state for the current configuration. Another option is to use the "terraform state rm" command followed by the "terraform state push" command to forcibly overwrite the state on the remote backend, effectively removing the lock. It's important to note that these commands should be used with caution, as they can potentially cause conflicts and data loss if not used properly.
 
 Be very careful forcing an unlock, as it could cause data corruption and problems with your state file.
+
+## Terraform cloud vs Open source
+
+Terraform Cloud provides organizations with many features not available to those running Terraform open-source to deploy infrastructure. Select the ADDITIONAL features that organizations can take advantage of by moving to Terraform Cloud. (select three)
+
+- [ ] Terraform registry
+- [ ] providers
+- [x] VCS connection
+- [x] private registry
+- [x] remote runs
+
+## Terraform Init
+
+Margaret is calling a child module to deploy infrastructure for her organization. Just as a good architect does (and suggested by HashiCorp), she specifies the module version she wants to use even though there are newer versions available.
+During a `terrafom init`, Terraform downloads `v0.0.5` just as expected.
+
+What would happen if Margaret removed the version parameter in the module block and ran a `terraform init` again?
+
+- [ ] Terraform would download the latest version of the module
+- [ ] Terraform would skip the module
+- [x] Terraform would use the existing module already downloaded
+- [ ] Terraform would return an error, as the version parameter is required
+
+## Data Blocks
+
+You are working with a cloud provider to deploy resources using Terraform. You've added the following data block to your configuration. When the data block is used, what data will be returned?
+
+```hcl
+data "aws_ami" "amzlinux2" {
+  most_recent = true
+  owners      = ["amazon"]
+
+  filter {
+    name   = "name"
+    values = ["amzn2-ami-hvm-*-x86_64-ebs"]
+  }
+}
+```
+
+```hcl
+resource "aws_instance" "vault" {
+  ami                         = data.aws_ami.amzlinux2.id
+  instance_type               = "t3.micro"
+  key_name                    = "vault-key"
+  vpc_security_group_ids      = var.sg
+  subnet_id                   = var.subnet
+  associate_public_ip_address = "true"
+  user_data                   = file("vault.sh")
+
+  tags = {
+    Name = "vault"
+  }
+}
+```
+
+- [ ] a custom AMI for Amazon Linux 2
+- [ ] the IP address of an EC2 instance running in AWS
+- [x] all possible data of a specific Amazon Machine Image(AMI) from AWS
+- [ ] the latest AMI you have previously used for an Amazon Linux 2 image
+
+When you add a data block to your configuration, Terraform will retrieve all of the available data for that particular resource. It is then up to you to reference a specific attribute that can be exported from that data source. For example, if you include a data block for the aws_ami resource, Terraform will get a ton of attributes about that AMI that you can use elsewhere in your code - check out this link to see the list of attributes specific to the aws_ami, for example. https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami#attributes-reference
+
+
+
+Within the block body (between `{` and `}`) are query constraints defined by the data source. Most arguments in this section depend on the data source, and indeed in this example `most_recent`, owners and tags are all arguments defined specifically for the aws_ami data source.
+
+https://developer.hashicorp.com/terraform/language/data-sources#using-data-sources
+
+## Terraform Cloud
+
+When using Terraform Cloud, what is the easiest way to ensure the security and integrity of modules when used by multiple teams across different projects?
+
+- [ ] apply TFC organization permissions to all workspaces that allow them to only use certain modules
+- [ ] Create a list of approved modules and send them to your team to ensure they don't use modules that aren't approved by the team
+- [ ] use only modules that are published to the Terraform public registry
+- [x] Use the TFC Private Registry to ensure only approved modules are consumed by your organization
+
+### Overall explanation
+
+To simplify the management of approved modules, you can host all the approved Terraform modules in your organization's Private Registry on Terraform Cloud. The private registry allows you to control access to the modules and ensures they are not publicly available. By implementing a private registry, your organization can effectively control and restrict module consumption to only approved modules hosted in the Terraform Private  Registry. This enhances security, maintains consistency in infrastructure deployments, and reduces the risk of using unverified or potentially harmful modules in your Terraform configurations.
+
+### Wrong Answers:
+
+- Creating a list is probably a bad idea as it doesn't simplify the management of modules that can be used
+
+- modules published to the public registry aren't "approved" modules, and these modules may not contain or implement security measures required by your organization
+
+- TFC permissions wouldn't work here since they wouldn't be used to control access to certain modules
+
+https://developer.hashicorp.com/terraform/cloud-docs/registry
