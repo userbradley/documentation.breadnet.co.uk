@@ -52,6 +52,8 @@ Example below
 !!! note "Pay special attention to the password"
     Ensure that you encapsulate the _password_ with `'` or you will get an error
 
+!!! note "ensure that the username be set as "_json_key" string and not the "Key" value provided by gcp
+
 ```yaml
 # registries.yaml
 mirrors:
