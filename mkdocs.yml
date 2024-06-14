@@ -194,6 +194,7 @@ nav:
           - Broken link checker: kb/linux-cli/blc.md
           - Bulk change file extensions: kb/linux-cli/bulk-change-file-extension.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
+          - Generate random token: kb/linux-cli/generate-random-token.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
           - Get dell service tag Ubuntu: kb/linux-cli/get-dell-service-tag-ubuntu.md
           - How to create tar.gz file: kb/linux-cli/how-to-create-tar-gz-file.md
