@@ -49,10 +49,12 @@ Example below
 
 ### Create the file
 
-!!! note "Pay special attention to the password"
+!!! note "Pay special attention to username and password"
     Ensure that you encapsulate the _password_ with `'` or you will get an error
 
-!!! note "ensure that the username be set as "_json_key" string and not the "Key" value provided by gcp
+    Username **must** be set to `_json_key` and not the email address of the service account
+
+    Faulire to do any of these will result in an error
 
 ```yaml
 # registries.yaml
