@@ -1,4 +1,4 @@
-FROM ghcr.io/squidfunk/mkdocs-material:9.5.25 as BUILDER
+FROM ghcr.io/squidfunk/mkdocs-material:9.5.27 as BUILDER
 WORKDIR /app
 
 ENV color=red
