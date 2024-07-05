@@ -105,6 +105,7 @@ nav:
           - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
           - Filter Secrets: cloud/gcp/filter-secrets.md
+          - Find latest version of GKE: cloud/gcp/find-latest-version-of-gke.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
           - gcloud Disable Dependent Services: cloud/gcp/gcloud-disable-dependent-services.md
           - gcloud Disable Services: cloud/gcp/gcloud-disable-services.md
@@ -122,7 +123,7 @@ nav:
           - Print secret using gcloud: cloud/gcp/print-secret-gcloud.md
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - Re-run startup script on Google Compute Engine: cloud/gcp/re-run-startup-script-google-compute-engine.md
-          - Remove the lein to allow deletion: cloud/gcp/remove-the-lien-to-allow-deletion.md
+          - Remove the lien to allow deletion: cloud/gcp/remove-the-lien-to-allow-deletion.md
           - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
           - Show BigQuery Table Schema: cloud/gcp/show-bq-table-schema.md
           - SSH using IAP: cloud/gcp/ssh-iap.md
