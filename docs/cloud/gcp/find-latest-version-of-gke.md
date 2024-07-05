@@ -8,6 +8,12 @@ When upgrading GKE through terraform, it's important to know the full GKE versio
 
 ## How
 
-```shell
-gcloud container get-server-config --zone=<zone> --format=json --project=<project> | jq -r '.validMasterVersions[0]'
-```
+=== "Master"
+    ```shell
+    gcloud container get-server-config --zone=<zone> --format=json --project=<project> | jq -r '.validMasterVersions[0]'
+    ```
+=== "Nodes"
+
+    ```shell
+    gcloud container get-server-config --zone=<zone> --format=json --project=<project> | jq -r '.validNodeVersions[0]'
+    ```
