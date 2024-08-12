@@ -15,9 +15,6 @@ title: Reduce water heater operating temperature
 
 ## Why
 
-As the country I live in is an absolute Joke (Thanks Tory Government) - We are having an issue purchasing power, and thus
-the wholesale costs has gone up.
-
 Recently it was identified that Heating the water was using around 43% of my monthly power bill.
 
 ## Power off the heater
