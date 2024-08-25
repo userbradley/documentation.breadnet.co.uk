@@ -18,6 +18,10 @@ Sometimes you want to run OCI containers from a private registry, and you use Go
 
 You need to format the keyfile so that it is all one line.
 
+```shell
+cat <keyfile-name>.json | tr -d '\n'
+```
+
 Example below
 
 === "Before"
@@ -45,8 +49,12 @@ Example below
 
 ### Create the file
 
-!!! note "Pay special attention to the password"
+!!! note "Pay special attention to username and password"
     Ensure that you encapsulate the _password_ with `'` or you will get an error
+
+    Username **must** be set to `_json_key` and not the email address of the service account
+
+    Faulire to do any of these will result in an error
 
 ```yaml
 # registries.yaml
@@ -65,7 +73,14 @@ Name this `registries.yaml`
 
 Copy this file to **all workers** (and servers if pods can be scheduled on them)
 
-Put the file in `/etc/rancher/k3s`
+Create the file in `/etc/rancher/k3s/`
+
+```shell
+touch /etc/rancher/k3s/registries.yaml
+```
+
+!!! note "File name"
+    The file name **must** be `/etc/rancher/k3s/registries.yaml` otherwise you will get errors
 
 ### Restart k3s
 

@@ -11,9 +11,9 @@ nav:
           - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
           - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
           - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-          - Google IAP: automation/iac/terraform/google-iap.md
+          - Google IAP in Terraform: automation/iac/terraform/google-iap.md
           - Openstack error: automation/iac/terraform/openstack.md
-          - "Recursive delete of .terraform": automation/iac/terraform/recursive-delete-of-terraform.md
+          - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
           - Remote Data: automation/iac/terraform/remote-data.md
           - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
           - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
@@ -25,7 +25,9 @@ nav:
       - Terragrunt:
           - automation/iac/terragrunt/index.md
           - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
+          - Recursive delete of .terragrunt-cache directory: automation/iac/terragrunt/recursive-delete-of-terragrunt-cache.md
           - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
+          - Terragrunt auto approve: automation/iac/terragrunt/terragrunt-auto-approve.md
           - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
           - Terragrunt in GitHub Actions: automation/iac/terragrunt/terragrunt-in-github-actions.md
           - Terragrunt terraform auto -upgrade: automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md
@@ -58,11 +60,16 @@ nav:
           - CKA Questions I need to spend more time on: certifications/cka/cka-practice-questions-struggled.md
           - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
           - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
+      - Terraform associate:
+          - Exam questions: certifications/terraform-associate/exam-questions.md
   - Cloud Providers:
-      - Aqua:
-          - Aqua Page 1: cloud/aqua/aqua-page-1.md
-          - Aqua Page 2: cloud/aqua/aqua-page-2.md
-          - Aqua partnership notes: cloud/aqua/partnership-info.md
+      - Cloud Security Providers:
+          - Aqua:
+              - Aqua Page 1: cloud/csp/aqua/aqua-page-1.md
+              - Aqua Page 2: cloud/csp/aqua/aqua-page-2.md
+              - Aqua partnership notes: cloud/csp/aqua/partnership-info.md
+          - Rapid7:
+              - Add Google Organization to Rapid7: cloud/csp/rapid7/add-google-organization-to-rapid7.md
       - AWS:
           - AWS CLI: cloud/aws/aws-cli.md
           - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
@@ -77,7 +84,10 @@ nav:
           - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
           - Fly regions and scaling: cloud/fly/fly-regions.md
           - Release FLY IP address: cloud/fly/fly-release-ip-address.md
+          - MkDocs on Fly.io: cloud/fly/mkdocs-on-fly.md
       - Google Cloud:
+          - "API's and Services":
+              - Composer: cloud/gcp/apis-and-services/composer-apis.md
           - Metadata API:
               - cloud/gcp/metadata-api/index.md
               - Get Project ID using Metadata Endpoint: cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md
@@ -85,31 +95,43 @@ nav:
               - Get Service Account using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md
               - View startup script on Google Compute Engine: cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
           - Add external user to Google Cloud Platform Organization: cloud/gcp/add-external-user-to-org.md
+          - Authenticate to google artifact registry: cloud/gcp/authenticate-to-google-artifact-registry.md
           - Authenticate Twine to Google Artifact Registry: cloud/gcp/authenticate-twine-to-google-artifact-registry.md
           - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
           - Curl to IAP: cloud/gcp/curl-to-iap.md
           - Curl to url with google auth: cloud/gcp/curl-to-url-with-google-auth.md
+          - 'err: exec: "docker-credential-gcloud": executable file not found in $PATH': cloud/gcp/err-exec-docker-credential-gcloud-executable-file-not-found-in-path.md
           - Export GCP DNS zone to bind zone file: cloud/gcp/export-gcp-dns-zone-to-bind-zone-file.md
           - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
           - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
+          - Filter Secrets: cloud/gcp/filter-secrets.md
+          - Find latest version of GKE: cloud/gcp/find-latest-version-of-gke.md
           - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+          - gcloud Disable Dependent Services: cloud/gcp/gcloud-disable-dependent-services.md
+          - gcloud Disable Services: cloud/gcp/gcloud-disable-services.md
+          - Gcurl: cloud/gcp/gcurl.md
           - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
           - Get User info from Numerical Google account ID: cloud/gcp/get-email-from-numerical-user-id.md
+          - Get GCS Bucket IAM Members with the API: cloud/gcp/get-gcs-bucket-iam-members-api.md
           - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
+          - Get secret from docker-credential-gcloud cli: cloud/gcp/get-secret-from-docker-credential-gcloud-cli.md
+          - Google cloud security day 2024: cloud/gcp/google-cloud-security-day.md
           - Grafeas: cloud/gcp/grafeas.md
+          - IAP URL's: cloud/gcp/iap-url.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
           - List secrets being accessed Google cloud logs: cloud/gcp/list-secrets-being-accessed-google-cloud-logging.md
           - Print secret using gcloud: cloud/gcp/print-secret-gcloud.md
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
           - Re-run startup script on Google Compute Engine: cloud/gcp/re-run-startup-script-google-compute-engine.md
-          - Remove the lein to allow deletion: cloud/gcp/remove-the-lien-to-allow-deletion.md
+          - Remove the lien to allow deletion: cloud/gcp/remove-the-lien-to-allow-deletion.md
           - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
           - Show BigQuery Table Schema: cloud/gcp/show-bq-table-schema.md
           - SSH using IAP: cloud/gcp/ssh-iap.md
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
-          - "View logs for Enabled API's": cloud/gcp/view-logs-for-enabled-apis.md
+          - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
+      - Cloud Secret manager cost Comparison: cloud/secret-manager-comparison.md
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
@@ -144,11 +166,17 @@ nav:
           - Laws: kb/drone/laws.md
           - Stock image marketplaces: kb/drone/stock-image-marketplaces.md
       - Git:
+          - Amend commit message: kb/git/amend-commit-message.md
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
           - Create and push tags on Git: kb/git/create-and-push-tags.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
+          - Rename local git branch: kb/git/rename-local-git-branch.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
+      - GitHub:
+          - Collapsed Sections GitHub: kb/github/collapsed-sections-github.md
+          - Find date a repo was created on GitHub: kb/github/find-date-a-repo-was-created-on-github.md
+          - Import GitHub Organization users in to Terraform: kb/github/import-github-organization-users-in-to-terraform.md
       - GitHub Actions:
           - Authenticate GitHub actions to GCP using Workload Identity Federation: kb/githubactions/authenticate-github-actions-to-gcp-using-workload-identity-federation.md
           - Authenticate GitHub actions to Google Artifact Registry: kb/githubactions/authenticate-github-actions-to-google-artifact-registry.md
@@ -168,11 +196,13 @@ nav:
           - Broken link checker: kb/linux-cli/blc.md
           - Bulk change file extensions: kb/linux-cli/bulk-change-file-extension.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
+          - Generate random token: kb/linux-cli/generate-random-token.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
           - Get dell service tag Ubuntu: kb/linux-cli/get-dell-service-tag-ubuntu.md
           - How to create tar.gz file: kb/linux-cli/how-to-create-tar-gz-file.md
           - List NFS Shares exported: kb/linux-cli/list-nfs-shares-exported.md
           - Lowercase to Uppercase: kb/linux-cli/lowercase-to-uppercase.md
+          - Remove new lines from file: kb/linux-cli/remove-new-lines-from-file.md
           - "The following signatures couldn't be verified because the public key is not available": kb/linux-cli/the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available.md
           - Uppercase to Lowercase: kb/linux-cli/uppercase-to-lowercase.md
           - uuidgen Lower case: kb/linux-cli/uuidgen-lowercase.md
@@ -193,11 +223,16 @@ nav:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
       - Mac:
           - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
+          - Connect to serial port on mac: kb/mac/connect-to-serial-port-on-mac.md
       - Markdown:
           - How to use git: kb/markdown/how-to-use-git.md
           - Custom markdown badges: kb/markdown/custom-badges.md
+          - Escape Codeblocks: kb/markdown/escape-codeblock.md
           - Built By badge: kb/markdown/built-by-badge.md
+          - Lychee link checker: kb/markdown/lychee-link-checker.md
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
+      - Matomo:
+          - Matomo behind cloudflared: kb/matomo/matomo-behind-cloudflare.md
       - Minio:
           - OLD: kb/minio/old.md
           - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
@@ -206,7 +241,6 @@ nav:
           - Update DNS on EE router: kb/networking/ee-update-dns.md
           - Show Broadband password on EE router: kb/networking/show-broadband-password-ee.md
           - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
-          - Updating Ubiquiti Tough switch: kb/networking/update-tough-switch.md
           - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
       - Nginx:
           - Reverse web proxy: kb/nginx/reverse-web-proxy.md
@@ -223,12 +257,15 @@ nav:
           - Install PHP: kb/php/install-php.md
           - Password Strength Unknown wordpress: kb/php/password-strength-unknown.md
           - Wordpress permissions: kb/php/wordpress-permissions.md
+      - PIP:
+          - Skipping package due to invalid metadata entry: kb/pip/skipping-package-due-to-invalid-metadata-entry.md
       - Podman:
           - kb/podman/index.md
           - Authenticate Podman to GitHub Container Registry: kb/podman/authenticate-podman-to-ghcr.md
           - Configure podman to use Remote Google Container Registry: kb/podman/podmain-google-artifact-registry-mirror.md
           - docker-credential-desktop executable file not found in path: kb/podman/docker-credential-desktop-not-installed.md
           - Podman mount directories on Mac: kb/podman/podman-mount-directories-mac.md
+          - Podman using Lima: kb/podman/podman-using-lima.md
       - Pritunl:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
           - SSH using pritunl bastion: kb/pritunl/ssh-using-pritunl-bastion.md
@@ -255,6 +292,9 @@ nav:
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
           - sshuttle: kb/ssh/sshuttle.md
           - Weird Bash: kb/ssh/weird-bash.md
+      - Ubiquiti:
+          - Unifi device stuck in Adoption failed: kb/ubiquiti/unifi-device-stuck-in-adoption-failed.md
+          - Updating Ubiquiti Tough switch: kb/ubiquiti/update-tough-switch.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
@@ -267,18 +307,22 @@ nav:
       - Flux:
           - Authenticate flux with Google Artifact Registry: kubernetes/flux/flux-artifact-registry-google-auth.md
           - Flux Lookup no such host: kubernetes/flux/flux-lookup-no-such-host.md
+          - Flux reconcile: kubernetes/flux/flux-reconcile.md
           - "Flux reconciliation failed: install retries exhausted": kubernetes/flux/flux-reconciliation-failed-install-retries-exhausted.md
       - GKE:
           - kubernetes/gke/index.md
+          - Configure firewall for service type LoadBalancer in GKE: kubernetes/gke/configure-firewall-for-service-type-loadbalancer-in-gke.md
           - Configure GKE workload Identity: kubernetes/gke/configure-gke-workload-identity.md
           - Cordon and drain GKE pool: kubernetes/gke/cordon-and-drain-gke-pool.md
           - Workload ID KSA: kubernetes/gke/service-account-with-workload-id.md
+          - Set static IP address on service type Load balancer: kubernetes/gke/set-static-ip-on-service-loadbalancer.md
           - Workload ID test pod: kubernetes/gke/workload-id-test.md
       - Helm:
           - Create a helm chart: kubernetes/helm/create-helm-chart.md
+          - Force containers to update when config map changes in helm: kubernetes/helm/force-rollout-on-configmap-update.md
+          - "Helm loop through key:value pairs": kubernetes/helm/helm-loop-through-key-value-pairs.md
           - Push chart to Artifact Registry: kubernetes/helm/push-chart-to-ar.md
           - Use GCS as helm repo: kubernetes/helm/helm-repo-gcs.md
-          - Force containers to update when config map changes in helm: kubernetes/helm/force-rollout-on-configmap-update.md
       - K3S:
           - kubernetes/k3s/index.md
           - Cloudflare Tunnels on k3s: kubernetes/k3s/cloudflare-tunnels-on-k3s.md
@@ -286,16 +330,29 @@ nav:
           - Installing k3s: kubernetes/k3s/installing-k3s.md
           - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
+          - Setting up k3s to use nfs as default storage class: kubernetes/k3s/nfs-pvc-cluster-storageclass-k3s.md
+          - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/k3s/oidc-azure-ad.md
           - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
+      - KIND:
+          - Load images in to kind: kubernetes/kind/load-image-in-to-kind.md
+      - Kubeconform:
+          - Kubeconform flux files: kubernetes/kubeconform/kubeconform-flux.md
+          - Kubeconform: kubernetes/kubeconform/kubeconform.md
+          - Kubeconform google managed prometheus: kubernetes/kubeconform/kube-conform-google-managed-prometheus.md
+      - Nginx Ingress:
+          - Nginx ingress with Cloudflare origin SSL/TLS: kubernetes/nginx-ingress/nginx-ingress-with-cloudflare-origin-server-ssl-tls.md
       - KB:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
           - Convert Docker compose to Kubernetes manifest files: kubernetes/kb/convert-docker-compose-to-kubernetes-manifests.md
+          - Delete CRDs matching name: kubernetes/kb/delete-crd-matching-name.md
           - Delete namespace stuck in terminating: kubernetes/kb/delete-terminating-namespace.md
           - Delete not running pods: kubernetes/kb/deleting-not-running-pods.md
           - Downward API: kubernetes/kb/downward-api.md
           - Force Delete pod: kubernetes/kb/force-delete-pod.md
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
+          - "Kubectl get pod and node it's on": kubernetes/kb/kubectl-get-pods-and-nodes.md
+          - Kubectl get Service accounts and namespaces: kubernetes/kb/kubectl-get-service-accounts-namespaces.md
           - Set default namespace kubectl: kubernetes/kb/kubectl-set-namespace.md
           - Testing RBAC: kubernetes/kb/rbac-testing.md
           - Sleeper pod: kubernetes/kb/sleeper.md
@@ -326,16 +383,18 @@ nav:
               - Push Start Seat leon: car/seat/leon/push-start-seat-leon.md
   - Outages:
       - outage/index.md
+      - 2023-11-26 4AM: outage/2023-11-26-04.md
       - 2023-10-27 11AM: outage/2023-10-27-11.md
-## Config ##
+  - Bread:
+      - bread/index.md
+      - 2024-05-18: bread/2024-05-18.md
+      - 2024-04-18: bread/2024-04-18.md
 repo_name: documentation
 repo_url: https://github.com/userbradley/documentation.breadnet.co.uk
 edit_uri: edit/dev/docs/
 site_name: !ENV [env, "breadNET Documentation"]
 site_url: !ENV [domain, "https://documentation.breadnet.co.uk"]
 site_description: breadNET Documentation
-#extra_css:
-#  - stylesheets/custom.css # Custom header color
 theme:
   name: material
   favicon: favicon.ico
@@ -399,8 +458,8 @@ markdown_extensions:
   - tables
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets
   - abbr
   - footnotes
@@ -416,7 +475,12 @@ markdown_extensions:
       repo_url_shorthand: true
 plugins:
   - search
-  - social
+  - social # Disabled due to google font being broken: https://github.com/squidfunk/mkdocs-material/issues/6983
+  - git-revision-date-localized:
+      enable_creation_date: !ENV [CI, false]
+      exclude:
+        - index.md
+      enabled: !ENV [CI, false]
   - redirects:
       redirect_maps:
         'kb/public-web-facing/jellyfin-s3.md': 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'
@@ -450,6 +514,12 @@ plugins:
         'home/oven/oven.md': 'home/rg/oven/oven.md'
         'home/washing/washing-machine.md': 'home/rg/washing/washing-machine.md'
         'home/water-heater/reduce-temperature.md': 'home/rg/water-heater/reduce-temperature.md'
+        'cloud/aqua/aqua-page-1.md': 'cloud/csp/aqua/aqua-page-1.md'
+        'cloud/aqua/aqua-page-2.md': 'cloud/csp/aqua/aqua-page-2.md'
+        'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
+        'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
+        'kb/networking/update-tough-switch.md': 'kb/ubiquiti/update-tough-switch.md'
+        'kubernetes/kb/kubectl-commands-old.md': 'kubernetes/kb/kubectl-commands.md'
         #- offline
 extra:
   social:
@@ -464,4 +534,21 @@ extra:
     - icon: fontawesome/solid/file-lines
       link: https://breadnet.co.uk
       name: My Website
-  generator: false # I am sorry I will enable it later
+  generator: true
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: info
+analytics:
+  matomo:
+    enabled: true
+    url: trace-agent.breadnet.co.uk
+    siteId: 17
+  cloudflare:
+    enabled: false
+    token: 6a2c80ed9b0c4af39dadb53f62452603

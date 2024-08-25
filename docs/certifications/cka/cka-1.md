@@ -318,9 +318,9 @@ It tells the CRE to pull the docker (or OCI) image, and then reports the status 
 
 ## Kube Proxy
 
-Kube proxy is resposible for all the _workload_ based networking.
+Kube proxy is responsible for all the _workload_ based networking.
 
-It handles (non exclusive list):
+It handles (non-exclusive list):
 
 * Inter-pod networking
 * Inter-pod-node networking
@@ -378,7 +378,7 @@ Containers in the same pod share storage mappings, so we can map storage to 2 co
 
 ### Creating a pod
 
-We can create a pod using both [kubectl](../../kubernetes/kb/kubectl-commands-old.md) and `manifest` files.
+We can create a pod using both [kubectl](../../kubernetes/kb/kubectl-commands.md) and `manifest` files.
 
 #### using kubectl
 

@@ -6,13 +6,13 @@ title: Kubernetes
 
 ## Quick Links
 
-* [Kubectl commands](kb/kubectl-commands-old.md)
+* [Kubectl commands](kb/kubectl-commands.md)
 
 ## Folders
 
-* [KB](kb)
-* [GKE](gke)
-* [k3s](k3s)
+* [KB](kb/index.md)
+* [GKE](gke/index.md)
+* [k3s](k3s/index.md)
 
 
 

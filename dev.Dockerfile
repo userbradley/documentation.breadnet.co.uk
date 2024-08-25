@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material:latest as BUILDER
+FROM ghcr.io/squidfunk/mkdocs-material:9.5.31 as BUILDER
 WORKDIR /app
 
 ENV color=red
@@ -12,11 +12,16 @@ COPY overrides /app/overrides
 COPY dev-robots.txt /app/docs/robots.txt
 COPY docs /app/docs
 
+# START [revision-date]
+RUN pip3 install mkdocs-git-revision-date-localized-plugin
+#COPY .git /app/.git
+# END [revision-date]
+
 RUN ["mkdocs", "build"]
 
-FROM nginx:stable-alpine
+FROM nginx:stable-alpine3.17-slim
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY dev-nginx.conf /etc/nginx/conf.d/default.conf
 COPY cloudflare.conf /etc/nginx/cloudflare.conf
 COPY deny.conf /etc/nginx/deny.conf
 COPY .htpasswd /etc/nginx/.htpasswd

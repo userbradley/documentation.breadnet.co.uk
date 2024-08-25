@@ -1,8 +1,7 @@
 ---
 title: Cachet
+outdated: true
 ---
-
-# Cachet
 
 When you change anything with Cachet, ensure that you clear the cache!
 

@@ -29,4 +29,4 @@ Hopefully this should take no longer than a year to complete, balancing it along
 * [github/kodekloudhub](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
 * [Curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.26.pdf)
 * [Kubernetes the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way/tree/master/docs)
-* [github/CKA-proactive-exercises](https://github.com/alijahnas/CKA-practice-exercises)
+* [GitHub/CKA-proactive-exercises](https://github.com/alijahnas/CKA-practice-exercises)

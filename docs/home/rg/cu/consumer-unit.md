@@ -11,7 +11,7 @@ Laundry Room
 
 ## Photo
 
-![](/assets/IMG_9261.jpg)
+![](../../../assets/IMG_9261.jpg)
 
 
 ## Problems you may have
@@ -33,7 +33,7 @@ Flip the switch up in a **fast jerking motion**
 
 Turn off the main switch on the right hand side, and leave off till Bradley is home to resolve.
 
-![](/assets/red-cu.png)
+![](../../../assets/red-cu.png)
 
 This is to prevent electrical shock, or loss of life.
 

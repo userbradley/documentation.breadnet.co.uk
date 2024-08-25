@@ -12,11 +12,9 @@ processes = []
   auto_rollback = false
 
 [[services]]
-  http_checks = []
   internal_port = 80
   processes = ["app"]
   protocol = "tcp"
-  script_checks = []
   [services.concurrency]
     hard_limit = 100
     soft_limit = 80
@@ -31,8 +29,9 @@ processes = []
     handlers = ["tls", "http"]
     port = 443
 
-  [[services.tcp_checks]]
-    grace_period = "1s"
-    interval = "15s"
-    restart_limit = 0
-    timeout = "2s"
+  [[services.http_checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    path = "/healthz"

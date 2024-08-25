@@ -24,7 +24,7 @@ xcode-select --install
 
 Annoyingly the installing box does not fade to the background, and stays in focus the entire time
 
-![](/assets/xcode.png)
+![](../../assets/xcode.png)
 
 
 ### Still not working

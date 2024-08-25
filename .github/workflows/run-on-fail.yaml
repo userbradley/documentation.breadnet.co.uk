@@ -1,0 +1,9 @@
+on:
+  workflow_dispatch:
+jobs:
+  should-fail:
+    runs-on: ubuntu-latest
+    name: Failure
+    steps:
+      - name: Fail
+        run: exit 1

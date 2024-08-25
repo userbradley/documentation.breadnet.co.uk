@@ -2,18 +2,95 @@
 title: Send test email on Passbolt
 ---
 
-# Send test email on Passbolt
+There are 2 ways to send a test email
 
-Exec in to the container
+1. Exec from your computer
+2. Shell in the container
 
-```shell
-docker exec -it passbolt /bin/sh
-```
+The preferred way is to: **exec from your computer**
 
-move to bin
+If you're running passbolt **not** in a container, you can just use the `send the test email` command from the passbolt directory
 
-```shell
-./cake passbolt send_test_email test@breadnet.co.uk
-```
+=== "Exec from your computer"
 
-[Check Passbolt is healthy](check-passbolt-is-healthy.md)
+    === "Docker"
+
+        Get the container name
+
+        ```shell
+        docker ps
+        ```
+
+        Send the test email
+
+        ```shell
+        docker exec -it <container> bin/cake passbolt send_test_email -r test@breadnet.co.uk
+        ```
+
+    === "Podman"
+
+        Get the container name
+
+        ```shell
+        podman ps
+        ```
+
+        Send the test email
+
+        ```shell
+        podman exec -it <container> bin/cake passbolt send_test_email -r test@breadnet.co.uk
+        ```
+
+        Also, you're cool for using podman
+
+=== "Shell in container"
+
+    === "Docker"
+
+        Get the container name
+
+        ```shell
+        docker ps
+        ```
+
+        Exec in to the container
+
+        ```shell
+        docker exec -it <conteiner> /bin/sh
+        ```
+
+        Send test email
+
+        ```shell
+        bin/cake passbolt send_test_emai -r test@breadnet.co.uk
+        ```
+
+    === "Podman"
+        Get the container name
+
+        ```shell
+        podman ps
+        ```
+
+        Exec in to the container
+
+        ```shell
+        podman exec -it <conteiner> /bin/sh
+        ```
+
+        Send test email
+
+        ```shell
+        bin/cake passbolt send_test_emai -r test@breadnet.co.uk
+        ```
+
+        Also, you're cool for using podman
+
+??? note "The old way"
+    Passbolt have changed how you send emails.
+
+    You used to do
+
+    ```shell
+    ./cake passbolt send_test_email test@breadnet.co.uk
+    ```

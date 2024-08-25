@@ -1,8 +1,6 @@
 ---
-title: Google IAP
+title: Google IAP in Terraform
 ---
-
-# Google IAP
 
 ## Get the brands available
 

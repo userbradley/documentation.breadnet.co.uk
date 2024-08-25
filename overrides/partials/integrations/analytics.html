@@ -1,3 +1,4 @@
+{%if config.analytics.matomo.enabled %}
 <!-- Matomo -->
 <script>
     var _paq = window._paq = window._paq || [];
@@ -5,15 +6,18 @@
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-        var u="//trace-agent.breadnet.co.uk/";
+        var u="//{{ config.analytics.matomo.url }}/";
         _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '17']);
+        _paq.push(['setSiteId', '{{ config.analytics.matomo.siteId }}']);
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
 </script>
 <!-- End Matomo Code -->
+{% endif %}
 
+{%if config.analytics.cloudflare.enabled %}
 <!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6a2c80ed9b0c4af39dadb53f62452603"}'></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{config.analytics.cloudflare.token}}"}'></script>
 <!-- End Cloudflare Web Analytics -->
+{% endif %}
