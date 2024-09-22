@@ -21,7 +21,7 @@ title: List of Headers Cloudflare zero sends
     "cloudflare; loops=1"
   ],
   "Cf-Access-Authenticated-User-Email": [
-    "example@localhost
+    "example@localhost"
   ],
   "Cf-Access-Jwt-Assertion": [
     "<redacted>"
