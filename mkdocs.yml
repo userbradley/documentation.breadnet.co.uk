@@ -185,6 +185,8 @@ nav:
           - View JWT Claim GitHub actions: kb/githubactions/view-jwt-claim-github-actions.md
       - Google Workspace:
           - Setup Routing: kb/google-workspace/setup-routing.md
+      - Cloudflare:
+          - Cloudflare Zero Forwarded header: kb/cloudflare/cloudflare-zero-forwarded-header.md
       - Grocy:
           - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
       - Juniper:

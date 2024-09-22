@@ -1,8 +1,7 @@
 ---
-title: Set grocy to use pritunl Zero usernames
+title: Set Grocy to use pritunl Zero usernames
 ---
 
-# Set grocy to use pritunl Zero usernames
 
 ## Why
 
