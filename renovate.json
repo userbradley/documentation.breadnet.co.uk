@@ -4,5 +4,9 @@
     "config:recommended",
     "default:automergeDigest"
   ],
-  "prHourlyLimit": 0
+  "prHourlyLimit": 0,
+  "dockerfile": {
+    "automerge": true,
+    "autoApprove": true
+  }
 }
