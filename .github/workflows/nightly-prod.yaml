@@ -27,7 +27,7 @@ jobs:
     needs: [site]
     steps:
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v5.0.0
+        uses: peter-evans/create-issue-from-file@v5.0.1
         with:
           title: Nightly build failed
           labels: Broken Nightly Build
