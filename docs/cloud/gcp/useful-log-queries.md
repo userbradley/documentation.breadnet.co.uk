@@ -4,10 +4,10 @@ title: Useful log queries GCP
 
 ## What this document plans to achieve
 
-List useful log queries in GCP 
+List useful log queries in GCP
 
 ## Queries
 
-| Query                                                                   | Explainer                                          | 
+| Query                                                                   | Explainer                                          |
 |-------------------------------------------------------------------------|----------------------------------------------------|
 | `protoPayload.methodName="google.iam.admin.v1.CreateServiceAccountKey"` | Get entires when a service account key was created |
