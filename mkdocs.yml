@@ -68,6 +68,8 @@ nav:
               - Aqua Page 1: cloud/csp/aqua/aqua-page-1.md
               - Aqua Page 2: cloud/csp/aqua/aqua-page-2.md
               - Aqua partnership notes: cloud/csp/aqua/partnership-info.md
+          - Chronicle:
+              - Configure Datadog Vector to push logs to Chronicle: cloud/csp/chronicle/configure-datadog-vector-push-logs.md
           - Rapid7:
               - Add Google Organization to Rapid7: cloud/csp/rapid7/add-google-organization-to-rapid7.md
       - AWS:
