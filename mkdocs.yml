@@ -131,6 +131,7 @@ nav:
           - SSH using IAP: cloud/gcp/ssh-iap.md
           - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
           - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
+          - Useful log queries: cloud/gcp/useful-log-queries.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
           - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
       - Cloud Secret manager cost Comparison: cloud/secret-manager-comparison.md
