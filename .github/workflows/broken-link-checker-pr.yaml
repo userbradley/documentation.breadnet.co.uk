@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: PR comment with Broken Links
         if: env.lychee_exit_code != 0
-        uses: thollander/actions-comment-pull-request@v2.5.0
+        uses: thollander/actions-comment-pull-request@v3
         with:
           filePath: /tmp/out.md
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
