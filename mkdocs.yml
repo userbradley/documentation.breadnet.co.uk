@@ -70,6 +70,8 @@ nav:
               - Aqua partnership notes: cloud/csp/aqua/partnership-info.md
           - Chronicle:
               - Configure Datadog Vector to push logs to Chronicle: cloud/csp/chronicle/configure-datadog-vector-push-logs.md
+          - Conductor One:
+              - Create alias on Entitlement: cloud/csp/conductorone/create-alias-on-entitlement.md
           - Rapid7:
               - Add Google Organization to Rapid7: cloud/csp/rapid7/add-google-organization-to-rapid7.md
       - AWS:
