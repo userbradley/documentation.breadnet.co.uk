@@ -196,7 +196,7 @@ nav:
           - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
       - Juniper:
           - Juniper Router Selection: kb/juniper/juniper-router-selection.md
-          - Junos useful commands: kb/kuniper/junos-useful-commands.md
+          - Junos useful commands: kb/juniper/junos-useful-commands.md
       - Linux Command line:
           - Always restart service after failure systemd: kb/linux-cli/always-restart-service-after-failure-systemd.md
           - Backup SQlite Database: kb/linux-cli/backup-sqlite-db.md
@@ -269,6 +269,7 @@ nav:
       - Podman:
           - kb/podman/index.md
           - Authenticate Podman to GitHub Container Registry: kb/podman/authenticate-podman-to-ghcr.md
+          - Authenticate Podman to Google Artifact Registry: kb/podman/authenticate-podman-to-google-artifact-registry.md
           - Configure podman to use Remote Google Container Registry: kb/podman/podmain-google-artifact-registry-mirror.md
           - docker-credential-desktop executable file not found in path: kb/podman/docker-credential-desktop-not-installed.md
           - Podman mount directories on Mac: kb/podman/podman-mount-directories-mac.md
