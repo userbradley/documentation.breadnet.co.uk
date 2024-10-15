@@ -8,7 +8,13 @@ Some of the Terraform requires you to supply your user ID, and perhaps you want 
 
 ## How
 
-### Command line
+### Using Cone CLI
+
+```shell
+cone whoami -o json | jq ".id"
+```
+
+### Using JWT Token
 
 !!! tip "Requires the Cone CLI"
     Also requires `jq` cli
