@@ -72,6 +72,8 @@ nav:
               - Configure Datadog Vector to push logs to Chronicle: cloud/csp/chronicle/configure-datadog-vector-push-logs.md
           - Conductor One:
               - Create alias on Entitlement: cloud/csp/conductorone/create-alias-on-entitlement.md
+              - Get your user ID Conductor One: cloud/csp/conductorone/get-your-user-id-conductor-one.md
+              - List users in Conductor one using the API: cloud/csp/conductorone/list-users-in-conductor-one-using-the-api.md
           - Rapid7:
               - Add Google Organization to Rapid7: cloud/csp/rapid7/add-google-organization-to-rapid7.md
       - AWS:
