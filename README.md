@@ -85,7 +85,7 @@ This action will build the site and deploy it to my Fly account. Nothing special
 
 This runs the pre-commit on the changes, and will error if there is something wrong.
 
-### Trufflehog Secret scaner
+### Trufflehog Secret scanner
 
 Checks you've not accidentally commited a secret in to the repo!
 
@@ -98,7 +98,8 @@ The action will deploy the site to my Fly account under the `documentation.bread
 
 ## Uptime
 
-[Status Page](https://status.breadnet.co.uk)
+[Status Page](https://status.breadinfra.net/endpoints/public-sites_production-documentation)
+_Note: You won't be able to access this site if you do not have an approved email address_
 
 This site is hosted on Fly and has a system in place to promote changes from Development to Production, meaning something
 would have had to go **really** wrong for the site to not be online
@@ -119,14 +120,27 @@ This is the main branch of the site and repo, which holds the live site that you
 
 The Dev build must pass, and you require approval before merging in to main is allowed
 
-## dev
+## feat/**
 
-This branch houses the development site, which is built on each commit to `dev`
+The site is built off any Pull requests that touch the below files.
 
-By default, this site is not indexed by google, and has a password protecting it
+```yaml
+- docs/**
+- .github/workflows/dev.yaml
+- overrides/**
+- mkdocs.yml
+- dev-robots.txt
+- .htpasswd
+- dev.Dockerfile
+- cloudflare.conf
+- deny.conf
+- dev-nginx.conf
+- dev.toml
+```
 
+Please use `feat/**` as your branch name when contributing changes
 
-# File directory
+# Directory Structure of this repo
 
 ```text
 .
