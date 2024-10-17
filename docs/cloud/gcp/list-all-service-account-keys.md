@@ -10,9 +10,7 @@ As part of securing your cloud estate, you want to know how many service account
 
 === "Asset Inventory"
 
-    Navigate to the Asset Inventory at the **ORG level**
-
-    Click on `Asset Query` at the top
+    Navigate to the [Asset Inventory](https://console.cloud.google.com/security/command-center/assetsv2/query) at the **ORG level** > Click on `Asset Query` at the top
 
     Use the below SQL
 
