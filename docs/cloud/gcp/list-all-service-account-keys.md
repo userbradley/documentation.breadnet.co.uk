@@ -30,8 +30,8 @@ As part of securing your cloud estate, you want to know how many service account
 
 === "gcloud CLI"
 
-!!! note "This was it not ideal"
-    This method was used before GCP added the Asset Query option
+    !!! note "This was it not ideal"
+        This method was used before GCP added the Asset Query option
 
     The below assumes you are already authenticated to google cloud, if you are not then
 
