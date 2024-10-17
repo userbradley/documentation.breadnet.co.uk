@@ -12,7 +12,8 @@ As part of securing your cloud estate, you want to know how many service account
 
     Navigate to the [Asset Inventory](https://console.cloud.google.com/security/command-center/assetsv2/query) at the **ORG level** > Click on `Asset Query` at the top
 
-    Use the below SQL
+    Using the below exxamples, decide if you want to order by creation date or not:
+
     === "Default"
         ```sql
         SELECT
@@ -25,7 +26,7 @@ As part of securing your cloud estate, you want to know how many service account
         WHERE
           resource.data.keyType = "USER_MANAGED"
         ```
-    ==== "Order by Creation Time"
+    === "Order by Creation Time"
         ```sql
         SELECT
           SPLIT(resource.data.name, '/')[1] AS PROJECT,

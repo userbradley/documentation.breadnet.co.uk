@@ -61,6 +61,12 @@ task pre-commit-install
 
 This will install the pre-commit hooks on this repo, as well as run pre-commit on the files.
 
+### I want to run `mkdocs` locally
+
+```shell
+pip3 install -r requirments.txt
+brew install cairo freetype libffi libjpeg libpng zlib pngquant
+```
 ## CI
 
 This repo uses a fair bit of CI for a simple site
@@ -164,11 +170,17 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   ├── airflow-2.png
 │   │   ├── amex-simpleicons.png
 │   │   ├── b7eY4DH3O7l5mvGO-image-1606744736955.png
+│   │   ├── cf_strict-ssl.png
+│   │   ├── chronicle-ingestion-auth.png
+│   │   ├── chronicle-select-vector.png
+│   │   ├── chronicle-vector-logs-show-up.png
 │   │   ├── cloudflare_status.png
 │   │   ├── cluster.png
 │   │   ├── collapsed-section-view.webp
 │   │   ├── composer-owner-numerical.png
+│   │   ├── conductorone-entitlement-alias.png
 │   │   ├── data-incident-response-figure-1.png
+│   │   ├── dell-hdd-password-protected.png
 │   │   ├── dev-tools-console.png
 │   │   ├── dev-tools-showPassword.png
 │   │   ├── docker-ps.png
@@ -1126,6 +1138,7 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   ├── openvpn-dns.png
 │   │   ├── openvpn-mikrotik-setup.png
 │   │   ├── openvpn-tls.png
+│   │   ├── oracle-secret-manager.png
 │   │   ├── pipeline.png
 │   │   ├── plant-room.JPG
 │   │   ├── qemu-ded.png
@@ -1204,9 +1217,11 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │       ├── terragrunt-in-github-actions.md
 │   │   │       └── terragrunt-terraform-auto-upgrade.md
 │   │   └── index.md
-│   ├── blog
-│   │   └── posts
 │   ├── bookstack.md
+│   ├── bread
+│   │   ├── 2024-04-18.md
+│   │   ├── 2024-05-18.md
+│   │   └── index.md
 │   ├── car
 │   │   ├── index.md
 │   │   └── seat
@@ -1221,27 +1236,29 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │   ├── cka-practice-questions.md
 │   │   │   ├── index.md
 │   │   │   └── useful-cka-kubectl-commands.md
-│   │   └── google-certs
-│   │       ├── gcp-architect
-│   │       │   ├── gcp-architect-1.md
-│   │       │   ├── gcp-architect-2.md
-│   │       │   ├── gcp-architect-3.md
-│   │       │   └── gcp-load-balancer.md
-│   │       ├── gcp-associate
-│   │       │   ├── compute-engine.md
-│   │       │   ├── costs.md
-│   │       │   ├── gce-google-compute-engine.md
-│   │       │   ├── gcp.md
-│   │       │   ├── networking-and-lb.md
-│   │       │   ├── regions-and-zones.md
-│   │       │   └── vm-bootstrapping-templates-and-images.md
-│   │       ├── gcp-security
-│   │       │   ├── 1-the-exam-topic.md
-│   │       │   └── gcp-security-1.md
-│   │       └── workspace-admin
-│   │           ├── managing-gsuit.md
-│   │           ├── mdm.md
-│   │           └── user-administration.md
+│   │   ├── google-certs
+│   │   │   ├── gcp-architect
+│   │   │   │   ├── gcp-architect-1.md
+│   │   │   │   ├── gcp-architect-2.md
+│   │   │   │   ├── gcp-architect-3.md
+│   │   │   │   └── gcp-load-balancer.md
+│   │   │   ├── gcp-associate
+│   │   │   │   ├── compute-engine.md
+│   │   │   │   ├── costs.md
+│   │   │   │   ├── gce-google-compute-engine.md
+│   │   │   │   ├── gcp.md
+│   │   │   │   ├── networking-and-lb.md
+│   │   │   │   ├── regions-and-zones.md
+│   │   │   │   └── vm-bootstrapping-templates-and-images.md
+│   │   │   ├── gcp-security
+│   │   │   │   ├── 1-the-exam-topic.md
+│   │   │   │   └── gcp-security-1.md
+│   │   │   └── workspace-admin
+│   │   │       ├── managing-gsuit.md
+│   │   │       ├── mdm.md
+│   │   │       └── user-administration.md
+│   │   └── terraform-associate
+│   │       └── exam-questions.md
 │   ├── cloud
 │   │   ├── aws
 │   │   │   ├── aws-cli.md
@@ -1251,6 +1268,12 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │   │   ├── aqua-page-1.md
 │   │   │   │   ├── aqua-page-2.md
 │   │   │   │   └── partnership-info.md
+│   │   │   ├── chronicle
+│   │   │   │   └── configure-datadog-vector-push-logs.md
+│   │   │   ├── conductorone
+│   │   │   │   ├── create-alias-on-entitlement.md
+│   │   │   │   ├── get-your-user-id-conductor-one.md
+│   │   │   │   └── list-users-in-conductor-one-using-the-api.md
 │   │   │   └── rapid7
 │   │   │       └── add-google-organization-to-rapid7.md
 │   │   ├── digitalocean
@@ -1265,49 +1288,54 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │   ├── fly-release-ip-address.md
 │   │   │   ├── index.md
 │   │   │   └── mkdocs-on-fly.md
-│   │   └── gcp
-│   │       ├── add-external-user-to-org.md
-│   │       ├── apis-and-services
-│   │       │   └── composer-apis.md
-│   │       ├── authenticate-to-google-artifact-registry.md
-│   │       ├── authenticate-twine-to-google-artifact-registry.md
-│   │       ├── curl-gcr-ar.md
-│   │       ├── curl-to-iap.md
-│   │       ├── curl-to-url-with-google-auth.md
-│   │       ├── err-exec-docker-credential-gcloud-executable-file-not-found-in-path.md
-│   │       ├── export-gcp-dns-zone-to-bind-zone-file.md
-│   │       ├── export-to-terraform-using-gcloud-cli.md
-│   │       ├── filter-gcloud-output.md
-│   │       ├── filter-secrets.md
-│   │       ├── forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
-│   │       ├── gcloud-disable-dependent-services.md
-│   │       ├── gcloud-disable-services.md
-│   │       ├── gcurl.md
-│   │       ├── get-dnssec-keys-for-google-cloud-dns.md
-│   │       ├── get-email-from-numerical-user-id.md
-│   │       ├── get-gcs-bucket-iam-members-api.md
-│   │       ├── get-project-name-of-gcs-bucket.md
-│   │       ├── get-secret-from-docker-credential-gcloud-cli.md
-│   │       ├── grafeas.md
-│   │       ├── list-all-service-account-keys.md
-│   │       ├── list-secrets-being-accessed-google-cloud-logging.md
-│   │       ├── metadata-api
-│   │       │   ├── get-project-id-using-metadata-endpoint.md
-│   │       │   ├── get-service-account-token-using-metadata-endpoint.md
-│   │       │   ├── get-service-account-using-metadata-endpoint.md
-│   │       │   ├── index.md
-│   │       │   └── view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
-│   │       ├── print-secret-gcloud.md
-│   │       ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
-│   │       ├── re-run-startup-script-google-compute-engine.md
-│   │       ├── remove-the-lien-to-allow-deletion.md
-│   │       ├── serverless-vpc-access-for-cloudrun-across-projects.md
-│   │       ├── show-bq-table-schema.md
-│   │       ├── ssh-iap.md
-│   │       ├── sshuttle-using-google-iap.md
-│   │       ├── useful-gcloud-commands.md
-│   │       ├── view-hash-of-object-in-gcs.md
-│   │       └── view-logs-on-who-enabled-an-api.md
+│   │   ├── gcp
+│   │   │   ├── add-external-user-to-org.md
+│   │   │   ├── apis-and-services
+│   │   │   │   └── composer-apis.md
+│   │   │   ├── authenticate-to-google-artifact-registry.md
+│   │   │   ├── authenticate-twine-to-google-artifact-registry.md
+│   │   │   ├── curl-gcr-ar.md
+│   │   │   ├── curl-to-iap.md
+│   │   │   ├── curl-to-url-with-google-auth.md
+│   │   │   ├── err-exec-docker-credential-gcloud-executable-file-not-found-in-path.md
+│   │   │   ├── export-gcp-dns-zone-to-bind-zone-file.md
+│   │   │   ├── export-to-terraform-using-gcloud-cli.md
+│   │   │   ├── filter-gcloud-output.md
+│   │   │   ├── filter-secrets.md
+│   │   │   ├── find-latest-version-of-gke.md
+│   │   │   ├── forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+│   │   │   ├── gcloud-disable-dependent-services.md
+│   │   │   ├── gcloud-disable-services.md
+│   │   │   ├── gcurl.md
+│   │   │   ├── get-dnssec-keys-for-google-cloud-dns.md
+│   │   │   ├── get-email-from-numerical-user-id.md
+│   │   │   ├── get-gcs-bucket-iam-members-api.md
+│   │   │   ├── get-project-name-of-gcs-bucket.md
+│   │   │   ├── get-secret-from-docker-credential-gcloud-cli.md
+│   │   │   ├── google-cloud-security-day.md
+│   │   │   ├── grafeas.md
+│   │   │   ├── iap-url.md
+│   │   │   ├── list-all-service-account-keys.md
+│   │   │   ├── list-secrets-being-accessed-google-cloud-logging.md
+│   │   │   ├── metadata-api
+│   │   │   │   ├── get-project-id-using-metadata-endpoint.md
+│   │   │   │   ├── get-service-account-token-using-metadata-endpoint.md
+│   │   │   │   ├── get-service-account-using-metadata-endpoint.md
+│   │   │   │   ├── index.md
+│   │   │   │   └── view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
+│   │   │   ├── print-secret-gcloud.md
+│   │   │   ├── projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+│   │   │   ├── re-run-startup-script-google-compute-engine.md
+│   │   │   ├── remove-the-lien-to-allow-deletion.md
+│   │   │   ├── serverless-vpc-access-for-cloudrun-across-projects.md
+│   │   │   ├── show-bq-table-schema.md
+│   │   │   ├── ssh-iap.md
+│   │   │   ├── sshuttle-using-google-iap.md
+│   │   │   ├── useful-gcloud-commands.md
+│   │   │   ├── useful-log-queries.md
+│   │   │   ├── view-hash-of-object-in-gcs.md
+│   │   │   └── view-logs-on-who-enabled-an-api.md
+│   │   └── secret-manager-comparison.md
 │   ├── favicon.ico
 │   ├── favicon.png
 │   ├── home
@@ -1332,6 +1360,8 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │   └── fingerprint-on-linux-mint.md
 │   │   ├── cloud-init
 │   │   │   └── cloud-init.md
+│   │   ├── cloudflare
+│   │   │   └── cloudflare-zero-forwarded-header.md
 │   │   ├── cloudflared
 │   │   │   ├── cloudflared-on-ubuntu-for-ssh.md
 │   │   │   └── index.md
@@ -1340,6 +1370,7 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   ├── dependabot
 │   │   │   └── ignore-terraform-module-version-dependabot.md
 │   │   ├── disk-management
+│   │   │   ├── dell-hdd-password-protected.md
 │   │   │   ├── expanding-a-filesystem.md
 │   │   │   ├── formatting-drive-automount.md
 │   │   │   ├── gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
@@ -1382,6 +1413,7 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   ├── google-workspace
 │   │   │   └── setup-routing.md
 │   │   ├── grocy
+│   │   │   ├── set-grocy-to-use-cloudflare-username.md
 │   │   │   └── set-grocy-to-use-pritunl-username.md
 │   │   ├── juniper
 │   │   │   ├── juniper-router-selection.md
@@ -1392,6 +1424,7 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │   ├── blc.md
 │   │   │   ├── bulk-change-file-extension.md
 │   │   │   ├── fingerprint-for-sudo-mac.md
+│   │   │   ├── generate-random-token.md
 │   │   │   ├── get-current-folder.md
 │   │   │   ├── get-dell-service-tag-ubuntu.md
 │   │   │   ├── how-to-create-tar-gz-file.md
@@ -1456,6 +1489,7 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │   └── skipping-package-due-to-invalid-metadata-entry.md
 │   │   ├── podman
 │   │   │   ├── authenticate-podman-to-ghcr.md
+│   │   │   ├── authenticate-podman-to-google-artifact-registry.md
 │   │   │   ├── docker-credential-desktop-not-installed.md
 │   │   │   ├── index.md
 │   │   │   ├── podmain-google-artifact-registry-mirror.md
@@ -1501,6 +1535,7 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   ├── flux
 │   │   │   ├── flux-artifact-registry-google-auth.md
 │   │   │   ├── flux-lookup-no-such-host.md
+│   │   │   ├── flux-reconcile.md
 │   │   │   └── flux-reconciliation-failed-install-retries-exhausted.md
 │   │   ├── gke
 │   │   │   ├── configure-firewall-for-service-type-loadbalancer-in-gke.md
@@ -1544,8 +1579,14 @@ By default, this site is not indexed by google, and has a password protecting it
 │   │   │   ├── sleeper.md
 │   │   │   ├── trigger-kubernetes-cron-job-manually.md
 │   │   │   └── using-argocd-image-updater-with-google-artifact-registry.md
-│   │   └── kind
-│   │       └── load-image-in-to-kind.md
+│   │   ├── kind
+│   │   │   └── load-image-in-to-kind.md
+│   │   ├── kubeconform
+│   │   │   ├── kube-conform-google-managed-prometheus.md
+│   │   │   ├── kubeconform-flux.md
+│   │   │   └── kubeconform.md
+│   │   └── nginx-ingress
+│   │       └── nginx-ingress-with-cloudflare-origin-server-ssl-tls.md
 │   ├── mkdocs
 │   │   ├── add-review-date-to-page.md
 │   │   ├── expired-page-example.md
@@ -1570,123 +1611,7 @@ By default, this site is not indexed by google, and has a password protecting it
 ├── prod.toml
 ├── redirect.conf
 ├── renovate.json
-└── styles
-    ├── Google
-    │   ├── AMPM.yml
-    │   ├── Acronyms.yml
-    │   ├── Colons.yml
-    │   ├── Contractions.yml
-    │   ├── DateFormat.yml
-    │   ├── Ellipses.yml
-    │   ├── EmDash.yml
-    │   ├── EnDash.yml
-    │   ├── Exclamation.yml
-    │   ├── FirstPerson.yml
-    │   ├── Gender.yml
-    │   ├── GenderBias.yml
-    │   ├── HeadingPunctuation.yml
-    │   ├── Headings.yml
-    │   ├── Latin.yml
-    │   ├── LyHyphens.yml
-    │   ├── OptionalPlurals.yml
-    │   ├── Ordinal.yml
-    │   ├── OxfordComma.yml
-    │   ├── Parens.yml
-    │   ├── Passive.yml
-    │   ├── Periods.yml
-    │   ├── Quotes.yml
-    │   ├── Ranges.yml
-    │   ├── Semicolons.yml
-    │   ├── Slang.yml
-    │   ├── Spacing.yml
-    │   ├── Spelling.yml
-    │   ├── Units.yml
-    │   ├── We.yml
-    │   ├── Will.yml
-    │   ├── WordList.yml
-    │   ├── meta.json
-    │   └── vocab.txt
-    ├── Joblint
-    │   ├── Acronyms.yml
-    │   ├── Benefits.yml
-    │   ├── Bro.yml
-    │   ├── Competitive.yml
-    │   ├── Derogatory.yml
-    │   ├── DevEnv.yml
-    │   ├── DumbTitles.yml
-    │   ├── Gendered.yml
-    │   ├── Hair.yml
-    │   ├── LegacyTech.yml
-    │   ├── Meritocracy.yml
-    │   ├── Profanity.yml
-    │   ├── README.md
-    │   ├── Reassure.yml
-    │   ├── Sexualised.yml
-    │   ├── Starter.yml
-    │   ├── TechTerms.yml
-    │   ├── Visionary.yml
-    │   └── meta.json
-    ├── alex
-    │   ├── Ablist.yml
-    │   ├── Condescending.yml
-    │   ├── Gendered.yml
-    │   ├── LGBTQ.yml
-    │   ├── Press.yml
-    │   ├── ProfanityLikely.yml
-    │   ├── ProfanityMaybe.yml
-    │   ├── ProfanityUnlikely.yml
-    │   ├── README.md
-    │   ├── Race.yml
-    │   ├── Suicide.yml
-    │   └── meta.json
-    ├── proselint
-    │   ├── Airlinese.yml
-    │   ├── AnimalLabels.yml
-    │   ├── Annotations.yml
-    │   ├── Apologizing.yml
-    │   ├── Archaisms.yml
-    │   ├── But.yml
-    │   ├── Cliches.yml
-    │   ├── CorporateSpeak.yml
-    │   ├── Currency.yml
-    │   ├── Cursing.yml
-    │   ├── DateCase.yml
-    │   ├── DateMidnight.yml
-    │   ├── DateRedundancy.yml
-    │   ├── DateSpacing.yml
-    │   ├── DenizenLabels.yml
-    │   ├── Diacritical.yml
-    │   ├── GenderBias.yml
-    │   ├── GroupTerms.yml
-    │   ├── Hedging.yml
-    │   ├── Hyperbole.yml
-    │   ├── Jargon.yml
-    │   ├── LGBTOffensive.yml
-    │   ├── LGBTTerms.yml
-    │   ├── Malapropisms.yml
-    │   ├── Needless.yml
-    │   ├── Nonwords.yml
-    │   ├── Oxymorons.yml
-    │   ├── P-Value.yml
-    │   ├── RASSyndrome.yml
-    │   ├── README.md
-    │   ├── Skunked.yml
-    │   ├── Spelling.yml
-    │   ├── Typography.yml
-    │   ├── Uncomparables.yml
-    │   ├── Very.yml
-    │   └── meta.json
-    └── write-good
-        ├── Cliches.yml
-        ├── E-Prime.yml
-        ├── Illusions.yml
-        ├── Passive.yml
-        ├── README.md
-        ├── So.yml
-        ├── ThereIs.yml
-        ├── TooWordy.yml
-        ├── Weasel.yml
-        └── meta.json
+└── requirments.txt
 
-328 directories, 1236 files
+327 directories, 1156 files
 ```

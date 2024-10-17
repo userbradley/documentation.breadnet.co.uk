@@ -3,3 +3,4 @@ site/
 styles/
 .cache
 .DS_Store
+venv
