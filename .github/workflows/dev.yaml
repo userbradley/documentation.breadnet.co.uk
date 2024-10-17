@@ -21,6 +21,9 @@ jobs:
     environment:
       name: Development
       url: https://dev-documentation.breadnet.co.uk
+    concurrency:
+      group: dev
+      cancel-in-progress: true
     steps:
       - name: Git Clone
         uses: actions/checkout@v4
