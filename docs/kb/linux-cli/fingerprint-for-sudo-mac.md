@@ -49,9 +49,9 @@ auth       sufficient     pam_tid.so
 
 Your file should now look like the below
 
-```text
+```diff
 # sudo: auth account password session
-auth       sufficient     pam_tid.so
++ auth       sufficient     pam_tid.so
 auth       sufficient     pam_smartcard.so
 auth       required       pam_opendirectory.so
 account    required       pam_permit.so
