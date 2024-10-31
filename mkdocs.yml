@@ -232,6 +232,7 @@ nav:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
       - Mac:
           - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
+          - Command not found compdef: kb/mac/command-not-found-compdef.md
           - Connect to serial port on mac: kb/mac/connect-to-serial-port-on-mac.md
       - Markdown:
           - How to use git: kb/markdown/how-to-use-git.md
