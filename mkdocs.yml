@@ -16,6 +16,7 @@ nav:
           - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
           - Remote Data: automation/iac/terraform/remote-data.md
           - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
+          - "Terraform Provider for Kubernetes authenticate with `oidc-login`": automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md
           - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
           - Terraform refresh takes ages: automation/iac/terraform/terraform-refresh-takes-ages.md
           - Terraform Sleep: automation/iac/terraform/terraform-sleep.md
