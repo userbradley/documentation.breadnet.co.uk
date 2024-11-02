@@ -47,7 +47,7 @@ provider "kubernetes" {
 }
 ```
 
-=== "Example using Azure AD (Entra)"
+??? note "Example using Azure AD (Entra)"
 
     ```terraform
     provider "kubernetes" {
