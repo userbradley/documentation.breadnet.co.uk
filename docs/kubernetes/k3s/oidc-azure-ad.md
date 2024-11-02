@@ -400,3 +400,7 @@ so it looks like this:
 When you run any `kubectl` command it will print the authentication json
 
 Congrats!
+
+## Additional reading
+
+* [Use OIDC login with Terraform](../../automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login)
