@@ -403,4 +403,4 @@ Congrats!
 
 ## Additional reading
 
-* [Use OIDC login with Terraform](../../automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login)
+* [Use OIDC login with Terraform](../../automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md)
