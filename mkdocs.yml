@@ -97,6 +97,7 @@ nav:
               - Composer: cloud/gcp/apis-and-services/composer-apis.md
           - Metadata API:
               - cloud/gcp/metadata-api/index.md
+              - Get GKE cluster name using Metadata Endpoint: cloud/gcp/metadata-api/get-gke-cluster-name-using-metadata-endpoint.md
               - Get Project ID using Metadata Endpoint: cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md
               - Get service account token using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-token-using-metadata-endpoint.md
               - Get Service Account using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md
