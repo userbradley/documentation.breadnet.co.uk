@@ -1,29 +1,36 @@
-#FROM docker.io/squidfunk/mkdocs-material:latest as BUILDER
-FROM ghcr.io/squidfunk/mkdocs-material:9.5.49 as BUILDER
+# Stage 1: Builder
+FROM ghcr.io/squidfunk/mkdocs-material:9.5.49 AS BUILDER
 WORKDIR /app
+
+# Copy configuration and content files
 COPY mkdocs.yml /app/mkdocs.yml
 COPY docs /app/docs
 COPY overrides /app/overrides
 
-# START [revision-date]
-# Needed for the mkdocs git revision plugin we use to add page build time as well as page edit time
+# Include .git for git-revision-date-localized-plugin
 COPY .git /app/.git
-RUN pip3 install mkdocs-git-revision-date-localized-plugin
-ENV CI=true
-# END [revision-date]
 
-RUN ["mkdocs", "build"]
+# Install dependencies and build the site
+RUN pip3 install mkdocs-git-revision-date-localized-plugin && \
+    mkdocs build
 
-# FROM nginx:stable-alpine
-FROM docker.io/nginx:stable-alpine3.17-slim
+# Clean up unnecessary files
+RUN rm -rf /app/.git
 
+# Stage 2: Production
+FROM nginx:stable-alpine3.17-slim
+
+# Copy Nginx configuration files
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY cloudflare.conf /etc/nginx/cloudflare.conf
 COPY deny.conf /etc/nginx/deny.conf
 
+# Copy built site from the builder stage
 COPY --from=BUILDER /app/site/assets /var/www/documentation/assets
 COPY --from=BUILDER /app/site /var/www/documentation
 
-HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1"
+# Healthcheck to ensure Nginx is running
+HEALTHCHECK CMD curl -s --fail http://localhost:80 || exit 1
 
+# Expose the Nginx port
 EXPOSE 80
