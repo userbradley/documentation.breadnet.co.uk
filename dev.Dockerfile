@@ -1,34 +1,42 @@
+# Stage 1: Builder
 FROM ghcr.io/squidfunk/mkdocs-material:9.5.49 as BUILDER
 WORKDIR /app
 
-ENV color=red
-ENV env="Development Server"
-ENV nav="navigation.expand"
-ENV domain="https://dev-documentation.breadnet.co.uk"
-ENV dir="overrides-dev"
+# Set environment variables (usually stable and less likely to change)
+ENV color=red \
+    env="Development Server" \
+    nav="navigation.expand" \
+    domain="https://dev-documentation.breadnet.co.uk" \
+    dir="overrides-dev"
 
+# Copy configuration and overrides (these change infrequently)
 COPY mkdocs.yml /app/mkdocs.yml
 COPY overrides /app/overrides
-COPY dev-robots.txt /app/docs/robots.txt
-COPY docs /app/docs
 
-# START [revision-date]
+# Install plugins (this changes less often)
 RUN pip3 install mkdocs-git-revision-date-localized-plugin
-#COPY .git /app/.git
-# END [revision-date]
 
-RUN ["mkdocs", "build"]
+# Copy documentation files (more likely to change, so placed later)
+COPY docs /app/docs
+COPY dev-robots.txt /app/docs/robots.txt
 
+# Build the site
+RUN mkdocs build
+
+# Stage 2: Final Image
 FROM nginx:stable-alpine3.17-slim
 
+# Copy configuration files (these are stable and unlikely to change)
 COPY dev-nginx.conf /etc/nginx/conf.d/default.conf
 COPY cloudflare.conf /etc/nginx/cloudflare.conf
 COPY deny.conf /etc/nginx/deny.conf
 COPY .htpasswd /etc/nginx/.htpasswd
 
-COPY --from=BUILDER /app/site/assets /var/www/documentation/assets
+# Copy built site from the builder stage (the heaviest change)
 COPY --from=BUILDER /app/site /var/www/documentation
 
-HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1"
+# Health check for the container
+HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1
 
+# Expose the required port
 EXPOSE 80
