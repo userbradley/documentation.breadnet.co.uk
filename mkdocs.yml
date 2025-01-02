@@ -308,6 +308,7 @@ nav:
           - sshuttle: kb/ssh/sshuttle.md
           - Weird Bash: kb/ssh/weird-bash.md
       - Ubiquiti:
+          - Site-magic cgnat: kb/ubiquiti/site-magic-cgnat.md
           - Unifi device stuck in Adoption failed: kb/ubiquiti/unifi-device-stuck-in-adoption-failed.md
           - Updating Ubiquiti Tough switch: kb/ubiquiti/update-tough-switch.md
       - Wasabi:
