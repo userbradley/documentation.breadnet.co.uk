@@ -3,7 +3,7 @@ title: Get list of Digital ocean images
 ---
 
 
-You will need to have the `doctl` command installed already
+You will need to have the `doctl` command installed already to list images on [Digital Ocean](https://m.do.co/c/77be3c3aa96c)
 
 ## Install doctl
 

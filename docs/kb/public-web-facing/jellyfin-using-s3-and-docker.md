@@ -25,7 +25,7 @@ I don't want to do this, but I run this site at a loss, if you're thinking of us
 
 ##### The first step
 
-First we will spin up a digital ocean droplet, but you can use what ever VPS provider you want. 
+First we will spin up a [digital ocean droplet](https://m.do.co/c/77be3c3aa96c), but you can use what ever VPS provider you want. 
 
 Once the VPs is up, and you're logged in run the below to update the sources and crap. should not take too long.
 
