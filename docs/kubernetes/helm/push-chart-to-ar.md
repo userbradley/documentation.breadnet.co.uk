@@ -63,6 +63,23 @@ helm package <path to chart>
 helm push <chart name>-*.tgz oci://europe-west2-docker.pkg.dev/<your GCP project name>/helm-store/
 ```
 
+## Errors
+
+If you get the below `403` error
+
+```shell
+Error: failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://europe-west2-docker.pkg.dev/v2/token?scope=repository%3Abreadnet-container-store%2Fhelm-store%2Fredacted%3Apull&scope=repository%3Abreadnet-container-store%2Fhelm-store%2Fredacted%3Apull%2Cpush&service=europe-west2-docker.pkg.dev: 403 Forbidden
+```
+
+You should navigate to the Repository in Google Cloud and click the `Sectup Instructions`
+
+You will need to basically run the below command for your regions
+
+```shell
+gcloud auth configure-docker \
+    europe-west2-docker.pkg.dev
+```
+
 ## What to read next
 
 [Using GCS as a helm repo](helm-repo-gcs.md)
