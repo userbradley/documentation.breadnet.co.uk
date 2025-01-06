@@ -71,6 +71,7 @@ nav:
               - Aqua partnership notes: cloud/csp/aqua/partnership-info.md
           - Chronicle:
               - Configure Datadog Vector to push logs to Chronicle: cloud/csp/chronicle/configure-datadog-vector-push-logs.md
+              - Configure GitLab SaaS to send logs to Chronicle: cloud/csp/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md
           - Conductor One:
               - Create alias on Entitlement: cloud/csp/conductorone/create-alias-on-entitlement.md
               - Get your user ID Conductor One: cloud/csp/conductorone/get-your-user-id-conductor-one.md
