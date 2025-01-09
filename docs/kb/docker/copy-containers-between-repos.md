@@ -2,8 +2,6 @@
 title: Copy containers between repos
 ---
 
-# Copy containers between repos
-
 ## What
 
 This is especially useful when moving from `gcr.io` to the new Artifact registry that Google offer.
@@ -48,7 +46,6 @@ gcrane cp -r userbradley/searchsploit europe-west2.pkg.dev/bradley/searchsploit/
 
 * [Google Documentation](https://cloud.google.com/artifact-registry/docs/docker/copy-from-gcr#gcrane-local)
 * [Github source code](https://github.com/google/go-containerregistry/tree/main/cmd/gcrane)
-
 
 ## Gcrane not working
 

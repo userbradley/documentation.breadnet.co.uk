@@ -2,8 +2,6 @@
 title: Forward real IP to a NGINX behind a GCP Load Balancer
 ---
 
-# Forward real IP to a NGINX behind a GCP Load Balancer
-
 ## Introduction
 
 We worked in a project that required a nginx server to be able to whitelist some public ip addresses while denying all other connections. While this can be addressed using GCP firewall rules there were some other reasons why it was necessary to be done through nginx configuration instead of using GCP rules.
@@ -35,7 +33,6 @@ Let’s quickly review how a Load Balancer works: When a request is received fro
 
 When you place a nginx server behind the LB you receive the Load Balancer’s private IP as remote address instead of the user’s real public ip.
 
-
 ![](https://geko2.factoryfy.com/wp-content/uploads/travolta-1.gif)
 
 If we take a look at nginx logs we can see this:
@@ -53,6 +50,7 @@ The first IP in the log comes from the `REMOTE_ADDR` header. We need to replace 
 But there’s something else we need to deal with this second header: It actually comes not only with the user real IP but with the Load Balancer public address too.
 
 In order to solve all this we will use the real_ip module. We are going to apply the following configuration in nginx.conf inside the “server” block:
+
 ```nginx
 set_real_ip_from 36.129.221.25/32; // LB Public IP address
 set_real_ip_from 130.211.0.0/22; // Private IP range for GCP Load Balancers
@@ -79,7 +77,7 @@ As we can see the solution was pretty straight forward, but still it took some t
 
 Nevertheless, it was a good learning experience.
 
-Sources: https://nginx.org/en/docs/http/ngx_http_realip_module.html
+Sources: <https://nginx.org/en/docs/http/ngx_http_realip_module.html>
 
 ## Originally seen on
 

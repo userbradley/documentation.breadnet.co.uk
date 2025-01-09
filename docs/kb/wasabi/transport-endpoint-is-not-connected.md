@@ -2,8 +2,6 @@
 title: Transport endpoint is not connected
 ---
 
-# Transport endpoint is not connected
-
 This sometimes comes about when you connect to an S3 bucket via rclone then kill it,
 
 ```shell
@@ -14,7 +12,7 @@ ls: cannot access 's4': Transport endpoint is not connected
 mkdir  s3  s4
 ```
 
-## To solve this:
+## To solve this
 
 ```shell
 fusermount -uz <name>

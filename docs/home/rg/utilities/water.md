@@ -2,9 +2,6 @@
 title: Water
 ---
 
-# Water
-
-
 !!! warning "How to shut the water off"
     1. [At the valve](#how-to-turn-off-the-water-at-the-mains)
     2. [In the apartment](#how-to-turn-off-the-water-in-the-apartment)

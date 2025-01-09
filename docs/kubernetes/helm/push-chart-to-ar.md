@@ -2,8 +2,6 @@
 title: Push helm chart to Artifact Registry
 ---
 
-# Push helm chart to Artifact Registry
-
 ## Pre-requisites
 
 You will need to have an Artifact registry repository created

@@ -1,65 +1,37 @@
 ---
-title: Lenovo Computer not installing Ubuntu
+title: "Error 1962: No operating system found"
 ---
-
-# Error 1962: No operating system found.
-
 
 This is a post to save other people some time and pain. What follows may apply to other systems using a similar Lenovo BIOS.
 
-
-
 ## Symptoms
 
-
 If a user selects Optimal or Default BIOS options, wipes the pre-installed existing operating systems and partitions, and then installs a Linux distribution in UEFI mode on an SCU device, the ThinkStation S30 may return the following error and refuse to boot after successful installation.
-
 
 !!! warning
 
     Error 1962: No operating system found.
 
-
-
 ## Description
-
-
 
 It appears that, prior to following the BootOrder specified in the UEFI Boot Manager, the Lenovo BIOS first checks the UEFI Boot Manager configuration for an entry labelled "Windows Boot Manager".[1]
 
-
-
 If this entry is not found, an error is presented to the user and the boot sequence terminates. The Lenovo BIOS does not require that the entry labelled "Windows Boot Manager" be used, only that it be present.
-
-
 
 This may be related to the behaviour observed here.
 
-
-
 It would be good if someone from Lenovo could confirm the observations about the behaviour of the Lenovo UEFI BIOS.
 
-
-
-
-
 ## Solution
-
-
 
 Ensure that the SCU device is the set-up as the first boot device in the BIOS Setup Primary Boot Sequence.
 Lenovo has documented this issue here.
 
 Ensure that there is an entry in the UEFI Boot Manager labeled "Windows Boot Manager"
 
-
-
 Add an Entry to the UEFI Boot Manager labeled "Windows Boot Manager"
 
-
 The following can be performed after installation of the operating system. The instructions assume that the user has access to "Live" installation media, is able to boot from that media and issue commands at the shell. It is also assumed that the user has a basic understanding of Linux devices references. The operating system must have been installed in UEFI mode and GRUB2 (or another bootloader) must have created at least one valid EFI boot file on the EFI system partition.
-
-
 
 1. Insert the Live installation media, shutdown and power off the system.
 2. Power on the system.
@@ -113,8 +85,6 @@ sudo efiboogmgr -v
 ```
 
 If the above fails, consult the documentation of your bootloader and ensure that it is configured correctly. Also ensure that your EFI system partition is laid out correctly and formatted as FAT32.
-
-
 
 Notes:
 

@@ -3,7 +3,7 @@ title: SSH client setup using keys
 reviewdate: '2022-01-01'
 ---
 
-##### The following steps will set up your ssh keypairs on your local machine, copy the public key to your server, and configure your ssh client to use a specific private key with a server alias.
+##### The following steps will set up your ssh keypairs on your local machine, copy the public key to your server, and configure your ssh client to use a specific private key with a server alias
 
 * * *
 
@@ -15,8 +15,8 @@ To generate keys for a new server at _securedomain.com_
 
 Things to keep in mind:
 
-*   The email does not have to be the same domain as the service/server you are connecting to
-*   The `-t rsa -b 4096` options are safe and will work on most servers, you can also use `-t ed25519` if you wish.
+* The email does not have to be the same domain as the service/server you are connecting to
+* The `-t rsa -b 4096` options are safe and will work on most servers, you can also use `-t ed25519` if you wish.
 
 Once you're in the `ssh-keygen` prompt it will ask you to provide a name for your keys _(you can also do this in the command itself using the `-f <filename>`)_
 
@@ -50,11 +50,11 @@ To do this, first we need to edit our config, so open up `.ssh/config` in your p
 
 In this config the following are true:
 
-*    `Host` is an alias to the server we wish to connect to, it does not have to match the domain name.
-*   `Hostname` is the actual FQDN of the server we wish to connect to
-*    `AddKeysToAgent` tells ssh to add the specified keyfiles to our existing [s_sh-agent_](https://www.ssh.com/ssh/agent "https://www.ssh.com/ssh/agent")
-*   `UseKeychain` tells ssh to utilize the _[keychain](https://www.techrepublic.com/article/configure-it-quick-use-keychain-to-simplify-ssh-connections/ "https://www.techrepublic.com/article/configure-it-quick-use-keychain-to-simplify-ssh-connections/"),_ which either starts the ssh-agent, or connects to an already running instance saving the trouble of typing the passphrase for a given key if you're logging in and out of a server frequently.
-*    `IdentityFile` is your keyfile you wish to use for the host you are configuring; probably the key you just generated.
+*  `Host` is an alias to the server we wish to connect to, it does not have to match the domain name.
+* `Hostname` is the actual FQDN of the server we wish to connect to
+*  `AddKeysToAgent` tells ssh to add the specified keyfiles to our existing [s_sh-agent_](https://www.ssh.com/ssh/agent "https://www.ssh.com/ssh/agent")
+* `UseKeychain` tells ssh to utilize the _[keychain](https://www.techrepublic.com/article/configure-it-quick-use-keychain-to-simplify-ssh-connections/ "https://www.techrepublic.com/article/configure-it-quick-use-keychain-to-simplify-ssh-connections/"),_ which either starts the ssh-agent, or connects to an already running instance saving the trouble of typing the passphrase for a given key if you're logging in and out of a server frequently.
+*  `IdentityFile` is your keyfile you wish to use for the host you are configuring; probably the key you just generated.
 
 Using this config and example; we can now use the following command
 

@@ -2,8 +2,6 @@
 title: Get the real IP address from Cloudflare
 ---
 
-# Get the real IP address from Cloudflare
-
 ## Pre requisites
 
 You may need to install the [Real IP Module](http://nginx.org/en/docs/http/ngx_http_realip_module.html) if this is on bare metal
@@ -25,7 +23,6 @@ touch cloudflare.conf
 
 ## Edit the cloudflare file
 
-
 === "Nano"
 
     ```shell
@@ -37,8 +34,6 @@ touch cloudflare.conf
     ```shell
     vi cloudflare.conf
     ```
-
-
 
 In the window that opened, paste in the below
 
@@ -116,7 +111,6 @@ We then need to tell nginx to **include** another config file with the include c
 ```nginx
 include /etc/nginx/cloudflare.conf;
 ```
-
 
 So now our file looks like the below
 

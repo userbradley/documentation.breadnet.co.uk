@@ -2,8 +2,6 @@
 title: Creating a helm chart
 ---
 
-# Creating a helm chart
-
 ## Pre-requisites
 
 1. `helm`

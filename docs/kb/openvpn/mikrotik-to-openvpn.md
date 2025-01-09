@@ -2,8 +2,6 @@
 title: Connecting Mikrotik to OpenVPN AS
 ---
 
-# Connecting Mikrotik to OpenVPN AS
-
 !!! warning "This page is a brain dump"
     So it should not be relied on, and probably won't ever be updated
 
@@ -37,7 +35,6 @@ certificate import file-name=client.key
 ppp profile add name=OVPN-client change-tcp-mss=yes only-one=yes use-encryption=required use-mpls=no
 ```
 
-
 ![img_3.png](../../assets/openvpn-mikrotik-setup.png)
 
-http://missinglink.github.io/mikrotik-openvpn-client/
+<http://missinglink.github.io/mikrotik-openvpn-client/>

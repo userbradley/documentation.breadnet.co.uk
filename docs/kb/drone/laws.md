@@ -2,8 +2,6 @@
 title: Drone laws
 ---
 
-# Drone laws
-
 !!! note "Weight of the drone"
     We assume your drone weighs less than 250g
 
@@ -37,7 +35,7 @@ Remember, you must always fly safely.
 
 ### Examples of residential, recreational, commercial and industrial sites
 
-#### Residential sites include:
+#### Residential sites include
 
 * individual residential buildings
 * small groups of residential buildings
@@ -46,7 +44,7 @@ Remember, you must always fly safely.
 * cities and towns
 * schools
 
-#### Recreational sites include:
+#### Recreational sites include
 
 * tourist attractions
 * sports facilities
@@ -59,7 +57,7 @@ Remember, you must always fly safely.
 * warehouses
 * business parks
 
-#### Industrial sites include:
+#### Industrial sites include
 
 * factories
 * docks

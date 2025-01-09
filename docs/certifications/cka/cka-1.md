@@ -2,16 +2,12 @@
 title: CKA - Page 1
 ---
 
-# CKA - Page 1
-
 ## What is Kubernetes
 
 Kubernetes is a container orchestration platform that is designed to [Scale to the planet](https://kubernetes.io/#planet-scale). It achieves this using a number of
 somewhat independent stacks of technology, like [etcd](#etcd) and [nginx]().
 
 This and all other pages are my study notes for the CKA exam.
-
-
 
 ## Additional Study Resources
 
@@ -52,7 +48,6 @@ Kubernetes is split into 2 node types
 * [Master](#master) - Responsible for managing the cluster
 * [Workers](#workers) -  Responsible for running the containers (nae; workload)
 
-
 ### Master
 
 Masters run the below _workloads_ (They are not workloads _per-se_ but can be deployed as pods on the masters)
@@ -64,7 +59,6 @@ It stores information on the cluster in something called [ETCD](#etcd) - A key v
 
 The master is made up of the below components:
 
-
 | Name                                                  | What it does                                                                                                                                                                                                    | Resources                                                                                                             |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | `kube-apiserver`                                      | At the top level, this is where `kubectl` connects to, as well as all the cluster based metrics, jobs, status updates and scheduling requests originate from. Also used for nodes to communicate to the master. | [kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)                   |
@@ -73,7 +67,6 @@ The master is made up of the below components:
 | [`kube-controller-manager`](#kube-controller-manager) | A control loop that runs the _core_ controllers  (replication, endpoints, namespace, and serviceaccounts controller)                                                                                            | [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/) |
 | `node controller`                                     | Controls the lifecycle of nodes, their registration and status (`OutOfDisk`, `Ready`, `MemoryPressure` and `DiskPressure`                                                                                       | [What is a node](https://unofficial-kubernetes.readthedocs.io/en/latest/concepts/nodes/node/)                         |
 | `ReplicationController`                               | Ensures the specified number of `pod replicas` are running at any given time.                                                                                                                                   | [ReplicationController](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/)             |
-
 
 ### Workers
 
@@ -105,7 +98,6 @@ Normal Database example:
 |----------|------|----------|
 | Mike     | `32` | Place 1  |
 | Not mike | `54` | Place 2  |
-
 
 Whereas a `key value store`
 
@@ -139,7 +131,6 @@ ETCD stores all the stuff that you get when you run a kubectl get:
 
 It's important to know that when etcd runs it's to be bound to the host IP, you should then point it to kube-apiserver
 
-
 ### List all keys etcd contains
 
 ```shell
@@ -152,11 +143,8 @@ In an HA deployment, etcd installed a master server to each master instance, and
 
 ## Kube-apiserver
 
-
-
 ??? info "The official definition of the `kube-apiserver` is"
     The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact.
-
 
 The `kube-apiserver` is the primary management component of Kubernetes.
 
@@ -179,7 +167,7 @@ The below explains what happens when we do `kubectl create deployment nginx --im
 | Master           | sees a change of `+1 pod` with no nodes assigned                                     |
 | Master           | Scheduler identifies a node to place the pod on, and communicates this to `kube-api` |
 | Master           | `kube-apiserver` updates etcd                                                        |
-| Master           | apiserver passes the information to the selected nodes kubelet on a *worker*         |
+| Master           | apiserver passes the information to the selected nodes kubelet on a _worker_         |
 | Worker           | Kubelet creates pod on the node, instructs the CRI to deploy the image               |
 | Worker           | CRE creates the image                                                                |
 | Worker           | Updates kube-api                                                                     |
@@ -191,7 +179,6 @@ A similar pattern occurs each time anything is updated in the cluster
     `kube-apiserver` is responsible for Authenticating and validating requests as well as retrieving and updating data in ETCD.
 
     In fact, `kube-apiserver` is the only _service_ that communicates with ETCD directly. Components like `scheduler`, `kubecontroller`, `kubelet` all use the `kube-apiserver`
-
 
 ### Viewing `kube-apiserver` configuration
 
@@ -234,7 +221,6 @@ Enabling each controller is done using a feature gate under the option `--contro
 
     you can also view the running process using `ps -aux | grep kube-controller-manager`
 
-
 An example of a controller is below
 
 ### Node Controller
@@ -261,12 +247,11 @@ If a pod was to die, the ReplicationController is what is responsible for recrea
 
 ## Kube Scheduler
 
-- [For custom scheduling see Scheduler](#scheduler)
+* [For custom scheduling see Scheduler](#scheduler)
 
 `kube-scheduler` is a cluster control plane process that assigns pods to a node. (_note, this does not actually the run them on the node, see [Kubelet](#kubelet)_)
 
 The scheduler puts pods in a scheduling queue according to constraints (like CPU) and available resources on nodes.
-
 
 === "Kubeadm"
     Runs as a pod on the master node
@@ -276,7 +261,6 @@ The scheduler puts pods in a scheduling queue according to constraints (like CPU
     Not sure, but probably going to be under `/etc/systemd/system/kube-scheduler.service`
 
     The config file for the scheduler exists under `/etc/kubernetes/scheduler.conf`
-
 
 ### Why do we need a scheduler?
 
@@ -297,7 +281,6 @@ Filtering step finds the nodes where it's possible to schedule the pod. If there
 1. Rank the surviving nodes from the [Filtering](#scheduling-phase-1-filtering) stage and assing a value to each node.
 2. The score is assigned based on the active sorting rules (Default unless changed)
 3. If there are multiples, it picks one at random.
-
 
 !!! note "A note on schedulers"
     Kubernetes ships with one by default, but you are able to write your own.
@@ -334,7 +317,6 @@ The `kube-proxy` needs to be installed, and run as a daemonset on all the nodes.
 
 It's called `kube-proxy-<uuid>` and runs in the `kube-system` namespace
 
-
 ### Pod networking
 
 Pod networking (we will touch on this in more depth later) uses a network that spans all nodes. Pods then get
@@ -366,7 +348,6 @@ When your application is deployed in pods, to scale the application we <u>**do n
 instead we add more pods to the cluster.
 
 We can use a [Deployment](#deployment) as well as [HPA]() to scale the deployment manually and automatically.
-
 
 ### Networking and storage
 
@@ -439,12 +420,10 @@ You would use a Deployment over an RS (Replica Set) as it allows you to do thing
 
 Below shows how Deployments interact with ReplicaSet and pods.
 
-
 ``` mermaid
 flowchart TD
 Deployment --> ReplicaSet --> Pods --> Containers
 ```
-
 
 ## Services
 
@@ -505,10 +484,10 @@ This allows us to scale each layer up and down, move it between clusters etc. an
 
 Secondly, using a service here means we can call it my DNS name, so each service gets a dns entry like the below
 
-
 We are able to create a service with the below:
 
 ### Example of a ClusterIP
+
 ```yaml
 apiVersion: v1
 kind: Service
@@ -532,7 +511,7 @@ spec:
 The Service type `NodePort` allows us to _publish_ a port on the kubernetes nodes themselves.
 
 !!! note "Numbers to remember"
-    The ports can only be allocated **between** **30000* and **32767**
+    The ports can only be allocated **between** *_30000_ and **32767**
 
 When a type `NodePort` is exposed, traffic needs to be sent to the IP address of the nodes, along with the port.
 
@@ -558,7 +537,6 @@ spec:
       nodePort: 30007
 ```
 
-
 ```shell
 curl http://192.168.69.2:30008
 ```
@@ -568,8 +546,6 @@ curl http://192.168.69.2:30008
 This is only really used on cloud providers.
 
 If you are not running on a cloud provider, it will act like [Node Port](#nodeport)
-
-
 
 ## Scheduler
 
@@ -638,6 +614,7 @@ We then need to convert this to JSON, ideally use an online web converter, but y
   }
 }
 ```
+
 We then need to flatten this, so it's like the below
 
 ```json
@@ -661,7 +638,6 @@ https://$SERVER/api/v1/namespaces/$NAMESPACE/pods/$PODNAME/binding/
 * `$SERVER` : IP/ URL of the Kube API server
 * `$NAMESPACE` : Namespace the pod exists in
 * `$PODNAME` : Name of the pod we want to apply the binding to
-
 
 More details can be found [on the documentation for the Binding API](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/binding-v1/)
 
@@ -729,7 +705,6 @@ spec:
           image: nginx
 ```
 
-
 ## Annotations
 
 Another field that exists on most manifest files are `Annotations`, which live under `metadata`
@@ -754,7 +729,6 @@ Taints are the opposite -- they allow a node to repel a set of pods.
 
 Tolerations are applied to pods. Tolerations allow the scheduler to schedule pods with matching taints.
 
-
 Assume the following:
 
 * `A bug` is a `pod`
@@ -776,7 +750,6 @@ If you take this example back to the real world:
 An example would be we have a node that has a GPU attached to it, and we only want pods that need a GPU to be scheduled to it
 
 We would apply the taint `gpu` to it. Now any pod that tries to get scheduled to this node will _bounce_ off it
-
 
 ### Apply a taint
 
@@ -801,6 +774,7 @@ kubectl describe node <master> | grep taint
 ```
 
 You will see something like:
+
 ```text
 Taints:   node-roles.kubernetes.io/master:NoSchedule
 ```
@@ -837,7 +811,6 @@ This taint affects pods that are already on the node, and evicts them.
 
 ### Example of Pod that has tolerations
 
-
 _**Note:** You need to have the values quoted in `"`_
 
 ```yaml
@@ -861,9 +834,6 @@ spec:
     ```text
     Taints:   node-roles.kubernetes.io/master:NoSchedule
     ```
-
-
-
 
 ## Node Selectors
 
@@ -948,7 +918,6 @@ Under the `spec` field, you have affinity, which looks like a sentence.
 requiredDuringSchedulingIgnoredDuringExecution
 ```
 
-
 ### Affinity types
 
 There are currently 2 types of Affinity types, and one that is perhaps coming soon:
@@ -965,7 +934,6 @@ This means that the operators that follows are required or the pod does not get 
 This means that the operators that follow are more of a _nice to have_ and the pod will still get scheduled, but it will do it's best first.
 
 This means that the config that follows is **required** during scheduling
-
 
 ### Operators
 
@@ -1038,7 +1006,6 @@ This operator just checks if the Label `Size` does not exist on the node
 #### Gt
 
 [See #39256](https://github.com/kubernetes/website/issues/39256)
-
 
 #### Lt
 

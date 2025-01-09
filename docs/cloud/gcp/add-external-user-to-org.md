@@ -2,8 +2,6 @@
 title: Add external user to Google Cloud Platform Organization
 ---
 
-# Add external user to Google Cloud Platform Organization
-
 ## Why
 
 Sometimes you need to add external users to your Google Cloud Platform for maintenance or external contractors.
@@ -26,7 +24,6 @@ Once you have selected the Domain, on the left, click the **Hamburger menu** and
 
 !!! question "I cant see IAM at the top"
     This is because your console may be different. Use the search bar and search for `IAM`
-
 
 ### Granting external user access
 

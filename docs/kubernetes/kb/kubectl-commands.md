@@ -2,7 +2,6 @@
 title: Kubectl commands
 ---
 
-# Kubectl Commands
 
 ## Get list of resource Types
 

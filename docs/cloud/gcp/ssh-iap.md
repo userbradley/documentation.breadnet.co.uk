@@ -2,8 +2,6 @@
 title: SSH using IAP
 ---
 
-# SSH using IAP
-
 ## Prerequisites
 
 You need to have a firewall rule below

@@ -36,9 +36,9 @@ Version numbers should be a series of numbers separated by periods (like 1.2.0),
 
 ~> 1.1: Allows Terraform to install 1.2 and 1.10 but not 2.0.
 
-https://developer.hashicorp.com/terraform/language/modules/syntax#version
+<https://developer.hashicorp.com/terraform/language/modules/syntax#version>
 
-https://developer.hashicorp.com/terraform/language/expressions/version-constraints#version-constraint-syntax
+<https://developer.hashicorp.com/terraform/language/expressions/version-constraints#version-constraint-syntax>
 
 ## Migration to terraform cloud version
 
@@ -53,7 +53,7 @@ When you create a new workspace, Terraform Cloud automatically selects the most 
 
 It's worth noting that Terraform Cloud also provides the ability to upgrade your Terraform version in a controlled manner. This allows you to upgrade your Terraform version in a safe and predictable way, without affecting your existing infrastructure or state.
 
-https://developer.hashicorp.com/terraform/tutorials/cloud/cloud-versions
+<https://developer.hashicorp.com/terraform/tutorials/cloud/cloud-versions>
 
 ## Publishing on the terraform registry
 
@@ -66,14 +66,13 @@ What are some of the requirements that must be met in order to publish a module 
 - [x] Module repositories must use this three-part name format, `terraform-<PROVIDER>-<NAME>`.
 - [x] The registry uses tags to identify module versions. Release tag names must be for the format x.y.z, and can optionally be prefixed with a v .
 
-
 The list below contains all the requirements for publishing a module. Meeting the requirements for publishing a module is extremely easy. The list may appear long only to ensure we're detailed, but adhering to the requirements should happen naturally.
 
-* GitHub. The module must be on GitHub and must be a public repo. This is only a requirement for the [public registry](https://registry.terraform.io/). If you're using a private registry, you may ignore this requirement
-* Named `terraform-<PROVIDER>-<NAME>`. Module repositories must use this three-part name format, where `<NAME>` reflects the type of infrastructure the module manages and `<PROVIDER>` is the main provider where it creates that infrastructure. The `<NAME>` segment can contain additional hyphens. Examples: `terraform-google-vault` or `terraform-aws-ec2-instance`.
-* Repository description. The GitHub repository description is used to populate the short description of the module. This should be a simple one-sentence description of the module.
-* Standard module structure. The module must adhere to the [standard module structure](https://developer.hashicorp.com/terraform/language/modules/develop#standard-module-structure). This allows the registry to inspect your module and generate documentation, track resource usage, parse submodules and examples, and more.
-* `x.y.z` tags for releases. The registry uses tags to identify module versions. Release tag names must be a semantic version, which can optionally be prefixed with a v. For example, v1.0.4 and 0.9.2. To publish a module initially, at least one release tag must be present. Tags that don't look like version numbers are ignored.
+- GitHub. The module must be on GitHub and must be a public repo. This is only a requirement for the [public registry](https://registry.terraform.io/). If you're using a private registry, you may ignore this requirement
+- Named `terraform-<PROVIDER>-<NAME>`. Module repositories must use this three-part name format, where `<NAME>` reflects the type of infrastructure the module manages and `<PROVIDER>` is the main provider where it creates that infrastructure. The `<NAME>` segment can contain additional hyphens. Examples: `terraform-google-vault` or `terraform-aws-ec2-instance`.
+- Repository description. The GitHub repository description is used to populate the short description of the module. This should be a simple one-sentence description of the module.
+- Standard module structure. The module must adhere to the [standard module structure](https://developer.hashicorp.com/terraform/language/modules/develop#standard-module-structure). This allows the registry to inspect your module and generate documentation, track resource usage, parse submodules and examples, and more.
+- `x.y.z` tags for releases. The registry uses tags to identify module versions. Release tag names must be a semantic version, which can optionally be prefixed with a v. For example, v1.0.4 and 0.9.2. To publish a module initially, at least one release tag must be present. Tags that don't look like version numbers are ignored.
 
 ## Implicit dependency
 
@@ -105,7 +104,6 @@ For example, if you have a resource that depends on another resource, Terraform 
 
 The EC2 instance labeled `web_server` is the implicit dependency as the `aws_eip` cannot be created until the `aws_instance` labeled web_server has been provisioned and the id is available.
 
-
 Note that `aws_s3_bucket.company_data` is an **explicit** dependency for the `aws_instance.web_server`
 
 ## Init file locations
@@ -132,7 +130,6 @@ Where are these plugins downloaded and stored on the server?
 - [ ] `/etc/terraform/plugins`
 - [x] The `.terraform/providers` directory in the current working directory
 
-
 By default, terraform init downloads plugins into a subdirectory of the working directory, .terraform/providers so that each working directory is self-contained.
 
 See the example below, where I ran a terraform init and you can see the resulting directory (highlighted in the red box) and then the actual provider that was downloaded (highlighted by the green arrow)
@@ -147,7 +144,6 @@ Which of the following is a valid variable name in Terraform?
 - [ ] `count`
 - [ ] `version`
 - [x] `invalid`
-
 
 In Terraform, variable names must follow a set of naming conventions to be considered valid. Here are some examples of invalid variable names:
 
@@ -168,14 +164,13 @@ Where does Terraform Community (Free) store the local state for workspaces?
 - [ ] a file called terraform.tfstate
 - [ ] directory called terraform.workspaces.tfstate
 
-
 Terraform Community (Free) stores the local state for workspaces in a file on disk. For local state, Terraform stores the workspace states in a directory called `terraform.tfstate.d/<workspace_name>`. Here's a screenshot of a Terraform run that was created using a workspace called training. You can see that Terraform created the `terraform.tfstate.d` directory, and then a directory with the namespace name underneath it.
 
 Under each directory, you'll find the state file, which is name `terraform.tfstate`
 
 ![](https://img-c.udemycdn.com/redactor/raw/practice_test_question_explanation/2022-11-18_12-53-25-c8020271c9df1f7cd01ac8daf5ae9911.png)
 
-https://developer.hashicorp.com/terraform/cli/workspaces#workspace-internals
+<https://developer.hashicorp.com/terraform/cli/workspaces#workspace-internals>
 
 ## Terraform refresh
 
@@ -183,7 +178,6 @@ True or False? The `terraform plan -refresh-only` command is used to create a pl
 
 - [ ] False
 - [x] True
-
 
 The `terraform plan -refresh-only` command is used in Terraform to update the state of your infrastructure in memory without making any actual changes to the infrastructure. The -refresh-only flag tells Terraform to only update its understanding of the current state of the infrastructure and not to make any changes.
 
@@ -193,10 +187,9 @@ It is important to note that while the `terraform plan -refresh-only` command up
 
 Note that this command replaced the deprecated command terraform refresh
 
-https://developer.hashicorp.com/terraform/cli/commands/plan#planning-modes
+<https://developer.hashicorp.com/terraform/cli/commands/plan#planning-modes>
 
-https://developer.hashicorp.com/terraform/cli/commands/refresh
-
+<https://developer.hashicorp.com/terraform/cli/commands/refresh>
 
 ## Unlocking state
 
@@ -206,7 +199,6 @@ What Terraform command can be used to remove the lock on the state for the curre
 Removing the lock on a state file is not possible
 - [x] `terraform force-unlock`
 - [ ] `terraform unlock`
-
 
 The `terraform force-unlock` command can be used to remove the lock on the Terraform state for the current configuration. Another option is to use the "terraform state rm" command followed by the "terraform state push" command to forcibly overwrite the state on the remote backend, effectively removing the lock. It's important to note that these commands should be used with caution, as they can potentially cause conflicts and data loss if not used properly.
 
@@ -271,13 +263,11 @@ resource "aws_instance" "vault" {
 - [x] all possible data of a specific Amazon Machine Image(AMI) from AWS
 - [ ] the latest AMI you have previously used for an Amazon Linux 2 image
 
-When you add a data block to your configuration, Terraform will retrieve all of the available data for that particular resource. It is then up to you to reference a specific attribute that can be exported from that data source. For example, if you include a data block for the aws_ami resource, Terraform will get a ton of attributes about that AMI that you can use elsewhere in your code - check out this link to see the list of attributes specific to the aws_ami, for example. https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami#attributes-reference
-
-
+When you add a data block to your configuration, Terraform will retrieve all of the available data for that particular resource. It is then up to you to reference a specific attribute that can be exported from that data source. For example, if you include a data block for the aws_ami resource, Terraform will get a ton of attributes about that AMI that you can use elsewhere in your code - check out this link to see the list of attributes specific to the aws_ami, for example. <https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami#attributes-reference>
 
 Within the block body (between `{` and `}`) are query constraints defined by the data source. Most arguments in this section depend on the data source, and indeed in this example `most_recent`, owners and tags are all arguments defined specifically for the aws_ami data source.
 
-https://developer.hashicorp.com/terraform/language/data-sources#using-data-sources
+<https://developer.hashicorp.com/terraform/language/data-sources#using-data-sources>
 
 ## Terraform Cloud
 
@@ -292,7 +282,7 @@ When using Terraform Cloud, what is the easiest way to ensure the security and i
 
 To simplify the management of approved modules, you can host all the approved Terraform modules in your organization's Private Registry on Terraform Cloud. The private registry allows you to control access to the modules and ensures they are not publicly available. By implementing a private registry, your organization can effectively control and restrict module consumption to only approved modules hosted in the Terraform Private  Registry. This enhances security, maintains consistency in infrastructure deployments, and reduces the risk of using unverified or potentially harmful modules in your Terraform configurations.
 
-### Wrong Answers:
+### Wrong Answers
 
 - Creating a list is probably a bad idea as it doesn't simplify the management of modules that can be used
 
@@ -300,4 +290,4 @@ To simplify the management of approved modules, you can host all the approved Te
 
 - TFC permissions wouldn't work here since they wouldn't be used to control access to certain modules
 
-https://developer.hashicorp.com/terraform/cloud-docs/registry
+<https://developer.hashicorp.com/terraform/cloud-docs/registry>

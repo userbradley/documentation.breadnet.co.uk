@@ -1,7 +1,6 @@
 ---
 title: CKA
 ---
-# CKA
 
 This seems like it will be by far the hardest exam and learning of my career.
 
@@ -22,7 +21,6 @@ Hopefully this should take no longer than a year to complete, balancing it along
 * [CKA Study notes](cka-1.md)
 * [Practice questions](cka-practice-questions.md)
 * [List of controllers](cka-list-of-controllers.md)
-
 
 ## Useful Resources
 

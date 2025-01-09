@@ -2,8 +2,6 @@
 title: Import single table from sqlite
 ---
 
-# Import single table from sqlite
-
 ## Open the database
 
 ```shell

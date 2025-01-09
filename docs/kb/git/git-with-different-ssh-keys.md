@@ -2,8 +2,6 @@
 title: Git with different SSH keys
 ---
 
-# Git with different SSH keys
-
 ## Why
 
 I volunteer for scouts (which use bitbucket) and have a day job (which use bitbucket)
@@ -20,6 +18,7 @@ You would think I could set up an SSH config, but the domains are both `git@bitb
 Create `ssh` keys for this
 
 Call the keys `scouts-bitbucket` or anything else
+
 ```shell
 ssh-keygen -t ed25519
 ```

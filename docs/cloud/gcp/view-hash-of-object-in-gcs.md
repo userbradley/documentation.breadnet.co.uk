@@ -2,8 +2,6 @@
 title: View the hash of an object in GCS
 ---
 
-# View the hash of an object in GCS
-
 ## Why
 
 Sometimes we need to ensure that the file we viewed yesterday hasn't been changed

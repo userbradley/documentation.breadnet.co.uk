@@ -2,8 +2,6 @@
 title: Useful CKA Kubectl Commands
 ---
 
-# Useful CKA Kubectl Commands
-
 ## What this page is
 
 This page contains only commands that would be useful to known whilst doing the CKA because:
@@ -21,6 +19,7 @@ kubectl run nginx --image nginx
 ## Create Pod manifest file
 
 The below commands creates the manifest file, but instead of applying it, prints it to `stdout`
+
 ```shell
 kubectl run nginx --image nginx --dry-run=client -o yaml
 ```

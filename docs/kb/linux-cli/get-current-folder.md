@@ -2,8 +2,6 @@
 title: Get current folder
 ---
 
-# Get current folder
-
 Sometimes, we need to get the current folder, for things like [Creating helm charts](../../kubernetes/helm/create-helm-chart.md) at work
 
 ## The problem

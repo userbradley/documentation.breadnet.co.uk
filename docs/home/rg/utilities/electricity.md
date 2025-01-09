@@ -2,8 +2,6 @@
 title: Electricity
 ---
 
-# Meter Readings
-
 ## Where is the meter located
 
 The meter is located in the `Plant Room` on the right hand side of the building when you enter.

@@ -2,8 +2,6 @@
 title: Note and Warning markdown for GitHub
 ---
 
-# Note and Warning markdown for GitHub
-
 ## Note
 
 ```markdown

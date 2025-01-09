@@ -2,8 +2,6 @@
 title: "Terraform plugin: Cannot locate module locally, unknown reason"
 ---
 
-# Terraform plugin: Cannot locate module locally, unknown reason
-
 Terraform changed how they structure modules in the config fie
 
 So previously a module would look like this:
@@ -16,6 +14,7 @@ module "cloudrun-binding" {
   role    = google_project_iam_custom_role.cloudrun.role_id
 }
 ```
+
 We get the error
 
 ```

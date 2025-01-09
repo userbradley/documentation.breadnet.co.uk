@@ -2,8 +2,6 @@
 title: Fly CI
 ---
 
-# Fly CI
-
 To be able to use Fly.io in a CI, I need to build a custom docker image that has the Fly CLI.
 
 ## Logging in
@@ -30,7 +28,7 @@ In CI, we are doing the below:
 
 * Set the API key globally on the pipeline
 * Build a docker image based on what branch the commit is to
-  * As a sub step, we push the image to Docker Hub
+    * As a sub step, we push the image to Docker Hub
 * Deploy the image to Fly.io
 
 To know why we are not using their builder, read [Deployment Strategy](deployment-strategy.md)

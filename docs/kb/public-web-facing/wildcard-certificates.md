@@ -2,8 +2,6 @@
 title: Wildcard Certificates
 ---
 
-# Wildcard Certificates
-
 ```shell
 certbot certonly \
 --manual  \

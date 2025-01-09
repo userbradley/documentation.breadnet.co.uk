@@ -10,13 +10,11 @@ Sometimes when using `on: workflow_dispatch` the action won\t show up in the UI
 
 Ensure the workflow is on `main` and run the below command
 
-
 ```shell
 gh workflow run <file name>.yaml --ref main
 ```
 
 !!! tip "Example"
-
 
     ```yaml
     # .github/workflows/manual.yaml

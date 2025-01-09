@@ -2,8 +2,6 @@
 title: Export to terraform using gcloud cli
 ---
 
-# Export to terraform using gcloud cli
-
 ## Get list of resources you can export
 
 ```shell

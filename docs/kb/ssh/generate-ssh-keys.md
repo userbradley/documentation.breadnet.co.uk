@@ -2,8 +2,6 @@
 title: Generate SSH Keys
 ---
 
-# Generate SSH Keys
-
 ## Create Keys
 
 === "Current user"
@@ -16,7 +14,6 @@ title: Generate SSH Keys
     ```shell
     ssh-keygen -t ed25519 -f ~/.ssh/example -C example@breadnet.co.uk
     ```
-
 
 ## Copy them to server
 

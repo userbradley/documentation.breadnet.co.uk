@@ -2,8 +2,6 @@
 title: Remove server Headers
 ---
 
-# Remove server Headers
-
 Install Nginx Extras
 
 --8<-- "docs/kb/nginx/nginx-extras.md"

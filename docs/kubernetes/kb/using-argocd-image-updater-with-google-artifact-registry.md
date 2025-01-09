@@ -2,8 +2,6 @@
 title: Using ArgoCD Image updater with Google Artifact Registry
 ---
 
-# Using ArgoCD Image updater with Google Artifact Registry
-
 ## What
 
 ArgoCD Image updater is a cool tool that allows you to update Images for containers, provided you use Argo CD
@@ -26,7 +24,6 @@ export auth=oauth2accesstoken:$(gcloud auth print-access-token)
 This will run the command `gcloud auth print-access-token` first (as it's in parentheses, remember `PEMDAS`) then save its value as text.
 
 Optionally, check what it looks like
-
 
 ```
 echo $auth

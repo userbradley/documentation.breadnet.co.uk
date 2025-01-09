@@ -2,16 +2,14 @@
 title: Get the Real IP address from fly when behind cloudflare
 ---
 
-# Get the Real IP address from fly when behind cloudflare
-
 !!! warning "A note on this KB"
     You should only use this page if you are using *both* cloudflare *proxy* and fly.io
 
 ## Why
 
-It's not really needed too much on the Fly side, it's more _a nice to have_.
+It's not really needed too much on the Fly side, it's more *a nice to have*.
 
-We have this _issue_ when you put an instance behind Cloudflare and enable the proxy, you don't get the Real IP address of the
+We have this *issue* when you put an instance behind Cloudflare and enable the proxy, you don't get the Real IP address of the
 device connecting, you get the Cloudflare exit node IP
 
 ```shell

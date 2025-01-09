@@ -2,8 +2,6 @@
 title: SSH using pritunl bastion
 ---
 
-# SSH using pritunl Bastion
-
 ## Install pritunl ssh agent
 
 ```shell

@@ -2,8 +2,6 @@
 title: Serverless VPC access for Cloudrun across Projects
 ---
 
-# Serverless VPC access for Cloudrun across Projects
-
 Firstly locate the Project numerical ID, this can be done via terraform using the below resource:
 
 !!! Note
@@ -44,7 +42,7 @@ resource "google_vpc_access_connector" "connector" {
 }
 ```
 
-1.  Depending on how much network traffic you plan to send over this, the machine type needs to be larger.
+1. Depending on how much network traffic you plan to send over this, the machine type needs to be larger.
     The default is `e2-micro`
 
 You will need to give the vpc service account editor on the host

@@ -2,14 +2,11 @@
 title: Remote data in terraform
 ---
 
-# Remote data in terraform
-
 ## What is remote data
 
 Remote data is the system in terraform that allows us to use outputs from other configs, in ours.
 
 It sets the dependency on external resources, so should ideally be avoided. We should really use a `data "" ""{}` block
-
 
 We have split this up in to 2 parts.
 

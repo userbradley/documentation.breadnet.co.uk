@@ -36,6 +36,7 @@ updates:
 We are able to get a little smart and prevent Dependabot from updating specific version to a specific version
 
 The below will now stop the module with the version `3.0.0` from being upgraded to version `4.0.0`
+
 ```yaml
 version: 2
 

@@ -9,7 +9,6 @@ that holds all the helm charts
 
 Flux does not support auto login for OCI HelmRepository ([See this issue here](https://github.com/fluxcd/source-controller/issues/798#issuecomment-1167816216))
 
-
 ### Example error message
 
 ```text

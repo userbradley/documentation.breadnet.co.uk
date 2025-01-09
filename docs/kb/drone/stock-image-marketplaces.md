@@ -2,8 +2,6 @@
 title: Stock Image marketplaces
 ---
 
-# Stock Image marketplaces
-
 ## Why
 
 Useful to sell stock images and videos to recoup some of the cost of the drone

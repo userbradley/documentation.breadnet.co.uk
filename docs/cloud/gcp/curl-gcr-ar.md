@@ -2,8 +2,6 @@
 title: Curl to GCR/ AR
 ---
 
-# Curl to GCR/ AR
-
 ## What
 
 This page is to help you curl to Google Hosted container registries
@@ -25,7 +23,6 @@ This page is to help you curl to Google Hosted container registries
       -H "Authorization: Bearer $(gcloud auth print-access-token)" \
       "https://eu.gcr.io/v2/<project name>/<repo name>/tags/list" | jq ".tags"
     ```
-
 
 ## What to read next
 

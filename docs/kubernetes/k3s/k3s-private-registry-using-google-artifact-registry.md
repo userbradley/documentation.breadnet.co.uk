@@ -2,8 +2,6 @@
 title: K3s private registry using Google Artifact Registry
 ---
 
-# K3s private registry using Google Artifact Registry
-
 ## Why
 
 Sometimes you want to run OCI containers from a private registry, and you use Google Artifact Registry.

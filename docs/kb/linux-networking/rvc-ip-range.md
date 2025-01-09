@@ -2,8 +2,6 @@
 title: RVC IP range
 ---
 
-# RVC IP range
-
 RVC Master IP range: `195.194.217.0/25`
 
 Outbound IP for [Eduroam](https://eduroam.org): `195.195.217.140/32`

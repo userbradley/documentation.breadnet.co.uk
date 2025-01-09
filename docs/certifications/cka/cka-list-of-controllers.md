@@ -2,8 +2,6 @@
 title: List of Controllers in Kubernetes
 ---
 
-# List of Controllers in Kubernetes
-
 ## Enabled by default
 
 * attachdetach
@@ -29,7 +27,7 @@ title: List of Controllers in Kubernetes
 * nodelifecycle
 * persistentvolume-binder
 * persistentvolume-expander
-*  podgc
+* podgc
 * pv-protection
 * pvc-protection
 * replicaset

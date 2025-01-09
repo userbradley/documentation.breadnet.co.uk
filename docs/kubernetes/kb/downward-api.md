@@ -2,8 +2,6 @@
 title: Using the downward API in Kubernetes
 ---
 
-# Using the downward API in Kubernetes
-
 Kubernetes has something called the `Downward API` that allows pods to get information of their own running state
 and then expose it as env variables (As the below example)
 

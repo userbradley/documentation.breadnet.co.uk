@@ -50,7 +50,6 @@ Insert the output in to the config file
 
 Edit `~/.config/containers/auth.json`
 
-
 ```json
 {
   "auths": {

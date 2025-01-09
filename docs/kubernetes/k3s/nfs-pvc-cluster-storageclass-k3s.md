@@ -14,19 +14,19 @@ When the pods are spanning multiple nodes, then this becomes an issue as the [Vo
 * Install the [NFS CSI Driver](https://github.com/kubernetes-csi/csi-driver-nfs)
 * Set it as the default Storage Class
 
-
 !!! tip "You need to have an NFS server pre-existing"
     In order for this to work, you need to have a pre-existing NFS server.
 
     This is [out of scope](https://dslntlv9vhjr4.cloudfront.net/posts_images/ySlGfB8FeI8DU.jpg) for this KB
 
-
 ### Install the NFS CSI Driver
 
 #### Add the Helm repo
+
 ```shell
 helm repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
 ```
+
 #### Install the helm chart in the `kube-system` namespace
 
 ```shell
@@ -166,7 +166,6 @@ You should see one called `pvc-deployment-nfs` with the status `bound`
 NAME                 STATUS   VOLUME                                    CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 pvc-deployment-nfs   Bound    pvc-864e3e14-f384-4043-a7a9-a660af88e71d   10Gi        RWX            nfs-csi        1m
 ```
-
 
 ## Additional reading
 

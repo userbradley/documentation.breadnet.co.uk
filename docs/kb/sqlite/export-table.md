@@ -2,8 +2,6 @@
 title: Export single table from sqlite
 ---
 
-# Export single table from sqlite
-
 ## Open the database
 
 ```shell

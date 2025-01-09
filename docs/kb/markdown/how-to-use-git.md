@@ -2,7 +2,6 @@
 title: How to use git
 reviewdate: '2022-01-01'
 ---
-# How to use git
 
 To clone a repo, go to the webpage and click the `clone or download` button and click 'Use SSH'
 
@@ -10,7 +9,6 @@ To clone a repo, go to the webpage and click the `clone or download` button and 
     Seeing as you have `2fa` enabled on your account, you should be using `ssh` as it doesn't require you to log in each action you make
 
 ![](/assets/tjxlFRVsXUgsDatm-image-1588972001839.png)
-
 
 Once you have the string on your clipboard open a terminal window and browse to a location where your code will now live. I use `~\github`
 

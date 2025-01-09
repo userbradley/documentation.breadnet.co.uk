@@ -13,8 +13,6 @@ Allows you to manage Load balancing and Auto scaling for them.
 
 Allows you to also manage the network connectivity
 
-
-
 For the example we will create instances and an LB
 
 Creating a machine is simple, pick your region, size and if you want the simple firewall rules

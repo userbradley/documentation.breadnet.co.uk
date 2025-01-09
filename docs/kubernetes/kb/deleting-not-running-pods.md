@@ -2,8 +2,6 @@
 title: Deleting not running pods
 ---
 
-# Deleting not running pods
-
 ## Why
 
 Sometimes we can have a lot of pods that fail. A good example is on a GKE cluster running on [preemptible](https://cloud.google.com/compute/docs/instances/preemptible)

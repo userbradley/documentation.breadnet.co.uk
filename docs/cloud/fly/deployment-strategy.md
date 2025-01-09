@@ -2,8 +2,6 @@
 title: Fly deployment Strategy
 ---
 
-# Fly deployment Strategy
-
 ## Issues
 
 ### 1 - Buildkit takes too long

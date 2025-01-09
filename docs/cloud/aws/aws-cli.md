@@ -2,10 +2,7 @@
 title: AWS CLI
 ---
 
-# AWS CLI
-
 Locate resources based on IP
-
 
 ```shell
 aws ec2 describe-network-interfaces --filters Name=addresses.private-ip-address,Values=<ip>

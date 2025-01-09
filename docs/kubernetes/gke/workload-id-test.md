@@ -1,8 +1,6 @@
 ---
-title: Workload ID test pod
+title: Workload Identity test pod
 ---
-
-# Workload Identity test pod
 
 ## Why
 
@@ -11,7 +9,6 @@ Sometimes you need to run a simple pod on the cluster to check things, call a se
 ## Things to note
 
 You will need to have the `compute metadata api` service running in the cluster
-
 
 ## How
 

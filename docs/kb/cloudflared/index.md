@@ -2,8 +2,6 @@
 title: Cloudflared
 ---
 
-# Cloudflared
-
 This section is documentation on cloudflared
 
 - [Cloudflared on Ubuntu for ssh](cloudflared-on-ubuntu-for-ssh.md)

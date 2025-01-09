@@ -4,6 +4,9 @@ title: MkDocs on Fly.io
 
 ## What
 
+!!! warning "This doc has issues"
+    This doc has a known issue I need to update. [See this issue](https://github.com/userbradley/documentation.breadnet.co.uk/issues/460)
+
 This guide hopes to set the groundwork on how to get an mkdocs site up and running
 on [Fly.io](https://fly.io?ref=documentation.breadnet.co.uk)
 
@@ -93,8 +96,7 @@ Now we need to test if this works
     podman build docs:1 && podman run -p 8080:80 docs:1
     ```
 
-
-Browse to http://localhost:8080 and you should see your site
+Browse to <http://localhost:8080> and you should see your site
 
 ### Fly.io part
 
@@ -107,6 +109,7 @@ fly app create <name>
 ```
 
 We then need to save the config file to use later in the GitHub actions stage
+
 ```shell
 fly config save -a <name>
 ```
@@ -197,7 +200,6 @@ touch .github/workflows/build-site.yaml
 ```
 
 In this file, we need to put the below
-
 
 ```yaml
 name: Build Site

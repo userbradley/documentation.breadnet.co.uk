@@ -2,8 +2,6 @@
 title: To string from a list in terraform
 ---
 
-# To string from list in Terraform
-
 Sometimes, like for example when you're trying to crowbar a WAF together you want to pass a list.
 
 ??? note "Example of list"

@@ -2,8 +2,6 @@
 title: Kubernetes Knowledge Base
 ---
 
-# Kubernetes Knowledge Base
-
 This subpage holds kubernetes Knowledge base articles
 
 ## Specific Reading

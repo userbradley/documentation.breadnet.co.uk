@@ -53,7 +53,6 @@ curl -sL https://github.com/fluxcd/flux2/releases/latest/download/crd-schemas.ta
 
 === "Fail hard"
 
-
     Below will fail hard if it finds something it doesn't recognize
 
     ```shell
@@ -73,7 +72,6 @@ If you are not using kustomizations to bundle files, you can use the below
     ```
 
 === "Fail hard"
-
 
     Below will fail hard if it finds something it doesn't recognize
 

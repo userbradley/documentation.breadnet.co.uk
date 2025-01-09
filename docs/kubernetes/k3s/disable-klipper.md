@@ -2,7 +2,6 @@
 title: Disable klipper k3s
 ---
 
-# Disable klipper k3s
 
 When you wish to use `metallb` in your k3s cluster you need to disable `servicelb`
 
@@ -15,7 +14,6 @@ curl -fL https://get.k3s.io | sh -s - --disable servicelb
 ## After the fact
 
 If you forget to disable the klipper load balancer, follow the below steps on an already running cluster
-
 
 edit `/etc/systemd/system/k3s.service` so it looks like the below
 

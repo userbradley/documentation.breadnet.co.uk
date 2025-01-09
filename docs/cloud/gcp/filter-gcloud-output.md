@@ -1,8 +1,7 @@
 ---
-title: Filter fields from gcloud putput
+title: Filter fields from gcloud output
 ---
 
-# Filter fields from gcloud putput
 
 ## Why
 

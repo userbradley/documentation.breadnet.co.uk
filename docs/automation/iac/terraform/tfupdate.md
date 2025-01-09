@@ -2,8 +2,6 @@
 title: Tfupdate
 ---
 
-# Tfupdate
-
 ## Update terraform version
 
 ```shell

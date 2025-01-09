@@ -2,8 +2,6 @@
 title: Cloudflared on Ubuntu for ssh
 ---
 
-# Cloudflared on Ubuntu for ssh
-
 The below assumes you have already connected to the server via ssh you want to manage
 
 ## Install cloudflared

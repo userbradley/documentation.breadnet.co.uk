@@ -2,8 +2,6 @@
 title: Grafeas
 ---
 
-# Grafeas
-
 Can store the metadata in a range of databases:
 
 * PostgreSQL
@@ -18,7 +16,6 @@ It defines an API for managing metadata for Software supply chain, including (bu
 * .jar files
 * scripts
 
-
 it works by taking the metadata (The additional details about the files and packages) and splitting it in to:
 
 * Notes
@@ -30,9 +27,7 @@ By doing this, it allows third party metadata providers to create and manage met
 
 Allows for fine-grained access to the types of metadata
 
-
-
 Sources:
 
-https://opensource.google/projects/grafeas
-https://grafeas.io
+<https://opensource.google/projects/grafeas>
+<https://grafeas.io>

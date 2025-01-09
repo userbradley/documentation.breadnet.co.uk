@@ -21,7 +21,6 @@ This happens because terraform sucks at walking the graph
 
 Set the [`parallelism` flag to 20](https://developer.hashicorp.com/terraform/cli/commands/apply#parallelism-n) and disable a refresh
 
-
 === "Terraform"
 
     ```shell

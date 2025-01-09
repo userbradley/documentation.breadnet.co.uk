@@ -2,7 +2,6 @@
 title: Custom Headers
 ---
 
-# Custom Headers
 
 Install the below:
 

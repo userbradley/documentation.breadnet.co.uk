@@ -50,6 +50,7 @@ Example output
 }
 
 ```
+
 ### Delete
 
 Not entirely sure that this actually deletes the credentials

@@ -4,6 +4,7 @@ title: Configure GKE workload Identity
 
 !!! note "Not to be confused with Workload Identity Federation"
     These are different systems. They both allow external workloads to authenticate to Google Cloud Platform
+
 ## What
 
 Workload Identity allows pods running in [GKE](https://cloud.google.com/kubernetes-engine/) clusters to _assume_ their own
@@ -19,7 +20,6 @@ service account and authenticate onwards to the platform
 
 
     Some things have remained the same. These are excluded from the tabbed sections
-
 
 ### Enable workload Identity on the GKE cluster
 
@@ -58,7 +58,6 @@ resource "google_container_cluster" "primary" {
 1. The way GKE and GCP deals with platform authentication is by making a call to the metadata API (`http://169.254.169.254/computeMetadata/v1/`) - By running the
    metadata API **in the cluster**, we essentially hijack the request. This enables running the metadata API internally to the cluster
 2. Workload identity requires a pool. The format of this pool ID is `<project-id>.svc.id.goog` - We substitute the project ID here from a variable
-
 
 === "New Method"
 
@@ -159,8 +158,6 @@ resource "google_container_cluster" "primary" {
           command: [ "/bin/sh", "-c", "--" ]
           args: [ "while true; do sleep 30; done;" ]
     ```
-
-
 
 === "Old method"
 

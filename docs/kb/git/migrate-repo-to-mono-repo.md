@@ -2,10 +2,6 @@
 title: Migrate repo to Mono-repo
 ---
 
-# Migrate repo to Mono-repo
-
-
-
 ## Set up your git remote
 
 You’ll need to add a new remote for the repo you want to migrate, because you can’t just mv codebase without losing all the commits. Let’s say I’ve got my React app in a repo called persephone:
@@ -14,9 +10,7 @@ You’ll need to add a new remote for the repo you want to migrate, because you 
 git remote add persephone git@github.com:lgtm/persephone
 ```
 
-
 ## Fetch the code from the remote
-
 
 Next, you need to grab the code without checking out the branch. This is so git is aware of what you’re planning to merge in. Like above, you can automate this:
 
@@ -24,9 +18,7 @@ Next, you need to grab the code without checking out the branch. This is so git 
 git fetch persephone
 ```
 
-
 ## Read the commits from the remote repo into your new one
-
 
 If you have any open PRs in your old repo I suggest you merge them before continuing, because you’ll have a bit more trouble if you’ve taken this step and need to update with fresh commits.
 

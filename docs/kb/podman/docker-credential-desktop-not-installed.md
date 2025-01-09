@@ -12,7 +12,6 @@ error: getting auth config for "ghrc.io/": getting auth config: error getting cr
 
 ## Solution
 
-
 Edit `~/.docker/config.json`
 
 Make note that we're changing it from `credsStore` by removing the additional `s`

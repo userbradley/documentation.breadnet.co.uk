@@ -8,8 +8,6 @@ Only deploying in to one DC can cause latency and issues, should your DC burn do
 
 You will want to deploy to many regions as it allows you to have minimal latency, allows for global footprint and adhere to gov regulations.
 
-
-
 In each zone, there are Discreet clusters, so many datacenters. Each region has 3 zones.
 
 Example would be:
@@ -19,8 +17,6 @@ Example would be:
 * us-west1-a
 * us-west1-b
 * us-west1-c
-
-
 
 ---
 

@@ -2,8 +2,6 @@
 title: Always restart service after failure - systemd
 ---
 
-# Always restart service after failure - systemd
-
 ## Why
 
 Some services are critical to operation and without them, we may have issues like not being able to access systems.

@@ -14,7 +14,6 @@ find ./ -type d -name ".terragrunt-cache" -exec rm -rf {} +
 
 ### Tip of the day
 
-
 You can set up a `zsh` or `bash` alias for this
 
 Edit `~/.zshrc` and add the below

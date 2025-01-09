@@ -2,8 +2,6 @@
 title: Drone
 ---
 
-# Drone
-
 ## What
 
 I have a drone, and this the place to document all the documentation about it

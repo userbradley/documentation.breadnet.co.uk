@@ -5,6 +5,7 @@ reviewdate: '2022-01-01'
 
 
 1. Install the resolvconf package.
+
 ```bash
 sudo apt install resolvconf
 ```

@@ -2,8 +2,6 @@
 title: Terraform Sleep
 ---
 
-# Terraform Sleep
-
 ## Why
 
 Some resources cant have things applied right after each-other, like creating 12 projects then assigning them IAM

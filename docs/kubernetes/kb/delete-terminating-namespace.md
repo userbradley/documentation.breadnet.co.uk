@@ -2,8 +2,6 @@
 title: Delete namespace stuck in terminating
 ---
 
-# Delete namespace stuck in terminating
-
 ```shell
 (
 NAMESPACE=datadog

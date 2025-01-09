@@ -2,7 +2,6 @@
 title: sshuttle
 ---
 
-# sshuttle
 
 To connect as a poor man's vpn over ssh
 

@@ -2,11 +2,9 @@
 title: Get project name of GCS bucket
 ---
 
-# Get project name of GCS bucket
-
 ## Why
 
-Sometimes when you are managing many [GCS buckets ](https://cloud.google.com/storage) - You may lose the project they exist in.
+Sometimes when you are managing many [GCS buckets](https://cloud.google.com/storage) - You may lose the project they exist in.
 
 If you aren't using a swanky naming convention like `<proj-name>-<name>` then this is for you.
 
@@ -28,12 +26,12 @@ curl -X GET \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
   "https://storage.googleapis.com/storage/v1/b/<>" | jq ."projectNumber"
 ```
+
 ### Convert number to project name
 
 ```shell
 gcloud projects describe --format json | jq .name
 ```
-
 
 ## Example
 

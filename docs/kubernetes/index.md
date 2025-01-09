@@ -2,8 +2,6 @@
 title: Kubernetes
 ---
 
-# Kubernetes
-
 ## Quick Links
 
 * [Kubectl commands](kb/kubectl-commands.md)
@@ -13,8 +11,6 @@ title: Kubernetes
 * [KB](kb/index.md)
 * [GKE](gke/index.md)
 * [k3s](k3s/index.md)
-
-
 
 Kubernetes has been awarded its own section as it encompasses the below:
 

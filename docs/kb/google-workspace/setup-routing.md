@@ -2,8 +2,6 @@
 title: Setup Routing
 ---
 
-# Google Workspace: Setup routing
-
 Go to:
 
 `Apps` > `Google Workspace` > `Gmail`
@@ -15,7 +13,6 @@ Select `Gmail`
 ![](../../assets/DEK0ilyWJhXXzqhb-image-1642771115391.png)
 
 Select Default Routing
-
 
 Add the full email address you want to have emails sent to, so if our domain was `breadnet.co.uk` and we wanted to receive at `test123`, we would put `test123@breadnet.co.uk`
 

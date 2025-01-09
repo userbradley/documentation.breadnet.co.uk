@@ -21,11 +21,11 @@ clusters:
 ### Terraform config
 
 1. Update `cluster_ca_certificate` to be the copy and pasted from the above. Ensure this is base64 decoded. You can also use a variable or file
-2. Update `oidc-issuer-url` to the issuer of your `oidc` issuer. 
+2. Update `oidc-issuer-url` to the issuer of your `oidc` issuer.
 3. Update `oidc-client-id` to the OIDC client ID from your OIDC issuer
 4. Update `oidc-client-secret` to the Secret from your OIDC issuer
 
-Depending on your issuer and how you've configured your cluster, you may want to add as many or as little `oidc-extra-scope`'s 
+Depending on your issuer and how you've configured your cluster, you may want to add as many or as little `oidc-extra-scope`'s
 
 ```terraform
 provider "kubernetes" {
@@ -67,7 +67,7 @@ provider "kubernetes" {
         ]
       }
     }
-    
+
     ```
 
 ## Additional Reading

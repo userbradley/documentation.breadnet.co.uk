@@ -2,8 +2,6 @@
 title: Docker copying
 ---
 
-# Docker Copying
-
 We are able to use the docker CLI to copy files to and from containers
 
 ## Get running containers
@@ -25,7 +23,6 @@ Using the ID of the container we can copy from inside the container to the host
     ```shell
     docker cp db129cf0407d:/home/app/podinfo .
     ```
-
 
 ## From host to container
 

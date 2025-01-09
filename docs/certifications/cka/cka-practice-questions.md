@@ -2,8 +2,6 @@
 title: CKA Practice tests
 ---
 
-# CKA Practice tests
-
 [KodeCloud Tests](https://kodekloud.com/courses/labs-certified-kubernetes-administrator-with-practice-tests/)
 
 ## Pods
@@ -14,7 +12,7 @@ title: CKA Practice tests
 kubectl get pods
 ```
 
-### Create a new pod with the nginx image.
+### Create a new pod with the nginx image
 
 ```shell
 kubectl run nginx --image nginx
@@ -66,21 +64,20 @@ There was no image found on Docker hub, hence `ImagePullBackOff`
 
 Running containers in pod/ total number of containers in pod
 
-### Delete the webapp Pod.
+### Delete the webapp Pod
 
 ```shell
 kubectl delete pod/webapp
 ```
 
-### Create a new pod with the name redis and with the image redis123.
+### Create a new pod with the name redis and with the image redis123
 
 ```shell
 kubectl run redis --image=redis123 --dry-run=client -o yaml > redis.yaml
 kubectl apply -f redis.yaml
 ```
 
-### Now change the image on this pod to redis.
-
+### Now change the image on this pod to redis
 
 ```shell
 kubectl run redis --image=redis --dry-run=client -o yaml > redis.yaml
@@ -155,7 +152,7 @@ View `READY`
 
 The image doesnt exist
 
-### Delete any one of the 4 PODs.
+### Delete any one of the 4 PODs
 
 ```shell
 kubectl get pods
@@ -176,7 +173,7 @@ Because it recreated the pod we deleted
 
 ReplicaSet ensures that the desired number of PODs always run
 
-### Create a ReplicaSet using the replicaset-definition-1.yaml file located at /root/.
+### Create a ReplicaSet using the replicaset-definition-1.yaml file located at /root/
 
 === "Broken"
     ```yaml
@@ -221,7 +218,7 @@ ReplicaSet ensures that the desired number of PODs always run
               image: nginx
     ```
 
-### Fix the issue in the replicaset-definition-2.yaml file and create a ReplicaSet using it.
+### Fix the issue in the replicaset-definition-2.yaml file and create a ReplicaSet using it
 
 === "Broken"
 
@@ -274,7 +271,7 @@ kubectl delete -f replicaset-definition-1.yaml
 kubectl delete -f replicaset-definition-2.yaml
 ```
 
-### Fix the original replica set new-replica-set to use the correct busybox image.
+### Fix the original replica set new-replica-set to use the correct busybox image
 
 ```
 unset KUBE_EDITOR
@@ -284,7 +281,7 @@ kubectl edit replicasets/new-replica-set
 kubectl delete pods/<names of pods>
 ```
 
-### Scale the ReplicaSet to 5 PODs.
+### Scale the ReplicaSet to 5 PODs
 
 > Use kubectl scale command or edit the replicaset using kubectl edit replicaset.
 
@@ -293,7 +290,7 @@ kubectl get rs
 kubectl scale rs/new-replica-set --replicas=5
 ```
 
-### Now scale the ReplicaSet down to 2 PODs.
+### Now scale the ReplicaSet down to 2 PODs
 
 ```shell
 kubectl get rs
@@ -375,7 +372,7 @@ Locate `Pod Template.*.Image`
 
 A: `ImagePullBackOff` - No image found with that name on the Public Docker Registry
 
-### Create a new Deployment using the deployment-definition-1.yaml file located at /root/.
+### Create a new Deployment using the deployment-definition-1.yaml file located at /root/
 
 !!! tip "How to figure out the issue and save time"
     Best way to find out what the issue is, is to apply it and see what it comes back with.
@@ -458,7 +455,7 @@ We can tell it's correct, so it needs to be the `kind` requires an Uppercase. `k
             - echo Hello Kubernetes! && sleep 3600
     ```
 
-### Create a new Deployment with the below attributes using your own deployment definition file.
+### Create a new Deployment with the below attributes using your own deployment definition file
 
 ```shell
 kubectl create deployment httpd-frontend --image="httpd:2.4-alpine" --replicas=3 --dry-run=client -o yaml > deployment.yaml
@@ -481,7 +478,7 @@ Count the namespaces
 kubectl get pods -n research
 ```
 
-### Create a POD in the finance namespace.
+### Create a POD in the finance namespace
 
 ```shell
 kubectl run redis --image redis -n finance
@@ -585,7 +582,7 @@ kubectl get deployments
 kubectl describe deployment/simple-webapp-deployment
 ```
 
-##  Imperative Commands
+## Imperative Commands
 
 ### Deploy a pod named nginx-pod using the nginx:alpine image
 
@@ -593,7 +590,7 @@ kubectl describe deployment/simple-webapp-deployment
 kubectl run nginx-pod --image=nginx:alpine
 ```
 
-### Deploy a redis pod using the redis:alpine image with the labels set to tier=db.
+### Deploy a redis pod using the redis:alpine image with the labels set to tier=db
 
 Either use imperative commands to create the pod with the labels. Or else use imperative commands to generate the pod definition file, then add the labels before creating the pod using the file.
 
@@ -607,7 +604,7 @@ kubectl run redis --image redis:alpine -l="tier=db"
 kubectl create service clusterip redis-service --tcp=6379:6379
 ```
 
-### Create a deployment named webapp using the image kodekloud/webapp-color with 3 replicas.
+### Create a deployment named webapp using the image kodekloud/webapp-color with 3 replicas
 
 ```shell
 kubectl create deployment webapp --image=kodekloud/webapp-color --replicas=3
@@ -625,13 +622,13 @@ kubectl run custom-nginx --image=nginx --port=8080
 kubectl create ns dev-ns
 ```
 
-### Create a new deployment called redis-deploy in the dev-ns namespace with the redis image. It should have 2 replicas.
+### Create a new deployment called redis-deploy in the dev-ns namespace with the redis image. It should have 2 replicas
 
 ```shell
 kubectl create deployment redis-deploy --image=redis --replicas=2 -n dev-ns
 ```
 
-### Create a pod called httpd using the image httpd:alpine in the default namespace. Next, create a service of type ClusterIP by the same name (httpd). The target port for the service should be 80.
+### Create a pod called httpd using the image httpd:alpine in the default namespace. Next, create a service of type ClusterIP by the same name (httpd). The target port for the service should be 80
 
 I went about this creating a pod and then a service, which is not correct.
 
@@ -661,7 +658,7 @@ kubectl get all --selector env=prod
 kubectl get pods --selector env=prod,bu=finance,tier=frontend
 ```
 
-### A ReplicaSet definition file is given replicaset-definition-1.yaml. Try to create the replicaset. There is an issue with the file. Try to fix it.
+### A ReplicaSet definition file is given replicaset-definition-1.yaml. Try to create the replicaset. There is an issue with the file. Try to fix it
 
 === "Broken"
 
@@ -721,7 +718,7 @@ kubectl describe node/node01 | grep taint
 kubectl taint nodes node01 spray=mortein:NoSchedule
 ```
 
-### Create a new pod with the nginx image and pod name as mosquito.
+### Create a new pod with the nginx image and pod name as mosquito
 
 ```shell
 kubectl run mosquito --image=nginx
@@ -745,7 +742,7 @@ mosquito   0/1     Pending   0          24s
 
 A: Pod cant tolerate the taint `mortein`
 
-### Create another pod named bee with the nginx image, which has a toleration set to the taint mortein.
+### Create another pod named bee with the nginx image, which has a toleration set to the taint mortein
 
 !!! warning "Struggled"
     This is a question I struggled on
@@ -779,7 +776,7 @@ spec:
 status: {}
 ```
 
-### Notice the bee pod was scheduled on node node01 despite the taint.
+### Notice the bee pod was scheduled on node node01 despite the taint
 
 Yes
 
@@ -807,8 +804,7 @@ controlplane ~ ➜  k describe node/controlplane | grep Taints
 Taints:             node-role.kubernetes.io/control-plane:NoSchedule
 ```
 
-
-### Remove the taint on `controlplane`, which currently has the taint effect of NoSchedule.
+### Remove the taint on `controlplane`, which currently has the taint effect of NoSchedule
 
 ```shell
 kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedule-
@@ -834,7 +830,7 @@ kubectl describe nodes/node01
 kubectl label node/node01 color=blue
 ```
 
-### Create a new deployment named `blue` with the `nginx` image and 3 replicas.
+### Create a new deployment named `blue` with the `nginx` image and 3 replicas
 
 ```shell
 kubectl create deployment blue  --image nginx --replicas  3
@@ -846,7 +842,7 @@ kubectl create deployment blue  --image nginx --replicas  3
 kubectl describe nodes/controlplane | grep -i taints
 ```
 
-### Set Node Affinity to the deployment to place the pods on node01 only.
+### Set Node Affinity to the deployment to place the pods on node01 only
 
 ```yaml
 apiVersion: apps/v1
@@ -884,7 +880,7 @@ spec:
 kubectl get pods -o wide
 ```
 
-### Create a new deployment named `red` with the `nginx` image and `2` replicas, and ensure it gets placed on the `controlplane` node only.
+### Create a new deployment named `red` with the `nginx` image and `2` replicas, and ensure it gets placed on the `controlplane` node only
 
 Use the label key - `node-role.kubernetes.io/control-plane` - which is already set on the `controlplane` node
 

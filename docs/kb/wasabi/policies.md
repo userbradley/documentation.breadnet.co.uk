@@ -2,8 +2,6 @@
 title: Policies
 ---
 
-# Wasabi: Policies
-
 ## Policies you should use
 
 ```json
@@ -39,7 +37,6 @@ title: Policies
    ]
 }
 ```
-
 
 ## Allow access to bucket policy
 
