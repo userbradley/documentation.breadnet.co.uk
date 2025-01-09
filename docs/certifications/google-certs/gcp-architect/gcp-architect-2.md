@@ -584,7 +584,7 @@ Wide Column
         * 0: Highest
         * 65535: Lowest
 
-    * ##### Default rule
+  * ##### Default rule
 
         * Egress allowed
         * Deny Ingress

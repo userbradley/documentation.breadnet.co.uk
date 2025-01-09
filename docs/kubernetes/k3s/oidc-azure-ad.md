@@ -155,7 +155,7 @@ Now prepare the command:
 | `oidc-issuer-url`    | `https://sts.windows.net/<tenant ID here>/` | `https://sts.windows.net/b5342830-afbd-445a-a8a5-09d29d3f3ca9/` |
 | `oidc-client-id`     | Application (client) ID                     | `31a3ac37-5b21-4144-bd62-135f477c00a1`                          |
 | `oidc-client-secret` | Client Secret from Secrets                  | `tgreavsd4hu3rb-!rgvuyymdn/rtn'.eg'weth`                        |
-| `oidc-extra-scope`   | `groups,email`                              | `groups,email`                                                  |                                                                 |
+| `oidc-extra-scope`   | `groups,email`                              | `groups,email`                                                  |
 
 Putting the command together looks like this
 

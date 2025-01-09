@@ -2,8 +2,6 @@
 title: Show Broadband password on EE router
 ---
 
-# Show Broadband password on EE router
-
 !!! warning "I accept no responsibility"
     You're probably an adult, and probably chose to follow this with your own free will.
 

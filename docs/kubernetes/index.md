@@ -2,8 +2,6 @@
 title: Kubernetes
 ---
 
-# Kubernetes
-
 ## Quick Links
 
 * [Kubectl commands](kb/kubectl-commands.md)

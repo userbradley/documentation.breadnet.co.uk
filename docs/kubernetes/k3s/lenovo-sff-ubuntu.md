@@ -2,8 +2,6 @@
 title: "Error 1962: No operating system found"
 ---
 
-# Error 1962: No operating system found
-
 This is a post to save other people some time and pain. What follows may apply to other systems using a similar Lenovo BIOS.
 
 ## Symptoms

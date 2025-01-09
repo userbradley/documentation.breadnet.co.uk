@@ -1,8 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint/refs/heads/main/schema/markdownlint-config-schema.json",
-  "ul-indent": {
-    "indent": 4
-  },
+  "ul-indent":false,
   "line-length": false,
   "no-inline-html": {
     "allowed_elements": [
@@ -27,7 +25,17 @@
       "value",
       "yyyy-mm-dd-hh-ii-ss",
       "brand",
-      "sup"
+      "sup",
+      "atx",
+      "name",
+      "zone",
+      "destination",
+      "project-name",
+      "container",
+      "tag",
+      "KEY",
+      "br",
+      "tenant"
 
     ]
   },
@@ -39,5 +47,7 @@
   "list-indent": false,
   "heading-increment": false,
   "no-duplicate-heading": false,
-  "first-line-heading": false
+  "first-line-heading": false,
+  "heading-style":  false,
+  "ol-prefix": false,
 }
