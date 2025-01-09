@@ -2,8 +2,6 @@
 title: sshuttle using Google IAP
 ---
 
-# SSHuttle using Google IAP
-
 ## SSH to the server
 
 You will need to SSH to the server to begin with.

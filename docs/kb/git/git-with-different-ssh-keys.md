@@ -2,8 +2,6 @@
 title: Git with different SSH keys
 ---
 
-# Git with different SSH keys
-
 ## Why
 
 I volunteer for scouts (which use bitbucket) and have a day job (which use bitbucket)

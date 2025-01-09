@@ -12,9 +12,26 @@
       "li",
       "text",
       "path",
-      "g"
+      "g",
+      "country",
+      "area",
+      "dcnumber",
+      "u","user",
+      "password",
+      "url",
+      "email",
+      "nickname",
+      "description",
+      "role",
+      "field",
+      "value",
+      "yyyy-mm-dd-hh-ii-ss"
+
     ]
   },
   "code-block-style": false,
-  "fenced-code-language": false
+  "fenced-code-language": false,
+  "no-empty-links": false,
+  "no-alt-text": false,
+  "no-emphasis-as-heading": false
 }

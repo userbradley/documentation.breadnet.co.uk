@@ -2,8 +2,6 @@
 title: Forward real IP to a NGINX behind a GCP Load Balancer
 ---
 
-# Forward real IP to a NGINX behind a GCP Load Balancer
-
 ## Introduction
 
 We worked in a project that required a nginx server to be able to whitelist some public ip addresses while denying all other connections. While this can be addressed using GCP firewall rules there were some other reasons why it was necessary to be done through nginx configuration instead of using GCP rules.

@@ -2,8 +2,6 @@
 title: Generate SSH Keys
 ---
 
-# Generate SSH Keys
-
 ## Create Keys
 
 === "Current user"

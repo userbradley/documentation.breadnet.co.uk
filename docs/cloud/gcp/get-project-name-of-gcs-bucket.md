@@ -2,8 +2,6 @@
 title: Get project name of GCS bucket
 ---
 
-# Get project name of GCS bucket
-
 ## Why
 
 Sometimes when you are managing many [GCS buckets](https://cloud.google.com/storage) - You may lose the project they exist in.

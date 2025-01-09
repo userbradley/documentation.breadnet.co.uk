@@ -2,8 +2,6 @@
 title: Curl to GCR/ AR
 ---
 
-# Curl to GCR/ AR
-
 ## What
 
 This page is to help you curl to Google Hosted container registries

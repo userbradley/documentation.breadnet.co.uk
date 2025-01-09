@@ -2,8 +2,6 @@
 title: Grafeas
 ---
 
-# Grafeas
-
 Can store the metadata in a range of databases:
 
 * PostgreSQL

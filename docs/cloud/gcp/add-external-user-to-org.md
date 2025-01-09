@@ -2,8 +2,6 @@
 title: Add external user to Google Cloud Platform Organization
 ---
 
-# Add external user to Google Cloud Platform Organization
-
 ## Why
 
 Sometimes you need to add external users to your Google Cloud Platform for maintenance or external contractors.

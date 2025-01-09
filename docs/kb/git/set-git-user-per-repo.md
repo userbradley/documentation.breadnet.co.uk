@@ -2,8 +2,6 @@
 title: Set git username and email per repo
 ---
 
-# Set git username and email per repo
-
 ## Why
 
 When doing dev work for your own personal repos on your work computer, you are logged in as a work user.

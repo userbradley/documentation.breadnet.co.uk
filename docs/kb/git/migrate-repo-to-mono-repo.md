@@ -2,8 +2,6 @@
 title: Migrate repo to Mono-repo
 ---
 
-# Migrate repo to Mono-repo
-
 ## Set up your git remote
 
 You’ll need to add a new remote for the repo you want to migrate, because you can’t just mv codebase without losing all the commits. Let’s say I’ve got my React app in a repo called persephone:
