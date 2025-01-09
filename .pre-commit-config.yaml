@@ -36,3 +36,8 @@ repos:
         name: Validate Helm release-please config
         files: .github/config/.markdownlint.json
         args: ["--schemafile", "https://raw.githubusercontent.com/DavidAnson/markdownlint/refs/heads/main/schema/markdownlint-config-schema.json"]
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.17.1
+    hooks:
+      - id: markdownlint-cli2
+        args: ["--config", "./.github/config/.markdownlint.json", "--fix"]

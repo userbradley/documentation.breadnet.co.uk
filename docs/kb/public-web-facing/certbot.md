@@ -15,8 +15,8 @@ Getting a cert (no `apache`/ `ngix` config)
 certbot -d <domain> --manual --preferred-challenges dns certonly --staple-ocsp -m legal@breadnet.co.uk --agree-tos
 ```
 
-
 To get a certificate for nginx
+
 ```shell
 sudo certbot --nginx -d example.com -d www.example.com
 ```

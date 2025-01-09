@@ -27,7 +27,6 @@ title: Add review date to page
     - Ensure that the date is surrounded with `'` otherwise we get an error
     - Do not use `#` (`h1`) or it will break the formatting
 
-
 Your page should look like the below
 
 ```markdown
@@ -42,7 +41,6 @@ reviewdate: '2023-10-22'
 ## See it in actions
 
 - [Example expired page](expired-page-example.md)
-
 
 ## Troubleshooting
 

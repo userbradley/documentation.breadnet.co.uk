@@ -72,6 +72,7 @@ Check the console, perhaps the device says it's ready for adoption
 SSH to the Unifi controller **Not the access point**
 
 Open a connection to the Database
+
 ```shell
 mongo --port 27117
 ```
@@ -89,6 +90,7 @@ db.device.remove({"mac" : "<mac>"})
 ```
 
 The exit the database
+
 ```shell
 exit
 ```

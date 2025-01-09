@@ -20,6 +20,7 @@ You would think I could set up an SSH config, but the domains are both `git@bitb
 Create `ssh` keys for this
 
 Call the keys `scouts-bitbucket` or anything else
+
 ```shell
 ssh-keygen -t ed25519
 ```

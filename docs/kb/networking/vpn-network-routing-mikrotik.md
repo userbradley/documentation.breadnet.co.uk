@@ -6,7 +6,6 @@ title: VPN network routing Mikrotik
 
 This is a bit rough and ready and may contain mistakes but should point you in the right direction. This is also not the only way it could be done and may not be the best
 
-
 Add IP addresses you want to route via the VPN to an address list
 
 ```shell

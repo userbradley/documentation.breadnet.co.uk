@@ -13,7 +13,6 @@ title: nginx redirects to the first alphabetical site when not found in config
 
 This is a weird thing I saw when I was migrating sites.
 
-
 1. Move DNS from old server to new server
 2. Forget to create site
 3. Browse to URL
@@ -27,7 +26,6 @@ enabled directory.
 ## How to fix
 
 Create a site called `default`
-
 
 ```nginx
 server {
@@ -47,8 +45,6 @@ This will return a `444`
     ![http 444](https://http.cat/444)
 
 Enable the site by creating a symbolic link (`ln -s`)
-
-
 
 ## Additional Resources
 

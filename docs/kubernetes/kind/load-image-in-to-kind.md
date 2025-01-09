@@ -18,7 +18,7 @@ Example loading `alpine:1234` in to our cluster called `kind`
 kind load docker-image alpine:1234 -n kind
 ```
 
-## My image cant be found!
+## My image cant be found
 
 Do not use the tag `latest` as it will try and find the image on Docker hub.
 
@@ -41,7 +41,6 @@ and then re-load the image
 ```shell
 kind load docker-image alpine:1234 -n kind
 ```
-
 
 ## Additional Reading
 

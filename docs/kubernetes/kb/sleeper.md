@@ -69,7 +69,6 @@ Sometimes we need to run a pod on the cluster to exec in to and test things, lik
 admin exec -it pod/sleeper /bin/sh
 ```
 
-
 <!-- @todo:
 
 Create a file that houses this, and you can curl it and use envsubst

@@ -10,7 +10,6 @@ Remote data is the system in terraform that allows us to use outputs from other 
 
 It sets the dependency on external resources, so should ideally be avoided. We should really use a `data "" ""{}` block
 
-
 We have split this up in to 2 parts.
 
 Part A: Contains the infrastructure

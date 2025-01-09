@@ -49,7 +49,6 @@ gcrane cp -r userbradley/searchsploit europe-west2.pkg.dev/bradley/searchsploit/
 * [Google Documentation](https://cloud.google.com/artifact-registry/docs/docker/copy-from-gcr#gcrane-local)
 * [Github source code](https://github.com/google/go-containerregistry/tree/main/cmd/gcrane)
 
-
 ## Gcrane not working
 
 Somtimes after running the command, it returns with nothing.

@@ -20,7 +20,6 @@ You are able to push the car to start it
 
 Both set of instructions to follow assume you have turned your car on. This is the position on the key that is before the starter engages
 
-
 === "With a Friend"
 
     1. Have your friend stand at the back of the car. Agree that when you shout "Stop pushing" they are to **immediately** stop pushing
@@ -30,7 +29,6 @@ Both set of instructions to follow assume you have turned your car on. This is t
     4. Shout "Stop pushing"
     5. Release the clutch past the biting point, so it's engaged with the flywheel, and you should feel the car jolt and the RPM gauge show the engine running.
     6. Push your clutch back in. Put the car in Neutral and engage the parking break.
-
 
 === "Without a friend"
 

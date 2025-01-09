@@ -16,7 +16,6 @@ Select `Gmail`
 
 Select Default Routing
 
-
 Add the full email address you want to have emails sent to, so if our domain was `breadnet.co.uk` and we wanted to receive at `test123`, we would put `test123@breadnet.co.uk`
 
 ![](../../assets/k74fQlTzbNTCoVmD-image-1642771208110.png)

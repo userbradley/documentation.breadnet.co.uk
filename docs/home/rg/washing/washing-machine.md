@@ -28,10 +28,7 @@ The washing machine has `9` buttons
 | Temperature selector | Second _knob_ from the left                         | Used to set water temperature for a wash                                              |
 | Drying mode          | Third _knob_ from the left                          | Used to set the temperature the machine should dry clothes at - See [Drying](#drying) |
 
-
-
 ### Status lights
-
 
 #### Time left on a wash
 
@@ -39,11 +36,9 @@ This function is useless, as the `3h` light will always be lit up.
 
 To work out when the machine is done, you can wait until the machine beeps, and you hear two `Tick` noises.
 
-
 #### Hour lights
 
 When using the delay mode, the lights will light up in order of `3h` to `9h`
-
 
 ### Setting a delay
 
@@ -61,7 +56,6 @@ Pressing the button each time will increment it, setting the time from `now`
 ??? Note "Foreign washing machines"
     As this machine is made for the domestic market, it's internal clock will be set to `50hz`, however the grid fluctuates,
     so setting 3 hours can be within +/- 25 minutes
-
 
 ### Generic wash
 
@@ -103,9 +97,7 @@ Depending on the amount of clothing in the drum, put between 2-3 caps worth of d
 
 Close the door and press the :play_pause: button
 
-
 ### Soiled materials wash
-
 
 Please select below how soiled the materials are
 
@@ -113,7 +105,6 @@ Please select below how soiled the materials are
 |----------------|----------------------------------------------------------------------------------------------------|
 | Highly soiled  | For items that have large amounts of mud or biological material on them (eg: Blood or fecal matter |
 | Lightly soiled | Items that have light dirt on them (eg: Dust, spilled juices, or offensive smells)                 |
-
 
 === "Highly soiled"
 
@@ -132,7 +123,6 @@ Please select below how soiled the materials are
     Depending on the amount of clothing in the drum, put between 3-5 caps worth of detergent in the washing machines drum **directly**
 
     Close the door and press the :play_pause: button
-
 
 === "Lightly soiled"
 
@@ -154,8 +144,6 @@ Please select below how soiled the materials are
 
     Close the door and press the :play_pause: button
 
-
-
 ### Spin
 
 Sometimes if we are washing large loads of clothing the machine may not spin enough to remove most of the water content
@@ -175,7 +163,6 @@ You can set the machine to either _add a drying cycle_ to the end of a wash, or 
 !!! warning "About the drying mode"
     It has the potential to shrink clothing and cause increased electricity usage.
 
-
 #### Dry as part of a wash
 
 1. Select your washing mode as usual
@@ -189,7 +176,6 @@ This will add a drying cycle to the end of the wash
 2. Refer to [Photo](#photo) for different modes
 3. Select the temperature that you want to dry to be done at using the far right selector knob
 4. Press start
-
 
 ## Troubleshooting
 

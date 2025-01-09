@@ -24,7 +24,6 @@ resource "google_iap_brand" "thing" {
 terraform import google_iap_brand.thing <name from previous command>
 ```
 
-
 ## Resources
 
 [Issue 6704](https://github.com/hashicorp/terraform-provider-google/issues/6074#issuecomment-635495412)

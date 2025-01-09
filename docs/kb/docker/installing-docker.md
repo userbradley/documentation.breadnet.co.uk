@@ -45,7 +45,6 @@ Finally, install Docker:
 
     sudo apt install docker-ce
 
-
 Docker should now be installed, the daemon started, and the process enabled to start on boot. Check that it’s running:
 
     sudo systemctl status docker

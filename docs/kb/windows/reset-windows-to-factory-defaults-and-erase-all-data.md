@@ -15,7 +15,6 @@ When passing a laptop to a new person, selling or donating you want to remove al
 3. Right-click on the black icon and the words
 4. Click `Run as Administrator`
 
-
 ### Open the reset dialogue
 
 In the command prompt window (Black box)
@@ -53,7 +52,6 @@ You will see a final window that says `Ready to Reset this PC`
 
 !!! warning "Resetting will wipe everything"
     This is your last chance to back out, and stop. Continuing will remove all data from the device
-
 
 Click `Reset`
 

@@ -37,20 +37,17 @@ gcloud auth application-default login
 terraform init
 ```
 
-
 ### Init and reconfigure
 
 ```shell
 terraform init -reconfigure
 ```
 
-
 ### Remove terraform artifacts
 
 !!! warning
 
     Only do this if nothing has worked so far!
-
 
 ```shell
 rm -rvf .terraform*

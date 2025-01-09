@@ -16,8 +16,6 @@ in order to get the cheapest
 * Azure key vault
 * Oracle Vault
 
-
-
 ## Cost comparison
 
 !!! note "All costs are in euros"

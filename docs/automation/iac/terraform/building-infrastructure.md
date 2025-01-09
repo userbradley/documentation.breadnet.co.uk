@@ -161,7 +161,7 @@ Salt Lake City, Utah, USA
 
 Next we will be creating a network in the us-central1-c zone called `google_compute_network.vpc_network` and giving it a name of `terraform-network`
 
-For this, we will define a resource. 
+For this, we will define a resource.
 
     resource "google_compute_network" "vpc_network"{
                                               name = "terraform-network"
@@ -177,13 +177,11 @@ Depending on the need, you can assign the vm's a static ip by defining another r
 
 As always, when creating something in terraform, we need to define it as a resource. In this case we will use the `google_compute_instance.vm_instance` which tells google, bro, spin me up a vm
 
-Just like everything else, we need to give it a name. This not only helps with admin tasks, but we can call it by name for later tasks! 
+Just like everything else, we need to give it a name. This not only helps with admin tasks, but we can call it by name for later tasks!
 
 Then we need to pick what machine type to use! I am going to be using these [found here](https://cloud.google.com/compute/docs/machine-types#sharedcore)
 
-We can add tags. This is useful for sorting machines by production, pre deployment and dev. 
-
-
+We can add tags. This is useful for sorting machines by production, pre deployment and dev.
 
 Next thing we will need to do is add the boot disk. We can do this by creating a `boot_disk`
 
@@ -205,8 +203,6 @@ Finally, we add the IP address and allow nat:
                 nat_ip = google_compute_address.vm_static_ip.address
             }
         }
-
-
 
 `provisioner` is a tool we can use to get details of the vm we created. Here we will get the public ip address and print it to a file in the folder we are in
 

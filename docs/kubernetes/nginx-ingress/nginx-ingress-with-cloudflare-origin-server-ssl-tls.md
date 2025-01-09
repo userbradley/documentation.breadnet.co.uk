@@ -58,7 +58,6 @@ Under the top box, there is an option called `Full (strict)`, enable this
 
 ![](../../assets/cf_strict-ssl.png)
 
-
 Download the [Cloudflare Origin CA root certificate](https://developers.cloudflare.com/ssl/origin-configuration/origin-ca/#cloudflare-origin-ca-root-certificate)
 
 ```shell
@@ -86,6 +85,7 @@ kubectl create secret tls cloudflare-origin-server --key cf.key --cert cf.crt
 Configure the below lines for your ingress.
 
 Make sure to chang `<namespace>` to the namespace where the secret is created
+
 ``` yaml hl_lines="5-8 26"
 apiVersion: networking.k8s.io/v1
 kind: Ingress

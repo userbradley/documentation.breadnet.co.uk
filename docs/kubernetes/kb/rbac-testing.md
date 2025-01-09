@@ -45,19 +45,19 @@ kubectl auth can-i
 
     Options:
         -A, --all-namespaces=false:
-    	If true, check the specified action in all namespaces.
+     If true, check the specified action in all namespaces.
 
         --list=false:
-    	If true, prints all allowed actions.
+     If true, prints all allowed actions.
 
         --no-headers=false:
-    	If true, prints allowed actions without headers
+     If true, prints allowed actions without headers
 
         -q, --quiet=false:
-    	If true, suppress output and just return the exit code.
+     If true, suppress output and just return the exit code.
 
         --subresource='':
-    	SubResource such as pod/log or deployment/scale
+     SubResource such as pod/log or deployment/scale
 
     Usage:
       kubectl auth can-i VERB [TYPE | TYPE/NAME | NONRESOURCEURL] [options]

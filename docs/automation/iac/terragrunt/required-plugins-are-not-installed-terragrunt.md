@@ -6,7 +6,6 @@ title: Required plugins are not installed - Terragrunt
 
 Sometimes after running a `terragurnt run-all init` and `terragrunt run-all plan` then plan will fail with the below
 
-
 ```text
 INFO[0007] ╷
 │ Error: Required plugins are not installed
@@ -22,7 +21,6 @@ INFO[0007] ╷
 │   terraform init
 ╵
 ```
-
 
 ## How to fix it
 

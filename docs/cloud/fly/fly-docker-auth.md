@@ -52,7 +52,6 @@ Create an Actions secret called `FLY_API_TOKEN` and paste the token in.
 
 #### Codefresh
 
-
 Navigate to the [Personal Access Tokens page](https://fly.io/user/personal_access_tokens)
 
 Create a token called `codefresh-registry`

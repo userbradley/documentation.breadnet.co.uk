@@ -13,7 +13,6 @@ Laundry Room
 
 ![](../../../assets/IMG_9261.jpg)
 
-
 ## Problems you may have
 
 ### No power

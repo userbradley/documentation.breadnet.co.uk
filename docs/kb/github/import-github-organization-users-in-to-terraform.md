@@ -29,7 +29,6 @@ locals {
 
 And in the `members.tf` file
 
-
 ```terraform
 resource "github_membership" "<org name>" {
   for_each = local.members
@@ -41,6 +40,7 @@ resource "github_membership" "<org name>" {
 ### List the users in the org
 
 Running the below with the GitHub CLI will give you a list of users in the org
+
 ```shell
  gh api \
   -H "Accept: application/vnd.github+json" \

@@ -8,7 +8,6 @@ Edit the file under `/etc/netplan/`
 
 Change the File that does not have `wifi` in the name as below
 
-
 ```yaml
 network:
   ethernets:
@@ -32,7 +31,6 @@ You have 2 options here
     ``` shell
     netplan try
     ```
-
 
 === "Apply them right away"
 

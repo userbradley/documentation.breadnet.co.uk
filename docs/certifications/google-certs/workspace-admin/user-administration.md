@@ -3,16 +3,16 @@ title: Gsuit - User administration
 reviewdate: '2022-01-01'
 ---
 
-Global info can be set under `Account settings` but this has changed from \`Company profile\` 
+Global info can be set under `Account settings` but this has changed from \`Company profile\`
 
 ##### Users
 
 Creating users can be done using:
 
-*   CSV upload
-*   Click and point
-*   SDK API
-*   Google cloud directory sync (GCDS)
+* CSV upload
+* Click and point
+* SDK API
+* Google cloud directory sync (GCDS)
 
 For the CSV upload it can take up to 24 hours for the users to appear as being searchable
 
@@ -30,7 +30,7 @@ Configuration files are stored as XML
 
 You need to download software on the microsoft server
 
-Under google domain config, you add the primary domain name, then select to replace users emails and domains 
+Under google domain config, you add the primary domain name, then select to replace users emails and domains
 
 If it fails:
 
@@ -40,17 +40,17 @@ No spaces
 
 Computer's time zone is correct
 
-You're able to limit users by adding an exclusion rule. 
+You're able to limit users by adding an exclusion rule.
 
-Ldap is the single source of truth so exclude admin 
+Ldap is the single source of truth so exclude admin
 
 Chose what to sync. E
 
 Ensure that you select 'Don't suspend or delete google domain admins not found in ldap'
 
-You can now synch passwords with AD, but can use Gsuit password synch 
+You can now synch passwords with AD, but can use Gsuit password synch
 
-You can set up a search rule, but with AD you can select to use defaults. 
+You can set up a search rule, but with AD you can select to use defaults.
 
 If your delete and suspend limits exceed you will get an error
 
@@ -64,10 +64,10 @@ If your delete and suspend limits exceed you will get an error
 
 There are 2 types of groups:
 
-*   Admin console groups : Groups used from collaboration, communiation and administratiom
-    *   Only managed by admins
-*   Groups for business : Groups for communication and collab (managed from groups.google.com)
-    *   Managed by users and admins
+* Admin console groups : Groups used from collaboration, communiation and administratiom
+    * Only managed by admins
+* Groups for business : Groups for communication and collab (managed from groups.google.com)
+    * Managed by users and admins
 
 For a user to be able to email a group, you need to have the users who will want to email people set as a maanger:
 
@@ -75,7 +75,7 @@ For a user to be able to email a group, you need to have the users who will want
 
 \---
 
-##### Licensing 
+##### Licensing
 
 You must assign a license to a use, however if you use gsuit enterprise it's automatic
 
@@ -83,7 +83,7 @@ Suspended users will not be able to log in and will not get emails or calendar i
 
 \---
 
-##### Organisational units 
+##### Organisational units
 
 You are able to assign users to an OU much like how you would in Active Directiory
 
@@ -97,7 +97,7 @@ Directories allow adding custom fields to users as well as a 'virtual card' abou
 
 This can also be managed per OU
 
-You can populate users profiles as well as create custom directories 
+You can populate users profiles as well as create custom directories
 
 You can add external vendors as well
 
@@ -105,9 +105,9 @@ This is used for users cards to help with booking meeting rooms
 
 You can populate info through:
 
-*   Cloud sync
-*   Google user management
-*   Admin SDK
+* Cloud sync
+* Google user management
+* Admin SDK
 
 To set different access to directories you can use OU's:
 
@@ -115,16 +115,16 @@ You can contain custom directories, create a Google group, then add the group to
 
 [![image-1605010726509.png](../../../assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)](../../../assets/rG2Sxc83fg9oyJVi-image-1605010726509.png)
 
-Enable direcotry editing by going to Directory > directory settings 
+Enable direcotry editing by going to Directory > directory settings
 
-Here you can enable things that people are able to edit. 
+Here you can enable things that people are able to edit.
 
 As usual, you can assign this based on an OU system
 [![](../../../assets/GJIc7rJptYTmXzfh-image-1606735635793.png)](../../../assets/GJIc7rJptYTmXzfh-image-1606735635793.png)
 
 You should add work location so GCal can see where they are and suggest meeting rooms for users.
 
-If you add in the employee ID then you can use this as a login verification 
+If you add in the employee ID then you can use this as a login verification
 
 If you are creating a user that should not be able to see the whole directory, you will need to add them to an OU (create one if not already done) then a group, then your custom directory.
 
@@ -136,7 +136,7 @@ Create the users
 
 Add the users to the group as a manager
 
-Go to the OU under Directory Settings > visibility settings 
+Go to the OU under Directory Settings > visibility settings
 
 Set it as \`Users in a custom directory\` then create new and name it then add a group to it:
 
@@ -170,13 +170,13 @@ Help desk admin can reset passwords for the users
 
 Things to note:
 
-1.  The more administrators you have, the more it affects your account recovery options
-2.  Ensure you trust the users you are giving access to admin and ensure 2fa is enforced
+1. The more administrators you have, the more it affects your account recovery options
+2. Ensure you trust the users you are giving access to admin and ensure 2fa is enforced
 
 Like previously mentioned you are able to create custom roles. To do so, go to the admin page then users then roles, then create new role:
 
 [![image-1606741677022.png](../../../assets/goQwxsbjB33Z1ZN1-image-1606741677022.png)](../../../assets/goQwxsbjB33Z1ZN1-image-1606741677022.png)
 
-You from here can select what roles to assign to the role. 
+You from here can select what roles to assign to the role.
 
 You want to create more roles with fewer privileges to assign to a user than one fat rule.

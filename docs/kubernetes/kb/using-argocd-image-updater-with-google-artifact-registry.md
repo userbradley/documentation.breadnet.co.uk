@@ -27,7 +27,6 @@ This will run the command `gcloud auth print-access-token` first (as it's in par
 
 Optionally, check what it looks like
 
-
 ```
 echo $auth
 ```

@@ -25,7 +25,6 @@ touch cloudflare.conf
 
 ## Edit the cloudflare file
 
-
 === "Nano"
 
     ```shell
@@ -37,8 +36,6 @@ touch cloudflare.conf
     ```shell
     vi cloudflare.conf
     ```
-
-
 
 In the window that opened, paste in the below
 
@@ -116,7 +113,6 @@ We then need to tell nginx to **include** another config file with the include c
 ```nginx
 include /etc/nginx/cloudflare.conf;
 ```
-
 
 So now our file looks like the below
 

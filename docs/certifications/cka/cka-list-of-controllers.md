@@ -29,7 +29,7 @@ title: List of Controllers in Kubernetes
 * nodelifecycle
 * persistentvolume-binder
 * persistentvolume-expander
-*  podgc
+* podgc
 * pv-protection
 * pvc-protection
 * replicaset

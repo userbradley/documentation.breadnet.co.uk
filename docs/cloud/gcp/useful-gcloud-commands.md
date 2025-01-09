@@ -58,7 +58,6 @@ gcloud services list --enabled --project=<>
     gcloud services list --format=json  | jq '.[].config.name' | tr -d '"'
     ```
 
-
 ## Additional Reading
 
 * [Gcloud cheat sheet](https://gist.github.com/pydevops/cffbd3c694d599c6ca18342d3625af97)

@@ -20,4 +20,3 @@ Edit your `.zshrc` file and put the below in at the top
 autoload -Uz compinit
 compinit
 ```
-

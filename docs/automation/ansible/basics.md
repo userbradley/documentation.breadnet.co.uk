@@ -39,7 +39,7 @@ Next we will create the hosts file, this is what ansible will reference later wh
 
 Ansible is a bitch and only uses ssh with keys. follow this guide [here](http://bookstack.bread/books/kb-articles/page/ssh-keys "SSH Keys") on how to move your key to the server you want to work on
 
-to ping a server and check that asnible can see it: `ansible <host> -m ping` 
+to ping a server and check that asnible can see it: `ansible <host> -m ping`
 
 Creating the ansible job is fun. Here we will install nginx
 

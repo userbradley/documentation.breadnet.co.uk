@@ -26,9 +26,7 @@ See [Consumer unit](../cu/consumer-unit.md), and turn off the switch labeled `Im
 !!! danger
     Ensure that the power is switched off from the mains before opening
 
-
 Remove the Screw on the right hand side using a Phillips Screwdriver
-
 
 <img alt="Cover" height="200" src="/assets/heater_cover.jpeg" width="200"/>
 
@@ -53,7 +51,6 @@ Once the cover is open, locate the Thermostat.
 
     <img alt="img.png" height="120" src="/assets/heater_thermo_control.png" width="120"/>
 
-
 === "Turn the temperature down"
 
     Turn the screw towards the **left**
@@ -63,7 +60,6 @@ Once the cover is open, locate the Thermostat.
 === "Turn the temperature up"
 
     Turn the screw towards the **right**
-
 
 ## Additional Information
 

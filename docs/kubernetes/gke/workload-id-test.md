@@ -12,7 +12,6 @@ Sometimes you need to run a simple pod on the cluster to check things, call a se
 
 You will need to have the `compute metadata api` service running in the cluster
 
-
 ## How
 
 === "KSA"

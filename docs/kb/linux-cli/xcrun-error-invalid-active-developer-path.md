@@ -26,11 +26,9 @@ Annoyingly the installing box does not fade to the background, and stays in focu
 
 ![](../../assets/xcode.png)
 
-
 ### Still not working
 
 Failing that you can also try the below
-
 
 ```shell
 sudo xcode-select --reset

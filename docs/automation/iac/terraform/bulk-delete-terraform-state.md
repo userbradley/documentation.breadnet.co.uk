@@ -15,7 +15,6 @@ to remove alot of things from the original state.
 
 ## How
 
-
 ### View the entries in the state
 
 === "Terragrunt"

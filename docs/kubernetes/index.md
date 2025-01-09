@@ -14,8 +14,6 @@ title: Kubernetes
 * [GKE](gke/index.md)
 * [k3s](k3s/index.md)
 
-
-
 Kubernetes has been awarded its own section as it encompasses the below:
 
 * Cloud Hosted Kubernetes

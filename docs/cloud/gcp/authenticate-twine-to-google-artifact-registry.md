@@ -93,7 +93,6 @@ global]
 extra-index-url = https://europe-west2-python.pkg.dev/<project>/<repo>/simple/
 ```
 
-
 ### Gcloud auth for good measures
 
 ```shell

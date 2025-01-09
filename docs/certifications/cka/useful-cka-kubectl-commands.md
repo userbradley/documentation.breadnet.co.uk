@@ -21,6 +21,7 @@ kubectl run nginx --image nginx
 ## Create Pod manifest file
 
 The below commands creates the manifest file, but instead of applying it, prints it to `stdout`
+
 ```shell
 kubectl run nginx --image nginx --dry-run=client -o yaml
 ```

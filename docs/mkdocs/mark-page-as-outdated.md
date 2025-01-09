@@ -30,7 +30,6 @@ title: Add review date to page
     - Ensure that the date is surrounded with `'` otherwise we get an error
     - Do not use `#` (`h1`) or it will break the formatting
 
-
 Your page should look like the below
 
 ```markdown

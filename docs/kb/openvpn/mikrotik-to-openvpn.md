@@ -37,7 +37,6 @@ certificate import file-name=client.key
 ppp profile add name=OVPN-client change-tcp-mss=yes only-one=yes use-encryption=required use-mpls=no
 ```
 
-
 ![img_3.png](../../assets/openvpn-mikrotik-setup.png)
 
-http://missinglink.github.io/mikrotik-openvpn-client/
+<http://missinglink.github.io/mikrotik-openvpn-client/>

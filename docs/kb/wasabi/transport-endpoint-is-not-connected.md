@@ -14,7 +14,7 @@ ls: cannot access 's4': Transport endpoint is not connected
 mkdir  s3  s4
 ```
 
-## To solve this:
+## To solve this
 
 ```shell
 fusermount -uz <name>

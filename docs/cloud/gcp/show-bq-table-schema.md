@@ -24,11 +24,11 @@ Make a note of the `Table ID` at the top
 
 ### Get the Schema
 
-
 !!! note "Project Name"
     Ensure that the project name has a colon (`:`) after it.
 
     You can also omit the project name if you've set your global projecect (See [Set your Project first](#set-your-project-first))
+
 ```shell
 bq show --schema <project name>:<dataset ID>.<table name> | jq
 ```

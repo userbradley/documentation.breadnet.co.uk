@@ -23,7 +23,6 @@ Hopefully this should take no longer than a year to complete, balancing it along
 * [Practice questions](cka-practice-questions.md)
 * [List of controllers](cka-list-of-controllers.md)
 
-
 ## Useful Resources
 
 * [github/kodekloudhub](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)

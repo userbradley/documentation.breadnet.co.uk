@@ -27,7 +27,6 @@ Once you have selected the Domain, on the left, click the **Hamburger menu** and
 !!! question "I cant see IAM at the top"
     This is because your console may be different. Use the search bar and search for `IAM`
 
-
 ### Granting external user access
 
 Click on the **Grant access** button

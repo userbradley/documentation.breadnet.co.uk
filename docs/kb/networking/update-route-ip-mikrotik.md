@@ -33,7 +33,6 @@ You will have no internet
 
     Click `Connect`
 
-
 === "Website"
 
     Navigate to the Router's IP address

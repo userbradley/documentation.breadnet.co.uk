@@ -11,7 +11,6 @@ To clone a repo, go to the webpage and click the `clone or download` button and 
 
 ![](/assets/tjxlFRVsXUgsDatm-image-1588972001839.png)
 
-
 Once you have the string on your clipboard open a terminal window and browse to a location where your code will now live. I use `~\github`
 
 Run:

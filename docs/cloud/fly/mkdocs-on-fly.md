@@ -93,8 +93,7 @@ Now we need to test if this works
     podman build docs:1 && podman run -p 8080:80 docs:1
     ```
 
-
-Browse to http://localhost:8080 and you should see your site
+Browse to <http://localhost:8080> and you should see your site
 
 ### Fly.io part
 
@@ -107,6 +106,7 @@ fly app create <name>
 ```
 
 We then need to save the config file to use later in the GitHub actions stage
+
 ```shell
 fly config save -a <name>
 ```
@@ -197,7 +197,6 @@ touch .github/workflows/build-site.yaml
 ```
 
 In this file, we need to put the below
-
 
 ```yaml
 name: Build Site

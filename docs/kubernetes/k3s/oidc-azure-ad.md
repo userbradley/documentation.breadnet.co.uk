@@ -35,15 +35,13 @@ Any time you have to change a value, there will either be:
 * `<your tenant ID here>`
 * `CHANGEME`
 
-
 ## Configure Azure
 
 !!! note "List of things to configure"
-    * Entra App Registration
+    *Entra App Registration
     * Redirect URL's
-    * Client Secret
+    *Client Secret
     * Token Configuration
-
 
 ### Create App Registration
 
@@ -106,7 +104,6 @@ Should look like the below
 
 ![Entra Optional Claims](../../assets/k3s-entra-optional-claim.png)
 
-
 Next is to configure the `groups` claim
 
 Click **Add groups claim**
@@ -118,7 +115,6 @@ Select **ID** tab, then click `DNSDomain\sAMAccountName` and then click **Save**
 Should look like the below
 
 ![entra group claims](../../assets/k3s-entra-group-claims.png)
-
 
 ## Make a note of important details
 
@@ -138,7 +134,6 @@ This also segways on to an important CLI tool we need to install
 * @int128/kubelogin
 
 This can be installed with the below commands
-
 
 === "Brew"
     ```shell
@@ -163,7 +158,6 @@ Now prepare the command:
 | `oidc-extra-scope`   | `groups,email`                              | `groups,email`                                                  |                                                                 |
 
 Putting the command together looks like this
-
 
 ```shell
 kubectl oidc-login setup --oidc-issuer-url=https://sts.windows.net/<your tenant id>/ --oidc-client-id=<your application client id> --oidc-client-secret="<your application secret>" --oidc-extra-scope groups,email
@@ -312,7 +306,6 @@ So far, we have **authentication**, the cluster knows **who you are**, but doesn
 Kubernetes doesn't have a `deny` policy, by default everything is denied unless otherwise **explicitly** granted. If you're wondering,
 yes this is a massive pain sometimes.
 
-
 ### Create a Group in Azure
 
 I am going to make an assumption you know how to make an Azure group.
@@ -320,7 +313,6 @@ I am going to make an assumption you know how to make an Azure group.
 Title the group `k3s-admins`
 
 Add your current user, and a collection of other users you want to have Cluster admin role
-
 
 Copy the UUID (Object ID)
 
@@ -353,7 +345,6 @@ rm ~/.kube/cache/oidc-login/*
 ```
 
 Now when you run `kubectl get pods` you should be authenticated
-
 
 ## Issues
 

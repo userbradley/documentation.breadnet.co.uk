@@ -5,7 +5,6 @@ reviewdate: '2022-01-01'
 
 ## Permissions
 
-
 | Role Name    | Permissions                                                                                                                                                                                               |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | roles/viewer | Permissions for read-only actions that do not affect state, such as viewing (but not modifying) existing resources or data.                                                                               |
@@ -14,13 +13,11 @@ reviewdate: '2022-01-01'
 
 ![](https://cdn.qwiklabs.com/BErmNT8ZIzd5yqxO0lEJj8lAlKT3jKC%2BtI%2Byj3OSKDA%3D)
 
-
 Regions (Central US) are physical countries.
 
 Zones are the data centre (Physical) like us-central1-a
 
 follows country-zone-count
-
 
 ## gcloud
 
@@ -31,6 +28,7 @@ gcloud auth list
 ```
 
 ### List ProjectID
+
 ```bash
 gloud config list project
 ```

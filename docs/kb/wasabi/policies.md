@@ -40,7 +40,6 @@ title: Policies
 }
 ```
 
-
 ## Allow access to bucket policy
 
 ```json

@@ -6,7 +6,6 @@ title: Curl to IAP
 
 You will need to have a service account already, and the ability to impersonate that account.
 
-
 Your account will need to have the permission `Service Account Token Creator`
 
 ```bash

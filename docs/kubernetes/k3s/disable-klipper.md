@@ -16,7 +16,6 @@ curl -fL https://get.k3s.io | sh -s - --disable servicelb
 
 If you forget to disable the klipper load balancer, follow the below steps on an already running cluster
 
-
 edit `/etc/systemd/system/k3s.service` so it looks like the below
 
 ```shell

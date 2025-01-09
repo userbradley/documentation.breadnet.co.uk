@@ -27,7 +27,6 @@ This works best with GitHub Actions
 
 Creat a new workflow called `link-checker-pr.yaml` under `.github/workflows/`
 
-
 ```yaml
 name: Broken Link Checker PR
 on:

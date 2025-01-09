@@ -26,7 +26,6 @@ Using the ID of the container we can copy from inside the container to the host
     docker cp db129cf0407d:/home/app/podinfo .
     ```
 
-
 ## From host to container
 
 === "Describe"

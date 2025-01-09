@@ -13,7 +13,6 @@ hide:
 This site holds all the documentation I started writing for my home lab [breadNET](https://breadnet.co.uk/?mtm_campaign=documentation&mtm_kwd=mainpage) and then
 branched out to all IT documentation I wrote
 
-
 This site gets updated [on average, once a day](https://github.com/userbradley/documentation.breadnet.co.uk/graphs/commit-activity)
 
 This site used to be hosted on [Digital Ocean](https://m.do.co/c/77be3c3aa96c) and using Bookstack, but found the greener grass of mkdocs. Simply write markdown

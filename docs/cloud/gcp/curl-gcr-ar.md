@@ -26,7 +26,6 @@ This page is to help you curl to Google Hosted container registries
       "https://eu.gcr.io/v2/<project name>/<repo name>/tags/list" | jq ".tags"
     ```
 
-
 ## What to read next
 
 * [Curl to IAP](curl-to-iap.md)

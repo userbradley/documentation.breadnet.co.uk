@@ -66,7 +66,6 @@ Select `Log Sources` and select vector
 
 ![img.png](../../../assets/chronicle-select-vector.png)
 
-
 Your logs will now show up
 
 ![img.png](../../../assets/chronicle-vector-logs-show-up.png)

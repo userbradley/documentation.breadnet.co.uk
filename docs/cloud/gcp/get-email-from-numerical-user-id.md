@@ -30,14 +30,12 @@ On the right hand side will be a `Try this method` Tab
 
 ![Google API try this method](../../assets/google-api-try-this-method.png)
 
-
 Below details what to put in each field
 
 | Field name     | Value                                              | Example                                            |
 |----------------|----------------------------------------------------|----------------------------------------------------|
 | `resourceName` | `people/<numerical ID`                             | `people/114108529276530960947`                     |
 | `personFields` | `emailAddresses,externalIds,locations,memberships` | `emailAddresses,externalIds,locations,memberships` |
-
 
 Note: The `resourceName` field will continue to have a red banner next to it
 
@@ -99,7 +97,7 @@ The full code block is like below
 }
 ```
 
-1.  Email address of the user in question
+1. Email address of the user in question
 
 ## Possible Errors
 

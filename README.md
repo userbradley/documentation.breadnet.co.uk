@@ -1,4 +1,5 @@
 # [breadNET Documentation](https://documentation.breadnet.co.uk)
+
 [![Dev](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml) [![Production](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml)
 [![wakatime](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg)](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614)
 
@@ -21,12 +22,10 @@ In fact, [if you can breach the website and prove a reverse shell I will pay you
 
 Mkdocs uses markdown files making it easy to use, as most engineers know how to write markdown
 
-
 ## Why Migrate
 
 I used to run bookstack, but since moving I found it was becoming annoying to run and maintain the server. MKdocs runs as a docker
 container on anywhere that runs docker, or allows static content to be hosted.
-
 
 ## How to Contribute
 
@@ -67,6 +66,7 @@ This will install the pre-commit hooks on this repo, as well as run pre-commit o
 pip3 install -r requirments.txt
 brew install cairo freetype libffi libjpeg libpng zlib pngquant
 ```
+
 ## CI
 
 This repo uses a fair bit of CI for a simple site
@@ -95,7 +95,6 @@ This action runs only on commits to `main` (eg: through a Pull request)
 
 The action will deploy the site to my Fly account under the `documentation.breadnet.co.uk` domain
 
-
 ## Uptime
 
 [Status Page](https://status.breadinfra.net/endpoints/public-sites_production-documentation)
@@ -109,8 +108,6 @@ just suffer.
 
 From the migration, the URl changed.  `bookstack.breadnet.co.uk` will redirect to `documentation.breadnet.co.uk`, and all
 pages that were originally on `bookstack` should now redirect to a page on mkdocs. see [redirect.conf](redirect.conf) for pages
-
-
 
 # Branching Strategy
 

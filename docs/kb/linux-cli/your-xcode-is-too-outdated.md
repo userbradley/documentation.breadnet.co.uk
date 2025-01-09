@@ -2,14 +2,13 @@
 title: Your Xcode is too outdated.
 ---
 
-# Your Xcode is too outdated.
+# Your Xcode is too outdated
 
 ## Why
 
 This is an error that comes up after a major upgrade
 
 You will see the below error
-
 
 ```text
 Error: Your Xcode (14.0.1) is too outdated.
@@ -41,7 +40,6 @@ You should download the Command Line Tools for Xcode 14.1.
 2. Go to `Software update`
 3. Check for Updates
 4. Install Updates
-
 
 ### Command Line fix
 
@@ -95,7 +93,6 @@ Upgrade it with:
 ```shell
 softwareupdate --install --all
 ```
-
 
 ## Still not working
 

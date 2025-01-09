@@ -36,7 +36,6 @@ v6      2a09:8280:1::a:9a97     public  global  2022-11-14T11:05:35Z
 
 ### Release IP's
 
-
 ```shell
 fly ips release 149.248.195.56 -a my-app
 ```

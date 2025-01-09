@@ -73,7 +73,6 @@ mc admin policy set myminio <policyname> user=<username>
 }
 ```
 
-
 ## Policy to allow access to a folder in a bucket
 
 ```json

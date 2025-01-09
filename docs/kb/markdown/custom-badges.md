@@ -44,7 +44,6 @@ Example
 ![deutschebank](https://img.shields.io/badge/deutschebank-%230018A8.svg?style=for-the-badge&logo=deutschebank&logoColor=#0018A8)
 ```
 
-
 ## Examples
 
 === "Pets at Home"
@@ -64,7 +63,6 @@ Example
         ```markdown
         ![PAH](https://img.shields.io/badge/pets%20at%20home-%234BA840?style=for-the-badge&logo=petsathome&logoColor=white)
         ```
-
 
 === "American Express"
 

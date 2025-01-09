@@ -5,17 +5,17 @@ reviewdate: '2022-01-01'
 
 #### What are containers?
 
-completely isolated environment. They can have their own mounts, networks and applications. 
-Docker runs off of lxc containers and provides a high level management interface. 
-Docker containers share the kernal. They can run anything on top of it (even an os) but it will have the same kernel version. 
+completely isolated environment. They can have their own mounts, networks and applications.
+Docker runs off of lxc containers and provides a high level management interface.
+Docker containers share the kernal. They can run anything on top of it (even an os) but it will have the same kernel version.
 
 #### Why do you need it?
 
-Allows for running services that require different versions of prereqs. Allows for cross os compatibility. 
+Allows for running services that require different versions of prereqs. Allows for cross os compatibility.
 
-Alot of companies and programs have got their software published to [docker hub](https://bookstack.breadnet.co.uk/hub.docker.com/) 
+Alot of companies and programs have got their software published to [docker hub](https://bookstack.breadnet.co.uk/hub.docker.com/)
 
-#### Install docker:
+#### Install docker
 
     $ curl -fsSL https://get.docker.com -o get-docker.sh
     $ sudo sh get-docker.sh
@@ -24,7 +24,7 @@ Alot of companies and programs have got their software published to [docker hub]
 
 Done!
 
-You can check the docker verson using 
+You can check the docker verson using
 `sudo docker version`
 
 Nhow we can see if it works by running:
@@ -53,7 +53,6 @@ which looks like this!
             \    \        __/
               \____\______/
 
-
 now we know docker is working
 
 #### Run docker containers
@@ -68,11 +67,11 @@ To see all containers, use -a `docker ps -a`
 
 Stopping a container
 
-`docker stop <name or id>` 
+`docker stop <name or id>`
 
 to remote a docker, `docker rm <name or id>`
 
-To view a list of images we have on the server, run `docker images` 
+To view a list of images we have on the server, run `docker images`
 
 to remove images, use `docker rmi -f <id>`
 

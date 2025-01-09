@@ -38,5 +38,4 @@ brew install kompose
     kompose --file docker-voting.yml convert
     ```
 
-
 You will then get a collection of `.yaml` files in the current directory

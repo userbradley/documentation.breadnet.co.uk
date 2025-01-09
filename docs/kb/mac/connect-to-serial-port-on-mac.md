@@ -31,7 +31,6 @@ Make a note of the fill path of that device. We will need this later
 
 Here's where you get to chose your own adventure
 
-
 ## Specific Setup
 
 === "Minicom"
@@ -97,7 +96,6 @@ Here's where you get to chose your own adventure
     ```
 
     where `9600` is the Baud rate. See the [Useful Baud rate](#useful-baud-rates) section on some vendor specifics
-
 
 ## Usefull Baud rates
 

@@ -13,7 +13,7 @@ This is much like AD where permissions and status is inherited from the top leve
 
 To enable/ disable a service you select the OU and then disable it there
 
-If only one user requires access to a service, you should add them to a group. 
+If only one user requires access to a service, you should add them to a group.
 
 You will want to create that group to have access:restricted then under the service you will need to search for it:
 
@@ -33,12 +33,12 @@ Ensure you use a naming practice like ag.<name> for groups (where ag is access g
 
 Google has 2 release tracks you can subscribe to:
 
-1.  Rapid release
-    1.  This is the track where releases are rolled out as soon as they are released to the public. These products have gone through the same QC as other apps but your users will see them at the same time you do.
-2.  Scheduled release
-    1.  (Recommended and enabled by default) this gives you extra time to train your users on things that have been released. Releases are made only on Tuesdays at least a week after the rapid release
+1. Rapid release
+    1. This is the track where releases are rolled out as soon as they are released to the public. These products have gone through the same QC as other apps but your users will see them at the same time you do.
+2. Scheduled release
+    1. (Recommended and enabled by default) this gives you extra time to train your users on things that have been released. Releases are made only on Tuesdays at least a week after the rapid release
 
-For most gsuit orgs, you want the scheduled release track for stability. 
+For most gsuit orgs, you want the scheduled release track for stability.
 
 (see sidebar for calendar)
 
@@ -50,10 +50,10 @@ You can set the track for both features and products
 
 You are able to set (as usual) settings for Gmail on a OU based structure where you can disable and enable features. This would include features like:
 
-*   Confidential mode
-*   Gmail offline
-*   Mail delegation
-*   Smart compiose
+* Confidential mode
+* Gmail offline
+* Mail delegation
+* Smart compiose
 
 As usual these things can be controlled at an OU level and can have over-rides
 
@@ -71,31 +71,31 @@ This can be found under 'End user access' and can be applied per OU
 
 Under Advanced settings you have the ability to create compliance settings for the users. This can be set per OU:
 
-*   Auto deletion
-*   OCR
-*   Archiving 
-*   Appending footer
-*   Restricting domains
-*   Attachment compliance
-*   TLS
-*   MTS-STS
-*   Email routing
+* Auto deletion
+* OCR
+* Archiving
+* Appending footer
+* Restricting domains
+* Attachment compliance
+* TLS
+* MTS-STS
+* Email routing
 
 Here you can set rules on what to do with emails that contain certain files.
 
 You can:
 
-*   Modify
-    *   Add headers
-    *   Add subject
-    *   Change route
-    *   Change Recipient
-    *   Bypass spam filter
-    *   Remove attachments
-    *   Deliver to more people
-    *   Encrypt
-*   Reject
-*   Quarantine
+* Modify
+    * Add headers
+    * Add subject
+    * Change route
+    * Change Recipient
+    * Bypass spam filter
+    * Remove attachments
+    * Deliver to more people
+    * Encrypt
+* Reject
+* Quarantine
 
 From the gmail sergice settings page you cant set default language. This is set globally
 
@@ -112,13 +112,13 @@ You will want to ensure that only free and busy info is enabled for external use
 
 ![image-1606764758712.png](/assets/AooTYe4QwdbFLMru-image-1606764758712.png)
 
-To manage sharing you will need to edit the calendar from your account. Invite people from there and then set their permissions from that tab. 
+To manage sharing you will need to edit the calendar from your account. Invite people from there and then set their permissions from that tab.
 
 [![image-1606765018828.png](/assets/80eCCMAfHz1QGsR0-image-1606765018828.png)](/assets/80eCCMAfHz1QGsR0-image-1606765018828.png)
 
-*   As admin in calendar control you can set:
-    *   Highest level of sharing for externals
-    *   Default level of internal sharing
+* As admin in calendar control you can set:
+    * Highest level of sharing for externals
+    * Default level of internal sharing
 
 * * *
 
@@ -126,9 +126,9 @@ To manage sharing you will need to edit the calendar from your account. Invite p
 
 You will want to set the best sharing permissions for Drive. As usual this can be done at an OU level.
 
-You can set an option where you can share externally, but only with whitelisted domains. This is important if you run a secretive business. 
+You can set an option where you can share externally, but only with whitelisted domains. This is important if you run a secretive business.
 
-These options override all options for shared drives. 
+These options override all options for shared drives.
 
 You have the ability to transfer ownership of all documents. This is under settings for Drive and docs > transfer ownership. This can also be done under the drive API
 
@@ -140,7 +140,7 @@ Google keeps files for 25 days, in which you're able to restore them.
 
 Go to the user's tab and select 'Restore data' then pick the date window and then the Application.
 
-Once done the files will appear again. 
+Once done the files will appear again.
 
 * * *
 
@@ -150,7 +150,7 @@ Users can be granted access to 'Offline access to documents' via OU or group as 
 
 This can be found under Apps > Google Workspace > Settings for drive and docs > Feature and Applications > offline
 
-Enable this for users under an OU or group. 
+Enable this for users under an OU or group.
 
 You will require Google Chrome and the offline sync plugin for this to work
 
@@ -160,12 +160,12 @@ You will require Google Chrome and the offline sync plugin for this to work
 
 There are 2 ways you can access files in drive:
 
-*   Drive file stream
-    *   This streams the files from the cloud to your computer
-*   Backup and Sync
-    *   This is the software you've installed for Google backup
+* Drive file stream
+    * This streams the files from the cloud to your computer
+* Backup and Sync
+    * This is the software you've installed for Google backup
 
-This is enabled under Features and Applications 
+This is enabled under Features and Applications
 
 Things to note:
 
@@ -179,7 +179,7 @@ If you enable download links for both, then only file stream link is allowed
 
 Shared drive creation needs to be enabled from Sharing centre in Drive and Docs.
 
-Login as a user then create the shared drive. 
+Login as a user then create the shared drive.
 
 You then can add users to the shared drive from their user profile or by creating a group and adding them there
 

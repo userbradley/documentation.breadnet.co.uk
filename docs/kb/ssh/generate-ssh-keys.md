@@ -17,7 +17,6 @@ title: Generate SSH Keys
     ssh-keygen -t ed25519 -f ~/.ssh/example -C example@breadnet.co.uk
     ```
 
-
 ## Copy them to server
 
 then run this but put the server name where it asks for remote host. Don't worry about using a username as they are usually the one you're logged in as.
