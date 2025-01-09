@@ -2,6 +2,7 @@
 FROM ghcr.io/squidfunk/mkdocs-material:9.5.49 AS BUILDER
 WORKDIR /app
 
+ENV CI=true
 # Copy configuration and content files
 COPY mkdocs.yml /app/mkdocs.yml
 COPY docs /app/docs
