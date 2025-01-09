@@ -25,6 +25,8 @@ jobs:
       group: dev
       cancel-in-progress: true
     steps:
+      - name: Echo env
+        run: env
       - name: Git Clone
         uses: actions/checkout@v4
       - name: Fly Build and Deploy
