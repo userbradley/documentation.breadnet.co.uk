@@ -13,7 +13,6 @@ You can use the `openssl rand` command
 
 The command follows the below schema
 
-
 ```text
    * ---------------------- openSSL command
   |       * --------------- Random string command
