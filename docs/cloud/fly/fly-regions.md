@@ -2,8 +2,6 @@
 title: Fly regions and scaling
 ---
 
-# Fly regions and scaling
-
 This page contains the commands you need to scale an application and add new regions
 
 ## List applications

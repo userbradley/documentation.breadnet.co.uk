@@ -25,7 +25,8 @@
       "role",
       "field",
       "value",
-      "yyyy-mm-dd-hh-ii-ss"
+      "yyyy-mm-dd-hh-ii-ss",
+      "brand"
 
     ]
   },
@@ -33,5 +34,7 @@
   "fenced-code-language": false,
   "no-empty-links": false,
   "no-alt-text": false,
-  "no-emphasis-as-heading": false
+  "no-emphasis-as-heading": false,
+  "list-indent": false,
+  "heading-increment": false
 }

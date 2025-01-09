@@ -4,7 +4,7 @@ title: Release FLY IP address
 
 ## Why
 
-Fly (Like everyone) sits on alot of IP address' - and they're in short supply.
+Fly (Like everyone) sits on a lot of IP address' - and they're in short supply.
 
 You now get charged $1.75 per IP address
 

@@ -2,8 +2,6 @@
 title: Terraform lock file update
 ---
 
-# Terraform lock file update
-
 ## What it is
 
 This file is a file that should be committed to git, it helps terraform track the versions of providers and plugins

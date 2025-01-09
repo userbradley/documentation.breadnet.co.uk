@@ -2,8 +2,6 @@
 title: Create new Fly.io app
 ---
 
-# Create new Fly.io app
-
 ## Create the app
 
 ```shell

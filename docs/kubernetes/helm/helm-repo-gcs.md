@@ -2,8 +2,6 @@
 title: Using GCS as a helm repo
 ---
 
-# Using GCS as a helm repo
-
 We are able to use GCS (Google cloud storage) as a helm repo.
 
 This is especially useful where we want to package charts to be used by people who do not

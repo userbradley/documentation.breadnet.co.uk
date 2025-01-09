@@ -2,8 +2,6 @@
 title: "Terraform plugin: Cannot locate module locally, unknown reason"
 ---
 
-# Terraform plugin: Cannot locate module locally, unknown reason
-
 Terraform changed how they structure modules in the config fie
 
 So previously a module would look like this:

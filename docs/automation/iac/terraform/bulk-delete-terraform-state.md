@@ -2,8 +2,6 @@
 title: Bulk delete from terraform state
 ---
 
-# Bulk delete from terraform state
-
 !!! warning "Version your state file"
     Ensure that you have at least 2 backups of your state file, or at minimum have Versioning enabled on GCS!
     This has the possibility of deleting things you didn't mean to... _ask me how I know_

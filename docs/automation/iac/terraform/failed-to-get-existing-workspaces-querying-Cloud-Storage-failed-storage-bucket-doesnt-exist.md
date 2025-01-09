@@ -2,9 +2,6 @@
 title: "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist"
 ---
 
-
-# Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist
-
 ## What this error means
 
 You probably get this error when you are trying to run `terraform init`, and it says your other google account doesn't have access to the bucket

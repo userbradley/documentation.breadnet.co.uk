@@ -2,8 +2,6 @@
 title: Force containers to update when config map changes in helm
 ---
 
-# Force containers to update when config map changes in helm
-
 ## Why
 
 When we create a config map in Kubernetes, it syncs with the container the first time it creates, and then never again.

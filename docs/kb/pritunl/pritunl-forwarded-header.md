@@ -2,8 +2,6 @@
 title: List of headers pritunl Zero sends
 ---
 
-# List of headers pritunl Zero sends
-
 ## Headers
 
 ```text

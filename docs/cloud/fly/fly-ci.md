@@ -2,8 +2,6 @@
 title: Fly CI
 ---
 
-# Fly CI
-
 To be able to use Fly.io in a CI, I need to build a custom docker image that has the Fly CLI.
 
 ## Logging in
