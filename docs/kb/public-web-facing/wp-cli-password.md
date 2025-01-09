@@ -10,7 +10,8 @@ Sometimes we need to change a users WordPress users password, and don't want to 
 
 ### Install wpcli
 
-???+ note "PHP needs to be installed"
+!!! note "PHP needs to be installed"
+
     You need to have WP-cli installed
 
 ```shell
@@ -40,9 +41,9 @@ wp user update <user> --display_name=<> --user_pass=<password>
 
 Updates an existing user.
 
-~~~
+```
 wp user update <user>... [--user_pass=<password>] [--user_nicename=<nice_name>] [--user_url=<url>] [--user_email=<email>] [--display_name=<display_name>] [--nickname=<nickname>] [--first_name=<first_name>] [--last_name=<last_name>] [--description=<description>] [--rich_editing=<rich_editing>] [--user_registered=<yyyy-mm-dd-hh-ii-ss>] [--role=<role>] --<field>=<value> [--skip-email]
-~~~
+```
 
 **OPTIONS**
 
