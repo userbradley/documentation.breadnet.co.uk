@@ -402,6 +402,9 @@ nav:
       - outage/index.md
       - 2023-11-26 4AM: outage/2023-11-26-04.md
       - 2023-10-27 11AM: outage/2023-10-27-11.md
+  - Security:
+      - security/index.md
+      - "Reverse shell using Pinggy.io": security/reverse-shell-using-pinggy.md
   - Bread:
       - bread/index.md
       - 2024-05-18: bread/2024-05-18.md
