@@ -2,8 +2,6 @@
 title: Backup sqlite Database
 ---
 
-# Backup sqlite database
-
 ## Command line utility
 
 The `sqlite3` command line tool features the `.backup` command.

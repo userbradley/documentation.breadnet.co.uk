@@ -2,8 +2,6 @@
 title: Your Xcode is too outdated.
 ---
 
-# Your Xcode is too outdated
-
 ## Why
 
 This is an error that comes up after a major upgrade

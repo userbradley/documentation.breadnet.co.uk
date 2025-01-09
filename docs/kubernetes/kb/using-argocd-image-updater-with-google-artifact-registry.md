@@ -2,8 +2,6 @@
 title: Using ArgoCD Image updater with Google Artifact Registry
 ---
 
-# Using ArgoCD Image updater with Google Artifact Registry
-
 ## What
 
 ArgoCD Image updater is a cool tool that allows you to update Images for containers, provided you use Argo CD

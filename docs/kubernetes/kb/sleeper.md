@@ -2,8 +2,6 @@
 title: Sleeper pod
 ---
 
-# Sleeper pod
-
 ## Why
 
 Sometimes we need to run a pod on the cluster to exec in to and test things, like web requests etc

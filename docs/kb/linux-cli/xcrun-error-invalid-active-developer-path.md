@@ -2,8 +2,6 @@
 title: "xcrun: error: invalid active developer path"
 ---
 
-# xcrun: error: invalid active developer path
-
 ## What this is
 
 This is an issue after an update on a Mac from one version to next **Major** version.

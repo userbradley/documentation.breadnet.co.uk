@@ -2,8 +2,6 @@
 title: Use fingerprint as sudo on mac
 ---
 
-# Use fingerprint as sudo on Mac
-
 ## Why
 
 Using sudo on any linux device can raise the risk level substantially.

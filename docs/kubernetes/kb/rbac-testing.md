@@ -2,8 +2,6 @@
 title: Testing RBAC changes in Kubernetes
 ---
 
-# Testing RBAC changes in Kubernetes
-
 ## Why
 
 Sometimes we need to give a user access to a resource in Kubernetes, and don't want to have to pester them about changes we make

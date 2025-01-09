@@ -2,8 +2,6 @@
 title: The following signatures couldn't be verified because the public key is not available
 ---
 
-# The following signatures couldn't be verified because the public key is not available
-
 I got this error when installing Unifi
 
 ``` yaml
