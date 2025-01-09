@@ -33,7 +33,7 @@ repos:
       - id: check-dependabot
         name: Dependabot
       - id: check-jsonschema
-        name: Validate Helm release-please config
+        name: Validate markdown lint file
         files: .github/config/.markdownlint.json
         args: ["--schemafile", "https://raw.githubusercontent.com/DavidAnson/markdownlint/refs/heads/main/schema/markdownlint-config-schema.json"]
   - repo: https://github.com/DavidAnson/markdownlint-cli2

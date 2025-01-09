@@ -50,4 +50,6 @@
   "first-line-heading": false,
   "heading-style":  false,
   "ol-prefix": false,
+  "single-h1": false,
+  "single-title": false
 }
