@@ -9,6 +9,10 @@
         <lastmod>{{ (file.page.meta.git_revision_date_localized_raw_iso_datetime + "+00:00") | replace(" ", "T") }}</lastmod>
         {%- endif %}
         <changefreq>daily</changefreq>
+        {#- NOTE: Adds a reviewdate field to the sitemap.xml so we can late build a bot that checks what pages are outdated and posts a message in Mattermost #}
+        {%- if file.page.meta.reviewdate -%}
+        <reviewdate>{{ file.page.meta.reviewdate }}</reviewdate>
+        {%- endif -%}
     </url>
     {%- endif -%}
     {% endfor %}
