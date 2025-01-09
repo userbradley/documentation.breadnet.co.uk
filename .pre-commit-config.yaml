@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.2.0
+    rev: v5.0.0
     hooks:
       - id: no-commit-to-branch
         name: Ensure commits are only made to feature branches
@@ -12,12 +12,12 @@ repos:
       - id: check-toml
         name: Checks TOML files
   - repo: https://github.com/google/yamlfmt
-    rev: v0.10.0
+    rev: v0.14.0
     hooks:
       - id: yamlfmt
         name: Yaml Formatting
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.83.2
+    rev: v1.96.3
     hooks:
       - id: terraform_fmt
         name: Terraform FMT
@@ -32,3 +32,7 @@ repos:
         name: GitHub Workflows
       - id: check-dependabot
         name: Dependabot
+      - id: check-jsonschema
+        name: Validate Helm release-please config
+        files: .github/config/.markdownlint.json
+        args: ["--schemafile", "https://raw.githubusercontent.com/DavidAnson/markdownlint/refs/heads/main/schema/markdownlint-config-schema.json"]
