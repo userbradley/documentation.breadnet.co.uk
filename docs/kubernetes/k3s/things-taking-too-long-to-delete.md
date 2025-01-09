@@ -2,8 +2,6 @@
 title: Things taking too long to delete kubectl
 ---
 
-# Things taking too long to delete kubectl
-
 Sometimes an _insert thing_ will take ages to delete
 
 ## Edit the resource

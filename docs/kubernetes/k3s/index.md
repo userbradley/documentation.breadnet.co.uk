@@ -2,7 +2,6 @@
 title: K3S
 ---
 
-# K3S
 
 ## Specific Reading
 

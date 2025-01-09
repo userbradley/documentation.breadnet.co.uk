@@ -1,8 +1,6 @@
 ---
-title: KSA with GCP SA
+title: Kubernetes Service account with Workload ID
 ---
-
-# Kubernetes Service account with Workload ID
 
 ```yaml
 apiVersion: v1

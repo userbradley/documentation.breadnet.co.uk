@@ -2,8 +2,6 @@
 title: Installing K3s
 ---
 
-# Installing K3s
-
 ## Disable Swap
 
 ```shell

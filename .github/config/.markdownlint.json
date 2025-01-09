@@ -3,7 +3,18 @@
   "ul-indent": {
     "indent": 4
   },
-  "line-length": {
-    "line_length": 180
-  }
+  "line-length": false,
+  "no-inline-html": {
+    "allowed_elements": [
+      "img",
+      "svg",
+      "ul",
+      "li",
+      "text",
+      "path",
+      "g"
+    ]
+  },
+  "code-block-style": false,
+  "fenced-code-language": false
 }

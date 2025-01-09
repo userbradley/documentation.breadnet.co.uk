@@ -1,5 +1,5 @@
 ---
-title: Workload ID test pod
+title: Workload Identity test pod
 ---
 
 # Workload Identity test pod

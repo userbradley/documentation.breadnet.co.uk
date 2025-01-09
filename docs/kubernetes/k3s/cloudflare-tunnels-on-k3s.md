@@ -2,8 +2,6 @@
 title: Cloudflare Tunnels on k3s
 ---
 
-# Cloudflare Tunnels on k3s
-
 ## What are cloudflare tunnels
 
 ## Install cloudflared

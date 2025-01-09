@@ -1,5 +1,5 @@
 ---
-title: Lenovo Computer not installing Ubuntu
+title: "Error 1962: No operating system found"
 ---
 
 # Error 1962: No operating system found

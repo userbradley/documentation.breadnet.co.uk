@@ -2,7 +2,6 @@
 title: Disable klipper k3s
 ---
 
-# Disable klipper k3s
 
 When you wish to use `metallb` in your k3s cluster you need to disable `servicelb`
 

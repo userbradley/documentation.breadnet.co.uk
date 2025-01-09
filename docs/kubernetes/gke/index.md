@@ -2,7 +2,6 @@
 title: GKE
 ---
 
-# GKE
 
 ## Specific Reading
 

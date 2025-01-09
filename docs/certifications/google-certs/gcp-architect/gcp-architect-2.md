@@ -586,7 +586,7 @@ Wide Column
         * 0: Highest
         * 65535: Lowest
 
-    * ##### Default rule
+  * ##### Default rule
 
         * Egress allowed
         * Deny Ingress
@@ -1017,7 +1017,7 @@ Cloud Logging
 ##### How it works
 
 * Publisher - Sender of a message
-    * * Publisher sends a message by making a https request to pubsub.googlepais.com
+      ** Publisher sends a message by making a https request to pubsub.googlepais.com
 * Subscriber - Reciever of the message
     * Pull
         * Subscriber makes the https call
