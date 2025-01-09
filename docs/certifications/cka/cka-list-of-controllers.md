@@ -2,8 +2,6 @@
 title: List of Controllers in Kubernetes
 ---
 
-# List of Controllers in Kubernetes
-
 ## Enabled by default
 
 * attachdetach

@@ -1,3 +1,7 @@
+---
+title: CKA Practice questions struggled
+---
+
 ## Taints and Tolerations
 
 ### Create another pod named bee with the nginx image, which has a toleration set to the taint mortein

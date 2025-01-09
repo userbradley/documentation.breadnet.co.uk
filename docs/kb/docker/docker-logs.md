@@ -2,8 +2,6 @@
 title: Get logs of docker container
 ---
 
-# Get logs of docker container
-
 ## Get running containers
 
 --8<-- "docs/kb/docker/docker-ps.md"

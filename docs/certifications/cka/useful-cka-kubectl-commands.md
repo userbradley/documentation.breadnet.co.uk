@@ -2,8 +2,6 @@
 title: Useful CKA Kubectl Commands
 ---
 
-# Useful CKA Kubectl Commands
-
 ## What this page is
 
 This page contains only commands that would be useful to known whilst doing the CKA because:

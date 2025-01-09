@@ -116,7 +116,7 @@ Securing the workloads
 
 * Aqua vShield is a virtual patching mechanism
 
-  * #### Detects and prevents exploits of known vulnerabilities
+    * #### Detects and prevents exploits of known vulnerabilities
 
 * Does not change image code or require and dev intervention
 * Acts as a compensating control
@@ -448,7 +448,7 @@ Module 6: Runtime policy
 
 ##### What are the policies
 
-  * * Container
+* * Container
 * Host
 * Function
 * What makes up a policy

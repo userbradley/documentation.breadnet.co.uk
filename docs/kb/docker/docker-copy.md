@@ -2,8 +2,6 @@
 title: Docker copying
 ---
 
-# Docker Copying
-
 We are able to use the docker CLI to copy files to and from containers
 
 ## Get running containers

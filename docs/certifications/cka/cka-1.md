@@ -2,8 +2,6 @@
 title: CKA - Page 1
 ---
 
-# CKA - Page 1
-
 ## What is Kubernetes
 
 Kubernetes is a container orchestration platform that is designed to [Scale to the planet](https://kubernetes.io/#planet-scale). It achieves this using a number of

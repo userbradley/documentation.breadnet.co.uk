@@ -2,8 +2,6 @@
 title: Install OpenVPN AS
 ---
 
-# Install OpenVPN AS
-
 !!! note "Why this page exists"
     OpenVPN make you sign up to get these install commands, so this is an f-you to them.
 

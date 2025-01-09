@@ -2,8 +2,6 @@
 title: CKA Practice tests
 ---
 
-# CKA Practice tests
-
 [KodeCloud Tests](https://kodekloud.com/courses/labs-certified-kubernetes-administrator-with-practice-tests/)
 
 ## Pods

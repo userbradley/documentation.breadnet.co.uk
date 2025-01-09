@@ -2,8 +2,6 @@
 title: Uppercase to Lowercase
 ---
 
-# Uppercase to Lowercase
-
 ## Why
 
 Sometimes on the command line we need to change something from Uppercase to Lowercase

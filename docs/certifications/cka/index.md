@@ -1,7 +1,6 @@
 ---
 title: CKA
 ---
-# CKA
 
 This seems like it will be by far the hardest exam and learning of my career.
 

@@ -2,8 +2,6 @@
 title: Copy containers between repos
 ---
 
-# Copy containers between repos
-
 ## What
 
 This is especially useful when moving from `gcr.io` to the new Artifact registry that Google offer.
