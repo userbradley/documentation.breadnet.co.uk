@@ -2,8 +2,6 @@
 title: Policies
 ---
 
-# Wasabi: Policies
-
 ## Policies you should use
 
 ```json

@@ -2,8 +2,6 @@
 title: Bose Headphones Crackle when connected to mac via bluetooth
 ---
 
-# Bose Headphones Crackle when connected to mac via bluetooth
-
 As a first step, try only connecting the headphones to your Mac, and not another device like your phone.
 
 ## Update the defaults

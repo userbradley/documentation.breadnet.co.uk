@@ -2,8 +2,6 @@
 title: Google Architect - page 1
 ---
 
-# Google Architect - page 1
-
 GCP has 200+ services
 
 The exam tests your **decision-making**

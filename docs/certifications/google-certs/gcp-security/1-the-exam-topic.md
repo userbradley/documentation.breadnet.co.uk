@@ -2,8 +2,6 @@
 title: GCP Security, exam topics
 ---
 
-# GCP Security, exam topics
-
 #### Section 1. Configuring access within a cloud solution environment
 
 ##### 1.1 Configuring Cloud Identity. Considerations include

@@ -2,8 +2,6 @@
 title: GCP Security, page 1
 ---
 
-# GCP Security, page 1
-
 Google cloud Professional Security Engineer
 -------------------------------------------
 

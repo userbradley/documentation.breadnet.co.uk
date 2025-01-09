@@ -2,7 +2,6 @@
 title: List of unique IP's
 ---
 
-# List of unique IP's
 
 ```bash
 awk '{print $1}' access.log | sort | uniq -c | sort -nr

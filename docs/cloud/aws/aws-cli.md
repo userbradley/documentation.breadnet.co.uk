@@ -2,8 +2,6 @@
 title: AWS CLI
 ---
 
-# AWS CLI
-
 Locate resources based on IP
 
 ```shell

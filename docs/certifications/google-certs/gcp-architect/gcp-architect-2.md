@@ -2,8 +2,6 @@
 title: Google cloud architect - page 2
 ---
 
-# Google cloud architect - page 2
-
 #### IAM
 
 * Resources

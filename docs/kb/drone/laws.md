@@ -2,8 +2,6 @@
 title: Drone laws
 ---
 
-# Drone laws
-
 !!! note "Weight of the drone"
     We assume your drone weighs less than 250g
 

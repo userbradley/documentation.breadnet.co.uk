@@ -1,7 +1,6 @@
 ---
 title: Custom markdown Badges
 ---
-# Custom markdown badges
 
 To make a badge like the below:
 

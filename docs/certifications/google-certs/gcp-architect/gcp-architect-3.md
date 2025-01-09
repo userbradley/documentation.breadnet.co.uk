@@ -2,8 +2,6 @@
 title: Google cloud architect - page 3
 ---
 
-# Google cloud architect - page 3
-
 ### Additional Services
 
 #### Cloud Scheduler

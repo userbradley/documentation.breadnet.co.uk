@@ -2,8 +2,6 @@
 title: Reduce water heater operating temperature
 ---
 
-# Reduce water heater operating temperature
-
 !!! Warning "About using this guide"
     This guide is designed only for the `TDX120ERP`
 

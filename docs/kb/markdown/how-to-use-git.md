@@ -2,7 +2,6 @@
 title: How to use git
 reviewdate: '2022-01-01'
 ---
-# How to use git
 
 To clone a repo, go to the webpage and click the `clone or download` button and click 'Use SSH'
 

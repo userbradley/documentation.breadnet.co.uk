@@ -2,8 +2,6 @@
 title: Update the To Address on Mikrotik VPN Routing
 ---
 
-# Update the To Address on Mikrotik VPN Routing
-
 ## Why
 
 Due to how the VPN is set up, the TLS will re-negotiate every 24 hours.

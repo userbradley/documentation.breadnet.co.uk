@@ -26,7 +26,8 @@
       "field",
       "value",
       "yyyy-mm-dd-hh-ii-ss",
-      "brand"
+      "brand",
+      "sup"
 
     ]
   },
@@ -36,5 +37,7 @@
   "no-alt-text": false,
   "no-emphasis-as-heading": false,
   "list-indent": false,
-  "heading-increment": false
+  "heading-increment": false,
+  "no-duplicate-heading": false,
+  "first-line-heading": false
 }

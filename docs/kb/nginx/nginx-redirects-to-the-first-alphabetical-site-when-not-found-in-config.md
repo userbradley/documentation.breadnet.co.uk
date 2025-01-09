@@ -2,8 +2,6 @@
 title: nginx redirects to the first alphabetical site when not found in config
 ---
 
-# nginx redirects to the first alphabetical site when not found in config
-
 !!! Note "This is expected"
 
     This is expected behaviour of nginx, and when you think about it, it makes sense.
