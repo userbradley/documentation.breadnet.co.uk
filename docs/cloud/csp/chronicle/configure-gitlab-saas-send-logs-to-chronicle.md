@@ -23,7 +23,7 @@ This guide is essential for security engineers, analysts, and administrators res
 * Utilizing Google Chronicle for security analytics
 * By following the instructions in this document, you can effectively integrate GitLab SaaS audit logs into your Chronicle security operations workflow.
 
-## Prerequisites
+## Prereaquisites
 
 * GitLab Admin
 * API Keys Admin (`roles/serviceusage.apiKeysAdmin`) on your Chroncile Project
@@ -83,7 +83,7 @@ Set the **Name** to `GitLab SaaS`
 
 Under restrictions set the API to be Chronicle
 
-![img.png](../../../assets/chroncile-gitlab-saas-api-key-restrict.png)
+![img.png](../../../assets/chroncile-api-key-restrict.png)
 
 Click `OK` and then `SAVE`
 
