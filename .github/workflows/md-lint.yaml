@@ -1,5 +1,8 @@
 name: check-markdown
-on: [push, pull_request]
+on:
+  pull_request:
+    paths:
+      - "**.md"
 jobs:
   lint:
     runs-on: ubuntu-latest
