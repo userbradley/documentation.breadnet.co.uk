@@ -1,0 +1,18 @@
+name: Codespell
+on:
+  pull_request:
+    paths:
+      - docs/**
+jobs:
+  spell_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v42.0.2
+      - uses: codespell-project/actions-codespell@v2
+        with:
+          # Exit with 0 regardless of typos.
+          only_warn: 1
+          path: ${{ steps.changed-files.outputs.all_changed_files }}
