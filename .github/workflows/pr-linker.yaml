@@ -1,0 +1,40 @@
+name: PR Linker
+on:
+  pull_request:
+    types: [synchronize, opened]
+    paths:
+      - docs/**
+jobs:
+  changed_files:
+    runs-on: ubuntu-latest
+    name: List changed directories
+    permissions:
+      pull-requests: read
+      contents: read
+    outputs:
+      pages: ${{ steps.changed-files-yaml.outputs.docs_all_changed_files }}
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0 # OR "2" -> To retrieve the preceding commit.
+      - name: Locate changed cluster-admin
+        id: changed-files-yaml
+        uses: tj-actions/changed-files@v45
+        with:
+          token: ${{ github.token }}
+          use_rest_api: false
+          dir_names_exclude_current_dir: true
+          matrix: true
+          dir_names: true
+          dir_names_max_depth: 3
+          files_yaml: |
+            docs:
+              - docs/**
+      - name: Print list of docs Changes
+        if: steps.changed-files-yaml.outputs.docs_any_changed == 'true'
+        env:
+          TEST_ALL_CHANGED_FILES: ${{ steps.changed-files-yaml.outputs.docs_all_changed_files }}
+        run: |
+          echo "List all the files that have changed: $TEST_ALL_CHANGED_FILES"
