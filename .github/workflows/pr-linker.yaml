@@ -27,7 +27,7 @@ jobs:
           use_rest_api: false
           dir_names_exclude_current_dir: true
           matrix: true
-          dir_names: true
+          dir_names: false
           files_yaml: |
             docs:
               - docs/**
