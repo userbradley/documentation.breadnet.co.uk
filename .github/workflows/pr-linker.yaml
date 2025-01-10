@@ -28,7 +28,6 @@ jobs:
           dir_names_exclude_current_dir: true
           matrix: true
           dir_names: true
-          dir_names_max_depth: 3
           files_yaml: |
             docs:
               - docs/**
