@@ -39,4 +39,4 @@ jobs:
           echo "List all the files that have changed: $TEST_ALL_CHANGED_FILES"
       - name: Clean up list
         id: cleaner
-        run: echo list=$(echo ${{ steps.changed-files-yaml.outputs.docs_all_changed_files }} | jq -c '.[] | sub("docs/"; "") | sub("\\.md$"; "")' ) >> $GITHUB_OUTPUT
+        run: echo list=$(echo '${{ steps.changed-files-yaml.outputs.docs_all_changed_files }}' | jq -c '.[] | sub("docs/"; "") | sub("\\.md$"; "")' ) >> $GITHUB_OUTPUT
