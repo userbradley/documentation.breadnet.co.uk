@@ -40,3 +40,11 @@ jobs:
       - name: Clean up list
         id: cleaner
         run: echo list=$(echo '${{ steps.changed-files-yaml.outputs.docs_all_changed_files }}' | jq -c '.[] | sub("docs/"; "") | sub("\\.md$"; "")' ) >> $GITHUB_OUTPUT
+      - name: File prep
+        run: |
+          echo "I have arrived to give you links to the pages that were modified" > links.md
+          for file in ${{steps.cleaner.outputs.list}}; do
+            echo "[$file](https://dev-documentation.brednet.co.uk/$file)
+          done
+      - name: Catter
+        run: cat links.md
