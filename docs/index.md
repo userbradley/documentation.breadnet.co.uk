@@ -15,14 +15,17 @@ This site gets updated [on average, once a day](https://github.com/userbradley/d
 
 I used to host this documentation on [Digital Ocean](https://m.do.co/c/77be3c3aa96c) using Bookstack, but I've since migrated to the simplicity of mkdocs.
 
-**Here's a taste of what you'll find:**
+## Here's a taste of what you'll find
 
 * **Home Lab Documentation:** Detailed guides on my network infrastructure, software configurations, and hardware setup.
 * **Cloud and Kubernetes:** Notes and tutorials on cloud platforms, Kubernetes deployments, and related technologies like Terraform and Helm.
 * **Software Guides:**  Instructions for various software tools and services, including SSH, Zerotier, and self-hosted analytics.
 * **And yes, even Bread Baking!**  Because everyone needs a hobby outside of tech.
 
-**Explore the documentation now!**
+## Feedback?
+
+This is a personal project, I don't have adverts on this site and any of my other sites, and it costs me money and time to build and run this.
+All I ask from you is feedback on pages. If you spot something wrong, please open a github issue or email me using the email icon at the bottom of every page.
 
 ## Other sites maintained
 
