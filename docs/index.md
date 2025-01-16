@@ -27,7 +27,6 @@ I used to host this documentation on [Digital Ocean](https://m.do.co/c/77be3c3aa
 ## Other sites maintained
 
 * [breadNET](https://breadnet.co.uk/?mtm_campaign=documentation&mtm_kwd=mainpage)
-* [My CV/ Resume](https://bradley.breadnet.co.uk/?mtm_campaign=documentation&mtm_kwd=mainpage)
 
 ## Repo CI Status
 
