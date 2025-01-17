@@ -29,6 +29,7 @@ COPY deny.conf /etc/nginx/deny.conf
 # Copy built site from the builder stage
 COPY --from=BUILDER /app/site/assets /var/www/documentation/assets
 COPY --from=BUILDER /app/site /var/www/documentation
+COPY docs/.well-known /var/www/documentation/.well-known
 
 # Healthcheck to ensure Nginx is running
 HEALTHCHECK CMD curl -s --fail http://localhost:80 || exit 1
