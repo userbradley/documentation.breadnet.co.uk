@@ -50,7 +50,7 @@
   "heading-style": {
     "style": "atx"
   },
-  "ol-prefix": false,
+  "ol-prefix": true,
   "single-h1": false,
   "single-title": false
 }
