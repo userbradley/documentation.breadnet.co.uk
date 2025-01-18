@@ -5,7 +5,7 @@ title: CKA - Page 1
 ## What is Kubernetes
 
 Kubernetes is a container orchestration platform that is designed to [Scale to the planet](https://kubernetes.io/#planet-scale). It achieves this using a number of
-somewhat independent stacks of technology, like [etcd](#etcd) and [nginx]().
+somewhat independent stacks of technology, like [etcd](#etcd) and nginx.
 
 This and all other pages are my study notes for the CKA exam.
 
@@ -309,7 +309,7 @@ It handles (non-exclusive list):
 * Inter-pod-node networking
 * Services IP networking communication
 
-It does this by running a pod on each node (using a [DaemonSet]()) which then adjusts iptables rules on the nodes.
+It does this by running a pod on each node (using a DaemonSet) which then adjusts iptables rules on the nodes.
 
 The job of the Kube proxy is to look out for new services that have been scheduled and _host_ them
 
@@ -347,7 +347,7 @@ When we deploy an application, we are effectively deploying a collection of pods
 When your application is deployed in pods, to scale the application we <u>**do not**</u> add more containers to a pod,
 instead we add more pods to the cluster.
 
-We can use a [Deployment](#deployment) as well as [HPA]() to scale the deployment manually and automatically.
+We can use a [Deployment](#deployment) as well as HPA to scale the deployment manually and automatically.
 
 ### Networking and storage
 
