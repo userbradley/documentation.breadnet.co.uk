@@ -42,4 +42,5 @@ Run the below to pull the keys from `keyserver.ubuntu.com`
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 06E85760C0A52C50
 ```
 
-_Replace the key with the one that has errored for you_
+!!! tip
+    Replace the key with the one that has errored for you

@@ -1,7 +1,2 @@
-site/
-.idea
-styles/
-.cache
-.DS_Store
-venv
-.venv
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
