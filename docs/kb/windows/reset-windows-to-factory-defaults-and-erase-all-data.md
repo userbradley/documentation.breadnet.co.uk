@@ -67,4 +67,5 @@ This is normal. Leave it for 2 hours and then it will be done
 
 ### Can I recover files after resetting the computer
 
-**no**
+!!! danger
+    No
