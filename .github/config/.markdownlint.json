@@ -41,14 +41,15 @@
   },
   "code-block-style": false,
   "fenced-code-language": false,
-  "no-empty-links": true,
   "no-alt-text": false,
   "no-emphasis-as-heading": false,
   "list-indent": false,
   "heading-increment": false,
   "no-duplicate-heading": false,
   "first-line-heading": false,
-  "heading-style":  false,
+  "heading-style": {
+    "style": "atx"
+  },
   "ol-prefix": false,
   "single-h1": false,
   "single-title": false
