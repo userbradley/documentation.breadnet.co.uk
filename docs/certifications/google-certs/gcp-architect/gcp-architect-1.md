@@ -7,9 +7,9 @@ GCP has 200+ services
 The exam tests your **decision-making**
 
 * Which services do you chose in which situation?
-* How do you trade off between resilliance, performance and cost whilst not comprimising on security
+* How do you trade off between resilience, performance and cost whilst not compromising on security
 
-* * *
+---
 
 What is cloud and why do we need it?
 
@@ -24,13 +24,13 @@ This is called Elasticity and 'On demand Provisioning'
 
 Trading capital expense for Variables Expense.
 
-You are benifiting from the 'Economic of Scale' where the cloud provider gets the best deals for you.
+You are benefiting from the 'Economic of Scale' where the cloud provider gets the best deals for you.
 
-You no longer need to spend money running a datacentre.
+You no longer need to spend money running a datacenter.
 
 Allows you to go global in minutes.
 
-* * *
+---
 
 GCP is one of the top 3 cloud providers, the other are AWS and Azure
 
@@ -38,13 +38,13 @@ GCP provides 200+ services, and has provided to be reliable and secure.
 
 Is it the 'cleanest' cloud, as it's carbon-neutral
 
-* * *
+---
 
 We move to the cloud due to on demand cloud provisioning.
 
 When we talk about cloud applications, we talk about multiple GCP services.
 
-* * *
+---
 
 Course content:
 
@@ -83,13 +83,13 @@ Each zone has one or more 'Discreet clusters'
 
 Each Zone has one or more Datacentre. these zones are all connected with low latency connections.
 
-* * *
+---
 
 #### Google Compute engine
 
 ##### Features
 
-When you want to deploy applicaitons, you need servers. In order to deploy to the cloud you need to deploy to a Virtual machine
+When you want to deploy applications, you need servers. In order to deploy to the cloud you need to deploy to a Virtual machine
 
 In order to provision a machine, you need to use Google Compute engine
 
