@@ -359,8 +359,7 @@ Examples of security:
         * Profile
     * Can be used to filter traffic, what to capture data about and what to ignore
 
-Module 4: Installation and Configuration
-----------------------------------------
+### Module 4: Installation and Configuration
 
 ##### Checking Release notes
 
@@ -443,8 +442,7 @@ Image scanning as well as artifacts
 
 You can pick a slider or a set value for the severability on how bad you will allow to run in the container
 
-Module 6: Runtime policy
--------------------------
+## Module 6: Runtime policy
 
 ##### What are the policies
 

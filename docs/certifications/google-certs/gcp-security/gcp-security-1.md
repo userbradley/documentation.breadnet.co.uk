@@ -1,9 +1,8 @@
 ---
-title: GCP Security, page 1
+title: Google cloud Professional Security Engineer
 ---
 
 Google cloud Professional Security Engineer
--------------------------------------------
 
 The exam itself, is a multiple choice 2 hour test.
 

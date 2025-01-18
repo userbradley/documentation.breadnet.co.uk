@@ -3,8 +3,7 @@ title: Aqua - Page 2
 reviewdate: '2022-01-01'
 ---
 
-Module 7
---------
+## Module 7
 
 * Services
     * Comprises the following
@@ -19,8 +18,7 @@ Module 7
     * Add firewall rules though the UI
     * View during running then lock down
 
-Module 8: Secrets
------------------
+## Module 8: Secrets
 
 * How to integrate with existing key store
 * How to inject it in to the workload
@@ -37,8 +35,7 @@ Secrets need to be added as an env variable, image needs tags
             - name: bradley
               value: '{aqua.bradley}'
 
-Module 9: Serverless
---------------------
+## Module 9: Serverless
 
 GCP is supported when scanning before run
 
@@ -51,14 +48,12 @@ How it protects:
     * Nano-enforcer allows Aqua to carry out runtime protection
     * Does not work for GCP
 
-Module 11: Aqua-api and aquactl
---------------------------------
+## Module 11: Aqua-api and aquactl
 
 * Aquactl can be used to inject nano-enforcers as well as
 * Download Manifests
 
-Module 12: Aqua for dev
------------------------
+## Module 12: Aqua for dev
 
 * Before building, understand the use case
 
@@ -72,8 +67,7 @@ Validation
 * check running containers
 * Check risk explorer to get high level overviews
 
-Module 13: Aqua for Admin
--------------------------
+## Module 13: Aqua for Admin
 
 ##### Upgrading
 
