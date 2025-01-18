@@ -15,6 +15,17 @@ This site gets updated [on average, once a day](https://github.com/userbradley/d
 
 I used to host this documentation on [Digital Ocean](https://m.do.co/c/77be3c3aa96c) using Bookstack, but I've since migrated to the simplicity of mkdocs.
 
+## A note about privacy
+
+Fear not, my tinfoil hat is nice and tight around my head. There are no cookies or external tracking on this site. As you will see
+if you open the dev tools, everything is served statically from this domain. This means Google cant track what pages you're on
+based on the fonts, or anything else
+
+However, there is a tracker in the form of self hosted Matomo. This data is only used so I can see what pages are being looked
+at frequently, and then ensure they are updated if things change. You can email me to have your data exported or removed
+
+![img.png](img.png)
+
 ## Here's a taste of what you'll find
 
 * **Home Lab Documentation:** Detailed guides on my network infrastructure, software configurations, and hardware setup.
