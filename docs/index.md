@@ -21,10 +21,8 @@ Fear not, my tinfoil hat is nice and tight around my head. There are no cookies 
 if you open the dev tools, everything is served statically from this domain. This means Google cant track what pages you're on
 based on the fonts, or anything else
 
-However, there is a tracker in the form of self hosted Matomo. This data is only used so I can see what pages are being looked
+However, there is a tracker in the form of self-hosted Matomo. This data is only used, so I can see what pages are being looked
 at frequently, and then ensure they are updated if things change. You can email me to have your data exported or removed
-
-![img.png](img.png)
 
 ## Here's a taste of what you'll find
 
