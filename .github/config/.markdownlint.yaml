@@ -39,7 +39,7 @@ no-inline-html:
 code-block-style: false
 fenced-code-language: false
 no-alt-text: false
-no-emphasis-as-heading: false
+no-emphasis-as-heading: true
 list-indent: false
 heading-increment: false
 no-duplicate-heading: false

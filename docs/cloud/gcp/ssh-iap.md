@@ -10,7 +10,8 @@ You need to have a firewall rule below
 |-------------------|-----------|------|
 | `35.235.240.0/20` | `INBOUND` | `22` |
 
-_The above assumes you have SSH listening on port 22_
+!!! note
+    The above assumes you have SSH listening on port 22
 
 ## Command
 
