@@ -158,7 +158,7 @@ nav:
       - Disk management:
           - Dell HDD password protected: kb/disk-management/dell-hdd-password-protected.md
           - Expanding a file system: kb/disk-management/expanding-a-filesystem.md
-          - Formatting drive and Auto mount: kb/disk-management/formatting-drive-automount.md
+          - "Partition, format, and mount a drive on Ubuntu": kb/disk-management/formatting-drive-automount.md
           - Mount a new drive: kb/disk-management/mount-a-new-drive.md
           - "GPT PMBR Size Mismatch will be corrected by w(rite)": kb/disk-management/gpt-pmbr-size-mismatch-will-be-corrected-by-write.md
       - Docker:

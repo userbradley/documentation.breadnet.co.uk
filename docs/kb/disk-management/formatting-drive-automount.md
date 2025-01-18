@@ -1,9 +1,8 @@
 ---
-title: Formatting drive and auto mount
+title: Partition, format, and mount a drive on Ubuntu
 reviewdate: '2022-01-01'
 ---
 
-# Partition, format, and mount a drive on Ubuntu
 
 Reference:
 
