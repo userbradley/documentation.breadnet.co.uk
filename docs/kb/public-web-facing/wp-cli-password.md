@@ -45,7 +45,7 @@ Updates an existing user.
 wp user update <user>... [--user_pass=<password>] [--user_nicename=<nice_name>] [--user_url=<url>] [--user_email=<email>] [--display_name=<display_name>] [--nickname=<nickname>] [--first_name=<first_name>] [--last_name=<last_name>] [--description=<description>] [--rich_editing=<rich_editing>] [--user_registered=<yyyy-mm-dd-hh-ii-ss>] [--role=<role>] --<field>=<value> [--skip-email]
 ```
 
-**OPTIONS**
+#### OPTIONS
 
  <user>...
   The user login, user email or user ID of the user(s) to update.
