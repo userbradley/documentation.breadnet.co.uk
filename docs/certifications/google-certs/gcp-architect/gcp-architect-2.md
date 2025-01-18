@@ -11,7 +11,7 @@ title: Google cloud architect - page 2
     * Users
     * Groups
     * Application running in GCP
-    * Application running in your Datacentre
+    * Application running in your Datacenter
     * Unauthenticated users
 * Granular control
     * Limit a singular user
@@ -74,8 +74,8 @@ title: Google cloud architect - page 2
 * Add roles to the service account if you're backing up to GCS
 * You cannot assign a service account to an on-prem application
 * This is called long-lived
-    1. Create service account with right permissions
 
+1. Create service account with right permissions
 2. Create service account user managed keu
     1. gcloud iam service-accounts keys create
 3. Make the service account key accessable by your application
