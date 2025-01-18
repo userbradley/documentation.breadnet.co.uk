@@ -497,6 +497,7 @@ markdown_extensions:
 plugins:
   - search
   - social # Disabled due to google font being broken: https://github.com/squidfunk/mkdocs-material/issues/6983
+  - privacy
   - git-revision-date-localized:
       enable_creation_date: !ENV [CI, false]
       exclude:
