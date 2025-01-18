@@ -41,7 +41,7 @@
   },
   "code-block-style": false,
   "fenced-code-language": false,
-  "no-empty-links": false,
+  "no-empty-links": true,
   "no-alt-text": false,
   "no-emphasis-as-heading": false,
   "list-indent": false,

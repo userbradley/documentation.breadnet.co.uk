@@ -62,10 +62,6 @@ time="2022-11-11T18:06:41Z" level=info msg="latest image according to constraint
 
 ```
 
-## What to read next
-
-[]()
-
 ## footnotes
 
 [Recipie on how to use it in GKE](https://github.com/argoproj-labs/argocd-image-updater/issues/319#issuecomment-1130547057)
