@@ -34,10 +34,10 @@ repos:
         name: Dependabot
       - id: check-jsonschema
         name: Validate markdown lint file
-        files: .github/config/.markdownlint.json
+        files: .github/config/.markdownlint.yaml
         args: ["--schemafile", "https://raw.githubusercontent.com/DavidAnson/markdownlint/refs/heads/main/schema/markdownlint-config-schema.json"]
   - repo: https://github.com/DavidAnson/markdownlint-cli2
     rev: v0.17.1
     hooks:
       - id: markdownlint-cli2
-        args: ["--config", "./.github/config/.markdownlint.json", "--fix"]
+        args: ["--config", "./.github/config/.markdownlint.yaml", "--fix"]
