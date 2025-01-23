@@ -14,7 +14,7 @@ Select an Entitlement you want to add an alias to
 
 Click **Edit** at the bottom and set the name of an entitlement
 
-![Conductor one Alias ](../../../assets/conductorone-entitlement-alias.png)
+![Conductor one Alias ](../../assets/conductorone-entitlement-alias.png)
 
 ## View it in action
 

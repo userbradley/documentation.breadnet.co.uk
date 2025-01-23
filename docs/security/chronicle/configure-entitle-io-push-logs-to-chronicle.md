@@ -43,7 +43,7 @@ Click `ADD NEW` and then fill out using the below details
 
 Your page should look like the below:
 
-![img.png](../../../assets/chronicle-entitle-io-set-properties.png)
+![img.png](../../assets/chronicle-entitle-io-set-properties.png)
 
 For `Input Parameter` you can skip this
 
@@ -58,7 +58,7 @@ Click on **Details** on the window that has just opened up, and copy and paste t
 
 Click on the button that reads **Generate Secret Key**
 
-![chronicle-entitle-io-secret-key.png.png](../../../assets/chronicle-entitle-io-secret-key.png.png)
+![chronicle-entitle-io-secret-key.png.png](../../assets/chronicle-entitle-io-secret-key.png.png)
 
 Copy and paste the secret key in to a notepad like
 
@@ -85,7 +85,7 @@ Set the **Name** to `Beyondcorp Entitle.io`
 
 Under restrictions set the API to be Chronicle
 
-![img.png](../../../assets/chroncile-api-key-restrict.png)
+![img.png](../../assets/chroncile-api-key-restrict.png)
 
 Click `OK` and then `SAVE`
 

@@ -41,7 +41,7 @@ Click `ADD NEW` and then fill out using the below details
 
 Your page should look like the below:
 
-![img.png](../../../assets/chronicle-gitlab-saas-set-properties.png)
+![img.png](../../assets/chronicle-gitlab-saas-set-properties.png)
 
 For `Input Parameter` you can skip this
 
@@ -56,7 +56,7 @@ Click on **Details** on the window that has just opened up, and copy and paste t
 
 Click on the button that reads **Generate Secret Key**
 
-![img.png](../../../assets/chronicle-gitlab-saas-secret-key.png)
+![img.png](../../assets/chronicle-gitlab-saas-secret-key.png)
 
 Copy and paste the secret key in to a notepad like
 
@@ -83,7 +83,7 @@ Set the **Name** to `GitLab SaaS`
 
 Under restrictions set the API to be Chronicle
 
-![img.png](../../../assets/chroncile-api-key-restrict.png)
+![img.png](../../assets/chroncile-api-key-restrict.png)
 
 Click `OK` and then `SAVE`
 
@@ -111,17 +111,17 @@ Navigate to your GitLab SaaS group on the browser
 
 On the left hand side navigation bar, click **Secure** > **Audit Events**
 
-![img.png](../../../assets/chronicle-gitlab-saas-secure-auditevents-menu.png)
+![img.png](../../assets/chronicle-gitlab-saas-secure-auditevents-menu.png)
 
 Click on **Streams** at the top
 
 Click `Add streaming destination` and select `HTTP endpoint`
 
-![img.png](../../../assets/chronicle-gitlab-saas-gitlab-auditevents-streaming-destination.png)
+![img.png](../../assets/chronicle-gitlab-saas-gitlab-auditevents-streaming-destination.png)
 
 Click `Add header` twice and your page will look like the below
 
-![img.png](../../../assets/chronicle-gitlab-saas-gitlab-add-destination-dialogue-double-header.png)
+![img.png](../../assets/chronicle-gitlab-saas-gitlab-add-destination-dialogue-double-header.png)
 
 Fill it out with the below information
 
