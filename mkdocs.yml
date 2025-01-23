@@ -402,6 +402,7 @@ nav:
               - Push Start Seat leon: car/seat/leon/push-start-seat-leon.md
   - Outages:
       - outage/index.md
+      - 2025-01-23 11AM: outage/2025-01-23-17.md
       - 2023-11-26 4AM: outage/2023-11-26-04.md
       - 2023-10-27 11AM: outage/2023-10-27-11.md
   - Security:
