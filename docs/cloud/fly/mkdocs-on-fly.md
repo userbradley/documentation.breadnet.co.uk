@@ -145,7 +145,7 @@ fly launch --name <give it a name>
 
 You will then be asked to confirm the defaults it's proposing
 
-![img.png](img.png)
+![img.png](../../assets/fly-io-mkdocs-cli.png)
 
 Once you type `y` it will open a web page. You can click **Confirm Settings**
 
