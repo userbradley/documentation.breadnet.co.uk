@@ -4,9 +4,6 @@ title: MkDocs on Fly.io
 
 ## What
 
-!!! warning "This doc has issues"
-    This doc has a known issue I need to update. [See this issue](https://github.com/userbradley/documentation.breadnet.co.uk/issues/460)
-
 This guide hopes to set the groundwork on how to get an mkdocs site up and running
 on [Fly.io](https://fly.io?ref=documentation.breadnet.co.uk)
 
@@ -27,6 +24,8 @@ We are going to use the [Material for mkdocs](https://squidfunk.github.io/mkdocs
 * Have a working mkdocs site
 * Have a GitHub account
 * Have a fly.io account (They're free)
+
+If you would like me to create a Video walkthrough on how to do this, please let me know by opening an issue on GitHub
 
 ### Configure the Dockerfile
 
@@ -100,106 +99,63 @@ Browse to <http://localhost:8080> and you should see your site
 
 ### Fly.io part
 
-Next is to create a Fly app.
+Fly have made some large changes recently to how you launch an app.
 
-Change `<name>` to the name of your documentation.
+#### Install Fly CLI
 
-```shell
-fly app create <name>
-```
+=== "Mac"
 
-We then need to save the config file to use later in the GitHub actions stage
+    === "Brew"
 
-```shell
-fly config save -a <name>
-```
+        ```shell
+        brew install flyctl
+        ```
 
-This will then save a file called `fly.toml`
+    === "Curl"
 
-You should edit this file to it is similar to the below
+        ```shell
+        curl -L https://fly.io/install.sh | sh
+        ```
 
-```toml
-app = "<name>"
-kill_signal = "SIGINT"
-kill_timeout = 5
-processes = []
+=== "Linux"
 
-[env]
+    ```shell
+    curl -L https://fly.io/install.sh | sh
+    ```
 
-[experimental]
-  allowed_public_ports = []
-  auto_rollback = true
+=== "Windows"
 
-[[services]]
-  internal_port = 80
-  processes = ["app"]
-  protocol = "tcp"
-  script_checks = []
-  [services.concurrency]
-    hard_limit = 100
-    soft_limit = 80
-    type = "connections"
+    ```shell
+    pwsh -Command "iwr https://fly.io/install.ps1 -useb | iex"
+    ```
 
-  [[services.ports]]
-    force_https = true
-    handlers = ["http"]
-    port = 80
-
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443
-
-  [[services.http_checks]]
-    grace_period = "10s"
-    interval = "30s"
-    method = "GET"
-    timeout = "5s"
-    path = "/healthz"
-```
-
-We can then run this build step locally, and push
-
-!!! note "Only works with docker"
-    Due to the Fly CLI depending heavily on Docker to run Locally, if you're using something like
-    containerd or Podman, you cant run this locally
+#### Authenticate to Fly
 
 ```shell
-flyctl deploy --config fly.tom --dockerfile Dockerfile --local-only --push --detach --auto-confirm
+fly auth login
 ```
 
-This command will
+You will be directed to Fly.io's site where you select your user.
 
-1. Build the app using the `Dockerfile`
-2. Validate the config is correct
-3. Push the Dockerfile to the Fly.io registry
-4. Deploy the application
+Ensure your `Dockerfile` works, as without a working Dockerfile the next steps will fail
 
-You should then get the URL of your app which you can go to and validate it works well
+```shell
+fly launch --name <give it a name>
+```
+
+You will then be asked to confirm the defaults it's proposing
+
+![img.png](img.png)
+
+Once you type `y` it will open a web page. You can click **Confirm Settings**
+
+Once that's done, you should see the app is now built and deployed! Click on the URL and ensure everything is working as you'd expect
 
 ### GitHub Actions
 
-Navigate to [fly.io/user/personal_access_tokens](https://fly.io/user/personal_access_tokens?ref=documentation.breadnet.co.uk) and
-create a new one on the top right hand side.
+The command `fly launch` automatically creates a secret in GitHub for you called `FLY_API_TOKEN` that we can use in the next steps
 
-Copy this to your clipboard as we need it later.
-
-In GitHub, navigate to your repo, then **Settings** > **Secrets and Variables** > **Actions**
-
-Here, create a **Repository Secret** called `FLY_ACCESS_TOKEN` - Paste in the value from the Fly.io dashboard
-
-In your repo, create a directory called `.github/workflows`
-
-```shell
-mkdir -p .github/workflows
-```
-
-Create a file called `build-site.yaml`
-
-```shell
-touch .github/workflows/build-site.yaml
-```
-
-In this file, we need to put the below
+Edit the file `.githuib/workflows/fly-deploy.yml` and replace it with the below
 
 ```yaml
 name: Build Site
@@ -209,7 +165,7 @@ on:
       - main
     paths:
       - docs/**
-      - .github/workflows/build-site.yaml
+      - .github/workflows/fly-deploy.yml
       - mkdocs.yml
       - Dockerfile
       - fly.toml
@@ -223,10 +179,11 @@ jobs:
       - name: Fly Build and Deploy
         uses: userbradley/actions-fly@v1.0.0
         with:
-          flyToken: ${{ secrets.FLY_ACCESS_TOKEN }}
+          flyToken: ${{ secrets.FLY_API_TOKEN }}
 ```
 
-This uses a GitHub action I created, which under the hood just runs the fly command we ran earlier, but uses your Fly token
+This uses a GitHub action I created, which under the hood just runs the fly deploy command. You're also welcome to use the
+pre-built fly action!
 
 Commit all the files, and push to your repo. When a commit _touches_ the `docs/**` files, the `mkdocs.yaml` file or
 anything in the `docs` directory, it will build the site.
