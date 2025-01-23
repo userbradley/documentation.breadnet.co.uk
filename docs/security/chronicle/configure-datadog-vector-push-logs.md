@@ -18,7 +18,7 @@ Navigate to your chronicle instance > **settings** > **SIEM Settings** > **Colle
 
 Click on `INGESTION AUTHENTICATION FILE`
 
-![Chronicle ingestion auth](../../../assets/chronicle-ingestion-auth.png)
+![Chronicle ingestion auth](../../assets/chronicle-ingestion-auth.png)
 
 ### Write the config file
 
@@ -64,8 +64,8 @@ Go to search, then click old search, type `vector` then click **search**
 
 Select `Log Sources` and select vector
 
-![img.png](../../../assets/chronicle-select-vector.png)
+![img.png](../../assets/chronicle-select-vector.png)
 
 Your logs will now show up
 
-![img.png](../../../assets/chronicle-vector-logs-show-up.png)
+![img.png](../../assets/chronicle-vector-logs-show-up.png)

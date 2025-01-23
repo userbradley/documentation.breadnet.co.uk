@@ -64,21 +64,6 @@ nav:
       - Terraform associate:
           - Exam questions: certifications/terraform-associate/exam-questions.md
   - Cloud Providers:
-      - Cloud Security Providers:
-          - Aqua:
-              - Aqua Page 1: cloud/csp/aqua/aqua-page-1.md
-              - Aqua Page 2: cloud/csp/aqua/aqua-page-2.md
-              - Aqua partnership notes: cloud/csp/aqua/partnership-info.md
-          - Chronicle:
-              - Configure Datadog Vector to push logs to Chronicle: cloud/csp/chronicle/configure-datadog-vector-push-logs.md
-              - Configure Entitle.io to push logs to Chronicle: cloud/csp/chronicle/configure-entitle-io-push-logs-to-chronicle.md
-              - Configure GitLab SaaS to send logs to Chronicle: cloud/csp/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md
-          - Conductor One:
-              - Create alias on Entitlement: cloud/csp/conductorone/create-alias-on-entitlement.md
-              - Get your user ID Conductor One: cloud/csp/conductorone/get-your-user-id-conductor-one.md
-              - List users in Conductor one using the API: cloud/csp/conductorone/list-users-in-conductor-one-using-the-api.md
-          - Rapid7:
-              - Add Google Organization to Rapid7: cloud/csp/rapid7/add-google-organization-to-rapid7.md
       - AWS:
           - AWS CLI: cloud/aws/aws-cli.md
           - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
@@ -408,6 +393,20 @@ nav:
   - Security:
       - security/index.md
       - "Reverse shell using Pinggy.io": security/reverse-shell-using-pinggy.md
+      - Aqua:
+          - Aqua Page 1: security/aqua/aqua-page-1.md
+          - Aqua Page 2: security/aqua/aqua-page-2.md
+          - Aqua partnership notes: security/aqua/partnership-info.md
+      - Chronicle:
+          - Configure Datadog Vector to push logs to Chronicle: security/chronicle/configure-datadog-vector-push-logs.md
+          - Configure Entitle.io to push logs to Chronicle: security/chronicle/configure-entitle-io-push-logs-to-chronicle.md
+          - Configure GitLab SaaS to send logs to Chronicle: security/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md
+      - Conductor One:
+          - Create alias on Entitlement: security/conductorone/create-alias-on-entitlement.md
+          - Get your user ID Conductor One: security/conductorone/get-your-user-id-conductor-one.md
+          - List users in Conductor one using the API: security/conductorone/list-users-in-conductor-one-using-the-api.md
+      - Rapid7:
+          - Add Google Organization to Rapid7: security/rapid7/add-google-organization-to-rapid7.md
   - Bread:
       - bread/index.md
       - 2024-05-18: bread/2024-05-18.md
@@ -531,6 +530,22 @@ plugins:
         'cloud/terragrunt/terragrunt-generate-block.md': 'automation/iac/terragrunt/terragrunt-generate-block.md'
         'cloud/terragrunt/terragrunt-in-github-actions.md': 'automation/iac/terragrunt/terragrunt-in-github-actions.md'
         'cloud/terragrunt/terragrunt-terraform-auto-upgrade.md': 'automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md'
+        # [START Security ]
+        'cloud/csp/aqua/aqua-page-1.md': 'security/aqua/aqua-page-1.md'
+        'cloud/csp/aqua/aqua-page-2.md': 'security/aqua/aqua-page-2.md'
+        'cloud/csp/aqua/partnership-info.md': 'security/aqua/partnership-info.md'
+        'cloud/csp/chronicle/configure-datadog-vector-push-logs.md': 'security/chronicle/configure-datadog-vector-push-logs.md'
+        'cloud/csp/chronicle/configure-entitle-io-push-logs-to-chronicle.md': 'security/chronicle/configure-entitle-io-push-logs-to-chronicle.md'
+        'cloud/csp/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md': 'security/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md'
+        'cloud/csp/conductorone/create-alias-on-entitlement.md': 'security/conductorone/create-alias-on-entitlement.md'
+        'cloud/csp/conductorone/get-your-user-id-conductor-one.md': 'security/conductorone/get-your-user-id-conductor-one.md'
+        'cloud/csp/conductorone/list-users-in-conductor-one-using-the-api.md': 'security/conductorone/list-users-in-conductor-one-using-the-api.md'
+        'cloud/csp/rapid7/add-google-organization-to-rapid7.md': 'security/rapid7/add-google-organization-to-rapid7.md'
+        'cloud/aqua/aqua-page-1.md': 'security/aqua/aqua-page-1.md'
+        'cloud/aqua/aqua-page-2.md': 'security/aqua/aqua-page-2.md'
+        'cloud/aqua/partnership-info.md': 'security/aqua/partnership-info.md'
+        # [END Security ]
+        'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
         'home/utilities/index.md': 'home/rg/utilities/index.md'
         'home/utilities/water.md': 'home/rg/utilities/water.md'
         'home/utilities/electricity.md': 'home/rg/utilities/electricity.md'
@@ -538,13 +553,8 @@ plugins:
         'home/oven/oven.md': 'home/rg/oven/oven.md'
         'home/washing/washing-machine.md': 'home/rg/washing/washing-machine.md'
         'home/water-heater/reduce-temperature.md': 'home/rg/water-heater/reduce-temperature.md'
-        'cloud/aqua/aqua-page-1.md': 'cloud/csp/aqua/aqua-page-1.md'
-        'cloud/aqua/aqua-page-2.md': 'cloud/csp/aqua/aqua-page-2.md'
-        'cloud/aqua/partnership-info.md': 'cloud/csp/aqua/partnership-info.md'
-        'cloud/gcp/view-logs-for-enabled-apis.md': 'cloud/gcp/view-logs-on-who-enabled-an-api.md'
         'kb/networking/update-tough-switch.md': 'kb/ubiquiti/update-tough-switch.md'
         'kubernetes/kb/kubectl-commands-old.md': 'kubernetes/kb/kubectl-commands.md'
-        #- offline
 extra:
   social:
     - icon: fontawesome/brands/linkedin
