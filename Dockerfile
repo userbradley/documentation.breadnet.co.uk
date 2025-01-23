@@ -32,6 +32,9 @@ COPY --from=BUILDER /app/site /var/www/documentation
 COPY docs/.well-known /var/www/documentation/.well-known
 COPY 403.html /var/www/documentation/403.html
 
+# Ensure the NGINX config is valid
+RUN nginx -t
+
 # Healthcheck to ensure Nginx is running
 HEALTHCHECK CMD curl -s --fail http://localhost:80 || exit 1
 
