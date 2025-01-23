@@ -35,6 +35,9 @@ COPY .htpasswd /etc/nginx/.htpasswd
 # Copy built site from the builder stage (the heaviest change)
 COPY --from=BUILDER /app/site /var/www/documentation
 
+# Ensure the NGINX config is valid
+RUN nginx -t
+
 # Health check for the container
 HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1
 
