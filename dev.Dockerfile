@@ -1,5 +1,5 @@
 # Stage 1: Builder
-FROM ghcr.io/squidfunk/mkdocs-material:9.6.3 as BUILDER
+FROM ghcr.io/squidfunk/mkdocs-material:9.6.4 as BUILDER
 WORKDIR /app
 
 # Set environment variables (usually stable and less likely to change)
