@@ -398,9 +398,11 @@ nav:
           - Aqua Page 2: security/aqua/aqua-page-2.md
           - Aqua partnership notes: security/aqua/partnership-info.md
       - Chronicle:
+          - Chronicle HTTP url maker: security/chronicle/chronicle-http-url-maker.md
           - Configure Datadog Vector to push logs to Chronicle: security/chronicle/configure-datadog-vector-push-logs.md
           - Configure Entitle.io to push logs to Chronicle: security/chronicle/configure-entitle-io-push-logs-to-chronicle.md
           - Configure GitLab SaaS to send logs to Chronicle: security/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md
+          - "Configure Incident.io push logs to Chronicle": security/chronicle/configure-incident-io-push-logs-to-chronicle.md
       - Conductor One:
           - Create alias on Entitlement: security/conductorone/create-alias-on-entitlement.md
           - Get your user ID Conductor One: security/conductorone/get-your-user-id-conductor-one.md
@@ -498,7 +500,7 @@ markdown_extensions:
 plugins:
   - search
   - social # Disabled due to google font being broken: https://github.com/squidfunk/mkdocs-material/issues/6983
-  - privacy
+  #- privacy
   - git-revision-date-localized:
       enable_creation_date: !ENV [CI, false]
       exclude:
