@@ -71,7 +71,8 @@ X-Webhook-Access-Key=<key from window>
 Navigate to the GCP project you are using to _house_ Chronicle
 
 ??? note "How to find project that Chronicle is deployed from"
-Click **Settings** > **SIEM SETTINGS**
+
+    Click **Settings** > **SIEM SETTINGS**
 
     On the home page it will say `GCP Project ID: `
 
