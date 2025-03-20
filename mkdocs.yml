@@ -114,6 +114,7 @@ nav:
           - Grafeas: cloud/gcp/grafeas.md
           - IAP URL's: cloud/gcp/iap-url.md
           - List all service account keys: cloud/gcp/list-all-service-account-keys.md
+          - List project wide SSH keys in Google Cloud: cloud/gcp/list-project-wide-ssh-keys-google-cloud.md
           - List secrets being accessed Google cloud logs: cloud/gcp/list-secrets-being-accessed-google-cloud-logging.md
           - Print secret using gcloud: cloud/gcp/print-secret-gcloud.md
           - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
