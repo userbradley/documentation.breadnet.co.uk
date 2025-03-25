@@ -1,134 +1,5 @@
 nav:
   - Home: index.md
-  - Automation:
-      - automation/index.md
-      - Airflow basics: automation/airflow/airflow-basics.md
-      - Ansible:
-          - Ansible basics: automation/ansible/basics.md
-          - Ansible install python: automation/ansible/python-install.md
-      - Terraform:
-          - automation/iac/terraform/index.md
-          - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
-          - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
-          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-          - Google IAP in Terraform: automation/iac/terraform/google-iap.md
-          - Openstack error: automation/iac/terraform/openstack.md
-          - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
-          - Remote Data: automation/iac/terraform/remote-data.md
-          - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
-          - "Terraform Provider for Kubernetes authenticate with `oidc-login`": automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md
-          - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
-          - Terraform refresh takes ages: automation/iac/terraform/terraform-refresh-takes-ages.md
-          - Terraform Sleep: automation/iac/terraform/terraform-sleep.md
-          - Terraform verbose: automation/iac/terraform/terraform-verbose.md
-          - tfupdate: automation/iac/terraform/tfupdate.md
-          - To string from list in terraform: automation/iac/terraform/to-string-from-list.md
-      - Terragrunt:
-          - automation/iac/terragrunt/index.md
-          - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
-          - Recursive delete of .terragrunt-cache directory: automation/iac/terragrunt/recursive-delete-of-terragrunt-cache.md
-          - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
-          - Terragrunt auto approve: automation/iac/terragrunt/terragrunt-auto-approve.md
-          - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
-          - Terragrunt in GitHub Actions: automation/iac/terragrunt/terragrunt-in-github-actions.md
-          - Terragrunt terraform auto -upgrade: automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md
-  - Certifications:
-      - Google Cloud Architect:
-          - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
-          - Google architect - Page 2: certifications/google-certs/gcp-architect/gcp-architect-2.md
-          - Google architect - Page 3: certifications/google-certs/gcp-architect/gcp-architect-3.md
-          - Kubectl commands: kubernetes/kb/kubectl-commands.md
-          - GCP Load balancer: certifications/google-certs/gcp-architect/gcp-load-balancer.md
-      - Google Security:
-          - Google Security - Exam topics: certifications/google-certs/gcp-security/1-the-exam-topic.md
-          - Google Security - Page 1: certifications/google-certs/gcp-security/gcp-security-1.md
-      - Gsuit administration:
-          - Gsuit User administration: certifications/google-certs/workspace-admin/user-administration.md
-          - Managing Gsuit: certifications/google-certs/workspace-admin/managing-gsuit.md
-          - Google MDM: certifications/google-certs/workspace-admin/mdm.md
-      - GCP Associate:
-          - Regions and Zones: certifications/google-certs/gcp-associate/regions-and-zones.md
-          - Associate cert exam: certifications/google-certs/gcp-associate/gcp.md
-          - Google Compute engine: certifications/google-certs/gcp-associate/gce-google-compute-engine.md
-          - Networking and LB: certifications/google-certs/gcp-associate/networking-and-lb.md
-          - VM Bootstrapping, templates and Images: certifications/google-certs/gcp-associate/vm-bootstrapping-templates-and-images.md
-          - Costs: certifications/google-certs/gcp-associate/costs.md
-          - Compute Engine: certifications/google-certs/gcp-associate/compute-engine.md
-      - CKA:
-          - certifications/cka/index.md
-          - CKA - Page 1: certifications/cka/cka-1.md
-          - CKA Practice questions: certifications/cka/cka-practice-questions.md
-          - CKA Questions I need to spend more time on: certifications/cka/cka-practice-questions-struggled.md
-          - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
-          - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
-      - Terraform associate:
-          - Exam questions: certifications/terraform-associate/exam-questions.md
-  - Cloud Providers:
-      - AWS:
-          - AWS CLI: cloud/aws/aws-cli.md
-          - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
-      - Digital Ocean:
-          - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
-      - Fly:
-          - cloud/fly/index.md
-          - "Create new Fly.io app": cloud/fly/create-new-app.md
-          - Fly Deployment strategy: cloud/fly/deployment-strategy.md
-          - Fly.io in CI: cloud/fly/fly-ci.md
-          - Authenticate to Fly docker Registry: cloud/fly/fly-docker-auth.md
-          - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
-          - Fly regions and scaling: cloud/fly/fly-regions.md
-          - Release FLY IP address: cloud/fly/fly-release-ip-address.md
-          - MkDocs on Fly.io: cloud/fly/mkdocs-on-fly.md
-      - Google Cloud:
-          - "API's and Services":
-              - Composer: cloud/gcp/apis-and-services/composer-apis.md
-          - Metadata API:
-              - cloud/gcp/metadata-api/index.md
-              - Get GKE cluster name using Metadata Endpoint: cloud/gcp/metadata-api/get-gke-cluster-name-using-metadata-endpoint.md
-              - Get Project ID using Metadata Endpoint: cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md
-              - Get service account token using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-token-using-metadata-endpoint.md
-              - Get Service Account using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md
-              - View startup script on Google Compute Engine: cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
-          - Add external user to Google Cloud Platform Organization: cloud/gcp/add-external-user-to-org.md
-          - Authenticate to google artifact registry: cloud/gcp/authenticate-to-google-artifact-registry.md
-          - Authenticate Twine to Google Artifact Registry: cloud/gcp/authenticate-twine-to-google-artifact-registry.md
-          - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
-          - Curl to IAP: cloud/gcp/curl-to-iap.md
-          - Curl to url with google auth: cloud/gcp/curl-to-url-with-google-auth.md
-          - 'err: exec: "docker-credential-gcloud": executable file not found in $PATH': cloud/gcp/err-exec-docker-credential-gcloud-executable-file-not-found-in-path.md
-          - Export GCP DNS zone to bind zone file: cloud/gcp/export-gcp-dns-zone-to-bind-zone-file.md
-          - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
-          - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
-          - Filter Secrets: cloud/gcp/filter-secrets.md
-          - Find latest version of GKE: cloud/gcp/find-latest-version-of-gke.md
-          - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
-          - gcloud Disable Dependent Services: cloud/gcp/gcloud-disable-dependent-services.md
-          - gcloud Disable Services: cloud/gcp/gcloud-disable-services.md
-          - Gcurl: cloud/gcp/gcurl.md
-          - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
-          - Get User info from Numerical Google account ID: cloud/gcp/get-email-from-numerical-user-id.md
-          - Get GCS Bucket IAM Members with the API: cloud/gcp/get-gcs-bucket-iam-members-api.md
-          - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
-          - Get secret from docker-credential-gcloud cli: cloud/gcp/get-secret-from-docker-credential-gcloud-cli.md
-          - Google cloud security day 2024: cloud/gcp/google-cloud-security-day.md
-          - Grafeas: cloud/gcp/grafeas.md
-          - IAP URL's: cloud/gcp/iap-url.md
-          - List all service account keys: cloud/gcp/list-all-service-account-keys.md
-          - List project wide SSH keys in Google Cloud: cloud/gcp/list-project-wide-ssh-keys-google-cloud.md
-          - List secrets being accessed Google cloud logs: cloud/gcp/list-secrets-being-accessed-google-cloud-logging.md
-          - Print secret using gcloud: cloud/gcp/print-secret-gcloud.md
-          - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
-          - Re-run startup script on Google Compute Engine: cloud/gcp/re-run-startup-script-google-compute-engine.md
-          - Remove the lien to allow deletion: cloud/gcp/remove-the-lien-to-allow-deletion.md
-          - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
-          - Show BigQuery Table Schema: cloud/gcp/show-bq-table-schema.md
-          - SSH using IAP: cloud/gcp/ssh-iap.md
-          - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
-          - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
-          - Useful log queries: cloud/gcp/useful-log-queries.md
-          - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
-          - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
-      - Cloud Secret manager cost Comparison: cloud/secret-manager-comparison.md
   - KB Articles:
       - Authentication:
           - Fingerprint on Linux Mint: kb/authentication/fingerprint-on-linux-mint.md
@@ -305,6 +176,101 @@ nav:
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
       - Windows:
           - Reset windows to factory defaults and erase all data: kb/windows/reset-windows-to-factory-defaults-and-erase-all-data.md
+  - Cloud Providers:
+      - Ansible:
+          - Ansible basics: automation/ansible/basics.md
+          - Ansible install python: automation/ansible/python-install.md
+      - Terraform:
+          - automation/iac/terraform/index.md
+          - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
+          - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
+          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
+          - Google IAP in Terraform: automation/iac/terraform/google-iap.md
+          - Openstack error: automation/iac/terraform/openstack.md
+          - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
+          - Remote Data: automation/iac/terraform/remote-data.md
+          - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
+          - "Terraform Provider for Kubernetes authenticate with `oidc-login`": automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md
+          - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - Terraform refresh takes ages: automation/iac/terraform/terraform-refresh-takes-ages.md
+          - Terraform Sleep: automation/iac/terraform/terraform-sleep.md
+          - Terraform verbose: automation/iac/terraform/terraform-verbose.md
+          - tfupdate: automation/iac/terraform/tfupdate.md
+          - To string from list in terraform: automation/iac/terraform/to-string-from-list.md
+      - Terragrunt:
+          - automation/iac/terragrunt/index.md
+          - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
+          - Recursive delete of .terragrunt-cache directory: automation/iac/terragrunt/recursive-delete-of-terragrunt-cache.md
+          - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
+          - Terragrunt auto approve: automation/iac/terragrunt/terragrunt-auto-approve.md
+          - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
+          - Terragrunt in GitHub Actions: automation/iac/terragrunt/terragrunt-in-github-actions.md
+          - Terragrunt terraform auto -upgrade: automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md
+      - AWS:
+          - AWS CLI: cloud/aws/aws-cli.md
+          - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
+      - Digital Ocean:
+          - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
+      - Fly:
+          - cloud/fly/index.md
+          - "Create new Fly.io app": cloud/fly/create-new-app.md
+          - Fly Deployment strategy: cloud/fly/deployment-strategy.md
+          - Fly.io in CI: cloud/fly/fly-ci.md
+          - Authenticate to Fly docker Registry: cloud/fly/fly-docker-auth.md
+          - Get the Real IP address from fly when behind cloudflare: cloud/fly/fly-real-ip.md
+          - Fly regions and scaling: cloud/fly/fly-regions.md
+          - Release FLY IP address: cloud/fly/fly-release-ip-address.md
+          - MkDocs on Fly.io: cloud/fly/mkdocs-on-fly.md
+      - Google Cloud:
+          - "API's and Services":
+              - Composer: cloud/gcp/apis-and-services/composer-apis.md
+          - Metadata API:
+              - cloud/gcp/metadata-api/index.md
+              - Get GKE cluster name using Metadata Endpoint: cloud/gcp/metadata-api/get-gke-cluster-name-using-metadata-endpoint.md
+              - Get Project ID using Metadata Endpoint: cloud/gcp/metadata-api/get-project-id-using-metadata-endpoint.md
+              - Get service account token using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-token-using-metadata-endpoint.md
+              - Get Service Account using Metadata Endpoint: cloud/gcp/metadata-api/get-service-account-using-metadata-endpoint.md
+              - View startup script on Google Compute Engine: cloud/gcp/metadata-api/view-startup-script-on-google-compute-engine-using-metadata-endpoint.md
+          - Add external user to Google Cloud Platform Organization: cloud/gcp/add-external-user-to-org.md
+          - Authenticate to google artifact registry: cloud/gcp/authenticate-to-google-artifact-registry.md
+          - Authenticate Twine to Google Artifact Registry: cloud/gcp/authenticate-twine-to-google-artifact-registry.md
+          - "Curl to GCR/ AR": cloud/gcp/curl-gcr-ar.md
+          - Curl to IAP: cloud/gcp/curl-to-iap.md
+          - Curl to url with google auth: cloud/gcp/curl-to-url-with-google-auth.md
+          - 'err: exec: "docker-credential-gcloud": executable file not found in $PATH': cloud/gcp/err-exec-docker-credential-gcloud-executable-file-not-found-in-path.md
+          - Export GCP DNS zone to bind zone file: cloud/gcp/export-gcp-dns-zone-to-bind-zone-file.md
+          - Export to terraform using gcloud cli: cloud/gcp/export-to-terraform-using-gcloud-cli.md
+          - Filter fields from gcloud output: cloud/gcp/filter-gcloud-output.md
+          - Filter Secrets: cloud/gcp/filter-secrets.md
+          - Find latest version of GKE: cloud/gcp/find-latest-version-of-gke.md
+          - Forward real IP to a NGINX behind a GCP Load Balancer: cloud/gcp/forward-real-ip-to-a-nginx-behind-a-gcp-load-balancer.md
+          - gcloud Disable Dependent Services: cloud/gcp/gcloud-disable-dependent-services.md
+          - gcloud Disable Services: cloud/gcp/gcloud-disable-services.md
+          - Gcurl: cloud/gcp/gcurl.md
+          - Get DNSSEC Record for Google Cloud DNS: cloud/gcp/get-dnssec-keys-for-google-cloud-dns.md
+          - Get User info from Numerical Google account ID: cloud/gcp/get-email-from-numerical-user-id.md
+          - Get GCS Bucket IAM Members with the API: cloud/gcp/get-gcs-bucket-iam-members-api.md
+          - Get project name of GCS bucket: cloud/gcp/get-project-name-of-gcs-bucket.md
+          - Get secret from docker-credential-gcloud cli: cloud/gcp/get-secret-from-docker-credential-gcloud-cli.md
+          - Google cloud security day 2024: cloud/gcp/google-cloud-security-day.md
+          - Grafeas: cloud/gcp/grafeas.md
+          - IAP URL's: cloud/gcp/iap-url.md
+          - List all service account keys: cloud/gcp/list-all-service-account-keys.md
+          - List project wide SSH keys in Google Cloud: cloud/gcp/list-project-wide-ssh-keys-google-cloud.md
+          - List secrets being accessed Google cloud logs: cloud/gcp/list-secrets-being-accessed-google-cloud-logging.md
+          - Print secret using gcloud: cloud/gcp/print-secret-gcloud.md
+          - "Projects, Resources, IAM Users, Roles, Permissions, APIs, and Cloud Shell": cloud/gcp/projects-resources-iam-users-roles-permissions-apis-and-cloud-shell.md
+          - Re-run startup script on Google Compute Engine: cloud/gcp/re-run-startup-script-google-compute-engine.md
+          - Remove the lien to allow deletion: cloud/gcp/remove-the-lien-to-allow-deletion.md
+          - "Serverless VPC access for Cloudrun across Projects": cloud/gcp/serverless-vpc-access-for-cloudrun-across-projects.md
+          - Show BigQuery Table Schema: cloud/gcp/show-bq-table-schema.md
+          - SSH using IAP: cloud/gcp/ssh-iap.md
+          - SSHuttle using Google IAP: cloud/gcp/sshuttle-using-google-iap.md
+          - Useful gcloud commands: cloud/gcp/useful-gcloud-commands.md
+          - Useful log queries: cloud/gcp/useful-log-queries.md
+          - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
+          - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
+      - Cloud Secret manager cost Comparison: cloud/secret-manager-comparison.md
   - Kubernetes:
       - kubernetes/index.md
       - ESO:
@@ -363,10 +329,63 @@ nav:
           - Sleeper pod: kubernetes/kb/sleeper.md
           - Trigger Kubernetes Cron Job Manually: kubernetes/kb/trigger-kubernetes-cron-job-manually.md
           - Using ArgoCD Image updater with Google Artifact Registry: kubernetes/kb/using-argocd-image-updater-with-google-artifact-registry.md
+  - Security:
+      - security/index.md
+      - "Reverse shell using Pinggy.io": security/reverse-shell-using-pinggy.md
+      - Aqua:
+          - Aqua Page 1: security/aqua/aqua-page-1.md
+          - Aqua Page 2: security/aqua/aqua-page-2.md
+          - Aqua partnership notes: security/aqua/partnership-info.md
+      - Chronicle:
+          - Chronicle HTTP url maker: security/chronicle/chronicle-http-url-maker.md
+          - Configure Datadog Vector to push logs to Chronicle: security/chronicle/configure-datadog-vector-push-logs.md
+          - Configure Entitle.io to push logs to Chronicle: security/chronicle/configure-entitle-io-push-logs-to-chronicle.md
+          - Configure GitLab SaaS to send logs to Chronicle: security/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md
+          - "Configure Incident.io push logs to Chronicle": security/chronicle/configure-incident-io-push-logs-to-chronicle.md
+      - Conductor One:
+          - Create alias on Entitlement: security/conductorone/create-alias-on-entitlement.md
+          - Get your user ID Conductor One: security/conductorone/get-your-user-id-conductor-one.md
+          - List users in Conductor one using the API: security/conductorone/list-users-in-conductor-one-using-the-api.md
+      - Rapid7:
+          - Add Google Organization to Rapid7: security/rapid7/add-google-organization-to-rapid7.md
+  - Certifications:
+      - Google Cloud Architect:
+          - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
+          - Google architect - Page 2: certifications/google-certs/gcp-architect/gcp-architect-2.md
+          - Google architect - Page 3: certifications/google-certs/gcp-architect/gcp-architect-3.md
+          - Kubectl commands: kubernetes/kb/kubectl-commands.md
+          - GCP Load balancer: certifications/google-certs/gcp-architect/gcp-load-balancer.md
+      - Google Security:
+          - Google Security - Exam topics: certifications/google-certs/gcp-security/1-the-exam-topic.md
+          - Google Security - Page 1: certifications/google-certs/gcp-security/gcp-security-1.md
+      - Gsuit administration:
+          - Gsuit User administration: certifications/google-certs/workspace-admin/user-administration.md
+          - Managing Gsuit: certifications/google-certs/workspace-admin/managing-gsuit.md
+          - Google MDM: certifications/google-certs/workspace-admin/mdm.md
+      - GCP Associate:
+          - Regions and Zones: certifications/google-certs/gcp-associate/regions-and-zones.md
+          - Associate cert exam: certifications/google-certs/gcp-associate/gcp.md
+          - Google Compute engine: certifications/google-certs/gcp-associate/gce-google-compute-engine.md
+          - Networking and LB: certifications/google-certs/gcp-associate/networking-and-lb.md
+          - VM Bootstrapping, templates and Images: certifications/google-certs/gcp-associate/vm-bootstrapping-templates-and-images.md
+          - Costs: certifications/google-certs/gcp-associate/costs.md
+          - Compute Engine: certifications/google-certs/gcp-associate/compute-engine.md
+      - CKA:
+          - certifications/cka/index.md
+          - CKA - Page 1: certifications/cka/cka-1.md
+          - CKA Practice questions: certifications/cka/cka-practice-questions.md
+          - CKA Questions I need to spend more time on: certifications/cka/cka-practice-questions-struggled.md
+          - Useful CKA Kubectl Commands: certifications/cka/useful-cka-kubectl-commands.md
+          - CKA List of controllers: certifications/cka/cka-list-of-controllers.md
+      - Terraform associate:
+          - Exam questions: certifications/terraform-associate/exam-questions.md
   - mkdocs:
       - mkdocs/index.md
       - Add review date to page: mkdocs/add-review-date-to-page.md
       - Set page as permanently outdated: mkdocs/mark-page-as-outdated.md
+  - Automation:
+      - automation/index.md
+      - Airflow basics: automation/airflow/airflow-basics.md
   - Home:
       - home/index.md
       - RG:
@@ -391,25 +410,6 @@ nav:
       - 2025-01-23 11AM: outage/2025-01-23-17.md
       - 2023-11-26 4AM: outage/2023-11-26-04.md
       - 2023-10-27 11AM: outage/2023-10-27-11.md
-  - Security:
-      - security/index.md
-      - "Reverse shell using Pinggy.io": security/reverse-shell-using-pinggy.md
-      - Aqua:
-          - Aqua Page 1: security/aqua/aqua-page-1.md
-          - Aqua Page 2: security/aqua/aqua-page-2.md
-          - Aqua partnership notes: security/aqua/partnership-info.md
-      - Chronicle:
-          - Chronicle HTTP url maker: security/chronicle/chronicle-http-url-maker.md
-          - Configure Datadog Vector to push logs to Chronicle: security/chronicle/configure-datadog-vector-push-logs.md
-          - Configure Entitle.io to push logs to Chronicle: security/chronicle/configure-entitle-io-push-logs-to-chronicle.md
-          - Configure GitLab SaaS to send logs to Chronicle: security/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md
-          - "Configure Incident.io push logs to Chronicle": security/chronicle/configure-incident-io-push-logs-to-chronicle.md
-      - Conductor One:
-          - Create alias on Entitlement: security/conductorone/create-alias-on-entitlement.md
-          - Get your user ID Conductor One: security/conductorone/get-your-user-id-conductor-one.md
-          - List users in Conductor one using the API: security/conductorone/list-users-in-conductor-one-using-the-api.md
-      - Rapid7:
-          - Add Google Organization to Rapid7: security/rapid7/add-google-organization-to-rapid7.md
   - Bread:
       - bread/index.md
       - 2024-05-18: bread/2024-05-18.md
