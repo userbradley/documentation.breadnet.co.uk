@@ -20,3 +20,9 @@ List useful log queries in GCP
 | Query                                                   | Explainer                                           |
 |---------------------------------------------------------|-----------------------------------------------------|
 | `protoPayload.requestMetadata.callerIp="203.0.113.3"`   | Any and all events associated with the IP address   |
+
+### IAM
+
+| Query                                      | Explainer               |
+|--------------------------------------------|-------------------------|
+| `protoPayload.methodName = "setIamPolicy"` | List IAM policy updates |
