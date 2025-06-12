@@ -276,6 +276,7 @@ nav:
       - ESO:
           - Force resync of External Secret: kubernetes/eso/trigger-refresh.md
       - Flux:
+          - Add flux schema to IntelliJ: kubernetes/flux/add-flux-schemas-to-intellij.md
           - Authenticate flux with Google Artifact Registry: kubernetes/flux/flux-artifact-registry-google-auth.md
           - Flux Lookup no such host: kubernetes/flux/flux-lookup-no-such-host.md
           - Flux reconcile: kubernetes/flux/flux-reconcile.md
