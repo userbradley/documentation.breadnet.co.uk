@@ -338,6 +338,7 @@ nav:
           - Aqua partnership notes: security/aqua/partnership-info.md
       - Chronicle:
           - Chronicle HTTP url maker: security/chronicle/chronicle-http-url-maker.md
+          - Configure Conductor One to push logs to Chronicle: security/chronicle/configure-conductor-one-to-push-logs-to-chronicle.md
           - Configure Datadog Vector to push logs to Chronicle: security/chronicle/configure-datadog-vector-push-logs.md
           - Configure Entitle.io to push logs to Chronicle: security/chronicle/configure-entitle-io-push-logs-to-chronicle.md
           - Configure GitLab SaaS to send logs to Chronicle: security/chronicle/configure-gitlab-saas-send-logs-to-chronicle.md
