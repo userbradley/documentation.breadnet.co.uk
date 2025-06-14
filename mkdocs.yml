@@ -303,7 +303,7 @@ nav:
           - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
           - Setting up k3s to use nfs as default storage class: kubernetes/k3s/nfs-pvc-cluster-storageclass-k3s.md
-          - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/k3s/oidc-azure-ad.md
+          - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/k3s/oidc-azure-ad.md # This is kept here as it's a redirect!
           - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
       - KIND:
           - Load images in to kind: kubernetes/kind/load-image-in-to-kind.md
@@ -313,6 +313,10 @@ nav:
           - Kubeconform google managed prometheus: kubernetes/kubeconform/kube-conform-google-managed-prometheus.md
       - Nginx Ingress:
           - Nginx ingress with Cloudflare origin SSL/TLS: kubernetes/nginx-ingress/nginx-ingress-with-cloudflare-origin-server-ssl-tls.md
+      - OIDC:
+          - kubernetes/oidc/index.md
+          - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/oidc/oidc-azure-ad.md # This is kept here as it's a redirect!
+          - Configuring Talos for OIDC Authentication via Pocket-ID: kubernetes/oidc/talos-oidc-pocket-id.md
       - KB:
           - kubernetes/kb/index.md
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
@@ -437,6 +441,7 @@ theme:
       success: octicons/check-16
       question: octicons/question-16
       warning: octicons/alert-16
+      error: octicons/alert-16
       failure: octicons/x-circle-16
       danger: octicons/zap-16
       bug: octicons/bug-16
@@ -560,6 +565,7 @@ plugins:
         'home/water-heater/reduce-temperature.md': 'home/rg/water-heater/reduce-temperature.md'
         'kb/networking/update-tough-switch.md': 'kb/ubiquiti/update-tough-switch.md'
         'kubernetes/kb/kubectl-commands-old.md': 'kubernetes/kb/kubectl-commands.md'
+        'kubernetes/k3s/oidc-azure-ad.md': 'kubernetes/oidc/oidc-azure-ad.md'
 extra:
   social:
     - icon: fontawesome/brands/linkedin
