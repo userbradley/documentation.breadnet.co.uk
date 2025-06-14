@@ -303,7 +303,7 @@ nav:
           - K3s private registry using Google Artifact Registry: kubernetes/k3s/k3s-private-registry-using-google-artifact-registry.md
           - "Error 1962: No operating system found": kubernetes/k3s/lenovo-sff-ubuntu.md
           - Setting up k3s to use nfs as default storage class: kubernetes/k3s/nfs-pvc-cluster-storageclass-k3s.md
-          - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/k3s/oidc-azure-ad.md # This is kept here as it's a redirect!
+          - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/oidc/oidc-azure-ad.md # This is kept here as it's got SEO pointed at this nav, but it's changed locations
           - Things taking too long to delete kubectl: kubernetes/k3s/things-taking-too-long-to-delete.md
       - KIND:
           - Load images in to kind: kubernetes/kind/load-image-in-to-kind.md
