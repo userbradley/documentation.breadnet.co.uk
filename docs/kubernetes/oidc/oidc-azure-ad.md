@@ -38,9 +38,10 @@ Any time you have to change a value, there will either be:
 ## Configure Azure
 
 !!! note "List of things to configure"
-    *Entra App Registration
+
+    * Entra App Registration
     * Redirect URL's
-    *Client Secret
+    * Client Secret
     * Token Configuration
 
 ### Create App Registration
@@ -221,7 +222,9 @@ kubectl config set-credentials oidc \
 
 Run that one with your Kubernetes context you want to change, and then run the below to set the username to `oidc`
 
+```
 kubectl config set-context supercluster --user=oidc
+```
 
 ## Configure your Cluster
 
