@@ -1,5 +1,5 @@
 # Stage 1: Builder
-FROM ghcr.io/squidfunk/mkdocs-material:9.6.2 as BUILDER
+FROM ghcr.io/squidfunk/mkdocs-material:9.6.15 as BUILDER
 WORKDIR /app
 
 # Set environment variables (usually stable and less likely to change)
@@ -14,7 +14,7 @@ COPY mkdocs.yml /app/mkdocs.yml
 COPY overrides /app/overrides
 
 # Install plugins (this changes less often)
-RUN pip3 install mkdocs-git-revision-date-localized-plugin
+RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker
 
 # Copy documentation files (more likely to change, so placed later)
 COPY docs /app/docs

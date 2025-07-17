@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0 # OR "2" -> To retrieve the preceding commit.
       - name: Locate changed cluster-admin
         id: changed-files-yaml
-        uses: tj-actions/changed-files@v45
+        uses: tj-actions/changed-files@v46
         with:
           token: ${{ github.token }}
           use_rest_api: false

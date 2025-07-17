@@ -72,4 +72,4 @@ provider "kubernetes" {
 
 ## Additional Reading
 
-* [Configure K3s to use Azure Entra](../../../kubernetes/k3s/oidc-azure-ad.md)
+* [Configure K3s to use Azure Entra](../../../kubernetes/oidc/oidc-azure-ad.md)

@@ -36,6 +36,12 @@ no-inline-html:
     - KEY
     - br
     - tenant
+    - style
+    - body
+    - input
+    - label
+    - script
+    - textarea
 code-block-style: false
 fenced-code-language: false
 no-alt-text: false
