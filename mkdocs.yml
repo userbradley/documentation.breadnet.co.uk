@@ -177,35 +177,6 @@ nav:
       - Windows:
           - Reset windows to factory defaults and erase all data: kb/windows/reset-windows-to-factory-defaults-and-erase-all-data.md
   - Cloud Providers:
-      - Ansible:
-          - Ansible basics: automation/ansible/basics.md
-          - Ansible install python: automation/ansible/python-install.md
-      - Terraform:
-          - automation/iac/terraform/index.md
-          - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
-          - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
-          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
-          - Google IAP in Terraform: automation/iac/terraform/google-iap.md
-          - Openstack error: automation/iac/terraform/openstack.md
-          - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
-          - Remote Data: automation/iac/terraform/remote-data.md
-          - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
-          - "Terraform Provider for Kubernetes authenticate with `oidc-login`": automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md
-          - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
-          - Terraform refresh takes ages: automation/iac/terraform/terraform-refresh-takes-ages.md
-          - Terraform Sleep: automation/iac/terraform/terraform-sleep.md
-          - Terraform verbose: automation/iac/terraform/terraform-verbose.md
-          - tfupdate: automation/iac/terraform/tfupdate.md
-          - To string from list in terraform: automation/iac/terraform/to-string-from-list.md
-      - Terragrunt:
-          - automation/iac/terragrunt/index.md
-          - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
-          - Recursive delete of .terragrunt-cache directory: automation/iac/terragrunt/recursive-delete-of-terragrunt-cache.md
-          - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
-          - Terragrunt auto approve: automation/iac/terragrunt/terragrunt-auto-approve.md
-          - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
-          - Terragrunt in GitHub Actions: automation/iac/terragrunt/terragrunt-in-github-actions.md
-          - Terragrunt terraform auto -upgrade: automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md
       - AWS:
           - AWS CLI: cloud/aws/aws-cli.md
           - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
@@ -391,6 +362,35 @@ nav:
       - Set page as permanently outdated: mkdocs/mark-page-as-outdated.md
   - Automation:
       - automation/index.md
+      - Ansible:
+          - Ansible basics: automation/ansible/basics.md
+          - Ansible install python: automation/ansible/python-install.md
+      - Terraform:
+          - automation/iac/terraform/index.md
+          - Building Infrastructure in terraform: automation/iac/terraform/building-infrastructure.md
+          - Bulk delete from terraform state: automation/iac/terraform/bulk-delete-terraform-state.md
+          - "Failed to get existing workspaces: querying Cloud Storage failed: storage: bucket doesn't exist": automation/iac/terraform/failed-to-get-existing-workspaces-querying-Cloud-Storage-failed-storage-bucket-doesnt-exist.md
+          - Google IAP in Terraform: automation/iac/terraform/google-iap.md
+          - Openstack error: automation/iac/terraform/openstack.md
+          - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
+          - Remote Data: automation/iac/terraform/remote-data.md
+          - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
+          - "Terraform Provider for Kubernetes authenticate with `oidc-login`": automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md
+          - "Terraform plugin Cannot locate module locally, unknown reason": automation/iac/terraform/terraform-plugin-cannot-locate-module-locally-unknown-reason.md
+          - Terraform refresh takes ages: automation/iac/terraform/terraform-refresh-takes-ages.md
+          - Terraform Sleep: automation/iac/terraform/terraform-sleep.md
+          - Terraform verbose: automation/iac/terraform/terraform-verbose.md
+          - tfupdate: automation/iac/terraform/tfupdate.md
+          - To string from list in terraform: automation/iac/terraform/to-string-from-list.md
+      - Terragrunt:
+          - automation/iac/terragrunt/index.md
+          - Generate backend file for GCS with terragrunt: automation/iac/terragrunt/generate-backend-file-for-gcs-with-terragrunt.md
+          - Recursive delete of .terragrunt-cache directory: automation/iac/terragrunt/recursive-delete-of-terragrunt-cache.md
+          - Required plugins are not installed - Terragrunt: automation/iac/terragrunt/required-plugins-are-not-installed-terragrunt.md
+          - Terragrunt auto approve: automation/iac/terragrunt/terragrunt-auto-approve.md
+          - Terragrunt generate block: automation/iac/terragrunt/terragrunt-generate-block.md
+          - Terragrunt in GitHub Actions: automation/iac/terragrunt/terragrunt-in-github-actions.md
+          - Terragrunt terraform auto -upgrade: automation/iac/terragrunt/terragrunt-terraform-auto-upgrade.md
       - Airflow basics: automation/airflow/airflow-basics.md
   - Home:
       - home/index.md
