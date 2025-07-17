@@ -12,7 +12,7 @@ COPY overrides /app/overrides
 COPY .git /app/.git
 
 # Install dependencies and build the site
-RUN pip3 install mkdocs-git-revision-date-localized-plugin && \
+RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker && \
     mkdocs build
 
 # Clean up unnecessary files
