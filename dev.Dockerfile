@@ -14,7 +14,7 @@ COPY mkdocs.yml /app/mkdocs.yml
 COPY overrides /app/overrides
 
 # Install plugins (this changes less often)
-RUN pip3 install mkdocs-git-revision-date-localized-plugin
+RUN pip3 install mkdocs-git-revision-date-localized-plugin link-marker
 
 # Copy documentation files (more likely to change, so placed later)
 COPY docs /app/docs
