@@ -361,7 +361,6 @@ nav:
       - Add review date to page: mkdocs/add-review-date-to-page.md
       - Set page as permanently outdated: mkdocs/mark-page-as-outdated.md
   - Automation:
-      - automation/index.md
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
           - Ansible install python: automation/ansible/python-install.md
