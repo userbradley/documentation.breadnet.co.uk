@@ -43,5 +43,5 @@ but don't want to include these secrets in the actual document, and don't want i
     Set a custom length, up to a maximum of 41 characters
 
     ```shell
-    head -c 12 /dev/urandom | shasum | cut -d ' ' -f1
+     head -c 1 /dev/urandom | shasum | cut -d ' ' -f1 | cut -c -12
     ```
