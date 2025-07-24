@@ -9,27 +9,39 @@ but don't want to include these secrets in the actual document, and don't want i
 
 ## How
 
-You can use the `openssl rand` command
+=== "openssl"
 
-The command follows the below schema
+    You can use the `openssl rand` command
 
-```text
-   * ---------------------- openSSL command
-  |       * --------------- Random string command
-  |       |     * --------- Type of random string
-  |       |     |     * --  Number of characters
-  |       |     |     |
-openssl rand -base64 12
-```
+    The command follows the below schema
 
-### Base64
+    ```text
+       * ---------------------- openSSL command
+      |       * --------------- Random string command
+      |       |     * --------- Type of random string
+      |       |     |     * --  Number of characters
+      |       |     |     |
+    openssl rand -base64 12
+    ```
+    === "base64"
 
-```shell
-openssl rand -base64 12
-```
+        ```shell
+        openssl rand -base64 12
+        ```
 
-### hex
+    === "hex"
+        ```shell
+        openssl rand -hex 12
+        ```
 
-```shell
-openssl rand -hex 12
-```
+=== "/dev/urandom"
+
+    ```shell
+    head -c 12 /dev/urandom | shasum | cut -d ' ' -f1
+    ```
+
+    Set a custom length, up to a maximum of 41 characters
+
+    ```shell
+     head -c 1 /dev/urandom | shasum | cut -d ' ' -f1 | cut -c -12
+    ```
