@@ -63,7 +63,7 @@ This will install the pre-commit hooks on this repo, as well as run pre-commit o
 ### I want to run `mkdocs` locally
 
 ```shell
-pip3 install -r requirments.txt
+pip3 install -r requirements.txt
 brew install cairo freetype libffi libjpeg libpng zlib pngquant
 ```
 

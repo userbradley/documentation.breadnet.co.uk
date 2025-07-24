@@ -1,4 +1,15 @@
-:root > * {
-    --md-primary-fg-color:        #206DA6;
-    --md-accent-color: #54B947;
-}
+/*.md-main__inner.md-grid {*/
+/*    max-width: initial;*/
+/*}*/
+
+/*.md-grid {*/
+/*    max-width: 100%; !* or 100%, if you want to stretch to full-width *!*/
+/*}*/
+
+/*.md-grid {*/
+/*    max-width: 1440px;*/
+/*}*/
+
+/*.md-main__inner.md-grid {*/
+/*    max-width: initial;*/
+/*}*/
