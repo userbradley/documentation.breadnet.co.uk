@@ -99,6 +99,10 @@ and copy the email address you see at the bottom of the page. It will be formatt
 | MTA Report Address | The email address that reports get sent to.                                                                                                                                 | Use RUA/ RUF email from the Domains page |
 | MX Records         | This is the list of MX servers your emails get delivered to. I recommend running `dig MX <your domain>` and putting them in order of priority as they show in the MX record | Your MX records                          |
 
+An example completed policy for a domain using Google Workspace ([setup before 2023](https://support.google.com/a/answer/16004259?hl=en&src=supportwidget0&authuser=0#:~:text=Google%20for%20delivery.-,Legacy%20MX%20record%20values,-If%20you%20started)) would look like the below
+
+![](../../assets/on-dmarc-redsift-mta-sts-example-policy-complete.png)
+
 #### MX records
 
 Let's say our domain is `example.com` and we dig for MX records
