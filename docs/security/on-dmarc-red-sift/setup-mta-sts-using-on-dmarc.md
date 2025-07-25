@@ -1,10 +1,10 @@
 ---
-title: Setting up MTA-STS    using OnDMARC
+title: Setup MTA-STS using OnDMARC
 ---
 
 ## What
 
-This guide explains how to set up MTA-STS using OnDMRAC, a maanged hosted solution.
+This guide explains how to set up MTA-STS using OnDMRAC, a managed hosted solution.
 
 ### What is MTA-STS
 
