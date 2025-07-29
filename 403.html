@@ -8,11 +8,10 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f8f9fa;
             color: #343a40;
             text-align: center;
-            padding: 20px;
         }
         h1 {
             color: #dc3545;
@@ -38,13 +37,21 @@
         th {
             background-color: #f1f1f1;
         }
+        .content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .content p {
+            margin: 16px 0;
+        }
     </style>
 </head>
 <body>
 <h1>Access Blocked</h1>
 <h3>You're seeing this page because you've been blocked.</h3>
 <p>If you think this is an error, please <a href="https://github.com/userbradley/documentation.breadnet.co.uk" target="_blank">open an issue on GitHub</a>.</p>
-
 <p>If you're actually a human (and are willing to pinkie promise that fact) then open an issue or disable your VPN. There are no trackers on this site</p>
 
 <table>
@@ -59,7 +66,7 @@
     <tr>
         <td>23rd January 2025</td>
         <td>Someone from PT Persada Data Multimedia was constantly requesting the same page every half second</td>
-        <td><a href="https://github.com/userbradley/documentation.breadnet.co.uk/pull/481">481</a> </td>
+        <td><a href="https://github.com/userbradley/documentation.breadnet.co.uk/pull/481">481</a></td>
     </tr>
     <tr>
         <td>18th January 2025</td>
@@ -69,10 +76,26 @@
     </tbody>
 </table>
 
+<div class="content">
+    <p>
+        If you are a UK-based user and you are using a VPN to connect to the internet, firstly: welcome.
+        You're seeing this page because the VPN you're using has probably been abused, and the IP address was blocked.
+    </p>
+    <p>
+        Either try a new VPN provider like <a href="https://mullvad.net" target="_blank">Mullvad</a>, or try accessing from a different device or connection.
+        If you're technical, please open an issue on the GitHub and I will assist you directly.
+    </p>
+    <p>
+        There are plans to serve this site over TOR eventually, but at the moment this is not yet in place.
+    </p>
+    <p>
+        Consider signing the <a href="https://petition.parliament.uk/petitions/722903" target="_blank">Petition to repeal the act</a> if you care about your privacy
+    </p>
+</div>
+
 <!-- Matomo -->
 <script>
     var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
