@@ -24,6 +24,13 @@ based on the fonts, or anything else
 However, there is a tracker in the form of self-hosted Matomo. This data is only used, so I can see what pages are being looked
 at frequently, and then ensure they are updated if things change. You can email me to have your data exported or removed
 
+As there have been changes in Legislation in the UK, there will most likely be an influx in users coming in via a VPN. For that
+reason a decision has been made to update the [block page](https://github.com/userbradley/documentation.breadnet.co.uk/blob/main/403.html)
+on what happens if you are a legitimate user and have been blocked (for example as you're using a VPN...)
+
+I am also working on a plan to serve this site over TOR, as I think it would be cool and also because I believe that information
+should be accessible, to all.
+
 ## Here's a taste of what you'll find
 
 * **Home Lab Documentation:** Detailed guides on my network infrastructure, software configurations, and hardware setup.
