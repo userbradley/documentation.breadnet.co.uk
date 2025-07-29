@@ -510,6 +510,7 @@ plugins:
   - search
   - social # Disabled due to google font being broken: https://github.com/squidfunk/mkdocs-material/issues/6983
   - link-marker
+  - open-in-new-tab # exactly as it sounds
   - git-revision-date-localized:
       enable_creation_date: !ENV [CI, false]
       exclude:
