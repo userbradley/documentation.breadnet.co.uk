@@ -1,5 +1,5 @@
 ---
-title: Connect Unifi to Mullvad VPN
+title: Tunnel Unifi Traffic Through Mullvad Using WireGuard
 ---
 
 ## Why
