@@ -8,5 +8,13 @@
   "dockerfile": {
     "automerge": true,
     "autoApprove": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "mkdocs-material"
+      ],
+      "automerge": true
+    }
+  ]
 }
