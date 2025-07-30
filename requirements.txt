@@ -1,5 +1,5 @@
 babel==2.17.0
-backrefs==5.9
+backrefs==6.0.1
 cairocffi==1.7.1
 CairoSVG==2.8.2
 certifi==2025.7.14
