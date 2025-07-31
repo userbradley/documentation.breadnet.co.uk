@@ -117,7 +117,7 @@ nav:
           - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
       - Nginx:
           - Reverse web proxy: kb/nginx/reverse-web-proxy.md
-          - Get the real IP address from Cloudflare: kb/nginx/get-real-ip-cloudflare.md
+          - Get real IP address behind cloudflare NGINX: kb/nginx/get-real-ip-address-behind-cloudflare-nginx.md
           - Install nginx Extras: kb/nginx/nginx-extras.md
           - Custom Headers: kb/nginx/custom-headers.md
           - Remove server headers: kb/nginx/remove-server-headers.md
@@ -569,6 +569,7 @@ plugins:
         'kubernetes/kb/kubectl-commands-old.md': 'kubernetes/kb/kubectl-commands.md'
         'kubernetes/k3s/oidc-azure-ad.md': 'kubernetes/oidc/oidc-azure-ad.md'
         'kb/linux-cli/generate-random-token.md': 'kb/linux-cli/create-random-string.md'
+        'kb/nginx/get-real-ip-cloudflare.md': 'kb/nginx/get-real-ip-address-behind-cloudflare-nginx.md'
 extra:
   social:
     - icon: fontawesome/brands/linkedin
