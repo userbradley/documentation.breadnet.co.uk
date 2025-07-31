@@ -14,12 +14,15 @@ COPY mkdocs.yml /app/mkdocs.yml
 COPY overrides /app/overrides
 
 # Install plugins (this changes less often)
-RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker mkdocs-open-in-new-tab
+RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker mkdocs-open-in-new-tab requests
 
 # Copy documentation files (more likely to change, so placed later)
-COPY docs /app/docs
+COPY scripts/cloudflare-ip-range.py /app/
 COPY dev-robots.txt /app/docs/robots.txt
 
+COPY docs /app/docs
+
+RUN python3 cloudflare-ip-range.py
 # Build the site
 RUN mkdocs build
 

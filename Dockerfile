@@ -4,16 +4,20 @@ WORKDIR /app
 
 ENV CI=true
 # Copy configuration and content files
+COPY scripts/cloudflare-ip-range.py /app/
 COPY mkdocs.yml /app/mkdocs.yml
 COPY docs /app/docs
 COPY overrides /app/overrides
+
+
 
 # Include .git for git-revision-date-localized-plugin
 COPY .git /app/.git
 
 # Install dependencies and build the site
-RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker mkdocs-open-in-new-tab && \
-    mkdocs build
+RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker mkdocs-open-in-new-tab requests
+RUN python3 cloudflare-ip-range.py
+RUN mkdocs build
 
 # Clean up unnecessary files
 RUN rm -rf /app/.git
