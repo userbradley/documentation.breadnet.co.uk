@@ -9,3 +9,4 @@ mkdocs-open-in-new-tab==1.0.8
 mkdocs-redirects==1.2.2
 Pygments==2.19.2
 pymdown-extensions==10.16.1
+mkdocs-pages-json-plugin==0.0.1

@@ -519,6 +519,8 @@ plugins:
       exclude:
         - index.md
       enabled: !ENV [CI, false]
+  - pages-json:
+      output_file: 'api/pages.json'
   - redirects:
       redirect_maps:
         'kb/public-web-facing/jellyfin-s3.md': 'kb/public-web-facing/jellyfin-using-s3-and-docker.md'

@@ -15,7 +15,7 @@ COPY overrides /app/overrides
 COPY .git /app/.git
 
 # Install dependencies and build the site
-RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker mkdocs-open-in-new-tab requests
+RUN pip3 install mkdocs-git-revision-date-localized-plugin mkdocs-link-marker mkdocs-open-in-new-tab requests mkdocs-pages-json-plugin
 RUN python3 cloudflare-ip-range.py
 RUN mkdocs build
 
