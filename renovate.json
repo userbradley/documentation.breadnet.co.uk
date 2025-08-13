@@ -18,6 +18,7 @@
     }
   ],
   "pre-commit": {
-    "enabled": true
+    "enabled": true,
+    "automerge": true
   }
 }
