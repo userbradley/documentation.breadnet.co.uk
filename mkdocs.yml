@@ -132,6 +132,8 @@ nav:
           - Wordpress permissions: kb/php/wordpress-permissions.md
       - PIP:
           - Skipping package due to invalid metadata entry: kb/pip/skipping-package-due-to-invalid-metadata-entry.md
+      - PIPX:
+          - pipx install from private Git repo: kb/pipx/pipx-install-from-private-git-repo.md
       - Podman:
           - kb/podman/index.md
           - Authenticate Podman to GitHub Container Registry: kb/podman/authenticate-podman-to-ghcr.md
