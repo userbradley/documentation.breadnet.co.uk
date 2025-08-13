@@ -53,6 +53,6 @@ This mounts the disk with the UUID of `02ed6055-ccea-40d7-a735-4045a36df5d7` to 
 
 ??? info "Old Method"
     ```
-    Device Mountpoint fstype option dump fsck
+Device Mountpoint fstype option dump fsck
     /dev/sdb1 /home/yourname/mydata ext4 defaults 0 1
     ```

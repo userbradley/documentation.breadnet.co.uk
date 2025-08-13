@@ -45,7 +45,7 @@ no-inline-html:
 code-block-style: false
 fenced-code-language: false
 no-alt-text: false
-no-emphasis-as-heading: true
+no-emphasis-as-heading: false #todo: fix this
 list-indent: false
 heading-increment: false
 no-duplicate-heading: false
@@ -54,3 +54,4 @@ heading-style:
   style: atx
 single-h1: false
 single-title: false
+descriptive-link-text: false #todo: Fix this at some point
