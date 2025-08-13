@@ -66,6 +66,7 @@ nav:
           - Backup SQlite Database: kb/linux-cli/backup-sqlite-db.md
           - Broken link checker: kb/linux-cli/blc.md
           - Bulk change file extensions: kb/linux-cli/bulk-change-file-extension.md
+          - Check SSL certificate for Mail server: kb/linux-cli/check-ssl-certificate-for-mailserver.md
           - Create random string: kb/linux-cli/create-random-string.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
