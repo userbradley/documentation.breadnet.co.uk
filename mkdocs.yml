@@ -107,6 +107,8 @@ nav:
           - Note and Warning markdown for GitHub: kb/markdown/note-warning-in-markdown.md
       - Matomo:
           - Matomo behind cloudflared: kb/matomo/matomo-behind-cloudflare.md
+      - Mealie:
+          - Make API request to mealie: kb/mealie/make-api-request-to-mealie.md
       - Minio:
           - OLD: kb/minio/old.md
           - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
