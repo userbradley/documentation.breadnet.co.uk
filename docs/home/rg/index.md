@@ -11,8 +11,8 @@ This section and it's sub-pages contains documentation and instructions for the 
 The following items are documented:
 
 * [Utilities](utilities/index.md)
-    * [Water](utilities/water.md)
-    * [Electricity](utilities/electricity.md)
+  * [Water](utilities/water.md)
+  * [Electricity](utilities/electricity.md)
 * [Fuse box](cu/consumer-unit.md)
 * [Oven](oven/oven.md)
 * [Washing machine](washing/washing-machine.md)

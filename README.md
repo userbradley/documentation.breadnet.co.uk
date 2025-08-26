@@ -109,15 +109,15 @@ just suffer.
 From the migration, the URl changed.  `bookstack.breadnet.co.uk` will redirect to `documentation.breadnet.co.uk`, and all
 pages that were originally on `bookstack` should now redirect to a page on mkdocs. see [redirect.conf](redirect.conf) for pages
 
-# Branching Strategy
+## Branching Strategy
 
-## main
+### main
 
 This is the main branch of the site and repo, which holds the live site that you can access.
 
 The Dev build must pass, and you require approval before merging in to main is allowed
 
-## feat/**
+### feat/**
 
 The site is built off any Pull requests that touch the below files.
 

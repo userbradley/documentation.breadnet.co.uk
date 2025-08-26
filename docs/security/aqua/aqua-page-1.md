@@ -74,41 +74,41 @@ Securing the workloads
 ##### The Challenges
 
 * Securing builds
-    * Known vulnerabilities
-    * Malware
-    * Configuration
-    * Sensitive Data
-    * Non-approved software
+  * Known vulnerabilities
+  * Malware
+  * Configuration
+  * Sensitive Data
+  * Non-approved software
 * Securing infrastructure
-    * Security Configuration
+  * Security Configuration
 * Vulnerabilities
 * Missing Patches
 * Access control
-    * RBAC
-    * Leas privileges possible
+  * RBAC
+  * Leas privileges possible
 * Security Posture Management
-    * Malicious Activity
-    * Changes to the image running things that weren't meant to be accessed
-    * Strange network activity
-    * Intrusion Prevention
-    * Segmentation
-    * Containing the risk
-    * Damage control
-        * Limited exposure and the scope of the issue
+  * Malicious Activity
+  * Changes to the image running things that weren't meant to be accessed
+  * Strange network activity
+  * Intrusion Prevention
+  * Segmentation
+  * Containing the risk
+  * Damage control
+    * Limited exposure and the scope of the issue
 * Drift prevention
-    * Make sure that run time builds are enforced and that containers are Immutable
-    * Event Auditing
+  * Make sure that run time builds are enforced and that containers are Immutable
+  * Event Auditing
 * Securing the build
-    * Scans all build artifacts for vulnerabilities, secrets bad config, malware and permissions
-    * Prioritize issues based on application contextual risk
-    * Detects hidden malware and prevents supply chain attacks
-    * Flexible assurance policies to flag and block bad artifacts
+  * Scans all build artifacts for vulnerabilities, secrets bad config, malware and permissions
+  * Prioritize issues based on application contextual risk
+  * Detects hidden malware and prevents supply chain attacks
+  * Flexible assurance policies to flag and block bad artifacts
 * Application Assurance
-    * Integrate Aqua in the build process
-    * Applying assurance policies to stop builds of images that do not follow best practices
-    * Integrates with all CICD
+  * Integrate Aqua in the build process
+  * Applying assurance policies to stop builds of images that do not follow best practices
+  * Integrates with all CICD
 * Vulnerability lifecycle management
-    * Determine the actions
+  * Determine the actions
 
 ##### Aqua vShield
 
@@ -120,7 +120,7 @@ Securing the workloads
 
 * Does not change image code or require and dev intervention
 * Acts as a compensating control
-    * Will temporarily apply a policy to that runtime, to prevent malicious code running
+  * Will temporarily apply a policy to that runtime, to prevent malicious code running
 
 ##### Dynamic Image Inspection (Aqua DTA)
 
@@ -149,7 +149,7 @@ DTA will run the image for you, and observes what the image does (Runs on AQUAS 
 * Schedule to run daily
 * CIS certified
 * Answers the question:
-    * Is my infa secure
+  * Is my infa secure
 
 #### Kube-hunter: Integrated k8s penetration testing
 
@@ -161,11 +161,11 @@ DTA will run the image for you, and observes what the image does (Runs on AQUAS 
 
 * Visualize and prioritize risks in the environment
 * Wide array of purpose built enforcers
-    * Provides granular visibility
+  * Provides granular visibility
 * Drift prevention
 * _'Workloads firewall'_ micro-segment apps where they run
-    * Sounds similar to a service mesh
-    * Don't plan on replacing the mesh rules, just boosting them
+  * Sounds similar to a service mesh
+  * Don't plan on replacing the mesh rules, just boosting them
 
 #### Enforcing Immutability
 
@@ -178,20 +178,20 @@ DTA will run the image for you, and observes what the image does (Runs on AQUAS 
 
 * Aqua uses activity profiling to learn workload behaviour during testing
 * Whitelist only capabilities
-    * Files
-    * syscalls
-    * network connections
-    * Executable
+  * Files
+  * syscalls
+  * network connections
+  * Executable
 
 #### Network Firewall
 
 * Apply firewall rules for contextual application micro-segmentation
 * Rules based on Service:
-    * DNS
-    * Identities
-    * URL's
-    * Ip address
-    * Reputation
+  * DNS
+  * Identities
+  * URL's
+  * Ip address
+  * Reputation
 * Alert on or block
 
 #### Risk Explorer
@@ -211,25 +211,25 @@ Performance optimized for Serverless:
 #### Opensource tools
 
 * [Trivy](https://github.com/aquasecurity/trivy)
-    * Scanning
-    * Manages vulnerability
-    * Detects vulnerabilities in
+  * Scanning
+  * Manages vulnerability
+  * Detects vulnerabilities in
 * [Cloudsploit](https://cloudsploit.com/opensource)
-    * Enforces cloud compliance
-    * Supports aws azure gcp oracle and GitHub
-    * Extensive plugin
-    * Restful ASPI
+  * Enforces cloud compliance
+  * Supports aws azure gcp oracle and GitHub
+  * Extensive plugin
+  * Restful ASPI
 * Kube-bench
-    * Securely configure your k8 cluster
-    * Auto-detects per node
-    * Customisable though yaml
+  * Securely configure your k8 cluster
+  * Auto-detects per node
+  * Customisable though yaml
 * Kube-hunter
-    * test your k8 setup
-    * Penetration testing that simulates dozens of attack vendors
+  * test your k8 setup
+  * Penetration testing that simulates dozens of attack vendors
 * tracee
-    * Runtime security
-    * eBPF technology
-    * Trace your system and applications at run time
+  * Runtime security
+  * eBPF technology
+  * Trace your system and applications at run time
 
 ### Module 3
 
@@ -272,28 +272,28 @@ This can run on K8, docker
 * Communicates over grpc (https)
 * Handles all interactions
 *  Can go through envoy proxies
-    * Can load balance GRPC connections
-    * When doing an update it terminates at envoy so no disruption
-    * [Uses a headless service](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services)
+  * Can load balance GRPC connections
+  * When doing an update it terminates at envoy so no disruption
+  * [Uses a headless service](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services)
 
 Tennant manager is for avoiding cross region data tranfers
 
 #### Aqua Scanners
 
 * Primary foundation of the aqua scanner is to scan the follwing objects:
-    * Container images
-    * Cloud Foundry
+  * Container images
+  * Cloud Foundry
 * 2 main roles:
-    * Object scanning is supported by the cyber centre, who maintain data on vulnerabilities
-    * Secondary function include registering the container image
+  * Object scanning is supported by the cyber centre, who maintain data on vulnerabilities
+  * Secondary function include registering the container image
 * All calls are done via API's
 * What it can scan:
-    * Registries
-        * Images that hace been pushed to public and private regs
-    * Local host
-        * Scan images that are created locally before being pushed
-    * xRunning workload images
-        * Images used previously as well as running workloads
+  * Registries
+    * Images that hace been pushed to public and private regs
+  * Local host
+    * Scan images that are created locally before being pushed
+  * xRunning workload images
+    * Images used previously as well as running workloads
 
 As soon as you deploy the platform, there is a scanner that is deployed in the web server, but the second the scanner is installed then the internal one is disabled
 You are also able to scan other files using the scanner, running as a binary.
@@ -329,35 +329,35 @@ Examples of security:
 * Enforces a few basic runtime policies like drift prevention
 * More limited functionality
 * Important:
-    * Aqua pod enforcer is supported only on linux
+  * Aqua pod enforcer is supported only on linux
 
 ##### VM Enforcers
 
 * Provides enforcement for hosts
 * Ensure:
-    * Host assurance policies
-    * Host runtime policies
-    * Firewall policies
+  * Host assurance policies
+  * Host runtime policies
+  * Firewall policies
 * Important notes:
-    * Supported only on Linux
-    * It's required that you deploy vm enforcer on each host
-    * Vm enforcers require a separate license
+  * Supported only on Linux
+  * It's required that you deploy vm enforcer on each host
+  * Vm enforcers require a separate license
 
 ##### Nano enforcer
 
 * Nano enforcer is a dedicated bianty for AWS Lambda functions
 * Runtimes policies provide runtime protection for AWS Lambda functions
 * Things to note:
-    * Aqua Node-enforcer is supported on Linux platforms only
+  * Aqua Node-enforcer is supported on Linux platforms only
 
 #### Enforcers
 
 * There are groups
 * Enforcer group should only be used to group by:
-    * Type
-    * Scope
-        * Profile
-    * Can be used to filter traffic, what to capture data about and what to ignore
+  * Type
+  * Scope
+    * Profile
+  * Can be used to filter traffic, what to capture data about and what to ignore
 
 ### Module 4: Installation and Configuration
 
@@ -366,7 +366,7 @@ Examples of security:
 * Check the release notes
 * They are not following version releases properly
 * They support backwards 2 major releases
-    * If you're in 5.3, and want 6.0, it won't work very well
+  * If you're in 5.3, and want 6.0, it won't work very well
 * Major releases are quarterly
 
 #### Methods of deployment
@@ -435,7 +435,7 @@ Image scanning as well as artifacts
 ##### Image Assurance Policy
 
 * Default policy
-    * Always present, cant be deleted
+  * Always present, cant be deleted
 * Custom policy
 
 ##### Vulnerability Scoring
@@ -446,7 +446,7 @@ You can pick a slider or a set value for the severability on how bad you will al
 
 ##### What are the policies
 
-  * * Container
+* * Container
 * Host
 * Function
 * What makes up a policy
@@ -454,20 +454,20 @@ You can pick a slider or a set value for the severability on how bad you will al
 ##### Policy components
 
 * Application scope
-    * Set of containers
-    * Set of hosts
-    * Set of clusters
+  * Set of containers
+  * Set of hosts
+  * Set of clusters
 * Status: Enabled or disabled
 * Enforcment mode: How it handles the container and violations
 * Controls
-    * Security related policies
+  * Security related policies
 
 * Default Policy
-    * Cant be deleted
-    * Always present
-    * If you want sometihng not to apply in a scope, you can use bypass control
+  * Cant be deleted
+  * Always present
+  * If you want sometihng not to apply in a scope, you can use bypass control
 * Custom Policy
-    * Created by Aqua admins for specific scopes
+  * Created by Aqua admins for specific scopes
 
 These policies can be used to prevent containers from running
 
