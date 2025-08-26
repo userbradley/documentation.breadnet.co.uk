@@ -58,6 +58,8 @@ nav:
           - Cloudflare Zero Forwarded header: kb/cloudflare/cloudflare-zero-forwarded-header.md
       - Grocy:
           - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
+      - Intellij:
+          - Stop Intellij opening all projects: kb/intellij/stop-intellij-opening-all-projects.md
       - Juniper:
           - Juniper Router Selection: kb/juniper/juniper-router-selection.md
           - Junos useful commands: kb/juniper/junos-useful-commands.md
