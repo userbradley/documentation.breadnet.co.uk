@@ -680,15 +680,15 @@ Wide Column
         * System event audit
         * Policy denied audit logs
 
-**Feature**
+Feature
 
-**Admin Activity logs**
+Admin Activity logs
 
-**Data access Logs**
+Data access Logs
 
-**System event logs**
+System event logs
 
-**Policy denied logs**
+Policy denied logs
 
 Logs for
 
@@ -815,9 +815,9 @@ logging.logs viewer or project.viewer
 
 ##### Stack driver/ Cloud monitoring
 
-**Stackdriver Service**
+Stackdriver Service
 
-**New service name**
+New service name
 
 Stackdriver Monitoring
 
