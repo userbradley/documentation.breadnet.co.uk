@@ -2,7 +2,6 @@
 title: Page not migrated
 ---
 
-# Page not migrated
 
 Hello! I assume you're seeing this page because you have come from Bookstack via a link that no longer exists!
 

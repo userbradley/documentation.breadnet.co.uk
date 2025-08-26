@@ -52,6 +52,4 @@ no-duplicate-heading: false
 first-line-heading: false
 heading-style:
   style: atx
-single-h1: false
-single-title: false
 descriptive-link-text: false #todo: Fix this at some point
