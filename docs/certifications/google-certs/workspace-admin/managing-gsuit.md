@@ -86,14 +86,14 @@ Here you can set rules on what to do with emails that contain certain files.
 You can:
 
 * Modify
-    * Add headers
-    * Add subject
-    * Change route
-    * Change Recipient
-    * Bypass spam filter
-    * Remove attachments
-    * Deliver to more people
-    * Encrypt
+  * Add headers
+  * Add subject
+  * Change route
+  * Change Recipient
+  * Bypass spam filter
+  * Remove attachments
+  * Deliver to more people
+  * Encrypt
 * Reject
 * Quarantine
 
@@ -117,8 +117,8 @@ To manage sharing you will need to edit the calendar from your account. Invite p
 [![image-1606765018828.png](/assets/80eCCMAfHz1QGsR0-image-1606765018828.png)](/assets/80eCCMAfHz1QGsR0-image-1606765018828.png)
 
 * As admin in calendar control you can set:
-    * Highest level of sharing for externals
-    * Default level of internal sharing
+  * Highest level of sharing for externals
+  * Default level of internal sharing
 
 * * *
 
@@ -161,9 +161,9 @@ You will require Google Chrome and the offline sync plugin for this to work
 There are 2 ways you can access files in drive:
 
 * Drive file stream
-    * This streams the files from the cloud to your computer
+  * This streams the files from the cloud to your computer
 * Backup and Sync
-    * This is the software you've installed for Google backup
+  * This is the software you've installed for Google backup
 
 This is enabled under Features and Applications
 

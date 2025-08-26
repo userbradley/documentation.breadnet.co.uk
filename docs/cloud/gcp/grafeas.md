@@ -19,9 +19,9 @@ It defines an API for managing metadata for Software supply chain, including (bu
 it works by taking the metadata (The additional details about the files and packages) and splitting it in to:
 
 * Notes
-    * Notes are high level descriptions of a type of metadata
+  * Notes are high level descriptions of a type of metadata
 * Occurrences
-    * Occurrences are instantiations (noun. Countable) of the Notes, and where they happen.
+  * Occurrences are instantiations (noun. Countable) of the Notes, and where they happen.
 
 By doing this, it allows third party metadata providers to create and manage metadata.
 

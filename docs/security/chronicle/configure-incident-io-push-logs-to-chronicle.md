@@ -11,13 +11,13 @@ This document provides a comprehensive guide on how to export audit logs from In
 Shipping incident.io activity logs to Chronicle empowers you to:
 
 * **Centralized Security Visibility:**
-    * Consolidate incident.io activity logs within Chronicle to gain a comprehensive view of your incident response activities alongside other security data.
+  * Consolidate incident.io activity logs within Chronicle to gain a comprehensive view of your incident response activities alongside other security data.
 * **Enhanced Threat Detection:**
-    * Leverage Chronicle's advanced analytics to identify suspicious patterns or anomalies in incident response workflows, potentially indicating malicious activity or process deviations.
+  * Leverage Chronicle's advanced analytics to identify suspicious patterns or anomalies in incident response workflows, potentially indicating malicious activity or process deviations.
 * **Improved Incident Investigation:**
-    * Correlate incident.io logs with other security events in Chronicle to accelerate investigations and gain a deeper understanding of the context surrounding security incidents.
+  * Correlate incident.io logs with other security events in Chronicle to accelerate investigations and gain a deeper understanding of the context surrounding security incidents.
 * **Compliance and Audit Trail:**
-    * Maintain a detailed audit trail of incident response actions within Chronicle, facilitating compliance with regulatory requirements and internal security policies.
+  * Maintain a detailed audit trail of incident response actions within Chronicle, facilitating compliance with regulatory requirements and internal security policies.
 
 This guide is essential for:
 

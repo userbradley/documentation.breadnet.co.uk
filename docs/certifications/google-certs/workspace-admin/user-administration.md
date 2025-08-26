@@ -65,9 +65,9 @@ If your delete and suspend limits exceed you will get an error
 There are 2 types of groups:
 
 * Admin console groups : Groups used from collaboration, communiation and administratiom
-    * Only managed by admins
+  * Only managed by admins
 * Groups for business : Groups for communication and collab (managed from groups.google.com)
-    * Managed by users and admins
+  * Managed by users and admins
 
 For a user to be able to email a group, you need to have the users who will want to email people set as a maanger:
 

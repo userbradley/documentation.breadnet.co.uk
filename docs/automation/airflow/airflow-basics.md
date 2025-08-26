@@ -19,12 +19,12 @@ We need to use datetime as airflow runs certain operations on a time schedule, a
 What happens here is we:
 
 * Define the dag with a name
-    * `my_dag`
+  * `my_dag`
 * Set a start time that the Dag is effective from
-    * 2022, january the first
+  * 2022, january the first
 * Set a schuedle time
-    * Daily at midnight (see below table)
-    * Can also be a cron job
+  * Daily at midnight (see below table)
+  * Can also be a cron job
 
 We have a set few options of built-in timings we can use, or a cron job.
 
@@ -100,11 +100,11 @@ Each section is self-explanatory (provided you can understand the general key va
 Some are not, I will explain below
 
 * depends\_on\_past
-    * `depends_on_past` (boolean) when set to True, keeps a task from getting triggered if the previous schedule for the task hasn’t succeeded.
+  * `depends_on_past` (boolean) when set to True, keeps a task from getting triggered if the previous schedule for the task hasn’t succeeded.
 * retry\_delay
-    * The delay after a failure before it should try the DAG again
+  * The delay after a failure before it should try the DAG again
 * owner
-    * Who owns the file permissions and who the program runs under
+  * Who owns the file permissions and who the program runs under
 
 The catchup is quite advanced, so we will deep dive it below
 
@@ -113,9 +113,9 @@ The catchup is quite advanced, so we will deep dive it below
 We need to make some assumptions here
 
 * Assume
-    * Start date of 2020-1-1
-    * Start time of 6am
-    * Schedule interval of hourly
+  * Start date of 2020-1-1
+  * Start time of 6am
+  * Schedule interval of hourly
 
 The action will happen at 2020-1-1 7am
 
