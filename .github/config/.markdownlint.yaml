@@ -21,7 +21,7 @@ no-inline-html:
     - role
     - field
     - value
-    - yyyy-mm-dd-hh-ii-ss
+    #- yyyy-mm-dd-hh-ii-ss
     - brand
     - sup
     - atx
@@ -52,4 +52,4 @@ heading-style:
 descriptive-link-text: false #todo: Fix this at some point
 ul-indent: false
 line-length: false
-no-emphasis-as-heading: false
+# no-emphasis-as-heading: false
