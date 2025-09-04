@@ -313,6 +313,7 @@ nav:
           - Sleeper pod: kubernetes/kb/sleeper.md
           - Trigger Kubernetes Cron Job Manually: kubernetes/kb/trigger-kubernetes-cron-job-manually.md
           - Using ArgoCD Image updater with Google Artifact Registry: kubernetes/kb/using-argocd-image-updater-with-google-artifact-registry.md
+          - View TLS certificates in Kubernetes: kubernetes/kb/view-tls-certificates-in-kubernetes.md
   - Security:
       - security/index.md
       - "Reverse shell using Pinggy.io": security/reverse-shell-using-pinggy.md
