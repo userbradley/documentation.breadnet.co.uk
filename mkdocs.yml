@@ -187,6 +187,7 @@ nav:
       - AWS:
           - AWS CLI: cloud/aws/aws-cli.md
           - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
+          - Switch AWS Profiles easily: cloud/aws/switch-aws-profiles-easily.md
       - Digital Ocean:
           - Get list of Digital ocean images: cloud/digitalocean/digitalocean-get-list-of-images.md
       - Fly:
