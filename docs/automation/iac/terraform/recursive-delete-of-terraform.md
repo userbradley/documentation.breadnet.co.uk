@@ -4,7 +4,7 @@ title: Recursive delete of .terraform directory
 
 ## What
 
-Sometimes your file system can collect alot of `.terraform` directories, or something just isn't right with terraform
+Sometimes your file system can collect a lot of `.terraform` directories, or something just isn't right with terraform
 
 ## How
 
@@ -29,3 +29,4 @@ Now you can simply type `tdel` anywhere and it will delete `.terraform` director
 ## Read next
 
 * [Recursive delete of `.terragrunt-cache` directory](../terragrunt/recursive-delete-of-terragrunt-cache.md)
+* [Recursive delete of `.terraform.lock.hcl`](recursive-delete-of-terraform-lock-hcl.md)

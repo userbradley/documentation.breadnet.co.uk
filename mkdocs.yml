@@ -385,6 +385,7 @@ nav:
           - Google IAP in Terraform: automation/iac/terraform/google-iap.md
           - Openstack error: automation/iac/terraform/openstack.md
           - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
+          - "Recursive delete of .terraform.lock.hcl": automation/iac/terraform/recursive-delete-of-terraform-lock-hcl.md
           - Remote Data: automation/iac/terraform/remote-data.md
           - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
           - "Terraform Provider for Kubernetes authenticate with `oidc-login`": automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md
