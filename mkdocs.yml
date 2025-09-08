@@ -175,6 +175,8 @@ nav:
           - SSH Port redirection: kb/ssh/ssh-port-redirection.md
           - sshuttle: kb/ssh/sshuttle.md
           - Weird Bash: kb/ssh/weird-bash.md
+      - Tor:
+          - Install lyrebird on Alpine: kb/tor/install-lyrebird-on-alpine.md
       - Ubiquiti:
           - Site-magic cgnat: kb/ubiquiti/site-magic-cgnat.md
           - Unifi device stuck in Adoption failed: kb/ubiquiti/unifi-device-stuck-in-adoption-failed.md
