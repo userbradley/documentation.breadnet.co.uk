@@ -37,6 +37,7 @@ nav:
           - Amend commit message: kb/git/amend-commit-message.md
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
           - Create and push tags on Git: kb/git/create-and-push-tags.md
+          - "fatal: pack has unresolved deltas": kb/git/fatal-pack-has-unresolved-deltas.md
           - Git with different SSH keys: kb/git/git-with-different-ssh-keys.md
           - Migrate repo to Monorepo: kb/git/migrate-repo-to-mono-repo.md
           - Set auto remote to true for Git CLI: kb/git/push-set-auto-remote-true.md
@@ -69,6 +70,7 @@ nav:
           - Broken link checker: kb/linux-cli/blc.md
           - Bulk change file extensions: kb/linux-cli/bulk-change-file-extension.md
           - Check SSL certificate for Mail server: kb/linux-cli/check-ssl-certificate-for-mailserver.md
+          - "Command not found: complete": kb/linux-cli/command-not-found-complete.md
           - Create random string: kb/linux-cli/create-random-string.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
@@ -383,6 +385,7 @@ nav:
           - Google IAP in Terraform: automation/iac/terraform/google-iap.md
           - Openstack error: automation/iac/terraform/openstack.md
           - "Recursive delete of .terraform directory": automation/iac/terraform/recursive-delete-of-terraform.md
+          - "Recursive delete of .terraform.lock.hcl": automation/iac/terraform/recursive-delete-of-terraform-lock-hcl.md
           - Remote Data: automation/iac/terraform/remote-data.md
           - Terraform lock file update: automation/iac/terraform/terraform-lock-file-update.md
           - "Terraform Provider for Kubernetes authenticate with `oidc-login`": automation/iac/terraform/terraform-provider-kubernetes-auth-with-oidc-login.md
