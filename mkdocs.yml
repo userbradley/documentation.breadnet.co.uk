@@ -378,6 +378,7 @@ nav:
       - mkdocs/index.md
       - Add review date to page: mkdocs/add-review-date-to-page.md
       - Set page as permanently outdated: mkdocs/mark-page-as-outdated.md
+      - Tell users MKDocs material site is available on TOR: mkdocs/tell-users-mkdocs-material-site-is-available-on-tor.md
   - Automation:
       - Ansible:
           - Ansible basics: automation/ansible/basics.md
