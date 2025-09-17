@@ -37,7 +37,7 @@ touch cloudflare.conf
 In the window that opened, paste in the below:
 
 ??? note "Freshness of the Ranges"
-    This range is updated daily when the site is built
+    Check the `# File last updated on:` comment in the below file. This site is built daily and this file is refreshed using the cloudflare API on <https://api.cloudflare.com/client/v4/ips>
 
 ```nginx
 --8<-- "docs/kb/nginx/cloudflare.conf"
