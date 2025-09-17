@@ -338,6 +338,8 @@ nav:
           - List users in Conductor one using the API: security/conductorone/list-users-in-conductor-one-using-the-api.md
       - OnDMARC:
           - Setup MTA-STS using OnDMARC: security/on-dmarc-red-sift/setup-mta-sts-using-on-dmarc.md
+      - Promptfoo:
+          - Promptfoo using mitmproxy or mitmweb: security/promptfoo/promptfoo-using-mitmproxy-or-mitmweb.md
       - Rapid7:
           - Add Google Organization to Rapid7: security/rapid7/add-google-organization-to-rapid7.md
   - Certifications:
