@@ -15,3 +15,7 @@ git config --global alias.rename 'branch -m'
 ```
 
 Now you can run `git rename <new name>`
+
+## Read next
+
+* [Useful git aliases](useful-git-aliases.md)

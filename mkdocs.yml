@@ -43,6 +43,7 @@ nav:
           - Set auto remote to true for Git CLI: kb/git/push-set-auto-remote-true.md
           - Rename local git branch: kb/git/rename-local-git-branch.md
           - Set git username and email per repo: kb/git/set-git-user-per-repo.md
+          - Useful git aliases: kb/git/useful-git-aliases.md
       - GitHub:
           - Collapsed Sections GitHub: kb/github/collapsed-sections-github.md
           - Find date a repo was created on GitHub: kb/github/find-date-a-repo-was-created-on-github.md
