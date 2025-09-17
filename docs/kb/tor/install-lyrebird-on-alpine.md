@@ -19,3 +19,7 @@ and the circumvention API for Connection Assist.
 ```shell
 apk add tor lyrebird --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/community/ --allow-untrusted
 ```
+
+## Read next
+
+* [Tell users MKDocs material site is available on TOR](../../mkdocs/tell-users-mkdocs-material-site-is-available-on-tor.md)

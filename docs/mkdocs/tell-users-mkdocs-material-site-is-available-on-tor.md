@@ -40,3 +40,7 @@ Place the below in the `main.html` file
 Once your site is pushed and deployed, open a TOR browser and you should see a pop-up like the below
 
 ![](../assets/486558279-c85f0dbf-fbdf-4a9a-8dda-840e9c4d1d4d.png)
+
+## Read next
+
+* [Install lyrebird on Alpine](../kb/tor/install-lyrebird-on-alpine.md)
