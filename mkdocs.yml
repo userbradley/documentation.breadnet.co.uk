@@ -190,6 +190,7 @@ nav:
   - Cloud Providers:
       - AWS:
           - AWS CLI: cloud/aws/aws-cli.md
+          - AWSCTX: cloud/aws/awsctx.md
           - AWS Cloud-init: cloud/aws/cloud-init-sg1.md
           - Switch AWS Profiles easily: cloud/aws/switch-aws-profiles-easily.md
       - Digital Ocean:
