@@ -5,4 +5,4 @@ styles/
 .DS_Store
 venv
 .venv
-scripts/docs/**
+scripts/docs**
