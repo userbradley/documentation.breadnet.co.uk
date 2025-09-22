@@ -31,6 +31,8 @@ container on anywhere that runs docker, or allows static content to be hosted.
 
 If you see an issue with a page or something isn't right, please contribute changes back.
 
+You can also [message me on matrix](https://matrix.to/#/#documentation-general:breadnet.co.uk) if you spot an issue
+
 ### Software you need installed to contribute
 
 1. Podman or Docker
