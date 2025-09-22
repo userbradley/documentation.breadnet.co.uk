@@ -61,6 +61,7 @@ nav:
       - Grocy:
           - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
       - Intellij:
+          - Always select open file in project explorer Intellij: kb/intellij/always-select-open-file-in-project-explorer-intellij.md
           - Stop Intellij opening all projects: kb/intellij/stop-intellij-opening-all-projects.md
       - Juniper:
           - Juniper Router Selection: kb/juniper/juniper-router-selection.md
