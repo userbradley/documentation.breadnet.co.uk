@@ -255,6 +255,8 @@ nav:
           - Useful log queries: cloud/gcp/useful-log-queries.md
           - View the hash of an object in GCS: cloud/gcp/view-hash-of-object-in-gcs.md
           - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
+      - Wasabi:
+          - Backup Synology NAS to Wasabi: cloud/wasabi/backup-synology-nas-to-wasabi.md
       - Cloud Secret manager cost Comparison: cloud/secret-manager-comparison.md
   - Kubernetes:
       - kubernetes/index.md
