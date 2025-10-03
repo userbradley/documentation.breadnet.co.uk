@@ -19,30 +19,46 @@ We are able to use the [GCS API](https://cloud.google.com/storage/docs/json_api)
     * `storage.buckets.list`
     * View access on the project
 
-### Get project Number
+=== "New method"
 
-```shell
-curl -X GET \
-  -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-  "https://storage.googleapis.com/storage/v1/b/<>" | jq ."projectNumber"
-```
+    ```shell
+    BUCKET=<bucket name>
+    gcloud projects describe $(curl -s -X GET -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://storage.googleapis.com/storage/v1/b/$BUCKET" | jq -r .projectNumber) --format="value(name)"
+    ```
 
-### Convert number to project name
+    ### Example
 
-```shell
-gcloud projects describe --format json | jq .name
-```
+    ```shell
+    BUCKET=kubernetes-release
+    gcloud projects describe $(curl -s -X GET -H "Authorization: Bearer $(gcloud auth print-access-token)" "https://storage.googleapis.com/storage/v1/b/$BUCKET" | jq -r .projectNumber) --format="value(name)"
+    ```
 
-## Example
+=== "Old Method"
 
-```shell
-# Get the project number
-curl -X GET \
-  -H "Authorization: Bearer $(gcloud auth print-access-token)" \
-  "https://storage.googleapis.com/storage/v1/b/kubernetes-release" | jq ."projectNumber"
-```
+    ### Get project Number
 
-```shell
-# Get the project Name
-gcloud projects describe 255964991331 --format json | jq .name
-```
+    ```shell
+    curl -X GET \
+      -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+      "https://storage.googleapis.com/storage/v1/b/<>" | jq ."projectNumber"
+    ```
+
+    ### Convert number to project name
+
+    ```shell
+    gcloud projects describe <number> --format json | jq .name
+    ```
+
+    ## Example
+
+    ```shell
+    # Get the project number
+    curl -X GET \
+      -H "Authorization: Bearer $(gcloud auth print-access-token)" \
+      "https://storage.googleapis.com/storage/v1/b/kubernetes-release" | jq ."projectNumber"
+    ```
+
+    ```shell
+    # Get the project Name
+    gcloud projects describe 255964991331 --format json | jq .name
+    ```
