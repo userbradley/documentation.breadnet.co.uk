@@ -12,7 +12,7 @@ repos:
       - id: check-toml
         name: Checks TOML files
   - repo: https://github.com/google/yamlfmt
-    rev: v0.18.0
+    rev: v0.18.1
     hooks:
       - id: yamlfmt
         name: Yaml Formatting
