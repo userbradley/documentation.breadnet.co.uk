@@ -595,7 +595,7 @@ plugins:
         'kb/linux-cli/generate-random-token.md': 'kb/linux-cli/create-random-string.md'
         'kb/nginx/get-real-ip-cloudflare.md': 'kb/nginx/get-real-ip-address-behind-cloudflare-nginx.md'
 extra:
-  #  issn: ISSN goes here if it's ever issued
+  issn: 2755-8169
   social:
     - icon: fontawesome/brands/linkedin
       link: https://uk.linkedin.com/in/bradley-stannard
