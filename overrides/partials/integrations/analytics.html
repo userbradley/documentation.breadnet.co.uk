@@ -1,23 +1,11 @@
-{%if config.analytics.matomo.enabled %}
-<!-- Matomo -->
-<script>
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-        var u="//{{ config.analytics.matomo.url }}/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '{{ config.analytics.matomo.siteId }}']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-</script>
-<!-- End Matomo Code -->
+{%if config.extra.analytics.cloudflare.enabled %}
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{config.extra.analytics.cloudflare.token}}"}'></script>
+<!-- End Cloudflare Web Analytics -->
 {% endif %}
 
-{%if config.analytics.cloudflare.enabled %}
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{config.analytics.cloudflare.token}}"}'></script>
-<!-- End Cloudflare Web Analytics -->
+{%if config.extra.analytics.umami.enabled %}
+<!-- Umami Web Analytics -->
+<script defer src="https://{{config.extra.analytics.umami.url}}/script.js" data-website-id="{{config.extra.analytics.umami.siteId}}"></script>
+<!-- End Umami Web Analytics -->
 {% endif %}
