@@ -25,7 +25,7 @@ I used to host this documentation on [Digital Ocean](https://m.do.co/c/77be3c3aa
 
 I have done everything I possibly can to reduce the number of trackers on this site. In theory there should be at maximim: 2
 
-Umami or something related, and Matomo. Both of these are self-hosted and run on my home cluster. I dislike cookie banners and trackers as much as the next; which is why you won't ever see them here.
+Umami and Matomo. Both of these are self-hosted and run on my home cluster. I dislike cookie banners and trackers as much as the next; which is why you won't ever see them here.
 
 ## My promise to you
 
@@ -35,6 +35,7 @@ This is more of a gentleman's agreement, however I make the below to you;
 * No AI is used to write documentation
 * The Documentation source code will always remain source available in git (Currently hosted on [GitHub](https://github.com/userbradley/documentation.breadnet.co.uk))
 * [If you open an issue on the repo](https://github.com/userbradley/documentation.breadnet.co.uk/issues), I will look at it and try to fix your issue/ help you
+* You can see what [pages are past review](https://content-review.breadnet.co.uk)
 
 ## Feedback?
 

@@ -605,6 +605,9 @@ extra:
       enabled: false
       token: 6a2c80ed9b0c4af39dadb53f62452603
   social:
+    - icon: fontawesome/solid/clock
+      link: https://content-review.breadnet.co.uk
+      name: Outdated page review
     - icon: fontawesome/brands/linkedin
       link: https://uk.linkedin.com/in/bradley-stannard
       name: My Linkedin
