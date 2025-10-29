@@ -1,5 +1,6 @@
 ---
 title: Authenticate flux with Google Artifact Registry
+reviewdate: '2026-01-25'
 ---
 
 ## What is the issue
@@ -89,6 +90,20 @@ spec:
 ```
 
 ### Configure the HelmRepository
+
+!!! note "source.toolkit.fluxcd.io/v1beta2"
+
+    In 2026, the apiVersion `source.toolkit.fluxcd.io/v1beta2` will be deprecated
+
+    You should instead use:
+
+    ```yaml
+    apiVersion: source.toolkit.fluxcd.io/v1
+    kind: HelmRepository
+    metadata:
+    ```
+    See [here](https://github.com/fluxcd/flux2/discussions/5572) for more details. This page will be updated once it's
+    deprecated with the latest file
 
 ```diff
 apiVersion: source.toolkit.fluxcd.io/v1beta2
