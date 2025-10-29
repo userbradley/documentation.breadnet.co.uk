@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
       - name: Check Links
-        uses: lycheeverse/lychee-action@v2.6.1
+        uses: lycheeverse/lychee-action@v2.7.0
         with:
           args: --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' --exclude-mail
           output: /tmp/out.md
