@@ -21,7 +21,7 @@ no-inline-html:
     - role
     - field
     - value
-    #- yyyy-mm-dd-hh-ii-ss
+    - yyyy-mm-dd-hh-ii-ss # Complains in docs/kb/public-web-facing/wp-cli-password.md
     - brand
     - sup
     - atx
