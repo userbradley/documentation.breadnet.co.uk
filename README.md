@@ -71,9 +71,8 @@ pip3 install -r requirements.txt
 brew install cairo freetype libffi libjpeg libpng zlib pngquant
 ```
 
-The first time you run this, it will be super slow and can take upwards of 40 seconds to build. This is because it 
+The first time you run this, it will be super slow and can take upwards of 40 seconds to build. This is because it
 populates the `.cache` dir with all the social images and Fonts.
-
 
 ## CI
 
