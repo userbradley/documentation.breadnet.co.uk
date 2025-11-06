@@ -5,12 +5,13 @@
   <p align="center">ISSN: 2755-8169</p>
   <p align="center">
     <a href="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml"><img alt="Dev" src="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg"></a>
-    <a href="https://github.com/talos-systems/talos/releases/latest"><img alt="Pre-release" src="https://img.shields.io/github/release-pre/talos-systems/talos.svg?label=pre-release&logo=GitHub&logoColor=white"></a>
-    <a href="https://www.bestpractices.dev/projects/7340"><img src="https://www.bestpractices.dev/projects/7340/badge" alt="OpenSSF badge"></a>
+    <a href="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml"><img alt="Production" src="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml/badge.svg"></a>
+    <a href="https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614"><img alt="Wakatime spent coding" src="https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg" ></a>
   </p>
 </p>
 
-[![Dev](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml) [![Production](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml)
+[![Dev](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml) 
+[![Production]()](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml)
 [![wakatime](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg)](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614)
 
 This repo houses all the public documentation that I have created over the years, recently migrated to mkdocs
