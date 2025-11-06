@@ -59,6 +59,7 @@ nav:
       - Cloudflare:
           - Cloudflare Zero Forwarded header: kb/cloudflare/cloudflare-zero-forwarded-header.md
       - Grocy:
+          - Set Grocy to use Cloudflare Zero trust usernames: kb/grocy/set-grocy-to-use-cloudflare-username.md
           - Set grocy to use pritunl Zero usernames: kb/grocy/set-grocy-to-use-pritunl-username.md
       - Intellij:
           - Always select open file in project explorer Intellij: kb/intellij/always-select-open-file-in-project-explorer-intellij.md
