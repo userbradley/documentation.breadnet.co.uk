@@ -1,17 +1,3 @@
-# [breadNET Documentation](https://documentation.breadnet.co.uk)
-
-<p align="center">
-  <h1 align="center">breadNET Documentation</h1>
-  <p align="center">ISSN: 2755-8169</p>
-  <p align="center">
-    <a href="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml"><img alt="Dev" src="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg"></a>
-    <a href="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml"><img alt="Production" src="https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml/badge.svg"></a>
-    <a href="https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614"><img alt="Wakatime spent coding" src="https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg" ></a>
-  </p>
-</p>
-
-
-
 <p align="center">
   <h1 align="center">
     <a href="https://documentation.breadnet.co.uk" style="text-decoration: none; color: inherit;">
@@ -19,7 +5,7 @@
     </a>
   </h1>
   <p align="center">
-    <a href="https://documentation.breadnet.co.uk/issn" style="text-decoration: none; color: inherit;">
+    <a href="https://portal.issn.org/resource/ISSN/2755-8169" style="text-decoration: none; color: inherit;">
       ISSN: 2755-8169
     </a>
   </p>
