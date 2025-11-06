@@ -1,10 +1,14 @@
 # [breadNET Documentation](https://documentation.breadnet.co.uk)
 
-<html lang="en">
-<h1 style="text-align: center;">
-  <a href="https://breadnet.co.uk">Test</a>
-</h1>
-</html>
+<p align="center">
+  <h1 align="center">Talos Linux</h1>
+  <p align="center">A modern OS for Kubernetes.</p>
+  <p align="center">
+    <a href="https://github.com/talos-systems/talos/releases/latest"><img alt="Release" src="https://img.shields.io/github/release/talos-systems/talos.svg?logo=github&logoColor=white"></a>
+    <a href="https://github.com/talos-systems/talos/releases/latest"><img alt="Pre-release" src="https://img.shields.io/github/release-pre/talos-systems/talos.svg?label=pre-release&logo=GitHub&logoColor=white"></a>
+    <a href="https://www.bestpractices.dev/projects/7340"><img src="https://www.bestpractices.dev/projects/7340/badge" alt="OpenSSF badge"></a>
+  </p>
+</p>
 
 [![Dev](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/dev.yaml) [![Production](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml/badge.svg)](https://github.com/userbradley/documentation.breadnet.co.uk/actions/workflows/prod.yaml)
 [![wakatime](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614.svg)](https://wakatime.com/badge/user/befd4d51-df71-4caa-90ba-09a83c0524b0/project/fa7f3e73-d976-48d9-94f5-a17bd1bb4614)
