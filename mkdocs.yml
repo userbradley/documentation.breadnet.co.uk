@@ -189,6 +189,8 @@ nav:
           - Unifi device stuck in Adoption failed: kb/ubiquiti/unifi-device-stuck-in-adoption-failed.md
           - Tunnel Unifi Traffic Through Mullvad Using WireGuard: kb/ubiquiti/unifi-mullvad-vpn.md
           - Updating Ubiquiti Tough switch: kb/ubiquiti/update-tough-switch.md
+      - Vivalid:
+          - Add documentation.breadnet.co.uk site to Vivaldi as Search Engine: kb/vivaldi/add-documentation-breadnet-co-uk-site-to-vivaldi-as-search-engine.md
       - Wasabi:
           - Policies: kb/wasabi/policies.md
           - Transport endpoint is not connected: kb/wasabi/transport-endpoint-is-not-connected.md
