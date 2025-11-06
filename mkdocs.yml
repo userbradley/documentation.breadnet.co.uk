@@ -307,6 +307,8 @@ nav:
           - kubernetes/oidc/index.md
           - Configure k3s to use Azure Entra (FKA Azure AD) for OIDC: kubernetes/oidc/oidc-azure-ad.md # This is kept here as it's a redirect!
           - Configuring Talos for OIDC Authentication via Pocket-ID: kubernetes/oidc/talos-oidc-pocket-id.md
+      - Prometheus:
+          - "Received unsupported Content-Type text/html; charset=utf-8": kubernetes/prometheus/prometheus-recieved-unsupported-content-type.md
       - KB:
           - Connect to container that has side car containers: kubernetes/kb/connect-to-container-that-has-sidecars.md
           - Convert Docker compose to Kubernetes manifest files: kubernetes/kb/convert-docker-compose-to-kubernetes-manifests.md
