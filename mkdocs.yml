@@ -76,6 +76,7 @@ nav:
           - Create random string: kb/linux-cli/create-random-string.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
+          - "gpg: Note: database_open waiting for lock (held by)": kb/linux-cli/gpg-note-database_open-waiting-for-lock-held-by.md
           - Get dell service tag Ubuntu: kb/linux-cli/get-dell-service-tag-ubuntu.md
           - How to create tar.gz file: kb/linux-cli/how-to-create-tar-gz-file.md
           - List NFS Shares exported: kb/linux-cli/list-nfs-shares-exported.md
