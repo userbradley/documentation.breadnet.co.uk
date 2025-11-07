@@ -13,6 +13,8 @@ nav:
           - Cloudflared on Ubuntu for ssh: kb/cloudflared/cloudflared-on-ubuntu-for-ssh.md
       - Copybara:
           - Installing Copybara: kb/copybara/installing-copybara.md
+      - Curl:
+          - Curl request with Host Header: kb/curl/curl-request-with-host.md
       - Dependabot:
           - Ignore terraform module version dependabot: kb/dependabot/ignore-terraform-module-version-dependabot.md
       - Disk management:
