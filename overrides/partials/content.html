@@ -72,16 +72,26 @@
 {% if 'index.md' not in page.file.src_uri %}
 
 <hr>
+<!--
 Want to make this site better? Open a PR, <a href="https://www.buymeacoffee.com/userbradley">help fund hosting costs</a> or <a href="https://matrix.to/#/@bysd:breadnet.co.uk">message me on Matrix</a>
-<!-- If you found "<i>{{ page.title }}</i>" useful, <a href="https://www.buymeacoffee.com/userbradley">please let me know!</a> -->
 {% endif %}
-<!-- Source file information -->
+
 {% if page.meta and (
 page.meta.git_revision_date_localized or
 page.meta.revision_date
 ) %}
 {% include "partials/source-file.html" %}
 {% endif %}
+-->
+
+
+<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+
+<!-- Show a text ad -->
+<div data-ea-publisher="breadnetcouk" data-ea-type="text"></div>
+
+<!-- Show an image ad -->
+<div data-ea-publisher="breadnetcouk" data-ea-type="image"></div>
 
 <!-- Was this page helpful? -->
 {% include "partials/feedback.html" %}
