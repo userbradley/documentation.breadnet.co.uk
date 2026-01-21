@@ -442,6 +442,8 @@ nav:
           - Washing Machine: home/rg/washing/washing-machine.md
           - Hot water heater:
               - Reducing temperature: home/rg/water-heater/reduce-temperature.md
+  - Home Automation:
+      - Reset tradfri button: home-automation/reset-tradfri-button.md
   - Car:
       - car/index.md
       - SEAT:
