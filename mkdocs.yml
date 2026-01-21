@@ -158,6 +158,8 @@ nav:
           - docker-credential-desktop executable file not found in path: kb/podman/docker-credential-desktop-not-installed.md
           - Podman mount directories on Mac: kb/podman/podman-mount-directories-mac.md
           - Podman using Lima: kb/podman/podman-using-lima.md
+      - Postgres:
+          - Postgres create user and database: kb/postgres/postgres-create-user-and-database.md
       - Pritunl:
           - List of headers pritunl Zero sends: kb/pritunl/pritunl-forwarded-header.md
           - SSH using pritunl bastion: kb/pritunl/ssh-using-pritunl-bastion.md
