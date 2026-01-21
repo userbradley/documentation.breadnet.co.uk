@@ -127,8 +127,9 @@ nav:
       - Networking:
           - Update DNS on EE router: kb/networking/ee-update-dns.md
           - Show Broadband password on EE router: kb/networking/show-broadband-password-ee.md
-          - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
           - Update the To Address on Mikrotik VPN Routing: kb/networking/update-route-ip-mikrotik.md
+          - Vodafone PPPoE CityFibre: kb/networking/vodafone-ppoe-cityfibre.md
+          - VPN Network routing Mikrotik: kb/networking/vpn-network-routing-mikrotik.md
       - Nginx:
           - Reverse web proxy: kb/nginx/reverse-web-proxy.md
           - Get real IP address behind cloudflare NGINX: kb/nginx/get-real-ip-address-behind-cloudflare-nginx.md
