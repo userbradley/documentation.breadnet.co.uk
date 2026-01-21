@@ -1,6 +1,6 @@
 ---
 title: Installing docker
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 Step 1 — Installing Docker

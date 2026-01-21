@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Setting up k3s to use nfs as default storage class
 ---
 

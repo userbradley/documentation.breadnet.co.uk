@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Bose Headphones Crackle when connected to mac via bluetooth
 ---
 

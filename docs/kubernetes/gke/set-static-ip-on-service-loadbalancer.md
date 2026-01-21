@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Set static IP address on service type Load balancer
 ---
 

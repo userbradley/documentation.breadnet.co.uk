@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: K3s private registry using Google Artifact Registry
 ---
 

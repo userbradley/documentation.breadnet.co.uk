@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: View startup script on Google Compute Engine using Metadata Endpoint
 ---
 

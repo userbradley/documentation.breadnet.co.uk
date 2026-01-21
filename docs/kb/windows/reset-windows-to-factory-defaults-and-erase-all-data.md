@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Reset windows to factory defaults and erase all data
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Reverse web proxy
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 go to `/etc/nginx/sites-available`

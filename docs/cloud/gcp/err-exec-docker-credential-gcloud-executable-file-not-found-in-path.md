@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: 'err: exec: "docker-credential-gcloud": executable file not found in $PATH'
 ---
 

@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: List of Headers Cloudflare zero sends
 ---
 

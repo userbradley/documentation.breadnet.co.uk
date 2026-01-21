@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: List secrets being accessed Google cloud logs
 ---
 

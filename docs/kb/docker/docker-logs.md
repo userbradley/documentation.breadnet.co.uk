@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Get logs of docker container
 ---
 

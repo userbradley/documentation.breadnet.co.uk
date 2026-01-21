@@ -1,6 +1,6 @@
 ---
 title: GCP
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 #### [https://docs.google.com/document/d/1u6pXBiGMYj7ZLBN21x6jap11rG6gWk7n210hNnUzrkI/edit](https://docs.google.com/document/d/1u6pXBiGMYj7ZLBN21x6jap11rG6gWk7n210hNnUzrkI/edit)

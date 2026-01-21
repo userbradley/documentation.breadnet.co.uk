@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Manually trigger workflow from CLI
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Ansible Basics
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 I always create a folder for new tasks, so installing Nginx

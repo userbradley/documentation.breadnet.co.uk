@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Unifi device stuck in Adoption failed
 ---
 

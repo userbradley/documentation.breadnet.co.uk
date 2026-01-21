@@ -1,6 +1,6 @@
 ---
 title: Authenticate GitHub actions to Google Artifact Registry
-reviewdate: '2023-10-22'
+reviewdate: '2026-12-20'
 ---
 
 ## Why

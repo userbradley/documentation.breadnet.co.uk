@@ -1,6 +1,6 @@
 ---
 title: Aqua partnership info
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 Worst kind of partners is those who throw things from customer to partner to company as it's bad communication.

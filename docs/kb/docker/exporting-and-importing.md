@@ -1,6 +1,6 @@
 ---
 title: Exporting and importing Docker Images
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 Sometimes you will need to export an image as a zip file because you cant commit it to a repo

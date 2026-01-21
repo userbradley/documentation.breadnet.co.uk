@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Configure firewall for service type LoadBalancer in GKE
 ---
 

@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Forward real IP to a NGINX behind a GCP Load Balancer
 ---
 

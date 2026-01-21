@@ -1,6 +1,6 @@
 ---
 title: "gpg: Note: database_open waiting for lock (held by)"
-reviewdate: '2026-11-06'
+reviewdate: '2026-12-20'
 ---
 
 ## What

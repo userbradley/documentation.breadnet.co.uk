@@ -1,6 +1,6 @@
 ---
 title: Add review date to page
-reviewdate: '2023-10-22'
+reviewdate: '2026-12-20'
 ---
 
 ## Why
@@ -32,7 +32,7 @@ Your page should look like the below
 ```markdown
 ---
 title: Add review date to page
-reviewdate: '2023-10-22'
+reviewdate: '2026-12-20'
 ---
 
 ## Why

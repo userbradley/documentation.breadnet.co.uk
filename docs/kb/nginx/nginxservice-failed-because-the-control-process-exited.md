@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: nginx Failed because the Control process exited
 ---
 

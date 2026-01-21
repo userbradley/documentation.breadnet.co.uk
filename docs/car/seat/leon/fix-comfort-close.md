@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Fix comfort close not working on Seat Leon
 ---
 

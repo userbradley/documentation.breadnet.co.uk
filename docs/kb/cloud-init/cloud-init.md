@@ -1,6 +1,6 @@
 ---
 title: cloud-init
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 

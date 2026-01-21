@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Force containers to update when config map changes in helm
 ---
 

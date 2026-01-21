@@ -1,6 +1,6 @@
 ---
 title: Jellyfin using S3 and Docker
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 !!! warning "DO NOT USE"

@@ -1,6 +1,6 @@
 ---
 title: Authenticate GitHub actions to GCP using Workload Identity Federation
-reviewdate: '2024-12-12'
+reviewdate: '2026-12-20'
 ---
 
 ## Why

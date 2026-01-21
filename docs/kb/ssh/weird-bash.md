@@ -1,6 +1,6 @@
 ---
 title: Weird bash
-reviewdate: '2024-01-01'
+reviewdate: '2026-12-20'
 ---
 
 If you log on to a server and there's no auto complete etc., run

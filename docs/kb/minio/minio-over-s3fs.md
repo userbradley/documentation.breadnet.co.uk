@@ -1,6 +1,6 @@
 ---
 title: Minio over s3fs
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 ## Create the password file

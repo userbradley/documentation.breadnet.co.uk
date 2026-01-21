@@ -1,6 +1,6 @@
 ---
 title: SSH client setup using keys
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 ##### The following steps will set up your ssh keypairs on your local machine, copy the public key to your server, and configure your ssh client to use a specific private key with a server alias

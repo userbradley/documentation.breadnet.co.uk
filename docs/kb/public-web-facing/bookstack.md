@@ -1,6 +1,6 @@
 ---
 title: Bookstack
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 How to enable `Dark Mode` on Bookstack

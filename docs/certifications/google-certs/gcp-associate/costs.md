@@ -1,6 +1,6 @@
 ---
 title: GCP Costs
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 When using the cloud you want to keep the costs as low as possible

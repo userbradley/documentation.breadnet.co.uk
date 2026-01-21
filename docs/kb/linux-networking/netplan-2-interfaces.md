@@ -1,6 +1,6 @@
 ---
 title: Netplan 2 interfaces
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 Edit the file in /etc/netplan/ and add the below:

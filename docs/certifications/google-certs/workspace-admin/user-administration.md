@@ -1,6 +1,6 @@
 ---
 title: Gsuit - User administration
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 Global info can be set under `Account settings` but this has changed from \`Company profile\`

@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Configure k3s to use Azure Entra (FKA Azure AD) for OIDC
 ---
 

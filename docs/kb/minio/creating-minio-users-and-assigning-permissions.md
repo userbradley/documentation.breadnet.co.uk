@@ -1,6 +1,6 @@
 ---
 title: Creating Minio users and assigning permissions
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 ## Connect to the minio server

@@ -1,6 +1,6 @@
 ---
 title: AWS SSO populate config
-reviewdate: '2026-11-06'
+reviewdate: '2026-12-20'
 ---
 
 When using AWS with Identity centre you will have many roles available to use. Depending on your setup thre may be

@@ -1,6 +1,6 @@
 ---
 title: Authenticate flux with Google Artifact Registry
-reviewdate: '2026-01-25'
+reviewdate: '2026-12-20'
 ---
 
 ## What is the issue

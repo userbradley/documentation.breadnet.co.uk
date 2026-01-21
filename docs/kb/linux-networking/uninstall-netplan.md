@@ -1,6 +1,6 @@
 ---
 title: Uninstalling netplan
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 **These directions have been tested also to Ubuntu 18.04.1 and will very likely work also for any future release using `netplan` and `systemd`.**

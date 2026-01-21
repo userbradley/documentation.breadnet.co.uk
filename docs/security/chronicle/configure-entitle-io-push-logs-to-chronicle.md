@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Configure Entitle.io to push logs to Chronicle
 ---
 

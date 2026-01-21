@@ -1,6 +1,6 @@
 ---
 title: Partition, format, and mount a drive on Ubuntu
-reviewdate: '2022-01-01'
+reviewdate: '2026-12-20'
 ---
 
 

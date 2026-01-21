@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: "dyld Library not loaded: /opt/homebrew/opt/simdjson/lib/libsimdjson.27.dylib"
 ---
 

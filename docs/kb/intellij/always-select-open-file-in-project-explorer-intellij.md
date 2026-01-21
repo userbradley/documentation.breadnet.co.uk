@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Always select open file in project explorer Intellij
 ---
 

@@ -1,4 +1,5 @@
 ---
+reviewdate: '2026-12-20'
 title: Get DNSSEC Record for Google Cloud DNS
 ---
 
