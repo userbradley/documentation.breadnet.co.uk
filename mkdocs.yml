@@ -334,7 +334,8 @@ nav:
           - Force Delete pod: kubernetes/kb/force-delete-pod.md
           - Get Kubernetes nodes and their labels: kubernetes/kb/get-kubernetes-nodes-and-their-labels.md
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
-          - "Kubectl get pod and node it's on": kubernetes/kb/kubectl-get-pods-and-nodes.md
+          - Kubectl get pod and node it's on: kubernetes/kb/kubectl-get-pods-and-nodes.md
+          - Kubectl get pods in certain status: kubernetes/kb/kubectl-get-pods-in-certain-status.md
           - Kubectl get Service accounts and namespaces: kubernetes/kb/kubectl-get-service-accounts-namespaces.md
           - Set default namespace kubectl: kubernetes/kb/kubectl-set-namespace.md
           - Testing RBAC: kubernetes/kb/rbac-testing.md
