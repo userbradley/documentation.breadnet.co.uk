@@ -108,6 +108,7 @@ nav:
           - Uninstall Netplan: kb/linux-networking/uninstall-netplan.md
       - Mac:
           - Bose Headphones Crackle when connected to mac via bluetooth: kb/mac/bose-headphones-crackle.md
+          - Clear recents in Finder on Mac: kb/mac/clear-recents-in-finder-on-mac.md
           - Command not found compdef: kb/mac/command-not-found-compdef.md
           - Connect to serial port on mac: kb/mac/connect-to-serial-port-on-mac.md
       - Markdown:
@@ -273,6 +274,7 @@ nav:
           - View logs on who enabled an API: cloud/gcp/view-logs-on-who-enabled-an-api.md
       - Wasabi:
           - Backup Synology NAS to Wasabi: cloud/wasabi/backup-synology-nas-to-wasabi.md
+          - List bucket size on Wasabi: cloud/wasabi/list-bucket-size-wasabi.md
       - Cloud Secret manager cost Comparison: cloud/secret-manager-comparison.md
   - Kubernetes:
       - kubernetes/index.md
@@ -333,7 +335,8 @@ nav:
           - Force Delete pod: kubernetes/kb/force-delete-pod.md
           - Get Kubernetes nodes and their labels: kubernetes/kb/get-kubernetes-nodes-and-their-labels.md
           - Kubectl commands: kubernetes/kb/kubectl-commands.md
-          - "Kubectl get pod and node it's on": kubernetes/kb/kubectl-get-pods-and-nodes.md
+          - Kubectl get pod and node it's on: kubernetes/kb/kubectl-get-pods-and-nodes.md
+          - Kubectl get pods in certain status: kubernetes/kb/kubectl-get-pods-in-certain-status.md
           - Kubectl get Service accounts and namespaces: kubernetes/kb/kubectl-get-service-accounts-namespaces.md
           - Set default namespace kubectl: kubernetes/kb/kubectl-set-namespace.md
           - Testing RBAC: kubernetes/kb/rbac-testing.md
@@ -365,6 +368,9 @@ nav:
           - Promptfoo using mitmproxy or mitmweb: security/promptfoo/promptfoo-using-mitmproxy-or-mitmweb.md
       - Rapid7:
           - Add Google Organization to Rapid7: security/rapid7/add-google-organization-to-rapid7.md
+      - Wiz:
+          - Wiz Kubernetes Failed executing entrypoint CONNECTOR_ID is not set: security/wiz/wiz-connector-no-connector-id.md
+          - Wiz list terraform provider versions: security/wiz/wiz-list-terraform-provider-versions.md
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
