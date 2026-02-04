@@ -369,6 +369,7 @@ nav:
           - Add Google Organization to Rapid7: security/rapid7/add-google-organization-to-rapid7.md
       - Wiz:
           - Wiz Kubernetes Failed executing entrypoint CONNECTOR_ID is not set: security/wiz/wiz-connector-no-connector-id.md
+          - Wiz list terraform provider versions: security/wiz/wiz-list-terraform-provider-versions.md
   - Certifications:
       - Google Cloud Architect:
           - Google architect - Page 1: certifications/google-certs/gcp-architect/gcp-architect-1.md
