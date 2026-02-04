@@ -78,6 +78,7 @@ nav:
           - Check SSL certificate for Mail server: kb/linux-cli/check-ssl-certificate-for-mailserver.md
           - "Command not found: complete": kb/linux-cli/command-not-found-complete.md
           - Create random string: kb/linux-cli/create-random-string.md
+          - Date command to get the Unix time stamp: kb/linux-cli/date-command-unix-timestamp.md
           - Passwordless sudo using fingerprint on mac: kb/linux-cli/fingerprint-for-sudo-mac.md
           - Get current Folder: kb/linux-cli/get-current-folder.md
           - "gpg: Note: database_open waiting for lock (held by)": kb/linux-cli/gpg-note-database_open-waiting-for-lock-held-by.md
