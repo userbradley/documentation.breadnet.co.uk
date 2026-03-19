@@ -1,5 +1,5 @@
 # Stage 1: Builder
-FROM ghcr.io/squidfunk/mkdocs-material:9.7.5 AS BUILDER
+FROM ghcr.io/squidfunk/mkdocs-material:9.7.6 AS BUILDER
 WORKDIR /app
 
 ENV CI=true
