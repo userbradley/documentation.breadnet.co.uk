@@ -1,15 +1,20 @@
-/*.md-main__inner.md-grid {*/
-/*    max-width: initial;*/
-/*}*/
+.made-in-europe {
+    display: flex;
+    align-items: center;
+    align-self: center; /* Centers it perfectly within the footer grid */
+    gap: 8px;
+    margin-top: 0; /* Removed the drop */
+}
 
-/*.md-grid {*/
-/*    max-width: 100%; !* or 100%, if you want to stretch to full-width *!*/
-/*}*/
+.made-in-europe .eu-flag {
+    border-radius: 2px;
+    display: block;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
 
-/*.md-grid {*/
-/*    max-width: 1440px;*/
-/*}*/
-
-/*.md-main__inner.md-grid {*/
-/*    max-width: initial;*/
-/*}*/
+.made-in-europe .eu-text {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #689df6;
+}
