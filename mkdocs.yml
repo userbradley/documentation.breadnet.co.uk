@@ -38,6 +38,8 @@ nav:
           - kb/drone/index.md
           - Laws: kb/drone/laws.md
           - Stock image marketplaces: kb/drone/stock-image-marketplaces.md
+      - exiftool:
+          - Remove GPS data from Images: kb/exiftool/remove-gps-data-from-images.md
       - Git:
           - Amend commit message: kb/git/amend-commit-message.md
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
