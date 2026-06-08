@@ -122,6 +122,8 @@ nav:
           - Matomo behind cloudflared: kb/matomo/matomo-behind-cloudflare.md
       - Mealie:
           - Make API request to mealie: kb/mealie/make-api-request-to-mealie.md
+      - Media Services:
+          - "qBittorrent stuck at  No custom files found, skipping...": kb/media-services/qbittorrent-stuck-at-no-custom-files-found-skipping.md
       - Minio:
           - OLD: kb/minio/old.md
           - Connecting to minio over s3fs: kb/minio/minio-over-s3fs.md
