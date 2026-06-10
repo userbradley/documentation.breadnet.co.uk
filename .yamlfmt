@@ -1,0 +1,4 @@
+match_type: doublestar
+doublestar: true
+exclude:
+  - docs/security/chainguard/atlantis-access-to-chainguard-using-oidc-in-kubernetes/atlantis.yaml

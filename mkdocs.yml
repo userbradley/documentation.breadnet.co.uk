@@ -355,6 +355,8 @@ nav:
           - Aqua Page 1: security/aqua/aqua-page-1.md
           - Aqua Page 2: security/aqua/aqua-page-2.md
           - Aqua partnership notes: security/aqua/partnership-info.md
+      - Chainguard:
+          - Atlantis access to Chainguard using OIDC in Kubernetes: security/chainguard/atlantis-access-to-chainguard-using-oidc-in-kubernetes.md
       - Chronicle:
           - Chronicle HTTP url maker: security/chronicle/chronicle-http-url-maker.md
           - Configure Conductor One to push logs to Chronicle: security/chronicle/configure-conductor-one-to-push-logs-to-chronicle.md

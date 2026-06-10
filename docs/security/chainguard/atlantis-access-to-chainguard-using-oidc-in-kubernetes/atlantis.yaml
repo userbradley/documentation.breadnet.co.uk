@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: atlantis
+  namespace: atlantis
+  labels:
+    app.kubernetes.io/name: atlantis
+  annotations:
+    reloader.stakater.com/auto: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: atlantis
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: atlantis
+    spec:
+      securityContext:
+        fsGroup: 1000
+      serviceAccountName: atlantis
+      containers:
+        - name: atlantis
+          securityContext:
+            allowPrivilegeEscalation: false
+          image: ghcr.io/runatlantis/atlantis:v0.43.0
++         volumeMounts:
++           - name: oidc-token
++             mountPath: /var/run/chainguard/oidc
++             readOnly: true
+  ports:
+      - name: atlantis
+        containerPort: 4141
++     volumes:
++       - name: oidc-token
++         projected:
++           sources:
++             - serviceAccountToken:
++                 path: oidc-token
++                 expirationSeconds: 600
++                 audience: issuer.enforce.dev

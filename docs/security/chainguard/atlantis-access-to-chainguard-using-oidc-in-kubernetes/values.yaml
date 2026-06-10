@@ -1,0 +1,12 @@
+extraVolumes:
++ - name: oidc-token
++   projected:
++     sources:
++       - serviceAccountToken:
++           path: oidc-token
++           expirationSeconds: 600
++           audience: issuer.enforce.dev
+extraVolumeMounts:
++ - name: oidc-token
++   mountPath: /var/run/chainguard/oidc
++   readOnly: true
