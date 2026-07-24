@@ -38,8 +38,6 @@ nav:
           - kb/drone/index.md
           - Laws: kb/drone/laws.md
           - Stock image marketplaces: kb/drone/stock-image-marketplaces.md
-      - exiftool:
-          - Remove GPS data from Images: kb/exiftool/remove-gps-data-from-images.md
       - Git:
           - Amend commit message: kb/git/amend-commit-message.md
           - Count lines of code in a Git repo: kb/git/count-lines-of-code-in-repo.md
@@ -124,6 +122,9 @@ nav:
           - Matomo behind cloudflared: kb/matomo/matomo-behind-cloudflare.md
       - Mealie:
           - Make API request to mealie: kb/mealie/make-api-request-to-mealie.md
+      - Media:
+          - Remove GPS data from Images using Exiftool: kb/media/remove-gps-data-from-images-using-exiftool.md
+          - Enforce English Subtitles and Audio Tracks using mkvmerge: kb/media/enforce-english-subtitles-and-audio-tracks-using-mkvmerge.md
       - Media Services:
           - "qBittorrent stuck at  No custom files found, skipping...": kb/media-services/qbittorrent-stuck-at-no-custom-files-found-skipping.md
       - Minio:
@@ -627,6 +628,7 @@ plugins:
         'kubernetes/k3s/oidc-azure-ad.md': 'kubernetes/oidc/oidc-azure-ad.md'
         'kb/linux-cli/generate-random-token.md': 'kb/linux-cli/create-random-string.md'
         'kb/nginx/get-real-ip-cloudflare.md': 'kb/nginx/get-real-ip-address-behind-cloudflare-nginx.md'
+        'kb/exiftool/remove-gps-data-from-images.md': kb/media/remove-gps-data-from-images-using-exiftool.md
 extra:
   issn: 2755-8169
   analytics:
