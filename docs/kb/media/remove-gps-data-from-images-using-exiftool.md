@@ -1,5 +1,5 @@
 ---
-title: Remove GPS data from Images
+title: Remove GPS data from Images using Exiftool
 ---
 
 ## What's the issue
