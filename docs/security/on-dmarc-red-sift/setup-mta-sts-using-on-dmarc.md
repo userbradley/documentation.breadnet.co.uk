@@ -168,15 +168,14 @@ You can also use one of the below tools
 * [MX toolbox](https://mxtoolbox.com/mta-sts.aspx)
 * [Mail hardener](https://www.mailhardener.com/tools/mta-sts-validator)
 * [Easy DMARC](https://easydmarc.com/tools/mta-sts-check)
-* [UK public sector only: NCSC Mail Check](https://www.mailcheck.service.ncsc.gov.uk/)
+* [NCSC Mail Check (UK public sector only)](https://www.mailcheck.service.ncsc.gov.uk/)
 * [DMARCLY](https://dmarcly.com/tools/mta-tls-checker)
 * [esmtp.email](https://esmtp.email/tools/mta-sts/)
 
 ## When do I get the reports
 
 As per the RFC that MTA-STS depends on ([RFC8460](https://datatracker.ietf.org/doc/html/rfc8460)) reports **should**
-be generated at [midnight each day](<https://datatracker.ietf.org/doc/html/rfc8460#section-4.1>, [and then sent via email to your RUA address](https://datatracker.ietf.org/doc/html/rfc8460#section-5)
-and then in theory a day later they will be OnDMARC's STS reports.
+be generated at [midnight each day](https://datatracker.ietf.org/doc/html/rfc8460#section-4.1), [and then sent via email to your RUA address](https://datatracker.ietf.org/doc/html/rfc8460#section-5) and then in theory a day later they will be OnDMARC's STS reports.
 
 ## Next steps
 
