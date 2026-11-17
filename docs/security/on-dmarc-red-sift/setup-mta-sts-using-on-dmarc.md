@@ -14,10 +14,10 @@ TLS based messages, and if they should refuse to deliver to the domain if they a
 Below is the abstract from the RFC: [RFC: 8461](https://datatracker.ietf.org/doc/html/rfc8461)
 
 > SMTP MTA Strict Transport Security (MTA-STS) is a mechanism enabling
-mail service providers (SPs) to declare their ability to receive
-Transport Layer Security (TLS) secure SMTP connections and to specify
-whether sending SMTP servers should refuse to deliver to MX hosts
-that do not offer TLS with a trusted server certificate.
+> mail service providers (SPs) to declare their ability to receive
+> Transport Layer Security (TLS) secure SMTP connections and to specify
+> whether sending SMTP servers should refuse to deliver to MX hosts
+> that do not offer TLS with a trusted server certificate.
 
 MTA-STS relies on SMTP TLS Reporting as defined in [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460), which is
 covered by OnDMARC
@@ -54,7 +54,7 @@ You will then be asked to add the DNS records presented to your domain.
 !!! note "Limitation of this guide"
     This guide will not go in to how to add DNS records to your domain, as this is different for each DNS provider.
 
-One the DNS records have been added, click **NEXt ->** at the bottom of the page
+One the DNS records have been added, click **NEXT ->** at the bottom of the page
 
 ### Create MTA-STS records
 
@@ -81,7 +81,7 @@ Create the listed records in your DNS provider's control panel.
 
 ![img.png](../../assets/on-dmarc-redsift-mta-sts-set-sts-records.png)
 
-Make a sandwich or what ever it is that takes around 10 minutes, then click on **CHECK DNS** at the bottom of the page.
+Make a sandwich or whatever it is that takes around 10 minutes, then click on **CHECK DNS** at the bottom of the page.
 It takes some time for DNS changes to come through all around the world, and 10 minutes seems like a reasonable amount of time.
 
 ### Set up the policy
