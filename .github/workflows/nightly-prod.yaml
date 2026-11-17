@@ -31,3 +31,4 @@ jobs:
         with:
           title: Nightly build failed
           labels: Broken Nightly Build
+          content-filepath: ".github/nightly-fail.md"
