@@ -14,10 +14,10 @@ TLS based messages, and if they should refuse to deliver to the domain if they a
 Below is the abstract from the RFC: [RFC: 8461](https://datatracker.ietf.org/doc/html/rfc8461)
 
 > SMTP MTA Strict Transport Security (MTA-STS) is a mechanism enabling
-mail service providers (SPs) to declare their ability to receive
-Transport Layer Security (TLS) secure SMTP connections and to specify
-whether sending SMTP servers should refuse to deliver to MX hosts
-that do not offer TLS with a trusted server certificate.
+> mail service providers (SPs) to declare their ability to receive
+> Transport Layer Security (TLS) secure SMTP connections and to specify
+> whether sending SMTP servers should refuse to deliver to MX hosts
+> that do not offer TLS with a trusted server certificate.
 
 MTA-STS relies on SMTP TLS Reporting as defined in [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460), which is
 covered by OnDMARC
@@ -54,7 +54,7 @@ You will then be asked to add the DNS records presented to your domain.
 !!! note "Limitation of this guide"
     This guide will not go in to how to add DNS records to your domain, as this is different for each DNS provider.
 
-One the DNS records have been added, click **NEXt ->** at the bottom of the page
+One the DNS records have been added, click **NEXT ->** at the bottom of the page
 
 ### Create MTA-STS records
 
@@ -81,7 +81,7 @@ Create the listed records in your DNS provider's control panel.
 
 ![img.png](../../assets/on-dmarc-redsift-mta-sts-set-sts-records.png)
 
-Make a sandwich or what ever it is that takes around 10 minutes, then click on **CHECK DNS** at the bottom of the page.
+Make a sandwich or whatever it is that takes around 10 minutes, then click on **CHECK DNS** at the bottom of the page.
 It takes some time for DNS changes to come through all around the world, and 10 minutes seems like a reasonable amount of time.
 
 ### Set up the policy
@@ -168,15 +168,14 @@ You can also use one of the below tools
 * [MX toolbox](https://mxtoolbox.com/mta-sts.aspx)
 * [Mail hardener](https://www.mailhardener.com/tools/mta-sts-validator)
 * [Easy DMARC](https://easydmarc.com/tools/mta-sts-check)
-* [UK public sector only: NCSC Mail Check](https://www.mailcheck.service.ncsc.gov.uk/)
+* [NCSC Mail Check (UK public sector only)](https://www.mailcheck.service.ncsc.gov.uk/)
 * [DMARCLY](https://dmarcly.com/tools/mta-tls-checker)
 * [esmtp.email](https://esmtp.email/tools/mta-sts/)
 
 ## When do I get the reports
 
 As per the RFC that MTA-STS depends on ([RFC8460](https://datatracker.ietf.org/doc/html/rfc8460)) reports **should**
-be generated at [midnight each day](<https://datatracker.ietf.org/doc/html/rfc8460#section-4.1>, [and then sent via email to your RUA address](https://datatracker.ietf.org/doc/html/rfc8460#section-5)
-and then in theory a day later they will be OnDMARC's STS reports.
+be generated at [midnight each day](https://datatracker.ietf.org/doc/html/rfc8460#section-4.1), [and then sent via email to your RUA address](https://datatracker.ietf.org/doc/html/rfc8460#section-5) and then in theory a day later they will be OnDMARC's STS reports.
 
 ## Next steps
 
